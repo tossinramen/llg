@@ -26,7 +26,7 @@ namespace LLG
     {
         GameObject box;
         Text speaker, text, nextHint;
-        GameObject englishListen;
+        GameObject englishListen, namePlate;
         LocalizedText english;
         TranslateToggle translate;
         List<Line> lines;
@@ -39,19 +39,22 @@ namespace LLG
         public void Build(Transform canvas, VillageController owner)
         {
             village = owner;
-            box = UIFactory.Panel("Dialogue", canvas, new Vector2(0, -102), new Vector2(600, 112)).gameObject;
+            // layout: words on the left, a strip of buttons (translate, listen) down the right-hand side
+            box = UIFactory.Panel("Dialogue", canvas, new Vector2(0, -100), new Vector2(600, 116)).gameObject;
             var b = box.transform;
-            UIFactory.TranslateButton(b, new Vector2(-270, 34));
+            UIFactory.Img("Divider", b, new Vector2(240, 0), new Vector2(2, 80), new Color32(210, 186, 140, 255));
+            UIFactory.TranslateButton(b, new Vector2(264, 26));
             translate = box.GetComponent<TranslateToggle>();
-            speaker = UIFactory.Label("Speaker", b, new Vector2(20, 34), new Vector2(520, 20), "", UIFactory.Purple, TextAnchor.MiddleLeft);
-            text = UIFactory.Label("Text", b, new Vector2(-10, 6), new Vector2(540, 40), "", UIFactory.Ink, TextAnchor.UpperLeft);
-            text.horizontalOverflow = HorizontalWrapMode.Wrap;
-            english = UIFactory.LLabel("English", b, new Vector2(0, -28), new Vector2(560, 22), "", "", UIFactory.Faded,
+            UIFactory.ListenButton(b, new Vector2(264, 0), () => lines[index].Text, "es");
+            englishListen = UIFactory.ListenButton(b, new Vector2(264, -26), () => lines[index].English, "en").gameObject;
+
+            namePlate = UIFactory.Box("NamePlate", b, new Vector2(-196, 30), new Vector2(168, 20), new Color32(70, 52, 46, 255)).gameObject;
+            speaker = UIFactory.Label("Speaker", namePlate.transform, new Vector2(0, 1), new Vector2(156, 16), "", Color.white);
+            text = UIFactory.Label("Text", b, new Vector2(-28, 0), new Vector2(500, 34), "", UIFactory.Ink, TextAnchor.UpperLeft);
+            UIFactory.Img("Rule", b, new Vector2(-28, -18), new Vector2(500, 1), new Color32(220, 200, 160, 255));
+            english = UIFactory.LLabel("English", b, new Vector2(-58, -30), new Vector2(440, 18), "", "", UIFactory.Faded,
                 TextAnchor.MiddleLeft, 16, false, true).GetComponent<LocalizedText>();
-            nextHint = UIFactory.Label("Next", b, new Vector2(214, -42), new Vector2(80, 20), "", UIFactory.Teal, TextAnchor.MiddleRight);
-            // speaker buttons: hear the Spanish line, and (once translated) the English one
-            UIFactory.ListenButton(b, new Vector2(266, 10), () => lines[index].Text, "es");
-            englishListen = UIFactory.ListenButton(b, new Vector2(266, -24), () => lines[index].English, "en").gameObject;
+            nextHint = UIFactory.Label("Next", b, new Vector2(198, -30), new Vector2(54, 16), "", UIFactory.Teal, TextAnchor.MiddleRight);
             box.SetActive(false);
         }
 
@@ -73,8 +76,14 @@ namespace LLG
 
         void Refresh()
         {
-            nextHint.text = "[" + Keybinds.KeyName(GameAction.Use) + "]";
+            nextHint.text = Keybinds.KeyName(GameAction.Use) + " ▶";
             speaker.text = lines[index].Speaker;
+            // without a speaker name the line moves up into the name's place
+            bool named = !string.IsNullOrEmpty(lines[index].Speaker);
+            namePlate.SetActive(named);
+            var rt = (RectTransform)text.transform;
+            rt.anchoredPosition = new Vector2(-28, named ? 0 : 14);
+            rt.sizeDelta = new Vector2(500, named ? 30 : 40);
             text.text = lines[index].Text;
             english.Set("", lines[index].English, true);
         }

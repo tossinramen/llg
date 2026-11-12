@@ -29,8 +29,9 @@ namespace LLG
             itemName = UIFactory.LLabel("ItemName", W, new Vector2(0, -98), new Vector2(170, 20), "", "", UIFactory.Ink).GetComponent<LocalizedText>();
             itemEnglish = UIFactory.LLabel("ItemEnglish", W, new Vector2(0, -116), new Vector2(170, 20), "", "", UIFactory.Faded, TextAnchor.MiddleCenter, 16, false, true).GetComponent<LocalizedText>();
             hint = UIFactory.LLabel("Hint", W, new Vector2(0, -116), new Vector2(170, 20), "", "", UIFactory.Teal).GetComponent<LocalizedText>();
-            UIFactory.Img("Coin", W, new Vector2(-22, -140), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
-            money = UIFactory.Label("Money", W, new Vector2(14, -140), new Vector2(60, 20), "", UIFactory.Ink, TextAnchor.MiddleLeft);
+            var purse = UIFactory.Box("Purse", W, new Vector2(0, -138), new Vector2(120, 24), new Color32(232, 214, 176, 255));
+            UIFactory.Img("Lexa", purse.transform, new Vector2(-42, 1), new Vector2(14, 14), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
+            money = UIFactory.Label("Money", purse.transform, new Vector2(10, 1), new Vector2(80, 16), "", UIFactory.Ink, TextAnchor.MiddleLeft);
             GameState.InventoryChanged += Refresh;
             GameState.Data.stats.Changed += Refresh;
         }
@@ -59,7 +60,7 @@ namespace LLG
                 var tint = item != null && item.kind == ItemKind.Pet && GameState.Data.pet == item.id ? new Color(1f, 1f, 0.7f) : Color.white;
                 slots[i].Show(item == null ? null : UIFactory.LoadSprite("Art/Icons/" + item.icon), bag[i].count, tint);
             }
-            money.text = GameState.Data.stats.coins.ToString();
+            money.text = GameState.Data.stats.coins + " " + GameConfig.CurrencyName;
         }
 
         void Describe(int index)

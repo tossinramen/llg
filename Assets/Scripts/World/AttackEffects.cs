@@ -35,7 +35,9 @@ namespace LLG
             if (jab)
             {
                 transform.rotation = Quaternion.Euler(0, 0, baseAngle);
-                blade.localPosition = new Vector3(0, 0.3f + 0.4f * Mathf.Sin(u * Mathf.PI), 0);
+                // a short jab; facing away (up) the arm only reaches a little past the shoulder
+                float reach = baseAngle == 0 ? 0.08f + 0.22f * Mathf.Sin(u * Mathf.PI) : 0.18f + 0.34f * Mathf.Sin(u * Mathf.PI);
+                blade.localPosition = new Vector3(0, reach, 0);
             }
             else
             {

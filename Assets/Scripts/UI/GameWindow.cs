@@ -84,8 +84,8 @@ namespace LLG
             view.button = frame.gameObject.AddComponent<Button>();
             view.button.targetGraphic = frame;
             view.button.onClick.AddListener(() => onClick());
-            view.icon = UIFactory.Img("Icon", frame.transform, Vector2.zero, new Vector2(size - 12, size - 12), Color.white);
-            view.count = UIFactory.Label("Count", frame.transform, new Vector2(size / 2 - 9, -size / 2 + 8), new Vector2(20, 14), "", Color.white, TextAnchor.LowerRight);
+            view.icon = UIFactory.Img("Icon", frame.transform, new Vector2(0, 1), new Vector2(size - 14, size - 14), Color.white);
+            view.count = UIFactory.Label("Count", frame.transform, new Vector2(size / 2 - 11, -size / 2 + 10), new Vector2(16, 12), "", Color.white, TextAnchor.LowerRight, 12);
             UIFactory.Outline(view.count);
             view.hover = frame.gameObject.AddComponent<HoverHandle>();
             return view;

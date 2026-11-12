@@ -54,14 +54,15 @@ namespace LLG
             promptBox.SetActive(false);
 
             // the word sign stays up until you click it (or read something else)
-            var label = UIFactory.Panel("WordLabel", canvas, Vector2.zero, new Vector2(160, 62));
+            var label = UIFactory.Panel("WordLabel", canvas, Vector2.zero, new Vector2(120, 44));
+            label.pixelsPerUnitMultiplier = 2;          // a thin frame: these signs are small
             label.gameObject.AddComponent<Button>().onClick.AddListener(HideWordLabel);
             labelBox = label.rectTransform;
-            labelWord = UIFactory.LLabel("Word", labelBox, new Vector2(0, 9), new Vector2(150, 20), "", "", UIFactory.Ink).GetComponent<LocalizedText>();
-            labelEnglish = UIFactory.LLabel("English", labelBox, new Vector2(0, -9), new Vector2(150, 20), "", "", UIFactory.Faded, TextAnchor.MiddleCenter, 16, false, true).GetComponent<LocalizedText>();
-            UIFactory.TranslateButton(labelBox, Vector2.zero);
+            labelWord = UIFactory.LLabel("Word", labelBox, new Vector2(0, 6), new Vector2(100, 16), "", "", UIFactory.Ink).GetComponent<LocalizedText>();
+            labelEnglish = UIFactory.LLabel("English", labelBox, new Vector2(0, -9), new Vector2(100, 13), "", "", UIFactory.Faded, TextAnchor.MiddleCenter, 12, false, true).GetComponent<LocalizedText>();
+            UIFactory.TranslateButton(labelBox, Vector2.zero, 20);
             labelTranslate = label.GetComponent<TranslateToggle>();
-            UIFactory.ListenButton(labelBox, Vector2.zero, () => labelTranslate.English ? labelSpeakEn : labelSpeakEs, "es");
+            UIFactory.ListenButton(labelBox, Vector2.zero, () => labelTranslate.English ? labelSpeakEn : labelSpeakEs, "es", 20);
             labelBox.gameObject.SetActive(false);
 
             GameState.Toast += ShowToast;
@@ -103,12 +104,12 @@ namespace LLG
             hungerText.gameObject.SetActive(false);
 
             // Lexa, in a small box under the portrait
-            var purseImg = UIFactory.Panel("Purse", canvas, FramePos + new Vector2(-44, -44), new Vector2(88, 28));
+            var purseImg = UIFactory.Panel("Purse", canvas, FramePos + new Vector2(-34, -44), new Vector2(108, 28));
             purseImg.pixelsPerUnitMultiplier = 2;
             purseImg.raycastTarget = false;
             var purse = purseImg.rectTransform;
-            UIFactory.Img("Coin", purse, new Vector2(-26, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
-            coins = UIFactory.Label("Coins", purse, new Vector2(8, 0), new Vector2(52, 17), "", UIFactory.Ink);
+            UIFactory.Img("Coin", purse, new Vector2(-38, 0), new Vector2(14, 14), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
+            coins = UIFactory.Label("Coins", purse, new Vector2(8, 0), new Vector2(70, 17), "", UIFactory.Ink);
         }
 
         /// <summary>A bar in the unit frame: dark background, an optional trail and a coloured fill.</summary>
@@ -231,7 +232,7 @@ namespace LLG
             manaText.text = s.mana + " / " + s.maxMana;
             hungerFill.sizeDelta = new Vector2(BarWidth * s.hunger / Mathf.Max(1f, s.maxHunger), hungerFill.sizeDelta.y);
             hungerText.text = "";
-            coins.text = s.coins.ToString();
+            coins.text = s.coins + " " + GameConfig.CurrencyName;
 
             int need = GameState.XpForLevel(data.level);
             xpFill.sizeDelta = new Vector2(600f * data.xp / need, 6);
@@ -261,10 +262,12 @@ namespace LLG
             labelSpeakEs = speakSpanish ?? word;
             labelSpeakEn = english;
             int longest = Mathf.Max(word.Length, english.Length);
-            float w = Mathf.Max(130, longest * 8 + 90);
-            labelBox.sizeDelta = new Vector2(w, 62);
-            ((RectTransform)labelBox.Find("Translate")).anchoredPosition = new Vector2(-w / 2 + 24, 0);
-            ((RectTransform)labelBox.Find("Listen_es")).anchoredPosition = new Vector2(w / 2 - 24, 0);
+            float w = Mathf.Max(110, longest * 8 + 66);
+            labelBox.sizeDelta = new Vector2(w, 44);
+            ((RectTransform)labelBox.Find("Word")).sizeDelta = new Vector2(w - 60, 16);
+            ((RectTransform)labelBox.Find("English")).sizeDelta = new Vector2(w - 60, 13);
+            ((RectTransform)labelBox.Find("Translate")).anchoredPosition = new Vector2(-w / 2 + 17, 0);
+            ((RectTransform)labelBox.Find("Listen_es")).anchoredPosition = new Vector2(w / 2 - 17, 0);
             labelWorld = world;
             labelBox.gameObject.SetActive(true);
             labelBox.SetAsLastSibling();
@@ -279,7 +282,7 @@ namespace LLG
             var screen = cam.WorldToScreenPoint(labelWorld);
             if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screen, cam, out var local)) return;
             float halfW = labelBox.sizeDelta.x / 2, halfCanvas = canvasRect.rect.width / 2;
-            local += new Vector2(0, 36);
+            local += new Vector2(0, 28);
             local.x = Mathf.Clamp(local.x, -halfCanvas + halfW + 4, halfCanvas - halfW - 4);
             local.y = Mathf.Clamp(local.y, -130, local.x + halfW > 210 ? 20 : 104);
             labelBox.anchoredPosition = local;

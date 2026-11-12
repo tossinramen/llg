@@ -79,12 +79,13 @@ namespace LLG
             window.SetActive(false);
         }
 
-        public void Show(Action whenClosed = null)
+        /// <summary>Opens the options. On the title screen they start in English (no language chosen yet).</summary>
+        public void Show(Action whenClosed = null, bool english = false)
         {
             onClose = whenClosed;
             waitingFor = -1;
             openedFrame = Time.frameCount;
-            window.GetComponent<TranslateToggle>().Set(false);
+            window.GetComponent<TranslateToggle>().Set(english);
             window.SetActive(true);
             window.transform.SetAsLastSibling();
             volume.SetValueWithoutNotify(AudioManager.Volume);

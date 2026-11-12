@@ -32,7 +32,7 @@ namespace LLG
             sectionRow = UIFactory.Rect("Sections", W, Vector2.zero, Vector2.zero);
             cards = UIFactory.Rect("Cards", W, Vector2.zero, Vector2.zero);
             feedback = UIFactory.LLabel("Feedback", W, new Vector2(-40, -144), new Vector2(380, 18), "", "", UIFactory.Ink, TextAnchor.MiddleLeft).GetComponent<LocalizedText>();
-            UIFactory.Img("Coin", W, new Vector2(186, -144), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
+            UIFactory.Img("Coin", W, new Vector2(186, -144), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
             money = UIFactory.Label("Money", W, new Vector2(222, -144), new Vector2(52, 18), "", UIFactory.Ink, TextAnchor.MiddleLeft);
             GameState.InventoryChanged += Rebuild;
             GameState.Data.stats.Changed += Rebuild;
@@ -112,12 +112,12 @@ namespace LLG
                 }
             }
 
-            float top = showSections ? 34 : 58;
+            float top = showSections ? 22 : 48;     // leave a clear gap under the tabs
             int playerLevel = GameState.Data.level;
             for (int i = 0; i < entries.Count && i < MaxCards; i++)
             {
                 var (item, count, bagIndex) = entries[i];
-                var pos = new Vector2(-198 + (i % Columns) * 132, top - (i / Columns) * 64);
+                var pos = new Vector2(-198 + (i % Columns) * 132, top - (i / Columns) * 62);
                 bool once = item.kind != ItemKind.Food && item.kind != ItemKind.Book && item.kind != ItemKind.Material;
                 bool owned = !selling && once && GameState.Has(item.id);
                 bool locked = !selling && !owned && item.level > playerLevel;

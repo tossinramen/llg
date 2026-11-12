@@ -764,7 +764,9 @@ namespace LLG
                 return;
             }
 
-            var hand = feet + new Vector2(0, 0.9f);
+            // where the hand is for each direction (down, right, up, left)
+            Vector2[] shoulders = { new Vector2(0.28f, 0.72f), new Vector2(0.2f, 0.82f), new Vector2(0.32f, 0.98f), new Vector2(-0.2f, 0.82f) };
+            var hand = feet + (weapon == null ? shoulders[facing] : new Vector2(0, 0.9f));
             if (weapon == null)
                 SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/item_fist"), AppearancePalette.Skin[PlayerProfile.Current.appearance.skin], true, order);
             else

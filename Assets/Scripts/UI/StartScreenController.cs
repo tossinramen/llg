@@ -44,7 +44,7 @@ namespace LLG
             BuildCharacterPanel();
             BuildOptionsPanel();
 
-            UIFactory.Btn("OptionsButton", root, new Vector2(272, -164), new Vector2(88, 22), "Opciones", UIFactory.Purple, () => options.Show());
+            UIFactory.Btn("OptionsButton", root, new Vector2(272, -164), new Vector2(88, 22), "Options", UIFactory.Purple, () => options.Show(null, true));
             options = gameObject.AddComponent<OptionsWindow>();
             options.Build(root);
             RefreshAll();
@@ -255,7 +255,7 @@ namespace LLG
         {
             if (tagline == null || taglines.Count == 0) return;    // scripts were reloaded mid-play; press Stop and Play again
 
-            if (Input.GetKeyDown(KeyCode.Escape) && !options.Open && options.ClosedFrame != Time.frameCount) options.Show();
+            if (Input.GetKeyDown(KeyCode.Escape) && !options.Open && options.ClosedFrame != Time.frameCount) options.Show(null, true);
 
             foreach (var cloud in clouds)
             {

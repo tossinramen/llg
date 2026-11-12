@@ -198,20 +198,22 @@ namespace LLG
         }
 
         /// <summary>The globe button that translates everything in "window" to English and back.</summary>
-        public static Button TranslateButton(Transform window, Vector2 pos)
+        public static Button TranslateButton(Transform window, Vector2 pos, float size = 26)
         {
             var toggle = window.GetComponent<TranslateToggle>() ?? window.gameObject.AddComponent<TranslateToggle>();
-            var button = Btn("Translate", window, pos, new Vector2(26, 24), "", Blue, toggle.Flip);
-            Img("Globe", button.transform, Vector2.zero, new Vector2(16, 16), Color.white, LoadSprite("Art/UI/translate"));
+            var button = Btn("Translate", window, pos, new Vector2(size, size - 2), "", Blue, toggle.Flip);
+            float icon = Mathf.Round(size * 0.46f);         // leaves an even margin inside the button
+            Img("Globe", button.transform, new Vector2(0, 1), new Vector2(icon, icon), Color.white, LoadSprite("Art/UI/translate"));
             return button;
         }
 
         /// <summary>A small speaker button that reads the text aloud (language "es" or "en").</summary>
-        public static Button ListenButton(Transform parent, Vector2 pos, Func<string> text, string language)
+        public static Button ListenButton(Transform parent, Vector2 pos, Func<string> text, string language, float size = 24)
         {
-            var button = Btn("Listen_" + language, parent, pos, new Vector2(22, 20), "", language == "es" ? Teal : Purple,
+            var button = Btn("Listen_" + language, parent, pos, new Vector2(size, size - 2), "", language == "es" ? Teal : Purple,
                 () => Speech.Play(text(), language));
-            Img("Icon", button.transform, Vector2.zero, new Vector2(12, 12), Color.white, LoadSprite("Art/UI/listen"));
+            float icon = Mathf.Round(size * 0.42f);
+            Img("Icon", button.transform, new Vector2(0, 1), new Vector2(icon, icon), Color.white, LoadSprite("Art/UI/listen"));
             return button;
         }
 

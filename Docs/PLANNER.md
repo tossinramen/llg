@@ -58,7 +58,6 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] One boss floor every 5 levels, climbing up the hall
 - [ ] Villains: Rey Trol, Rey de Hielo, Rey Demonio (and the others in the notes)
 - [ ] Bosses drop Lexa and rare gear
-- [ ] Lexa redesign: grey stones with blue carvings (new icon and art)
 - [ ] "Levelling up Lexa" (needs deciding what it means — see notes)
 
 ### 6. Farming
@@ -253,3 +252,12 @@ Finished tasks, struck through.
 - ~~Vegetable patch: plant, water (language question = grows faster), harvest, sell~~ ✅
 - ~~Farming skill used~~ ✅
 - ~~Armour tiers in the Herrería: tela, cuero, malla, hierro, Toledo, rúnico (5 pieces each, level-locked)~~ ✅
+- ~~Dialogue box redesign: name plate, text with room to breathe, buttons in a strip on the right, key hint inside the box~~ ✅
+- ~~More space between the shop tabs and the item cards~~ ✅
+- ~~Punch facing away only shows the arm reaching past the shoulder~~ ✅
+- ~~Smaller signs when you click simple things (trees, roads...)~~ ✅
+- ~~Options on the title screen are in English~~ ✅
+- ~~Translate and speaker buttons: icons padded inside the button~~ ✅
+- ~~Bag slots: icons and stack numbers padded~~ ✅
+- ~~Lexa in a box under the portrait and in the bag~~ ✅
+- ~~New Lexa icon: grey rune stone with glowing blue carvings (used everywhere)~~ ✅
