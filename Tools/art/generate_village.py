@@ -36,7 +36,7 @@ PW, PH = VW * T, VH * T
 rng = np.random.default_rng(21)
 
 # ---------------------------------------------------------------- what every letter means
-WALKABLE = ".,:;=_X-"
+WALKABLE = ".,:;=_X-\"Ç"        # crops can be walked between; Ç = an open gate
 WORDS = {
     ".": ("La hierba", "Grass"), ",": ("El camino", "Road"), ":": ("La plaza", "Town Square"),
     ";": ("El campo de tiro", "Archery Range"), "=": ("El muelle", "Dock"), "-": ("El puente", "Bridge"),
@@ -58,6 +58,8 @@ WORDS = {
     "K": ("El mostrador", "Counter"), "Q": ("El menú", "Menu Board"), "L": ("La estantería", "Shelf"),
     "E": ("El horno", "Oven"), "U": ("El yunque", "Anvil"), "J": ("La cama", "Bed"), "t": ("La mesa", "Table"),
     "G": ("La chimenea", "Fireplace"),
+    "ç": ("La puerta de la valla", "Gate"), "Ç": ("La puerta de la valla", "Gate"),
+    "ð": ("La Ciudadela del Sol", "Citadel of the Sun"), "Ð": ("La entrada de la Ciudadela", "Citadel Entrance"),
     "[": ("La semillería", "Seed Shop"), "(": ("La tienda de música", "Music Shop"),
     "`": ("La escuela de música", "Music School"), "+": ("El huerto", "Vegetable Patch"), "ñ": ("El piano", "Piano"),
 }
@@ -67,18 +69,18 @@ for door in "BCSWMHDI^<>])'":
 # ---------------------------------------------------------------- the village layout (tiles)
 PLAZA = (36, 20, 56, 34)
 ROADS = [(6, 18, 74, 19), (6, 27, 35, 28), (57, 27, 79, 28), (10, 38, 62, 39), (34, 18, 35, 39), (57, 18, 58, 39),
-         (66, 8, 67, 17), (8, 10, 9, 17), (52, 40, 53, 46), (84, 27, 100, 28), (100, 20, 101, 40), (9, 20, 10, 27)]
+         (66, 8, 67, 17), (8, 10, 9, 17), (52, 40, 53, 46), (84, 27, 100, 28), (100, 16, 101, 40), (9, 20, 10, 27)]
 BUILDINGS = [
     # key, letter, door, x0, y0, width, depth, kind, sign, extras
     ("bakery", "k", "B", 26, 16, 6, 2, "shop", "Panadería", {"shutters": (78, 112, 84), "awning": (178, 64, 52), "pots": True}),
-    ("house_n", "d", "D", 14, 16, 5, 2, "house", None, {"shutters": (66, 100, 140), "two_story": True}),
+    ("house_n", "d", "D", 11, 16, 5, 2, "house", None, {"shutters": (66, 100, 140), "two_story": True}),
     ("church", "i", "I", 42, 14, 8, 4, "church", None, {}),
     ("hall", "a", "<", 51, 15, 7, 3, "shop", "Ayuntamiento", {"shutters": (66, 100, 140), "two_story": True, "wall": (232, 214, 180)}),
     ("candy", "q", "C", 60, 16, 6, 2, "shop", "Dulcería", {"shutters": (164, 80, 110), "awning": (200, 110, 140), "wall": (246, 226, 216)}),
     ("store", "s", "S", 27, 25, 6, 2, "shop", "Tienda", {"shutters": (66, 100, 140), "awning": (70, 110, 150)}),
     ("home", "h", "H", 12, 25, 5, 2, "house", None, {"shutters": (78, 112, 84), "pots": True}),
     ("seeds", "[", "]", 19, 25, 5, 2, "shop", "Semillas", {"shutters": (110, 150, 70), "awning": (120, 160, 70), "pots": True}),
-    ("music_store", "(", ")", 19, 16, 6, 2, "shop", "Música", {"shutters": (120, 70, 150), "awning": (150, 90, 180), "wall": (240, 228, 214)}),
+    ("music_store", "(", ")", 18, 16, 6, 2, "shop", "Música", {"shutters": (120, 70, 150), "awning": (150, 90, 180), "wall": (240, 228, 214)}),
     ("music_school", "`", "'", 68, 16, 6, 2, "shop", "Escuela", {"shutters": (60, 80, 150), "two_story": True, "wall": (236, 224, 204)}),
     ("weapons", "w", "W", 60, 25, 6, 2, "shop", "Armería", {"shutters": (90, 74, 60), "awning": (96, 90, 84), "wall": (226, 214, 192), "shield": True}),
     ("smithy", "j", "^", 68, 25, 6, 2, "shop", "Herrería", {"shutters": (70, 70, 74), "awning": (80, 80, 86), "wall": (196, 190, 178)}),
@@ -708,6 +710,9 @@ def make_world():
             grid[y0 + dt - 1][dx - 1] = door
         doors[key] = (dx, y0 + dt - 1)
     place(barn(), 7 * T, 34 * T, (3, 32, 7, 2), "v", "barn")
+    citadel_img = Image.open(os.path.join(ART, "World", "Objects", "citadel.png")).convert("RGBA")
+    place((citadel_img, (88, 136)), 100 * T + 8, 16 * T, (95, 13, 11, 3), "ð", "citadel")
+    grid[15][100] = "Ð"
     for f in range(4):
         img, anc = windmill(f)
         save_png(img, "World", "Objects", f"windmill_{f}.png")
@@ -747,9 +752,12 @@ def make_world():
 
     # farm fence and chicken yard
     fx0, fy0, fx1, fy1 = FARM
+    gate_img = (Image.open(os.path.join(ART, "World", "Objects", "gate_closed.png")).convert("RGBA"), (8, 20))
     for tx in range(fx0 - 1, fx1 + 2):
         for ty in (fy0 - 1, fy1 + 1):
-            if grid[ty][tx] == ".":
+            if (tx, ty) == (18, fy0 - 1):
+                place(gate_img, tx * T + 8, ty * T + 16, (tx, ty, 1, 1), "ç", "gate_closed")
+            elif grid[ty][tx] == ".":
                 place(va.fence(False), tx * T + 8, ty * T + 16, (tx, ty, 1, 1), "N", "fence_h")
     for ty in range(fy0, fy1 + 1):
         for tx in (fx0 - 1, fx1 + 1):
@@ -758,7 +766,9 @@ def make_world():
     yx0, yy0, yx1, yy1 = YARD
     for tx in range(yx0 - 1, yx1 + 2):
         for ty in (yy0 - 1, yy1 + 1):
-            if free(tx, ty):
+            if (tx, ty) == (29, yy0 - 1):
+                place(gate_img, tx * T + 8, ty * T + 16, (tx, ty, 1, 1), "ç", "gate_closed")
+            elif free(tx, ty):
                 place(va.fence(False), tx * T + 8, ty * T + 16, (tx, ty, 1, 1), "N", "fence_h")
     for ty in range(yy0, yy1 + 1):
         for tx in (yx0 - 1, yx1 + 1):
@@ -826,6 +836,8 @@ def make_world():
     for ty in range(2, VH - 2):
         for tx in range(84, VW - 2):
             if any(math.hypot(tx - cx, ty - cy) < 4 for cx, cy in clearings):
+                continue
+            if 92 <= tx <= 108 and 5 <= ty <= 18:       # keep the citadel's grounds clear
                 continue
             if r.random() < 0.34:
                 tree("pine" if r.random() < 0.75 else "cypress", tx, ty, int(r.integers(0, 2)))
@@ -958,6 +970,10 @@ def make_minimap(ground, grid):
             c = grid[ty][tx]
             X, Y = tx * 4, ty * 4
             if c in "kqswjmhdarv[(`BCSWMHD^<>])'":
+                d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(176, 82, 54))
+            elif c in "ðÐ":
+                d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(150, 144, 130))
+            elif False:
                 d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(176, 82, 54))
             elif c in "iIy":
                 d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(206, 190, 150))

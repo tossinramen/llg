@@ -51,13 +51,8 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] Music in battle: a song can stun a monster for a turn (needs the battle system)
 
 ### 5. Dungeons, bosses and villains
-- [ ] Dungeon hall building (inspired by Machu Picchu — see notes), outside the village
-- [ ] Battle screen like Pokémon Showdown: turn-based, your moves are language answers
-- [ ] **No hints or translations in battles**
-- [ ] Monsters are fought with words; people are fought with clicking (real-time)
-- [ ] One boss floor every 5 levels, climbing up the hall
-- [ ] Villains: Rey Trol, Rey de Hielo, Rey Demonio (and the others in the notes)
-- [ ] Bosses drop Lexa and rare gear
+- [ ] People (later PvP) are fought by clicking in real time (monsters are already fought with words)
+- [ ] Bosses also drop rare gear (they already give Lexa)
 - [ ] "Levelling up Lexa" (needs deciding what it means — see notes)
 
 ### 6. Farming
@@ -85,7 +80,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
   - **Tatoeba** — tens of thousands of Spanish–English sentence pairs, for sentence order, translation and replies.
 - Plan: a script that combines these into `pack.json` automatically, then hand-check levels 1–2.
 
-### Weapon trees (built — all three are in the Armería, see GAME_GUIDE.md)
+### Weapon trees — ✅ DONE (all three are in the Armería, see GAME_GUIDE.md)
 
 **Melee (blades)**
 
@@ -122,7 +117,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 | 80 | El revólver (revolver) |
 | 90 | El rifle |
 
-### Armour tiers (built — sold in the Herrería; upgrades, durability and repairs still to do)
+### Armour tiers — ✅ DONE (sold in the Herrería; upgrades, durability and repairs are still open tasks)
 Tela (cloth) → Cuero (leather) → Cota de malla (chainmail) → Hierro (iron) → Acero de Toledo (Toledo steel) → Armadura rúnica (rune armour, glows blue).
 Each tier has head, chest, legs, wrists and a shield. Upgrades +1…+10 cost Lexa; durability drops with hits; the blacksmith repairs.
 
@@ -141,7 +136,7 @@ Spells are cast by **saying or building the Spanish word correctly** — a wrong
 | 55 | Terremoto (earthquake) | Hits all enemies |
 | 70 | Meteoro (meteor) | Huge damage, long cooldown |
 
-### The dungeon: La Ciudadela del Sol (the Citadel of the Sun)
+### The dungeon: La Ciudadela del Sol (the Citadel of the Sun) — ✅ DONE (in the forest, end of the path)
 Inspired by **Machu Picchu**: stone terraces climbing a green mountain, with each terrace a floor. You climb
 up to fight the next boss, **one boss every 5 levels**. Each floor tests a topic, **with no hints or translations**.
 
@@ -174,7 +169,7 @@ them into runes inside the Ciudadela del Sol. Without words, the fountain is fad
 that every word you learn re-carves a rune. Your goal is to climb the citadel, beat the kings and
 bring the language back. (Quest text in English, everything else in Spanish.)
 
-### Crops (built — seeds at the Semillería, grow them in your patch)
+### Crops — ✅ DONE (seeds at the Semillería, grow them in your patch)
 
 | Crop | Seed price | Sells for | Grows in |
 |---|---|---|---|
@@ -188,7 +183,7 @@ bring the language back. (Quest text in English, everything else in Spanish.)
 
 The watering screen asks a quick language question per plot; correct answers make that plot grow faster.
 
-### Music (built: school, store, instruments, skill, verse game — battle stun still to do)
+### Music — ✅ DONE (school, store, instruments, skill, verse game; battle stun is still an open task)
 Music school (escuela de música) and music store (tienda de música). Instruments: la guitarra, la flauta,
 el clarinete, la pandereta. Music skill. Playing = clicking words in order to build a verse.
 In battle, a song can stun a monster for a turn.
@@ -261,3 +256,14 @@ Finished tasks, struck through.
 - ~~Bag slots: icons and stack numbers padded~~ ✅
 - ~~Lexa in a box under the portrait and in the bag~~ ✅
 - ~~New Lexa icon: grey rune stone with glowing blue carvings (used everywhere)~~ ✅
+- ~~The dungeon: La Ciudadela del Sol (Machu Picchu-style citadel) at the end of the forest path~~ ✅
+- ~~10 boss floors, one every 5 levels, each needs the level and the floor below~~ ✅
+- ~~Villains / bosses: Guardián de Piedra, Reina Araña, Rey Trol, Brujo de la Niebla, Rey de Hielo, Serpiente Emplumada, Gigante de Lava, Bruja del Espejo, Caballero Sin Nombre, Rey Demonio~~ ✅
+- ~~Showdown-style battles: Atacar / Hechizo / Defender / Comer / Huir; moves work only if you answer the Spanish question~~ ✅
+- ~~No hints or translations in battles~~ ✅
+- ~~Bosses give Lexa and Combat XP~~ ✅
+- ~~Hold the left button (a moment) to read something, instead of a plain click~~ ✅
+- ~~More space between the neighbour's house, the music shop and the bakery~~ ✅
+- ~~Nicer dog and cat sprites~~ ✅
+- ~~Farm and chicken-yard gates you can open and close; you can walk between the crops~~ ✅
+- ~~Finished design notes are marked ✅ DONE in their headings~~ ✅

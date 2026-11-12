@@ -38,7 +38,7 @@ All keys can be changed in **Esc → Opciones**.
 | U | Profile: equipment, stats, skills |
 | L | Lessons: choose topic and level |
 | M | Big map (or click the minimap) |
-| Left click | Read the Spanish name of anything (click the sign to close it); click a shop's menu board to shop |
+| Hold left click (a moment) | Read the Spanish name of anything (click the sign to close it); a shop's menu board opens the shop |
 | Right click | Attack animals / chop trees (cursor becomes a fist); on a door: go in |
 | Mouse wheel | Zoom in / out |
 | Esc | Menu: Resume, Options (keys, music volume), Exit Game |
@@ -306,8 +306,39 @@ Equip from the bag; take off by clicking the slot in the profile. Hat/helmet and
 
 (Numbers are defence · price.) Upgrades, durability and repairs are not built yet.
 
+## The dungeon: La Ciudadela del Sol
+
+A Machu Picchu-style stone citadel at the end of the forest path (east, across the bridge).
+Press E at the doorway to see the ten floors. Each floor needs a character level and the floor below
+it beaten. Battles are turn-based: pick a move, then answer the Spanish question within 12 seconds
+(keys 1–4 work). **No translations or hints.** Wrong or late = the move fails. Then the boss strikes
+(armour softens it). Lose = 10% of your Lexa and you leave with half HP.
+
+| Move | Effect |
+|---|---|
+| Atacar | Weapon damage × 2 + level ÷ 2 + a little luck |
+| Hechizo | Double attack damage, costs 5 mana |
+| Defender | Halves the boss's next hit, +3 HP |
+| Comer | Eat your best food (no question): heals half its value |
+| Huir | Leave the battle |
+
+| Floor | Level | Boss | HP | Hits for | Tests | Reward |
+|---|---|---|---|---|---|---|
+| 1 | 5 | El Guardián de Piedra | 58 | 4 | Basic words | 60 Lexa |
+| 2 | 10 | La Reina Araña | 86 | 6 | Food and animals | 120 |
+| 3 | 15 | El Rey Trol | 114 | 8 | Ser or estar | 180 |
+| 4 | 20 | El Brujo de la Niebla | 142 | 10 | Questions and replies | 240 |
+| 5 | 25 | El Rey de Hielo | 170 | 12 | Past tense | 300 |
+| 6 | 30 | La Serpiente Emplumada | 198 | 14 | Future tense | 360 |
+| 7 | 35 | El Gigante de Lava | 226 | 16 | Which sentence is in the right order | 420 |
+| 8 | 40 | La Bruja del Espejo | 254 | 18 | English sentence → Spanish | 480 |
+| 9 | 45 | El Caballero Sin Nombre | 282 | 20 | Everything | 540 |
+| 10 | 50 | El Rey Demonio | 310 | 22 | Everything (final) | 600 |
+
+Bosses also give Combat XP (40 × floor).
+
 ## Not built yet
 
-Quests, dungeons, bosses, villains, a story, magic spells, the gym and strength, gear upgrades,
+Quests, a story, magic spells, the gym and strength, gear upgrades,
 durability, repairs and enchanting, music in battle, conversations, and Spanish voice recordings.
 These are all in [PLANNER.md](PLANNER.md).

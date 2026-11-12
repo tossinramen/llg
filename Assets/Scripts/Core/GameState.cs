@@ -31,6 +31,7 @@ namespace LLG
         public string lessonCategory = "";                      // the chosen lesson topic ("" = all)
         public int lessonLevel = 1;                             // 1 Principiante ... 5 Experto
         public List<PlotState> plots = new List<PlotState>();   // your vegetable patch
+        public int dungeonFloor;                                // highest dungeon floor beaten
     }
 
     /// <summary>The running game: the save data, the loaded language, inventory and helper actions.</summary>

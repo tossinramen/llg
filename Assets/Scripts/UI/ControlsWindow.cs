@@ -40,7 +40,7 @@ namespace LLG
                 (Keybinds.KeyName(GameAction.Profile), "Perfil y habilidades", "Profile and skills"),
                 (Keybinds.KeyName(GameAction.Lessons), "Lecciones (tema y nivel)", "Lessons (topic and level)"),
                 (Keybinds.KeyName(GameAction.Map), "Mapa grande (o clic en el minimapa)", "Big map (or click the minimap)"),
-                ("Clic izq.", "Leer el nombre de algo", "Read what something is called"),
+                ("Mantén clic izq.", "Leer el nombre de algo", "Hold left click: read what something is called"),
                 ("Clic der.", "Atacar animales / cortar árboles", "Attack animals / chop trees"),
                 ("Rueda", "Acercar y alejar la cámara", "Zoom the camera in and out"),
                 ("Esc", "Menú (opciones, salir)", "Menu (options, exit)"),

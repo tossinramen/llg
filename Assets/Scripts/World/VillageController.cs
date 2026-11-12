@@ -46,6 +46,8 @@ namespace LLG
         LessonsWindow lessons;
         MapWindow mapWindow;
         MusicGame music;
+        DungeonWindow dungeon;
+        BattleWindow battle;
         WateringWindow watering;
         Farm farm;
         IntrusoGame intruso;
@@ -68,13 +70,15 @@ namespace LLG
         Portal pendingPortal;
         int closedFrame = -1;
         float hungerTimer, manaTimer, attackCooldown, autosaveTimer, fadeTimer = -1, portalCooldown, eggTimer;
-        bool fistCursor;
+        bool fistCursor, holdRead;
+        float holdStart = -1;
+        const float ReadHold = 0.35f;      // how long to hold the left button to read something
         Texture2D cursorNormal, cursorFist;
 
         /// <summary>True while a window that needs your full attention is open (talking, shopping,
         /// a minigame, the menu). The bag, profile, lessons and controls windows let you keep walking.</summary>
         public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || intruso.Open || menu.Open
-                            || music.Open || watering.Open
+                            || music.Open || watering.Open || dungeon.Open || battle.Open
                             || fadeTimer >= 0 || closedFrame == Time.frameCount;
 
         /// <summary>Windows call this when they close, so the key that closed them does not also trigger something.</summary>
@@ -126,6 +130,8 @@ namespace LLG
             archery = Add<ArcheryGame>(); archery.Build(canvas, this);
             fishing = Add<FishingGame>(); fishing.Build(canvas, this);
             music = Add<MusicGame>(); music.Build(canvas, this);
+            battle = Add<BattleWindow>(); battle.Build(canvas, this);
+            dungeon = Add<DungeonWindow>(); dungeon.Build(canvas, this, battle);
             watering = Add<WateringWindow>(); watering.Build(canvas, this);
             farm = Add<Farm>(); farm.Build(Map, world, watering);
             options = Add<OptionsWindow>(); options.Build(canvas);
@@ -282,7 +288,7 @@ namespace LLG
                 { 'B', "Art/Icons/food_bread" }, { 'C', "Art/Icons/food_candy" }, { 'S', "Art/Icons/item_rod" },
                 { 'W', "Art/Icons/item_sword" }, { 'M', "Art/Icons/pet_dog" }, { 'H', "Art/UI/hp_heart" },
                 { '^', "Art/Icons/gear_helmet" }, { 'n', "Art/UI/page" }, { 'o', "Art/Icons/food_egg" },
-                { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" },
+                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" },
             };
             var list = new List<(Vector2Int, string)>();
             foreach (var kv in icons)
@@ -372,7 +378,16 @@ namespace LLG
             else if (Input.GetMouseButtonDown(1) && !overUI)
                 RightClick(mouse);
             else if (Input.GetMouseButtonDown(0) && !overUI)
+            {
+                holdStart = Time.time;
+                holdRead = false;
+            }
+            if (Input.GetMouseButton(0) && holdStart >= 0 && !holdRead && Time.time - holdStart >= ReadHold)
+            {
+                holdRead = true;
                 Read(mouse);
+            }
+            if (Input.GetMouseButtonUp(0)) holdStart = -1;
         }
 
         void OpenMenu()
@@ -520,6 +535,9 @@ namespace LLG
                 case ')': return "Entrar en la tienda de música";
                 case '\'': return "Entrar en la escuela de música";
                 case 'ñ': return "Tocar el piano";
+                case 'Ð': return "Entrar en la Ciudadela del Sol";
+                case 'ç': return "Abrir la puerta";
+                case 'Ç': return "Cerrar la puerta";
                 case '+': return farm.Describe(player.FacingTile);
                 case 'D': return "Llamar a la puerta";
                 case 'I': case '<': case '>': return "Abrir la puerta";
@@ -587,6 +605,9 @@ namespace LLG
                 case 'n': lessons.Toggle(); break;
                 case '+': farm.Use(tile); break;
                 case 'ñ': music.Begin(true); break;
+                case 'Ð': dungeon.Toggle(); break;
+                case 'ç':
+                case 'Ç': ToggleGate(tile); break;
                 case 'g': dialogue.Show("", "Al este: el bosque. ¡Cuidado con los lobos!", "East: the forest. Beware of the wolves!"); break;
                 case 'l': dialogue.Show("", "El agua del pozo está muy fría.", "The water in the well is very cold."); break;
                 case 'y': dialogue.Show("", "El molino muele el trigo para hacer harina.", "The windmill grinds wheat into flour."); break;
@@ -610,6 +631,21 @@ namespace LLG
         }
 
         public void StartIntruso() => intruso.Begin();
+
+        /// <summary>Opens or closes a fence gate (like a Minecraft fence gate). It won't close on you.</summary>
+        void ToggleGate(Vector2Int tile)
+        {
+            bool open = Map.At(tile) == 'ç';
+            if (!open && VillageMap.TileAt(player.transform.position) == tile) return;
+            Map.Set(tile, open ? 'Ç' : 'ç');
+            foreach (var c in clickable)
+            {
+                if (c.Tile != tile || (c.letter != 'ç' && c.letter != 'Ç')) continue;
+                c.letter = open ? 'Ç' : 'ç';
+                c.renderer.sprite = UIFactory.LoadSprite("Art/World/Objects/" + (open ? "gate_open" : "gate_closed"));
+            }
+            GameState.Say(open ? "Abres la puerta." : "Cierras la puerta.");
+        }
 
         /// <summary>Shows a one-line message from someone (or from the game when "who" is empty).</summary>
         public void SayLine(string who, string spanish, string english) => dialogue.Show(who, spanish, english);

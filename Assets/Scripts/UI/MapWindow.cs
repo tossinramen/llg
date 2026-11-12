@@ -16,7 +16,7 @@ namespace LLG
             ("La plaza", "Town Square", 46, 31), ("La granja", "Farm", 18, 33), ("El bosque", "Forest", 97, 44),
             ("El estanque", "Pond", 58, 57), ("El río", "River", 80, 62), ("El campo de tiro", "Archery Range", 66, 3),
             ("El molino", "Windmill", 8, 5), ("La viña", "Vineyard", 71, 58), ("El olivar", "Olive Grove", 18, 60),
-            ("El puente", "Bridge", 81, 26),
+            ("El puente", "Bridge", 81, 26), ("La Ciudadela del Sol", "Citadel of the Sun", 100, 10),
         };
         // label offset from the door, in tiles: neighbours alternate above / below so names don't overlap
         static readonly (char door, string es, string en, int dy)[] Buildings =
