@@ -18,7 +18,8 @@ namespace LLG
         public int mana = 10;
         public int maxHunger = 100;
         public int hunger = 100;
-        public int coins;
+        public int coins;          // shown in game as GameConfig.CurrencyName
+        public int intelligence;   // +1 per book: +1 max mana and +5% XP each
 
         public event Action Changed;
 

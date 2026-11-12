@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace LLG
@@ -9,15 +8,11 @@ namespace LLG
     /// <summary>
     /// The title screen + character creator. It builds its whole UI from code when you press Play,
     /// so the scene looks empty in the editor until then - that is expected.
+    /// Pressing Start saves the profile and opens the village.
     /// </summary>
     public class StartScreenController : MonoBehaviour
     {
-        static readonly Color PanelColor = new Color(0.10f, 0.12f, 0.26f, 0.85f);
-        static readonly Color ButtonColor = new Color32(70, 96, 190, 255);
-        static readonly Color AccentColor = new Color32(240, 170, 60, 255);
-        static readonly Color TextColor = new Color32(245, 240, 225, 255);
-
-        const float LabelX = 0, ValueX = 175;
+        const float LabelX = -18, ValueX = 190;
 
         PlayerProfile profile;
         CharacterPreview preview;
@@ -29,6 +24,7 @@ namespace LLG
         float taglineTimer;
         readonly List<Action> refreshers = new List<Action>();
         readonly List<RectTransform> clouds = new List<RectTransform>();
+        readonly List<Image> sparkles = new List<Image>();
         readonly List<Image> genderButtons = new List<Image>();
         readonly List<string> taglines = new List<string>();
 
@@ -40,7 +36,7 @@ namespace LLG
             taglines.Add(GameConfig.EnglishTagline);
             foreach (var language in GameConfig.Languages) taglines.Add(language.Tagline);
 
-            BuildCanvas();
+            root = UIFactory.Canvas("StartScreenCanvas", 0);
             BuildBackground();
             BuildTitle();
             BuildCharacterPanel();
@@ -49,20 +45,6 @@ namespace LLG
         }
 
         // ------------------------------------------------------------ building
-
-        void BuildCanvas()
-        {
-            if (FindObjectOfType<EventSystem>() == null)
-                new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
-
-            var go = new GameObject("Canvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
-            go.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
-            var scaler = go.GetComponent<CanvasScaler>();
-            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-            scaler.referenceResolution = new Vector2(640, 360);
-            scaler.matchWidthOrHeight = 0.5f;
-            root = go.transform;
-        }
 
         void BuildBackground()
         {
@@ -73,79 +55,98 @@ namespace LLG
             fitter.aspectRatio = 16f / 9f;
 
             var cloud = UIFactory.LoadSprite("Art/UI/cloud");
-            var spots = new[] { new Vector3(-250, 150, 2f), new Vector3(-20, 105, 1.5f), new Vector3(210, 135, 2.5f) };
+            var spots = new[] { new Vector3(-250, 96, 2f), new Vector3(-40, 172, 1.5f), new Vector3(190, 100, 2f) };
             foreach (var spot in spots)
             {
-                var img = UIFactory.Img("Cloud", root, spot, new Vector2(48, 16) * spot.z, new Color(1, 1, 1, 0.9f), cloud);
+                var img = UIFactory.Img("Cloud", root, spot, new Vector2(48, 16) * spot.z, new Color(1, 1, 1, 0.95f), cloud);
                 clouds.Add(img.rectTransform);
             }
         }
 
         void BuildTitle()
         {
-            var title = UIFactory.Label("Title", root, new Vector2(0, 152), new Vector2(600, 40), GameConfig.Title, 32, TextColor);
-            title.fontStyle = FontStyle.Bold;
-            Shadow(title.gameObject, 2);
-            tagline = UIFactory.Label("Tagline", root, new Vector2(0, 126), new Vector2(600, 20), taglines[0], 14, TextColor);
-            Shadow(tagline.gameObject, 1);
+            // twinkling runes and sparkles behind the title
+            string[] shapes = { "rune0", "rune1", "rune2", "sparkle", "sparkle" };
+            Color[] tints = { UIFactory.Gold, UIFactory.Pink, UIFactory.Teal, Color.white, UIFactory.Purple, UIFactory.Blue };
+            var random = new System.Random(5);
+            for (int i = 0; i < 18; i++)
+            {
+                var sprite = UIFactory.LoadSprite("Art/UI/" + shapes[i % shapes.Length]);
+                if (sprite == null) continue;
+                var pos = new Vector2(random.Next(-300, 300), random.Next(104, 174));
+                var size = new Vector2(sprite.rect.width, sprite.rect.height) * 2;
+                sparkles.Add(UIFactory.Img("Sparkle", root, pos, size, tints[i % tints.Length], sprite));
+            }
+
+            var title = UIFactory.Label("Title", root, new Vector2(0, 146), new Vector2(620, 40), GameConfig.Title,
+                UIFactory.Gold, TextAnchor.MiddleCenter, 32, true);
+            UIFactory.Outline(title, 2);
+            var shadow = title.gameObject.AddComponent<Shadow>();
+            shadow.effectColor = new Color32(150, 60, 140, 255);
+            shadow.effectDistance = new Vector2(0, -5);
+
+            tagline = UIFactory.Label("Tagline", root, new Vector2(0, 114), new Vector2(620, 20), taglines[0], Color.white);
+            UIFactory.Outline(tagline);
         }
 
         void BuildCharacterPanel()
         {
-            UIFactory.Img("CharacterPanel", root, new Vector2(-195, -15), new Vector2(180, 250), PanelColor);
+            UIFactory.Panel("CharacterPanel", root, new Vector2(-205, -12), new Vector2(196, 226));
+            UIFactory.Box("Stage", root, new Vector2(-205, 18), new Vector2(150, 150), new Color32(170, 226, 250, 255));
 
-            var holder = UIFactory.Rect("CharacterPreview", root, new Vector2(-195, 20), new Vector2(96, 144));
+            var holder = UIFactory.Rect("CharacterPreview", root, new Vector2(-205, 18), new Vector2(96, 144));
             preview = holder.gameObject.AddComponent<CharacterPreview>();
             preview.Build(new Vector2(96, 144));
 
-            UIFactory.Btn("TurnLeft", root, new Vector2(-240, -80), new Vector2(60, 22), "< Turn", ButtonColor, () => preview.Turn(-1), 12);
-            UIFactory.Btn("TurnRight", root, new Vector2(-150, -80), new Vector2(60, 22), "Turn >", ButtonColor, () => preview.Turn(1), 12);
-            UIFactory.Btn("Randomize", root, new Vector2(-195, -112), new Vector2(150, 22), "Randomize", ButtonColor, Randomize, 12);
+            UIFactory.Btn("TurnLeft", root, new Vector2(-250, -72), new Vector2(82, 24), "< Turn", UIFactory.Purple, () => preview.Turn(-1));
+            UIFactory.Btn("TurnRight", root, new Vector2(-160, -72), new Vector2(82, 24), "Turn >", UIFactory.Purple, () => preview.Turn(1));
+            UIFactory.Btn("Randomize", root, new Vector2(-205, -100), new Vector2(172, 24), "Randomize", UIFactory.Pink, Randomize);
+
+            startButton = UIFactory.Btn("StartButton", root, new Vector2(-205, -152), new Vector2(196, 34), "Start Adventure", UIFactory.Green, StartGame);
         }
 
         void BuildOptionsPanel()
         {
-            UIFactory.Img("OptionsPanel", root, new Vector2(115, -15), new Vector2(390, 250), PanelColor);
+            UIFactory.Panel("OptionsPanel", root, new Vector2(110, -22), new Vector2(404, 250));
             var look = profile.appearance;
 
-            RowLabel("Name", 90);
-            nameInput = UIFactory.Input("NameInput", root, new Vector2(ValueX, 90), new Vector2(170, 22), "Your name");
+            RowLabel("Name", 76);
+            nameInput = UIFactory.Input("NameInput", root, new Vector2(ValueX, 76), new Vector2(180, 24), "Your name");
             nameInput.characterLimit = 12;
             nameInput.text = profile.playerName;
 
-            RowLabel("Gender", 60);
+            RowLabel("Gender", 48);
             string[] icons = { "gender_male", "gender_female", "gender_nonbinary" };
             for (int i = 0; i < icons.Length; i++)
             {
                 var gender = (Gender)i;
-                var button = UIFactory.Btn("Gender" + gender, root, new Vector2(ValueX - 40 + i * 40, 60), new Vector2(26, 26), "",
-                    ButtonColor, () => { profile.gender = gender; RefreshAll(); });
+                var button = UIFactory.Btn("Gender" + gender, root, new Vector2(ValueX - 44 + i * 44, 48), new Vector2(34, 26), "",
+                    UIFactory.Blue, () => { profile.gender = gender; RefreshAll(); });
                 UIFactory.Img("Icon", button.transform, Vector2.zero, new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/" + icons[i]));
                 genderButtons.Add(button.GetComponent<Image>());
             }
 
-            ColorRow("Skin", 30, AppearancePalette.Skin, () => look.skin, v => look.skin = v);
-            CycleRow("Hair style", 0, AppearancePalette.HairStyles.Length, () => look.hairStyle, v => look.hairStyle = v,
-                (swatch, text) => { swatch.color = ButtonColor; text.text = AppearancePalette.HairStyles[look.hairStyle]; });
-            ColorRow("Hair color", -30, AppearancePalette.Hair, () => look.hairColor, v => look.hairColor = v);
-            ColorRow("Shirt", -60, AppearancePalette.Shirt, () => look.shirt, v => look.shirt = v);
-            ColorRow("Pants", -90, AppearancePalette.Pants, () => look.pants, v => look.pants = v);
+            ColorRow("Skin", 20, AppearancePalette.Skin, () => look.skin, v => look.skin = v);
+            CycleRow("Hair style", -8, AppearancePalette.HairStyles.Length, () => look.hairStyle, v => look.hairStyle = v,
+                (swatch, text) => { swatch.color = UIFactory.Purple; text.text = AppearancePalette.HairStyles[look.hairStyle]; });
+            ColorRow("Hair color", -36, AppearancePalette.Hair, () => look.hairColor, v => look.hairColor = v);
+            ColorRow("Shirt", -64, AppearancePalette.Shirt, () => look.shirt, v => look.shirt = v);
+            ColorRow("Pants", -92, AppearancePalette.Pants, () => look.pants, v => look.pants = v);
             CycleRow("Language", -120, GameConfig.Languages.Length, () => languageIndex, v => languageIndex = v,
                 (swatch, text) =>
                 {
                     var language = GameConfig.Languages[languageIndex];
-                    swatch.color = ButtonColor;
-                    text.text = language.Available ? language.NativeName : language.NativeName + " (soon)";
+                    swatch.color = language.Available ? UIFactory.Green : UIFactory.Faded;
+                    text.text = language.NativeName;
                 });
 
-            startButton = UIFactory.Btn("StartButton", root, new Vector2(115, -160), new Vector2(160, 28), "Start Adventure", AccentColor, StartGame, 15);
-            status = UIFactory.Label("Status", root, new Vector2(-195, -160), new Vector2(190, 28), "", 12, TextColor);
-            Shadow(status.gameObject, 1);
+            status = UIFactory.Label("Status", root, new Vector2(110, -162), new Vector2(404, 20), "", Color.white);
+            UIFactory.Outline(status);
         }
 
         void RowLabel(string text, float y)
         {
-            UIFactory.Label(text + "Label", root, new Vector2(LabelX, y), new Vector2(110, 22), text, 14, TextColor, TextAnchor.MiddleLeft);
+            UIFactory.Label(text + "Label", root, new Vector2(LabelX, y), new Vector2(110, 22), text, UIFactory.Ink, TextAnchor.MiddleLeft);
         }
 
         void ColorRow(string label, float y, Color32[] palette, Func<int> get, Action<int> set)
@@ -160,19 +161,13 @@ namespace LLG
         void CycleRow(string label, float y, int count, Func<int> get, Action<int> set, Action<Image, Text> show)
         {
             RowLabel(label, y);
-            var swatch = UIFactory.Img(label + "Value", root, new Vector2(ValueX, y), new Vector2(110, 20), Color.white);
-            var text = UIFactory.Label("Text", swatch.transform, Vector2.zero, new Vector2(110, 20), "", 13, Color.white);
+            var swatch = UIFactory.Box(label + "Value", root, new Vector2(ValueX, y), new Vector2(120, 24), Color.white);
+            var text = UIFactory.Label("Text", swatch.transform, new Vector2(0, 1), new Vector2(120, 24), "", Color.white);
+            UIFactory.Outline(text);
             Action<int> step = delta => { set(((get() + delta) % count + count) % count); RefreshAll(); };
-            UIFactory.Btn(label + "Prev", root, new Vector2(ValueX - 73, y), new Vector2(24, 22), "<", ButtonColor, () => step(-1));
-            UIFactory.Btn(label + "Next", root, new Vector2(ValueX + 73, y), new Vector2(24, 22), ">", ButtonColor, () => step(1));
+            UIFactory.Btn(label + "Prev", root, new Vector2(ValueX - 78, y), new Vector2(26, 24), "<", UIFactory.Teal, () => step(-1));
+            UIFactory.Btn(label + "Next", root, new Vector2(ValueX + 78, y), new Vector2(26, 24), ">", UIFactory.Teal, () => step(1));
             refreshers.Add(() => show(swatch, text));
-        }
-
-        static void Shadow(GameObject go, float distance)
-        {
-            var shadow = go.AddComponent<Shadow>();
-            shadow.effectColor = new Color(0.1f, 0.1f, 0.2f, 0.8f);
-            shadow.effectDistance = new Vector2(distance, -distance);
         }
 
         // ------------------------------------------------------------ behaviour
@@ -181,7 +176,7 @@ namespace LLG
         {
             foreach (var refresh in refreshers) refresh();
             for (int i = 0; i < genderButtons.Count; i++)
-                genderButtons[i].color = (int)profile.gender == i ? AccentColor : ButtonColor;
+                genderButtons[i].color = (int)profile.gender == i ? UIFactory.Gold : UIFactory.Blue;
             preview.Show(profile.appearance);
 
             bool available = GameConfig.Languages[languageIndex].Available;
@@ -200,7 +195,7 @@ namespace LLG
             RefreshAll();
         }
 
-        void StartGame()
+        public void StartGame()
         {
             string playerName = nameInput.text.Trim();
             if (playerName.Length == 0)
@@ -212,20 +207,27 @@ namespace LLG
             profile.languageCode = GameConfig.Languages[languageIndex].Code;
             profile.Save();
 
-            var pack = LanguageDatabase.Load(profile.languageCode);
-            status.text = "Saved! Welcome, " + playerName + ".\n" + pack.words.Count + " words loaded.";
-            Debug.Log("Profile saved. TODO: load the first village scene here (Docs/05_TODO.md, phase 2).");
+            // swap the start screen for the village
+            Destroy(root.gameObject);
+            Destroy(gameObject);
+            new GameObject("Village").AddComponent<VillageController>();
         }
 
         void Update()
         {
-            // drifting clouds
             foreach (var cloud in clouds)
             {
                 var pos = cloud.anchoredPosition;
                 pos.x += cloud.sizeDelta.x * 0.04f * Time.deltaTime;
                 if (pos.x > 420) pos.x = -420;
                 cloud.anchoredPosition = pos;
+            }
+
+            for (int i = 0; i < sparkles.Count; i++)
+            {
+                var color = sparkles[i].color;
+                color.a = 0.25f + 0.75f * Mathf.Abs(Mathf.Sin(Time.time * (0.8f + i % 4 * 0.3f) + i));
+                sparkles[i].color = color;
             }
 
             // tagline fades between English and each supported language
@@ -237,10 +239,9 @@ namespace LLG
                 taglineIndex = (taglineIndex + 1) % taglines.Count;
                 tagline.text = taglines[taglineIndex];
             }
-            float alpha = Mathf.Clamp01(Mathf.Min(taglineTimer, period - taglineTimer) / fade);
-            var color = tagline.color;
-            color.a = alpha;
-            tagline.color = color;
+            var tint = tagline.color;
+            tint.a = Mathf.Clamp01(Mathf.Min(taglineTimer, period - taglineTimer) / fade);
+            tagline.color = tint;
         }
     }
 }

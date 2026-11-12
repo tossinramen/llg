@@ -9,7 +9,7 @@ namespace LLG
         // language skills
         Vocabulary, Grammar, Reading, Listening, Spelling, Conversation,
         // life skills
-        Cooking, Fishing, Farming, Trading, Crafting, Exploration, Magic,
+        Cooking, Fishing, Farming, Trading, Crafting, Exploration, Magic, Archery,
     }
 
     [Serializable]

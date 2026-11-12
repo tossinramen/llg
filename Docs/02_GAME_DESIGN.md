@@ -44,7 +44,9 @@ words and longer sentences.
 | **HP** | Your health. At 0 you wake up at the inn and lose a few coins. | Wrong answers in *risky* activities (combat, timed fishing, dangerous areas) | Eating, sleeping, potions |
 | **Mana** | Powers **hints and spells**. | Using a hint: reveal a letter, remove two wrong answers, slow the timer, show the translation | Sleeping, the daily word review, mana potions |
 | **Hunger** | Slowly drains while you play. Low hunger = XP penalty; empty = HP drains. | Time, running | Eating food (see activity 1) |
-| **Coins** | Money. | Shops | Most activities |
+| **Verba** | The magical currency (words made solid). Buys food, rods, weapons and books now; pets, clothing and house upgrades later. | Shops, fainting | Most activities |
+| **Intelligence** | Each book bought adds +1: +1 max mana and +5% skill XP. | – | Books from the store |
+| **Attack** | Set by your best weapon (knife 1, dagger 2, bow 3, sword 5). Used by combat later. | – | Weapons from the store |
 
 Mana as "hint fuel" is the important design choice: it lets a struggling player get help
 without the game simply giving answers away for free.
@@ -140,7 +142,33 @@ Every 10 levels in a skill unlocks the next word tier (tier 1 = most common word
   characters, an optional reading aid (romaji / romanisation toggle), and sentence tiles that
   are split by a list in the data rather than by spaces.
 
-## 10. World outline (first version)
+## 10. The village (built)
+
+The game starts here after the start screen. Everything is labelled in Spanish.
+
+| Place | What happens |
+|---|---|
+| **Panadería** (bakery) | Buy bread, croissants, cake. Food is eaten straight away and refills hunger. |
+| **Dulcería** (candy shop) | Buy candy, lollipops, cookies, chocolate. Cheap, small hunger refills. |
+| **Tienda** (store) | Fishing rod, magic rod (more time when fishing), knife, dagger, bow (more time in archery), sword, books (+intelligence). |
+| **Pond** | Face the water and press E to fish. Needs a rod. |
+| **Archery range** | Talk to Don Felipe or face a target. Shoot the target showing the right word. |
+| **Rune stone** (plaza) | Touch it to refill mana. |
+| **Your house** | Placeholder for house upgrades later. |
+
+Villagers (each speaks Spanish with the English shown underneath):
+
+- **Abuela Rosa** – welcomes you, talks about the bakery and eating.
+- **Mateo** the fisherman – explains you need a rod from the store.
+- **Luna** – a child who loves candy and the colour pink.
+- **Don Felipe** – the archery master; talking to him starts archery.
+- **Sabia** – the rune sage; explains runes and Verba.
+
+Rules currently in the game: hunger drops 1 every 8 seconds (at 0 you walk slowly); mana
+returns 1 every 20 seconds; a wrong sentence or an escaped fish costs 1 HP; at 0 HP you faint,
+wake in the plaza and lose 10% of your Verba; hints cost 2 mana.
+
+## 11. World outline (later areas)
 
 - **The town** – inn (sleep/review), market (shopping, picture jobs), bakery (food), library (scribe).
 - **The river** – fishing, a broken bridge (first sentence-building obstacle).

@@ -1,21 +1,73 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace LLG
 {
     /// <summary>Small helpers for building UI from code. Positions are measured from the screen centre
-    /// on a 640x360 canvas (x: -320..320, y: -180..180).</summary>
+    /// on a 640x360 canvas (x: -320..320, y: -180..180). One art pixel = 2 canvas units.</summary>
     public static class UIFactory
     {
-        static Font font;
-        public static Font Font => font ??= Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        public static readonly Color Ink = new Color32(40, 30, 50, 255);
+        public static readonly Color Faded = new Color32(130, 110, 100, 255);
+        public static readonly Color Green = new Color32(96, 196, 96, 255);
+        public static readonly Color Teal = new Color32(64, 190, 178, 255);
+        public static readonly Color Pink = new Color32(244, 120, 170, 255);
+        public static readonly Color Purple = new Color32(156, 118, 236, 255);
+        public static readonly Color Gold = new Color32(250, 196, 64, 255);
+        public static readonly Color Blue = new Color32(100, 168, 244, 255);
+        public static readonly Color Red = new Color32(236, 96, 96, 255);
+
+        static Font titleFont, bodyFont;
+        static readonly Dictionary<string, Sprite> Sprites = new Dictionary<string, Sprite>();
+
+        static Font Builtin => Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        /// <summary>Chunky 8-pixel font for the title and headings. Use sizes 8, 16, 24, 32.</summary>
+        public static Font TitleFont => titleFont ??= Resources.Load<Font>("Fonts/PressStart2P-Regular") ?? Builtin;
+        /// <summary>Readable 16-pixel font for everything else. Use sizes 16 or 32.</summary>
+        public static Font BodyFont => bodyFont ??= Resources.Load<Font>("Fonts/DotGothic16-Regular") ?? Builtin;
 
         public static Sprite LoadSprite(string path)
         {
+            if (Sprites.TryGetValue(path, out var cached) && cached != null) return cached;
             var sprite = Resources.Load<Sprite>(path);
             if (sprite == null) Debug.LogWarning("Missing sprite: Resources/" + path);
+            Sprites[path] = sprite;
             return sprite;
+        }
+
+        /// <summary>A sprite whose corners stay sharp when stretched (for panels and buttons).</summary>
+        public static Sprite Sliced(string path, int border)
+        {
+            string key = path + "#sliced";
+            if (Sprites.TryGetValue(key, out var cached) && cached != null) return cached;
+            var tex = Resources.Load<Texture2D>(path);
+            if (tex == null) { Debug.LogWarning("Missing texture: Resources/" + path); return null; }
+            var sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f), 16, 0,
+                SpriteMeshType.FullRect, Vector4.one * border);
+            Sprites[key] = sprite;
+            return sprite;
+        }
+
+        public static Transform Canvas(string name, int order)
+        {
+            if (UnityEngine.Object.FindObjectOfType<EventSystem>() == null)
+                new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));
+
+            var go = new GameObject(name, typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
+            var canvas = go.GetComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            canvas.worldCamera = Camera.main;
+            canvas.planeDistance = 1;
+            canvas.sortingOrder = 20000 + order;
+            var scaler = go.GetComponent<CanvasScaler>();
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(640, 360);
+            scaler.matchWidthOrHeight = 0.5f;
+            scaler.referencePixelsPerUnit = 32;
+            return go.transform;
         }
 
         public static RectTransform Rect(string name, Transform parent, Vector2 pos, Vector2 size)
@@ -37,11 +89,28 @@ namespace LLG
             return img;
         }
 
-        public static Text Label(string name, Transform parent, Vector2 pos, Vector2 size, string text,
-            int fontSize, Color color, TextAnchor anchor = TextAnchor.MiddleCenter)
+        /// <summary>Parchment panel with a wooden frame.</summary>
+        public static Image Panel(string name, Transform parent, Vector2 pos, Vector2 size)
+        {
+            var img = Img(name, parent, pos, size, Color.white, Sliced("Art/UI/panel", 6));
+            img.type = Image.Type.Sliced;
+            img.raycastTarget = true;      // clicks on a window should not fall through to the game
+            return img;
+        }
+
+        /// <summary>Rounded box tinted any colour (used for buttons and colour swatches).</summary>
+        public static Image Box(string name, Transform parent, Vector2 pos, Vector2 size, Color color)
+        {
+            var img = Img(name, parent, pos, size, color, Sliced("Art/UI/button", 5));
+            img.type = Image.Type.Sliced;
+            return img;
+        }
+
+        public static Text Label(string name, Transform parent, Vector2 pos, Vector2 size, string text, Color color,
+            TextAnchor anchor = TextAnchor.MiddleCenter, int fontSize = 16, bool title = false)
         {
             var label = Rect(name, parent, pos, size).gameObject.AddComponent<Text>();
-            label.font = Font;
+            label.font = title ? TitleFont : BodyFont;
             label.text = text;
             label.fontSize = fontSize;
             label.color = color;
@@ -52,29 +121,37 @@ namespace LLG
             return label;
         }
 
-        public static Button Btn(string name, Transform parent, Vector2 pos, Vector2 size, string text,
-            Color color, Action onClick, int fontSize = 14)
+        public static void Outline(Graphic graphic, float distance = 1)
         {
-            var img = Img(name, parent, pos, size, color);
+            var outline = graphic.gameObject.AddComponent<Outline>();
+            outline.effectColor = Ink;
+            outline.effectDistance = new Vector2(distance, -distance);
+        }
+
+        public static Button Btn(string name, Transform parent, Vector2 pos, Vector2 size, string text, Color color, Action onClick)
+        {
+            var img = Box(name, parent, pos, size, color);
             img.raycastTarget = true;
             var button = img.gameObject.AddComponent<Button>();
             button.targetGraphic = img;
             button.onClick.AddListener(() => onClick());
             if (!string.IsNullOrEmpty(text))
-                Label("Label", img.transform, Vector2.zero, size, text, fontSize, Color.white);
+            {
+                var label = Label("Label", img.transform, new Vector2(0, 1), size, text, Color.white);
+                Outline(label);
+            }
             return button;
         }
 
         public static InputField Input(string name, Transform parent, Vector2 pos, Vector2 size, string placeholder)
         {
-            var bg = Img(name, parent, pos, size, Color.white);
+            var bg = Box(name, parent, pos, size, Color.white);
             bg.raycastTarget = true;
             var input = bg.gameObject.AddComponent<InputField>();
-            var inner = size - new Vector2(10, 2);
-            var text = Label("Text", bg.transform, Vector2.zero, inner, "", 14, new Color32(40, 30, 50, 255), TextAnchor.MiddleLeft);
+            var inner = size - new Vector2(14, 2);
+            var text = Label("Text", bg.transform, Vector2.zero, inner, "", Ink, TextAnchor.MiddleLeft);
             text.supportRichText = false;
-            var hint = Label("Placeholder", bg.transform, Vector2.zero, inner, placeholder, 14, new Color32(150, 150, 160, 255), TextAnchor.MiddleLeft);
-            hint.fontStyle = FontStyle.Italic;
+            var hint = Label("Placeholder", bg.transform, Vector2.zero, inner, placeholder, new Color32(170, 160, 170, 255), TextAnchor.MiddleLeft);
             input.targetGraphic = bg;
             input.textComponent = text;
             input.placeholder = hint;

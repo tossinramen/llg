@@ -9,6 +9,15 @@ namespace LLG.EditorTools
     /// </summary>
     public class PixelArtImporter : AssetPostprocessor
     {
+        public override uint GetVersion() => 2;
+
+        /// <summary>Pixel fonts under a "Fonts" folder are drawn without smoothing.</summary>
+        void OnPreprocessAsset()
+        {
+            if (assetImporter is TrueTypeFontImporter font && assetPath.Contains("/Fonts/"))
+                font.fontRenderingMode = FontRenderingMode.HintedRaster;
+        }
+
         void OnPreprocessTexture()
         {
             if (!assetPath.Contains("/Art/")) return;

@@ -18,10 +18,12 @@ namespace LLG
         }
     }
 
-    /// <summary>One place for values the whole game shares. Change the title here.</summary>
+    /// <summary>One place for values the whole game shares. Change the title or currency name here.</summary>
     public static class GameConfig
     {
-        public const string Title = "BABELBROOK";   // working title, see Docs/01_NAME_IDEAS.md
+        public const string Title = "RUNES OF SPEECH";
+        public const string CurrencyName = "Verba";          // the magical currency
+        public const int StartingCurrency = 60;
         public const string EnglishTagline = "A language-learning adventure";
 
         public static readonly LanguageInfo[] Languages =
