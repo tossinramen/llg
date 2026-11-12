@@ -121,7 +121,7 @@ namespace LLG
             {
                 var (item, count, bagIndex) = entries[i];
                 var pos = new Vector2(-198 + (i % Columns) * 132, top - (i / Columns) * 62);
-                bool once = item.kind != ItemKind.Food && item.kind != ItemKind.Book && item.kind != ItemKind.Material;
+                bool once = item.kind != ItemKind.Food && item.kind != ItemKind.Book && item.kind != ItemKind.Material && item.kind != ItemKind.Bait;
                 bool owned = !selling && once && GameState.Has(item.id);
                 bool locked = !selling && !owned && item.level > playerLevel;
                 int price = selling ? item.sellPrice : item.price;

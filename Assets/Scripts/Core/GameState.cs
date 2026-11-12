@@ -23,6 +23,7 @@ namespace LLG
         public List<string> equipped = new List<string>();     // one item id per EquipSlot ("" = empty)
         public string pet = "";                                 // the pet following you
         public int fishCaught;
+        public List<string> fishSeen = new List<string>();     // kinds of fish you have caught
         public bool hasPosition;                                // where the player was when they last saved
         public float posX, posY;
         public int facing;
@@ -80,6 +81,11 @@ namespace LLG
             {
                 Data.stats.coins = Mathf.Max(Data.stats.coins, 1000000);
                 Data.stats.gold = Mathf.Max(Data.stats.gold, 1000000);
+                if (Data.level < GameConfig.TestLevel) { Data.level = GameConfig.TestLevel; Data.xp = 0; }
+                Data.stats.maxHp = Mathf.Max(Data.stats.maxHp, 20 + 2 * (Data.level - 1));
+                Data.stats.hp = Data.stats.maxHp;
+                RecalculateStats();
+                Data.stats.mana = Data.stats.maxMana;
             }
 #pragma warning restore CS0162
             Data.skills.LeveledUp += (skill, level) => Say(skill + " → " + level);
@@ -196,7 +202,13 @@ namespace LLG
                     Changed();
                     break;
                 case ItemKind.Rod:
-                    Say("Usa la caña en el estanque. (Use it at the pond.)");
+                    Say("Usa la caña en el estanque o en el río. (Use it at the pond or the river.)");
+                    break;
+                case ItemKind.Bait:
+                    Say("Es cebo: elígelo en la pesca. (Bait: choose it when fishing.)");
+                    break;
+                case ItemKind.Tackle:
+                    Say("Con la red, a veces atrapas dos peces. (With the net you sometimes catch two.)");
                     break;
                 case ItemKind.Seed:
                     Say("Plántalas en tu huerto, al lado de tu casa. (Plant them in your patch next to your house.)");
@@ -264,7 +276,7 @@ namespace LLG
             int bonus = 0;
             foreach (var id in Data.equipped) bonus += ItemDatabase.Get(id)?.mana ?? 0;
             var stats = Data.stats;
-            stats.maxMana = 10 + stats.intelligence + bonus;
+            stats.maxMana = 10 + (Data.level - 1) + stats.intelligence + bonus;     // +1 per character level
             stats.RestoreMana(0);
         }
 
@@ -287,6 +299,8 @@ namespace LLG
                 Data.level++;
                 Data.stats.maxHp += 2;
                 Data.stats.Heal(Data.stats.maxHp);
+                RecalculateStats();
+                Data.stats.RestoreMana(Data.stats.maxMana);
                 Say("¡Subes al nivel " + Data.level + "!  (Level up!)");
             }
         }

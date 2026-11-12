@@ -26,6 +26,7 @@ namespace LLG
         public bool Walking { get; set; }
         public bool Running { get; set; }
         public bool Crouching { get; set; }
+        public bool Sitting { get; set; }        // on a bench: lifted onto the seat, facing you
         public bool Jumping => jumpTimer >= 0;
 
         public void Build(CharacterAppearance appearance, List<Accessory> worn = null)
@@ -102,13 +103,15 @@ namespace LLG
             }
 
             // crouching squashes the body down while keeping the feet on the ground
-            float squash = Crouching ? 0.8f : 1f;
-            float widen = Crouching ? 1.08f : 1f;
+            float squash = Crouching ? 0.8f : Sitting ? 0.84f : 1f;
+            float widen = Crouching ? 1.08f : Sitting ? 1.04f : 1f;
+            float seat = Sitting ? 0.34f : 0f;
             body.localScale = new Vector3((Facing == 3 ? -1 : 1) * widen, squash, 1);
-            body.localPosition = new Vector3(0, FeetOffset - (1 - squash) * FeetOffset + height, 0);
-            shadow.localScale = new Vector3(1.3f, 1.1f, 1) * (1 - height * 0.7f);
+            body.localPosition = new Vector3(0, FeetOffset - (1 - squash) * FeetOffset + height + seat, 0);
+            shadow.localScale = Sitting ? Vector3.zero : new Vector3(1.3f, 1.1f, 1) * (1 - height * 0.7f);
 
-            group.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);   // lower on screen = drawn in front
+            // lower on screen = drawn in front; sitting, you are drawn over the bench you sit on
+            group.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100) + (Sitting ? 80 : 0);
             if (flashTimer > 0)
             {
                 flashTimer -= Time.deltaTime;

@@ -670,16 +670,37 @@ def barrels():
 
 
 def bench():
-    img = Image.new("RGBA", (34, 20), (0, 0, 0, 0))
-    shadow_ellipse(img, 17, 17, 15, 3)
+    """A park bench seen from the front: a slatted backrest, a slatted seat, cast-iron legs and armrests."""
+    img = Image.new("RGBA", (36, 28), (0, 0, 0, 0))
+    shadow_ellipse(img, 18, 25, 17, 3)
     d = ImageDraw.Draw(img)
-    iron = (48, 42, 44)
-    for k in (3, 9):
-        d.rectangle([2, k, 31, k + 3], fill=rgba((150, 104, 66)), outline=rgba((92, 62, 40)))
-    d.rectangle([2, 12, 31, 14], fill=rgba((120, 82, 52)))
-    for lx in (4, 28):
-        d.rectangle([lx, 3, lx + 1, 17], fill=rgba(iron))
-    return img, (17, 17)
+    iron, iron_l = rgba((42, 38, 46)), rgba((92, 86, 100))
+    wood, wood_l, wood_d = rgba((170, 116, 70)), rgba((206, 156, 102)), rgba((104, 68, 42))
+    # back posts and a middle support behind the slats
+    for x in (4, 17, 30):
+        d.rectangle([x, 2, x + 1, 17], fill=iron)
+    # three backrest slats with a lit top edge
+    for y in (2, 6, 10):
+        d.rectangle([2, y, 33, y + 2], fill=wood, outline=wood_d)
+        d.line([3, y, 32, y], fill=wood_l)
+    # the seat: deeper slats seen from a little above, then the front edge
+    d.polygon([(1, 14), (34, 14), (35, 19), (0, 19)], fill=wood)
+    for y in (16, 18):
+        d.line([1, y, 34, y], fill=wood_d)
+    d.line([1, 14, 34, 14], fill=wood_l)
+    d.rectangle([0, 19, 35, 20], fill=wood_d)
+    # armrests: a curl of iron at each end
+    for x, step in ((1, 1), (34, -1)):
+        d.line([x, 9, x + 3 * step, 9], fill=iron_l)
+        d.line([x, 9, x, 13], fill=iron)
+        d.point((x + 3 * step, 10), fill=iron)
+    # front legs with little curled feet
+    for x, foot in ((3, -1), (17, 0), (31, 1)):
+        d.rectangle([x, 20, x + 1, 25], fill=iron)
+        if foot:
+            d.point((x + (0 if foot < 0 else 1) + foot, 25), fill=iron)
+        d.point((x, 21), fill=iron_l)
+    return img, (18, 25)
 
 
 def fruit_stall():

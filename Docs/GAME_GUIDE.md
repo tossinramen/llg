@@ -15,7 +15,7 @@ Contents: [Basics](#basics) · [Controls](#controls) · [Stats & XP](#stats--xp)
 | | |
 |---|---|
 | Name | **Runes of Speech** |
-| Money | **Oro (gold)** buys everything (start 80); **Lexa** is for spells and enchantments (start 20). Shown short: 1.5k, 1m. *Testing: every load tops both up to 1m (`GameConfig.GiveTestMoney`).* |
+| Money | **Oro (gold)** buys everything (start 80); **Lexa** is for spells and enchantments (start 20). Shown short: 1.5k, 1m. *Testing: every load tops both up to 1m and puts you at level 500 (`GameConfig.GiveTestMoney`, `TestLevel`).* |
 | Languages | Spanish (playable); Japanese and Korean shown as "coming soon" |
 | Town | **Valdeluz**, a Spanish village |
 | Style | 16-bit pixel art with fake depth: buildings have side walls and shadows, and you walk behind things |
@@ -33,7 +33,8 @@ All keys can be changed in **Esc → Opciones**.
 | Ctrl (hold) | Run (hunger drops twice as fast) |
 | Shift (hold) | Crouch (slow) |
 | Space | Jump |
-| E / Enter | Use: talk, go through doors, fish, shop, sleep |
+| E | Use: talk, go through doors, fish, shop, sleep, sit on a bench (E or any move key to get up) |
+| Enter | Chat: type a message, Enter again to say it; it floats above your head in a white speech bubble (Esc cancels) |
 | B | Bag (20 slots) |
 | U | Profile: equipment, stats, skills |
 | L | Lessons: choose topic and level |
@@ -49,8 +50,8 @@ All keys can be changed in **Esc → Opciones**.
 
 | Stat | Details |
 |---|---|
-| **HP** | Starts at 20; +2 max per character level. Lost to wolf/dog bites and fishing mistakes. At 0 you faint, wake in the plaza and lose 10% of your gold. Bed and level-ups restore it. |
-| **Mana** | 10 + intelligence + jewellery bonuses. Spent on hints (2 each). Refills 1 every 20 s, fully at the rune fountain or in bed. |
+| **HP** | Starts at 20; **+2 max HP per character level**. Lost to bites, boss attacks and fishing mistakes. After a bite you can't be hurt again for 0.5 s (so a pack can't bite all at once). The screen edges flash red when you're hit and pulse red below 25% HP. At 0 you faint, wake in the plaza and lose 10% of your gold. Bed, level-ups, Curación and food restore it; sitting on a bench gives 1 HP. |
+| **Mana** | 10 **+1 per character level** + intelligence + jewellery bonuses. Spent on hints (2 each) and spells (3–12). Refills 1 every 20 s, fully at the rune fountain, in bed and on level-up. |
 | **Hunger** | 0–100; drops 1 every 8 s (twice as fast when running). At 0 you walk slowly. Eat food from the bag. |
 | **Intelligence** | +1 per book read: +1 max mana and +5% XP. |
 | **Attack** | The damage of your weapon (fists = 1). |
@@ -59,19 +60,41 @@ All keys can be changed in **Esc → Opciones**.
 | **Lexa** | Magical money (a grey rune stone). A little from every language activity (a third of the gold prize), a lot from bosses; Suerte runes add 10% per rank. Spent on learning and levelling up spells (K) and on enchantments at La Torre Rúnica. |
 
 **Character level:** uncapped. XP needed for the next level = 80 × level^1.4 (level 1→2: 80, 5→6: ~761, 10→11: ~2,009). XP bar along the bottom of the screen.
+
+**Per level you gain:** +2 max HP, +1 max mana, a full heal and full mana. Level also unlocks weapons, armour, spells and dungeon floors, and adds level ÷ 2 to your battle attacks.
+
+| Level | Max HP | Max mana (no books or jewellery) |
+|---|---|---|
+| 1 | 20 | 10 |
+| 10 | 38 | 19 |
+| 25 | 68 | 34 |
+| 50 | 118 | 59 |
+| 100 | 218 | 109 |
+| 500 | 1,018 | 509 |
 Every XP gain goes to a **skill** and to your **character level**.
 
-**Lesson multiplier:** Principiante ×1, Básico ×1.5, Intermedio ×2, Avanzado ×3, Experto ×4 (applies to archery, fishing, El intruso).
+**Lesson multiplier:** Principiante ×1, Básico ×1.5, Intermedio ×2, Avanzado ×3, Experto ×4 (marked "× lesson" below).
+**Intelligence:** every point adds +5% to all XP.
 
 | Source | XP |
 |---|---|
 | Reading a word for the first time (left click) | 2 Reading |
 | Archery hit | 5 Archery + 5 Vocabulary (× lesson) |
-| Fishing catch | 10 Fishing + 10 Grammar (× lesson) |
+| Fishing catch | 6 + 6 × rarity Fishing (junk 6 … legendary 36) + 2 per word Grammar (× lesson) |
 | El intruso correct answer | 4 Vocabulary (× lesson) |
+| Music: each verse played | 8 Music + 4 Grammar (× lesson) |
+| Planting a seed | 2 Farming |
+| Watering (right answer) | 3 Farming (× lesson) |
+| Harvesting | 4 + seed price ÷ 3 Farming (wheat 5 … olive 24) |
 | Buying something | 2 Trading |
 | Tree felled | 6 Woodcutting |
 | Wild dog / wolf killed | 20 / 30 Combat |
+| Battle: right answer on Atacar | 3 Vocabulary |
+| Battle: casting a spell | 6 Magic |
+| Boss beaten | 40 × floor Combat (floor 1: 40 … floor 10: 400) |
+| Casting a spell outside battle | 5 Magic |
+| Learning or upgrading a spell | 20 Magic |
+| Enchanting an item | 10 Magic |
 
 ## Skills
 
@@ -104,7 +127,7 @@ Every XP gain goes to a **skill** and to your **character level**.
 | Activity | Where | How it works | Rewards |
 |---|---|---|---|
 | **Tiro con arco** (Archery) | Archery range (north-east), Don Felipe | English word shown; shoot the target with the Spanish word (an arrow flies to it). 8 rounds, 3 arrows, timer. Hint (2 mana) removes a wrong target. A bow equipped gives more time. | 4 gold per hit (+⅓ in Lexa), XP |
-| **La pesca** (Fishing) | Pond (south) or river; needs a fishing rod | Wait for a bite, then click word tiles in order to build the Spanish sentence. Hint (2 mana) places the next word. Mistakes cost 1 HP. Magic rod gives more time. | Fish into the bag, gold + a little Lexa, XP |
+| **La pesca** (Fishing) | Pond (south) or river; needs a rod from the fishing shop | Wait, strike when the bobber dips, then reel the fish in word by word. See [Fishing](#fishing). | 17 kinds of fish, gold + Lexa, XP |
 | **El intruso** (Odd one out) | Tomás the woodcutter, or the lessons window | Four words: three from a topic, one not. Click the intruder. 6 rounds. | 3 gold per correct (+⅓ in Lexa), XP |
 | **Reading** | Anywhere | Left-click anything to see its Spanish name; globe for English; speaker to hear it. | Reading XP |
 | **Tree chopping** | Any tree | Right-click: cracks appear, tree shakes, breaks after 6 damage (fist 1, hatchet 2, axe/battle axe 3 per hit). Regrows in 3 s. Orange trees sometimes drop oranges. | Wood (sell 4), XP |
@@ -115,6 +138,38 @@ Every XP gain goes to a **skill** and to your **character level**.
 | **Egg collecting** | Chicken coop at the farm | E at the coop; one egg per minute. | Egg (food) |
 | **Sleeping** | Bed in your house | Restores HP and mana, saves. | — |
 | **Rune fountain** | Plaza | Refills mana. | — |
+
+## Fishing
+
+Buy a rod at **La tienda de pesca** (Marina, on the road down to the pond), then press E at the pond or the river.
+
+1. **Wait** — the bobber floats. Bread crumbs and the fishing hat make fish bite sooner.
+2. **Strike** — when the bobber dips and "¡Pica!" shows, click **¡TIRA!** or press **Space** within 1.4 s (1.7 s with the hat). Too slow and it steals the bait.
+3. **Reel** — the fish's shadow is out in the water. Build the Spanish sentence **one word at a time**: each right word pulls it closer. A wrong word strains the line (**Sedal ●●●**); three wrong and it snaps. The timer ends the fight too. Hint (2 mana) places the next word. Rarer fish bring **longer sentences**.
+4. **Catch** — the fish goes to your bag, with its rarity and value shown. New kinds are counted (**Peces: x/17**).
+
+**Your gear**
+
+| Gear | Effect |
+|---|---|
+| Rod | Its **tier** is the rarest fish it can land: caña de pescar = common, bambú = uncommon, carbono = rare, mágica = epic, dorada = legendary. Better rods also add seconds to reel. Your best rod is used automatically. |
+| Bait | Choose it with the **Cebo** button (it starts on your best bait). One is used each time you hook a fish. Migas de pan: bites sooner, more common fish · Lombriz: more uncommon, less junk · Gamba: ×2 rare · Calamar: ×2.5 epic, ×3 legendary. |
+| La red de pesca (net) | Own it: 25% chance to catch a second fish of the same kind. |
+| El sombrero de pescador (fishing hat) | Wear it: fish bite 40% sooner, longer strike window, +30% rare/epic/legendary. |
+| Fishing skill | +2% rare+ chance per level. |
+
+**The fish** (where they live, and how often they bite before bait and gear)
+
+| Rarity | Chance | Fish (water) |
+|---|---|---|
+| Junk | ~6% | la bota vieja (any) |
+| Common | ~55% | la sardina (any), el boquerón (pond), la carpa (pond), la trucha (river) |
+| Uncommon | ~25% | la perca (pond), la lubina (any), el salmón (river), la dorada (pond) |
+| Rare | ~10% | el cangrejo (river), el bacalao (any), el atún (pond) |
+| Epic | ~3.5% | la anguila (river), el pulpo (pond), el pez espada (any) |
+| Legendary | ~0.8% | la carpa koi (pond), el pez rúnico (river, +25 Lexa) |
+
+Each catch also pays 2 + (words in the sentence) gold and 1 + 2 × rarity Lexa. Sell fish in any shop (values in [Every price](#every-price)), or eat them.
 
 ## World & places
 
@@ -138,6 +193,7 @@ The world is 112 × 72 tiles, plus 7 interiors.
 
 | Building | Inside? | Notes |
 |---|---|---|
+| La plaza | — | The town square. In the middle is a **raised stone terrace** with the rune fountain on top; stairs go up at its west and east ends. Two park benches you can sit on (E). |
 | Panadería (bakery) | Yes | Carmen; oven; 11 baked goods |
 | Dulcería (candy shop) | Yes | Paco; 11 sweets |
 | Tienda (general store) | Yes | Doña Elena; rods, book, clothes, jewellery, basic food |
@@ -146,6 +202,7 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Tienda de mascotas (pet shop) | Yes | Lucía; animals in a pen; 6 pets |
 | Semillería (seed shop) | Yes | Don Ramón; 7 kinds of seeds; buys your crops (west street, next to your house) |
 | Tienda de música (music shop) | Yes | Marta; 6 instruments (north street, next to the bakery) |
+| Tienda de pesca (fishing shop) | Yes | Marina; rods, bait, the net, the fishing hat and fresh fish (by the road down to the pond) |
 | Escuela de música (music school) | Yes | Profesora Isabel and a piano: the music game (north street, east end) |
 | La Torre Rúnica (Rune Tower) | Yes | Round stone tower with glowing rune windows (south street, east end). Doña Runa and **el altar rúnico**: enchant your weapons and armour |
 | Tu casa (your house) | Yes | Bed (sleep), fireplace, table, shelf, rug |
@@ -175,54 +232,290 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Don Ramón | el semillero (seed seller) | Inside the Semillería | Seed shop; farming tips |
 | Marta | la vendedora de música (music seller) | Inside the music shop | Music shop |
 | Profesora Isabel | la profesora de música (music teacher) | Inside the music school | Starts the music game |
+| Marina | la pescadera (fishmonger) | Inside the fishing shop | Fishing shop; tips about rods and bait |
 | Doña Runa | la encantadora (enchantress) | Inside La Torre Rúnica | Opens the enchanting altar |
 
 People cannot be attacked.
 
 ## Animals & monsters
 
-| Creature | Where | HP | Bite | Behaviour | Drops |
-|---|---|---|---|---|---|
-| **El lobo** (wolf) | Forest clearings (5) | 14 | 3 | Neutral until hit; the pack joins in; gives up past 14 tiles | 6–12 gold, 60% wolf pelt, 30 XP |
-| **El perro salvaje** (wild dog) | Olive grove (3) | 9 | 2 | Same | 3–8 gold, 20 XP |
+Only **two kinds of animal fight**: wolves and wild dogs. Everything else is harmless.
+
+| Creature | Where | HP | Damage per bite | Bites | Speed | Behaviour | Drops |
+|---|---|---|---|---|---|---|---|
+| **El lobo** (wolf) | Forest beyond the bridge: 5 wolves in the clearings | 14 | **3** | 1 every 1.2 s each | 3.3 (you walk 4.5, run 7.5) | Neutral until you hit one; the rest of the pack within 6 tiles joins in; gives up past 14 tiles from you or 18 from home | 6–12 gold, 60% wolf pelt, 30 Combat XP |
+| **El perro salvaje** (wild dog) | Olive grove (south-west): 3 dogs | 9 | **2** | 1 every 1.2 s each | 3.5 | Same, its own pack | 3–8 gold, 20 Combat XP |
+
+**How much a bite really hurts:** damage = bite − (your defence ÷ 2), never below 1. After any bite you are safe for 0.5 s.
+At level 1 (20 HP, no armour) one wolf needs 7 bites (about 8 s) to knock you out, but the **whole pack of 5** joins in,
+so a fight there can be over in a few seconds. That's why it can feel like one-shotting: start with the dogs,
+wear armour (Herrería) and level up first. Escudo de luz blocks a bite completely.
+
+| Your defence | Wolf bite | Dog bite |
+|---|---|---|
+| 0 | 3 | 2 |
+| 2 | 2 | 1 |
+| 4+ | 1 | 1 |
+
+**Bosses** (La Ciudadela del Sol) hit once per turn: floor 1 hits for 4, and each floor hits 2 more (floor 10: 22), minus defence ÷ 2.
 | Village cats & dogs | Streets (5) | — | — | Wander; harmless | — |
 | Chickens | Chicken yard (4) | — | — | Wander and peck | — |
 | Shop animals | Pet shop | — | — | Wander in the pen | — |
 
 Killed animals return after 30 seconds. **Pets** you buy follow you (choose one in the bag).
 
-## Items
+## Every price
 
-**Bakery (Panadería)** — price / hunger restored
+All prices are in **gold** (pets too). "Sells for" is what any shop pays you. Items with a level are locked
+(greyed out, with a padlock) until your character reaches it. *This list is generated from the game's item
+data, so it always matches what's in the shops.*
 
-el pan 8/20 · la barra de pan 10/25 · el cruasán 12/30 · la magdalena 9/18 · los churros 7/15 · la ensaimada 14/28 · la empanada 15/35 · la tarta de manzana 18/40 · la rosquilla 8/16 · el bizcocho 16/32 · el pastel 20/50
+**Panadería (bakery) — Carmen**
 
-**Candy shop (Dulcería)**
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el pan | bread | 8 | 4 | — | +20 hunger |
+| la barra de pan | baguette | 10 | 5 | — | +25 hunger |
+| el cruasán | croissant | 12 | 6 | — | +30 hunger |
+| la magdalena | muffin | 9 | 4 | — | +18 hunger |
+| los churros | churros | 7 | 3 | — | +15 hunger |
+| la ensaimada | ensaimada (sweet spiral bun) | 14 | 7 | — | +28 hunger |
+| la empanada | empanada (filled pastry) | 15 | 7 | — | +35 hunger |
+| la tarta de manzana | apple tart | 18 | 9 | — | +40 hunger |
+| la rosquilla | doughnut | 8 | 4 | — | +16 hunger |
+| el bizcocho | sponge cake | 16 | 8 | — | +32 hunger |
+| el pastel | cake | 20 | 10 | — | +50 hunger |
 
-el caramelo 3/5 · la piruleta 5/8 · el chocolate 10/18 · la galleta 6/12 · el chicle 2/2 · las gominolas 4/6 · el turrón 12/20 · el algodón de azúcar 6/8 · el helado 9/14 · la nube 4/6 · el regaliz 3/5
+**Dulcería (candy shop) — Paco**
 
-**General store (Tienda)**
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el caramelo | sweet | 3 | 1 | — | +5 hunger |
+| la piruleta | lollipop | 5 | 2 | — | +8 hunger |
+| el chocolate | chocolate | 10 | 5 | — | +18 hunger |
+| la galleta | cookie | 6 | 3 | — | +12 hunger |
+| el chicle | chewing gum | 2 | 1 | — | +2 hunger |
+| las gominolas | gummy sweets | 4 | 2 | — | +6 hunger |
+| el turrón | turrón (nougat) | 12 | 6 | — | +20 hunger |
+| el algodón de azúcar | candy floss | 6 | 3 | — | +8 hunger |
+| el helado | ice cream | 9 | 4 | — | +14 hunger |
+| la nube | marshmallow | 4 | 2 | — | +6 hunger |
+| el regaliz | liquorice | 3 | 1 | — | +5 hunger |
 
-la caña de pescar 30 · la caña mágica 120 (+10 s fishing) · el libro 60 (+1 INT when read) · la manzana 5/10 · el queso 9/15 · el huevo 6/12 · plus the clothes in [Armour & gear](#armour--gear)
+**Tienda (general store) — Doña Elena**
 
-**Instruments (Tienda de música)** — price / extra time in the music game
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el libro | book | 60 | 30 | — | +1 intelligence (+1 mana, +5% XP) |
+| el sombrero | hat | 45 | 22 | — | +1 defence |
+| el collar | necklace | 90 | 45 | — | +3 mana |
+| la capa | cloak | 70 | 35 | — | +1 defence |
+| el chaleco | vest | 60 | 30 | — | +2 defence |
+| los pantalones | trousers | 50 | 25 | — | +1 defence |
+| la pulsera | bracelet | 55 | 27 | — | +2 mana |
+| la manzana | apple | 5 | 2 | — | +10 hunger |
+| el queso | cheese | 9 | 4 | — | +15 hunger |
+| el huevo | egg | 6 | 3 | — | +12 hunger |
 
-la pandereta 80 · la flauta 120 · la guitarra 200 · el clarinete 300 · la trompeta 380 · el violín 450
+**Armería (weapons) — Rodrigo: Blades**
 
-**Seeds and crops (Semillería)** — seed price / crop sells for / time to grow
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el palo | stick | 25 | 12 | 5 | 2 damage |
+| el cuchillo de cocina | kitchen knife | 60 | 30 | 10 | 3 damage |
+| la daga | dagger | 150 | 75 | 15 | 4 damage |
+| la espada corta | short sword | 300 | 150 | 20 | 6 damage |
+| la espada | sword | 550 | 275 | 25 | 8 damage |
+| el sable | sabre | 900 | 450 | 30 | 10 damage |
+| el estoque | rapier | 1400 | 700 | 35 | 12 damage |
+| la espada toledana | Toledo sword | 2200 | 1100 | 40 | 15 damage |
+| el mandoble | greatsword | 3200 | 1600 | 45 | 18 damage |
+| la Tizona | Tizona (El Cid's sword) | 5000 | 2500 | 50 | 22 damage |
+| la Colada | Colada (El Cid's second sword) | 8000 | 4000 | 60 | 27 damage |
 
-el trigo 5 / 9 / 40 s · la lechuga 8 / 15 / 50 s · el tomate 12 / 24 / 90 s · la zanahoria 15 / 30 / 100 s ·
-la fresa 25 / 55 / 180 s · la uva 40 / 90 / 200 s · la aceituna 60 / 140 / 300 s (each harvest gives 2)
+**Armería (weapons) — Rodrigo: Axes**
 
-**Pets (Mascotas)**
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el hacha de mano | hatchet | 120 | 60 | 10 | 4 damage, chops ×2 |
+| el hacha | axe | 450 | 225 | 20 | 7 damage, chops ×3 |
+| el hacha de guerra | battle axe | 1300 | 650 | 35 | 12 damage, chops ×3 |
+| el hacha doble | double axe | 4000 | 2000 | 50 | 20 damage, chops ×5 |
 
-el perro 150 · el gato 150 · el conejo 120 · el loro 250 · la tortuga 140 · el hámster 90
+**Armería (weapons) — Rodrigo: Ranged**
 
-**Found (sell only)** — sell price
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| la honda | sling | 50 | 25 | 5 | 2 damage, ranged |
+| el arco corto | short bow | 160 | 80 | 10 | 3 damage, ranged |
+| el arco | bow | 300 | 150 | 15 | 5 damage, ranged |
+| el arco largo | longbow | 700 | 350 | 25 | 8 damage, ranged |
+| la ballesta | crossbow | 1100 | 550 | 30 | 11 damage, ranged |
+| la ballesta pesada | heavy crossbow | 2000 | 1000 | 40 | 14 damage, ranged |
+| el arcabuz | arquebus | 3500 | 1750 | 50 | 18 damage, ranged |
+| la pistola de chispa | flintlock pistol | 5500 | 2750 | 60 | 22 damage, ranged |
+| el mosquete | musket | 8000 | 4000 | 70 | 27 damage, ranged |
+| el revólver | revolver | 12000 | 6000 | 80 | 32 damage, ranged |
+| el rifle | rifle | 18000 | 9000 | 90 | 40 damage, ranged |
 
-el pez 6 (food 30) · la naranja 2 (food 10) · la madera 4 · la piel de lobo 15
+**Herrería (armour) — Bruno: Cloth**
 
-All prices are in **gold** (pets too). Shops buy anything back for gold at **half price** (found items at the prices above).
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| la capucha de tela | Cloth helmet | 20 | 10 | 1 | +1 defence |
+| la túnica de tela | Cloth chest armour | 40 | 20 | 1 | +2 defence |
+| los pantalones de tela | Cloth leg armour | 30 | 15 | 1 | +2 defence |
+| las muñequeras de tela | Cloth bracers | 16 | 8 | 1 | +1 defence |
+| el escudo de madera | Cloth shield | 30 | 15 | 1 | +2 defence |
+
+**Herrería (armour) — Bruno: Leather**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el gorro de cuero | Leather helmet | 60 | 30 | 5 | +2 defence |
+| el chaleco de cuero | Leather chest armour | 120 | 60 | 5 | +4 defence |
+| los pantalones de cuero | Leather leg armour | 90 | 45 | 5 | +3 defence |
+| los brazales de cuero | Leather bracers | 48 | 24 | 5 | +1 defence |
+| el escudo de cuero | Leather shield | 90 | 45 | 5 | +3 defence |
+
+**Herrería (armour) — Bruno: Chainmail**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| la capucha de malla | Chainmail helmet | 180 | 90 | 15 | +3 defence |
+| la cota de malla | Chainmail chest armour | 360 | 180 | 15 | +6 defence |
+| las calzas de malla | Chainmail leg armour | 270 | 135 | 15 | +4 defence |
+| los brazales de malla | Chainmail bracers | 144 | 72 | 15 | +2 defence |
+| el escudo reforzado | Chainmail shield | 270 | 135 | 15 | +4 defence |
+
+**Herrería (armour) — Bruno: Iron**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el casco de hierro | Iron helmet | 450 | 225 | 25 | +5 defence |
+| la coraza de hierro | Iron chest armour | 900 | 450 | 25 | +10 defence |
+| las grebas de hierro | Iron leg armour | 675 | 337 | 25 | +8 defence |
+| los brazales de hierro | Iron bracers | 360 | 180 | 25 | +3 defence |
+| el escudo de hierro | Iron shield | 675 | 337 | 25 | +8 defence |
+
+**Herrería (armour) — Bruno: Toledo steel**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el yelmo de Toledo | Toledo steel helmet | 1200 | 600 | 40 | +8 defence |
+| la coraza de Toledo | Toledo steel chest armour | 2400 | 1200 | 40 | +16 defence |
+| las grebas de Toledo | Toledo steel leg armour | 1800 | 900 | 40 | +12 defence |
+| los brazales de Toledo | Toledo steel bracers | 960 | 480 | 40 | +5 defence |
+| el escudo de Toledo | Toledo steel shield | 1800 | 900 | 40 | +12 defence |
+
+**Herrería (armour) — Bruno: Rune**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el yelmo rúnico | Rune helmet | 3500 | 1750 | 60 | +12 defence |
+| la coraza rúnica | Rune chest armour | 7000 | 3500 | 60 | +24 defence |
+| las grebas rúnicas | Rune leg armour | 5250 | 2625 | 60 | +18 defence |
+| los brazales rúnicos | Rune bracers | 2800 | 1400 | 60 | +7 defence |
+| el escudo rúnico | Rune shield | 5250 | 2625 | 60 | +18 defence |
+
+**Tienda de mascotas (pets) — Lucía**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| el perro | dog | 150 | 75 | — | follows you |
+| el gato | cat | 150 | 75 | — | follows you |
+| el conejo | rabbit | 120 | 60 | — | follows you |
+| el loro | parrot | 250 | 125 | — | follows you |
+| la tortuga | turtle | 140 | 70 | — | follows you |
+| el hámster | hamster | 90 | 45 | — | follows you |
+
+**Semillería (seeds) — Don Ramón**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| las semillas de trigo | wheat seeds | 5 | 2 | — | grows in 40 s into wheat (sells 9) |
+| las semillas de lechuga | lettuce seeds | 8 | 4 | — | grows in 50 s into lettuce (sells 15) |
+| las semillas de tomate | tomato seeds | 12 | 6 | — | grows in 90 s into tomato (sells 24) |
+| las semillas de zanahoria | carrot seeds | 15 | 7 | — | grows in 100 s into carrot (sells 30) |
+| las semillas de fresa | strawberry seeds | 25 | 12 | — | grows in 180 s into strawberry (sells 55) |
+| las semillas de uva | grape seeds | 40 | 20 | — | grows in 200 s into grape (sells 90) |
+| las semillas de aceituna | olive seeds | 60 | 30 | — | grows in 300 s into olive (sells 140) |
+
+**Tienda de música (instruments) — Marta**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| la pandereta | tambourine | 80 | 40 | — | +2 s in the music game |
+| la flauta | flute | 120 | 60 | — | +3 s in the music game |
+| la guitarra | guitar | 200 | 100 | — | +4 s in the music game |
+| el clarinete | clarinet | 300 | 150 | — | +5 s in the music game |
+| la trompeta | trumpet | 380 | 190 | — | +6 s in the music game |
+| el violín | violin | 450 | 225 | — | +7 s in the music game |
+
+**Tienda de pesca (fishing) — Marina: Rods**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| la caña de pescar | fishing rod | 30 | 15 | — | lands up to common fish |
+| la caña de bambú | bamboo rod | 90 | 45 | 3 | lands up to uncommon fish, +3 s to reel |
+| la caña de carbono | carbon rod | 260 | 130 | 12 | lands up to rare fish, +6 s to reel |
+| la caña mágica | magic rod | 600 | 300 | 25 | lands up to epic fish, +10 s to reel |
+| la caña dorada | golden rod | 1500 | 750 | 40 | lands up to legendary fish, +14 s to reel |
+
+**Tienda de pesca (fishing) — Marina: Bait & gear**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| las migas de pan | bread crumbs | 2 | 1 | — | fish bite sooner; more common fish |
+| la lombriz | worm | 4 | 2 | — | more uncommon fish, less junk |
+| la gamba | shrimp | 9 | 4 | 10 | ×2 rare fish |
+| el calamar | squid | 20 | 10 | 20 | ×2.5 epic, ×3 legendary fish |
+| la red de pesca | fishing net | 180 | 90 | 8 | 25% chance of a second fish |
+| el sombrero de pescador | fishing hat | 120 | 60 | 5 | +1 defence; fish bite 40% sooner, more rare fish |
+
+**Tienda de pesca (fishing) — Marina: Fish**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| la sardina | sardine | 10 | 5 | — | common; eat: +15 hunger |
+| el boquerón | anchovy | 10 | 5 | — | common, pond; eat: +12 hunger |
+| la carpa | carp | 16 | 8 | — | common, pond; eat: +22 hunger |
+| la trucha | trout | 20 | 10 | — | common, river; eat: +25 hunger |
+| la lubina | sea bass | 32 | 16 | — | uncommon; eat: +30 hunger |
+| el salmón | salmon | 40 | 20 | — | uncommon, river; eat: +35 hunger |
+
+**Found, caught or grown (sell them in any shop; fish marked with a price are also sold by Marina)**
+
+| Item | English | Price | Sells for | Level | What it does |
+|---|---|---|---|---|---|
+| la bota vieja | old boot | — | 1 | — | junk |
+| la sardina | sardine | 10 | 5 | — | common; eat: +15 hunger |
+| el boquerón | anchovy | 10 | 5 | — | common, pond; eat: +12 hunger |
+| la carpa | carp | 16 | 8 | — | common, pond; eat: +22 hunger |
+| la trucha | trout | 20 | 10 | — | common, river; eat: +25 hunger |
+| la perca | perch | 28 | 14 | — | uncommon, pond; eat: +28 hunger |
+| la lubina | sea bass | 32 | 16 | — | uncommon; eat: +30 hunger |
+| el salmón | salmon | 40 | 20 | — | uncommon, river; eat: +35 hunger |
+| la dorada | gilt-head bream | 36 | 18 | — | uncommon, pond; eat: +32 hunger |
+| el cangrejo | crab | 60 | 30 | — | rare, river; eat: +30 hunger |
+| el bacalao | cod | 64 | 32 | — | rare; eat: +40 hunger |
+| el atún | tuna | 90 | 45 | — | rare, pond; eat: +50 hunger |
+| la anguila | eel | 140 | 70 | — | epic, river; eat: +45 hunger |
+| el pulpo | octopus | 160 | 80 | — | epic, pond; eat: +55 hunger |
+| el pez espada | swordfish | 180 | 90 | — | epic; eat: +60 hunger |
+| la carpa koi | koi carp | 400 | 200 | — | legendary, pond; eat: +40 hunger |
+| el pez rúnico | rune fish | 600 | 300 | — | legendary, river; eat: +80 hunger |
+| el pez | fish | — | 6 | — | +30 hunger |
+| la naranja | orange | — | 2 | — | +10 hunger |
+| la madera | wood | — | 4 | — | sell it |
+| la piel de lobo | wolf pelt | — | 15 | — | sell it |
+| el trigo | wheat | — | 9 | — | +5 hunger |
+| la lechuga | lettuce | — | 15 | — | +5 hunger |
+| el tomate | tomato | — | 24 | — | +6 hunger |
+| la zanahoria | carrot | — | 30 | — | +7 hunger |
+| la fresa | strawberry | — | 55 | — | +9 hunger |
+| la uva | grape | — | 90 | — | +12 hunger |
+| la aceituna | olive | — | 140 | — | +16 hunger |
 
 ## Weapons
 
@@ -273,7 +566,7 @@ Damage = attack; chop = tree damage per hit (fists 1).
 | 80 | el revólver (revolver) | 12,000 | 32 |
 | 90 | el rifle | 18,000 | 40 |
 
-There is **no durability, upgrading or enchanting yet** (in the planner).
+There is **no durability or upgrading yet** (in the planner). Enchanting is at La Torre Rúnica.
 
 ## Armour & gear
 

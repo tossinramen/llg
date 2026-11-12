@@ -35,7 +35,8 @@ namespace LLG
                 (Keybinds.KeyName(GameAction.Run), "Correr (mantener)", "Run (hold)"),
                 (Keybinds.KeyName(GameAction.Crouch), "Agacharse (mantener)", "Crouch (hold)"),
                 (Keybinds.KeyName(GameAction.Jump), "Saltar", "Jump"),
-                (Keybinds.KeyName(GameAction.Use), "Usar / hablar / entrar", "Use / talk / enter"),
+                (Keybinds.KeyName(GameAction.Use), "Usar / hablar / entrar / sentarse", "Use / talk / enter / sit"),
+                ("Enter", "Hablar: escribe y sale en un bocadillo", "Chat: type, it shows in a bubble"),
                 (Keybinds.KeyName(GameAction.Backpack), "Mochila", "Bag"),
                 (Keybinds.KeyName(GameAction.Profile), "Perfil y habilidades", "Profile and skills"),
                 (Keybinds.KeyName(GameAction.Lessons), "Lecciones (tema y nivel)", "Lessons (topic and level)"),
@@ -48,7 +49,7 @@ namespace LLG
             };
             for (int i = 0; i < lines.Length; i++)
             {
-                float y = 108 - i * 18;
+                float y = 110 - i * 17;
                 var key = UIFactory.Box("Key", rows, new Vector2(-130, y), new Vector2(96, 20), UIFactory.Teal);
                 var label = UIFactory.Label("KeyName", key.transform, new Vector2(0, 1), new Vector2(96, 20), lines[i].key, Color.white);
                 UIFactory.Outline(label);

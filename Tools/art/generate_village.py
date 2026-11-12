@@ -21,7 +21,7 @@ import math
 import os
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageEnhance
 from scipy.ndimage import binary_dilation, distance_transform_edt, gaussian_filter
 from scipy.spatial import cKDTree
 
@@ -36,7 +36,7 @@ PW, PH = VW * T, VH * T
 rng = np.random.default_rng(21)
 
 # ---------------------------------------------------------------- what every letter means
-WALKABLE = ".,:;=_X-\"Ç"        # crops can be walked between; Ç = an open gate
+WALKABLE = ".,:;=_X-\"ÇŠ"       # crops can be walked between; Ç = an open gate; Š = stairs
 WORDS = {
     ".": ("La hierba", "Grass"), ",": ("El camino", "Road"), ":": ("La plaza", "Town Square"),
     ";": ("El campo de tiro", "Archery Range"), "=": ("El muelle", "Dock"), "-": ("El puente", "Bridge"),
@@ -59,12 +59,14 @@ WORDS = {
     "E": ("El horno", "Oven"), "U": ("El yunque", "Anvil"), "J": ("La cama", "Bed"), "t": ("La mesa", "Table"),
     "G": ("La chimenea", "Fireplace"),
     "ç": ("La puerta de la valla", "Gate"), "Ç": ("La puerta de la valla", "Gate"),
+    "œ": ("La tienda de pesca", "Fishing Shop"),
+    "Ŧ": ("El muro de la terraza", "Terrace Wall"), "Š": ("La escalera", "Stairs"),
     "þ": ("La torre rúnica", "Rune Tower"), "ø": ("El altar rúnico", "Rune Altar"),
     "ð": ("La Ciudadela del Sol", "Citadel of the Sun"), "Ð": ("La entrada de la Ciudadela", "Citadel Entrance"),
     "[": ("La semillería", "Seed Shop"), "(": ("La tienda de música", "Music Shop"),
     "`": ("La escuela de música", "Music School"), "+": ("El huerto", "Vegetable Patch"), "ñ": ("El piano", "Piano"),
 }
-for door in "BCSWMHDI^<>])'Þ":
+for door in "BCSWMHDI^<>])'ÞŒ":
     WORDS[door] = ("La puerta", "Door")
 
 # ---------------------------------------------------------------- the village layout (tiles)
@@ -88,15 +90,18 @@ BUILDINGS = [
     ("pets", "m", "M", 38, 36, 6, 2, "shop", "Mascotas", {"shutters": (196, 140, 60), "awning": (210, 150, 70), "paw": True}),
     ("tavern", "r", ">", 46, 36, 6, 2, "shop", "Taberna", {"shutters": (120, 70, 50), "two_story": True, "wall": (236, 222, 196)}),
     ("house_s", "d", "D", 54, 36, 5, 2, "house", None, {"shutters": (66, 100, 140), "pots": True}),
+    ("fishing", "œ", "Œ", 54, 42, 6, 2, "shop", "Pesca", {"shutters": (50, 110, 150), "awning": (50, 120, 170), "wall": (236, 232, 222), "pots": True}),
 ]
 FOUNTAIN = (45, 26, 3, 2)
+TERRACE = (42, 23, 50, 29)         # the raised square round the fountain (top surface, tiles)
+TERRACE_STAIRS = (26, 27)          # rows of the stairs that come down at the west and east ends
 RANGE = (62, 4, 71, 12)
 POND = (58.0, 52.0, 7.0, 5.0)
 FARM = (12, 30, 24, 36)            # crop field (inside the fence)
 YARD = (27, 31, 31, 36)            # chicken yard
 RIVER_X = 80.5
 BRIDGE_ROWS = (27, 28)
-PEOPLE = {"1": (24, 20), "3": (64, 20), "4": (66, 9), "5": (49, 30), "%": (76, 29), "&": (9, 29), "P": (46, 31)}
+PEOPLE = {"1": (24, 20), "3": (64, 20), "4": (66, 9), "5": (49, 28), "%": (76, 29), "&": (9, 29), "P": (46, 31)}
 
 # rooms: key, Spanish name, English name, shop id, keeper marker, grid position (x0, y0); size 14 x 10
 ROOMS = [
@@ -111,6 +116,7 @@ ROOMS = [
     ("music_store", "La tienda de música", "Music Shop", "music", "/", (114, 45)),
     ("music_school", "La escuela de música", "Music School", "", "!", (130, 45)),
     ("tower", "La torre rúnica", "Rune Tower", "", "Ø", (114, 56)),
+    ("fishing", "La tienda de pesca", "Fishing Shop", "fishing", "§", (130, 56)),
 ]
 RW, RH = 14, 10
 
@@ -273,6 +279,8 @@ def make_ground(grid):
             elif tile_mask(ROADS)[c]:
                 grid[ty][tx] = ","
 
+    raised_terrace(out, d, grid)
+
     # dock into the pond from the west
     dock_y = int(POND[1])
     x = int(POND[0] - POND[2]) - 2
@@ -286,6 +294,91 @@ def make_ground(grid):
         d.line([X, Y + 14, X + 15, Y + 14], fill=(40, 70, 96))
         grid[dock_y][tx] = "="
     return out, water, (x - 1, dock_y)
+
+
+# ---------------------------------------------------------------- the raised terrace in the plaza
+def raised_terrace(out, d, grid):
+    """The middle of the plaza is a raised stone terrace (the fountain stands on it): a low kerb round
+    the top, stone walls down its sides and front, and stairs coming down at the west and east ends."""
+    tx0, ty0, tx1, ty1 = TERRACE
+    sy0, sy1 = TERRACE_STAIRS
+    X0, Y0, X1, Y1 = tx0 * T, ty0 * T, (tx1 + 1) * T, (ty1 + 1) * T
+    kerb, kerb_l, kerb_d = (196, 188, 176), (226, 220, 208), (118, 110, 102)
+    wall, wall_d, mortar = (126, 116, 110), (96, 88, 84), (74, 66, 62)
+    L, R = X0 - T, X1 + T - 1              # outer edges of the side kerbs
+
+    # shadows the terrace throws on the plaza (south and both sides), drawn first
+    shadow = Image.new("RGBA", out.size, (0, 0, 0, 0))
+    sd = ImageDraw.Draw(shadow)
+    sd.rectangle([L - 3, Y0 - T + 4, L - 1, Y1 + T + 6], fill=(30, 22, 18, 80))
+    sd.rectangle([R + 1, Y0 - T + 4, R + 4, Y1 + T + 6], fill=(30, 22, 18, 80))
+    sd.rectangle([L - 3, Y1 + T, R + 4, Y1 + T + 7], fill=(30, 22, 18, 95))
+    out.alpha_composite(shadow)
+
+    # the top catches more light than the plaza below
+    top = out.crop((L, Y0 - T, R + 1, Y1))
+    top = ImageEnhance.Brightness(top).enhance(1.18)
+    out.paste(top, (L, Y0 - T))
+
+    def bricks(x0, y0, x1, y1, course=5, joint=10):
+        d.rectangle([x0, y0, x1, y1], fill=wall)
+        for i, y in enumerate(range(y0 + course, y1 + 1, course)):
+            d.line([x0, y, x1, y], fill=mortar)
+            for x in range(x0 + (joint // 2 if i % 2 else 0), x1, joint):
+                d.line([x, y - course + 1, x, y], fill=mortar)
+        d.line([x0, y1, x1, y1], fill=wall_d)
+
+    # front wall (a full tile tall) with a lit coping stone along the top
+    bricks(L, Y1, R, Y1 + T - 1)
+    d.rectangle([L, Y1, R, Y1 + 2], fill=kerb_l)
+    d.line([L, Y1 + 3, R, Y1 + 3], fill=kerb_d)
+
+    # back kerb: a low lit edge
+    d.rectangle([L, Y0 - T + 5, R, Y0 - 3], fill=kerb)
+    d.line([L, Y0 - T + 5, R, Y0 - T + 5], fill=kerb_l)
+    d.line([L, Y0 - 3, R, Y0 - 3], fill=kerb_d)
+    for x in range(L + 8, R, 12):
+        d.line([x, Y0 - T + 6, x, Y0 - 4], fill=kerb_d)
+
+    # side kerbs: the lit top of the edge, then the outer wall face going down (darker)
+    for side, X in ((-1, L), (1, X1)):
+        ys = [(Y0 - T + 5, sy0 * T - 1), ((sy1 + 1) * T, Y1 - 1)]
+        for ya, yb in ys:
+            top_x = (X + 8, X + 15) if side < 0 else (X, X + 7)
+            face_x = (X, X + 7) if side < 0 else (X + 8, X + 15)
+            d.rectangle([top_x[0], ya, top_x[1], yb], fill=kerb)
+            d.line([top_x[0] if side > 0 else top_x[1], ya, top_x[0] if side > 0 else top_x[1], yb], fill=kerb_l)
+            bricks(face_x[0], ya, face_x[1], yb, course=4, joint=8)
+            d.line([face_x[1] if side < 0 else face_x[0], ya, face_x[1] if side < 0 else face_x[0], yb], fill=kerb_d)
+
+    # stairs at both ends: three steps going down and out, each with a lit tread and a dark riser
+    Ys, Ye = sy0 * T, (sy1 + 1) * T
+    for side in (-1, 1):
+        edge = tx0 - 1 if side < 0 else tx1 + 1
+        for k in range(3):                          # k = 0 at the top (next to the terrace)
+            tx = edge + side * k
+            X = tx * T
+            tone = 1.06 - k * 0.09
+            tread = tuple(min(255, int(c * tone)) for c in kerb)
+            d.rectangle([X, Ys, X + T - 1, Ye - 1], fill=tread)
+            rx = (X + T - 4, X + T - 1) if side > 0 else (X, X + 3)            # riser: the drop to the next step
+            d.rectangle([rx[0], Ys, rx[1], Ye - 1], fill=tuple(int(c * tone) for c in wall_d))
+            nx = X if side > 0 else X + T - 1
+            d.line([nx, Ys, nx, Ye - 1], fill=kerb_l)                           # lit nose
+            d.line([X, Ys + T, X + T - 1, Ys + T], fill=tuple(int(c * 0.8) for c in tread))
+            face = 12 - k * 4                                                    # the stair's side wall gets lower
+            bricks(X, Ye, X + T - 1, Ye + face, course=4, joint=8)
+            for ty in (sy0, sy1):
+                grid[ty][tx] = "Š"[0] if False else "Š"
+
+    # walls are solid; the stairs are walkable
+    for tx in range(tx0 - 1, tx1 + 2):
+        grid[ty0 - 1][tx] = "Ŧ"
+        grid[ty1 + 1][tx] = "Ŧ"
+    for ty in range(ty0, ty1 + 1):
+        for tx in (tx0 - 1, tx1 + 1):
+            if not sy0 <= ty <= sy1:
+                grid[ty][tx] = "Ŧ"
 
 
 # ---------------------------------------------------------------- new props
@@ -483,6 +576,7 @@ ROOM_STYLE = {
     "music_store": {"wall": (236, 226, 236), "dado": (120, 70, 150), "floor": "wood", "floor_col": (120, 80, 56)},
     "music_school": {"wall": (238, 230, 214), "dado": (60, 80, 150), "floor": "tile", "floor_col": (150, 120, 96)},
     "tower": {"wall": (120, 118, 140), "dado": (70, 130, 190), "floor": "stone", "floor_col": (90, 88, 110)},
+    "fishing": {"wall": (214, 230, 236), "dado": (50, 110, 150), "floor": "wood", "floor_col": (150, 116, 80)},
 }
 SHELF_GOODS = {
     "bakery": ["food_bread", "food_baguette", "food_croissant", "food_muffin", "food_cake", "food_donut", "food_empanada", "food_tart"],
@@ -492,6 +586,7 @@ SHELF_GOODS = {
     "smithy": ["gear_helmet", "gear_chainmail", "gear_breastplate", "gear_greaves", "gear_bracers", "gear_iron_shield", "item_hatchet", "gear_wood_shield"],
     "pets": ["pet_dog", "pet_cat", "pet_rabbit", "pet_parrot", "pet_turtle", "pet_hamster", "food_fish", "food_cookie"],
     "seeds": ["seed_wheat", "seed_lettuce", "seed_tomato", "seed_carrot", "seed_strawberry", "seed_grape", "seed_olive", "crop_tomato"],
+    "fishing": ["item_rod", "item_rod_bamboo", "item_rod_carbon", "item_net", "fish_salmon", "fish_tuna", "fish_trout", "bait_worm"],
     "tower": ["spell_spark", "spell_shield", "spell_lightning", "spell_ice", "spell_heal", "spell_quake", "spell_meteor", "ench_luck"],
     "music_store": ["item_guitar", "item_flute", "item_clarinet", "item_tambourine", "item_trumpet", "item_violin", "item_guitar", "item_flute"],
 }
@@ -800,7 +895,7 @@ def make_world():
     prop(va.fruit_stall, 40, 31, "x", "stall", 2)
     prop(va.fruit_stall, 51, 31, "x", "stall", 2)
     prop(va.bench, 52, 24, "e", "bench", 2)
-    prop(va.bench, 38, 27, "e", "bench", 2)
+    prop(va.bench, 37, 24, "e", "bench", 2)
     prop(well, 20, 22, "l", "well")
     prop(signpost, 77, 30, "g", "signpost")
     prop(crates, 74, 29, "T", "crates")
@@ -916,7 +1011,7 @@ def make_world():
         if key == "smithy":
             rplace(forge(), 1, 3, "E", "forge", (1, 3, 1, 1))
             rplace(anvil(), 3, 7, "U", "anvil", (3, 7, 1, 1))
-        if key in ("store", "weapons", "candy", "bakery"):
+        if key in ("store", "weapons", "candy", "bakery", "fishing"):
             rplace(va.barrels(), 11, 7, "b", "barrels", (11, 7, 1, 1))
             rplace(crates(), 2, 7, "T", "crates", (2, 7, 1, 1))
         if key == "pets":

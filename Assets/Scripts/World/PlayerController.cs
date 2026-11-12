@@ -45,6 +45,12 @@ namespace LLG
                                     Axis(GameAction.Down, KeyCode.DownArrow, GameAction.Up, KeyCode.UpArrow));
                 if (Keybinds.Down(GameAction.Jump)) sprite.Jump();
             }
+            if (village.Sitting)
+            {
+                sprite.Walking = false;
+                if (input != Vector2.zero || (free && Keybinds.Down(GameAction.Jump))) village.StandUp();     // any move = get up
+                return;
+            }
             sprite.Crouching = free && Keybinds.Held(GameAction.Crouch) && !sprite.Jumping;
             sprite.Running = free && Keybinds.Held(GameAction.Run) && !sprite.Crouching;
 

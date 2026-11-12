@@ -72,8 +72,12 @@ namespace LLG
         float hungerTimer, manaTimer, attackCooldown, autosaveTimer, fadeTimer = -1, portalCooldown, eggTimer;
         bool fistCursor;
         bool shieldUp;                                   // Escudo de luz: the next bite is blocked
+        bool sitting;                                    // on a bench
+        Vector2 standSpot;
+        float invulnerableUntil;                         // a moment after a bite when nothing else can hurt you
         readonly Dictionary<string, float> spellReady = new Dictionary<string, float>();
         SpellbookWindow spellbook;
+        ChatBox chat;
         CastWindow cast;
         EnchantWindow enchant;
         Texture2D cursorNormal, cursorFist;
@@ -81,7 +85,7 @@ namespace LLG
         /// <summary>True while a window that needs your full attention is open (talking, shopping,
         /// a minigame, the menu). The bag, profile, lessons and controls windows let you keep walking.</summary>
         public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || intruso.Open || menu.Open
-                            || music.Open || watering.Open || dungeon.Open || battle.Open || cast.Open || enchant.Open
+                            || music.Open || watering.Open || dungeon.Open || battle.Open || cast.Open || enchant.Open || chat.Typing
                             || fadeTimer >= 0 || closedFrame == Time.frameCount;
 
         /// <summary>Windows call this when they close, so the key that closed them does not also trigger something.</summary>
@@ -137,6 +141,7 @@ namespace LLG
             dungeon = Add<DungeonWindow>(); dungeon.Build(canvas, this, battle);
             watering = Add<WateringWindow>(); watering.Build(canvas, this);
             cast = Add<CastWindow>(); cast.Build(canvas, this);
+            chat = Add<ChatBox>(); chat.Build(canvas, this, player.transform);
             spellbook = Add<SpellbookWindow>(); spellbook.Build(canvas, this, cast);
             enchant = Add<EnchantWindow>(); enchant.Build(canvas, this);
             farm = Add<Farm>(); farm.Build(Map, world, watering);
@@ -231,7 +236,8 @@ namespace LLG
             AddVillager('2', "Mateo", "el pescador", "Fisherman", Look(3, 0, 0, 1, 1), new[] { Acc("hat", 200, 168, 108), Acc("beard", 74, 50, 36) },
                 L("Mateo", "Buenos días. Soy Mateo, el pescador.", "Good morning. I am Mateo, the fisherman."),
                 L("Mateo", "Necesitas una caña de pescar para pescar.", "You need a fishing rod to fish."),
-                L("Mateo", "Compra una en la tienda.", "Buy one at the general store."));
+                L("Mateo", "Compra una en la tienda de pesca de Marina, al norte del estanque.", "Buy one at Marina's fishing shop, north of the pond."),
+                L("Mateo", "Cuando el corcho se hunda, ¡tira rápido!", "When the bobber sinks, strike fast!"));
             AddVillager('3', "Luna", "la niña", "Girl", Look(0, 3, 3, 4, 0), new[] { Acc("skirt", 196, 60, 76) },
                 L("Luna", "¡Me encantan los caramelos!", "I love sweets!"),
                 L("Luna", "¿Has visto los gatos del pueblo? ¡Son muy simpáticos!", "Have you seen the village cats? They are very friendly!"));
@@ -271,6 +277,9 @@ namespace LLG
             AddVillager('!', "Profesora Isabel", "la profesora de música", "Music Teacher", Look(0, 5, 1, 1, 2), new[] { Acc("shawl", 60, 80, 150), Acc("skirt", 50, 50, 70) },
                 L("Profesora Isabel", "¡Bienvenido a la escuela de música!", "Welcome to the music school!"),
                 L("Profesora Isabel", "Forma el verso con las palabras y la música sonará.", "Build the verse with the words and the music will play."));
+            AddVillager('§', "Marina", "la pescadera", "Fishmonger", Look(2, 1, 1, 1, 0), new[] { Acc("hat", 150, 160, 106), Acc("apron", 70, 120, 160) },
+                L("Marina", "¡Hola! Tengo cañas, cebos y pescado fresco.", "Hello! I have rods, bait and fresh fish."),
+                L("Marina", "Con mejor caña y mejor cebo, pescas peces más raros.", "With a better rod and better bait you catch rarer fish."));
             AddVillager('Ø', "Doña Runa", "la encantadora", "Enchantress", Look(1, 1, 7, 5, 2), new[] { Acc("cloak", 50, 70, 140), Acc("hat", 40, 50, 110), Acc("skirt", 60, 60, 120) },
                 L("Doña Runa", "Bienvenido a la torre rúnica.", "Welcome to the Rune Tower."),
                 L("Doña Runa", "Con Lexa, las runas encantan tus armas y armaduras.", "With Lexa, the runes enchant your weapons and armour."));
@@ -297,7 +306,7 @@ namespace LLG
                 { 'B', "Art/Icons/food_bread" }, { 'C', "Art/Icons/food_candy" }, { 'S', "Art/Icons/item_rod" },
                 { 'W', "Art/Icons/item_sword" }, { 'M', "Art/Icons/pet_dog" }, { 'H', "Art/UI/hp_heart" },
                 { '^', "Art/Icons/gear_helmet" }, { 'n', "Art/UI/page" }, { 'o', "Art/Icons/food_egg" },
-                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" }, { 'Þ', "Art/Icons/spell_lightning" },
+                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" }, { 'Þ', "Art/Icons/spell_lightning" }, { 'Œ', "Art/Icons/item_rod" },
             };
             var list = new List<(Vector2Int, string)>();
             foreach (var kv in icons)
@@ -370,11 +379,13 @@ namespace LLG
             SetFist(!overUI && (MobAt(mouse) != null || TreeAt(mouse) != null));
 
             char facing = Map.At(player.FacingTile);
-            hud.SetPrompt(Describe(facing));
+            hud.SetPrompt(sitting ? "Levantarse" : Describe(facing));
 
             if (Input.GetKeyDown(KeyCode.Escape))
                 OpenMenu();
-            else if (Keybinds.Down(GameAction.Use) || Input.GetKeyDown(KeyCode.Return))
+            else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+                chat.Open();
+            else if (Keybinds.Down(GameAction.Use))
                 Interact(facing, player.FacingTile);
             else if (Keybinds.Down(GameAction.Backpack) && !bag.Open)
                 bag.Toggle();
@@ -539,6 +550,8 @@ namespace LLG
                 case 'ñ': return "Tocar el piano";
                 case 'Ð': return "Entrar en la Ciudadela del Sol";
                 case 'Þ': return "Entrar en la torre rúnica";
+                case 'Œ': return "Entrar en la tienda de pesca";
+                case 'e': return "Sentarse en el banco";
                 case 'ø': return "Encantar (el altar rúnico)";
                 case 'ç': return "Abrir la puerta";
                 case 'Ç': return "Cerrar la puerta";
@@ -573,7 +586,8 @@ namespace LLG
         /// <summary>Does whatever the given map letter stands for. Public so tools/tests can trigger it.</summary>
         public void Interact(char what, Vector2Int tile)
         {
-            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'Þ".IndexOf(what) >= 0)
+            if (sitting) { StandUp(); return; }
+            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'ÞŒ".IndexOf(what) >= 0)
             {
                 Teleport(door);
                 return;
@@ -587,8 +601,9 @@ namespace LLG
                 case 'A': archery.Begin(); break;
                 case 'F':
                 case 'V':
-                    if (GameState.Has("rod") || GameState.Has("rod_fine")) fishing.Begin();
-                    else dialogue.Show("", "Necesitas una caña de pescar. Cómprala en la tienda.", "You need a fishing rod. Buy one at the general store.");
+                    if (Fishery.HasRod()) fishing.Begin(what == 'V');
+                    else dialogue.Show("", "Necesitas una caña de pescar. Cómprala en la tienda de pesca, junto al estanque.",
+                        "You need a fishing rod. Buy one at the fishing shop by the pond.");
                     break;
                 case 'R':
                     var stats = GameState.Data.stats;
@@ -611,6 +626,7 @@ namespace LLG
                 case 'ñ': music.Begin(true); break;
                 case 'Ð': dungeon.Toggle(); break;
                 case 'ø': enchant.Begin(); break;
+                case 'e': SitOn(tile); break;
                 case 'ç':
                 case 'Ç': ToggleGate(tile); break;
                 case 'g': dialogue.Show("", "Al este: el bosque. ¡Cuidado con los lobos!", "East: the forest. Beware of the wolves!"); break;
@@ -637,6 +653,30 @@ namespace LLG
         }
 
         public void StartIntruso() => intruso.Begin();
+
+        public bool Sitting => sitting;
+
+        /// <summary>Sit down on a bench (benches are two tiles wide): E or any movement key gets you up.</summary>
+        void SitOn(Vector2Int tile)
+        {
+            var left = Map.At(tile + Vector2Int.left) == 'e' ? tile + Vector2Int.left : tile;
+            var center = VillageMap.Center(left) + new Vector2(0.5f, 0);
+            standSpot = player.transform.position;
+            player.transform.position = center + new Vector2(0, -0.42f);     // just in front of the seat, so you sit on it
+            playerSprite.Face(0);
+            playerSprite.Sitting = true;
+            sitting = true;
+            GameState.Data.stats.Heal(1);
+            GameState.Say("Te sientas en el banco. ¡Qué tranquilo!");
+        }
+
+        public void StandUp()
+        {
+            if (!sitting) return;
+            sitting = false;
+            playerSprite.Sitting = false;
+            player.transform.position = standSpot;
+        }
 
         /// <summary>Opens or closes a fence gate (like a Minecraft fence gate). It won't close on you.</summary>
         void ToggleGate(Vector2Int tile)
@@ -694,6 +734,28 @@ namespace LLG
                 word = mob.spanish;
                 english = mob.english;
                 anchor = mob.Position + new Vector2(0, 1f);
+            }
+            if (word == null)
+            {
+                // cats, dogs, chickens, the pet-shop animals and your own pet
+                string kind = null;
+                Vector2 at = Vector2.zero;
+                foreach (var a in Wanderer.All)
+                    if (a.Covers(world)) { kind = a.kind; at = a.transform.position; break; }
+                var pet = PetFollower.Current;
+                if (kind == null && pet != null && pet.isActiveAndEnabled && Vector2.Distance(world, pet.transform.position) < 0.6f)
+                {
+                    kind = pet.petId;
+                    at = pet.transform.position;
+                }
+                if (kind != null)
+                {
+                    var item = ItemDatabase.Get(kind);
+                    word = kind == "chicken" ? "la gallina" : item != null ? item.spanish : kind;
+                    english = kind == "chicken" ? "hen" : item != null ? item.english : kind;
+                    if (pet != null && kind == pet.petId && at == (Vector2)pet.transform.position) english += " (your pet)";
+                    anchor = at + new Vector2(0, 0.9f);
+                }
             }
             if (word == null)
             {
@@ -946,6 +1008,9 @@ namespace LLG
         /// <summary>A monster bit you. Armour (defence) softens the blow; Escudo de luz blocks it.</summary>
         public void DamagePlayer(int raw, Vector2 from)
         {
+            if (Time.time < invulnerableUntil) return;     // a pack can't all bite you in the same instant
+            invulnerableUntil = Time.time + 0.5f;
+            if (sitting) StandUp();
             if (shieldUp)
             {
                 shieldUp = false;

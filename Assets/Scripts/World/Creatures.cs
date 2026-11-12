@@ -141,7 +141,7 @@ namespace LLG
         public Vector2 Position => transform.position;
 
         /// <summary>True if this point (e.g. the mouse) is over the animal.</summary>
-        public bool Covers(Vector2 world) => !Dead && Mathf.Abs(world.x - Position.x) < 0.8f && Mathf.Abs(world.y - Position.y) < 0.6f;
+        public bool Covers(Vector2 world) => !Dead && Mathf.Abs(world.x - Position.x) < 0.9f && world.y > Position.y - 0.7f && world.y < Position.y + 0.9f;
 
         public void TakeHit(int amount, Vector2 from)
         {
@@ -246,6 +246,8 @@ namespace LLG
     /// <summary>A harmless animal that wanders around: village cats and dogs, chickens, pets in the shop.</summary>
     public class Wanderer : MonoBehaviour
     {
+        public static readonly List<Wanderer> All = new List<Wanderer>();
+        public string kind;
         VillageController village;
         SpriteRenderer r;
         Sprite a, b;
@@ -260,6 +262,7 @@ namespace LLG
             go.transform.position = at;
             var w = go.AddComponent<Wanderer>();
             w.village = owner;
+            w.kind = kind;
             w.home = w.goal = at;
             w.radius = radius;
             w.r = go.AddComponent<SpriteRenderer>();
@@ -276,6 +279,13 @@ namespace LLG
             }
             w.r.sprite = w.a;
         }
+
+        void OnEnable() => All.Add(this);
+        void OnDisable() => All.Remove(this);
+
+        /// <summary>True if this point (e.g. the mouse) is over the animal and it is visible.</summary>
+        public bool Covers(Vector2 world) => r.enabled && gameObject.activeInHierarchy
+            && Mathf.Abs(world.x - transform.position.x) < 0.6f && Mathf.Abs(world.y - transform.position.y) < 0.6f;
 
         void Update()
         {

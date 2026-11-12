@@ -167,6 +167,8 @@ namespace LLG
     /// <summary>A pet that trots after the player, hopping while it moves.</summary>
     public class PetFollower : MonoBehaviour
     {
+        public static PetFollower Current;
+        public string petId;
         Transform target;
         SpriteRenderer r;
         Sprite idle, hop;
@@ -179,6 +181,8 @@ namespace LLG
             go.transform.position = player.position + new Vector3(-0.9f, 0.45f, 0);
             var pet = go.AddComponent<PetFollower>();
             pet.target = player;
+            pet.petId = petId;
+            Current = pet;
             pet.r = go.AddComponent<SpriteRenderer>();
             pet.idle = UIFactory.LoadSprite("Art/Icons/" + petId);
             pet.hop = UIFactory.LoadSprite("Art/Icons/" + petId + "_hop");

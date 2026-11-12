@@ -52,7 +52,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] People (later PvP) are fought by clicking in real time (monsters are already fought with words)
 - [ ] Bosses also drop rare gear (they already give gold and Lexa)
 - [ ] More things to spend Lexa on: weapon/armour upgrades (+1 … +10), skill boosts
-- [ ] **Remove the 1m test money** before release (`GameConfig.GiveTestMoney = false`)
+- [ ] **Remove the test money and level 500** before release (`GameConfig.GiveTestMoney = false`)
 
 ### 6. Farming
 - [ ] More garden plots (buy extra land with gold), and use the big farm field too
@@ -282,3 +282,19 @@ Finished tasks, struck through.
 - ~~Battle "Hechizo" uses your prepared spell (★ in the spellbook)~~ ✅
 - ~~La Torre Rúnica (south street, east end) with Doña Runa and el altar rúnico~~ ✅
 - ~~Enchantments: Afilado, Fuego, Hielo, Protección, Vampiro, Suerte (ranks I–III, paid in Lexa)~~ ✅
+- ~~Sharper gold and Lexa boxes (full-size pixel font)~~ ✅
+- ~~Raised terrace in the plaza round the fountain, with stairs at both ends~~ ✅
+- ~~Testing: level 500~~ ✅
+- ~~Realistic park benches you can sit on with E~~ ✅
+- ~~Nicer messages: coloured tags (green for wins, gold for gold, blue for Lexa, red for damage) that pop in and stack~~ ✅
+- ~~Red screen-edge flash when you get hurt (and a pulse at low HP)~~ ✅
+- ~~Game guide: every monster with its damage, stats gained per level, every XP source~~ ✅
+- ~~+1 max mana per level (spells were impossible with 10 mana); 0.5 s safety after a bite~~ ✅
+- ~~A super cute cat (chibi orange tabby)~~ ✅
+- ~~Fishing shop (La tienda de pesca, Marina) by the pond: rods, bait, net, fishing hat, fresh fish; buys fish~~ ✅
+- ~~Fishing is a real little game: wait, strike in time, reel the fish in word by word; the line can snap~~ ✅
+- ~~17 kinds of fish from junk to legendary, pond vs river, with a collection counter~~ ✅
+- ~~Fishing gear: 5 rods (tier = rarest fish), 4 baits, the net (double catch), the fishing hat (lures fish)~~ ✅
+- ~~Every price in the game guide (generated from the item data)~~ ✅
+- ~~Enter to chat: your words appear in a white bubble above your head~~ ✅
+- ~~Left-click any animal (cats, dogs, chickens, pets, wolves) to read its name~~ ✅

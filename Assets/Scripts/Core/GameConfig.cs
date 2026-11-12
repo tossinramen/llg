@@ -27,7 +27,8 @@ namespace LLG
         public const int StartingCurrency = 20;              // Lexa you start with
         public const string GoldName = "oro";                // everyday money for the shops
         public const int StartingGold = 80;
-        public const bool GiveTestMoney = true;              // TESTING: start every load with at least 1m gold and 1m Lexa
+        public const bool GiveTestMoney = true;              // TESTING: start every load with at least 1m gold, 1m Lexa and level 500
+        public const int TestLevel = 500;
         public const string EnglishTagline = "A language-learning adventure";
 
         public static readonly LanguageInfo[] Languages =

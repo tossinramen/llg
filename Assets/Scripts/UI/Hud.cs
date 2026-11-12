@@ -20,7 +20,7 @@ namespace LLG
         static readonly Vector2 FramePos = new Vector2(-228, 150);
         const float BarWidth = 104, BarX = 22;
 
-        Text toast, prompt, zone, nameLevel, hpText, manaText, hungerText, coins, gold, xpText, levelText;
+        Text prompt, zone, nameLevel, hpText, manaText, hungerText, coins, gold, xpText, levelText;
         GameObject promptBox, minimap;
         RectTransform canvasRect, labelBox, mapImage, mapArrow, frame, hpFill, hpTrail, manaFill, hungerFill, xpFill;
         Image hpFlash;
@@ -32,13 +32,26 @@ namespace LLG
         Transform player;
         CharacterSprite playerSprite;
         string labelSpeakEs, labelSpeakEn;
-        float toastTimer, shakeTimer, trailHp;
+        float shakeTimer, trailHp, hurtTimer;
+        Image hurt;
+        Transform toastRoot;
+        readonly List<Toast> toasts = new List<Toast>();
+        const float ToastLife = 2.6f;
+
+        class Toast { public RectTransform rect; public CanvasGroup group; public float age; }
         int lastHp = -1;
 
         public void Build(Transform canvas, Action openMenu, Action openControls)
         {
             canvasRect = (RectTransform)canvas;
             cam = Camera.main;
+
+            // the red glow round the screen edges when you get hurt (drawn under every other piece of UI)
+            hurt = UIFactory.Img("Hurt", canvas, Vector2.zero, Vector2.zero, new Color(0.85f, 0.05f, 0.05f, 0), Vignette());
+            hurt.rectTransform.anchorMin = Vector2.zero;
+            hurt.rectTransform.anchorMax = Vector2.one;
+            hurt.rectTransform.sizeDelta = Vector2.zero;
+            hurt.raycastTarget = false;
             BuildUnitFrame(canvas);
             BuildXpBar(canvas);
 
@@ -46,8 +59,7 @@ namespace LLG
             var page = UIFactory.Btn("ControlsButton", canvas, new Vector2(286, 164), new Vector2(28, 22), "", UIFactory.Purple, openControls);
             UIFactory.Img("Page", page.transform, Vector2.zero, new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/page"));
 
-            toast = UIFactory.Label("Toast", canvas, new Vector2(-20, 96), new Vector2(480, 60), "", Color.white);
-            UIFactory.Outline(toast);
+            toastRoot = UIFactory.Rect("Toasts", canvas, new Vector2(0, 150), Vector2.zero);     // top middle, clear of speech bubbles
 
             promptBox = UIFactory.Panel("Prompt", canvas, new Vector2(0, -140), new Vector2(320, 34)).gameObject;
             prompt = UIFactory.Label("Text", promptBox.transform, new Vector2(0, 1), new Vector2(310, 24), "", UIFactory.Ink);
@@ -104,18 +116,19 @@ namespace LLG
             hungerText.gameObject.SetActive(false);
 
             // Lexa, in a small box under the portrait
-            gold = Purse(canvas, FramePos + new Vector2(-46, -40), "Art/UI/coin");
-            coins = Purse(canvas, FramePos + new Vector2(-46, -62), "Art/UI/lexa");
+            gold = Purse(canvas, FramePos + new Vector2(-38, -41), "Art/UI/coin");
+            coins = Purse(canvas, FramePos + new Vector2(-38, -65), "Art/UI/lexa");
         }
 
         /// <summary>A small money box under the portrait: icon + amount.</summary>
         Text Purse(Transform canvas, Vector2 pos, string icon)
         {
-            var img = UIFactory.Panel("Purse", canvas, pos, new Vector2(84, 20));
+            // the amount uses the font's full pixel size (16) so it stays sharp, never shrunk
+            var img = UIFactory.Panel("Purse", canvas, pos, new Vector2(100, 22));
             img.pixelsPerUnitMultiplier = 2;
             img.raycastTarget = false;
-            UIFactory.Img("Icon", img.rectTransform, new Vector2(-30, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite(icon));
-            return UIFactory.Label("Amount", img.rectTransform, new Vector2(8, 0), new Vector2(60, 12), "", UIFactory.Ink, TextAnchor.MiddleCenter, 12);
+            UIFactory.Img("Icon", img.rectTransform, new Vector2(-38, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite(icon));
+            return UIFactory.Label("Amount", img.rectTransform, new Vector2(8, 1), new Vector2(76, 18), "", UIFactory.Ink, TextAnchor.MiddleCenter, 16);
         }
 
         /// <summary>A bar in the unit frame: dark background, an optional trail and a coloured fill.</summary>
@@ -226,7 +239,8 @@ namespace LLG
             var s = data.stats;
             if (lastHp >= 0 && s.hp < lastHp)
             {
-                shakeTimer = 0.35f;         // hurt: shake the frame and flash the portrait
+                shakeTimer = 0.35f;         // hurt: shake the frame, flash the portrait, redden the screen edges
+                hurtTimer = 0.6f;
             }
             if (lastHp < 0 || s.hp > trailHp) trailHp = s.hp;
             lastHp = s.hp;
@@ -247,10 +261,88 @@ namespace LLG
             xpText.text = data.xp + " / " + need + " XP";
         }
 
+        /// <summary>A message pops up in a small dark tag, coloured by what it is: green for
+        /// victories and good news, gold for gold, blue for Lexa, red for damage.</summary>
         void ShowToast(string message)
         {
-            toast.text = toastTimer > 1.5f ? toast.text + "\n" + message : message;
-            toastTimer = 2.5f;
+            if (string.IsNullOrEmpty(message)) return;
+            var (color, icon) = ToastStyle(message);
+            float width = Mathf.Clamp(message.Length * 8 + (icon != null ? 44 : 26), 70, 560);
+            var box = UIFactory.Box("Toast", toastRoot, Vector2.zero, new Vector2(width, 22), new Color32(30, 24, 38, 230));
+            box.raycastTarget = false;
+            var border = box.gameObject.AddComponent<Outline>();
+            border.effectColor = new Color(color.r * 0.7f, color.g * 0.7f, color.b * 0.7f, 0.9f);
+            border.effectDistance = new Vector2(1, -1);
+            UIFactory.Img("Accent", box.transform, new Vector2(-width / 2 + 4, 0), new Vector2(3, 14), color);
+            float textX = 4;
+            if (icon != null)
+            {
+                UIFactory.Img("Icon", box.transform, new Vector2(-width / 2 + 16, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite(icon));
+                textX = 10;
+            }
+            var label = UIFactory.Label("Text", box.transform, new Vector2(textX, 1), new Vector2(width - (icon != null ? 34 : 16), 18), message, color, TextAnchor.MiddleCenter, 16);
+            UIFactory.Outline(label);
+            var group = box.gameObject.AddComponent<CanvasGroup>();
+            group.blocksRaycasts = false;
+            toasts.Insert(0, new Toast { rect = box.rectTransform, group = group });
+            while (toasts.Count > 3)
+            {
+                Destroy(toasts[toasts.Count - 1].rect.gameObject);
+                toasts.RemoveAt(toasts.Count - 1);
+            }
+        }
+
+        static (Color, string) ToastStyle(string m)
+        {
+            Color red = new Color32(255, 112, 100, 255), gold = new Color32(255, 214, 92, 255), blue = new Color32(140, 206, 255, 255),
+                  green = new Color32(126, 232, 120, 255), cream = new Color32(250, 240, 222, 255);
+            if (m.Contains("HP") && m.StartsWith("-")) return (red, "Art/UI/hp_heart");
+            if (m.StartsWith("+") && m.Contains(GameConfig.GoldName)) return (gold, "Art/UI/coin");
+            if (m.StartsWith("+") && m.Contains(GameConfig.CurrencyName)) return (blue, "Art/UI/lexa");
+            if (m.StartsWith("+") && m.Contains("HP")) return (green, "Art/UI/hp_heart");
+            if (m.Contains("nivel")) return (gold, null);
+            if (m.StartsWith("+") || m.StartsWith("¡") || m.Contains("mochila")) return (green, null);
+            if (m.StartsWith("No ") || m.StartsWith("Necesitas")) return (new Color32(255, 170, 120, 255), null);
+            return (cream, null);
+        }
+
+        void UpdateToasts()
+        {
+            for (int i = toasts.Count - 1; i >= 0; i--)
+            {
+                var t = toasts[i];
+                t.age += Time.unscaledDeltaTime;
+                if (t.age >= ToastLife)
+                {
+                    Destroy(t.rect.gameObject);
+                    toasts.RemoveAt(i);
+                    continue;
+                }
+                float pop = Mathf.Clamp01(t.age / 0.12f);
+                t.rect.localScale = Vector3.one * Mathf.Lerp(0.7f, 1f, 1 - (1 - pop) * (1 - pop));
+                t.group.alpha = Mathf.Clamp01((ToastLife - t.age) / 0.5f);
+                var target = new Vector2(0, -i * 24 + Mathf.Min(t.age, 0.3f) * 10);
+                t.rect.anchoredPosition = Vector2.Lerp(t.rect.anchoredPosition, target, Mathf.Clamp01(Time.unscaledDeltaTime * 14));
+            }
+        }
+
+        /// <summary>A soft frame that is clear in the middle and solid at the edges (tinted red when hurt).</summary>
+        static Sprite Vignette()
+        {
+            const int w = 128, h = 72;
+            var tex = new Texture2D(w, h, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp, filterMode = FilterMode.Bilinear };
+            var px = new Color[w * h];
+            for (int y = 0; y < h; y++)
+                for (int x = 0; x < w; x++)
+                {
+                    float dx = (x + 0.5f) / w * 2 - 1, dy = (y + 0.5f) / h * 2 - 1;
+                    float r = Mathf.Sqrt(dx * dx * 0.85f + dy * dy);
+                    float a = Mathf.Clamp01((r - 0.6f) / 0.55f);
+                    px[y * w + x] = new Color(1, 1, 1, a * a);
+                }
+            tex.SetPixels(px);
+            tex.Apply();
+            return Sprite.Create(tex, new Rect(0, 0, w, h), new Vector2(0.5f, 0.5f), 100);
         }
 
         /// <summary>Shows what the use key will do right now, or hides the prompt when given null.</summary>
@@ -297,13 +389,13 @@ namespace LLG
 
         void Update()
         {
-            toastTimer -= Time.deltaTime;
-            var color = toast.color;
-            color.a = Mathf.Clamp01(toastTimer);
-            toast.color = color;
-
+            UpdateToasts();
             Refresh();
             var s = GameState.Data.stats;
+            // red screen edges: a flash when hit, and a slow pulse while your HP is low
+            hurtTimer -= Time.unscaledDeltaTime;
+            float low = s.hp > 0 && s.hp <= s.maxHp / 4 ? 0.22f + 0.12f * Mathf.Sin(Time.unscaledTime * 5) : 0;
+            hurt.color = new Color(0.85f, 0.05f, 0.05f, Mathf.Max(low, 0.8f * Mathf.Clamp01(hurtTimer / 0.6f)));
             trailHp = Mathf.MoveTowards(trailHp, s.hp, Time.deltaTime * Mathf.Max(4, s.maxHp * 0.5f));
             hpTrail.sizeDelta = new Vector2(BarWidth * trailHp / Mathf.Max(1f, s.maxHp), hpTrail.sizeDelta.y);
             if (shakeTimer > 0)
