@@ -24,7 +24,7 @@ namespace LLG
             ('B', "Panadería", "Bakery", -3), ('C', "Dulcería", "Candy Shop", 2), ('S', "Tienda", "General Store", -3),
             ('W', "Armería", "Weapon Shop", -3), ('^', "Herrería", "Blacksmith", 2), ('M', "Mascotas", "Pet Shop", -3),
             ('H', "Tu casa", "Your House", -3), ('I', "Iglesia", "Church", -6), ('<', "Ayuntamiento", "Town Hall", -4), ('>', "Taberna", "Tavern", 2),
-            (']', "Semillas", "Seed Shop", 2), (')', "Música", "Music Shop", -3), ('\'', "Escuela de música", "Music School", -3),
+            (']', "Semillas", "Seed Shop", 2), (')', "Música", "Music Shop", -3), ('\'', "Escuela de música", "Music School", -3), ('Þ', "Torre rúnica", "Rune Tower", -5),
         };
 
         RectTransform mapRect, arrow;

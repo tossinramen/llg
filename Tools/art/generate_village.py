@@ -59,11 +59,12 @@ WORDS = {
     "E": ("El horno", "Oven"), "U": ("El yunque", "Anvil"), "J": ("La cama", "Bed"), "t": ("La mesa", "Table"),
     "G": ("La chimenea", "Fireplace"),
     "ç": ("La puerta de la valla", "Gate"), "Ç": ("La puerta de la valla", "Gate"),
+    "þ": ("La torre rúnica", "Rune Tower"), "ø": ("El altar rúnico", "Rune Altar"),
     "ð": ("La Ciudadela del Sol", "Citadel of the Sun"), "Ð": ("La entrada de la Ciudadela", "Citadel Entrance"),
     "[": ("La semillería", "Seed Shop"), "(": ("La tienda de música", "Music Shop"),
     "`": ("La escuela de música", "Music School"), "+": ("El huerto", "Vegetable Patch"), "ñ": ("El piano", "Piano"),
 }
-for door in "BCSWMHDI^<>])'":
+for door in "BCSWMHDI^<>])'Þ":
     WORDS[door] = ("La puerta", "Door")
 
 # ---------------------------------------------------------------- the village layout (tiles)
@@ -109,6 +110,7 @@ ROOMS = [
     ("seeds", "La semillería", "Seed Shop", "seeds", "*", (130, 34)),
     ("music_store", "La tienda de música", "Music Shop", "music", "/", (114, 45)),
     ("music_school", "La escuela de música", "Music School", "", "!", (130, 45)),
+    ("tower", "La torre rúnica", "Rune Tower", "", "Ø", (114, 56)),
 ]
 RW, RH = 14, 10
 
@@ -480,6 +482,7 @@ ROOM_STYLE = {
     "seeds": {"wall": (232, 226, 196), "dado": (110, 150, 70), "floor": "wood", "floor_col": (160, 120, 80)},
     "music_store": {"wall": (236, 226, 236), "dado": (120, 70, 150), "floor": "wood", "floor_col": (120, 80, 56)},
     "music_school": {"wall": (238, 230, 214), "dado": (60, 80, 150), "floor": "tile", "floor_col": (150, 120, 96)},
+    "tower": {"wall": (120, 118, 140), "dado": (70, 130, 190), "floor": "stone", "floor_col": (90, 88, 110)},
 }
 SHELF_GOODS = {
     "bakery": ["food_bread", "food_baguette", "food_croissant", "food_muffin", "food_cake", "food_donut", "food_empanada", "food_tart"],
@@ -489,6 +492,7 @@ SHELF_GOODS = {
     "smithy": ["gear_helmet", "gear_chainmail", "gear_breastplate", "gear_greaves", "gear_bracers", "gear_iron_shield", "item_hatchet", "gear_wood_shield"],
     "pets": ["pet_dog", "pet_cat", "pet_rabbit", "pet_parrot", "pet_turtle", "pet_hamster", "food_fish", "food_cookie"],
     "seeds": ["seed_wheat", "seed_lettuce", "seed_tomato", "seed_carrot", "seed_strawberry", "seed_grape", "seed_olive", "crop_tomato"],
+    "tower": ["spell_spark", "spell_shield", "spell_lightning", "spell_ice", "spell_heal", "spell_quake", "spell_meteor", "ench_luck"],
     "music_store": ["item_guitar", "item_flute", "item_clarinet", "item_tambourine", "item_trumpet", "item_violin", "item_guitar", "item_flute"],
 }
 
@@ -710,6 +714,10 @@ def make_world():
             grid[y0 + dt - 1][dx - 1] = door
         doors[key] = (dx, y0 + dt - 1)
     place(barn(), 7 * T, 34 * T, (3, 32, 7, 2), "v", "barn")
+    tower_img = Image.open(os.path.join(ART, "World", "Objects", "tower.png")).convert("RGBA")
+    place((tower_img, (40, 144)), 62 * T + 8, 38 * T, (61, 36, 3, 2), "þ", "tower")
+    grid[37][62] = "Þ"
+    doors["tower"] = (62, 37)
     citadel_img = Image.open(os.path.join(ART, "World", "Objects", "citadel.png")).convert("RGBA")
     place((citadel_img, (88, 136)), 100 * T + 8, 16 * T, (95, 13, 11, 3), "ð", "citadel")
     grid[15][100] = "Ð"
@@ -915,6 +923,12 @@ def make_world():
             rplace(pen(), 3, 7, "N", "pen", (2, 7, 4, 1))
             for i, kind in enumerate(("pet_cat", "pet_rabbit", "pet_dog", "pet_hamster")):
                 spawns.append({"kind": kind, "x": ox + 3 + i * 2, "y": oy + 6 + (i % 2), "room": True})
+        if key == "tower":
+            img = Image.open(os.path.join(ART, "World", "Objects", "altar.png")).convert("RGBA")
+            place((img, (24, 36)), (ox + 7) * T, (oy + 7) * T, (ox + 6, oy + 6, 3, 1), "ø", "altar")
+            grid[oy + 4][ox + 7] = keeper
+            img, anc = shelf("tower")
+            place((img, anc), (ox + 4) * T, (oy + 3) * T - 2, (ox + 2, oy + 2, 4, 1), "L", "shelf_tower")
         if key == "music_school":
             img = Image.open(os.path.join(ART, "World", "Objects", "piano.png")).convert("RGBA")
             place((img, (24, 35)), (ox + 4) * T + 8, (oy + 4) * T, (ox + 3, oy + 3, 3, 1), "ñ", "piano")
@@ -971,7 +985,7 @@ def make_minimap(ground, grid):
             X, Y = tx * 4, ty * 4
             if c in "kqswjmhdarv[(`BCSWMHD^<>])'":
                 d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(176, 82, 54))
-            elif c in "ðÐ":
+            elif c in "ðÐþÞ":
                 d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(150, 144, 130))
             elif False:
                 d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(176, 82, 54))

@@ -80,8 +80,8 @@ namespace LLG
             if (!Open || itemIds == null) return;
             foreach (Transform child in cards) Destroy(child.gameObject);
             foreach (Transform child in sectionRow) Destroy(child.gameObject);
-            money.text = GameState.Data.stats.coins.ToString();
-            goldText.text = GameState.Data.stats.gold.ToString();
+            money.text = GameState.Short(GameState.Data.stats.coins);
+            goldText.text = GameState.Short(GameState.Data.stats.gold);
             buyTab.color = selling ? UIFactory.Faded : UIFactory.Gold;
             sellTab.color = selling ? UIFactory.Gold : UIFactory.Faded;
 
@@ -140,11 +140,10 @@ namespace LLG
                 var name = UIFactory.LLabel("Name", card.transform, new Vector2(12, 7), new Vector2(76, 28), item.spanish, item.english,
                     locked ? UIFactory.Faded : UIFactory.Ink, TextAnchor.MiddleLeft);
                 name.lineSpacing = 0.8f;
-                bool lexa = !selling && GameState.PaidInLexa(item);
-                string priceText = owned ? "Tuyo" : locked ? "Nv " + item.level : price + (lexa ? " Lexa" : "");
+                                string priceText = owned ? "Tuyo" : locked ? "Nv " + item.level : GameState.Short(price);
                 Color priceColor = owned ? UIFactory.Green : locked ? UIFactory.Red : (Color)new Color32(150, 100, 30, 255);
                 UIFactory.Label("Price", card.transform, new Vector2(-28, -15), new Vector2(52, 16), priceText, priceColor, TextAnchor.MiddleLeft, 12);
-                if (locked) UIFactory.Label("Cost", card.transform, new Vector2(26, -15), new Vector2(52, 16), price.ToString(), new Color32(150, 100, 30, 255), TextAnchor.MiddleRight, 12);
+                if (locked) UIFactory.Label("Cost", card.transform, new Vector2(26, -15), new Vector2(52, 16), GameState.Short(price), new Color32(150, 100, 30, 255), TextAnchor.MiddleRight, 12);
                 if (count > 1) UIFactory.Label("Count", card.transform, new Vector2(26, -15), new Vector2(52, 16), "x" + count, UIFactory.Faded, TextAnchor.MiddleRight, 12);
             }
             translate.Set(translate.English);     // new cards follow the current language
@@ -153,11 +152,9 @@ namespace LLG
         void Buy(ItemDef item)
         {
             var stats = GameState.Data.stats;
-            bool lexa = GameState.PaidInLexa(item);
-            if ((lexa ? stats.coins : stats.gold) < item.price)
+            if (stats.gold < item.price)
             {
-                string money = lexa ? GameConfig.CurrencyName : GameConfig.GoldName;
-                feedback.Set("No tienes suficiente " + money + ".", "You don't have enough " + (lexa ? "Lexa" : "gold") + ".");
+                feedback.Set("No tienes suficiente " + GameConfig.GoldName + ".", "You don't have enough gold.");
                 return;
             }
             if (!GameState.AddItem(item.id))
@@ -165,7 +162,7 @@ namespace LLG
                 feedback.Set("Tu mochila está llena.", "Your bag is full.");
                 return;
             }
-            if (lexa) stats.AddCoins(-item.price); else stats.AddGold(-item.price);
+            stats.AddGold(-item.price);
             if (item.kind == ItemKind.Pet && string.IsNullOrEmpty(GameState.Data.pet)) GameState.Data.pet = item.id;
             GameState.AddXp(SkillType.Trading, 2);
             feedback.Set("¡Gracias! Compraste " + item.spanish + ".", "Thank you! You bought: " + item.english + ".");

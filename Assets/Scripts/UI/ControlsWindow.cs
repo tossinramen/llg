@@ -40,14 +40,15 @@ namespace LLG
                 (Keybinds.KeyName(GameAction.Profile), "Perfil y habilidades", "Profile and skills"),
                 (Keybinds.KeyName(GameAction.Lessons), "Lecciones (tema y nivel)", "Lessons (topic and level)"),
                 (Keybinds.KeyName(GameAction.Map), "Mapa grande (o clic en el minimapa)", "Big map (or click the minimap)"),
-                ("Mantén clic izq.", "Leer el nombre de algo", "Hold left click: read what something is called"),
+                (Keybinds.KeyName(GameAction.Spells), "Libro de hechizos", "Spellbook"),
+                ("Clic izq.", "Leer el nombre de algo", "Left click: read what something is called"),
                 ("Clic der.", "Atacar animales / cortar árboles", "Attack animals / chop trees"),
                 ("Rueda", "Acercar y alejar la cámara", "Zoom the camera in and out"),
                 ("Esc", "Menú (opciones, salir)", "Menu (options, exit)"),
             };
             for (int i = 0; i < lines.Length; i++)
             {
-                float y = 106 - i * 19;
+                float y = 108 - i * 18;
                 var key = UIFactory.Box("Key", rows, new Vector2(-130, y), new Vector2(96, 20), UIFactory.Teal);
                 var label = UIFactory.Label("KeyName", key.transform, new Vector2(0, 1), new Vector2(96, 20), lines[i].key, Color.white);
                 UIFactory.Outline(label);

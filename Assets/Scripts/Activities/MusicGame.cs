@@ -85,12 +85,12 @@ namespace LLG
             if (round >= Rounds)
             {
                 int reward = wins * 5;
-                info.Set("¡Concierto terminado! Versos: " + wins + "/" + Rounds + "  +" + reward + " " + GameConfig.CurrencyName,
-                    "Concert over! Verses: " + wins + "/" + Rounds + "  +" + reward + " " + GameConfig.CurrencyName);
+                info.Set("¡Concierto terminado! Versos: " + wins + "/" + Rounds + "  +" + reward + " " + GameConfig.GoldName,
+                    "Concert over! Verses: " + wins + "/" + Rounds + "  +" + reward + " " + GameConfig.GoldName);
                 foreach (Transform c in tiles) Destroy(c.gameObject);
                 if (wins > 0)
                 {
-                    GameState.AddCurrency(reward);
+                    GameState.Reward(reward, Mathf.Max(1, reward / 3));
                     GameState.AddXp(SkillType.Music, Lessons.Xp(wins * 8));
                     GameState.AddXp(SkillType.Grammar, Lessons.Xp(wins * 4));
                 }

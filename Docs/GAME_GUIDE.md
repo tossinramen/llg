@@ -15,7 +15,7 @@ Contents: [Basics](#basics) · [Controls](#controls) · [Stats & XP](#stats--xp)
 | | |
 |---|---|
 | Name | **Runes of Speech** |
-| Money | **Oro (gold)** for the shops (start 80) and **Lexa**, magical money from learning (start 20) |
+| Money | **Oro (gold)** buys everything (start 80); **Lexa** is for spells and enchantments (start 20). Shown short: 1.5k, 1m. *Testing: every load tops both up to 1m (`GameConfig.GiveTestMoney`).* |
 | Languages | Spanish (playable); Japanese and Korean shown as "coming soon" |
 | Town | **Valdeluz**, a Spanish village |
 | Style | 16-bit pixel art with fake depth: buildings have side walls and shadows, and you walk behind things |
@@ -38,7 +38,8 @@ All keys can be changed in **Esc → Opciones**.
 | U | Profile: equipment, stats, skills |
 | L | Lessons: choose topic and level |
 | M | Big map (or click the minimap) |
-| Hold left click (a moment) | Read the Spanish name of anything (click the sign to close it); a shop's menu board opens the shop |
+| K | Spellbook: learn, upgrade, prepare (★) and cast (▶) spells |
+| Left click | Read the Spanish name of anything (click the sign to close it); a shop's menu board opens the shop |
 | Right click | Attack animals / chop trees (cursor becomes a fist); on a door: go in |
 | Mouse wheel | Zoom in / out |
 | Esc | Menu: Resume, Options (keys, music volume), Exit Game |
@@ -48,14 +49,14 @@ All keys can be changed in **Esc → Opciones**.
 
 | Stat | Details |
 |---|---|
-| **HP** | Starts at 20; +2 max per character level. Lost to wolf/dog bites and fishing mistakes. At 0 you faint, wake in the plaza and lose 10% of your Lexa. Bed and level-ups restore it. |
+| **HP** | Starts at 20; +2 max per character level. Lost to wolf/dog bites and fishing mistakes. At 0 you faint, wake in the plaza and lose 10% of your gold. Bed and level-ups restore it. |
 | **Mana** | 10 + intelligence + jewellery bonuses. Spent on hints (2 each). Refills 1 every 20 s, fully at the rune fountain or in bed. |
 | **Hunger** | 0–100; drops 1 every 8 s (twice as fast when running). At 0 you walk slowly. Eat food from the bag. |
 | **Intelligence** | +1 per book read: +1 max mana and +5% XP. |
 | **Attack** | The damage of your weapon (fists = 1). |
 | **Defence** | Sum of your armour; each 2 points blocks 1 damage per bite (minimum 1 damage). |
-| **Oro (gold)** | Everyday money. Earned by selling things, defeating animals and bosses. Spent in every shop except the pet shop. Lose 10% when you faint. |
-| **Lexa** | Magical money (a grey rune stone). Earned from the language activities (archery, fishing, El intruso, music) and bosses. Buys pets; later upgrades and enchantments. In the bag, 10 Lexa can be exchanged for 20 gold. |
+| **Oro (gold)** | Everyday money. Earned from activities, selling things, defeating animals and bosses. Spent in every shop (pets too). Lose 10% when you faint. |
+| **Lexa** | Magical money (a grey rune stone). A little from every language activity (a third of the gold prize), a lot from bosses; Suerte runes add 10% per rank. Spent on learning and levelling up spells (K) and on enchantments at La Torre Rúnica. |
 
 **Character level:** uncapped. XP needed for the next level = 80 × level^1.4 (level 1→2: 80, 5→6: ~761, 10→11: ~2,009). XP bar along the bottom of the screen.
 Every XP gain goes to a **skill** and to your **character level**.
@@ -102,14 +103,14 @@ Every XP gain goes to a **skill** and to your **character level**.
 
 | Activity | Where | How it works | Rewards |
 |---|---|---|---|
-| **Tiro con arco** (Archery) | Archery range (north-east), Don Felipe | English word shown; shoot the target with the Spanish word (an arrow flies to it). 8 rounds, 3 arrows, timer. Hint (2 mana) removes a wrong target. A bow equipped gives more time. | 4 Lexa per hit, XP |
-| **La pesca** (Fishing) | Pond (south) or river; needs a fishing rod | Wait for a bite, then click word tiles in order to build the Spanish sentence. Hint (2 mana) places the next word. Mistakes cost 1 HP. Magic rod gives more time. | Fish into the bag, Lexa, XP |
-| **El intruso** (Odd one out) | Tomás the woodcutter, or the lessons window | Four words: three from a topic, one not. Click the intruder. 6 rounds. | 3 Lexa per correct, XP |
+| **Tiro con arco** (Archery) | Archery range (north-east), Don Felipe | English word shown; shoot the target with the Spanish word (an arrow flies to it). 8 rounds, 3 arrows, timer. Hint (2 mana) removes a wrong target. A bow equipped gives more time. | 4 gold per hit (+⅓ in Lexa), XP |
+| **La pesca** (Fishing) | Pond (south) or river; needs a fishing rod | Wait for a bite, then click word tiles in order to build the Spanish sentence. Hint (2 mana) places the next word. Mistakes cost 1 HP. Magic rod gives more time. | Fish into the bag, gold + a little Lexa, XP |
+| **El intruso** (Odd one out) | Tomás the woodcutter, or the lessons window | Four words: three from a topic, one not. Click the intruder. 6 rounds. | 3 gold per correct (+⅓ in Lexa), XP |
 | **Reading** | Anywhere | Left-click anything to see its Spanish name; globe for English; speaker to hear it. | Reading XP |
 | **Tree chopping** | Any tree | Right-click: cracks appear, tree shakes, breaks after 6 damage (fist 1, hatchet 2, axe/battle axe 3 per hit). Regrows in 3 s. Orange trees sometimes drop oranges. | Wood (sell 4), XP |
-| **Combat** | Forest (wolves), olive grove (wild dogs) | Right-click an animal to hit it; bows shoot arrows. They fight back once hit. | Lexa, wolf pelts, XP |
+| **Combat** | Forest (wolves), olive grove (wild dogs) | Right-click an animal to hit it; bows shoot arrows. They fight back once hit. | Gold, wolf pelts, XP |
 | **Shopping** | 6 shops (inside) | Buy tab and Sell tab. | Trading XP |
-| **La música** (Music) | Music school (Isabel or the piano); needs an instrument except at the piano | A verse in Spanish is shown in English; click its words in order. Each right word plays a note on your instrument; finish and the melody plays. 3 verses. Better instruments = more time. | 5 Lexa per verse, Music + Grammar XP |
+| **La música** (Music) | Music school (Isabel or the piano); needs an instrument except at the piano | A verse in Spanish is shown in English; click its words in order. Each right word plays a note on your instrument; finish and the melody plays. 3 verses. Better instruments = more time. | 5 gold per verse (+⅓ in Lexa), Music + Grammar XP |
 | **El huerto** (vegetable patch) | 18 plots next to your house | E on a plot: plant (uses seeds from your bag), water (pick the Spanish word — right = grows twice as fast for 45 s), harvest when ripe (2 crops). | Crops to sell, Farming XP |
 | **Egg collecting** | Chicken coop at the farm | E at the coop; one egg per minute. | Egg (food) |
 | **Sleeping** | Bed in your house | Restores HP and mana, saves. | — |
@@ -146,6 +147,7 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Semillería (seed shop) | Yes | Don Ramón; 7 kinds of seeds; buys your crops (west street, next to your house) |
 | Tienda de música (music shop) | Yes | Marta; 6 instruments (north street, next to the bakery) |
 | Escuela de música (music school) | Yes | Profesora Isabel and a piano: the music game (north street, east end) |
+| La Torre Rúnica (Rune Tower) | Yes | Round stone tower with glowing rune windows (south street, east end). Doña Runa and **el altar rúnico**: enchant your weapons and armour |
 | Tu casa (your house) | Yes | Bed (sleep), fireplace, table, shelf, rug |
 | Iglesia (church) | No | "Closed today" |
 | Ayuntamiento (town hall) | No | "Closed, come back tomorrow" |
@@ -173,6 +175,7 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Don Ramón | el semillero (seed seller) | Inside the Semillería | Seed shop; farming tips |
 | Marta | la vendedora de música (music seller) | Inside the music shop | Music shop |
 | Profesora Isabel | la profesora de música (music teacher) | Inside the music school | Starts the music game |
+| Doña Runa | la encantadora (enchantress) | Inside La Torre Rúnica | Opens the enchanting altar |
 
 People cannot be attacked.
 
@@ -180,8 +183,8 @@ People cannot be attacked.
 
 | Creature | Where | HP | Bite | Behaviour | Drops |
 |---|---|---|---|---|---|
-| **El lobo** (wolf) | Forest clearings (5) | 14 | 3 | Neutral until hit; the pack joins in; gives up past 14 tiles | 6–12 Lexa, 60% wolf pelt, 30 XP |
-| **El perro salvaje** (wild dog) | Olive grove (3) | 9 | 2 | Same | 3–8 Lexa, 20 XP |
+| **El lobo** (wolf) | Forest clearings (5) | 14 | 3 | Neutral until hit; the pack joins in; gives up past 14 tiles | 6–12 gold, 60% wolf pelt, 30 XP |
+| **El perro salvaje** (wild dog) | Olive grove (3) | 9 | 2 | Same | 3–8 gold, 20 XP |
 | Village cats & dogs | Streets (5) | — | — | Wander; harmless | — |
 | Chickens | Chicken yard (4) | — | — | Wander and peck | — |
 | Shop animals | Pet shop | — | — | Wander in the pen | — |
@@ -219,7 +222,7 @@ el perro 150 · el gato 150 · el conejo 120 · el loro 250 · la tortuga 140 ·
 
 el pez 6 (food 30) · la naranja 2 (food 10) · la madera 4 · la piel de lobo 15
 
-Prices are in **gold**, except pets (in **Lexa**). Shops buy anything back for gold at **half price** (found items at the prices above).
+All prices are in **gold** (pets too). Shops buy anything back for gold at **half price** (found items at the prices above).
 
 ## Weapons
 
@@ -313,19 +316,19 @@ A Machu Picchu-style stone citadel at the end of the forest path (east, across t
 Press E at the doorway to see the ten floors. Each floor needs a character level and the floor below
 it beaten. Battles are turn-based: pick a move, then answer the Spanish question within 12 seconds
 (keys 1–4 work). **No translations or hints.** Wrong or late = the move fails. Then the boss strikes
-(armour softens it). Lose = 10% of your Lexa and you leave with half HP.
+(armour softens it). Lose = 10% of your gold and you leave with half HP.
 
 | Move | Effect |
 |---|---|
-| Atacar | Weapon damage × 2 + level ÷ 2 + a little luck |
-| Hechizo | Double attack damage, costs 5 mana |
+| Atacar | (Weapon damage + rune bonus) × 2 + level ÷ 2 + a little luck. Vampiro heals, Hielo may freeze the boss |
+| Hechizo | Your prepared spell (★ in the spellbook): spell its word letter by letter before the timer ends. A wrong letter fizzles |
 | Defender | Halves the boss's next hit, +3 HP |
 | Comer | Eat your best food (no question): heals half its value |
 | Huir | Leave the battle |
 
 | Floor | Level | Boss | HP | Hits for | Tests | Reward |
 |---|---|---|---|---|---|---|
-| 1 | 5 | El Guardián de Piedra | 58 | 4 | Basic words | 60 Lexa |
+| 1 | 5 | El Guardián de Piedra | 58 | 4 | Basic words | 40 gold + 60 Lexa |
 | 2 | 10 | La Reina Araña | 86 | 6 | Food and animals | 120 |
 | 3 | 15 | El Rey Trol | 114 | 8 | Ser or estar | 180 |
 | 4 | 20 | El Brujo de la Niebla | 142 | 10 | Questions and replies | 240 |
@@ -338,8 +341,39 @@ it beaten. Battles are turn-based: pick a move, then answer the Spanish question
 
 Bosses also give Combat XP (40 × floor).
 
+## Magic (K)
+
+Press **K** for the spellbook. Spells unlock by character level and are learned and levelled up (ranks I–V)
+with **Lexa**. Learning costs level × 20 Lexa; each rank after that costs more. **★** chooses the spell the
+battle "Hechizo" move uses; **▶** casts it now, at the nearest animal. To cast, click the letters of the
+spell's word **in order**; one wrong letter and it fizzles ("¡Fsss!").
+
+| Lv | Spell | Word | Mana | Effect (rank I → V) |
+|---|---|---|---|---|
+| 25 | Chispa (spark) | chispa | 3 | 16 → 40 fire damage |
+| 30 | Escudo de luz (light shield) | escudo | 4 | Blocks the next hit |
+| 35 | Rayo (lightning) | rayo | 6 | 35 → 75 damage to one enemy |
+| 40 | Hielo (ice) | hielo | 5 | Freezes the enemy (3–7 s; one boss turn) |
+| 45 | Curación (heal) | curar | 5 | Heals 18 → 50 HP |
+| 55 | Terremoto (earthquake) | terremoto | 8 | 28 → 60 damage to every enemy nearby |
+| 70 | Meteoro (meteor) | meteoro | 12 | 70 → 150 damage; 60 s cooldown (4 turns in battle) |
+
+## Enchanting: La Torre Rúnica
+
+Talk to **Doña Runa** or use **el altar rúnico**. Pick something you are wearing, then an enchantment.
+One enchantment per item (a different one replaces it); ranks I–III cost **100 / 400 / 1k Lexa**.
+
+| Encantamiento | On | Effect per rank |
+|---|---|---|
+| Afilado (sharpness) | Weapons | +2 damage |
+| Fuego (fire) | Weapons | +1 damage (burns) |
+| Hielo (ice) | Weapons | Hits slow animals for 1.5 s; 15% chance to freeze a boss for a turn |
+| Protección | Armour | +1 defence |
+| Vampiro | Weapons | Heal 1 HP per hit (2 in battle) |
+| Suerte (luck) | Weapons or armour | +10% Lexa from everything |
+
 ## Not built yet
 
-Quests, a story, magic spells, the gym and strength, gear upgrades,
-durability, repairs and enchanting, music in battle, conversations, and Spanish voice recordings.
+Quests, a story, the gym and strength, gear upgrades (+1…+10),
+durability, repairs, music in battle, conversations, and Spanish voice recordings.
 These are all in [PLANNER.md](PLANNER.md).

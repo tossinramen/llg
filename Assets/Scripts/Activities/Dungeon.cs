@@ -225,12 +225,13 @@ namespace LLG
     /// A boss battle, turn-based like Pokémon Showdown. Pick a move; to pull it off you must answer a
     /// Spanish question before the timer runs out. Then the boss strikes back.
     /// No translations and no hints in battle.
-    /// Moves: Atacar (weapon damage), Hechizo (double damage, 5 mana), Defender (halve the next hit and
-    /// heal a little), Comer (eat the best food in your bag to heal - no question).
+    /// Moves: Atacar (weapon damage), Hechizo (your prepared spell from the spellbook - spell its word
+    /// letter by letter), Defender (halve the next hit and heal a little), Comer (eat the best food in
+    /// your bag to heal - no question).
     /// </summary>
     public class BattleWindow : MonoBehaviour
     {
-        enum Phase { Choose, Question, Enemy, Over }
+        enum Phase { Choose, Question, Spell, Enemy, Over }
 
         GameObject window;
         Transform moves, answers;
@@ -243,7 +244,9 @@ namespace LLG
         Phase phase;
         string pendingMove;
         int bossHpNow;
-        bool defending;
+        bool defending, shielded;
+        int frozenTurns, meteorWait, spellNext;
+        Magic.Spell spell;
         float timer, wait, shake;
         const float AnswerTime = 12f;
 
@@ -292,7 +295,8 @@ namespace LLG
         {
             floor = f;
             bossHpNow = f.hp;
-            defending = false;
+            defending = shielded = false;
+            frozenTurns = meteorWait = 0;
             title.text = "Piso " + f.number + ": " + f.es;
             bossImage.GetComponent<Image>().sprite = UIFactory.LoadSprite("Art/Bosses/" + f.sprite);
             portrait.Show(PlayerProfile.Current.appearance, CharacterLayers.FromEquipment());
@@ -313,10 +317,14 @@ namespace LLG
             timerBar.sizeDelta = new Vector2(400, 6);
             var stats = GameState.Data.stats;
             Move("Atacar", -207, UIFactory.Red, () => Ask("attack"));
-            Move("Hechizo (5)", -69, UIFactory.Purple, () =>
+            var prepared = Magic.GetSpell(GameState.Data.preparedSpell);
+            if (prepared != null && Magic.Rank(prepared.id) == 0) prepared = null;
+            Move(prepared == null ? "Hechizo" : prepared.es + " (" + prepared.mana + ")", -69, UIFactory.Purple, () =>
             {
-                if (stats.mana < 5) { Say("No tienes maná."); return; }
-                Ask("spell");
+                if (prepared == null) { Say("No sabes hechizos. Apréndelos en el libro (K)."); return; }
+                if (prepared.id == "meteor" && meteorWait > 0) { Say("El meteoro necesita " + meteorWait + " turnos más."); return; }
+                if (stats.mana < prepared.mana) { Say("No tienes maná."); return; }
+                AskSpell(prepared);
             });
             Move("Defender", 69, UIFactory.Blue, () => Ask("defend"));
             Move("Comer", 207, UIFactory.Green, Eat);
@@ -345,6 +353,76 @@ namespace LLG
             }
         }
 
+        /// <summary>Spell the spell's word: click its letters in order before time runs out.</summary>
+        void AskSpell(Magic.Spell s)
+        {
+            spell = s;
+            spellNext = 0;
+            phase = Phase.Spell;
+            timer = AnswerTime;
+            Clear(moves);
+            DrawLetters();
+        }
+
+        void DrawLetters()
+        {
+            Clear(answers);
+            string word = spell.word;
+            prompt.text = spell.es + ":  " + word.Substring(0, spellNext).ToUpper() + new string('_', word.Length - spellNext);
+            var order = new List<int>();
+            for (int i = 0; i < word.Length; i++) order.Add(i);
+            var rng = new System.Random(word.GetHashCode() ^ floor.number);
+            for (int i = order.Count - 1; i > 0; i--) { int j = rng.Next(i + 1); (order[i], order[j]) = (order[j], order[i]); }
+            float x = -(order.Count - 1) * 18f;
+            foreach (int i in order)
+            {
+                int index = i;
+                if (i >= spellNext)
+                    UIFactory.Btn("Letter", answers, new Vector2(x, -96), new Vector2(32, 32), word[i].ToString().ToUpper(), UIFactory.Teal, () => SpellLetter(index));
+                x += 36;
+            }
+        }
+
+        void SpellLetter(int index)
+        {
+            if (phase != Phase.Spell) return;
+            if (spell.word[index] != spell.word[spellNext]) { SpellFizzles(); return; }
+            spellNext++;
+            if (spellNext < spell.word.Length) { DrawLetters(); return; }
+            Clear(answers);
+            CastSpell();
+        }
+
+        void SpellFizzles()
+        {
+            Clear(answers);
+            prompt.text = "";
+            Say("¡Fsss! El hechizo se apaga.");
+            EndPlayerTurn();
+        }
+
+        void CastSpell()
+        {
+            var stats = GameState.Data.stats;
+            stats.TrySpendMana(spell.mana);
+            int power = Magic.Power(spell);
+            prompt.text = "";
+            switch (spell.id)
+            {
+                case "heal": stats.Heal(power); Say("¡Curación! (+" + power + " HP)"); break;
+                case "shield": shielded = true; Say("¡Escudo de luz! El próximo golpe no te hará daño."); break;
+                case "ice": frozenTurns = 1; Say("¡Hielo! " + floor.es + " está congelado."); break;
+                default:
+                    bossHpNow = Mathf.Max(0, bossHpNow - power);
+                    shake = 0.3f;
+                    Say("¡" + spell.es + "! -" + power);
+                    if (spell.id == "meteor") meteorWait = 4;
+                    break;
+            }
+            GameState.AddXp(SkillType.Magic, 6);
+            EndPlayerTurn();
+        }
+
         void Answer(int index)
         {
             if (phase != Phase.Question) return;
@@ -364,11 +442,15 @@ namespace LLG
             else
             {
                 int weapon = GameState.EquippedWeapon()?.power ?? 1;
-                int dmg = weapon * 2 + GameState.Data.level / 2 + UnityEngine.Random.Range(2, 6);
-                if (pendingMove == "spell") { stats.TrySpendMana(5); dmg *= 2; }
+                int dmg = (weapon + Magic.WeaponBonus()) * 2 + GameState.Data.level / 2 + UnityEngine.Random.Range(2, 6);
                 bossHpNow = Mathf.Max(0, bossHpNow - dmg);
                 shake = 0.3f;
-                Say((pendingMove == "spell" ? "¡Hechizo! " : "¡Golpe! ") + "-" + dmg);
+                string extra = "";
+                int vampire = Magic.OnWeapon("vampire");
+                if (vampire > 0) { stats.Heal(vampire * 2); extra = "  (+" + vampire * 2 + " HP)"; }
+                int ice = Magic.OnWeapon("ice");
+                if (ice > 0 && UnityEngine.Random.value < 0.15f * ice) { frozenTurns = 1; extra += "  ¡Congelado!"; }
+                Say("¡Golpe! -" + dmg + extra);
                 GameState.AddXp(SkillType.Vocabulary, 3);
             }
             EndPlayerTurn();
@@ -403,6 +485,21 @@ namespace LLG
 
         void EnemyTurn()
         {
+            if (meteorWait > 0) meteorWait--;
+            if (frozenTurns > 0)
+            {
+                frozenTurns--;
+                Say(floor.es + " está congelado y no puede atacar.");
+                ShowMoves();
+                return;
+            }
+            if (shielded)
+            {
+                shielded = false;
+                Say("¡El escudo de luz bloquea el ataque!");
+                ShowMoves();
+                return;
+            }
             int dmg = Mathf.Max(1, floor.damage - GameState.Defense() / 2);
             if (defending) dmg = Mathf.Max(1, dmg / 2);
             defending = false;
@@ -422,7 +519,7 @@ namespace LLG
             GameState.AddCurrency(reward);
             GameState.AddGold(floor.number * 40);
             GameState.AddXp(SkillType.Combat, floor.number * 40);
-            prompt.text = "¡Venciste a " + floor.es + "!  +" + reward + " " + GameConfig.CurrencyName + "  +" + floor.number * 40 + " " + GameConfig.GoldName;
+            prompt.text = "¡Venciste a " + floor.es + "!  +" + floor.number * 40 + " " + GameConfig.GoldName + "  +" + reward + " " + GameConfig.CurrencyName;
             Say("¡Victoria!");
             GameState.Save();
             UIFactory.Btn("Leave", moves, new Vector2(0, -96), new Vector2(180, 30), "Salir", UIFactory.Green, Close);
@@ -481,7 +578,13 @@ namespace LLG
             }
             else bossImage.anchoredPosition = new Vector2(190, 52 + Mathf.Sin(Time.time * 2) * 3);   // the boss breathes
 
-            if (phase == Phase.Question)
+            if (phase == Phase.Spell)
+            {
+                timer -= Time.deltaTime;
+                timerBar.sizeDelta = new Vector2(400 * Mathf.Clamp01(timer / AnswerTime), 6);
+                if (timer <= 0) SpellFizzles();
+            }
+            else if (phase == Phase.Question)
             {
                 timer -= Time.deltaTime;
                 timerBar.sizeDelta = new Vector2(400 * Mathf.Clamp01(timer / AnswerTime), 6);

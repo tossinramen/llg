@@ -53,12 +53,12 @@ namespace LLG
             {
                 int reward = right * 3;
                 question.Set("¡Terminado!", "Finished!");
-                result.Set("Aciertos: " + right + " / " + Rounds + "   +" + reward + " " + GameConfig.CurrencyName,
-                    "Correct: " + right + " / " + Rounds + "   +" + reward + " " + GameConfig.CurrencyName);
+                result.Set("Aciertos: " + right + " / " + Rounds + "   +" + reward + " " + GameConfig.GoldName,
+                    "Correct: " + right + " / " + Rounds + "   +" + reward + " " + GameConfig.GoldName);
                 foreach (var o in options) o.gameObject.SetActive(false);
                 if (right > 0)
                 {
-                    GameState.AddCurrency(reward);
+                    GameState.Reward(reward, Mathf.Max(1, reward / 3));
                     GameState.AddXp(SkillType.Vocabulary, Lessons.Xp(right * 4));
                 }
                 GameState.Save();

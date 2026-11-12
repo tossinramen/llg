@@ -56,7 +56,17 @@ namespace LLG
             Refresh();
         }
 
-        public void Face(int direction) => Facing = direction;
+        float faceLockUntil = -1;
+
+        /// <summary>Turns to a direction - unless an attack is holding the facing for a moment.</summary>
+        public void Face(int direction)
+        {
+            if (Time.time < faceLockUntil) return;
+            Facing = direction;
+        }
+
+        /// <summary>Keeps facing this way for a moment (while a punch or swing plays), even while walking.</summary>
+        public void LockFacing(float seconds) => faceLockUntil = Time.time + seconds;
 
         /// <summary>Turns to look along a direction (used when attacking something with the mouse).</summary>
         public void FaceTowards(Vector2 dir)

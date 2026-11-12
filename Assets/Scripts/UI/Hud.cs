@@ -238,8 +238,8 @@ namespace LLG
             manaText.text = s.mana + " / " + s.maxMana;
             hungerFill.sizeDelta = new Vector2(BarWidth * s.hunger / Mathf.Max(1f, s.maxHunger), hungerFill.sizeDelta.y);
             hungerText.text = "";
-            coins.text = s.coins + " " + GameConfig.CurrencyName;
-            gold.text = s.gold + " " + GameConfig.GoldName;
+            coins.text = GameState.Short(s.coins) + " " + GameConfig.CurrencyName;
+            gold.text = GameState.Short(s.gold) + " " + GameConfig.GoldName;
 
             int need = GameState.XpForLevel(data.level);
             xpFill.sizeDelta = new Vector2(600f * data.xp / need, 6);

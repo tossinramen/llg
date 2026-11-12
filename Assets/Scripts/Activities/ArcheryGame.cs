@@ -193,11 +193,11 @@ namespace LLG
             int reward = hits * 4;
             summary.text = (hits >= Rounds / 2 ? "¡Buen trabajo!" : "¡Sigue practicando!")
                 + "\n\nAciertos: " + hits + " / " + Rounds
-                + "\n+" + reward + " " + GameConfig.CurrencyName;
+                + "\n+" + reward + " " + GameConfig.GoldName;
             info.text = "";
             if (hits > 0)
             {
-                GameState.AddCurrency(reward);
+                GameState.Reward(reward, Mathf.Max(1, reward / 3));
                 GameState.AddXp(SkillType.Archery, Lessons.Xp(hits * 5));
                 GameState.AddXp(SkillType.Vocabulary, Lessons.Xp(hits * 5));
             }

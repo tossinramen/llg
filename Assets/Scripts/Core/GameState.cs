@@ -32,6 +32,9 @@ namespace LLG
         public int lessonLevel = 1;                             // 1 Principiante ... 5 Experto
         public List<PlotState> plots = new List<PlotState>();   // your vegetable patch
         public int dungeonFloor;                                // highest dungeon floor beaten
+        public List<SpellRank> spells = new List<SpellRank>();  // spells you know (K) and their rank
+        public string preparedSpell = "";                       // the spell the battle "Hechizo" move uses
+        public List<EnchantEntry> enchants = new List<EnchantEntry>();   // runes on your weapons and armour
     }
 
     /// <summary>The running game: the save data, the loaded language, inventory and helper actions.</summary>
@@ -72,6 +75,13 @@ namespace LLG
                 Data.stats.goldGiven = true;
             }
             Normalise();
+#pragma warning disable CS0162
+            if (GameConfig.GiveTestMoney)
+            {
+                Data.stats.coins = Mathf.Max(Data.stats.coins, 1000000);
+                Data.stats.gold = Mathf.Max(Data.stats.gold, 1000000);
+            }
+#pragma warning restore CS0162
             Data.skills.LeveledUp += (skill, level) => Say(skill + " → " + level);
             if (Data.level < 1) Data.level = 1;
             if (Data.lessonLevel < 1) Data.lessonLevel = 1;
@@ -246,7 +256,7 @@ namespace LLG
         {
             int total = 0;
             foreach (var id in Data.equipped) total += ItemDatabase.Get(id)?.defense ?? 0;
-            return total;
+            return total + Magic.Worn("protect");      // Protección runes
         }
 
         static void RecalculateStats()
@@ -281,31 +291,39 @@ namespace LLG
             }
         }
 
-        /// <summary>Lexa: the magical money you earn by learning (activities, bosses).</summary>
+        /// <summary>Lexa: magical money for spells and enchantments. Suerte (luck) runes add 10% per rank.</summary>
         public static void AddCurrency(int amount)
         {
+            if (amount > 0) amount = Mathf.RoundToInt(amount * (1 + 0.1f * Magic.Worn("luck")));
             Data.stats.AddCoins(amount);
-            if (amount > 0) Say("+" + amount + " " + GameConfig.CurrencyName);
+            if (amount > 0) Say("+" + Short(amount) + " " + GameConfig.CurrencyName);
         }
+
+        /// <summary>The prize for an activity: mostly gold, plus a little Lexa.</summary>
+        public static void Reward(int gold, int lexa)
+        {
+            AddGold(gold);
+            AddCurrency(lexa);
+        }
+
+        /// <summary>Short numbers for money: 950, 1.2k, 15k, 1m.</summary>
+        public static string Short(long n)
+        {
+            if (n < 0) return "-" + Short(-n);
+            if (n < 1000) return n.ToString();
+            if (n < 1000000) return Trim(n / 1000.0) + "k";
+            return Trim(n / 1000000.0) + "m";
+        }
+
+        static string Trim(double v) => v >= 100 ? ((long)v).ToString() : (Math.Floor(v * 10) / 10).ToString("0.#", System.Globalization.CultureInfo.InvariantCulture);
 
         /// <summary>Gold (oro): everyday money from selling things and defeating animals.</summary>
         public static void AddGold(int amount)
         {
             Data.stats.AddGold(amount);
-            if (amount > 0) Say("+" + amount + " " + GameConfig.GoldName);
+            if (amount > 0) Say("+" + Short(amount) + " " + GameConfig.GoldName);
         }
 
-        /// <summary>Pets are bought with Lexa; everything else in the shops costs gold.</summary>
-        public static bool PaidInLexa(ItemDef item) => item.kind == ItemKind.Pet;
-
-        /// <summary>Swap Lexa for gold (10 Lexa = 20 gold).</summary>
-        public static void ExchangeLexa()
-        {
-            if (Data.stats.coins < 10) { Say("Necesitas 10 " + GameConfig.CurrencyName + ". (You need 10 Lexa.)"); return; }
-            Data.stats.AddCoins(-10);
-            Data.stats.AddGold(20);
-            Say("Cambias 10 " + GameConfig.CurrencyName + " por 20 " + GameConfig.GoldName + ".");
-        }
 
         public static string Capital(string s) => string.IsNullOrEmpty(s) ? s : char.ToUpper(s[0]) + s.Substring(1);
     }

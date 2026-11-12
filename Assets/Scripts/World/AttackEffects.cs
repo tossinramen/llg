@@ -12,10 +12,11 @@ namespace LLG
         float baseAngle, time;
         bool jab;
 
-        public static void Spawn(Vector3 hand, int facing, Sprite sprite, Color tint, bool jab, int sortingOrder)
+        public static void Spawn(Vector3 hand, int facing, Sprite sprite, Color tint, bool jab, int sortingOrder, Transform follow = null)
         {
             var go = new GameObject("Swing");
             go.transform.position = hand;
+            if (follow != null) go.transform.SetParent(follow, true);     // moves with you while you walk
             var fx = go.AddComponent<SwingEffect>();
             var child = new GameObject("Blade");
             child.transform.SetParent(go.transform, false);
@@ -94,7 +95,7 @@ namespace LLG
             {
                 if (!mob.Dead && Vector2.Distance(mob.Position, ground + new Vector2(0, 0.4f)) < 0.7f)
                 {
-                    mob.TakeHit(damage, ground - direction);
+                    village.HitMob(mob, damage, ground - direction);
                     Destroy(gameObject);
                     return;
                 }

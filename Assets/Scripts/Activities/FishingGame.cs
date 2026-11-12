@@ -155,7 +155,7 @@ namespace LLG
                 int reward = 6 + tokens.Length * 2;
                 GameState.Data.fishCaught++;
                 GameState.AddItem("fish");
-                GameState.AddCurrency(reward);
+                GameState.Reward(reward, Mathf.Max(1, reward / 3));
                 GameState.AddXp(SkillType.Fishing, Lessons.Xp(10));
                 GameState.AddXp(SkillType.Grammar, Lessons.Xp(10));
                 End("¡Lo atrapaste! El pez va a tu mochila.\n" + sentence.text);

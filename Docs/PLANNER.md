@@ -42,22 +42,20 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 ### 4. Combat, gear and progression
 - [ ] Damage and XP mechanics pass (crits, attack speed per weapon type, enemy scaling)
 - [ ] **Durability** on weapons and armour
-- [ ] **Repair** at the blacksmith (costs Lexa)
+- [ ] **Repair** at the blacksmith (costs gold)
 - [ ] **Upgrade** weapons, armour and skills with Lexa (+1 … +10)
-- [ ] **Enchant** at the blacksmith / armoury (fire, ice, sharpness, protection…)
 - [ ] Strength stat, trained by boxing (adds fist and melee damage)
 - [ ] Gym (el gimnasio) with activities: boxing bag, weights, running track (each with a language twist)
-- [ ] Magic spells from level 25 (see magic notes)
 - [ ] Music in battle: a song can stun a monster for a turn (needs the battle system)
 
 ### 5. Dungeons, bosses and villains
 - [ ] People (later PvP) are fought by clicking in real time (monsters are already fought with words)
-- [ ] Bosses also drop rare gear (they already give Lexa)
-- [ ] "Levelling up Lexa" (needs deciding what it means — see notes)
-- [ ] More things to spend Lexa on: upgrades, enchanting, house upgrades, clothing
+- [ ] Bosses also drop rare gear (they already give gold and Lexa)
+- [ ] More things to spend Lexa on: weapon/armour upgrades (+1 … +10), skill boosts
+- [ ] **Remove the 1m test money** before release (`GameConfig.GiveTestMoney = false`)
 
 ### 6. Farming
-- [ ] More garden plots (buy extra land with Lexa), and use the big farm field too
+- [ ] More garden plots (buy extra land with gold), and use the big farm field too
 
 ### 7. Quests and story
 - [ ] Quest system (quest text in English); quest log window
@@ -122,10 +120,12 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 Tela (cloth) → Cuero (leather) → Cota de malla (chainmail) → Hierro (iron) → Acero de Toledo (Toledo steel) → Armadura rúnica (rune armour, glows blue).
 Each tier has head, chest, legs, wrists and a shield. Upgrades +1…+10 cost Lexa; durability drops with hits; the blacksmith repairs.
 
-**Enchantments (encantamientos):** Afilado (sharpness), Fuego (fire), Hielo (ice, slows), Protección, Vampiro (steal HP), Suerte (more Lexa drops).
+### Enchantments (encantamientos) — ✅ DONE (La Torre Rúnica, el altar rúnico, Doña Runa)
+Afilado (sharpness), Fuego (fire), Hielo (ice, slows), Protección, Vampiro (steal HP), Suerte (more Lexa drops).
+One enchantment per item, ranks I–III, paid in Lexa (100 / 400 / 1k).
 
-### Magic (level 25+)
-Spells are cast by **saying or building the Spanish word correctly** — a wrong answer fizzles.
+### Magic (level 25+) — ✅ DONE (K opens the spellbook; learn and upgrade spells with Lexa)
+Spells are cast by **building the Spanish word letter by letter** — a wrong letter fizzles.
 
 | Lv | Spell | Effect |
 |---|---|---|
@@ -159,10 +159,11 @@ and its power depends on answering a language question correctly and fast. Bosse
 Monsters are fought this way, with words; people (later PvP) are fought by clicking, in real time.
 Bosses drop Lexa and gear.
 
-### Lexa
-- New look: **grey stones with blue rune carvings** (matches the fountain's runes).
-- "Levelling up Lexa" — options to choose from: (a) Lexa stones can be fused into higher-value stones,
-  (b) Lexa itself has a level that raises how much activities pay, or (c) you spend Lexa to level skills.
+### Gold and Lexa — ✅ DONE
+- **Gold (oro)** buys everything in the shops, pets included. Activities, animals, selling and bosses pay gold.
+- **Lexa** (grey stones with blue rune carvings) is for magic: learning and levelling up spells, and enchantments.
+  Activities give a little Lexa on top of the gold; bosses give a lot. Suerte runes give more.
+- Big numbers are shortened: 1.5k, 20k, 1m.
 
 ### Story idea (to pick from)
 You arrive in Valdeluz knowing no Spanish. The **Rey Demonio** has stolen the village's words, sealing
@@ -263,7 +264,7 @@ Finished tasks, struck through.
 - ~~Showdown-style battles: Atacar / Hechizo / Defender / Comer / Huir; moves work only if you answer the Spanish question~~ ✅
 - ~~No hints or translations in battles~~ ✅
 - ~~Bosses give Lexa and Combat XP~~ ✅
-- ~~Hold the left button (a moment) to read something, instead of a plain click~~ ✅
+- ~~Hold the left button (a moment) to read something~~ ✅ (later switched back to a plain left click)
 - ~~More space between the neighbour's house, the music shop and the bakery~~ ✅
 - ~~Nicer dog and cat sprites~~ ✅
 - ~~Farm and chicken-yard gates you can open and close; you can walk between the crops~~ ✅
@@ -271,3 +272,13 @@ Finished tasks, struck through.
 - ~~Two currencies: gold (oro) for the shops and Lexa from learning; gold box above the Lexa box, both smaller~~ ✅
 - ~~Pets cost Lexa; selling and animals give gold; bosses give both; 10 Lexa → 20 gold exchange in the bag~~ ✅
 - ~~Punches come from the front in every direction (above your head facing north, from the shoulder edge sideways)~~ ✅
+- ~~Punching while walking north: the punch keeps its direction and the fist moves with you~~ ✅
+- ~~Plain left click to read signs and labels again~~ ✅
+- ~~Gold buys everything (pets too); Lexa is for spells and enchantments; activities pay gold + a little Lexa; exchange button removed~~ ✅
+- ~~Money shortened to 1k / 1.5k / 1m everywhere~~ ✅
+- ~~Testing: 1m gold and 1m Lexa~~ ✅
+- ~~Spellbook on K: Chispa, Escudo de luz, Rayo, Hielo, Curación, Terremoto, Meteoro (level-locked, learn and upgrade to rank V with Lexa)~~ ✅
+- ~~Casting = spell the word letter by letter; a wrong letter fizzles (in the world and in battle)~~ ✅
+- ~~Battle "Hechizo" uses your prepared spell (★ in the spellbook)~~ ✅
+- ~~La Torre Rúnica (south street, east end) with Doña Runa and el altar rúnico~~ ✅
+- ~~Enchantments: Afilado, Fuego, Hielo, Protección, Vampiro, Suerte (ranks I–III, paid in Lexa)~~ ✅

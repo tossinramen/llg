@@ -50,7 +50,7 @@ namespace LLG
                 keyLabels.Add(label);
             }
             UIFactory.LLabel("Fixed", w, new Vector2(0, -140), new Vector2(540, 20),
-                "Mantén clic izq.: leer   Clic der.: atacar   Esc: menú", "Hold left click: read   Right click: attack   Esc: menu", UIFactory.Faded);
+                "Clic izq.: leer   Clic der.: atacar   Esc: menú", "Left click: read   Right click: attack   Esc: menu", UIFactory.Faded);
 
             // ---- audio (right column)
             UIFactory.LLabel("AudioTitle", w, new Vector2(150, 104), new Vector2(240, 20), "Música", "Music", UIFactory.Ink);

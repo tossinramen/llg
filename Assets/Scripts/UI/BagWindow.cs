@@ -35,7 +35,6 @@ namespace LLG
             var lexaBox = UIFactory.Box("Lexa", W, new Vector2(40, -138), new Vector2(76, 22), new Color32(232, 214, 176, 255));
             UIFactory.Img("Icon", lexaBox.transform, new Vector2(-26, 1), new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
             money = UIFactory.Label("Amount", lexaBox.transform, new Vector2(8, 1), new Vector2(50, 12), "", UIFactory.Ink, TextAnchor.MiddleCenter, 12);
-            UIFactory.LBtn("Exchange", W, new Vector2(0, -114), new Vector2(150, 20), "10 Lexa → 20 oro", "10 Lexa → 20 gold", UIFactory.Teal, GameState.ExchangeLexa);
             GameState.InventoryChanged += Refresh;
             GameState.Data.stats.Changed += Refresh;
         }
@@ -64,8 +63,8 @@ namespace LLG
                 var tint = item != null && item.kind == ItemKind.Pet && GameState.Data.pet == item.id ? new Color(1f, 1f, 0.7f) : Color.white;
                 slots[i].Show(item == null ? null : UIFactory.LoadSprite("Art/Icons/" + item.icon), bag[i].count, tint);
             }
-            money.text = GameState.Data.stats.coins.ToString();
-            goldText.text = GameState.Data.stats.gold.ToString();
+            money.text = GameState.Short(GameState.Data.stats.coins);
+            goldText.text = GameState.Short(GameState.Data.stats.gold);
         }
 
         void Describe(int index)

@@ -70,15 +70,18 @@ namespace LLG
         Portal pendingPortal;
         int closedFrame = -1;
         float hungerTimer, manaTimer, attackCooldown, autosaveTimer, fadeTimer = -1, portalCooldown, eggTimer;
-        bool fistCursor, holdRead;
-        float holdStart = -1;
-        const float ReadHold = 0.35f;      // how long to hold the left button to read something
+        bool fistCursor;
+        bool shieldUp;                                   // Escudo de luz: the next bite is blocked
+        readonly Dictionary<string, float> spellReady = new Dictionary<string, float>();
+        SpellbookWindow spellbook;
+        CastWindow cast;
+        EnchantWindow enchant;
         Texture2D cursorNormal, cursorFist;
 
         /// <summary>True while a window that needs your full attention is open (talking, shopping,
         /// a minigame, the menu). The bag, profile, lessons and controls windows let you keep walking.</summary>
         public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || intruso.Open || menu.Open
-                            || music.Open || watering.Open || dungeon.Open || battle.Open
+                            || music.Open || watering.Open || dungeon.Open || battle.Open || cast.Open || enchant.Open
                             || fadeTimer >= 0 || closedFrame == Time.frameCount;
 
         /// <summary>Windows call this when they close, so the key that closed them does not also trigger something.</summary>
@@ -133,6 +136,9 @@ namespace LLG
             battle = Add<BattleWindow>(); battle.Build(canvas, this);
             dungeon = Add<DungeonWindow>(); dungeon.Build(canvas, this, battle);
             watering = Add<WateringWindow>(); watering.Build(canvas, this);
+            cast = Add<CastWindow>(); cast.Build(canvas, this);
+            spellbook = Add<SpellbookWindow>(); spellbook.Build(canvas, this, cast);
+            enchant = Add<EnchantWindow>(); enchant.Build(canvas, this);
             farm = Add<Farm>(); farm.Build(Map, world, watering);
             options = Add<OptionsWindow>(); options.Build(canvas);
             menu = Add<GameMenu>(); menu.Build(canvas, this, options);
@@ -265,6 +271,9 @@ namespace LLG
             AddVillager('!', "Profesora Isabel", "la profesora de música", "Music Teacher", Look(0, 5, 1, 1, 2), new[] { Acc("shawl", 60, 80, 150), Acc("skirt", 50, 50, 70) },
                 L("Profesora Isabel", "¡Bienvenido a la escuela de música!", "Welcome to the music school!"),
                 L("Profesora Isabel", "Forma el verso con las palabras y la música sonará.", "Build the verse with the words and the music will play."));
+            AddVillager('Ø', "Doña Runa", "la encantadora", "Enchantress", Look(1, 1, 7, 5, 2), new[] { Acc("cloak", 50, 70, 140), Acc("hat", 40, 50, 110), Acc("skirt", 60, 60, 120) },
+                L("Doña Runa", "Bienvenido a la torre rúnica.", "Welcome to the Rune Tower."),
+                L("Doña Runa", "Con Lexa, las runas encantan tus armas y armaduras.", "With Lexa, the runes enchant your weapons and armour."));
         }
 
         void AddVillager(char marker, string villagerName, string role, string roleEnglish, CharacterAppearance look,
@@ -288,7 +297,7 @@ namespace LLG
                 { 'B', "Art/Icons/food_bread" }, { 'C', "Art/Icons/food_candy" }, { 'S', "Art/Icons/item_rod" },
                 { 'W', "Art/Icons/item_sword" }, { 'M', "Art/Icons/pet_dog" }, { 'H', "Art/UI/hp_heart" },
                 { '^', "Art/Icons/gear_helmet" }, { 'n', "Art/UI/page" }, { 'o', "Art/Icons/food_egg" },
-                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" },
+                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" }, { 'Þ', "Art/Icons/spell_lightning" },
             };
             var list = new List<(Vector2Int, string)>();
             foreach (var kv in icons)
@@ -375,19 +384,12 @@ namespace LLG
                 lessons.Toggle();
             else if (Keybinds.Down(GameAction.Map) && !mapWindow.Open)
                 mapWindow.Toggle();
+            else if (Keybinds.Down(GameAction.Spells) && !spellbook.Open)
+                spellbook.Toggle();
             else if (Input.GetMouseButtonDown(1) && !overUI)
                 RightClick(mouse);
             else if (Input.GetMouseButtonDown(0) && !overUI)
-            {
-                holdStart = Time.time;
-                holdRead = false;
-            }
-            if (Input.GetMouseButton(0) && holdStart >= 0 && !holdRead && Time.time - holdStart >= ReadHold)
-            {
-                holdRead = true;
                 Read(mouse);
-            }
-            if (Input.GetMouseButtonUp(0)) holdStart = -1;
         }
 
         void OpenMenu()
@@ -536,6 +538,8 @@ namespace LLG
                 case '\'': return "Entrar en la escuela de música";
                 case 'ñ': return "Tocar el piano";
                 case 'Ð': return "Entrar en la Ciudadela del Sol";
+                case 'Þ': return "Entrar en la torre rúnica";
+                case 'ø': return "Encantar (el altar rúnico)";
                 case 'ç': return "Abrir la puerta";
                 case 'Ç': return "Cerrar la puerta";
                 case '+': return farm.Describe(player.FacingTile);
@@ -569,7 +573,7 @@ namespace LLG
         /// <summary>Does whatever the given map letter stands for. Public so tools/tests can trigger it.</summary>
         public void Interact(char what, Vector2Int tile)
         {
-            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'".IndexOf(what) >= 0)
+            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'Þ".IndexOf(what) >= 0)
             {
                 Teleport(door);
                 return;
@@ -606,6 +610,7 @@ namespace LLG
                 case '+': farm.Use(tile); break;
                 case 'ñ': music.Begin(true); break;
                 case 'Ð': dungeon.Toggle(); break;
+                case 'ø': enchant.Begin(); break;
                 case 'ç':
                 case 'Ç': ToggleGate(tile); break;
                 case 'g': dialogue.Show("", "Al este: el bosque. ¡Cuidado con los lobos!", "East: the forest. Beware of the wolves!"); break;
@@ -623,6 +628,7 @@ namespace LLG
                         if (what == '4') dialogue.Show(villager.Lines, archery.Begin);
                         else if (what == '%') dialogue.Show(villager.Lines, StartIntruso);
                         else if (what == '!') dialogue.Show(villager.Lines, () => music.Begin(false));
+                        else if (what == 'Ø') dialogue.Show(villager.Lines, enchant.Begin);
                         else if (area != null && area.interior && area.keeper == what.ToString()) OpenRoomShop(true);
                         else dialogue.Show(villager.Lines);
                     }
@@ -790,9 +796,10 @@ namespace LLG
             var weapon = GameState.EquippedWeapon();
             attackCooldown = weapon != null && weapon.ranged ? 0.6f : 0.4f;
             int facing = playerSprite.Facing;
+            playerSprite.LockFacing(0.25f);     // walking can't turn you away mid-punch
             int order = Mathf.RoundToInt(-player.transform.position.y * 100) + (facing == 2 ? -1 : 1);
             var feet = (Vector2)player.transform.position;
-            int damage = weapon != null ? weapon.power : 1;
+            int damage = (weapon != null ? weapon.power : 1) + Magic.WeaponBonus();     // Afilado / Fuego runes
 
             if (weapon != null && weapon.ranged)
             {
@@ -807,9 +814,9 @@ namespace LLG
             var hand = feet + (weapon == null ? fistStart[facing] : new Vector2(0, 0.9f));
             if (weapon == null)
                 SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/item_fist"), AppearancePalette.Skin[PlayerProfile.Current.appearance.skin], true,
-                    Mathf.RoundToInt(-player.transform.position.y * 100) + 5);
+                    Mathf.RoundToInt(-player.transform.position.y * 100) + 5, player.transform);
             else
-                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/" + weapon.icon), Color.white, false, order);
+                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/" + weapon.icon), Color.white, false, order, player.transform);
 
             if (target == null && tree == null)
             {
@@ -820,7 +827,7 @@ namespace LLG
             }
             if (target != null)
             {
-                target.TakeHit(damage, feet);
+                HitMob(target, damage, feet);
                 return;
             }
             var tile = tree != null ? tree.Tile : player.FacingTile;
@@ -847,9 +854,104 @@ namespace LLG
 
         public void DropItem(string id, Vector2 at) => Pickup.Spawn(this, id, at);
 
-        /// <summary>A monster bit you. Armour (defence) softens the blow.</summary>
+        /// <summary>Your weapon (or arrow) hits an animal: Hielo runes slow it, Vampiro runes heal you.</summary>
+        public void HitMob(Mob mob, int damage, Vector2 from)
+        {
+            mob.TakeHit(damage, from);
+            int ice = Magic.OnWeapon("ice");
+            if (ice > 0) mob.Slow(1.5f * ice);
+            int vampire = Magic.OnWeapon("vampire");
+            if (vampire > 0) GameState.Data.stats.Heal(vampire);
+        }
+
+        // ------------------------------------------------------------ spells outside battle
+
+        /// <summary>Casts a spell from the spellbook: spell its word letter by letter, then it goes off.</summary>
+        public void CastInWorld(Magic.Spell s)
+        {
+            var stats = GameState.Data.stats;
+            if (spellReady.TryGetValue(s.id, out float ready) && Time.time < ready)
+            {
+                GameState.Say(s.es + ": espera " + Mathf.CeilToInt(ready - Time.time) + " s.");
+                return;
+            }
+            if (stats.mana < s.mana) { GameState.Say("No tienes maná. (Not enough mana.)"); return; }
+            bool needsTarget = s.id != "heal" && s.id != "shield";
+            if (needsTarget && NearestMob(s.id == "quake" ? 6 : 8) == null)
+            {
+                GameState.Say("No hay enemigos cerca. (No enemies nearby.)");
+                return;
+            }
+            cast.Begin(s, () =>
+            {
+                if (!stats.TrySpendMana(s.mana)) return;
+                spellReady[s.id] = Time.time + (s.id == "meteor" ? 60f : 3f);
+                CastEffect(s);
+                GameState.AddXp(SkillType.Magic, 5);
+            });
+        }
+
+        Mob NearestMob(float range)
+        {
+            Mob best = null;
+            float bestDist = range;
+            foreach (var m in Mobs)
+            {
+                if (m.Dead) continue;
+                float d = Vector2.Distance(m.Position, PlayerPosition);
+                if (d < bestDist) { best = m; bestDist = d; }
+            }
+            return best;
+        }
+
+        void CastEffect(Magic.Spell s)
+        {
+            int power = Magic.Power(s);
+            var me = PlayerPosition;
+            int order = Mathf.RoundToInt(-me.y * 100) + 10;
+            switch (s.id)
+            {
+                case "heal":
+                    GameState.Data.stats.Heal(power);
+                    WorldFx.Burst(me + new Vector2(0, 0.8f), new Color(0.4f, 0.9f, 0.5f), 14, order);
+                    GameState.Say("+" + power + " HP");
+                    break;
+                case "shield":
+                    shieldUp = true;
+                    WorldFx.Burst(me + new Vector2(0, 0.8f), new Color(1f, 0.95f, 0.6f), 14, order);
+                    GameState.Say("Un escudo de luz te protege. (A light shield protects you.)");
+                    break;
+                case "quake":
+                    foreach (var m in Mobs)
+                        if (!m.Dead && Vector2.Distance(m.Position, me) < 6)
+                        {
+                            m.TakeHit(power, me);
+                            WorldFx.Burst(m.Position, new Color(0.6f, 0.45f, 0.3f), 8, order);
+                        }
+                    break;
+                case "ice":
+                    var frozen = NearestMob(8);
+                    if (frozen != null) { frozen.Freeze(power); WorldFx.Burst(frozen.Position, new Color(0.7f, 0.9f, 1f), 12, order); }
+                    break;
+                default:      // chispa, rayo, meteoro
+                    var target = NearestMob(8);
+                    if (target == null) break;
+                    var color = s.id == "spark" ? new Color(1f, 0.6f, 0.2f) : s.id == "lightning" ? new Color(1f, 0.95f, 0.4f) : new Color(0.9f, 0.3f, 0.2f);
+                    WorldFx.Burst(target.Position + new Vector2(0, 0.4f), color, s.id == "meteor" ? 24 : 12, order);
+                    target.TakeHit(power, me);
+                    break;
+            }
+        }
+
+        /// <summary>A monster bit you. Armour (defence) softens the blow; Escudo de luz blocks it.</summary>
         public void DamagePlayer(int raw, Vector2 from)
         {
+            if (shieldUp)
+            {
+                shieldUp = false;
+                GameState.Say("¡El escudo bloquea el golpe! (The shield blocks the hit!)");
+                return;
+            }
             int dmg = Mathf.Max(1, raw - GameState.Defense() / 2);
             GameState.Data.stats.Damage(dmg);
             playerSprite.Flash();

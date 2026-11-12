@@ -109,6 +109,13 @@ namespace LLG
         Vector2 home, wanderGoal;
         float speed, thinkTimer, biteTimer, flashTimer, respawnTimer, animTimer;
         Vector2 knock;
+        float frozen, slowed;
+
+        /// <summary>Hielo (the spell): the animal can't move or bite for a while.</summary>
+        public void Freeze(float seconds) { if (!Dead) frozen = Mathf.Max(frozen, seconds); }
+
+        /// <summary>The Hielo rune on your weapon: the animal moves at half speed for a while.</summary>
+        public void Slow(float seconds) { if (!Dead) slowed = Mathf.Max(slowed, seconds); }
 
         public static Mob Spawn(VillageController owner, Transform parent, string kind, Vector2 at)
         {
@@ -181,6 +188,14 @@ namespace LLG
                 return;
             }
 
+            if (frozen > 0)
+            {
+                frozen -= Time.deltaTime;
+                r.color = new Color(0.6f, 0.85f, 1f);
+                return;
+            }
+            slowed -= Time.deltaTime;
+
             var player = village.PlayerPosition;
             Vector2 pos = transform.position;
             Vector2 move = Vector2.zero;
@@ -210,6 +225,7 @@ namespace LLG
                 if (Vector2.Distance(pos, wanderGoal) > 0.2f) move = (wanderGoal - pos).normalized * 1.2f;
             }
 
+            if (slowed > 0) move *= 0.5f;
             move += knock;
             knock = Vector2.MoveTowards(knock, Vector2.zero, 20 * Time.deltaTime);
             var step = move * Time.deltaTime;
@@ -221,7 +237,7 @@ namespace LLG
             animTimer = move.sqrMagnitude > 0.05f ? animTimer + Time.deltaTime : 0;
             r.sprite = frames[(int)(animTimer * 8) % 2];
             flashTimer -= Time.deltaTime;
-            r.color = flashTimer > 0 ? new Color(1, 0.4f, 0.4f) : Color.white;
+            r.color = flashTimer > 0 ? new Color(1, 0.4f, 0.4f) : slowed > 0 ? new Color(0.75f, 0.9f, 1f) : Color.white;
             r.sortingOrder = Mathf.RoundToInt(-(pos.y - 0.45f) * 100);
             bar.Set(hp / (float)maxHp, Hostile || hp < maxHp);
         }
