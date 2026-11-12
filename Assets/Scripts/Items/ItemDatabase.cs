@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace LLG
 {
-    public enum ItemKind { Rod, Weapon, Gear, Book, Food, Pet, Material }
+    public enum ItemKind { Rod, Weapon, Gear, Book, Food, Pet, Material, Instrument, Seed }
 
     /// <summary>The equipment slots on the character sheet (U). "None" = cannot be worn.</summary>
     public enum EquipSlot { None, Hat, Necklace, Cloak, Chest, Legs, Wrists, Primary, Secondary }
@@ -22,7 +23,7 @@ namespace LLG
         public int level;      // character level needed to buy it (0 = none)
         public string projectile;  // ranged weapons: what flies (item_arrow, item_stone, item_bullet)
 
-        public bool Stacks => kind == ItemKind.Food || kind == ItemKind.Material;
+        public bool Stacks => kind == ItemKind.Food || kind == ItemKind.Material || kind == ItemKind.Seed;
 
         public ItemDef(string id, string spanish, string english, string icon, int price, ItemKind kind,
             EquipSlot slot = EquipSlot.None, int power = 0, int defense = 0, int mana = 0, int chop = 1,
@@ -41,7 +42,7 @@ namespace LLG
     /// </summary>
     public static class ItemDatabase
     {
-        static readonly ItemDef[] All =
+        static readonly List<ItemDef> All = new List<ItemDef>
         {
             // ---- general store (Tienda)
             new ItemDef("rod",        "la caña de pescar", "fishing rod", "item_rod",       30, ItemKind.Rod),
@@ -140,7 +141,83 @@ namespace LLG
             new ItemDef("orange",     "la naranja",        "orange",      "food_orange",      0, ItemKind.Food, power: 10, sell: 2),
             new ItemDef("wood",       "la madera",         "wood",        "item_wood",        0, ItemKind.Material, sell: 4),
             new ItemDef("pelt",       "la piel de lobo",   "wolf pelt",   "item_pelt",        0, ItemKind.Material, sell: 15),
+
+            // ---- instruments (Tienda de música). Better instruments give more time in the music game.
+            new ItemDef("tambourine", "la pandereta",      "tambourine",  "item_tambourine", 80, ItemKind.Instrument, power: 2),
+            new ItemDef("flute",      "la flauta",         "flute",       "item_flute",     120, ItemKind.Instrument, power: 3),
+            new ItemDef("guitar",     "la guitarra",       "guitar",      "item_guitar",    200, ItemKind.Instrument, power: 4),
+            new ItemDef("clarinet",   "el clarinete",      "clarinet",    "item_clarinet",  300, ItemKind.Instrument, power: 5),
+            new ItemDef("trumpet",    "la trompeta",       "trumpet",     "item_trumpet",   380, ItemKind.Instrument, power: 6),
+            new ItemDef("violin",     "el violín",         "violin",      "item_violin",    450, ItemKind.Instrument, power: 7),
         };
+
+        /// <summary>Crops: id, Spanish, English, seed price, sell price, seconds to grow.</summary>
+        public static readonly (string id, string es, string en, int seed, int sell, float grow)[] Crops =
+        {
+            ("wheat", "el trigo", "wheat", 5, 9, 40), ("lettuce", "la lechuga", "lettuce", 8, 15, 50),
+            ("tomato", "el tomate", "tomato", 12, 24, 90), ("carrot", "la zanahoria", "carrot", 15, 30, 100),
+            ("strawberry", "la fresa", "strawberry", 25, 55, 180), ("grape", "la uva", "grape", 40, 90, 200),
+            ("olive", "la aceituna", "olive", 60, 140, 300),
+        };
+
+        /// <summary>Armour tiers (Herrería): key, Spanish word, English word, level needed, base price, base defence.</summary>
+        public static readonly (string key, string es, string en, int level, int price, int def)[] Tiers =
+        {
+            ("cloth", "tela", "Cloth", 1, 20, 1), ("leather", "cuero", "Leather", 5, 60, 2), ("mail", "malla", "Chainmail", 15, 180, 3),
+            ("iron", "hierro", "Iron", 25, 450, 5), ("toledo", "Toledo", "Toledo steel", 40, 1200, 8), ("rune", "rúnico", "Rune", 60, 3500, 12),
+        };
+
+        // Spanish names for each piece in each tier: head, chest, legs, wrists, shield
+        static readonly string[,] TierNames =
+        {
+            { "la capucha de tela", "la túnica de tela", "los pantalones de tela", "las muñequeras de tela", "el escudo de madera" },
+            { "el gorro de cuero", "el chaleco de cuero", "los pantalones de cuero", "los brazales de cuero", "el escudo de cuero" },
+            { "la capucha de malla", "la cota de malla", "las calzas de malla", "los brazales de malla", "el escudo reforzado" },
+            { "el casco de hierro", "la coraza de hierro", "las grebas de hierro", "los brazales de hierro", "el escudo de hierro" },
+            { "el yelmo de Toledo", "la coraza de Toledo", "las grebas de Toledo", "los brazales de Toledo", "el escudo de Toledo" },
+            { "el yelmo rúnico", "la coraza rúnica", "las grebas rúnicas", "los brazales rúnicos", "el escudo rúnico" },
+        };
+        static readonly string[] PieceEnglish = { "helmet", "chest armour", "leg armour", "bracers", "shield" };
+        static readonly string[] PieceKey = { "head", "chest", "legs", "wrists", "shield" };
+        static readonly EquipSlot[] PieceSlot = { EquipSlot.Hat, EquipSlot.Chest, EquipSlot.Legs, EquipSlot.Wrists, EquipSlot.Secondary };
+        static readonly float[] PieceDefence = { 1f, 2f, 1.5f, 0.6f, 1.5f };
+        static readonly float[] PiecePrice = { 1f, 2f, 1.5f, 0.8f, 1.5f };
+
+        static ItemDatabase()
+        {
+            for (int t = 0; t < Tiers.Length; t++)
+            {
+                var tier = Tiers[t];
+                for (int p = 0; p < 5; p++)
+                {
+                    All.Add(new ItemDef("armor_" + tier.key + "_" + PieceKey[p], TierNames[t, p], tier.en + " " + PieceEnglish[p],
+                        "armor_" + tier.key + "_" + PieceKey[p], Mathf.RoundToInt(tier.price * PiecePrice[p]), ItemKind.Gear, PieceSlot[p],
+                        defense: Mathf.Max(1, Mathf.RoundToInt(tier.def * PieceDefence[p])), level: tier.level));
+                }
+            }
+            foreach (var c in Crops)
+            {
+                All.Add(new ItemDef("seed_" + c.id, "las semillas de " + c.es.Substring(c.es.IndexOf(' ') + 1), c.en + " seeds",
+                    "seed_" + c.id, c.seed, ItemKind.Seed, sell: Mathf.Max(1, c.seed / 2)));
+                All.Add(new ItemDef("crop_" + c.id, c.es, c.en, "crop_" + c.id, 0, ItemKind.Food, power: 4 + c.seed / 5, sell: c.sell));
+            }
+        }
+
+        public static string[] TierItems(int tier)
+        {
+            var ids = new string[5];
+            for (int p = 0; p < 5; p++) ids[p] = "armor_" + Tiers[tier].key + "_" + PieceKey[p];
+            return ids;
+        }
+
+        public static string[] Seeds()
+        {
+            var ids = new string[Crops.Length];
+            for (int i = 0; i < Crops.Length; i++) ids[i] = "seed_" + Crops[i].id;
+            return ids;
+        }
+
+        public static readonly string[] Music = { "tambourine", "flute", "guitar", "clarinet", "trumpet", "violin" };
 
         public static readonly string[] Store = { "rod", "rod_fine", "book", "hat", "necklace", "cloak", "vest", "pants", "bracelet", "apple", "cheese", "egg" };
         public static readonly string[] Blades = { "stick", "kitchen_knife", "dagger", "shortsword", "sword", "sabre", "rapier", "toledo", "greatsword", "tizona", "colada" };
@@ -149,9 +226,19 @@ namespace LLG
         public static readonly string[] Weapons = Blades;
 
         /// <summary>Shops with several sections (the Armería): Spanish name, English name, items.</summary>
-        public static (string es, string en, string[] ids)[] Sections(string shop) => shop == "weapons"
-            ? new[] { ("Espadas", "Blades", Blades), ("Hachas", "Axes", Axes), ("A distancia", "Ranged", Ranged) }
-            : null;
+        public static (string es, string en, string[] ids)[] Sections(string shop)
+        {
+            if (shop == "weapons")
+                return new[] { ("Espadas", "Blades", Blades), ("Hachas", "Axes", Axes), ("A distancia", "Ranged", Ranged) };
+            if (shop == "smithy")
+            {
+                var list = new (string, string, string[])[Tiers.Length];
+                for (int t = 0; t < Tiers.Length; t++)
+                    list[t] = (GameState.Capital(Tiers[t].es), Tiers[t].en, TierItems(t));
+                return list;
+            }
+            return null;
+        }
         public static readonly string[] Smithy = { "helmet", "chainmail", "breastplate", "greaves", "bracers", "wood_shield", "shield", "iron_shield" };
         public static readonly string[] Pets = { "pet_dog", "pet_cat", "pet_rabbit", "pet_parrot", "pet_turtle", "pet_hamster" };
         public static readonly string[] Bakery = { "bread", "baguette", "croissant", "muffin", "churros", "ensaimada", "empanada", "tart", "donut", "sponge", "cake" };
@@ -161,7 +248,7 @@ namespace LLG
         public static string[] ForShop(string shop) => shop switch
         {
             "bakery" => Bakery, "candy" => CandyShop, "store" => Store, "weapons" => Weapons,
-            "smithy" => Smithy, "pets" => Pets, _ => new string[0],
+            "smithy" => TierItems(0), "pets" => Pets, "seeds" => Seeds(), "music" => Music, _ => new string[0],
         };
 
         static Dictionary<string, ItemDef> byId;

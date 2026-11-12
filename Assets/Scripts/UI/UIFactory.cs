@@ -115,9 +115,13 @@ namespace LLG
             label.fontSize = fontSize;
             label.color = color;
             label.alignment = anchor;
-            label.horizontalOverflow = HorizontalWrapMode.Overflow;
+            // text never spills out of its box: it wraps, and FitText shrinks it if it still doesn't fit
+            label.horizontalOverflow = HorizontalWrapMode.Wrap;
             label.verticalOverflow = VerticalWrapMode.Overflow;
+            label.resizeTextForBestFit = false;
+            label.resizeTextMaxSize = fontSize;        // FitText's normal (largest) size
             label.raycastTarget = false;
+            label.gameObject.AddComponent<FitText>();
             return label;
         }
 
@@ -137,7 +141,7 @@ namespace LLG
             button.onClick.AddListener(() => onClick());
             if (!string.IsNullOrEmpty(text))
             {
-                var label = Label("Label", img.transform, new Vector2(0, 1), size, text, Color.white);
+                var label = Label("Label", img.transform, new Vector2(0, 1), size - new Vector2(12, 6), text, Color.white);
                 Outline(label);
             }
             return button;
@@ -188,7 +192,7 @@ namespace LLG
         public static Button LBtn(string name, Transform parent, Vector2 pos, Vector2 size, string spanish, string english, Color color, Action onClick)
         {
             var button = Btn(name, parent, pos, size, "", color, onClick);
-            var label = LLabel("Label", button.transform, new Vector2(0, 1), size, spanish, english, Color.white);
+            var label = LLabel("Label", button.transform, new Vector2(0, 1), size - new Vector2(12, 6), spanish, english, Color.white);
             Outline(label);
             return button;
         }

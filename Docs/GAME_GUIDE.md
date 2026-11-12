@@ -73,7 +73,7 @@ Every XP gain goes to a **skill** and to your **character level**.
 
 ## Skills
 
-16 skills, all uncapped. XP for next skill level = 40 × level^1.6. Shown in the profile (U).
+17 skills, all uncapped. XP for next skill level = 40 × level^1.6. Shown in the profile (U).
 
 | Language skills | Life skills |
 |---|---|
@@ -87,6 +87,7 @@ Every XP gain goes to a **skill** and to your **character level**.
 | | Tiro con arco (Archery) — archery |
 | | Combate (Combat) — killing animals |
 | | Leñador (Woodcutting) — chopping trees |
+| | Música (Music) — the music game |
 
 ## Lessons & language
 
@@ -107,6 +108,8 @@ Every XP gain goes to a **skill** and to your **character level**.
 | **Tree chopping** | Any tree | Right-click: cracks appear, tree shakes, breaks after 6 damage (fist 1, hatchet 2, axe/battle axe 3 per hit). Regrows in 3 s. Orange trees sometimes drop oranges. | Wood (sell 4), XP |
 | **Combat** | Forest (wolves), olive grove (wild dogs) | Right-click an animal to hit it; bows shoot arrows. They fight back once hit. | Lexa, wolf pelts, XP |
 | **Shopping** | 6 shops (inside) | Buy tab and Sell tab. | Trading XP |
+| **La música** (Music) | Music school (Isabel or the piano); needs an instrument except at the piano | A verse in Spanish is shown in English; click its words in order. Each right word plays a note on your instrument; finish and the melody plays. 3 verses. Better instruments = more time. | 5 Lexa per verse, Music + Grammar XP |
+| **El huerto** (vegetable patch) | 18 plots next to your house | E on a plot: plant (uses seeds from your bag), water (pick the Spanish word — right = grows twice as fast for 45 s), harvest when ripe (2 crops). | Crops to sell, Farming XP |
 | **Egg collecting** | Chicken coop at the farm | E at the coop; one egg per minute. | Egg (food) |
 | **Sleeping** | Bed in your house | Restores HP and mana, saves. | — |
 | **Rune fountain** | Plaza | Refills mana. | — |
@@ -139,11 +142,14 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Armería (weapon shop) | Yes | Rodrigo; 15 weapons |
 | Herrería (blacksmith) | Yes | Bruno; forge and anvil; 8 armour pieces |
 | Tienda de mascotas (pet shop) | Yes | Lucía; animals in a pen; 6 pets |
+| Semillería (seed shop) | Yes | Don Ramón; 7 kinds of seeds; buys your crops (west street, next to your house) |
+| Tienda de música (music shop) | Yes | Marta; 6 instruments (north street, next to the bakery) |
+| Escuela de música (music school) | Yes | Profesora Isabel and a piano: the music game (north street, east end) |
 | Tu casa (your house) | Yes | Bed (sleep), fireplace, table, shelf, rug |
 | Iglesia (church) | No | "Closed today" |
 | Ayuntamiento (town hall) | No | "Closed, come back tomorrow" |
 | Taberna (tavern) | No | "Opens at night" |
-| Neighbours' houses (×3) | No | "Nobody is home" |
+| Neighbours' houses (×2) | No | "Nobody is home" |
 | Granero (barn), Molino (windmill), Gallinero (chicken coop) | No | Farm buildings |
 
 ## People (NPCs)
@@ -163,6 +169,9 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Rodrigo | el armero (weaponsmith) | Inside the Armería | Weapon shop |
 | Bruno | el herrero (blacksmith) | Inside the Herrería | Armour shop |
 | Lucía | la cuidadora (animal keeper) | Inside the pet shop | Pet shop |
+| Don Ramón | el semillero (seed seller) | Inside the Semillería | Seed shop; farming tips |
+| Marta | la vendedora de música (music seller) | Inside the music shop | Music shop |
+| Profesora Isabel | la profesora de música (music teacher) | Inside the music school | Starts the music game |
 
 People cannot be attacked.
 
@@ -191,6 +200,15 @@ el caramelo 3/5 · la piruleta 5/8 · el chocolate 10/18 · la galleta 6/12 · e
 **General store (Tienda)**
 
 la caña de pescar 30 · la caña mágica 120 (+10 s fishing) · el libro 60 (+1 INT when read) · la manzana 5/10 · el queso 9/15 · el huevo 6/12 · plus the clothes in [Armour & gear](#armour--gear)
+
+**Instruments (Tienda de música)** — price / extra time in the music game
+
+la pandereta 80 · la flauta 120 · la guitarra 200 · el clarinete 300 · la trompeta 380 · el violín 450
+
+**Seeds and crops (Semillería)** — seed price / crop sells for / time to grow
+
+el trigo 5 / 9 / 40 s · la lechuga 8 / 15 / 50 s · el tomate 12 / 24 / 90 s · la zanahoria 15 / 30 / 100 s ·
+la fresa 25 / 55 / 180 s · la uva 40 / 90 / 200 s · la aceituna 60 / 140 / 300 s (each harvest gives 2)
 
 **Pets (Mascotas)**
 
@@ -275,8 +293,21 @@ Equip from the bag; take off by clicking the slot in the profile. Hat/helmet and
 | | el escudo de hierro | Herrería | 220 | DEF 5 |
 | Mano principal (main hand) | any weapon | Armería | | |
 
+**Armour tiers (Herrería).** Six tiers, each with 5 pieces (head, chest, legs, wrists, shield), locked by level. The Herrería has one tab per tier.
+
+| Tier | Level | Head | Chest | Legs | Wrists | Shield | Pieces |
+|---|---|---|---|---|---|---|---|
+| Tela (cloth) | 1 | DEF 1 · 20 | DEF 2 · 40 | DEF 2 · 30 | DEF 1 · 16 | DEF 2 · 30 | capucha, túnica, pantalones, muñequeras, escudo de madera |
+| Cuero (leather) | 5 | 2 · 60 | 4 · 120 | 3 · 90 | 1 · 48 | 3 · 90 | gorro, chaleco, pantalones, brazales, escudo |
+| Malla (chainmail) | 15 | 3 · 180 | 6 · 360 | 4 · 270 | 2 · 144 | 4 · 270 | capucha, cota de malla, calzas, brazales, escudo reforzado |
+| Hierro (iron) | 25 | 5 · 450 | 10 · 900 | 8 · 675 | 3 · 360 | 8 · 675 | casco, coraza, grebas, brazales, escudo |
+| Toledo (Toledo steel) | 40 | 8 · 1,200 | 16 · 2,400 | 12 · 1,800 | 5 · 960 | 12 · 1,800 | yelmo, coraza, grebas, brazales, escudo |
+| Rúnico (rune) | 60 | 12 · 3,500 | 24 · 7,000 | 18 · 5,250 | 7 · 2,800 | 18 · 5,250 | yelmo, coraza, grebas, brazales, escudo |
+
+(Numbers are defence · price.) Upgrades, durability and repairs are not built yet.
+
 ## Not built yet
 
-Quests, dungeons, bosses, villains, a story, magic spells, farming crops you plant, the gym and strength,
-gear upgrades, durability, repairs and enchanting, music, conversations, and Spanish voice recordings.
+Quests, dungeons, bosses, villains, a story, magic spells, the gym and strength, gear upgrades,
+durability, repairs and enchanting, music in battle, conversations, and Spanish voice recordings.
 These are all in [PLANNER.md](PLANNER.md).

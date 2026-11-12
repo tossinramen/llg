@@ -13,6 +13,13 @@ namespace LLG
         AudioSource music, voice;
         float fadeIn;
 
+        /// <summary>Plays a short sound (a music note) without cutting off the previous one.</summary>
+        public static void PlaySfx(AudioClip clip)
+        {
+            Ensure();
+            instance.voice.PlayOneShot(clip, Muted ? 0.3f : Mathf.Max(0.3f, Volume));
+        }
+
         /// <summary>Plays a spoken word or sentence (see Speech).</summary>
         public static void PlayVoice(AudioClip clip)
         {

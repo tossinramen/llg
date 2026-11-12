@@ -81,6 +81,9 @@ namespace LLG
                 case ItemKind.Book: es = "Clic: leer (+1 INT)"; en = ""; break;
                 case ItemKind.Pet: es = GameState.Data.pet == item.id ? "Clic: descansar" : "Clic: llamar"; en = ""; break;
                 case ItemKind.Rod: es = "Úsala en el estanque"; en = ""; break;
+                case ItemKind.Seed: es = "Plántalas en el huerto"; en = ""; break;
+                case ItemKind.Instrument: es = "Tócalo en la escuela"; en = ""; break;
+                case ItemKind.Material: es = "Para vender"; en = ""; break;
                 default: es = "Clic: equipar"; en = ""; break;
             }
             hint.Set(es, "", false);

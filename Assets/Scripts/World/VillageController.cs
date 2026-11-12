@@ -45,6 +45,9 @@ namespace LLG
         ControlsWindow controls;
         LessonsWindow lessons;
         MapWindow mapWindow;
+        MusicGame music;
+        WateringWindow watering;
+        Farm farm;
         IntrusoGame intruso;
         ArcheryGame archery;
         FishingGame fishing;
@@ -71,6 +74,7 @@ namespace LLG
         /// <summary>True while a window that needs your full attention is open (talking, shopping,
         /// a minigame, the menu). The bag, profile, lessons and controls windows let you keep walking.</summary>
         public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || intruso.Open || menu.Open
+                            || music.Open || watering.Open
                             || fadeTimer >= 0 || closedFrame == Time.frameCount;
 
         /// <summary>Windows call this when they close, so the key that closed them does not also trigger something.</summary>
@@ -121,6 +125,9 @@ namespace LLG
             intruso = Add<IntrusoGame>(); intruso.Build(canvas, this);
             archery = Add<ArcheryGame>(); archery.Build(canvas, this);
             fishing = Add<FishingGame>(); fishing.Build(canvas, this);
+            music = Add<MusicGame>(); music.Build(canvas, this);
+            watering = Add<WateringWindow>(); watering.Build(canvas, this);
+            farm = Add<Farm>(); farm.Build(Map, world, watering);
             options = Add<OptionsWindow>(); options.Build(canvas);
             menu = Add<GameMenu>(); menu.Build(canvas, this, options);
             fade = UIFactory.Img("Fade", canvas, Vector2.zero, new Vector2(2000, 2000), new Color(0, 0, 0, 0));
@@ -244,6 +251,14 @@ namespace LLG
                 L("Bruno", "Soy el herrero. Hago armaduras de hierro.", "I am the blacksmith. I make iron armour."));
             AddVillager('$', "Lucía", "la cuidadora", "Animal Keeper", Look(2, 3, 1, 2, 1), new Accessory[0],
                 L("Lucía", "¡Hola! Todos estos animales buscan un hogar.", "Hello! All these animals are looking for a home."));
+            AddVillager('*', "Don Ramón", "el semillero", "Seed Seller", Look(4, 4, 5, 2, 1), new[] { Acc("hat", 200, 168, 108), Acc("apron", 110, 150, 70) },
+                L("Don Ramón", "Planta las semillas en tu huerto y riégalas.", "Plant the seeds in your patch and water them."),
+                L("Don Ramón", "La aceituna tarda mucho, pero se vende muy cara.", "Olives take a long time, but they sell for a lot."));
+            AddVillager('/', "Marta", "la vendedora de música", "Music Seller", Look(1, 1, 6, 5, 2), new[] { Acc("skirt", 90, 60, 120) },
+                L("Marta", "¿Buscas un instrumento? ¡Tenemos de todo!", "Looking for an instrument? We have everything!"));
+            AddVillager('!', "Profesora Isabel", "la profesora de música", "Music Teacher", Look(0, 5, 1, 1, 2), new[] { Acc("shawl", 60, 80, 150), Acc("skirt", 50, 50, 70) },
+                L("Profesora Isabel", "¡Bienvenido a la escuela de música!", "Welcome to the music school!"),
+                L("Profesora Isabel", "Forma el verso con las palabras y la música sonará.", "Build the verse with the words and the music will play."));
         }
 
         void AddVillager(char marker, string villagerName, string role, string roleEnglish, CharacterAppearance look,
@@ -267,6 +282,7 @@ namespace LLG
                 { 'B', "Art/Icons/food_bread" }, { 'C', "Art/Icons/food_candy" }, { 'S', "Art/Icons/item_rod" },
                 { 'W', "Art/Icons/item_sword" }, { 'M', "Art/Icons/pet_dog" }, { 'H', "Art/UI/hp_heart" },
                 { '^', "Art/Icons/gear_helmet" }, { 'n', "Art/UI/page" }, { 'o', "Art/Icons/food_egg" },
+                { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" },
             };
             var list = new List<(Vector2Int, string)>();
             foreach (var kv in icons)
@@ -500,6 +516,11 @@ namespace LLG
                 case '^': return "Entrar en la herrería";
                 case 'M': return "Entrar en la tienda de mascotas";
                 case 'H': return "Entrar en tu casa";
+                case ']': return "Entrar en la semillería";
+                case ')': return "Entrar en la tienda de música";
+                case '\'': return "Entrar en la escuela de música";
+                case 'ñ': return "Tocar el piano";
+                case '+': return farm.Describe(player.FacingTile);
                 case 'D': return "Llamar a la puerta";
                 case 'I': case '<': case '>': return "Abrir la puerta";
                 case 'A': return "Tiro con arco";
@@ -530,7 +551,7 @@ namespace LLG
         /// <summary>Does whatever the given map letter stands for. Public so tools/tests can trigger it.</summary>
         public void Interact(char what, Vector2Int tile)
         {
-            if (portals.TryGetValue(tile, out var door) && "BCSWM^H".IndexOf(what) >= 0)
+            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'".IndexOf(what) >= 0)
             {
                 Teleport(door);
                 return;
@@ -564,6 +585,8 @@ namespace LLG
                 case 'G': dialogue.Show("", "La chimenea calienta la casa.", "The fireplace warms the house."); break;
                 case 'E': dialogue.Show("", "¡Qué calor hace aquí!", "It's so hot in here!"); break;
                 case 'n': lessons.Toggle(); break;
+                case '+': farm.Use(tile); break;
+                case 'ñ': music.Begin(true); break;
                 case 'g': dialogue.Show("", "Al este: el bosque. ¡Cuidado con los lobos!", "East: the forest. Beware of the wolves!"); break;
                 case 'l': dialogue.Show("", "El agua del pozo está muy fría.", "The water in the well is very cold."); break;
                 case 'y': dialogue.Show("", "El molino muele el trigo para hacer harina.", "The windmill grinds wheat into flour."); break;
@@ -578,6 +601,7 @@ namespace LLG
                         villager.Sprite.Face((playerSprite.Facing + 2) % 4);     // turn to face the player
                         if (what == '4') dialogue.Show(villager.Lines, archery.Begin);
                         else if (what == '%') dialogue.Show(villager.Lines, StartIntruso);
+                        else if (what == '!') dialogue.Show(villager.Lines, () => music.Begin(false));
                         else if (area != null && area.interior && area.keeper == what.ToString()) OpenRoomShop(true);
                         else dialogue.Show(villager.Lines);
                     }
@@ -586,6 +610,9 @@ namespace LLG
         }
 
         public void StartIntruso() => intruso.Begin();
+
+        /// <summary>Shows a one-line message from someone (or from the game when "who" is empty).</summary>
+        public void SayLine(string who, string spanish, string english) => dialogue.Show(who, spanish, english);
 
         // ------------------------------------------------------------ left click: read
 

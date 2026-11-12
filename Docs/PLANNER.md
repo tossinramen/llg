@@ -41,7 +41,6 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 
 ### 4. Combat, gear and progression
 - [ ] Damage and XP mechanics pass (crits, attack speed per weapon type, enemy scaling)
-- [ ] Armour tiers like Minecraft but our own (cloth → leather → chainmail → iron → Toledo steel → rune)
 - [ ] **Durability** on weapons and armour
 - [ ] **Repair** at the blacksmith (costs Lexa)
 - [ ] **Upgrade** weapons, armour and skills with Lexa (+1 … +10)
@@ -49,8 +48,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] Strength stat, trained by boxing (adds fist and melee damage)
 - [ ] Gym (el gimnasio) with activities: boxing bag, weights, running track (each with a language twist)
 - [ ] Magic spells from level 25 (see magic notes)
-- [ ] Music skill: music school + music store; instruments; music can stun monsters (and later players)
-- [ ] Music activity: click words in order to build a verse for guitar / flute / clarinet
+- [ ] Music in battle: a song can stun a monster for a turn (needs the battle system)
 
 ### 5. Dungeons, bosses and villains
 - [ ] Dungeon hall building (inspired by Machu Picchu — see notes), outside the village
@@ -64,10 +62,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] "Levelling up Lexa" (needs deciding what it means — see notes)
 
 ### 6. Farming
-- [ ] Plant seeds in the farm field; crops grow over time
-- [ ] Different crops sell for different amounts; buy pricier seeds at the store
-- [ ] Watering screen: a language exercise that makes crops grow faster
-- [ ] Use the Farming skill
+- [ ] More garden plots (buy extra land with Lexa), and use the big farm field too
 
 ### 7. Quests and story
 - [ ] Quest system (quest text in English); quest log window
@@ -128,7 +123,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 | 80 | El revólver (revolver) |
 | 90 | El rifle |
 
-### Armour tiers (Minecraft-like, our own)
+### Armour tiers (built — sold in the Herrería; upgrades, durability and repairs still to do)
 Tela (cloth) → Cuero (leather) → Cota de malla (chainmail) → Hierro (iron) → Acero de Toledo (Toledo steel) → Armadura rúnica (rune armour, glows blue).
 Each tier has head, chest, legs, wrists and a shield. Upgrades +1…+10 cost Lexa; durability drops with hits; the blacksmith repairs.
 
@@ -180,7 +175,7 @@ them into runes inside the Ciudadela del Sol. Without words, the fountain is fad
 that every word you learn re-carves a rune. Your goal is to climb the citadel, beat the kings and
 bring the language back. (Quest text in English, everything else in Spanish.)
 
-### Crops (farming)
+### Crops (built — seeds at the Semillería, grow them in your patch)
 
 | Crop | Seed price | Sells for | Grows in |
 |---|---|---|---|
@@ -194,7 +189,7 @@ bring the language back. (Quest text in English, everything else in Spanish.)
 
 The watering screen asks a quick language question per plot; correct answers make that plot grow faster.
 
-### Music (idea)
+### Music (built: school, store, instruments, skill, verse game — battle stun still to do)
 Music school (escuela de música) and music store (tienda de música). Instruments: la guitarra, la flauta,
 el clarinete, la pandereta. Music skill. Playing = clicking words in order to build a verse.
 In battle, a song can stun a monster for a turn.
@@ -246,3 +241,15 @@ Finished tasks, struck through.
 - ~~Blade tree in the Armería, locked by level, expensive (palo lv 5 … la Colada lv 60)~~ ✅
 - ~~Axe tree in the Armería (hacha de mano lv 10, hacha lv 20, hacha de guerra lv 35, hacha doble lv 50)~~ ✅
 - ~~Ranged tree in the Armería (honda lv 5 … arco … ballesta … arcabuz … pistola … rifle lv 90); guns fire bullets~~ ✅
+- ~~Text never spills out of any box (every label shrinks to fit; buttons have inner padding)~~ ✅
+- ~~"Your progress is saved…" fits the menu when translated~~ ✅
+- ~~Lexa box under the portrait fits the number~~ ✅
+- ~~Map names never overlap, sit on plates, and hovering one shows its translation~~ ✅
+- ~~Icons have a margin inside their slots and cards~~ ✅
+- ~~Shop cards: names, prices and levels inside the cards; no overlap with the tabs; space above the bottom border~~ ✅
+- ~~Music school (Profesora Isabel, piano) and music store (Marta) with 6 instruments~~ ✅
+- ~~Music skill and the verse game (click words in order; each word plays a note)~~ ✅
+- ~~Seed shop (Semillería, Don Ramón) with 7 crops at different prices~~ ✅
+- ~~Vegetable patch: plant, water (language question = grows faster), harvest, sell~~ ✅
+- ~~Farming skill used~~ ✅
+- ~~Armour tiers in the Herrería: tela, cuero, malla, hierro, Toledo, rúnico (5 pieces each, level-locked)~~ ✅

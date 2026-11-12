@@ -88,27 +88,27 @@ namespace LLG
             UIFactory.Img("Ring", frame, new Vector2(-60, 0), new Vector2(44, 44), Color.white, UIFactory.LoadSprite("Art/UI/minimap_ring"));
 
             // name plate in its own small box, then HP, mana and hunger bars with space between them
-            UIFactory.Box("NamePlate", frame, new Vector2(BarX, 12), new Vector2(BarWidth + 4, 14), new Color32(70, 52, 46, 255));
-            nameLevel = UIFactory.Label("Name", frame, new Vector2(BarX, 12), new Vector2(BarWidth - 4, 14), "", Color.white);
-            nameLevel.fontSize = 12;
-            hpTrail = Bar("HpTrail", -3, 10, new Color32(250, 230, 150, 255), out hpFill, new Color32(206, 52, 52, 255));
-            hpText = UIFactory.Label("Hp", frame, new Vector2(BarX, -3), new Vector2(BarWidth, 10), "", Color.white);
-            hpText.fontSize = 12;
+            UIFactory.Box("NamePlate", frame, new Vector2(BarX, 11), new Vector2(BarWidth + 4, 17), new Color32(70, 52, 46, 255));
+            nameLevel = UIFactory.Label("Name", frame, new Vector2(BarX, 11), new Vector2(BarWidth - 6, 16), "", Color.white);
+            nameLevel.resizeTextMaxSize = 12;
+            hpTrail = Bar("HpTrail", -5, 12, new Color32(250, 230, 150, 255), out hpFill, new Color32(206, 52, 52, 255));
+            hpText = UIFactory.Label("Hp", frame, new Vector2(BarX, -5), new Vector2(BarWidth, 13), "", Color.white);
+            hpText.resizeTextMaxSize = 12;
             UIFactory.Outline(hpText);
-            Bar("Mana", -13, 5, Color.clear, out manaFill, new Color32(64, 120, 220, 255));
+            Bar("Mana", -15, 4, Color.clear, out manaFill, new Color32(64, 120, 220, 255));
             manaText = UIFactory.Label("ManaText", frame, Vector2.zero, Vector2.zero, "", Color.white);
             manaText.gameObject.SetActive(false);
-            Bar("Hunger", -19, 3, Color.clear, out hungerFill, new Color32(226, 150, 50, 255));
+            Bar("Hunger", -20, 2, Color.clear, out hungerFill, new Color32(226, 150, 50, 255));
             hungerText = UIFactory.Label("HungerText", frame, Vector2.zero, Vector2.zero, "", UIFactory.Ink);
             hungerText.gameObject.SetActive(false);
 
             // Lexa, in a small box under the portrait
-            var purseImg = UIFactory.Panel("Purse", canvas, FramePos + new Vector2(-50, -40), new Vector2(76, 22));
+            var purseImg = UIFactory.Panel("Purse", canvas, FramePos + new Vector2(-44, -44), new Vector2(88, 28));
             purseImg.pixelsPerUnitMultiplier = 2;
             purseImg.raycastTarget = false;
             var purse = purseImg.rectTransform;
-            UIFactory.Img("Coin", purse, new Vector2(-24, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
-            coins = UIFactory.Label("Coins", purse, new Vector2(10, 0), new Vector2(50, 16), "", UIFactory.Ink, TextAnchor.MiddleLeft);
+            UIFactory.Img("Coin", purse, new Vector2(-26, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
+            coins = UIFactory.Label("Coins", purse, new Vector2(8, 0), new Vector2(52, 17), "", UIFactory.Ink);
         }
 
         /// <summary>A bar in the unit frame: dark background, an optional trail and a coloured fill.</summary>

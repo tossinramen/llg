@@ -58,8 +58,10 @@ WORDS = {
     "K": ("El mostrador", "Counter"), "Q": ("El menú", "Menu Board"), "L": ("La estantería", "Shelf"),
     "E": ("El horno", "Oven"), "U": ("El yunque", "Anvil"), "J": ("La cama", "Bed"), "t": ("La mesa", "Table"),
     "G": ("La chimenea", "Fireplace"),
+    "[": ("La semillería", "Seed Shop"), "(": ("La tienda de música", "Music Shop"),
+    "`": ("La escuela de música", "Music School"), "+": ("El huerto", "Vegetable Patch"), "ñ": ("El piano", "Piano"),
 }
-for door in "BCSWMHDI^<>":
+for door in "BCSWMHDI^<>])'":
     WORDS[door] = ("La puerta", "Door")
 
 # ---------------------------------------------------------------- the village layout (tiles)
@@ -75,7 +77,9 @@ BUILDINGS = [
     ("candy", "q", "C", 60, 16, 6, 2, "shop", "Dulcería", {"shutters": (164, 80, 110), "awning": (200, 110, 140), "wall": (246, 226, 216)}),
     ("store", "s", "S", 27, 25, 6, 2, "shop", "Tienda", {"shutters": (66, 100, 140), "awning": (70, 110, 150)}),
     ("home", "h", "H", 12, 25, 5, 2, "house", None, {"shutters": (78, 112, 84), "pots": True}),
-    ("house_w", "d", "D", 19, 25, 5, 2, "house", None, {"shutters": (164, 120, 60)}),
+    ("seeds", "[", "]", 19, 25, 5, 2, "shop", "Semillas", {"shutters": (110, 150, 70), "awning": (120, 160, 70), "pots": True}),
+    ("music_store", "(", ")", 19, 16, 6, 2, "shop", "Música", {"shutters": (120, 70, 150), "awning": (150, 90, 180), "wall": (240, 228, 214)}),
+    ("music_school", "`", "'", 68, 16, 6, 2, "shop", "Escuela", {"shutters": (60, 80, 150), "two_story": True, "wall": (236, 224, 204)}),
     ("weapons", "w", "W", 60, 25, 6, 2, "shop", "Armería", {"shutters": (90, 74, 60), "awning": (96, 90, 84), "wall": (226, 214, 192), "shield": True}),
     ("smithy", "j", "^", 68, 25, 6, 2, "shop", "Herrería", {"shutters": (70, 70, 74), "awning": (80, 80, 86), "wall": (196, 190, 178)}),
     ("pets", "m", "M", 38, 36, 6, 2, "shop", "Mascotas", {"shutters": (196, 140, 60), "awning": (210, 150, 70), "paw": True}),
@@ -100,6 +104,9 @@ ROOMS = [
     ("smithy", "La herrería", "Blacksmith", "smithy", "@", (130, 1)),
     ("pets", "La tienda de mascotas", "Pet Shop", "pets", "$", (130, 12)),
     ("home", "Tu casa", "Your House", "", "", (130, 23)),
+    ("seeds", "La semillería", "Seed Shop", "seeds", "*", (130, 34)),
+    ("music_store", "La tienda de música", "Music Shop", "music", "/", (114, 45)),
+    ("music_school", "La escuela de música", "Music School", "", "!", (130, 45)),
 ]
 RW, RH = 14, 10
 
@@ -468,6 +475,9 @@ ROOM_STYLE = {
     "smithy": {"wall": (120, 110, 104), "dado": (70, 64, 62), "floor": "stone", "floor_col": (96, 90, 86)},
     "pets": {"wall": (236, 230, 196), "dado": (110, 150, 80), "floor": "wood", "floor_col": (170, 126, 84)},
     "home": {"wall": (242, 234, 214), "dado": (70, 110, 170), "floor": "wood", "floor_col": (140, 96, 60)},
+    "seeds": {"wall": (232, 226, 196), "dado": (110, 150, 70), "floor": "wood", "floor_col": (160, 120, 80)},
+    "music_store": {"wall": (236, 226, 236), "dado": (120, 70, 150), "floor": "wood", "floor_col": (120, 80, 56)},
+    "music_school": {"wall": (238, 230, 214), "dado": (60, 80, 150), "floor": "tile", "floor_col": (150, 120, 96)},
 }
 SHELF_GOODS = {
     "bakery": ["food_bread", "food_baguette", "food_croissant", "food_muffin", "food_cake", "food_donut", "food_empanada", "food_tart"],
@@ -476,6 +486,8 @@ SHELF_GOODS = {
     "weapons": ["item_sword", "item_sabre", "item_axe", "item_battleaxe", "item_bow", "item_longbow", "item_dagger", "item_crossbow"],
     "smithy": ["gear_helmet", "gear_chainmail", "gear_breastplate", "gear_greaves", "gear_bracers", "gear_iron_shield", "item_hatchet", "gear_wood_shield"],
     "pets": ["pet_dog", "pet_cat", "pet_rabbit", "pet_parrot", "pet_turtle", "pet_hamster", "food_fish", "food_cookie"],
+    "seeds": ["seed_wheat", "seed_lettuce", "seed_tomato", "seed_carrot", "seed_strawberry", "seed_grape", "seed_olive", "crop_tomato"],
+    "music_store": ["item_guitar", "item_flute", "item_clarinet", "item_tambourine", "item_trumpet", "item_violin", "item_guitar", "item_flute"],
 }
 
 
@@ -801,9 +813,9 @@ def make_world():
         return True
 
     r = np.random.default_rng(3)
-    for tx, ty in ((17, 22), (31, 22), (25, 30), (32, 31), (63, 31), (70, 31), (75, 22), (44, 41), (60, 40), (3, 24), (11, 22), (24, 33)):
+    for tx, ty in ((31, 22), (25, 30), (32, 31), (63, 31), (70, 31), (75, 22), (44, 41), (60, 40), (3, 24), (24, 33)):
         tree("orange", tx, ty, (tx + ty) % 2)
-    for tx, ty in ((41, 12), (51, 12), (19, 14), (59, 13)):
+    for tx, ty in ((41, 12), (51, 12), (59, 13)):
         tree("cypress", tx, ty)
     for _ in range(70):
         tree("olive", int(r.integers(4, 32)), int(r.integers(43, 66)), int(r.integers(0, 2)))
@@ -891,6 +903,12 @@ def make_world():
             rplace(pen(), 3, 7, "N", "pen", (2, 7, 4, 1))
             for i, kind in enumerate(("pet_cat", "pet_rabbit", "pet_dog", "pet_hamster")):
                 spawns.append({"kind": kind, "x": ox + 3 + i * 2, "y": oy + 6 + (i % 2), "room": True})
+        if key == "music_school":
+            img = Image.open(os.path.join(ART, "World", "Objects", "piano.png")).convert("RGBA")
+            place((img, (24, 35)), (ox + 4) * T + 8, (oy + 4) * T, (ox + 3, oy + 3, 3, 1), "ñ", "piano")
+            grid[oy + 5][ox + 8] = keeper
+            img, anc = shelf("music_store")
+            place((img, anc), (ox + 11) * T, (oy + 3) * T - 2, (ox + 9, oy + 2, 4, 1), "L", "shelf_music_store")
         if key == "home":
             img, anc = bed()
             place((img, anc), (ox + 2) * T + 16, (oy + 5) * T, (ox + 2, oy + 3, 2, 2), "J", "bed")
@@ -902,13 +920,20 @@ def make_world():
         rplace(va.flower_pot(), 12, 3, "p", "pot", (12, 3, 1, 1))
 
         # doors in and out
-        outside = {"bakery": "bakery", "candy": "candy", "store": "store", "weapons": "weapons", "smithy": "smithy",
-                   "pets": "pets", "home": "home"}[key]
+        outside = key
         dx, dy = doors[outside]
         portals.append({"x": dx, "y": dy, "tx": ox + 6, "ty": oy + RH - 2, "face": 2})
         for ex_x in (6, 7):
             portals.append({"x": ox + ex_x, "y": oy + RH - 1, "tx": dx, "ty": dy + 1, "face": 0})
 
+    gd = ImageDraw.Draw(ground)
+    for ty in range(21, 24):
+        for tx in range(12, 18):
+            X, Y = tx * T, ty * T
+            gd.rectangle([X + 1, Y + 1, X + 14, Y + 14], fill=(104, 74, 50), outline=(82, 58, 40))
+            for k in (4, 8, 12):
+                gd.line([X + 2, Y + k, X + 13, Y + k], fill=(88, 62, 42))
+            grid[ty][tx] = "+"
     save_png(ground, "World", "village_ground.png")
     wx, wy, ww, wh = va.make_water_frames(water, None)
     overlays = [{"frames": ["water_0", "water_1", "water_2"], "fps": 2, "x": wx, "y": wy, "w": ww, "h": wh}]
@@ -932,7 +957,7 @@ def make_minimap(ground, grid):
         for tx in range(VW):
             c = grid[ty][tx]
             X, Y = tx * 4, ty * 4
-            if c in "kqswjmhdarvBCSWMHD^<>":
+            if c in "kqswjmhdarv[(`BCSWMHD^<>])'":
                 d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(176, 82, 54))
             elif c in "iIy":
                 d.rectangle([X, Y - 4, X + 3, Y + 3], fill=(206, 190, 150))

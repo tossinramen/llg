@@ -30,6 +30,7 @@ namespace LLG
         public int level = 1, xp;                               // your character level (no maximum)
         public string lessonCategory = "";                      // the chosen lesson topic ("" = all)
         public int lessonLevel = 1;                             // 1 Principiante ... 5 Experto
+        public List<PlotState> plots = new List<PlotState>();   // your vegetable patch
     }
 
     /// <summary>The running game: the save data, the loaded language, inventory and helper actions.</summary>
@@ -180,6 +181,15 @@ namespace LLG
                     break;
                 case ItemKind.Rod:
                     Say("Usa la caña en el estanque. (Use it at the pond.)");
+                    break;
+                case ItemKind.Seed:
+                    Say("Plántalas en tu huerto, al lado de tu casa. (Plant them in your patch next to your house.)");
+                    break;
+                case ItemKind.Instrument:
+                    Say("Toca música en la escuela de música. (Play it at the music school.)");
+                    break;
+                case ItemKind.Material:
+                    Say("Véndelo en una tienda. (Sell it in a shop.)");
                     break;
             }
         }

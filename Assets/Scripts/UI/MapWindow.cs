@@ -10,7 +10,7 @@ namespace LLG
     /// </summary>
     public class MapWindow : GameWindow
     {
-        const float Scale = 3.9f;      // canvas units per tile
+        const float Scale = 3.7f;      // canvas units per tile
         static readonly (string es, string en, int x, int y)[] Regions =
         {
             ("La plaza", "Town Square", 46, 31), ("La granja", "Farm", 18, 33), ("El bosque", "Forest", 97, 44),
@@ -24,9 +24,12 @@ namespace LLG
             ('B', "Panadería", "Bakery", -3), ('C', "Dulcería", "Candy Shop", 2), ('S', "Tienda", "General Store", -3),
             ('W', "Armería", "Weapon Shop", -3), ('^', "Herrería", "Blacksmith", 2), ('M', "Mascotas", "Pet Shop", -3),
             ('H', "Tu casa", "Your House", -3), ('I', "Iglesia", "Church", -6), ('<', "Ayuntamiento", "Town Hall", -4), ('>', "Taberna", "Tavern", 2),
+            (']', "Semillas", "Seed Shop", 2), (')', "Música", "Music Shop", -3), ('\'', "Escuela de música", "Music School", -3),
         };
 
         RectTransform mapRect, arrow;
+        readonly List<Rect> used = new List<Rect>();
+        LocalizedText tooltip;
         Transform player;
         CharacterSprite playerSprite;
         Vector2 size;
@@ -39,8 +42,10 @@ namespace LLG
             player = playerTransform;
             playerSprite = sprite;
             size = new Vector2(width, height) * Scale;
-            CreateWindow(canvas, owner, new Vector2(0, -2), new Vector2(size.x + 30, size.y + 60), "Mapa de Valdeluz", "Map of Valdeluz");
-            var frame = UIFactory.Img("MapFrame", W, new Vector2(0, -14), size + new Vector2(6, 6), new Color32(96, 66, 44, 255));
+            CreateWindow(canvas, owner, new Vector2(0, -2), new Vector2(size.x + 40, size.y + 92), "Mapa de Valdeluz", "Map of Valdeluz");
+            tooltip = UIFactory.LLabel("Tooltip", W, new Vector2(40, -size.y / 2 - 22), new Vector2(size.x - 120, 16),
+                "Pasa el ratón por un nombre para traducirlo.", "Point at a name to translate it.", UIFactory.Ink).GetComponent<LocalizedText>();
+            var frame = UIFactory.Img("MapFrame", W, new Vector2(0, 2), size + new Vector2(6, 6), new Color32(96, 66, 44, 255));
             mapRect = UIFactory.Img("Map", frame.transform, Vector2.zero, size, Color.white, UIFactory.LoadSprite("Art/UI/minimap")).rectTransform;
 
             foreach (var (tile, icon) in places)
@@ -58,16 +63,41 @@ namespace LLG
             foreach (var (es, en, x, y) in Regions)
                 Place(new Vector2Int(x, y), es, en, new Color32(255, 236, 150, 255));
             arrow = UIFactory.Img("You", mapRect, Vector2.zero, new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/map_arrow")).rectTransform;
-            UIFactory.LLabel("You", W, new Vector2(-size.x / 2 + 60, -size.y / 2 - 30), new Vector2(160, 16), "▲ = tú", "▲ = you", UIFactory.Faded);
+            UIFactory.LLabel("You", W, new Vector2(-size.x / 2 + 50, -size.y / 2 - 22), new Vector2(90, 16), "▲ = tú", "▲ = you", UIFactory.Faded);
         }
 
         Vector2 TileToMap(Vector2Int tile) => new Vector2((tile.x + 0.5f) * Scale - size.x / 2, size.y / 2 - (tile.y + 0.5f) * Scale);
 
+        /// <summary>A name on the map, on a small plate. If it would overlap another name it moves up or
+        /// down until it doesn't. Hovering it shows the translation at the bottom of the window.</summary>
         void Place(Vector2Int tile, string es, string en, Color color)
         {
-            var label = UIFactory.LLabel("Label", mapRect, TileToMap(tile), new Vector2(120, 14), es, en, color);
-            label.fontSize = 12;
-            UIFactory.Outline(label);
+            var plateSize = new Vector2(Mathf.Max(es.Length, en.Length) * 6 + 12, 15);
+            // keep every name inside the map
+            var at = TileToMap(tile);
+            at.x = Mathf.Clamp(at.x, -size.x / 2 + plateSize.x / 2 + 2, size.x / 2 - plateSize.x / 2 - 2);
+            at.y = Mathf.Clamp(at.y, -size.y / 2 + 10, size.y / 2 - 10);
+            // try the spot itself, then nearby spots above/below and to the sides, until nothing overlaps
+            var pos = at;
+            bool placed = false;
+            foreach (float dx in new float[] { 0, -50, 50, -100, 100 })
+            {
+                foreach (float dy in new float[] { 0, -16, 16, -32, 32, -48, 48 })
+                {
+                    var c = at + new Vector2(dx, dy);
+                    var r = new Rect(c - plateSize / 2, plateSize);
+                    bool inside = Mathf.Abs(c.y) < size.y / 2 - 8 && Mathf.Abs(c.x) < size.x / 2 - plateSize.x / 2 - 1;
+                    if (inside && used.TrueForAll(u => !u.Overlaps(r))) { pos = c; used.Add(r); placed = true; break; }
+                }
+                if (placed) break;
+            }
+            var plate = UIFactory.Box("Plate", mapRect, pos, plateSize, new Color(0.12f, 0.1f, 0.1f, 0.55f));
+            plate.raycastTarget = true;
+            var hover = plate.gameObject.AddComponent<HoverHandle>();
+            hover.Entered += () => tooltip.Set(es + "  =  " + en, en + "  =  " + es);
+            hover.Exited += () => tooltip.Set("Pasa el ratón por un nombre para traducirlo.", "Point at a name to translate it.");
+            var label = UIFactory.LLabel("Label", plate.transform, new Vector2(0, 0), plateSize - new Vector2(6, 2), es, en, color);
+            label.resizeTextMaxSize = 12;
         }
 
         public void Toggle()

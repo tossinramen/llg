@@ -24,7 +24,7 @@ namespace LLG
             UIFactory.LBtn("Resume", w, new Vector2(0, 34), new Vector2(240, 28), "Continuar", "Resume", UIFactory.Green, Close);
             UIFactory.LBtn("Options", w, new Vector2(0, -2), new Vector2(240, 28), "Opciones", "Options", UIFactory.Blue, ShowOptions);
             UIFactory.LBtn("Exit", w, new Vector2(0, -38), new Vector2(240, 28), "Salir del juego", "Exit game", UIFactory.Red, () => village.ExitToTitle());
-            UIFactory.LLabel("Saved", w, new Vector2(0, -74), new Vector2(260, 20), "Tu progreso se guarda al salir.", "Your progress is saved when you exit.", UIFactory.Faded);
+            UIFactory.LLabel("Saved", w, new Vector2(0, -74), new Vector2(250, 30), "Tu progreso se guarda al salir.", "Your progress is saved when you exit.", UIFactory.Faded);
             window.SetActive(false);
         }
 
