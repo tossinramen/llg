@@ -1,101 +1,76 @@
 # To-Do List
 
-Work top to bottom. Each phase ends with something you can play.
-`[x]` = done, `[ ]` = not started.
+Work top to bottom. `[x]` = done, `[ ]` = not started.
 
-## Phase 0 – Project setup
-- [x] Unity project folder with organised subfolders
-- [x] Automatic pixel-art import settings
-- [x] Starter Spanish word pack (43 words, 12 sentences)
-- [x] Design docs
-- [ ] **You:** open the project in Unity and press Play (see `04_UNITY_SETUP.md`)
-- [ ] **You:** pick a name (`01_NAME_IDEAS.md`)
-- [ ] Put the project under version control (git) so nothing can be lost
+## Done so far
+- [x] Unity project, folders, automatic pixel-art and pixel-font import
+- [x] Name: **Runes of Speech**. Currency: **Lexa** (change either in `GameConfig.cs`)
+- [x] Start screen: colourful background, pixel fonts, parchment panels, character creator,
+      turnable character, Randomize, language picker, tagline cycling through languages
+- [x] Village map with bakery, candy shop, store, pond, archery range, your house, rune stone
+- [x] Walking (4 directions, animated), collisions, camera follow
+- [x] Five villagers with Spanish + English dialogue
+- [x] HUD: HP, mana, hunger, Lexa
+- [x] Shops: buy food (refills hunger), fishing rods, knife, dagger, bow, sword, books (+intelligence)
+- [x] Backpack window
+- [x] Fishing: build the sentence against a timer; hints cost mana; mistakes cost HP
+- [x] Archery: shoot the target with the correct word; 8 rounds, 3 arrows
+- [x] Skill XP and level-ups for Fishing, Grammar, Archery, Vocabulary
+- [x] Saving (profile, stats, skills, items)
+- [x] Controls: E use, B backpack, left click reads a word, right click attacks / punches / opens doors
+- [x] Equip weapons from the backpack; bow fires arrows; trees and bushes sometimes drop fruit
+- [x] Start screen: drag the character to turn; language cards (Japanese/Korean locked)
 
-## Phase 1 – Start screen
-- [x] Peaceful background with drifting clouds
-- [x] Tagline cycling through supported languages
-- [x] Character creator: name, gender, skin, hair style/colour, shirt, pants
-- [x] Turn the character to see all four sides
-- [x] Randomize button
-- [x] Language picker (Spanish available, Japanese/Korean "soon")
-- [x] Save the profile to disk
-- [ ] Pixel font (the screen currently uses Unity's built-in smooth font)
-- [ ] Pixel-art buttons and panels instead of flat colours
-- [ ] Title music and button sounds
-- [ ] "Continue" option when a saved game exists
+## Next up – make the village feel alive
+- [ ] **You:** play it and tell me what feels wrong (speed, prices, difficulty, layout)
+- [ ] Music and sound effects (footsteps, button clicks, correct/wrong)
+- [ ] Shop interiors with a shopkeeper character instead of a window opening at the door
+- [ ] Shopkeepers ask for things by name ("Dame el pan") – the "choose the food" activity
+- [ ] Villagers walk around; more lines of dialogue; a first small quest each
+- [ ] Skills screen showing every skill, level and XP bar
+- [ ] "Continue" on the start screen when a save exists; a way to start a new game
+- [ ] Items you can see: hold the rod while fishing, show the weapon you own
+- [ ] Animated water and a fishing bobber
+- [ ] Walking behind trees and roofs (right now solid things simply block you)
 
-## Phase 2 – Walking around
-- [ ] Walking animation frames for the character (4 directions)
-- [ ] Player movement on a tile grid, camera follow, pixel-perfect camera
-- [ ] Tile art: grass, path, water, trees, houses
-- [ ] First map: the town square
-- [ ] Collisions (can't walk through houses/water)
-- [ ] Start button on the title screen loads the town
+## Spending Lexa (your list)
+- [ ] Pets that follow you
+- [ ] Clothing shop (new shirts, hats) using the character layers
+- [ ] House interior and upgrades
+- [ ] Sell fish for Lexa / cook them
 
-## Phase 3 – Core systems on screen
-- [ ] HUD: HP hearts, mana, hunger bar, coins
-- [ ] Hunger drains over time
-- [ ] Save/load of stats, skills and position
-- [ ] Interact button + signs you can read
-- [ ] Dialogue box
-
-## Phase 4 – First activity: picture match (simplest one)
-- [ ] Shopkeeper NPC starts the activity
-- [ ] Match words to pictures, pays coins
-- [ ] Gives Trading + Vocabulary XP, level-up message
-- [ ] More item pictures (need ~30 to make it interesting)
-
-## Phase 5 – Food and hunger
-- [ ] "Choose the food" activity
-- [ ] Foods restore different hunger amounts
-- [ ] Bakery/market where food is bought
-
-## Phase 6 – Sentence activities
-- [ ] Reusable word-tile sentence builder
-- [ ] First obstacle (the broken bridge by the river)
-- [ ] Fishing with timer; HP loss on failure
-- [ ] Mana hints: reveal next word, show translation, slow timer
-
-## Phase 7 – Learning engine
-- [ ] Per-word mastery tracking
+## Learning engine
+- [ ] Per-word mastery tracking (which words you keep getting wrong)
 - [ ] Word selection that favours weak and not-recently-seen words
-- [ ] Inn: sleep + journal review, refills HP and mana
-- [ ] Skill screen showing all skills and levels
-- [ ] Tier unlocks by skill level
+- [ ] Inn or bed: sleep + review words, refills HP and mana (the rune stone refill is a stand-in)
+- [ ] Harder words and shorter timers as skills level up (tiers exist; needs more words)
+- [ ] Introduce new words gently: show meaning the first time, quiz after
 
-## Phase 8 – Real language data
+## Real language data
 - [ ] Import script: frequency list + Wiktionary + Tatoeba → `pack.json`
 - [ ] 300 Spanish words / 100 sentences, tiers 1–2 hand-checked
-- [ ] Credits screen listing data sources and licences
+- [ ] Pictures for more words (archery and picture-matching are better with icons)
+- [ ] Move item names from `ItemDatabase.cs` into the language pack
+- [ ] Credits screen listing data sources and font licences
 
-## Phase 9 – More activities and world
-- [ ] Market shopping (numbers)
-- [ ] Conversations and friendship
+## More activities
+- [ ] Picture match jobs for Lexa
+- [ ] Sentence-building obstacles in the world (broken bridge, locked gate)
+- [ ] Market shopping with numbers
+- [ ] Recipe cooking
 - [ ] Farming
 - [ ] Mail delivery
-- [ ] Recipe cooking
-- [ ] Spell combat + forest area
-- [ ] Article sorting at the mine
-- [ ] Scribe work (typing)
-- [ ] Notice board quests
+- [ ] Spell combat + a forest area (weapons and attack are already tracked)
+- [ ] Article sorting, scribe work, notice board quests, listening games
 
-## Phase 10 – Polish
-- [ ] Music and sound effects
-- [ ] Word audio + listening activities
-- [ ] Settings (volume, text speed, window size)
-- [ ] Tutorial for the first ten minutes
-- [ ] Playtest with someone who knows no Spanish
-
-## Phase 11 – More languages
-- [ ] Font with Japanese and Korean characters
-- [ ] Sentence tiles defined in data (those languages don't split on spaces)
+## More languages
+- [ ] Sentence tiles defined in data (Japanese and Korean don't split on spaces)
 - [ ] Reading aid toggle (romaji / romanisation)
-- [ ] Japanese pack (JMdict + JLPT lists)
-- [ ] Korean pack (krdict + TOPIK lists)
+- [ ] Japanese pack (JMdict + JLPT lists), Korean pack (krdict + TOPIK lists)
+- [ ] Villager dialogue moved into the language packs
 
 ## Questions for you
 1. "Rotate the screen" – I made the *character* turn. Is that what you meant?
 2. PC only, or phones too? (Affects controls and screen layout.)
-3. Should the game's menus be in English, or gradually switch to the language being learned?
-4. Combat – do you want it, or should the game stay peaceful?
+3. Should menus stay in English, or slowly switch to the language being learned?
+4. Should punching/attacking villagers do anything beyond them saying "¡Ay!"?

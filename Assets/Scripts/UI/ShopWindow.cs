@@ -15,6 +15,7 @@ namespace LLG
         Text title, subtitle, feedback;
         string[] itemIds;
         bool backpack;
+        int openedFrame;
         VillageController village;
 
         public bool Open => window != null && window.activeSelf;
@@ -27,7 +28,7 @@ namespace LLG
             subtitle = UIFactory.Label("Subtitle", window.transform, new Vector2(0, 110), new Vector2(480, 20), "", UIFactory.Faded);
             rows = UIFactory.Rect("Rows", window.transform, Vector2.zero, Vector2.zero);
             feedback = UIFactory.Label("Feedback", window.transform, new Vector2(-60, -130), new Vector2(360, 20), "", UIFactory.Ink, TextAnchor.MiddleLeft);
-            UIFactory.Btn("Close", window.transform, new Vector2(196, -130), new Vector2(104, 26), "Salir (Esc)", UIFactory.Red, Close);
+            UIFactory.Btn("Close", window.transform, new Vector2(196, -130), new Vector2(104, 26), "Salir", UIFactory.Red, Close);
             window.SetActive(false);
         }
 
@@ -38,6 +39,7 @@ namespace LLG
             title.text = spanishTitle;
             subtitle.text = englishTitle;
             feedback.text = "";
+            openedFrame = Time.frameCount;
             window.SetActive(true);
             Rebuild();
         }
@@ -48,7 +50,8 @@ namespace LLG
             var stats = GameState.Data.stats;
             title.text = "La mochila";
             subtitle.text = "Backpack";
-            feedback.text = "ATK +" + GameState.Attack() + "   INT " + stats.intelligence + "   Fish " + GameState.Data.fishCaught;
+            feedback.text = "ATK +" + GameState.Attack() + "   INT " + stats.intelligence + "   Peces (fish) " + GameState.Data.fishCaught;
+            openedFrame = Time.frameCount;
             window.SetActive(true);
             Rebuild();
         }
@@ -69,7 +72,11 @@ namespace LLG
                 UIFactory.Img("Icon", rows, new Vector2(-228, y), new Vector2(24, 24), Color.white, UIFactory.LoadSprite("Art/Icons/" + item.icon));
                 UIFactory.Label("Name", rows, new Vector2(-128, y), new Vector2(160, 22), item.spanish, UIFactory.Ink, TextAnchor.MiddleLeft);
                 UIFactory.Label("English", rows, new Vector2(22, y), new Vector2(110, 22), item.english, UIFactory.Faded, TextAnchor.MiddleLeft);
-                if (backpack) continue;
+                if (backpack)
+                {
+                    if (item.kind == ItemKind.Weapon) EquipButton(item, y);
+                    continue;
+                }
 
                 UIFactory.Img("Coin", rows, new Vector2(96, y), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
                 UIFactory.Label("Price", rows, new Vector2(130, y), new Vector2(40, 22), item.price.ToString(), UIFactory.Ink, TextAnchor.MiddleLeft);
@@ -80,6 +87,18 @@ namespace LLG
                     owned ? UIFactory.Faded : UIFactory.Green, () => Buy(captured));
                 button.interactable = !owned;
             }
+        }
+
+        void EquipButton(ItemDef item, float y)
+        {
+            bool on = GameState.Data.equipped == item.id;
+            UIFactory.Btn("Equip", rows, new Vector2(186, y), new Vector2(124, 26), on ? "Equipado" : "Equipar",
+                on ? UIFactory.Gold : UIFactory.Teal, () =>
+                {
+                    GameState.Data.equipped = on ? "" : item.id;     // click again to go back to fists
+                    GameState.Save();
+                    ShowBackpack();
+                });
         }
 
         void Buy(ItemDef item)
@@ -105,6 +124,7 @@ namespace LLG
                     break;
                 default:
                     GameState.Data.items.Add(item.id);
+                    if (item.kind == ItemKind.Weapon) GameState.Data.equipped = item.id;   // new weapons are ready to use
                     feedback.text = "¡Gracias! (Thank you!)  " + item.spanish;
                     break;
             }
@@ -121,7 +141,8 @@ namespace LLG
 
         void Update()
         {
-            if (Open && Input.GetKeyDown(KeyCode.Escape)) Close();
+            if (!Open || Time.frameCount == openedFrame) return;
+            if (Input.GetKeyDown(KeyCode.Escape) || (backpack && Input.GetKeyDown(KeyCode.B))) Close();
         }
     }
 }

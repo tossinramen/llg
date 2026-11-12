@@ -6,9 +6,10 @@ The village is drawn as ONE picture (Assets/Resources/Art/World/village.png) plu
 (Assets/Resources/Maps/village.txt) that tells the game which tiles are solid and which can be
 interacted with. Both come from the layout in make_village(), so they always match.
 
-Grid letters:  . walkable   # solid   F pond (fish)   B bakery door   C candy shop door
-               S store door  H your house door   D other door   A archery target   R rune stone
-               1-5 villagers   P player start
+Grid letters (walkable):  . grass   , path   = dock   ; archery range floor
+Grid letters (solid):     T tree   u bush   N fence   F pond   A archery target   R rune stone
+                          k bakery  q candy shop  s store  h your house  d other house
+                          B C S H D doors of those buildings   1-5 villagers   P player start
 """
 import math
 import os
@@ -169,6 +170,8 @@ def make_village():
     path(28, 13, 28, 13)       # dock
     path(8, 19, 8, 19)         # store
     path(14, 18, 14, 19)       # your house
+    for (tx, ty) in paths:
+        grid[ty][tx] = ","
     sand, sand_d, sand_e = (232, 204, 148), (210, 178, 122), (190, 152, 100)
     for (tx, ty) in paths:
         x, y = tx * T, ty * T
@@ -216,7 +219,7 @@ def make_village():
         d.rectangle([x + 1, y, x + 14, y + 15], fill=(196, 144, 92), outline=O)
         for py in range(y + 3, y + 16, 4):
             d.line([x + 2, py, x + 13, py], fill=(150, 100, 64))
-        grid[ty][28] = "."
+        grid[ty][28] = "="
     d.rectangle([28 * T + 1, 13 * T + 12, 28 * T + 14, 14 * T], fill=(196, 144, 92), outline=O)
 
     # archery range
@@ -224,31 +227,32 @@ def make_village():
         for tx in range(23, 27):
             x, y = tx * T, ty * T
             d.rectangle([x, y, x + 15, y + 15], fill=(226, 206, 150) if ty % 2 else (236, 218, 166))
+            grid[ty][tx] = ";"
     for tx in range(22, 28):
         draw_fence(d, tx * T, 3 * T, False)
-        block(tx, 3)
+        block(tx, 3, ch="N")
         if tx not in (24, 25):
             draw_fence(d, tx * T, 8 * T, False)
-            block(tx, 8)
+            block(tx, 8, ch="N")
     for ty in range(4, 8):
         for tx in (22, 27):
             draw_fence(d, tx * T, ty * T, True)
-            block(tx, ty)
+            block(tx, ty, ch="N")
     for tx in range(23, 27):
         draw_target(d, tx * T, 4 * T)
         block(tx, 4, ch="A")
 
     # buildings
     draw_building(d, 6, 4, 5, 4, (252, 232, 190), (236, 104, 72), "PANADERÍA", ((240, 80, 80), (255, 250, 240)))
-    block(6, 4, 5, 4); grid[7][8] = "B"
+    block(6, 4, 5, 4, ch="k"); grid[7][8] = "B"
     draw_building(d, 29, 4, 5, 4, (255, 200, 224), (190, 96, 220), "DULCERÍA", ((255, 120, 180), (255, 250, 240)))
-    block(29, 4, 5, 4); grid[7][31] = "C"
+    block(29, 4, 5, 4, ch="q"); grid[7][31] = "C"
     draw_building(d, 6, 15, 5, 4, (206, 214, 230), (72, 120, 220), "TIENDA", ((72, 190, 170), (255, 250, 240)))
-    block(6, 15, 5, 4); grid[18][8] = "S"
+    block(6, 15, 5, 4, ch="s"); grid[18][8] = "S"
     draw_building(d, 12, 5, 5, 3, (250, 240, 214), (96, 190, 120), chimney=True)
-    block(12, 5, 5, 3); grid[7][14] = "D"
+    block(12, 5, 5, 3, ch="d"); grid[7][14] = "D"
     draw_building(d, 12, 15, 5, 3, (255, 236, 180), (250, 176, 64), chimney=True)
-    block(12, 15, 5, 3); grid[17][14] = "H"
+    block(12, 15, 5, 3, ch="h"); grid[17][14] = "H"
 
     # rune stone in the plaza
     draw_rune_stone(d, 19 * T, 11 * T)
@@ -260,10 +264,10 @@ def make_village():
     trees += [(3, 4), (4, 8), (18, 5), (36, 5), (36, 9), (37, 14), (3, 14), (4, 18), (23, 16), (36, 19), (17, 3), (2, 20)]
     for (tx, ty) in sorted(trees, key=lambda t: t[1]):
         draw_tree(d, tx * T, ty * T, rnd.random() < 0.22, rnd)
-        block(tx, ty, 1, 2)
+        block(tx, ty, 1, 2, ch="T")
     for (tx, ty) in ((6, 8), (10, 8), (29, 8), (33, 8), (6, 19), (10, 19), (12, 8), (16, 8), (12, 18), (16, 18)):
         draw_bush(d, tx * T, ty * T)
-        block(tx, ty)
+        block(tx, ty, ch="u")
 
     # flowers on free grass
     petals = [(255, 232, 96), (255, 140, 170), (255, 255, 255), (190, 150, 255), (255, 120, 90), (120, 200, 255)]
@@ -277,7 +281,7 @@ def make_village():
 
     # villagers and the player's starting tile
     for ch, (tx, ty) in {"1": (10, 9), "2": (27, 13), "3": (33, 9), "4": (26, 7), "5": (22, 10), "P": (19, 14)}.items():
-        assert grid[ty][tx] == ".", (ch, grid[ty][tx])
+        assert grid[ty][tx] in ".,;", (ch, grid[ty][tx])
         grid[ty][tx] = ch
 
     save(img, "World", "village")
@@ -382,6 +386,22 @@ def make_items():
         ".owwwwwwwwwro...",
         "..oooooooooo....",
     ], {"o": O, "r": (120, 90, 220), "y": gold, "w": (250, 244, 228)})
+    icon("item_fist", [
+        "...oooooooo.....",
+        "..owwowwowwo....",
+        "..owwowwowwo....",
+        "..owwowwowwoo...",
+        "..owwwwwwwwwwo..",
+        "..oggggggwwwwo..",
+        "..owwwwwwwwwo...",
+        "...owwwwwwwo....",
+        "....oooooooo....",
+    ], {"o": O, "w": (255, 255, 255), "g": (200, 200, 200)})
+    icon("item_arrow", [
+        "ff..........o...",
+        ".ffwwwwwwwwwsso.",
+        "ff..........o...",
+    ], {"o": O, "f": (232, 64, 80), "w": (196, 144, 92), "s": steel})
     icon("food_croissant", [
         ".....oooooo.....",
         "...oobbBbbboo...",
@@ -502,6 +522,18 @@ def make_ui():
         for seg in segs:
             d.line([seg[0] + 0, seg[1] + 0, seg[2], seg[3]], fill=(255, 255, 255, 255))
         save(r, "UI", f"rune{i}")
+
+    icon("lock", ["....." + r for r in [
+        "..oooo..",
+        ".o....o.",
+        ".o....o.",
+        "oooooooo",
+        "oyyyyyyo",
+        "oyyooyyo",
+        "oyyooyyo",
+        "oyyyyyyo",
+        "oooooooo",
+    ]], {"o": O, "y": (250, 204, 72)}, "UI")
 
     # big archery target
     t = Image.new("RGBA", (32, 32), (0, 0, 0, 0))

@@ -4,26 +4,25 @@
 
 It is set in one line: `Assets/Scripts/Core/GameConfig.cs` → `Title`.
 
-## The magical currency: **Verba**
+## Decided: the magical currency is **Lexa**
 
-"Verba" is Latin for "words", so it is close in feel to "Lingua" without being the same name.
-The game currently uses it everywhere, and it is also one line to change:
+From "lexicon" (a language's words). It is also one line to change:
 `Assets/Scripts/Core/GameConfig.cs` → `CurrencyName`.
 
 Other options if you don't like it:
 
 | Name | Idea |
 |---|---|
-| **Verba** | Latin for "words". Current choice. |
+| **Verba** | Latin for "words". |
 | **Glyphs** | Fits the rune theme: you collect glyphs. |
 | **Lumina** | The glow of the runes. |
-| **Lexa** | From "lexicon". Short and coin-like. |
+| **Lexa** | From "lexicon". Short and coin-like. **Chosen.** |
 | **Runa / Runas** | Spanish for rune(s). Very on-theme, but Spanish-only. |
 | **Echoes** | Words leave echoes you can spend. |
 | **Sigils** | Magical marks. |
 | **Vox** | Latin for "voice". |
 
-Verba buys food, fishing rods, weapons and books now, and later pets, clothing and house
+Lexa buys food, fishing rods, weapons and books now, and later pets, clothing and house
 upgrades. I have not checked these names against other games, so search before release.
 
 ## Earlier game-name ideas (kept for reference)

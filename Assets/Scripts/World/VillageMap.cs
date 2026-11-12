@@ -6,7 +6,7 @@ namespace LLG
     /// <summary>
     /// The village as a grid of letters, loaded from Resources/Maps/village.txt
     /// (that file and the village picture are both made by Tools/art/generate_world.py).
-    /// '.' = walkable, '#' = solid, letters/digits = solid things you can interact with.
+    /// See the top of generate_world.py for what every letter means.
     /// Tile (0,0) is the top-left corner; one tile is one world unit.
     /// </summary>
     public class VillageMap
@@ -37,7 +37,12 @@ namespace LLG
 
         public void Set(Vector2Int tile, char value) => cells[tile.x, tile.y] = value;
 
-        public bool Walkable(Vector2Int tile) => At(tile) == '.';
+        /// <summary>Grass, path, dock and the archery range floor can be walked on.</summary>
+        public bool Walkable(Vector2Int tile)
+        {
+            char c = At(tile);
+            return c == '.' || c == ',' || c == '=' || c == ';';
+        }
 
         public List<Vector2Int> Find(char value)
         {

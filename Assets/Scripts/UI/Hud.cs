@@ -3,23 +3,32 @@ using UnityEngine.UI;
 
 namespace LLG
 {
-    /// <summary>The always-visible bar (HP, mana, hunger, currency), pop-up messages and the "E: ..." prompt.</summary>
+    /// <summary>
+    /// The always-visible bar (HP, mana, hunger, currency), pop-up messages, the "E: ..." prompt
+    /// and the word label that appears when you left-click something.
+    /// </summary>
     public class Hud : MonoBehaviour
     {
-        Text hp, mana, hunger, coins, toast, prompt;
+        Text hp, mana, hunger, coins, toast, prompt, labelWord, labelEnglish;
         GameObject promptBox;
-        float toastTimer;
+        RectTransform canvasRect, labelBox;
+        Camera cam;
+        Vector3 labelWorld;
+        float toastTimer, labelTimer;
 
         public void Build(Transform canvas)
         {
+            canvasRect = (RectTransform)canvas;
+            cam = Camera.main;
+
             UIFactory.Panel("HudBar", canvas, new Vector2(-170, 160), new Vector2(292, 34));
             hp = Stat(canvas, 0, "Art/UI/hp_heart");
             mana = Stat(canvas, 1, "Art/UI/mana_drop");
             hunger = Stat(canvas, 2, "Art/Icons/food_bread");
             coins = Stat(canvas, 3, "Art/UI/coin");
 
-            var help = UIFactory.Label("Help", canvas, new Vector2(170, 164), new Vector2(280, 20),
-                "Move: WASD   Use: E   Bag: I", Color.white, TextAnchor.MiddleRight);
+            var help = UIFactory.Label("Help", canvas, new Vector2(168, 158), new Vector2(280, 40),
+                "WASD move   E use   B bag\nLeft click read   Right click attack", Color.white, TextAnchor.MiddleRight);
             UIFactory.Outline(help);
 
             toast = UIFactory.Label("Toast", canvas, new Vector2(0, 112), new Vector2(600, 60), "", Color.white);
@@ -28,6 +37,13 @@ namespace LLG
             promptBox = UIFactory.Panel("Prompt", canvas, new Vector2(0, -150), new Vector2(300, 34)).gameObject;
             prompt = UIFactory.Label("Text", promptBox.transform, new Vector2(0, 1), new Vector2(290, 24), "", UIFactory.Ink);
             promptBox.SetActive(false);
+
+            var label = UIFactory.Panel("WordLabel", canvas, Vector2.zero, new Vector2(160, 62));
+            label.raycastTarget = false;
+            labelBox = label.rectTransform;
+            labelWord = UIFactory.Label("Word", labelBox, new Vector2(0, 9), new Vector2(150, 20), "", UIFactory.Ink);
+            labelEnglish = UIFactory.Label("English", labelBox, new Vector2(0, -9), new Vector2(150, 20), "", UIFactory.Faded);
+            labelBox.gameObject.SetActive(false);
 
             GameState.Toast += ShowToast;
             GameState.Data.stats.Changed += Refresh;
@@ -70,12 +86,44 @@ namespace LLG
             if (text != null) prompt.text = "E: " + text;
         }
 
+        /// <summary>A little sign above something in the world, showing its name.</summary>
+        public void ShowWordLabel(Vector3 world, string word, string english)
+        {
+            labelWord.text = word;
+            labelEnglish.text = english;
+            int longest = Mathf.Max(word.Length, english.Length);
+            labelBox.sizeDelta = new Vector2(Mathf.Max(80, longest * 8 + 32), 62);
+            labelWorld = world;
+            labelTimer = 2.5f;
+            labelBox.gameObject.SetActive(true);
+            PlaceLabel();
+        }
+
+        void PlaceLabel()
+        {
+            var screen = cam.WorldToScreenPoint(labelWorld);
+            if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screen, cam, out var local)) return;
+            // keep the whole label on screen and below the top bar
+            float halfW = labelBox.sizeDelta.x / 2, halfCanvas = canvasRect.rect.width / 2;
+            local += new Vector2(0, 36);
+            local.x = Mathf.Clamp(local.x, -halfCanvas + halfW + 4, halfCanvas - halfW - 4);
+            local.y = Mathf.Clamp(local.y, -150, 112);
+            labelBox.anchoredPosition = local;
+        }
+
         void Update()
         {
             toastTimer -= Time.deltaTime;
             var color = toast.color;
             color.a = Mathf.Clamp01(toastTimer);
             toast.color = color;
+
+            if (labelTimer > 0)
+            {
+                labelTimer -= Time.deltaTime;
+                PlaceLabel();
+                if (labelTimer <= 0) labelBox.gameObject.SetActive(false);
+            }
         }
     }
 }

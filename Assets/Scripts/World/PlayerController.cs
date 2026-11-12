@@ -5,7 +5,7 @@ namespace LLG
     /// <summary>Moves the player with WASD / arrow keys and stops them walking through solid tiles.</summary>
     public class PlayerController : MonoBehaviour
     {
-        static readonly Vector2[] FacingVectors = { Vector2.down, Vector2.right, Vector2.up, Vector2.left };
+        public static readonly Vector2[] FacingVectors = { Vector2.down, Vector2.right, Vector2.up, Vector2.left };
         static readonly Vector2 HalfSize = new Vector2(0.3f, 0.2f);   // the player's footprint
 
         VillageController village;

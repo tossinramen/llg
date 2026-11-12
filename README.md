@@ -16,7 +16,7 @@ A single-player, 16-bit style RPG for learning languages. Spanish first; Japanes
 - Start screen: character creator, turnable character, language picker
 - A village you can walk around: bakery, candy shop, store, pond, archery range, your house,
   a rune stone and five villagers to talk to
-- Verba (the magical currency), shops, a backpack, HP / mana / hunger / intelligence
+- Lexa (the magical currency), shops, a backpack, HP / mana / hunger / intelligence
 - Two activities: fishing (build the sentence) and archery (shoot the correct word)
 - Pixel art for all of the above, drawn by the scripts in `Tools/art/`
 - Starter Spanish word pack (43 words, 12 sentences)
@@ -27,8 +27,11 @@ A single-player, 16-bit style RPG for learning languages. Spanish first; Japanes
 |---|---|
 | WASD or arrow keys | Walk |
 | E (or Space / Enter) | Talk, open a shop, fish, use what you are facing |
-| I (or Tab) | Backpack |
+| Left click | Read: shows the Spanish name of whatever you click (first time = Reading XP) |
+| Right click | Attack with your equipped weapon, or punch. The bow fires arrows. On a door: open it |
+| B | Backpack (equip weapons here) |
 | Esc | Close a window |
+| Hold left click on the character (start screen) | Drag sideways to turn them |
 | 1–4 | Shoot a target in archery (or click it) |
 
 ## Credits

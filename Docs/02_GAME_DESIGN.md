@@ -44,7 +44,7 @@ words and longer sentences.
 | **HP** | Your health. At 0 you wake up at the inn and lose a few coins. | Wrong answers in *risky* activities (combat, timed fishing, dangerous areas) | Eating, sleeping, potions |
 | **Mana** | Powers **hints and spells**. | Using a hint: reveal a letter, remove two wrong answers, slow the timer, show the translation | Sleeping, the daily word review, mana potions |
 | **Hunger** | Slowly drains while you play. Low hunger = XP penalty; empty = HP drains. | Time, running | Eating food (see activity 1) |
-| **Verba** | The magical currency (words made solid). Buys food, rods, weapons and books now; pets, clothing and house upgrades later. | Shops, fainting | Most activities |
+| **Lexa** | The magical currency (words made solid). Buys food, rods, weapons and books now; pets, clothing and house upgrades later. | Shops, fainting | Most activities |
 | **Intelligence** | Each book bought adds +1: +1 max mana and +5% skill XP. | – | Books from the store |
 | **Attack** | Set by your best weapon (knife 1, dagger 2, bow 3, sword 5). Used by combat later. | – | Weapons from the store |
 
@@ -162,11 +162,11 @@ Villagers (each speaks Spanish with the English shown underneath):
 - **Mateo** the fisherman – explains you need a rod from the store.
 - **Luna** – a child who loves candy and the colour pink.
 - **Don Felipe** – the archery master; talking to him starts archery.
-- **Sabia** – the rune sage; explains runes and Verba.
+- **Sabia** – the rune sage; explains runes and Lexa.
 
 Rules currently in the game: hunger drops 1 every 8 seconds (at 0 you walk slowly); mana
 returns 1 every 20 seconds; a wrong sentence or an escaped fish costs 1 HP; at 0 HP you faint,
-wake in the plaza and lose 10% of your Verba; hints cost 2 mana.
+wake in the plaza and lose 10% of your Lexa; hints cost 2 mana.
 
 ## 11. World outline (later areas)
 

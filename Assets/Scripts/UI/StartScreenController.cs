@@ -21,7 +21,8 @@ namespace LLG
         Text tagline, status;
         Button startButton;
         int languageIndex, taglineIndex;
-        float taglineTimer;
+        float taglineTimer, dragDistance;
+        readonly List<Image> languageCards = new List<Image>();
         readonly List<Action> refreshers = new List<Action>();
         readonly List<RectTransform> clouds = new List<RectTransform>();
         readonly List<Image> sparkles = new List<Image>();
@@ -31,7 +32,7 @@ namespace LLG
         void Awake()
         {
             profile = PlayerProfile.Load();
-            languageIndex = Mathf.Max(0, Array.FindIndex(GameConfig.Languages, l => l.Code == profile.languageCode));
+            languageIndex = Mathf.Max(0, Array.FindIndex(GameConfig.Languages, l => l.Code == profile.languageCode && l.Available));
 
             taglines.Add(GameConfig.EnglishTagline);
             foreach (var language in GameConfig.Languages) taglines.Add(language.Tagline);
@@ -98,8 +99,13 @@ namespace LLG
             preview = holder.gameObject.AddComponent<CharacterPreview>();
             preview.Build(new Vector2(96, 144));
 
-            UIFactory.Btn("TurnLeft", root, new Vector2(-250, -72), new Vector2(82, 24), "< Turn", UIFactory.Purple, () => preview.Turn(-1));
-            UIFactory.Btn("TurnRight", root, new Vector2(-160, -72), new Vector2(82, 24), "Turn >", UIFactory.Purple, () => preview.Turn(1));
+            // hold the left mouse button on the character and drag sideways to turn them
+            var stage = UIFactory.Rect("DragArea", root, new Vector2(-205, 18), new Vector2(150, 150));
+            var catcher = stage.gameObject.AddComponent<Image>();
+            catcher.color = Color.clear;
+            stage.gameObject.AddComponent<DragHandle>().Dragged += DragCharacter;
+            UIFactory.Label("TurnHint", root, new Vector2(-205, -70), new Vector2(180, 20), "Drag to turn", UIFactory.Faded);
+
             UIFactory.Btn("Randomize", root, new Vector2(-205, -100), new Vector2(172, 24), "Randomize", UIFactory.Pink, Randomize);
 
             startButton = UIFactory.Btn("StartButton", root, new Vector2(-205, -152), new Vector2(196, 34), "Start Adventure", UIFactory.Green, StartGame);
@@ -132,13 +138,19 @@ namespace LLG
             ColorRow("Hair color", -36, AppearancePalette.Hair, () => look.hairColor, v => look.hairColor = v);
             ColorRow("Shirt", -64, AppearancePalette.Shirt, () => look.shirt, v => look.shirt = v);
             ColorRow("Pants", -92, AppearancePalette.Pants, () => look.pants, v => look.pants = v);
-            CycleRow("Language", -120, GameConfig.Languages.Length, () => languageIndex, v => languageIndex = v,
-                (swatch, text) =>
-                {
-                    var language = GameConfig.Languages[languageIndex];
-                    swatch.color = language.Available ? UIFactory.Green : UIFactory.Faded;
-                    text.text = language.NativeName;
-                });
+            // one card per language; locked ones show a padlock and "coming soon"
+            RowLabel("Language", -120);
+            var lockSprite = UIFactory.LoadSprite("Art/UI/lock");
+            for (int i = 0; i < GameConfig.Languages.Length; i++)
+            {
+                int index = i;
+                var language = GameConfig.Languages[i];
+                var card = UIFactory.Btn("Language" + language.Code, root, new Vector2(114 + i * 76, -120), new Vector2(72, 24),
+                    language.NativeName, UIFactory.Teal, () => PickLanguage(index));
+                if (!language.Available)
+                    UIFactory.Img("Lock", card.transform, new Vector2(28, 10), new Vector2(16, 16), Color.white, lockSprite);
+                languageCards.Add(card.GetComponent<Image>());
+            }
 
             status = UIFactory.Label("Status", root, new Vector2(110, -162), new Vector2(404, 20), "", Color.white);
             UIFactory.Outline(status);
@@ -179,9 +191,30 @@ namespace LLG
                 genderButtons[i].color = (int)profile.gender == i ? UIFactory.Gold : UIFactory.Blue;
             preview.Show(profile.appearance);
 
-            bool available = GameConfig.Languages[languageIndex].Available;
-            startButton.interactable = available;
-            status.text = available ? "" : GameConfig.Languages[languageIndex].EnglishName + " is coming soon!";
+            for (int i = 0; i < languageCards.Count; i++)
+                languageCards[i].color = i == languageIndex ? UIFactory.Gold
+                    : GameConfig.Languages[i].Available ? UIFactory.Teal : UIFactory.Faded;
+            status.text = "";
+        }
+
+        void PickLanguage(int index)
+        {
+            var language = GameConfig.Languages[index];
+            if (!language.Available)
+            {
+                status.text = language.EnglishName + " is coming soon!";
+                return;
+            }
+            languageIndex = index;
+            RefreshAll();
+        }
+
+        void DragCharacter(float pixels)
+        {
+            float step = Mathf.Max(24, Screen.width * 0.03f);    // how far to drag for one quarter turn
+            dragDistance += pixels;
+            while (dragDistance > step) { preview.Turn(1); dragDistance -= step; }
+            while (dragDistance < -step) { preview.Turn(-1); dragDistance += step; }
         }
 
         void Randomize()
@@ -215,6 +248,8 @@ namespace LLG
 
         void Update()
         {
+            if (tagline == null || taglines.Count == 0) return;    // scripts were reloaded mid-play; press Stop and Play again
+
             foreach (var cloud in clouds)
             {
                 var pos = cloud.anchoredPosition;

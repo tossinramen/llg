@@ -13,6 +13,7 @@ namespace LLG
         public SkillSet skills = new SkillSet();
         public List<string> items = new List<string>();    // ids of owned rods, weapons...
         public int fishCaught;
+        public string equipped = "";                       // weapon used on right click ("" = fists)
     }
 
     /// <summary>The running game: the save data, the loaded language, and helper actions.</summary>
@@ -74,16 +75,26 @@ namespace LLG
             if (amount > 0) Say("+" + amount + " " + GameConfig.CurrencyName);
         }
 
-        /// <summary>Attack power of the best weapon owned (for combat later).</summary>
-        public static int Attack()
+        /// <summary>The weapon used on right click: the equipped one, or null for fists.</summary>
+        public static ItemDef EquippedWeapon()
         {
-            int best = 0;
+            var item = string.IsNullOrEmpty(Data.equipped) || !Has(Data.equipped) ? null : ItemDatabase.Get(Data.equipped);
+            return item != null && item.kind == ItemKind.Weapon ? item : null;
+        }
+
+        /// <summary>The strongest weapon owned, or null.</summary>
+        public static ItemDef BestWeapon()
+        {
+            ItemDef best = null;
             foreach (var id in Data.items)
             {
                 var item = ItemDatabase.Get(id);
-                if (item != null && item.kind == ItemKind.Weapon) best = Mathf.Max(best, item.power);
+                if (item != null && item.kind == ItemKind.Weapon && (best == null || item.power > best.power)) best = item;
             }
             return best;
         }
+
+        /// <summary>Attack power of the best weapon owned (for combat later).</summary>
+        public static int Attack() => EquippedWeapon()?.power ?? 0;
     }
 }

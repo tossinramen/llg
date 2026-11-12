@@ -11,12 +11,15 @@ project or copy files anywhere.
 4. The project appears in the list with editor version **2022.3.19f1** (already installed on
    this PC). Click it.
 5. Wait for Unity to load. The first time can take a few minutes.
-6. Open the start screen. Easiest: top menu **LLG → Build Start Screen Scene** (it builds and
+6. Wait for Unity to finish loading changes: a small spinning icon / progress bar appears in
+   the **bottom-right corner** of the Unity window while it imports or compiles.
+7. Open the start screen. Easiest: top menu **LLG → Build Start Screen Scene** (it builds and
    opens it). Or use the **Project** panel (the file browser tab at the bottom, *not* the
    "Assets" menu at the top): open `Assets` → `Scenes` and double-click **StartScreen**.
    If you can't see the Project panel, click **Layout → Default** at the top right.
-7. Press the **Play ▶** button at the top centre. The start screen appears in the **Game** tab.
-8. Press Play again to stop.
+8. Press the **Play ▶** button (the triangle at the top centre; it turns blue while playing).
+   The start screen appears in the **Game** tab.
+9. Press Play again to stop.
 
 The scene looks empty until you press Play. That is normal: the start screen builds its
 buttons from code when the game runs.
@@ -87,7 +90,12 @@ if you move or rename something in `Assets`, **do it inside Unity** (not Windows
 
 Press Play, make a character, press **Start Adventure** and you are in the village.
 Walk with **WASD** or the arrow keys, press **E** to use whatever you are facing (doors, the
-pond, villagers, the rune stone), **I** for your backpack and **Esc** to close windows.
+pond, villagers, the rune stone), **left click** anything to read its Spanish name,
+**right click** to attack / punch / open a door, **B** for your backpack and **Esc** to close windows.
+
+**Edit code only while the game is stopped.** If files change while you are playing, Unity now
+waits until you press Stop before loading them (the project sets this for you), so just press
+Stop and Play again to see changes.
 
 There is only one scene (StartScreen). The village is created by code when you press Start,
 so you will not find a separate village scene file.

@@ -22,7 +22,7 @@ namespace LLG
     public static class GameConfig
     {
         public const string Title = "RUNES OF SPEECH";
-        public const string CurrencyName = "Verba";          // the magical currency
+        public const string CurrencyName = "Lexa";           // the magical currency
         public const int StartingCurrency = 60;
         public const string EnglishTagline = "A language-learning adventure";
 
