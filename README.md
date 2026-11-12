@@ -4,6 +4,9 @@ A single-player, 16-bit style RPG for learning languages. Spanish first; Japanes
 
 ## Read these in order
 
+- **[Docs/GAME_GUIDE.md](Docs/GAME_GUIDE.md) – everything in the game right now (buildings, people, items, weapons, skills, XP)**
+- **[Docs/PLANNER.md](Docs/PLANNER.md) – ideas and the to-do list (finished tasks get struck through)**
+
 1. [Docs/04_UNITY_SETUP.md](Docs/04_UNITY_SETUP.md) – open the project in Unity, press Play, controls
 2. [Docs/02_GAME_DESIGN.md](Docs/02_GAME_DESIGN.md) – the whole game plan: stats, skills, activities, the village
 3. [Docs/01_NAME_IDEAS.md](Docs/01_NAME_IDEAS.md) – game name and currency name
