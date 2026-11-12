@@ -82,15 +82,15 @@ def head(g):
     clear(g, (3, 2), (12, 2), (3, 11), (12, 11))
 
 
-def body_layers(direction):
+def body_layers(direction, frame=0):
     skin, shirt, pants = grid(), grid(), grid()
     detail = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     shoe, shoe_dark = (96, 64, 48, 255), (64, 40, 32, 255)
 
-    def shoes(x0, x1):
+    def shoes(x0, x1, lift=0):
         for x in range(x0, x1 + 1):
-            detail.putpixel((x, 22), shoe)
-            detail.putpixel((x, 23), shoe_dark)
+            detail.putpixel((x, 22 - lift), shoe)
+            detail.putpixel((x, 23 - lift), shoe_dark)
 
     head(skin)
     if direction in ("down", "up"):
@@ -98,18 +98,26 @@ def body_layers(direction):
         rect(shirt, 3, 12, 4, 14)
         rect(shirt, 11, 12, 12, 14)
         rect(pants, 5, 18, 10, 18)
-        rect(pants, 5, 19, 6, 21)
-        rect(pants, 9, 19, 10, 21)
-        rect(skin, 3, 15, 4, 16)
-        rect(skin, 11, 15, 12, 16)
-        shoes(4, 6)
-        shoes(9, 11)
+        la, lb = (1 if frame == 1 else 0), (1 if frame == 2 else 0)   # which foot is lifted
+        rect(pants, 5, 19, 6, 21 - la)
+        rect(pants, 9, 19, 10, 21 - lb)
+        rect(skin, 3, 15 - lb, 4, 16 - lb)
+        rect(skin, 11, 15 - la, 12, 16 - la)
+        shoes(4, 6, la)
+        shoes(9, 11, lb)
     else:  # facing right
         rect(shirt, 6, 12, 10, 17)
         rect(pants, 6, 18, 10, 18)
-        rect(pants, 6, 19, 9, 21)
-        rect(skin, 7, 15, 8, 16)
-        shoes(6, 10)
+        if frame == 1:   # stride
+            rect(pants, 5, 19, 6, 21)
+            rect(pants, 9, 19, 10, 21)
+            rect(skin, 9, 15, 10, 16)
+            shoes(5, 7)
+            shoes(9, 11)
+        else:
+            rect(pants, 6, 19, 9, 21)
+            rect(skin, 7, 15, 8, 16)
+            shoes(6, 10)
 
     for g in (skin, shirt, pants):
         shade(g)
@@ -218,6 +226,12 @@ def make_character():
         save(outline, "Character", f"outline_{d}")
         for s in range(5):
             save_gray(hair(s, d), f"hair{s}_{d}")
+        for frame in (1, 2):   # walking frames: only legs, hands, shoes and silhouette change
+            skin, shirt, pants, detail, outline = body_layers(d, frame)
+            save_gray(skin, f"skin_{d}_w{frame}")
+            save_gray(pants, f"pants_{d}_w{frame}")
+            save(detail, "Character", f"detail_{d}_w{frame}")
+            save(outline, "Character", f"outline_{d}_w{frame}")
 
 
 # ---------------------------------------------------------------- background
@@ -229,59 +243,112 @@ def make_background():
     w, h = 320, 180
     img = Image.new("RGBA", (w, h))
     px = img.load()
-    top, horizon = (96, 160, 232), (252, 226, 190)
-    bands = 12
+    stops = [(0.0, (70, 140, 244)), (0.55, (110, 204, 250)), (1.0, (196, 244, 236))]
+    bands = 14
     for y in range(h):
-        t = min(1.0, y / 118.0)
+        t = min(1.0, y / 112.0)
         t = math.floor(t * bands) / bands          # banded gradient = 16-bit look
-        c = lerp(top, horizon, t)
+        for i in range(len(stops) - 1):
+            if stops[i][0] <= t <= stops[i + 1][0]:
+                u = (t - stops[i][0]) / (stops[i + 1][0] - stops[i][0])
+                c = lerp(stops[i][1], stops[i + 1][1], u)
         for x in range(w):
             px[x, y] = c + (255,)
 
-    # sun
-    sx, sy = 248, 46
-    for y in range(sy - 22, sy + 23):
-        for x in range(sx - 22, sx + 23):
+    # rainbow
+    colours = [(255, 96, 96), (255, 168, 72), (255, 236, 96), (112, 220, 112), (96, 176, 255), (150, 120, 240)]
+    rcx, rcy = 118, 150
+    for y in range(h):
+        for x in range(w):
+            d = math.hypot(x - rcx, (y - rcy) * 1.15)
+            band = int((132 - d) // 3)
+            if 0 <= band < len(colours):
+                px[x, y] = lerp(px[x, y][:3], colours[band], 0.62) + (255,)
+
+    # sun with rays
+    sx, sy = 262, 40
+    for y in range(sy - 30, sy + 31):
+        for x in range(sx - 30, sx + 31):
+            if not (0 <= x < w and 0 <= y < h):
+                continue
             d = math.hypot(x - sx, y - sy)
-            if d <= 14:
-                px[x, y] = (255, 246, 204, 255)
-            elif d <= 19 and (x + y) % 2 == 0:
-                px[x, y] = (255, 240, 200, 255)
+            ang = math.atan2(y - sy, x - sx)
+            if d <= 13:
+                px[x, y] = (255, 238, 120, 255) if d > 10 else (255, 250, 190, 255)
+            elif d <= 26 and int((ang + math.pi) / (math.pi / 8)) % 2 == 0 and d > 16:
+                px[x, y] = lerp(px[x, y][:3], (255, 244, 170), 0.7) + (255,)
 
     def layer(fn, colour, light):
         for x in range(w):
             y0 = int(fn(x))
             for y in range(max(0, y0), h):
-                px[x, y] = (light if y == y0 else colour) + (255,)
+                px[x, y] = (light if y <= y0 + 1 else colour) + (255,)
 
-    layer(lambda x: 100 - 26 * abs(math.sin(x / 47.0 + 0.6)) - 6 * math.sin(x / 13.0),
-          (150, 164, 214), (176, 188, 230))
-    layer(lambda x: 114 + 9 * math.sin(x / 38.0 + 1.0), (112, 190, 128), (150, 214, 150))
-    layer(lambda x: 136 + 8 * math.sin(x / 55.0 + 3.0), (80, 166, 96), (116, 196, 120))
-    layer(lambda x: 158 + 3 * math.sin(x / 21.0), (58, 138, 76), (92, 170, 98))
+    mountain = lambda x: 98 - 30 * abs(math.sin(x / 47.0 + 0.6)) - 6 * math.sin(x / 13.0)
+    layer(mountain, (170, 150, 232), (204, 188, 248))
+    for x in range(w):                               # snow caps
+        y0 = int(mountain(x))
+        if y0 < 76:
+            for y in range(y0, min(y0 + (76 - y0) // 2 + 1, h)):
+                px[x, y] = (250, 250, 255, 255)
+    hill1 = lambda x: 114 + 9 * math.sin(x / 38.0 + 1.0)
+    hill2 = lambda x: 136 + 8 * math.sin(x / 55.0 + 3.0)
+    layer(hill1, (124, 214, 120), (176, 240, 140))
+    layer(hill2, (84, 188, 104), (132, 220, 124))
 
-    # tree on the left
-    for y in range(118, 150):
-        for x in range(40, 46):
-            px[x, y] = (110, 76, 52, 255) if x < 44 else (84, 56, 40, 255)
-    for cx, cy, r in ((43, 104, 17), (30, 114, 12), (57, 113, 12), (43, 92, 11)):
+    # winding river on the middle hills
+    for y in range(120, 162):
+        t = (y - 120) / 42.0
+        cx = 190 + 34 * math.sin(t * 4.2) - 20 * t
+        half = 2 + 9 * t
+        for x in range(int(cx - half), int(cx + half) + 1):
+            if 0 <= x < w and y >= hill1(x) + 2:
+                edge = abs(x - cx) > half - 1.5
+                px[x, y] = (150, 216, 250, 255) if edge else (84, 164, 240, 255)
+
+    # little cottages
+    for hx, roof in ((92, (236, 88, 88)), (118, (250, 176, 64)), (140, (120, 110, 230)), (232, (240, 110, 170))):
+        hy = int(hill1(hx)) + 6
+        for y in range(hy, hy + 7):
+            for x in range(hx, hx + 11):
+                px[x, y] = (250, 238, 210, 255)
+        for i in range(6):
+            for x in range(hx - 1 + i, hx + 12 - i):
+                px[x, hy - 1 - i] = roof + (255,)
+        for y in range(hy + 3, hy + 7):
+            px[hx + 5, y] = px[hx + 4, y] = (120, 76, 48, 255)
+        px[hx + 8, hy + 2] = px[hx + 8, hy + 3] = (110, 190, 240, 255)
+
+    layer(lambda x: 158 + 3 * math.sin(x / 21.0), (60, 160, 84), (104, 200, 104))
+
+    # blossom tree on the left
+    for y in range(118, 152):
+        for x in range(38, 45):
+            px[x, y] = (128, 88, 60, 255) if x < 42 else (96, 64, 48, 255)
+    rnd = random.Random(3)
+    for cx, cy, r in ((41, 102, 18), (27, 113, 13), (56, 112, 13), (41, 89, 12)):
         for y in range(cy - r, cy + r + 1):
             for x in range(cx - r, cx + r + 1):
-                d = math.hypot(x - cx, y - cy)
-                if d <= r:
-                    lit = (x - cx) + (y - cy) < -r * 0.5
-                    px[x, y] = (86, 176, 96, 255) if lit else (52, 134, 76, 255)
+                if math.hypot(x - cx, y - cy) <= r:
+                    lit = (x - cx) + (y - cy) < -r * 0.4
+                    c = (255, 184, 214) if lit else (240, 130, 180)
+                    if rnd.random() < 0.08:
+                        c = (255, 240, 246)
+                    px[x, y] = c + (255,)
 
-    # flowers and grass tufts
+    # flowers
     rnd = random.Random(7)
-    for _ in range(70):
-        x, y = rnd.randrange(2, w - 2), rnd.randrange(162, h - 2)
-        if rnd.random() < 0.45:
-            c = rnd.choice([(250, 236, 120), (250, 170, 190), (255, 255, 255), (190, 170, 250)])
-            px[x, y] = c + (255,)
-            px[x, y + 1] = (40, 110, 60, 255)
+    petals = [(255, 232, 96), (255, 140, 170), (255, 255, 255), (190, 150, 255), (255, 120, 90), (120, 200, 255)]
+    for _ in range(90):
+        x, y = rnd.randrange(3, w - 3), rnd.randrange(160, h - 3)
+        if rnd.random() < 0.6:
+            c = rnd.choice(petals)
+            for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                px[x + dx, y + dy] = c + (255,)
+            px[x, y] = (255, 210, 60, 255)
+            px[x, y + 2] = (36, 120, 64, 255)
         else:
-            px[x, y] = px[x + 1, y - 1] = (40, 110, 60, 255)
+            px[x, y] = px[x + 1, y - 1] = px[x - 1, y - 1] = (36, 120, 64, 255)
     save(img, "UI", "title_background")
 
 
