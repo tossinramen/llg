@@ -25,6 +25,9 @@ namespace LLG
         int round, hits, arrows;
         float timeLeft, roundTime;
         bool playing;
+        RectTransform arrow;
+        int aimed;
+        float flight = -1;
         VillageController village;
 
         public bool Open => window != null && window.activeSelf;
@@ -65,14 +68,14 @@ namespace LLG
 
         public void Begin()
         {
-            int tier = GameState.Data.skills.WordTierFor(SkillType.Vocabulary);
-            words = GameState.Pack.Words(null, tier);
+            words = Lessons.Words();
             if (words.Count < 4)
             {
                 GameState.Say("Not enough words in the language pack for archery.");
                 return;
             }
-            roundTime = GameState.Has("bow") ? 14f : 9f;
+            var weapon = GameState.EquippedWeapon();
+            roundTime = weapon != null && weapon.ranged ? 14f : 10f;     // a bow in hand gives more time
             round = 0;
             hits = 0;
             arrows = 3;
@@ -115,9 +118,43 @@ namespace LLG
             info.text = "Ronda " + round + "/" + Rounds + "     Aciertos: " + hits + "     Flechas: " + arrows;
         }
 
+        /// <summary>Fires an arrow at a target; the result is shown when it lands.</summary>
         void Shoot(int index)
         {
-            if (!playing || !targets[index].gameObject.activeSelf) return;
+            if (!playing || flight >= 0 || !targets[index].gameObject.activeSelf) return;
+            aimed = index;
+            flight = 0;
+            if (arrow == null)
+            {
+                arrow = UIFactory.Img("Arrow", range.transform, Vector2.zero, new Vector2(32, 32), Color.white,
+                    UIFactory.LoadSprite("Art/Icons/item_arrow")).rectTransform;
+            }
+            arrow.gameObject.SetActive(true);
+            arrow.SetAsLastSibling();
+        }
+
+        /// <summary>Moves the arrow from the bow (bottom of the window) to the target, then scores it.</summary>
+        void FlyArrow()
+        {
+            const float flyTime = 0.22f, stickTime = 0.35f;
+            flight += Time.deltaTime;
+            var from = new Vector2(0, -96);
+            var to = targets[aimed].anchoredPosition;
+            float t = Mathf.Clamp01(flight / flyTime);
+            var pos = Vector2.Lerp(from, to, t) + new Vector2(0, Mathf.Sin(t * Mathf.PI) * 24);   // a slight arc
+            var dir = to - from;
+            arrow.anchoredPosition = pos;
+            arrow.localRotation = Quaternion.Euler(0, 0, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
+            if (flight >= flyTime + stickTime)
+            {
+                flight = -1;
+                arrow.gameObject.SetActive(false);
+                Score(aimed);
+            }
+        }
+
+        void Score(int index)
+        {
             if (choices[index] == answer)
             {
                 hits++;
@@ -133,7 +170,7 @@ namespace LLG
 
         void Hint()
         {
-            if (!playing) return;
+            if (!playing || flight >= 0) return;
             var wrong = new List<int>();
             for (int i = 0; i < 4; i++)
                 if (choices[i] != answer && targets[i].gameObject.activeSelf) wrong.Add(i);
@@ -161,8 +198,8 @@ namespace LLG
             if (hits > 0)
             {
                 GameState.AddCurrency(reward);
-                GameState.AddXp(SkillType.Archery, hits * 5);
-                GameState.AddXp(SkillType.Vocabulary, hits * 5);
+                GameState.AddXp(SkillType.Archery, Lessons.Xp(hits * 5));
+                GameState.AddXp(SkillType.Vocabulary, Lessons.Xp(hits * 5));
             }
             GameState.Save();
         }
@@ -171,6 +208,8 @@ namespace LLG
         {
             if (!Open) return;
             playing = false;
+            flight = -1;
+            if (arrow != null) arrow.gameObject.SetActive(false);
             window.SetActive(false);
             village.NoteWindowClosed();
         }
@@ -189,6 +228,7 @@ namespace LLG
                 targets[i].anchoredPosition = pos;
                 if (Input.GetKeyDown(KeyCode.Alpha1 + i)) { Shoot(i); return; }
             }
+            if (flight >= 0) { FlyArrow(); return; }      // the clock pauses while the arrow flies
 
             timeLeft -= Time.deltaTime;
             timerBar.rectTransform.sizeDelta = new Vector2(400 * Mathf.Clamp01(timeLeft / roundTime), 8);

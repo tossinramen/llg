@@ -10,9 +10,9 @@ namespace LLG
         public string id;         // stable key, e.g. "apple" (same across all languages)
         public string word;       // in the language being learned, e.g. "la manzana"
         public string english;
-        public string category;   // food, animal, place ...
-        public int tier;          // 1 (easiest) to 5
-        public string icon;       // optional sprite under Resources/Art/Icons
+        public string category;   // food, animal, town ... (see CategoryEntry)
+        public int tier;          // lesson level 1 (Principiante) to 5 (Experto)
+        public string icon;       // optional picture under Resources/Art/Icons
         public int hunger;        // food only: how much hunger it restores
     }
 
@@ -23,32 +23,44 @@ namespace LLG
         public string text;       // in the language being learned
         public string english;
         public int tier;
+        public string category;
 
         /// <summary>The word tiles the player arranges in sentence-building activities.</summary>
         public string[] Tokens => text.Split(' ');
+    }
+
+    /// <summary>A lesson topic, e.g. "food" = "La comida" / "Food".</summary>
+    [Serializable]
+    public class CategoryEntry
+    {
+        public string id, name, english;
     }
 
     [Serializable]
     public class LanguagePack
     {
         public string language;
+        public List<CategoryEntry> categories = new List<CategoryEntry>();
         public List<VocabEntry> words = new List<VocabEntry>();
         public List<SentenceEntry> sentences = new List<SentenceEntry>();
 
         public List<VocabEntry> Words(string category = null, int maxTier = 5)
         {
-            return words.FindAll(w => w.tier <= maxTier && (category == null || w.category == category));
+            return words.FindAll(w => w.tier <= maxTier && (string.IsNullOrEmpty(category) || w.category == category));
         }
 
         public List<SentenceEntry> Sentences(int maxTier = 5)
         {
             return sentences.FindAll(s => s.tier <= maxTier);
         }
+
+        public CategoryEntry Category(string id) => categories.Find(c => c.id == id);
     }
 
     /// <summary>
     /// Loads Resources/Languages/{code}/pack.json. Adding a language = adding a folder with
-    /// the same file format; no code changes needed. See Docs/03_LANGUAGE_DATA.md.
+    /// the same file format; no code changes needed. The Spanish pack is built by
+    /// Tools/data/build_spanish_pack.py. See Docs/03_LANGUAGE_DATA.md.
     /// </summary>
     public static class LanguageDatabase
     {

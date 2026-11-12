@@ -1,3 +1,59 @@
+
+
+
+
+11/12
+
+I want yoiu to just add these in a planner file, and then list a to do which each of them so i can tackle them one by one and youy wilol strike it out in the .md/text file after you do each one. 
+I want you to make a text file with everything in the game so far, organized and categorized into a text or md file or whatever you tihnk woiuld be useful a guide to keep track of some sort.
+Of all the buildings, activities, skills, languages, quests, xp mechanics, and people so far (npcs). All the weapons and weapon trees. 
+All the monsters, dungeon level names, etc.
+
+and New Ideas in a list:
+need to expand with way more words and sentences. only 152 right now, 33 words. find a good resource for it (anki)?
+need more activities and skills 
+game where one where you fill in the blank for tenses.
+converse with people by clicking words in order. add a conversation skill (that will increase charisma and persuasion).
+MAYBE A RADIO STATION FOR THIS??
+and a coffee shop/house 
+
+Dungeons will be like tests
+Similar to showdown for pokemon 
+Make villains
+Troll king ice king demon king. Dungeons will be one boss fight every 5 levels. 
+Strength from boxing
+Make a gym — and activities for the gym 
+Maybe upgrade gear like in Minecraft, chain mail, leather, iron more types of armor (a bit different from Minecraft but similar)
+You can use ur Lexa to upgrade the weapons and armors and skills
+To do more dmg
+Do dmg and exp mechanics
+You can pvp with other players with upgraded gear later (we will do this way later, maybe last i want to focus on the single player aspects for now)
+Start off with just fists -> unlock stick at level 5 -> kitchen knife level 10 -> dagger lv 15-> sword lv 25 -> different types of swords give me some ideas in the writing file of the level schematic and type of weapon i should have for this an archery. and magic spells. 
+Archery -> different types of bows -> cross bows -> stronger bows -> medieval pistols -> real guns
+Magic spells level 25+
+Different crops = different amounts of money - sell at store, buy higher priced seeds
+Language exercises to grow them faster (screen of watering)
+Quests Will be in English
+Dungeon monsters you will fight with words, people you will fight with clicking
+Leveling up Lexa. Dungeon bosses also grant lexa. Lexa will be gray stones with blue carvings. 
+Dungeon Hall should look like a famous building in latin america, maybe macchu pichu or something? idk ur choice. and you go up levels to battle each monsters. should go by intervals of 5 levels. 
+Battles do NOT have hints / translations between ppl and monsters and ppl and ppl. 
+
+
+MAYBE A STORY/PLOT at the beginning
+
+
+some lessons:
+pick the correct form of the verb.
+put the setence in the correct order. 
+match the picture to the word (easier levels - can do with fruits and stuff).
+put the correct sentence as a reply. or maybe choice of words like lines as input and you click on the choices that you want to reply with (more difficult levels).
+Simple translation english -> spanish (writge a sentence by clicking on words to complete the spanish setence).
+ooo maybe a music school, music store, and music skill?
+you can you music to stun monsters/players
+activties like click on the words in order to form a sentence to form liek a verse or whatever for guitar/flute/clarinet?
+
+
 Sound to say the sentences, users can click on sound icon to do this.
 Both in the language learning and english should have the sound icon.
 
@@ -25,7 +81,8 @@ The archery idea is really cool can you brainstorm some more ideas like this in 
 Mkae a weapons shop if you didnt already with different types of swords, axes, bows, and knives.
 
 I want to be able to zoom into the screen with the scroll button as well and scroll out to zoom out.
-The x on the boxes that appear should move just a tiny bit to the left. Maybe you can also cut trees and make an acitvity that is like remove a word that doesnt fit into the category and it can be like fruits and the words be like bike, orange, manga, strawberry. axes will cut tress faster. make the breaking of the tree animated like in minecraft or whatever but trees respawn right away. axes cut down trees faster, and you will generate wood in your inventory that you should be able to pick up. wood should be able to be sold. there should be armories and blacksmiths too.
+The x on the boxes that appear should move just a tiny bit to the left. Maybe you can also cut trees and make an acitvity that is like remove a word that doesnt fit into the category and it can be like fruits and the words be like bike, orange, manga, strawberry. axes will cut tress faster. make the breaking of the tree animated like in minecraft or whatever but trees respawn right away. axes cut down trees faster, and you will generate wood in your inventory that you should be able to pick up. wood should be able to be sold. there should be armories and blacksmiths too to enchant/ repair. weapons should have durability component. 
+
 
 
 

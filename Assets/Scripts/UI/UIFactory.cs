@@ -61,7 +61,7 @@ namespace LLG
             canvas.renderMode = RenderMode.ScreenSpaceCamera;
             canvas.worldCamera = Camera.main;
             canvas.planeDistance = 1;
-            canvas.sortingOrder = 20000 + order;
+            canvas.sortingOrder = 32000 + order;        // above every world sprite (those stay below 31000)
             var scaler = go.GetComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(640, 360);
@@ -199,6 +199,15 @@ namespace LLG
             var toggle = window.GetComponent<TranslateToggle>() ?? window.gameObject.AddComponent<TranslateToggle>();
             var button = Btn("Translate", window, pos, new Vector2(26, 24), "", Blue, toggle.Flip);
             Img("Globe", button.transform, Vector2.zero, new Vector2(16, 16), Color.white, LoadSprite("Art/UI/translate"));
+            return button;
+        }
+
+        /// <summary>A small speaker button that reads the text aloud (language "es" or "en").</summary>
+        public static Button ListenButton(Transform parent, Vector2 pos, Func<string> text, string language)
+        {
+            var button = Btn("Listen_" + language, parent, pos, new Vector2(22, 20), "", language == "es" ? Teal : Purple,
+                () => Speech.Play(text(), language));
+            Img("Icon", button.transform, Vector2.zero, new Vector2(12, 12), Color.white, LoadSprite("Art/UI/listen"));
             return button;
         }
 

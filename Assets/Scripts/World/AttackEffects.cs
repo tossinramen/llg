@@ -53,28 +53,29 @@ namespace LLG
         }
     }
 
-    /// <summary>An arrow fired from the bow. It flies until it hits something solid.</summary>
+    /// <summary>An arrow fired from a bow. It flies until it hits an animal or something solid.</summary>
     public class ArrowShot : MonoBehaviour
     {
-        const float Speed = 12f, Range = 7f, Height = 0.85f;
-        static readonly float[] FacingAngles = { -90f, 0f, 90f, 180f };   // the arrow picture points right
+        const float Speed = 13f, Range = 8f, Height = 0.85f;
 
         VillageController village;
         Vector2 direction;
         float travelled;
+        int damage;
 
-        public static void Spawn(VillageController owner, Vector2 feet, int facing, Sprite sprite, int sortingOrder)
+        public static void Spawn(VillageController owner, Vector2 feet, Vector2 dir, int damage, Sprite sprite, int sortingOrder)
         {
             var go = new GameObject("Arrow");
-            var dir = PlayerController.FacingVectors[facing];
+            dir = dir.normalized;
             go.transform.position = feet + new Vector2(0, Height) + dir * 0.4f;
-            go.transform.rotation = Quaternion.Euler(0, 0, FacingAngles[facing]);
+            go.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);   // the picture points right
             var renderer = go.AddComponent<SpriteRenderer>();
             renderer.sprite = sprite;
             renderer.sortingOrder = sortingOrder;
             var arrow = go.AddComponent<ArrowShot>();
             arrow.village = owner;
             arrow.direction = dir;
+            arrow.damage = damage;
         }
 
         void Update()
@@ -83,10 +84,20 @@ namespace LLG
             transform.position += (Vector3)(direction * step);
             travelled += step;
 
-            var tile = VillageMap.TileAt((Vector2)transform.position - new Vector2(0, Height));
+            var ground = (Vector2)transform.position - new Vector2(0, Height);
+            foreach (var mob in village.Mobs)
+            {
+                if (!mob.Dead && Vector2.Distance(mob.Position, ground + new Vector2(0, 0.4f)) < 0.7f)
+                {
+                    mob.TakeHit(damage, ground - direction);
+                    Destroy(gameObject);
+                    return;
+                }
+            }
+            var tile = VillageMap.TileAt(ground);
             if (!village.Map.Walkable(tile))
             {
-                village.Hit(tile);
+                village.Hit(tile, 1);
                 Destroy(gameObject);
             }
             else if (travelled > Range)

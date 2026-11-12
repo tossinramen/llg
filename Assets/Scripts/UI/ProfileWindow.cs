@@ -22,12 +22,12 @@ namespace LLG
         static readonly string[] SkillSpanish =
         {
             "Vocabulario", "Gramática", "Lectura", "Comprensión", "Ortografía", "Conversación",
-            "Cocina", "Pesca", "Agricultura", "Comercio", "Artesanía", "Exploración", "Magia", "Tiro con arco",
+            "Cocina", "Pesca", "Agricultura", "Comercio", "Artesanía", "Exploración", "Magia", "Tiro con arco", "Combate", "Leñador",
         };
         static readonly string[] SkillEnglish =
         {
             "Vocabulary", "Grammar", "Reading", "Listening", "Spelling", "Conversation",
-            "Cooking", "Fishing", "Farming", "Trading", "Crafting", "Exploration", "Magic", "Archery",
+            "Cooking", "Fishing", "Farming", "Trading", "Crafting", "Exploration", "Magic", "Archery", "Combat", "Woodcutting",
         };
 
         readonly Dictionary<EquipSlot, ItemSlotView> slotViews = new Dictionary<EquipSlot, ItemSlotView>();
@@ -66,7 +66,7 @@ namespace LLG
             var skills = (SkillType[])System.Enum.GetValues(typeof(SkillType));
             for (int i = 0; i < skills.Length; i++)
             {
-                float y = 84 - i * 16;
+                float y = 86 - i * 14.5f;
                 UIFactory.LLabel("Skill", W, new Vector2(78, y), new Vector2(120, 16), SkillSpanish[i], SkillEnglish[i], UIFactory.Ink, TextAnchor.MiddleLeft);
                 levels.Add(UIFactory.Label("Level", W, new Vector2(156, y), new Vector2(40, 16), "", UIFactory.Ink, TextAnchor.MiddleRight));
                 UIFactory.Img("BarBack", W, new Vector2(196, y), new Vector2(34, 6), new Color32(120, 100, 84, 255));

@@ -9,7 +9,7 @@ namespace LLG
         // language skills
         Vocabulary, Grammar, Reading, Listening, Spelling, Conversation,
         // life skills
-        Cooking, Fishing, Farming, Trading, Crafting, Exploration, Magic, Archery,
+        Cooking, Fishing, Farming, Trading, Crafting, Exploration, Magic, Archery, Combat, Woodcutting,
     }
 
     [Serializable]
@@ -27,7 +27,7 @@ namespace LLG
     [Serializable]
     public class SkillSet
     {
-        public const int MaxLevel = 50;
+        public const int MaxLevel = int.MaxValue;     // skills keep levelling forever
         public List<SkillProgress> skills = new List<SkillProgress>();
 
         public event Action<SkillType, int> LeveledUp;

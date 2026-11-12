@@ -37,12 +37,10 @@ namespace LLG
 
         public void Set(Vector2Int tile, char value) => cells[tile.x, tile.y] = value;
 
-        /// <summary>Grass, roads, the plaza, the dock and the archery range floor can be walked on.</summary>
-        public bool Walkable(Vector2Int tile)
-        {
-            char c = At(tile);
-            return c == '.' || c == ',' || c == ':' || c == '=' || c == ';';
-        }
+        /// <summary>The letters you can walk on (grass, roads, plaza, floors...). Set from the map data.</summary>
+        public string WalkableLetters = ".,:;=_X-";
+
+        public bool Walkable(Vector2Int tile) => WalkableLetters.IndexOf(At(tile)) >= 0;
 
         public List<Vector2Int> Find(char value)
         {

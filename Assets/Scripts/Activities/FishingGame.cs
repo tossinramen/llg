@@ -59,7 +59,7 @@ namespace LLG
 
         void Cast()
         {
-            var options = GameState.Pack.Sentences(GameState.Data.skills.WordTierFor(SkillType.Grammar));
+            var options = Lessons.Sentences();
             if (options.Count == 0)
             {
                 GameState.Say("No sentences in the language pack yet.");
@@ -156,8 +156,8 @@ namespace LLG
                 GameState.Data.fishCaught++;
                 GameState.AddItem("fish");
                 GameState.AddCurrency(reward);
-                GameState.AddXp(SkillType.Fishing, 10);
-                GameState.AddXp(SkillType.Grammar, 10);
+                GameState.AddXp(SkillType.Fishing, Lessons.Xp(10));
+                GameState.AddXp(SkillType.Grammar, Lessons.Xp(10));
                 End("¡Lo atrapaste! El pez va a tu mochila.\n" + sentence.text);
             }
             else

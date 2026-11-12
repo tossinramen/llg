@@ -28,6 +28,15 @@ Work top to bottom. `[x]` = done, `[ ]` = not started.
 - [x] Translate (globe) buttons instead of English on every card
 - [x] Profile (U) with 8 equipment slots + skills; 20-slot bag (B); weapon shop; pet shop with 4 pets that follow you
 - [x] Minimap with shop icons, Esc and controls-page buttons above it
+- [x] World 5x bigger: farm, barn, windmill, well, town hall, tavern, blacksmith, river + bridge, vineyard, olive grove, wolf forest
+- [x] Walk inside the shops and your house; shopkeepers behind counters; click the menu board to shop; sleep in your bed
+- [x] Shops with 8-15 items each, buy and sell tabs; Armería (knives, swords, axes, bows) and Herrería (armour)
+- [x] WoW-style unit frame (portrait, HP with damage trail and shake, mana, hunger, Lexa) and an XP bar; uncapped levels
+- [x] Lessons: 12 topics x 5 levels (152 words, 33 sentences); harder levels multiply XP
+- [x] Wolves and wild dogs with HP bars that fight back once hit; fist cursor; you cannot attack people
+- [x] Tree chopping with cracks and shaking, stumps that regrow, wood pickups to sell
+- [x] "El intruso" (odd one out) game; archery arrow animation; cats, dogs and chickens wandering
+- [x] Recorded speech with speaker buttons (English done; Spanish needs the Windows Spanish voice)
 
 ## Next up – make the village feel alive
 - [ ] **You:** play it and tell me what feels wrong (speed, prices, difficulty, layout)

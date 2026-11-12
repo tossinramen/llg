@@ -27,6 +27,9 @@ namespace LLG
         public float posX, posY;
         public int facing;
         public List<string> items = new List<string>();         // old saves only (moved into the bag on load)
+        public int level = 1, xp;                               // your character level (no maximum)
+        public string lessonCategory = "";                      // the chosen lesson topic ("" = all)
+        public int lessonLevel = 1;                             // 1 Principiante ... 5 Experto
     }
 
     /// <summary>The running game: the save data, the loaded language, inventory and helper actions.</summary>
@@ -62,7 +65,9 @@ namespace LLG
             }
             Data = data;
             Normalise();
-            Data.skills.LeveledUp += (skill, level) => Say("¡Nivel " + level + "! " + skill);
+            Data.skills.LeveledUp += (skill, level) => Say(skill + " → " + level);
+            if (Data.level < 1) Data.level = 1;
+            if (Data.lessonLevel < 1) Data.lessonLevel = 1;
 
             var profile = PlayerProfile.Current ?? PlayerProfile.Load();
             Pack = LanguageDatabase.Load(profile.languageCode);
@@ -239,12 +244,25 @@ namespace LLG
 
         // ------------------------------------------------------------ rewards
 
-        /// <summary>Gives skill XP. Each point of intelligence adds 5% bonus XP.</summary>
+        /// <summary>XP needed to go from this character level to the next. Levels never stop.</summary>
+        public static int XpForLevel(int level) => Mathf.RoundToInt(80 * Mathf.Pow(level, 1.4f));
+
+        /// <summary>Gives XP to a skill and to your character level.
+        /// Each point of intelligence adds 5% bonus XP.</summary>
         public static void AddXp(SkillType skill, int amount)
         {
-            amount = Mathf.RoundToInt(amount * (1f + 0.05f * Data.stats.intelligence));
-            Say("+" + amount + " XP " + skill);
+            amount = Mathf.Max(1, Mathf.RoundToInt(amount * (1f + 0.05f * Data.stats.intelligence)));
+            Say("+" + amount + " XP");
             Data.skills.AddXp(skill, amount);
+            Data.xp += amount;
+            while (Data.xp >= XpForLevel(Data.level))
+            {
+                Data.xp -= XpForLevel(Data.level);
+                Data.level++;
+                Data.stats.maxHp += 2;
+                Data.stats.Heal(Data.stats.maxHp);
+                Say("¡Subes al nivel " + Data.level + "!  (Level up!)");
+            }
         }
 
         public static void AddCurrency(int amount)

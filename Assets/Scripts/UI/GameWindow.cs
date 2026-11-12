@@ -23,11 +23,11 @@ namespace LLG
         {
             village = owner;
             window = UIFactory.Panel(GetType().Name, canvas, pos, size).gameObject;
-            UIFactory.TranslateButton(W, new Vector2(-size.x / 2 + 28, size.y / 2 - 24));
+            UIFactory.TranslateButton(W, new Vector2(-size.x / 2 + 30, size.y / 2 - 24));
             translate = window.GetComponent<TranslateToggle>();
             UIFactory.LLabel("Title", W, new Vector2(0, size.y / 2 - 24), new Vector2(size.x - 80, 28), spanish, english,
                 UIFactory.Purple, TextAnchor.MiddleCenter, 24, true);
-            UIFactory.Btn("Close", W, new Vector2(size.x / 2 - 26, size.y / 2 - 24), new Vector2(24, 22), "x", UIFactory.Red, Close);
+            UIFactory.Btn("Close", W, new Vector2(size.x / 2 - 34, size.y / 2 - 24), new Vector2(24, 22), "x", UIFactory.Red, Close);
             window.SetActive(false);
         }
 

@@ -26,6 +26,7 @@ namespace LLG
     {
         GameObject box;
         Text speaker, text, nextHint;
+        GameObject englishListen;
         LocalizedText english;
         TranslateToggle translate;
         List<Line> lines;
@@ -38,16 +39,19 @@ namespace LLG
         public void Build(Transform canvas, VillageController owner)
         {
             village = owner;
-            box = UIFactory.Panel("Dialogue", canvas, new Vector2(0, -112), new Vector2(600, 112)).gameObject;
+            box = UIFactory.Panel("Dialogue", canvas, new Vector2(0, -102), new Vector2(600, 112)).gameObject;
             var b = box.transform;
             UIFactory.TranslateButton(b, new Vector2(-270, 34));
             translate = box.GetComponent<TranslateToggle>();
             speaker = UIFactory.Label("Speaker", b, new Vector2(20, 34), new Vector2(520, 20), "", UIFactory.Purple, TextAnchor.MiddleLeft);
-            text = UIFactory.Label("Text", b, new Vector2(0, 6), new Vector2(560, 40), "", UIFactory.Ink, TextAnchor.UpperLeft);
+            text = UIFactory.Label("Text", b, new Vector2(-10, 6), new Vector2(540, 40), "", UIFactory.Ink, TextAnchor.UpperLeft);
             text.horizontalOverflow = HorizontalWrapMode.Wrap;
             english = UIFactory.LLabel("English", b, new Vector2(0, -28), new Vector2(560, 22), "", "", UIFactory.Faded,
                 TextAnchor.MiddleLeft, 16, false, true).GetComponent<LocalizedText>();
-            nextHint = UIFactory.Label("Next", b, new Vector2(240, -40), new Vector2(80, 20), "", UIFactory.Teal, TextAnchor.MiddleRight);
+            nextHint = UIFactory.Label("Next", b, new Vector2(214, -42), new Vector2(80, 20), "", UIFactory.Teal, TextAnchor.MiddleRight);
+            // speaker buttons: hear the Spanish line, and (once translated) the English one
+            UIFactory.ListenButton(b, new Vector2(266, 10), () => lines[index].Text, "es");
+            englishListen = UIFactory.ListenButton(b, new Vector2(266, -24), () => lines[index].English, "en").gameObject;
             box.SetActive(false);
         }
 
@@ -77,7 +81,9 @@ namespace LLG
 
         void Update()
         {
-            if (!Open || Time.frameCount == openedFrame) return;
+            if (!Open) return;
+            englishListen.SetActive(translate.English);
+            if (Time.frameCount == openedFrame) return;
             bool click = Input.GetMouseButtonDown(0) && !OverTranslateButton();
             if (!Keybinds.Down(GameAction.Use) && !Input.GetKeyDown(KeyCode.Space) && !Input.GetKeyDown(KeyCode.Return) && !click) return;
             Advance();
@@ -93,7 +99,7 @@ namespace LLG
             es.RaycastAll(data, hits);
             foreach (var h in hits)
                 if (h.gameObject.GetComponentInParent<Button>() != null && h.gameObject.transform.IsChildOf(box.transform)
-                    && h.gameObject.GetComponentInParent<Button>().name == "Translate") return true;
+                    && h.gameObject.GetComponentInParent<Button>().name != "Dialogue") return true;
             return false;
         }
 

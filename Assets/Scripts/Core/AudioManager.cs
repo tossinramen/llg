@@ -10,8 +10,16 @@ namespace LLG
     public class AudioManager : MonoBehaviour
     {
         static AudioManager instance;
-        AudioSource music;
+        AudioSource music, voice;
         float fadeIn;
+
+        /// <summary>Plays a spoken word or sentence (see Speech).</summary>
+        public static void PlayVoice(AudioClip clip)
+        {
+            Ensure();
+            instance.voice.Stop();
+            instance.voice.PlayOneShot(clip, 1f);
+        }
 
         public static float Volume
         {
@@ -32,6 +40,8 @@ namespace LLG
             DontDestroyOnLoad(go);
             instance = go.AddComponent<AudioManager>();
             instance.music = go.AddComponent<AudioSource>();
+            instance.voice = go.AddComponent<AudioSource>();
+            instance.voice.ignoreListenerPause = true;
             instance.music.clip = Resources.Load<AudioClip>("Audio/lofi_village");
             instance.music.loop = true;
             instance.music.ignoreListenerPause = true;

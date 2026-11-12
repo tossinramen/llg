@@ -19,7 +19,7 @@ namespace LLG
         SortingGroup group;
         CharacterAppearance look;
         List<Accessory> accessories;
-        float walkTime, jumpTimer = -1;
+        float walkTime, jumpTimer = -1, flashTimer;
         string shown;
 
         public int Facing { get; private set; }     // 0 down, 1 right, 2 up, 3 left
@@ -58,6 +58,20 @@ namespace LLG
 
         public void Face(int direction) => Facing = direction;
 
+        /// <summary>Turns to look along a direction (used when attacking something with the mouse).</summary>
+        public void FaceTowards(Vector2 dir)
+        {
+            if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y)) Facing = dir.x > 0 ? 1 : 3;
+            else Facing = dir.y > 0 ? 2 : 0;
+        }
+
+        /// <summary>Flashes red for a moment (when hurt).</summary>
+        public void Flash()
+        {
+            flashTimer = 0.2f;
+            shown = null;
+        }
+
         /// <summary>Starts a hop, unless already in the air or crouching.</summary>
         public void Jump()
         {
@@ -85,13 +99,18 @@ namespace LLG
             shadow.localScale = new Vector3(1.3f, 1.1f, 1) * (1 - height * 0.7f);
 
             group.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);   // lower on screen = drawn in front
+            if (flashTimer > 0)
+            {
+                flashTimer -= Time.deltaTime;
+                if (flashTimer <= 0) shown = null;
+            }
             Refresh();
         }
 
         void Refresh()
         {
             string frame = Walking && !Jumping ? WalkCycle[(int)(walkTime * 8) % WalkCycle.Length] : "";
-            string key = frame + Facing;
+            string key = frame + Facing + (flashTimer > 0 ? "!" : "");
             if (key == shown) return;
             shown = key;
 
@@ -108,7 +127,7 @@ namespace LLG
                 layers[i].enabled = used;
                 if (!used) continue;
                 layers[i].sprite = UIFactory.LoadSprite("Art/Character/" + wanted[i].sprite);
-                layers[i].color = wanted[i].color;
+                layers[i].color = flashTimer > 0 ? wanted[i].color * new Color(1f, 0.45f, 0.45f) : wanted[i].color;
                 layers[i].sortingOrder = wanted[i].order;
             }
         }

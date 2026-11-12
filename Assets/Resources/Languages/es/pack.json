@@ -1,67 +1,1668 @@
 {
-  "language": "es",
-  "words": [
-    { "id": "apple",   "word": "la manzana",  "english": "apple",   "category": "food", "tier": 1, "icon": "food_apple",  "hunger": 10 },
-    { "id": "bread",   "word": "el pan",      "english": "bread",   "category": "food", "tier": 1, "icon": "food_bread",  "hunger": 20 },
-    { "id": "cheese",  "word": "el queso",    "english": "cheese",  "category": "food", "tier": 1, "icon": "food_cheese", "hunger": 15 },
-    { "id": "fish",    "word": "el pescado",  "english": "fish",    "category": "food", "tier": 1, "icon": "food_fish",   "hunger": 30 },
-    { "id": "egg",     "word": "el huevo",    "english": "egg",     "category": "food", "tier": 1, "icon": "food_egg",    "hunger": 12 },
-    { "id": "water",   "word": "el agua",     "english": "water",   "category": "food", "tier": 1, "icon": "", "hunger": 2 },
-    { "id": "milk",    "word": "la leche",    "english": "milk",    "category": "food", "tier": 1, "icon": "", "hunger": 8 },
-    { "id": "rice",    "word": "el arroz",    "english": "rice",    "category": "food", "tier": 1, "icon": "", "hunger": 18 },
-    { "id": "chicken", "word": "el pollo",    "english": "chicken", "category": "food", "tier": 1, "icon": "", "hunger": 35 },
-    { "id": "soup",    "word": "la sopa",     "english": "soup",    "category": "food", "tier": 1, "icon": "", "hunger": 22 },
-    { "id": "orange",  "word": "la naranja",  "english": "orange",  "category": "food", "tier": 1, "icon": "", "hunger": 10 },
-    { "id": "meat",    "word": "la carne",    "english": "meat",    "category": "food", "tier": 1, "icon": "", "hunger": 40 },
-
-    { "id": "dog",   "word": "el perro",   "english": "dog",   "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "cat",   "word": "el gato",    "english": "cat",   "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "bird",  "word": "el pájaro",  "english": "bird",  "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "horse", "word": "el caballo", "english": "horse", "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "cow",   "word": "la vaca",    "english": "cow",   "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "fish_animal", "word": "el pez", "english": "fish (alive)", "category": "animal", "tier": 2, "icon": "", "hunger": 0 },
-
-    { "id": "house",  "word": "la casa",    "english": "house",  "category": "place", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "river",  "word": "el río",     "english": "river",  "category": "place", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "bridge", "word": "el puente",  "english": "bridge", "category": "place", "tier": 2, "icon": "", "hunger": 0 },
-    { "id": "market", "word": "el mercado", "english": "market", "category": "place", "tier": 2, "icon": "", "hunger": 0 },
-    { "id": "forest", "word": "el bosque",  "english": "forest", "category": "place", "tier": 2, "icon": "", "hunger": 0 },
-    { "id": "town",   "word": "el pueblo",  "english": "town",   "category": "place", "tier": 1, "icon": "", "hunger": 0 },
-
-    { "id": "red",    "word": "rojo",     "english": "red",    "category": "color", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "blue",   "word": "azul",     "english": "blue",   "category": "color", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "green",  "word": "verde",    "english": "green",  "category": "color", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "yellow", "word": "amarillo", "english": "yellow", "category": "color", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "white",  "word": "blanco",   "english": "white",  "category": "color", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "black",  "word": "negro",    "english": "black",  "category": "color", "tier": 1, "icon": "", "hunger": 0 },
-
-    { "id": "one",   "word": "uno",    "english": "one",   "category": "number", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "two",   "word": "dos",    "english": "two",   "category": "number", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "three", "word": "tres",   "english": "three", "category": "number", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "four",  "word": "cuatro", "english": "four",  "category": "number", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "five",  "word": "cinco",  "english": "five",  "category": "number", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "ten",   "word": "diez",   "english": "ten",   "category": "number", "tier": 1, "icon": "", "hunger": 0 },
-
-    { "id": "to_eat",   "word": "comer",   "english": "to eat",   "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "to_drink", "word": "beber",   "english": "to drink", "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "to_want",  "word": "querer",  "english": "to want",  "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "to_have",  "word": "tener",   "english": "to have",  "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "to_go",    "word": "ir",      "english": "to go",    "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
-    { "id": "to_fish",  "word": "pescar",  "english": "to fish",  "category": "verb", "tier": 2, "icon": "", "hunger": 0 },
-    { "id": "to_buy",   "word": "comprar", "english": "to buy",   "category": "verb", "tier": 2, "icon": "", "hunger": 0 }
-  ],
-  "sentences": [
-    { "id": "s001", "text": "Yo como una manzana",        "english": "I eat an apple",             "tier": 1 },
-    { "id": "s002", "text": "El gato bebe leche",         "english": "The cat drinks milk",        "tier": 1 },
-    { "id": "s003", "text": "Quiero pan y queso",         "english": "I want bread and cheese",    "tier": 1 },
-    { "id": "s004", "text": "El perro es blanco",         "english": "The dog is white",           "tier": 1 },
-    { "id": "s005", "text": "Tengo dos huevos",           "english": "I have two eggs",            "tier": 1 },
-    { "id": "s006", "text": "La casa es azul",            "english": "The house is blue",          "tier": 1 },
-    { "id": "s007", "text": "Voy al mercado",             "english": "I am going to the market",   "tier": 2 },
-    { "id": "s008", "text": "El pez vive en el río",      "english": "The fish lives in the river","tier": 2 },
-    { "id": "s009", "text": "Quiero comprar tres naranjas","english": "I want to buy three oranges","tier": 2 },
-    { "id": "s010", "text": "El puente cruza el río",     "english": "The bridge crosses the river","tier": 2 },
-    { "id": "s011", "text": "Me gusta pescar en el bosque","english": "I like to fish in the forest","tier": 2 },
-    { "id": "s012", "text": "El caballo come una manzana roja","english": "The horse eats a red apple","tier": 2 }
-  ]
+ "language": "es",
+ "categories": [
+  {
+   "id": "food",
+   "name": "La comida",
+   "english": "Food"
+  },
+  {
+   "id": "animal",
+   "name": "Los animales",
+   "english": "Animals"
+  },
+  {
+   "id": "color",
+   "name": "Los colores",
+   "english": "Colours"
+  },
+  {
+   "id": "number",
+   "name": "Los números",
+   "english": "Numbers"
+  },
+  {
+   "id": "home",
+   "name": "La casa",
+   "english": "Home"
+  },
+  {
+   "id": "town",
+   "name": "El pueblo",
+   "english": "Town"
+  },
+  {
+   "id": "clothes",
+   "name": "La ropa",
+   "english": "Clothes"
+  },
+  {
+   "id": "body",
+   "name": "El cuerpo",
+   "english": "Body"
+  },
+  {
+   "id": "family",
+   "name": "La familia",
+   "english": "Family"
+  },
+  {
+   "id": "nature",
+   "name": "La naturaleza",
+   "english": "Nature"
+  },
+  {
+   "id": "verb",
+   "name": "Los verbos",
+   "english": "Verbs"
+  },
+  {
+   "id": "tool",
+   "name": "Las herramientas",
+   "english": "Tools & weapons"
+  }
+ ],
+ "words": [
+  {
+   "id": "bread",
+   "word": "el pan",
+   "english": "bread",
+   "category": "food",
+   "tier": 1,
+   "icon": "food_bread",
+   "hunger": 20
+  },
+  {
+   "id": "apple",
+   "word": "la manzana",
+   "english": "apple",
+   "category": "food",
+   "tier": 1,
+   "icon": "food_apple",
+   "hunger": 10
+  },
+  {
+   "id": "water",
+   "word": "el agua",
+   "english": "water",
+   "category": "food",
+   "tier": 1,
+   "icon": "",
+   "hunger": 2
+  },
+  {
+   "id": "milk",
+   "word": "la leche",
+   "english": "milk",
+   "category": "food",
+   "tier": 1,
+   "icon": "",
+   "hunger": 8
+  },
+  {
+   "id": "egg",
+   "word": "el huevo",
+   "english": "egg",
+   "category": "food",
+   "tier": 1,
+   "icon": "food_egg",
+   "hunger": 12
+  },
+  {
+   "id": "cheese",
+   "word": "el queso",
+   "english": "cheese",
+   "category": "food",
+   "tier": 1,
+   "icon": "food_cheese",
+   "hunger": 15
+  },
+  {
+   "id": "fish_food",
+   "word": "el pescado",
+   "english": "fish (food)",
+   "category": "food",
+   "tier": 2,
+   "icon": "food_fish",
+   "hunger": 30
+  },
+  {
+   "id": "rice",
+   "word": "el arroz",
+   "english": "rice",
+   "category": "food",
+   "tier": 2,
+   "icon": "",
+   "hunger": 18
+  },
+  {
+   "id": "chicken_food",
+   "word": "el pollo",
+   "english": "chicken (food)",
+   "category": "food",
+   "tier": 2,
+   "icon": "",
+   "hunger": 35
+  },
+  {
+   "id": "soup",
+   "word": "la sopa",
+   "english": "soup",
+   "category": "food",
+   "tier": 2,
+   "icon": "",
+   "hunger": 22
+  },
+  {
+   "id": "orange",
+   "word": "la naranja",
+   "english": "orange",
+   "category": "food",
+   "tier": 2,
+   "icon": "food_orange",
+   "hunger": 10
+  },
+  {
+   "id": "meat",
+   "word": "la carne",
+   "english": "meat",
+   "category": "food",
+   "tier": 2,
+   "icon": "",
+   "hunger": 40
+  },
+  {
+   "id": "strawberry",
+   "word": "la fresa",
+   "english": "strawberry",
+   "category": "food",
+   "tier": 3,
+   "icon": "",
+   "hunger": 8
+  },
+  {
+   "id": "banana",
+   "word": "el plátano",
+   "english": "banana",
+   "category": "food",
+   "tier": 3,
+   "icon": "",
+   "hunger": 12
+  },
+  {
+   "id": "cookie",
+   "word": "la galleta",
+   "english": "cookie",
+   "category": "food",
+   "tier": 3,
+   "icon": "food_cookie",
+   "hunger": 12
+  },
+  {
+   "id": "cake",
+   "word": "el pastel",
+   "english": "cake",
+   "category": "food",
+   "tier": 3,
+   "icon": "food_cake",
+   "hunger": 50
+  },
+  {
+   "id": "butter",
+   "word": "la mantequilla",
+   "english": "butter",
+   "category": "food",
+   "tier": 3,
+   "icon": "",
+   "hunger": 6
+  },
+  {
+   "id": "aubergine",
+   "word": "la berenjena",
+   "english": "aubergine",
+   "category": "food",
+   "tier": 4,
+   "icon": "",
+   "hunger": 10
+  },
+  {
+   "id": "peach",
+   "word": "el melocotón",
+   "english": "peach",
+   "category": "food",
+   "tier": 4,
+   "icon": "",
+   "hunger": 10
+  },
+  {
+   "id": "carrot",
+   "word": "la zanahoria",
+   "english": "carrot",
+   "category": "food",
+   "tier": 4,
+   "icon": "",
+   "hunger": 8
+  },
+  {
+   "id": "pepper_vegetable",
+   "word": "el pimiento",
+   "english": "pepper (vegetable)",
+   "category": "food",
+   "tier": 5,
+   "icon": "",
+   "hunger": 8
+  },
+  {
+   "id": "artichoke",
+   "word": "la alcachofa",
+   "english": "artichoke",
+   "category": "food",
+   "tier": 5,
+   "icon": "",
+   "hunger": 8
+  },
+  {
+   "id": "dog",
+   "word": "el perro",
+   "english": "dog",
+   "category": "animal",
+   "tier": 1,
+   "icon": "pet_dog",
+   "hunger": 0
+  },
+  {
+   "id": "cat",
+   "word": "el gato",
+   "english": "cat",
+   "category": "animal",
+   "tier": 1,
+   "icon": "pet_cat",
+   "hunger": 0
+  },
+  {
+   "id": "fish_animal",
+   "word": "el pez",
+   "english": "fish (animal)",
+   "category": "animal",
+   "tier": 1,
+   "icon": "food_fish",
+   "hunger": 0
+  },
+  {
+   "id": "cow",
+   "word": "la vaca",
+   "english": "cow",
+   "category": "animal",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "horse",
+   "word": "el caballo",
+   "english": "horse",
+   "category": "animal",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "bird",
+   "word": "el pájaro",
+   "english": "bird",
+   "category": "animal",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "rabbit",
+   "word": "el conejo",
+   "english": "rabbit",
+   "category": "animal",
+   "tier": 2,
+   "icon": "pet_rabbit",
+   "hunger": 0
+  },
+  {
+   "id": "pig",
+   "word": "el cerdo",
+   "english": "pig",
+   "category": "animal",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "wolf",
+   "word": "el lobo",
+   "english": "wolf",
+   "category": "animal",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "sheep",
+   "word": "la oveja",
+   "english": "sheep",
+   "category": "animal",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "parrot",
+   "word": "el loro",
+   "english": "parrot",
+   "category": "animal",
+   "tier": 3,
+   "icon": "pet_parrot",
+   "hunger": 0
+  },
+  {
+   "id": "hen",
+   "word": "la gallina",
+   "english": "hen",
+   "category": "animal",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "turtle",
+   "word": "la tortuga",
+   "english": "turtle",
+   "category": "animal",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "mouse",
+   "word": "el ratón",
+   "english": "mouse",
+   "category": "animal",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "squirrel",
+   "word": "la ardilla",
+   "english": "squirrel",
+   "category": "animal",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "bat",
+   "word": "el murciélago",
+   "english": "bat",
+   "category": "animal",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "butterfly",
+   "word": "la mariposa",
+   "english": "butterfly",
+   "category": "animal",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "red",
+   "word": "rojo",
+   "english": "red",
+   "category": "color",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "blue",
+   "word": "azul",
+   "english": "blue",
+   "category": "color",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "green",
+   "word": "verde",
+   "english": "green",
+   "category": "color",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "white",
+   "word": "blanco",
+   "english": "white",
+   "category": "color",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "black",
+   "word": "negro",
+   "english": "black",
+   "category": "color",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "yellow",
+   "word": "amarillo",
+   "english": "yellow",
+   "category": "color",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "pink",
+   "word": "rosa",
+   "english": "pink",
+   "category": "color",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "brown",
+   "word": "marrón",
+   "english": "brown",
+   "category": "color",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "grey",
+   "word": "gris",
+   "english": "grey",
+   "category": "color",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "purple",
+   "word": "morado",
+   "english": "purple",
+   "category": "color",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "orange_colour",
+   "word": "naranja (color)",
+   "english": "orange (colour)",
+   "category": "color",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "silver",
+   "word": "plateado",
+   "english": "silver",
+   "category": "color",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "one",
+   "word": "uno",
+   "english": "one",
+   "category": "number",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "two",
+   "word": "dos",
+   "english": "two",
+   "category": "number",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "three",
+   "word": "tres",
+   "english": "three",
+   "category": "number",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "four",
+   "word": "cuatro",
+   "english": "four",
+   "category": "number",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "five",
+   "word": "cinco",
+   "english": "five",
+   "category": "number",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "six",
+   "word": "seis",
+   "english": "six",
+   "category": "number",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "seven",
+   "word": "siete",
+   "english": "seven",
+   "category": "number",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "eight",
+   "word": "ocho",
+   "english": "eight",
+   "category": "number",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "nine",
+   "word": "nueve",
+   "english": "nine",
+   "category": "number",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "ten",
+   "word": "diez",
+   "english": "ten",
+   "category": "number",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "twenty",
+   "word": "veinte",
+   "english": "twenty",
+   "category": "number",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "fifty",
+   "word": "cincuenta",
+   "english": "fifty",
+   "category": "number",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "one_hundred",
+   "word": "cien",
+   "english": "one hundred",
+   "category": "number",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "one_thousand",
+   "word": "mil",
+   "english": "one thousand",
+   "category": "number",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "house",
+   "word": "la casa",
+   "english": "house",
+   "category": "home",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "bed",
+   "word": "la cama",
+   "english": "bed",
+   "category": "home",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "table",
+   "word": "la mesa",
+   "english": "table",
+   "category": "home",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "chair",
+   "word": "la silla",
+   "english": "chair",
+   "category": "home",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "door",
+   "word": "la puerta",
+   "english": "door",
+   "category": "home",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "window",
+   "word": "la ventana",
+   "english": "window",
+   "category": "home",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "kitchen",
+   "word": "la cocina",
+   "english": "kitchen",
+   "category": "home",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "bathroom",
+   "word": "el baño",
+   "english": "bathroom",
+   "category": "home",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "mirror",
+   "word": "el espejo",
+   "english": "mirror",
+   "category": "home",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "pillow",
+   "word": "la almohada",
+   "english": "pillow",
+   "category": "home",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "bookshelf",
+   "word": "la estantería",
+   "english": "bookshelf",
+   "category": "home",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "wardrobe",
+   "word": "el armario",
+   "english": "wardrobe",
+   "category": "home",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "village",
+   "word": "el pueblo",
+   "english": "village",
+   "category": "town",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "street",
+   "word": "la calle",
+   "english": "street",
+   "category": "town",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "town_square",
+   "word": "la plaza",
+   "english": "town square",
+   "category": "town",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "shop",
+   "word": "la tienda",
+   "english": "shop",
+   "category": "town",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "market",
+   "word": "el mercado",
+   "english": "market",
+   "category": "town",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "bakery",
+   "word": "la panadería",
+   "english": "bakery",
+   "category": "town",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "church",
+   "word": "la iglesia",
+   "english": "church",
+   "category": "town",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "bridge",
+   "word": "el puente",
+   "english": "bridge",
+   "category": "town",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "fountain",
+   "word": "la fuente",
+   "english": "fountain",
+   "category": "town",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "town_hall",
+   "word": "el ayuntamiento",
+   "english": "town hall",
+   "category": "town",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "blacksmith_s",
+   "word": "la herrería",
+   "english": "blacksmith's",
+   "category": "town",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "windmill",
+   "word": "el molino",
+   "english": "windmill",
+   "category": "town",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "armoury",
+   "word": "la armería",
+   "english": "armoury",
+   "category": "town",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "shirt",
+   "word": "la camisa",
+   "english": "shirt",
+   "category": "clothes",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "shoes",
+   "word": "los zapatos",
+   "english": "shoes",
+   "category": "clothes",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "hat",
+   "word": "el sombrero",
+   "english": "hat",
+   "category": "clothes",
+   "tier": 2,
+   "icon": "gear_hat",
+   "hunger": 0
+  },
+  {
+   "id": "trousers",
+   "word": "los pantalones",
+   "english": "trousers",
+   "category": "clothes",
+   "tier": 2,
+   "icon": "gear_pants",
+   "hunger": 0
+  },
+  {
+   "id": "skirt",
+   "word": "la falda",
+   "english": "skirt",
+   "category": "clothes",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "cloak",
+   "word": "la capa",
+   "english": "cloak",
+   "category": "clothes",
+   "tier": 3,
+   "icon": "gear_cloak",
+   "hunger": 0
+  },
+  {
+   "id": "dress",
+   "word": "el vestido",
+   "english": "dress",
+   "category": "clothes",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "jacket",
+   "word": "la chaqueta",
+   "english": "jacket",
+   "category": "clothes",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "necklace",
+   "word": "el collar",
+   "english": "necklace",
+   "category": "clothes",
+   "tier": 4,
+   "icon": "gear_necklace",
+   "hunger": 0
+  },
+  {
+   "id": "bracelet",
+   "word": "la pulsera",
+   "english": "bracelet",
+   "category": "clothes",
+   "tier": 4,
+   "icon": "gear_bracelet",
+   "hunger": 0
+  },
+  {
+   "id": "vest",
+   "word": "el chaleco",
+   "english": "vest",
+   "category": "clothes",
+   "tier": 5,
+   "icon": "gear_vest",
+   "hunger": 0
+  },
+  {
+   "id": "hand",
+   "word": "la mano",
+   "english": "hand",
+   "category": "body",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "foot",
+   "word": "el pie",
+   "english": "foot",
+   "category": "body",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "mouth",
+   "word": "la boca",
+   "english": "mouth",
+   "category": "body",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "head",
+   "word": "la cabeza",
+   "english": "head",
+   "category": "body",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "eye",
+   "word": "el ojo",
+   "english": "eye",
+   "category": "body",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "nose",
+   "word": "la nariz",
+   "english": "nose",
+   "category": "body",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "arm",
+   "word": "el brazo",
+   "english": "arm",
+   "category": "body",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "leg",
+   "word": "la pierna",
+   "english": "leg",
+   "category": "body",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "ear",
+   "word": "la oreja",
+   "english": "ear",
+   "category": "body",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "shoulder",
+   "word": "el hombro",
+   "english": "shoulder",
+   "category": "body",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "knee",
+   "word": "la rodilla",
+   "english": "knee",
+   "category": "body",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "mother",
+   "word": "la madre",
+   "english": "mother",
+   "category": "family",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "father",
+   "word": "el padre",
+   "english": "father",
+   "category": "family",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "brother",
+   "word": "el hermano",
+   "english": "brother",
+   "category": "family",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "sister",
+   "word": "la hermana",
+   "english": "sister",
+   "category": "family",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "grandmother",
+   "word": "la abuela",
+   "english": "grandmother",
+   "category": "family",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "grandfather",
+   "word": "el abuelo",
+   "english": "grandfather",
+   "category": "family",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "cousin_male",
+   "word": "el primo",
+   "english": "cousin (male)",
+   "category": "family",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "aunt",
+   "word": "la tía",
+   "english": "aunt",
+   "category": "family",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "nephew",
+   "word": "el sobrino",
+   "english": "nephew",
+   "category": "family",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "sun",
+   "word": "el sol",
+   "english": "sun",
+   "category": "nature",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "tree",
+   "word": "el árbol",
+   "english": "tree",
+   "category": "nature",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "flower",
+   "word": "la flor",
+   "english": "flower",
+   "category": "nature",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "river",
+   "word": "el río",
+   "english": "river",
+   "category": "nature",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "forest",
+   "word": "el bosque",
+   "english": "forest",
+   "category": "nature",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "moon",
+   "word": "la luna",
+   "english": "moon",
+   "category": "nature",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "mountain",
+   "word": "la montaña",
+   "english": "mountain",
+   "category": "nature",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "pond",
+   "word": "el estanque",
+   "english": "pond",
+   "category": "nature",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "grass",
+   "word": "la hierba",
+   "english": "grass",
+   "category": "nature",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "olive_tree",
+   "word": "el olivo",
+   "english": "olive tree",
+   "category": "nature",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "orange_tree",
+   "word": "el naranjo",
+   "english": "orange tree",
+   "category": "nature",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "cypress",
+   "word": "el ciprés",
+   "english": "cypress",
+   "category": "nature",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_eat",
+   "word": "comer",
+   "english": "to eat",
+   "category": "verb",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_drink",
+   "word": "beber",
+   "english": "to drink",
+   "category": "verb",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_go",
+   "word": "ir",
+   "english": "to go",
+   "category": "verb",
+   "tier": 1,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_have",
+   "word": "tener",
+   "english": "to have",
+   "category": "verb",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_want",
+   "word": "querer",
+   "english": "to want",
+   "category": "verb",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_speak",
+   "word": "hablar",
+   "english": "to speak",
+   "category": "verb",
+   "tier": 2,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_buy",
+   "word": "comprar",
+   "english": "to buy",
+   "category": "verb",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_fish",
+   "word": "pescar",
+   "english": "to fish",
+   "category": "verb",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_run",
+   "word": "correr",
+   "english": "to run",
+   "category": "verb",
+   "tier": 3,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_cook",
+   "word": "cocinar",
+   "english": "to cook",
+   "category": "verb",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_learn",
+   "word": "aprender",
+   "english": "to learn",
+   "category": "verb",
+   "tier": 4,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "to_build",
+   "word": "construir",
+   "english": "to build",
+   "category": "verb",
+   "tier": 5,
+   "icon": "",
+   "hunger": 0
+  },
+  {
+   "id": "axe",
+   "word": "el hacha",
+   "english": "axe",
+   "category": "tool",
+   "tier": 2,
+   "icon": "item_axe",
+   "hunger": 0
+  },
+  {
+   "id": "sword",
+   "word": "la espada",
+   "english": "sword",
+   "category": "tool",
+   "tier": 2,
+   "icon": "item_sword",
+   "hunger": 0
+  },
+  {
+   "id": "bow",
+   "word": "el arco",
+   "english": "bow",
+   "category": "tool",
+   "tier": 3,
+   "icon": "item_bow",
+   "hunger": 0
+  },
+  {
+   "id": "knife",
+   "word": "el cuchillo",
+   "english": "knife",
+   "category": "tool",
+   "tier": 3,
+   "icon": "item_knife",
+   "hunger": 0
+  },
+  {
+   "id": "shield",
+   "word": "el escudo",
+   "english": "shield",
+   "category": "tool",
+   "tier": 4,
+   "icon": "gear_shield",
+   "hunger": 0
+  },
+  {
+   "id": "wood",
+   "word": "la madera",
+   "english": "wood",
+   "category": "tool",
+   "tier": 4,
+   "icon": "item_wood",
+   "hunger": 0
+  },
+  {
+   "id": "crossbow",
+   "word": "la ballesta",
+   "english": "crossbow",
+   "category": "tool",
+   "tier": 5,
+   "icon": "item_crossbow",
+   "hunger": 0
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s001",
+   "text": "Yo como pan",
+   "english": "I eat bread",
+   "tier": 1,
+   "category": "food"
+  },
+  {
+   "id": "s002",
+   "text": "Quiero agua",
+   "english": "I want water",
+   "tier": 1,
+   "category": "food"
+  },
+  {
+   "id": "s003",
+   "text": "El gato es negro",
+   "english": "The cat is black",
+   "tier": 1,
+   "category": "animal"
+  },
+  {
+   "id": "s004",
+   "text": "El perro bebe agua",
+   "english": "The dog drinks water",
+   "tier": 1,
+   "category": "animal"
+  },
+  {
+   "id": "s005",
+   "text": "La casa es blanca",
+   "english": "The house is white",
+   "tier": 1,
+   "category": "color"
+  },
+  {
+   "id": "s006",
+   "text": "Tengo dos huevos",
+   "english": "I have two eggs",
+   "tier": 1,
+   "category": "number"
+  },
+  {
+   "id": "s007",
+   "text": "La mesa es azul",
+   "english": "The table is blue",
+   "tier": 1,
+   "category": "home"
+  },
+  {
+   "id": "s008",
+   "text": "Mi madre come",
+   "english": "My mother eats",
+   "tier": 1,
+   "category": "family"
+  },
+  {
+   "id": "s009",
+   "text": "Quiero pan y queso",
+   "english": "I want bread and cheese",
+   "tier": 2,
+   "category": "food"
+  },
+  {
+   "id": "s010",
+   "text": "El pollo está rico",
+   "english": "The chicken is tasty",
+   "tier": 2,
+   "category": "food"
+  },
+  {
+   "id": "s011",
+   "text": "El caballo es grande",
+   "english": "The horse is big",
+   "tier": 2,
+   "category": "animal"
+  },
+  {
+   "id": "s012",
+   "text": "Tengo un conejo blanco",
+   "english": "I have a white rabbit",
+   "tier": 2,
+   "category": "animal"
+  },
+  {
+   "id": "s013",
+   "text": "Voy a la tienda",
+   "english": "I am going to the shop",
+   "tier": 2,
+   "category": "town"
+  },
+  {
+   "id": "s014",
+   "text": "El mercado está aquí",
+   "english": "The market is here",
+   "tier": 2,
+   "category": "town"
+  },
+  {
+   "id": "s015",
+   "text": "La ventana está abierta",
+   "english": "The window is open",
+   "tier": 2,
+   "category": "home"
+  },
+  {
+   "id": "s016",
+   "text": "El sol es amarillo",
+   "english": "The sun is yellow",
+   "tier": 2,
+   "category": "nature"
+  },
+  {
+   "id": "s017",
+   "text": "Me gusta la fresa roja",
+   "english": "I like the red strawberry",
+   "tier": 3,
+   "category": "food"
+  },
+  {
+   "id": "s018",
+   "text": "La panadería abre temprano",
+   "english": "The bakery opens early",
+   "tier": 3,
+   "category": "town"
+  },
+  {
+   "id": "s019",
+   "text": "El puente cruza el río",
+   "english": "The bridge crosses the river",
+   "tier": 3,
+   "category": "town"
+  },
+  {
+   "id": "s020",
+   "text": "El pez vive en el estanque",
+   "english": "The fish lives in the pond",
+   "tier": 3,
+   "category": "nature"
+  },
+  {
+   "id": "s021",
+   "text": "El lobo vive en el bosque",
+   "english": "The wolf lives in the forest",
+   "tier": 3,
+   "category": "animal"
+  },
+  {
+   "id": "s022",
+   "text": "Quiero comprar tres naranjas",
+   "english": "I want to buy three oranges",
+   "tier": 3,
+   "category": "verb"
+  },
+  {
+   "id": "s023",
+   "text": "Mi capa es muy bonita",
+   "english": "My cloak is very pretty",
+   "tier": 3,
+   "category": "clothes"
+  },
+  {
+   "id": "s024",
+   "text": "Me duele la pierna",
+   "english": "My leg hurts",
+   "tier": 3,
+   "category": "body"
+  },
+  {
+   "id": "s025",
+   "text": "El molino está en la colina",
+   "english": "The windmill is on the hill",
+   "tier": 4,
+   "category": "town"
+  },
+  {
+   "id": "s026",
+   "text": "Mi abuela cocina con aceite de oliva",
+   "english": "My grandmother cooks with olive oil",
+   "tier": 4,
+   "category": "verb"
+  },
+  {
+   "id": "s027",
+   "text": "Los olivos crecen cerca del pueblo",
+   "english": "The olive trees grow near the village",
+   "tier": 4,
+   "category": "nature"
+  },
+  {
+   "id": "s028",
+   "text": "Mi tía vive en la ciudad",
+   "english": "My aunt lives in the city",
+   "tier": 4,
+   "category": "family"
+  },
+  {
+   "id": "s029",
+   "text": "Corto madera con mi hacha",
+   "english": "I cut wood with my axe",
+   "tier": 4,
+   "category": "tool"
+  },
+  {
+   "id": "s030",
+   "text": "El herrero trabaja en la herrería",
+   "english": "The blacksmith works in the forge",
+   "tier": 5,
+   "category": "town"
+  },
+  {
+   "id": "s031",
+   "text": "Vamos a construir una casa nueva",
+   "english": "We are going to build a new house",
+   "tier": 5,
+   "category": "verb"
+  },
+  {
+   "id": "s032",
+   "text": "Las mariposas vuelan sobre las flores",
+   "english": "The butterflies fly over the flowers",
+   "tier": 5,
+   "category": "nature"
+  },
+  {
+   "id": "s033",
+   "text": "La ballesta es más fuerte que el arco",
+   "english": "The crossbow is stronger than the bow",
+   "tier": 5,
+   "category": "tool"
+  }
+ ]
 }

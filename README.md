@@ -36,9 +36,12 @@ All keys can be changed in **Esc → Opciones (Options)**.
 | Space | Jump |
 | E (or Enter) | Talk, open a shop, fish, use what you are facing |
 | Left click | Read: shows the Spanish name of whatever you click. Click the sign to close it |
-| Right click | Attack with your equipped weapon, or punch. The bow fires arrows. On a door: open it |
+| Right click | Attack an animal or chop a tree (the cursor turns into a fist). Axes chop fastest. On a door: go in |
 | B | Bag: 20 slots. Click to eat, read, wear or call your pet |
 | U | Profile: equipment slots (head, neck, back, chest, legs, wrists, both hands), stats and skills |
+| L | Lessons: choose a topic and a level (Principiante to Experto); harder = more XP |
+| Mouse wheel | Zoom in and out |
+| Speaker button | Hear the Spanish (or, once translated, the English) read aloud |
 | Globe button | On any window, sign or dialogue: show the English translation |
 | Esc | Game menu: Resume, Options (keys + music volume), Exit Game (saves, back to title) |
 | 1–4 | Shoot a target in archery (or click it) |
