@@ -1,0 +1,67 @@
+{
+  "language": "es",
+  "words": [
+    { "id": "apple",   "word": "la manzana",  "english": "apple",   "category": "food", "tier": 1, "icon": "food_apple",  "hunger": 10 },
+    { "id": "bread",   "word": "el pan",      "english": "bread",   "category": "food", "tier": 1, "icon": "food_bread",  "hunger": 20 },
+    { "id": "cheese",  "word": "el queso",    "english": "cheese",  "category": "food", "tier": 1, "icon": "food_cheese", "hunger": 15 },
+    { "id": "fish",    "word": "el pescado",  "english": "fish",    "category": "food", "tier": 1, "icon": "food_fish",   "hunger": 30 },
+    { "id": "egg",     "word": "el huevo",    "english": "egg",     "category": "food", "tier": 1, "icon": "food_egg",    "hunger": 12 },
+    { "id": "water",   "word": "el agua",     "english": "water",   "category": "food", "tier": 1, "icon": "", "hunger": 2 },
+    { "id": "milk",    "word": "la leche",    "english": "milk",    "category": "food", "tier": 1, "icon": "", "hunger": 8 },
+    { "id": "rice",    "word": "el arroz",    "english": "rice",    "category": "food", "tier": 1, "icon": "", "hunger": 18 },
+    { "id": "chicken", "word": "el pollo",    "english": "chicken", "category": "food", "tier": 1, "icon": "", "hunger": 35 },
+    { "id": "soup",    "word": "la sopa",     "english": "soup",    "category": "food", "tier": 1, "icon": "", "hunger": 22 },
+    { "id": "orange",  "word": "la naranja",  "english": "orange",  "category": "food", "tier": 1, "icon": "", "hunger": 10 },
+    { "id": "meat",    "word": "la carne",    "english": "meat",    "category": "food", "tier": 1, "icon": "", "hunger": 40 },
+
+    { "id": "dog",   "word": "el perro",   "english": "dog",   "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "cat",   "word": "el gato",    "english": "cat",   "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "bird",  "word": "el pájaro",  "english": "bird",  "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "horse", "word": "el caballo", "english": "horse", "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "cow",   "word": "la vaca",    "english": "cow",   "category": "animal", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "fish_animal", "word": "el pez", "english": "fish (alive)", "category": "animal", "tier": 2, "icon": "", "hunger": 0 },
+
+    { "id": "house",  "word": "la casa",    "english": "house",  "category": "place", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "river",  "word": "el río",     "english": "river",  "category": "place", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "bridge", "word": "el puente",  "english": "bridge", "category": "place", "tier": 2, "icon": "", "hunger": 0 },
+    { "id": "market", "word": "el mercado", "english": "market", "category": "place", "tier": 2, "icon": "", "hunger": 0 },
+    { "id": "forest", "word": "el bosque",  "english": "forest", "category": "place", "tier": 2, "icon": "", "hunger": 0 },
+    { "id": "town",   "word": "el pueblo",  "english": "town",   "category": "place", "tier": 1, "icon": "", "hunger": 0 },
+
+    { "id": "red",    "word": "rojo",     "english": "red",    "category": "color", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "blue",   "word": "azul",     "english": "blue",   "category": "color", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "green",  "word": "verde",    "english": "green",  "category": "color", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "yellow", "word": "amarillo", "english": "yellow", "category": "color", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "white",  "word": "blanco",   "english": "white",  "category": "color", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "black",  "word": "negro",    "english": "black",  "category": "color", "tier": 1, "icon": "", "hunger": 0 },
+
+    { "id": "one",   "word": "uno",    "english": "one",   "category": "number", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "two",   "word": "dos",    "english": "two",   "category": "number", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "three", "word": "tres",   "english": "three", "category": "number", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "four",  "word": "cuatro", "english": "four",  "category": "number", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "five",  "word": "cinco",  "english": "five",  "category": "number", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "ten",   "word": "diez",   "english": "ten",   "category": "number", "tier": 1, "icon": "", "hunger": 0 },
+
+    { "id": "to_eat",   "word": "comer",   "english": "to eat",   "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "to_drink", "word": "beber",   "english": "to drink", "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "to_want",  "word": "querer",  "english": "to want",  "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "to_have",  "word": "tener",   "english": "to have",  "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "to_go",    "word": "ir",      "english": "to go",    "category": "verb", "tier": 1, "icon": "", "hunger": 0 },
+    { "id": "to_fish",  "word": "pescar",  "english": "to fish",  "category": "verb", "tier": 2, "icon": "", "hunger": 0 },
+    { "id": "to_buy",   "word": "comprar", "english": "to buy",   "category": "verb", "tier": 2, "icon": "", "hunger": 0 }
+  ],
+  "sentences": [
+    { "id": "s001", "text": "Yo como una manzana",        "english": "I eat an apple",             "tier": 1 },
+    { "id": "s002", "text": "El gato bebe leche",         "english": "The cat drinks milk",        "tier": 1 },
+    { "id": "s003", "text": "Quiero pan y queso",         "english": "I want bread and cheese",    "tier": 1 },
+    { "id": "s004", "text": "El perro es blanco",         "english": "The dog is white",           "tier": 1 },
+    { "id": "s005", "text": "Tengo dos huevos",           "english": "I have two eggs",            "tier": 1 },
+    { "id": "s006", "text": "La casa es azul",            "english": "The house is blue",          "tier": 1 },
+    { "id": "s007", "text": "Voy al mercado",             "english": "I am going to the market",   "tier": 2 },
+    { "id": "s008", "text": "El pez vive en el río",      "english": "The fish lives in the river","tier": 2 },
+    { "id": "s009", "text": "Quiero comprar tres naranjas","english": "I want to buy three oranges","tier": 2 },
+    { "id": "s010", "text": "El puente cruza el río",     "english": "The bridge crosses the river","tier": 2 },
+    { "id": "s011", "text": "Me gusta pescar en el bosque","english": "I like to fish in the forest","tier": 2 },
+    { "id": "s012", "text": "El caballo come una manzana roja","english": "The horse eats a red apple","tier": 2 }
+  ]
+}
