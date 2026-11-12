@@ -143,6 +143,38 @@ namespace LLG
             return button;
         }
 
+        static RectTransform Stretch(string name, Transform parent, Vector2 inset)
+        {
+            var rt = Rect(name, parent, Vector2.zero, Vector2.zero);
+            rt.anchorMin = Vector2.zero;
+            rt.anchorMax = Vector2.one;
+            rt.offsetMin = inset;
+            rt.offsetMax = -inset;
+            return rt;
+        }
+
+        /// <summary>A horizontal 0-1 slider (used for volume).</summary>
+        public static Slider Slider(string name, Transform parent, Vector2 pos, Vector2 size, Color fillColor)
+        {
+            var root = Rect(name, parent, pos, size);
+            var back = Box("Background", root, Vector2.zero, size, Faded);
+            back.raycastTarget = true;
+
+            var fillArea = Stretch("Fill Area", root, new Vector2(3, 3));
+            var fill = Box("Fill", fillArea, Vector2.zero, Vector2.zero, fillColor);
+            fill.rectTransform.sizeDelta = Vector2.zero;
+
+            var handleArea = Stretch("Handle Area", root, new Vector2(6, 0));
+            var handle = Box("Handle", handleArea, Vector2.zero, new Vector2(14, 8), Color.white);
+
+            var slider = root.gameObject.AddComponent<Slider>();
+            slider.fillRect = fill.rectTransform;
+            slider.handleRect = handle.rectTransform;
+            slider.targetGraphic = handle;
+            slider.direction = UnityEngine.UI.Slider.Direction.LeftToRight;
+            return slider;
+        }
+
         public static InputField Input(string name, Transform parent, Vector2 pos, Vector2 size, string placeholder)
         {
             var bg = Box(name, parent, pos, size, Color.white);

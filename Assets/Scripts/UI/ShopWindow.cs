@@ -142,7 +142,7 @@ namespace LLG
         void Update()
         {
             if (!Open || Time.frameCount == openedFrame) return;
-            if (Input.GetKeyDown(KeyCode.Escape) || (backpack && Input.GetKeyDown(KeyCode.B))) Close();
+            if (Input.GetKeyDown(KeyCode.Escape) || (backpack && Keybinds.Down(GameAction.Backpack))) Close();
         }
     }
 }

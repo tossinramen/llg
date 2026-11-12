@@ -14,6 +14,9 @@ namespace LLG
         public List<string> items = new List<string>();    // ids of owned rods, weapons...
         public int fishCaught;
         public string equipped = "";                       // weapon used on right click ("" = fists)
+        public bool hasPosition;                           // where the player was when they last saved
+        public float posX, posY;
+        public int facing;
     }
 
     /// <summary>The running game: the save data, the loaded language, and helper actions.</summary>

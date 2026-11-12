@@ -23,18 +23,30 @@ A single-player, 16-bit style RPG for learning languages. Spanish first; Japanes
 
 ## Controls
 
+All keys can be changed in **Esc → Opciones (Options)**.
+
 | Key | Action |
 |---|---|
 | WASD or arrow keys | Walk |
-| E (or Space / Enter) | Talk, open a shop, fish, use what you are facing |
-| Left click | Read: shows the Spanish name of whatever you click (first time = Reading XP) |
+| Ctrl (hold) | Run (makes you hungry faster) |
+| Shift (hold) | Crouch (move slowly) |
+| Space | Jump |
+| E (or Enter) | Talk, open a shop, fish, use what you are facing |
+| Left click | Read: shows the Spanish name of whatever you click. Click the sign to close it |
 | Right click | Attack with your equipped weapon, or punch. The bow fires arrows. On a door: open it |
 | B | Backpack (equip weapons here) |
-| Esc | Close a window |
-| Hold left click on the character (start screen) | Drag sideways to turn them |
+| Esc | Game menu: Resume, Options (keys + music volume), Exit Game (saves, back to title) |
 | 1–4 | Shoot a target in archery (or click it) |
+| Start screen: hold left click on the character | Drag sideways to turn them |
+
+Progress (stats, items, skills and where you are standing) saves when you choose Exit Game,
+when you close the game, and automatically every 30 seconds.
 
 ## Credits
 
 Fonts: "Press Start 2P" (CodeMan38) and "DotGothic16" (Fontworks), both under the SIL Open Font
 License. Keep this credit if you release the game.
+
+Music: "lofi_village" is original, composed by `Tools/audio/generate_music.py` for this project,
+so there are no licence restrictions. Replace `Assets/Resources/Audio/lofi_village.wav` with any
+track (same name) to change it.

@@ -22,28 +22,30 @@ namespace LLG
         }
 
         /// <summary>The Spanish name of every kind of map tile, for left-click reading.</summary>
+        /// <summary>The Spanish name of every kind of map tile, for left-click reading.
+        /// Spanish signs only capitalise the first word ("La piedra rúnica"); English ones use Title Case.</summary>
         static readonly Dictionary<char, string[]> TileWords = new Dictionary<char, string[]>
         {
-            { '.', new[] { "la hierba", "grass" } },
-            { ',', new[] { "el camino", "path" } },
-            { '=', new[] { "el muelle", "dock" } },
-            { ';', new[] { "el campo de tiro", "archery range" } },
-            { 'T', new[] { "el árbol", "tree" } },
-            { 'u', new[] { "el arbusto", "bush" } },
-            { 'N', new[] { "la valla", "fence" } },
-            { 'F', new[] { "el estanque", "pond" } },
-            { 'A', new[] { "la diana", "target" } },
-            { 'R', new[] { "la piedra rúnica", "rune stone" } },
-            { 'k', new[] { "la panadería", "bakery" } },
-            { 'q', new[] { "la dulcería", "candy shop" } },
-            { 's', new[] { "la tienda", "store" } },
-            { 'h', new[] { "tu casa", "your house" } },
-            { 'd', new[] { "la casa", "house" } },
-            { 'B', new[] { "la puerta", "door" } },
-            { 'C', new[] { "la puerta", "door" } },
-            { 'S', new[] { "la puerta", "door" } },
-            { 'H', new[] { "la puerta", "door" } },
-            { 'D', new[] { "la puerta", "door" } },
+            { '.', new[] { "La hierba", "Grass" } },
+            { ',', new[] { "El camino", "Path" } },
+            { '=', new[] { "El muelle", "Dock" } },
+            { ';', new[] { "El campo de tiro", "Archery Range" } },
+            { 'T', new[] { "El árbol", "Tree" } },
+            { 'u', new[] { "El arbusto", "Bush" } },
+            { 'N', new[] { "La valla", "Fence" } },
+            { 'F', new[] { "El estanque", "Pond" } },
+            { 'A', new[] { "La diana", "Target" } },
+            { 'R', new[] { "La piedra rúnica", "Rune Stone" } },
+            { 'k', new[] { "La panadería", "Bakery" } },
+            { 'q', new[] { "La dulcería", "Candy Shop" } },
+            { 's', new[] { "La tienda", "Store" } },
+            { 'h', new[] { "Tu casa", "Your House" } },
+            { 'd', new[] { "La casa", "House" } },
+            { 'B', new[] { "La puerta", "Door" } },
+            { 'C', new[] { "La puerta", "Door" } },
+            { 'S', new[] { "La puerta", "Door" } },
+            { 'H', new[] { "La puerta", "Door" } },
+            { 'D', new[] { "La puerta", "Door" } },
         };
         const string Doors = "BCSHD";
 
@@ -58,15 +60,18 @@ namespace LLG
         ShopWindow shop;
         ArcheryGame archery;
         FishingGame fishing;
+        GameMenu menu;
+        OptionsWindow options;
         readonly Dictionary<char, Villager> villagers = new Dictionary<char, Villager>();
         readonly HashSet<string> wordsRead = new HashSet<string>();
         readonly HashSet<Vector2Int> picked = new HashSet<Vector2Int>();   // trees/bushes already shaken for fruit
         Vector2 spawnPoint;
         int closedFrame = -1;
-        float hungerTimer, manaTimer, attackCooldown;
+        float hungerTimer, manaTimer, attackCooldown, autosaveTimer;
 
         /// <summary>True while a window is open, so the player cannot walk around behind it.</summary>
-        public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || closedFrame == Time.frameCount;
+        public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || menu.Open
+                            || closedFrame == Time.frameCount;
 
         /// <summary>Windows call this when they close, so the key that closed them does not also trigger something.</summary>
         public void NoteWindowClosed() => closedFrame = Time.frameCount;
@@ -102,6 +107,10 @@ namespace LLG
             archery.Build(canvas, this);
             fishing = gameObject.AddComponent<FishingGame>();
             fishing.Build(canvas, this);
+            options = gameObject.AddComponent<OptionsWindow>();
+            options.Build(canvas);
+            menu = gameObject.AddComponent<GameMenu>();
+            menu.Build(canvas, this, options);
 
             FollowPlayer();
             string playerName = PlayerProfile.Current.playerName;
@@ -124,6 +133,15 @@ namespace LLG
             playerSprite.Build(PlayerProfile.Current.appearance);
             player = go.AddComponent<PlayerController>();
             player.Init(this, playerSprite);
+
+            // continue from where you were when you last saved
+            var data = GameState.Data;
+            var saved = new Vector2(data.posX, data.posY);
+            if (data.hasPosition && player.Free(saved))
+            {
+                go.transform.position = saved;
+                playerSprite.Face(Mathf.Clamp(data.facing, 0, 3));
+            }
         }
 
         static CharacterAppearance Look(int skin, int hairStyle, int hairColor, int shirt, int pants)
@@ -134,21 +152,21 @@ namespace LLG
         void SpawnVillagers()
         {
             string money = GameConfig.CurrencyName;
-            AddVillager('1', "Abuela Rosa", "la abuela", "grandmother", Look(1, 1, 5, 5, 3),
+            AddVillager('1', "Abuela Rosa", "la abuela", "Grandmother", Look(1, 1, 5, 5, 3),
                 new Line("Abuela Rosa", "¡Hola! Te doy la bienvenida al pueblo.", "Hello! I welcome you to the village."),
                 new Line("Abuela Rosa", "El pan de la panadería es delicioso.", "The bread from the bakery is delicious."),
                 new Line("Abuela Rosa", "Come algo si tienes hambre.", "Eat something if you are hungry."));
-            AddVillager('2', "Mateo", "el pescador", "fisherman", Look(3, 0, 0, 1, 1),
+            AddVillager('2', "Mateo", "el pescador", "Fisherman", Look(3, 0, 0, 1, 1),
                 new Line("Mateo", "Buenos días. Soy Mateo, el pescador.", "Good morning. I am Mateo, the fisherman."),
                 new Line("Mateo", "Necesitas una caña de pescar para pescar.", "You need a fishing rod to fish."),
                 new Line("Mateo", "Compra una en la tienda.", "Buy one at the store."));
-            AddVillager('3', "Luna", "la niña", "girl", Look(0, 3, 3, 3, 0),
+            AddVillager('3', "Luna", "la niña", "Girl", Look(0, 3, 3, 3, 0),
                 new Line("Luna", "¡Me encantan los caramelos!", "I love candy!"),
                 new Line("Luna", "La dulcería es rosa. ¡Es mi color favorito!", "The candy shop is pink. It is my favourite colour!"));
-            AddVillager('4', "Don Felipe", "el arquero", "archer", Look(4, 4, 4, 2, 2),
+            AddVillager('4', "Don Felipe", "el arquero", "Archer", Look(4, 4, 4, 2, 2),
                 new Line("Don Felipe", "Soy Don Felipe, el maestro de tiro con arco.", "I am Don Felipe, the archery master."),
                 new Line("Don Felipe", "Dispara a la palabra correcta.", "Shoot the correct word."));
-            AddVillager('5', "Sabia", "la sabia", "wise woman", Look(2, 1, 6, 5, 5),
+            AddVillager('5', "Sabia", "la sabia", "Wise Woman", Look(2, 1, 6, 5, 5),
                 new Line("Sabia", "Las runas guardan el poder de las palabras.", "The runes hold the power of words."),
                 new Line("Sabia", "Aprende palabras y ganarás " + money + ".", "Learn words and you will earn " + money + "."),
                 new Line("Sabia", "Con " + money + " puedes comprar casi todo.", "With " + money + " you can buy almost anything."));
@@ -175,11 +193,13 @@ namespace LLG
         {
             var stats = GameState.Data.stats;
 
-            hungerTimer += Time.deltaTime;
+            hungerTimer += Time.deltaTime * (player.Running ? 2f : 1f);     // running makes you hungry faster
             if (hungerTimer >= 8f) { hungerTimer = 0; stats.GetHungrier(1); }
             manaTimer += Time.deltaTime;
             if (manaTimer >= 20f) { manaTimer = 0; stats.RestoreMana(1); }
             attackCooldown -= Time.deltaTime;
+            autosaveTimer += Time.unscaledDeltaTime;
+            if (autosaveTimer >= 30f) { autosaveTimer = 0; SaveProgress(); }
 
             if (Busy)
             {
@@ -196,9 +216,14 @@ namespace LLG
             char facing = Map.At(player.FacingTile);
             hud.SetPrompt(Describe(facing));
 
-            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                hud.HideWordLabel();
+                menu.Show();
+            }
+            else if (Keybinds.Down(GameAction.Use) || Input.GetKeyDown(KeyCode.Return))
                 Interact(facing);
-            else if (Input.GetKeyDown(KeyCode.B))
+            else if (Keybinds.Down(GameAction.Backpack))
                 shop.ShowBackpack();
             else if (Input.GetMouseButtonDown(1))
                 RightClick();
@@ -304,7 +329,7 @@ namespace LLG
             if (Mathf.Abs(world.x - feet.x) < 0.45f && world.y > feet.y - 0.2f && world.y < feet.y + 1.5f)
             {
                 word = PlayerProfile.Current.playerName;
-                english = "tú (you)";
+                english = "Tú (You)";
                 anchor = feet + new Vector2(0, 1.5f);
             }
 
@@ -413,6 +438,31 @@ namespace LLG
             }
         }
 
-        void OnApplicationQuit() => GameState.Save();
+        /// <summary>Saves stats, items, skills and where the player is standing.</summary>
+        public void SaveProgress()
+        {
+            var data = GameState.Data;
+            if (data == null || player == null) return;
+            data.hasPosition = true;
+            data.posX = player.transform.position.x;
+            data.posY = player.transform.position.y;
+            data.facing = playerSprite.Facing;
+            GameState.Save();
+        }
+
+        /// <summary>"Exit Game" in the menu: save everything and go back to the title screen.</summary>
+        public void ExitToTitle()
+        {
+            SaveProgress();
+            Time.timeScale = 1;
+            Instance = null;
+            cam.transform.position = new Vector3(0, 0, -10);
+            foreach (var leftover in FindObjectsOfType<SwingEffect>()) Destroy(leftover.gameObject);
+            foreach (var leftover in FindObjectsOfType<ArrowShot>()) Destroy(leftover.gameObject);
+            Destroy(gameObject);
+            new GameObject("StartScreen").AddComponent<StartScreenController>();
+        }
+
+        void OnApplicationQuit() => SaveProgress();
     }
 }

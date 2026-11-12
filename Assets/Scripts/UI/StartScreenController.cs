@@ -15,6 +15,7 @@ namespace LLG
         const float LabelX = -18, ValueX = 190;
 
         PlayerProfile profile;
+        OptionsWindow options;
         CharacterPreview preview;
         Transform root;
         InputField nameInput;
@@ -42,6 +43,10 @@ namespace LLG
             BuildTitle();
             BuildCharacterPanel();
             BuildOptionsPanel();
+
+            UIFactory.Btn("OptionsButton", root, new Vector2(272, -164), new Vector2(88, 22), "Opciones", UIFactory.Purple, () => options.Show());
+            options = gameObject.AddComponent<OptionsWindow>();
+            options.Build(root);
             RefreshAll();
         }
 
@@ -249,6 +254,8 @@ namespace LLG
         void Update()
         {
             if (tagline == null || taglines.Count == 0) return;    // scripts were reloaded mid-play; press Stop and Play again
+
+            if (Input.GetKeyDown(KeyCode.Escape) && !options.Open && options.ClosedFrame != Time.frameCount) options.Show();
 
             foreach (var cloud in clouds)
             {

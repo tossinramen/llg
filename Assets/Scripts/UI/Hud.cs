@@ -9,12 +9,12 @@ namespace LLG
     /// </summary>
     public class Hud : MonoBehaviour
     {
-        Text hp, mana, hunger, coins, toast, prompt, labelWord, labelEnglish;
+        Text hp, mana, hunger, coins, toast, prompt, labelWord, labelEnglish, help, closeMark;
         GameObject promptBox;
         RectTransform canvasRect, labelBox;
         Camera cam;
         Vector3 labelWorld;
-        float toastTimer, labelTimer;
+        float toastTimer;
 
         public void Build(Transform canvas)
         {
@@ -27,9 +27,10 @@ namespace LLG
             hunger = Stat(canvas, 2, "Art/Icons/food_bread");
             coins = Stat(canvas, 3, "Art/UI/coin");
 
-            var help = UIFactory.Label("Help", canvas, new Vector2(168, 158), new Vector2(280, 40),
-                "WASD move   E use   B bag\nLeft click read   Right click attack", Color.white, TextAnchor.MiddleRight);
+            help = UIFactory.Label("Help", canvas, new Vector2(160, 158), new Vector2(300, 40), "", Color.white, TextAnchor.MiddleRight);
             UIFactory.Outline(help);
+            RefreshHelp();
+            Keybinds.Changed += RefreshHelp;
 
             toast = UIFactory.Label("Toast", canvas, new Vector2(0, 112), new Vector2(600, 60), "", Color.white);
             UIFactory.Outline(toast);
@@ -38,9 +39,11 @@ namespace LLG
             prompt = UIFactory.Label("Text", promptBox.transform, new Vector2(0, 1), new Vector2(290, 24), "", UIFactory.Ink);
             promptBox.SetActive(false);
 
+            // the word sign stays up until you click it (or read something else)
             var label = UIFactory.Panel("WordLabel", canvas, Vector2.zero, new Vector2(160, 62));
-            label.raycastTarget = false;
+            label.gameObject.AddComponent<Button>().onClick.AddListener(HideWordLabel);
             labelBox = label.rectTransform;
+            closeMark = UIFactory.Label("Close", labelBox, Vector2.zero, new Vector2(12, 12), "x", UIFactory.Faded);
             labelWord = UIFactory.Label("Word", labelBox, new Vector2(0, 9), new Vector2(150, 20), "", UIFactory.Ink);
             labelEnglish = UIFactory.Label("English", labelBox, new Vector2(0, -9), new Vector2(150, 20), "", UIFactory.Faded);
             labelBox.gameObject.SetActive(false);
@@ -57,8 +60,19 @@ namespace LLG
             return UIFactory.Label("Value", canvas, new Vector2(x + 44, 161), new Vector2(48, 20), "", UIFactory.Ink, TextAnchor.MiddleLeft);
         }
 
+        void RefreshHelp()
+        {
+            string move = Keybinds.KeyName(GameAction.Up) + Keybinds.KeyName(GameAction.Left)
+                + Keybinds.KeyName(GameAction.Down) + Keybinds.KeyName(GameAction.Right);
+            if (move.Length > 4) move = "Move keys";
+            help.text = move + " move   " + Keybinds.KeyName(GameAction.Use) + " use   "
+                + Keybinds.KeyName(GameAction.Backpack) + " bag   Esc menu\n"
+                + "Left click read   Right click attack";
+        }
+
         void OnDestroy()
         {
+            Keybinds.Changed -= RefreshHelp;
             GameState.Toast -= ShowToast;
             if (GameState.Data != null) GameState.Data.stats.Changed -= Refresh;
         }
@@ -92,12 +106,17 @@ namespace LLG
             labelWord.text = word;
             labelEnglish.text = english;
             int longest = Mathf.Max(word.Length, english.Length);
-            labelBox.sizeDelta = new Vector2(Mathf.Max(80, longest * 8 + 32), 62);
+            labelBox.sizeDelta = new Vector2(Mathf.Max(80, longest * 8 + 52), 62);
+            ((RectTransform)closeMark.transform).anchoredPosition = new Vector2(labelBox.sizeDelta.x / 2 - 12, 17);
             labelWorld = world;
-            labelTimer = 2.5f;
             labelBox.gameObject.SetActive(true);
+            labelBox.SetAsLastSibling();
             PlaceLabel();
         }
+
+        public void HideWordLabel() => labelBox.gameObject.SetActive(false);
+
+        public bool WordLabelOpen => labelBox.gameObject.activeSelf;
 
         void PlaceLabel()
         {
@@ -118,12 +137,7 @@ namespace LLG
             color.a = Mathf.Clamp01(toastTimer);
             toast.color = color;
 
-            if (labelTimer > 0)
-            {
-                labelTimer -= Time.deltaTime;
-                PlaceLabel();
-                if (labelTimer <= 0) labelBox.gameObject.SetActive(false);
-            }
+            if (labelBox.gameObject.activeSelf) PlaceLabel();
         }
     }
 }

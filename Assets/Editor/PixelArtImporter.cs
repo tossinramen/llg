@@ -9,7 +9,7 @@ namespace LLG.EditorTools
     /// </summary>
     public class PixelArtImporter : AssetPostprocessor
     {
-        public override uint GetVersion() => 2;
+        public override uint GetVersion() => 3;
 
         /// <summary>Pixel fonts under a "Fonts" folder are drawn without smoothing.</summary>
         void OnPreprocessAsset()
@@ -23,6 +23,14 @@ namespace LLG.EditorTools
             if (!assetPath.Contains("/Art/")) return;
 
             var importer = (TextureImporter)assetImporter;
+            if (assetPath.Contains("/Cursor/"))
+            {
+                importer.textureType = TextureImporterType.Cursor;     // mouse pointer images
+                importer.filterMode = FilterMode.Point;
+                importer.textureCompression = TextureImporterCompression.Uncompressed;
+                importer.mipmapEnabled = false;
+                return;
+            }
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Single;
             importer.spritePixelsPerUnit = 16;

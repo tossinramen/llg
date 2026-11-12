@@ -20,10 +20,13 @@ Work top to bottom. `[x]` = done, `[ ]` = not started.
 - [x] Controls: E use, B backpack, left click reads a word, right click attacks / punches / opens doors
 - [x] Equip weapons from the backpack; bow fires arrows; trees and bushes sometimes drop fruit
 - [x] Start screen: drag the character to turn; language cards (Japanese/Korean locked)
+- [x] Esc menu (Resume / Options / Exit Game), rebindable keys, music volume + mute
+- [x] Original lofi background music, MMO-style cursor
+- [x] Jump (Space), crouch (Shift), run (Ctrl); progress and position saved on exit + every 30 s
 
 ## Next up – make the village feel alive
 - [ ] **You:** play it and tell me what feels wrong (speed, prices, difficulty, layout)
-- [ ] Music and sound effects (footsteps, button clicks, correct/wrong)
+- [ ] Sound effects (footsteps, button clicks, correct/wrong) + an SFX volume slider
 - [ ] Shop interiors with a shopkeeper character instead of a window opening at the door
 - [ ] Shopkeepers ask for things by name ("Dame el pan") – the "choose the food" activity
 - [ ] Villagers walk around; more lines of dialogue; a first small quest each

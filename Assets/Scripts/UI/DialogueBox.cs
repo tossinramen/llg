@@ -22,7 +22,7 @@ namespace LLG
     public class DialogueBox : MonoBehaviour
     {
         GameObject box;
-        Text speaker, text, english;
+        Text speaker, text, english, nextHint;
         List<Line> lines;
         int index, openedFrame;
         Action onDone;
@@ -39,7 +39,7 @@ namespace LLG
             text = UIFactory.Label("Text", box.transform, new Vector2(0, 8), new Vector2(560, 40), "", UIFactory.Ink, TextAnchor.UpperLeft);
             english = UIFactory.Label("English", box.transform, new Vector2(0, -28), new Vector2(560, 22), "", UIFactory.Faded, TextAnchor.MiddleLeft);
             text.horizontalOverflow = HorizontalWrapMode.Wrap;
-            UIFactory.Label("Next", box.transform, new Vector2(262, -40), new Vector2(40, 20), "[E]", UIFactory.Teal);
+            nextHint = UIFactory.Label("Next", box.transform, new Vector2(256, -40), new Vector2(60, 20), "", UIFactory.Teal, TextAnchor.MiddleRight);
             box.SetActive(false);
         }
 
@@ -60,6 +60,7 @@ namespace LLG
 
         void Refresh()
         {
+            nextHint.text = "[" + Keybinds.KeyName(GameAction.Use) + "]";
             speaker.text = lines[index].Speaker;
             text.text = lines[index].Text;
             english.text = lines[index].English;
@@ -68,7 +69,7 @@ namespace LLG
         void Update()
         {
             if (!Open || Time.frameCount == openedFrame) return;
-            if (!Input.GetKeyDown(KeyCode.E) && !Input.GetKeyDown(KeyCode.Space) && !Input.GetKeyDown(KeyCode.Return)
+            if (!Keybinds.Down(GameAction.Use) && !Input.GetKeyDown(KeyCode.Space) && !Input.GetKeyDown(KeyCode.Return)
                 && !Input.GetMouseButtonDown(0)) return;
 
             Advance();

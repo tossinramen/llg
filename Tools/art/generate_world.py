@@ -387,16 +387,20 @@ def make_items():
         "..oooooooooo....",
     ], {"o": O, "r": (120, 90, 220), "y": gold, "w": (250, 244, 228)})
     icon("item_fist", [
-        "...oooooooo.....",
-        "..owwowwowwo....",
-        "..owwowwowwo....",
-        "..owwowwowwoo...",
+        "....oo.oo.oo....",
+        "...owwowwowwo...",
+        "..owwwowwowwwo..",
+        "..owswwswwswwo..",
+        "..owswwswwswwo..",
         "..owwwwwwwwwwo..",
-        "..oggggggwwwwo..",
-        "..owwwwwwwwwo...",
-        "...owwwwwwwo....",
+        "..oooooooowwwo..",
+        "..owwwwwwwowwo..",
+        "..osssssssowwo..",
+        "...oooooooowo...",
+        "....owwwwwwo....",
+        "....osssssso....",
         "....oooooooo....",
-    ], {"o": O, "w": (255, 255, 255), "g": (200, 200, 200)})
+    ], {"o": O, "w": (255, 255, 255), "s": (205, 205, 205)})
     icon("item_arrow", [
         "ff..........o...",
         ".ffwwwwwwwwwsso.",
@@ -534,6 +538,52 @@ def make_ui():
         "oyyyyyyo",
         "oooooooo",
     ]], {"o": O, "y": (250, 204, 72)}, "UI")
+
+    # speaker icons for the volume control
+    icon("speaker_on", [
+        "......o.........",
+        ".....oo....o....",
+        "....owo..o..o...",
+        "oooowwo...o..o..",
+        "owwwwwo.o..o.o..",
+        "owwwwwo..o.o..o.",
+        "owwwwwo..o.o..o.",
+        "owwwwwo.o..o.o..",
+        "oooowwo...o..o..",
+        "....owo..o..o...",
+        ".....oo....o....",
+        "......o.........",
+    ], {"o": (255, 255, 255), "w": (255, 255, 255)}, "UI")
+    icon("speaker_off", [
+        "......o.........",
+        ".....oo.........",
+        "....owo.........",
+        "oooowwo.........",
+        "owwwwwo.o...o...",
+        "owwwwwo..o.o....",
+        "owwwwwo...o.....",
+        "owwwwwo..o.o....",
+        "oooowwo.o...o...",
+        "....owo.........",
+        ".....oo.........",
+        "......o.........",
+    ], {"o": (255, 255, 255), "w": (255, 255, 255)}, "UI")
+
+    # soft round shadow drawn under characters (shrinks when they jump)
+    sh = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+    ImageDraw.Draw(sh).ellipse([2, 6, 13, 10], fill=(30, 40, 30, 80))
+    save(sh, "UI", "shadow")
+
+    # MMO-style mouse cursor: a gold-trimmed arrow, drawn at 16x16 and doubled for crisp pixels
+    c = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+    d = ImageDraw.Draw(c)
+    arrow = [(0, 0), (0, 13), (3, 10), (6, 15), (8, 14), (6, 9), (10, 9)]
+    d.polygon(arrow, fill=(214, 150, 48), outline=O)
+    d.polygon([(1, 2), (1, 10), (3, 8), (6, 8)], fill=(250, 214, 96))
+    d.line([(1, 2), (1, 9)], fill=(255, 248, 200))
+    d.line([(2, 3), (5, 7)], fill=(255, 236, 150))
+    d.line([(6, 12), (7, 13)], fill=(150, 96, 40))
+    save(c.resize((32, 32), Image.NEAREST), "Cursor", "cursor")
 
     # big archery target
     t = Image.new("RGBA", (32, 32), (0, 0, 0, 0))
