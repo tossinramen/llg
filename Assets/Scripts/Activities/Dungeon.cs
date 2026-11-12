@@ -420,8 +420,9 @@ namespace LLG
             int reward = floor.number * 60;
             if (GameState.Data.dungeonFloor < floor.number) GameState.Data.dungeonFloor = floor.number;
             GameState.AddCurrency(reward);
+            GameState.AddGold(floor.number * 40);
             GameState.AddXp(SkillType.Combat, floor.number * 40);
-            prompt.text = "¡Venciste a " + floor.es + "!  +" + reward + " " + GameConfig.CurrencyName;
+            prompt.text = "¡Venciste a " + floor.es + "!  +" + reward + " " + GameConfig.CurrencyName + "  +" + floor.number * 40 + " " + GameConfig.GoldName;
             Say("¡Victoria!");
             GameState.Save();
             UIFactory.Btn("Leave", moves, new Vector2(0, -96), new Vector2(180, 30), "Salir", UIFactory.Green, Close);
@@ -432,10 +433,10 @@ namespace LLG
             phase = Phase.Over;
             Clear(moves);
             var stats = GameState.Data.stats;
-            int lost = stats.coins / 10;
-            stats.AddCoins(-lost);
+            int lost = stats.gold / 10;
+            stats.AddGold(-lost);
             stats.Heal(stats.maxHp / 2 - stats.hp);
-            prompt.text = "Has perdido... (-" + lost + " " + GameConfig.CurrencyName + ")";
+            prompt.text = "Has perdido... (-" + lost + " " + GameConfig.GoldName + ")";
             Say(floor.es + " gana esta vez.");
             GameState.Save();
             UIFactory.Btn("Leave", moves, new Vector2(0, -96), new Vector2(180, 30), "Salir", UIFactory.Red, Close);

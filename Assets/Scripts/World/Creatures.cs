@@ -161,7 +161,7 @@ namespace LLG
             respawnTimer = 30f;
             Hostile = false;
             int coins = kind == "wolf" ? Random.Range(6, 13) : Random.Range(3, 9);
-            GameState.AddCurrency(coins);
+            GameState.AddGold(coins);
             GameState.AddXp(SkillType.Combat, xp);
             GameState.Say("¡Derrotaste a " + spanish.ToLower() + "!");
             if (kind == "wolf" && Random.value < 0.6f) village.DropItem("pelt", Position);

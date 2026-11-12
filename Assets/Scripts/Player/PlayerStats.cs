@@ -18,7 +18,9 @@ namespace LLG
         public int mana = 10;
         public int maxHunger = 100;
         public int hunger = 100;
-        public int coins;          // shown in game as GameConfig.CurrencyName
+        public int coins;          // Lexa, the magical money (shown as GameConfig.CurrencyName)
+        public int gold;           // oro, everyday money for the shops
+        public bool goldGiven;     // old saves get their starting gold once
         public int intelligence;   // +1 per book: +1 max mana and +5% XP each
 
         public event Action Changed;
@@ -31,6 +33,7 @@ namespace LLG
         public void Eat(int hungerRestored) { hunger = Mathf.Clamp(hunger + hungerRestored, 0, maxHunger); Changed?.Invoke(); }
         public void GetHungrier(int amount) { hunger = Mathf.Clamp(hunger - amount, 0, maxHunger); Changed?.Invoke(); }
         public void AddCoins(int amount) { coins = Mathf.Max(0, coins + amount); Changed?.Invoke(); }
+        public void AddGold(int amount) { gold = Mathf.Max(0, gold + amount); Changed?.Invoke(); }
 
         public bool TrySpendMana(int amount)
         {

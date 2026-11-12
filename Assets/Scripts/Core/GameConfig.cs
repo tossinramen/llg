@@ -24,7 +24,9 @@ namespace LLG
         public const string Title = "Runes of Speech";
         public const string TownName = "Valdeluz";            // the Spanish village
         public const string CurrencyName = "Lexa";           // the magical currency
-        public const int StartingCurrency = 60;
+        public const int StartingCurrency = 20;              // Lexa you start with
+        public const string GoldName = "oro";                // everyday money for the shops
+        public const int StartingGold = 80;
         public const string EnglishTagline = "A language-learning adventure";
 
         public static readonly LanguageInfo[] Languages =

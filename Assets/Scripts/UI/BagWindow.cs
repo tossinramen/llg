@@ -10,7 +10,7 @@ namespace LLG
         const int Columns = 4;
         readonly List<ItemSlotView> slots = new List<ItemSlotView>();
         LocalizedText itemName, itemEnglish, hint;
-        Text money;
+        Text money, goldText;
 
         protected override bool ToggleKeyPressed => Keybinds.Down(GameAction.Backpack);
 
@@ -26,12 +26,16 @@ namespace LLG
                 view.hover.Exited += () => Describe(-1);
                 slots.Add(view);
             }
-            itemName = UIFactory.LLabel("ItemName", W, new Vector2(0, -98), new Vector2(170, 20), "", "", UIFactory.Ink).GetComponent<LocalizedText>();
-            itemEnglish = UIFactory.LLabel("ItemEnglish", W, new Vector2(0, -116), new Vector2(170, 20), "", "", UIFactory.Faded, TextAnchor.MiddleCenter, 16, false, true).GetComponent<LocalizedText>();
-            hint = UIFactory.LLabel("Hint", W, new Vector2(0, -116), new Vector2(170, 20), "", "", UIFactory.Teal).GetComponent<LocalizedText>();
-            var purse = UIFactory.Box("Purse", W, new Vector2(0, -138), new Vector2(120, 24), new Color32(232, 214, 176, 255));
-            UIFactory.Img("Lexa", purse.transform, new Vector2(-42, 1), new Vector2(14, 14), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
-            money = UIFactory.Label("Money", purse.transform, new Vector2(10, 1), new Vector2(80, 16), "", UIFactory.Ink, TextAnchor.MiddleLeft);
+            itemName = UIFactory.LLabel("ItemName", W, new Vector2(0, -78), new Vector2(160, 18), "", "", UIFactory.Ink).GetComponent<LocalizedText>();
+            itemEnglish = UIFactory.LLabel("ItemEnglish", W, new Vector2(0, -94), new Vector2(160, 16), "", "", UIFactory.Faded, TextAnchor.MiddleCenter, 16, false, true).GetComponent<LocalizedText>();
+            hint = UIFactory.LLabel("Hint", W, new Vector2(0, -94), new Vector2(160, 16), "", "", UIFactory.Teal).GetComponent<LocalizedText>();
+            var goldBox = UIFactory.Box("Gold", W, new Vector2(-40, -138), new Vector2(76, 22), new Color32(232, 214, 176, 255));
+            UIFactory.Img("Icon", goldBox.transform, new Vector2(-26, 1), new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
+            goldText = UIFactory.Label("Amount", goldBox.transform, new Vector2(8, 1), new Vector2(50, 12), "", UIFactory.Ink, TextAnchor.MiddleCenter, 12);
+            var lexaBox = UIFactory.Box("Lexa", W, new Vector2(40, -138), new Vector2(76, 22), new Color32(232, 214, 176, 255));
+            UIFactory.Img("Icon", lexaBox.transform, new Vector2(-26, 1), new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
+            money = UIFactory.Label("Amount", lexaBox.transform, new Vector2(8, 1), new Vector2(50, 12), "", UIFactory.Ink, TextAnchor.MiddleCenter, 12);
+            UIFactory.LBtn("Exchange", W, new Vector2(0, -114), new Vector2(150, 20), "10 Lexa → 20 oro", "10 Lexa → 20 gold", UIFactory.Teal, GameState.ExchangeLexa);
             GameState.InventoryChanged += Refresh;
             GameState.Data.stats.Changed += Refresh;
         }
@@ -60,7 +64,8 @@ namespace LLG
                 var tint = item != null && item.kind == ItemKind.Pet && GameState.Data.pet == item.id ? new Color(1f, 1f, 0.7f) : Color.white;
                 slots[i].Show(item == null ? null : UIFactory.LoadSprite("Art/Icons/" + item.icon), bag[i].count, tint);
             }
-            money.text = GameState.Data.stats.coins + " " + GameConfig.CurrencyName;
+            money.text = GameState.Data.stats.coins.ToString();
+            goldText.text = GameState.Data.stats.gold.ToString();
         }
 
         void Describe(int index)

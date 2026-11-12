@@ -54,6 +54,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] People (later PvP) are fought by clicking in real time (monsters are already fought with words)
 - [ ] Bosses also drop rare gear (they already give Lexa)
 - [ ] "Levelling up Lexa" (needs deciding what it means — see notes)
+- [ ] More things to spend Lexa on: upgrades, enchanting, house upgrades, clothing
 
 ### 6. Farming
 - [ ] More garden plots (buy extra land with Lexa), and use the big farm field too
@@ -267,3 +268,6 @@ Finished tasks, struck through.
 - ~~Nicer dog and cat sprites~~ ✅
 - ~~Farm and chicken-yard gates you can open and close; you can walk between the crops~~ ✅
 - ~~Finished design notes are marked ✅ DONE in their headings~~ ✅
+- ~~Two currencies: gold (oro) for the shops and Lexa from learning; gold box above the Lexa box, both smaller~~ ✅
+- ~~Pets cost Lexa; selling and animals give gold; bosses give both; 10 Lexa → 20 gold exchange in the bag~~ ✅
+- ~~Punches come from the front in every direction (above your head facing north, from the shoulder edge sideways)~~ ✅

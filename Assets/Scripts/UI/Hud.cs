@@ -20,7 +20,7 @@ namespace LLG
         static readonly Vector2 FramePos = new Vector2(-228, 150);
         const float BarWidth = 104, BarX = 22;
 
-        Text toast, prompt, zone, nameLevel, hpText, manaText, hungerText, coins, xpText, levelText;
+        Text toast, prompt, zone, nameLevel, hpText, manaText, hungerText, coins, gold, xpText, levelText;
         GameObject promptBox, minimap;
         RectTransform canvasRect, labelBox, mapImage, mapArrow, frame, hpFill, hpTrail, manaFill, hungerFill, xpFill;
         Image hpFlash;
@@ -104,12 +104,18 @@ namespace LLG
             hungerText.gameObject.SetActive(false);
 
             // Lexa, in a small box under the portrait
-            var purseImg = UIFactory.Panel("Purse", canvas, FramePos + new Vector2(-34, -44), new Vector2(108, 28));
-            purseImg.pixelsPerUnitMultiplier = 2;
-            purseImg.raycastTarget = false;
-            var purse = purseImg.rectTransform;
-            UIFactory.Img("Coin", purse, new Vector2(-38, 0), new Vector2(14, 14), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
-            coins = UIFactory.Label("Coins", purse, new Vector2(8, 0), new Vector2(70, 17), "", UIFactory.Ink);
+            gold = Purse(canvas, FramePos + new Vector2(-46, -40), "Art/UI/coin");
+            coins = Purse(canvas, FramePos + new Vector2(-46, -62), "Art/UI/lexa");
+        }
+
+        /// <summary>A small money box under the portrait: icon + amount.</summary>
+        Text Purse(Transform canvas, Vector2 pos, string icon)
+        {
+            var img = UIFactory.Panel("Purse", canvas, pos, new Vector2(84, 20));
+            img.pixelsPerUnitMultiplier = 2;
+            img.raycastTarget = false;
+            UIFactory.Img("Icon", img.rectTransform, new Vector2(-30, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite(icon));
+            return UIFactory.Label("Amount", img.rectTransform, new Vector2(8, 0), new Vector2(60, 12), "", UIFactory.Ink, TextAnchor.MiddleCenter, 12);
         }
 
         /// <summary>A bar in the unit frame: dark background, an optional trail and a coloured fill.</summary>
@@ -233,6 +239,7 @@ namespace LLG
             hungerFill.sizeDelta = new Vector2(BarWidth * s.hunger / Mathf.Max(1f, s.maxHunger), hungerFill.sizeDelta.y);
             hungerText.text = "";
             coins.text = s.coins + " " + GameConfig.CurrencyName;
+            gold.text = s.gold + " " + GameConfig.GoldName;
 
             int need = GameState.XpForLevel(data.level);
             xpFill.sizeDelta = new Vector2(600f * data.xp / need, 6);

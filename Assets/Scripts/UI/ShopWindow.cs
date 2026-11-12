@@ -15,7 +15,7 @@ namespace LLG
     {
         const int Columns = 4, MaxCards = 12;    // 3 rows of 4
         Transform cards, sectionRow;
-        Text money;
+        Text money, goldText;
         Image buyTab, sellTab;
         LocalizedText greeting, feedback;
         string[] itemIds;
@@ -31,9 +31,11 @@ namespace LLG
             sellTab = UIFactory.LBtn("SellTab", W, new Vector2(60, 102), new Vector2(110, 22), "Vender", "Sell", UIFactory.Faded, () => SetTab(true)).GetComponent<Image>();
             sectionRow = UIFactory.Rect("Sections", W, Vector2.zero, Vector2.zero);
             cards = UIFactory.Rect("Cards", W, Vector2.zero, Vector2.zero);
-            feedback = UIFactory.LLabel("Feedback", W, new Vector2(-40, -144), new Vector2(380, 18), "", "", UIFactory.Ink, TextAnchor.MiddleLeft).GetComponent<LocalizedText>();
-            UIFactory.Img("Coin", W, new Vector2(186, -144), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
-            money = UIFactory.Label("Money", W, new Vector2(222, -144), new Vector2(52, 18), "", UIFactory.Ink, TextAnchor.MiddleLeft);
+            feedback = UIFactory.LLabel("Feedback", W, new Vector2(-80, -144), new Vector2(330, 18), "", "", UIFactory.Ink, TextAnchor.MiddleLeft).GetComponent<LocalizedText>();
+            UIFactory.Img("Gold", W, new Vector2(132, -144), new Vector2(14, 14), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
+            goldText = UIFactory.Label("GoldText", W, new Vector2(166, -144), new Vector2(50, 16), "", UIFactory.Ink, TextAnchor.MiddleLeft);
+            UIFactory.Img("Lexa", W, new Vector2(202, -144), new Vector2(14, 14), Color.white, UIFactory.LoadSprite("Art/UI/lexa"));
+            money = UIFactory.Label("Money", W, new Vector2(236, -144), new Vector2(50, 16), "", UIFactory.Ink, TextAnchor.MiddleLeft);
             GameState.InventoryChanged += Rebuild;
             GameState.Data.stats.Changed += Rebuild;
         }
@@ -79,6 +81,7 @@ namespace LLG
             foreach (Transform child in cards) Destroy(child.gameObject);
             foreach (Transform child in sectionRow) Destroy(child.gameObject);
             money.text = GameState.Data.stats.coins.ToString();
+            goldText.text = GameState.Data.stats.gold.ToString();
             buyTab.color = selling ? UIFactory.Faded : UIFactory.Gold;
             sellTab.color = selling ? UIFactory.Gold : UIFactory.Faded;
 
@@ -137,7 +140,8 @@ namespace LLG
                 var name = UIFactory.LLabel("Name", card.transform, new Vector2(12, 7), new Vector2(76, 28), item.spanish, item.english,
                     locked ? UIFactory.Faded : UIFactory.Ink, TextAnchor.MiddleLeft);
                 name.lineSpacing = 0.8f;
-                string priceText = owned ? "Tuyo" : locked ? "Nv " + item.level : price.ToString();
+                bool lexa = !selling && GameState.PaidInLexa(item);
+                string priceText = owned ? "Tuyo" : locked ? "Nv " + item.level : price + (lexa ? " Lexa" : "");
                 Color priceColor = owned ? UIFactory.Green : locked ? UIFactory.Red : (Color)new Color32(150, 100, 30, 255);
                 UIFactory.Label("Price", card.transform, new Vector2(-28, -15), new Vector2(52, 16), priceText, priceColor, TextAnchor.MiddleLeft, 12);
                 if (locked) UIFactory.Label("Cost", card.transform, new Vector2(26, -15), new Vector2(52, 16), price.ToString(), new Color32(150, 100, 30, 255), TextAnchor.MiddleRight, 12);
@@ -149,9 +153,11 @@ namespace LLG
         void Buy(ItemDef item)
         {
             var stats = GameState.Data.stats;
-            if (stats.coins < item.price)
+            bool lexa = GameState.PaidInLexa(item);
+            if ((lexa ? stats.coins : stats.gold) < item.price)
             {
-                feedback.Set("No tienes suficiente " + GameConfig.CurrencyName + ".", "You don't have enough " + GameConfig.CurrencyName + ".");
+                string money = lexa ? GameConfig.CurrencyName : GameConfig.GoldName;
+                feedback.Set("No tienes suficiente " + money + ".", "You don't have enough " + (lexa ? "Lexa" : "gold") + ".");
                 return;
             }
             if (!GameState.AddItem(item.id))
@@ -159,7 +165,7 @@ namespace LLG
                 feedback.Set("Tu mochila está llena.", "Your bag is full.");
                 return;
             }
-            stats.AddCoins(-item.price);
+            if (lexa) stats.AddCoins(-item.price); else stats.AddGold(-item.price);
             if (item.kind == ItemKind.Pet && string.IsNullOrEmpty(GameState.Data.pet)) GameState.Data.pet = item.id;
             GameState.AddXp(SkillType.Trading, 2);
             feedback.Set("¡Gracias! Compraste " + item.spanish + ".", "Thank you! You bought: " + item.english + ".");
@@ -172,9 +178,9 @@ namespace LLG
             var item = ItemDatabase.Get(slot.id);
             if (item == null) return;
             GameState.RemoveAt(bagIndex);
-            GameState.Data.stats.AddCoins(item.sellPrice);
+            GameState.Data.stats.AddGold(item.sellPrice);
             if (GameState.Data.pet == item.id && !GameState.Has(item.id)) GameState.Data.pet = "";
-            feedback.Set("Vendiste " + item.spanish + " por " + item.sellPrice + ".", "You sold: " + item.english + " for " + item.sellPrice + ".");
+            feedback.Set("Vendiste " + item.spanish + " por " + item.sellPrice + " " + GameConfig.GoldName + ".", "You sold: " + item.english + " for " + item.sellPrice + " gold.");
             GameState.Save();
         }
     }

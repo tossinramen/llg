@@ -66,6 +66,11 @@ namespace LLG
                 data.stats.coins = GameConfig.StartingCurrency;
             }
             Data = data;
+            if (!Data.stats.goldGiven)
+            {
+                Data.stats.gold += GameConfig.StartingGold;
+                Data.stats.goldGiven = true;
+            }
             Normalise();
             Data.skills.LeveledUp += (skill, level) => Say(skill + " → " + level);
             if (Data.level < 1) Data.level = 1;
@@ -276,10 +281,30 @@ namespace LLG
             }
         }
 
+        /// <summary>Lexa: the magical money you earn by learning (activities, bosses).</summary>
         public static void AddCurrency(int amount)
         {
             Data.stats.AddCoins(amount);
             if (amount > 0) Say("+" + amount + " " + GameConfig.CurrencyName);
+        }
+
+        /// <summary>Gold (oro): everyday money from selling things and defeating animals.</summary>
+        public static void AddGold(int amount)
+        {
+            Data.stats.AddGold(amount);
+            if (amount > 0) Say("+" + amount + " " + GameConfig.GoldName);
+        }
+
+        /// <summary>Pets are bought with Lexa; everything else in the shops costs gold.</summary>
+        public static bool PaidInLexa(ItemDef item) => item.kind == ItemKind.Pet;
+
+        /// <summary>Swap Lexa for gold (10 Lexa = 20 gold).</summary>
+        public static void ExchangeLexa()
+        {
+            if (Data.stats.coins < 10) { Say("Necesitas 10 " + GameConfig.CurrencyName + ". (You need 10 Lexa.)"); return; }
+            Data.stats.AddCoins(-10);
+            Data.stats.AddGold(20);
+            Say("Cambias 10 " + GameConfig.CurrencyName + " por 20 " + GameConfig.GoldName + ".");
         }
 
         public static string Capital(string s) => string.IsNullOrEmpty(s) ? s : char.ToUpper(s[0]) + s.Substring(1);

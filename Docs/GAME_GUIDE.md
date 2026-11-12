@@ -15,7 +15,7 @@ Contents: [Basics](#basics) · [Controls](#controls) · [Stats & XP](#stats--xp)
 | | |
 |---|---|
 | Name | **Runes of Speech** |
-| Currency | **Lexa** (starts at 60) |
+| Money | **Oro (gold)** for the shops (start 80) and **Lexa**, magical money from learning (start 20) |
 | Languages | Spanish (playable); Japanese and Korean shown as "coming soon" |
 | Town | **Valdeluz**, a Spanish village |
 | Style | 16-bit pixel art with fake depth: buildings have side walls and shadows, and you walk behind things |
@@ -54,7 +54,8 @@ All keys can be changed in **Esc → Opciones**.
 | **Intelligence** | +1 per book read: +1 max mana and +5% XP. |
 | **Attack** | The damage of your weapon (fists = 1). |
 | **Defence** | Sum of your armour; each 2 points blocks 1 damage per bite (minimum 1 damage). |
-| **Lexa** | Earned from activities, kills, selling. Spent in shops. |
+| **Oro (gold)** | Everyday money. Earned by selling things, defeating animals and bosses. Spent in every shop except the pet shop. Lose 10% when you faint. |
+| **Lexa** | Magical money (a grey rune stone). Earned from the language activities (archery, fishing, El intruso, music) and bosses. Buys pets; later upgrades and enchantments. In the bag, 10 Lexa can be exchanged for 20 gold. |
 
 **Character level:** uncapped. XP needed for the next level = 80 × level^1.4 (level 1→2: 80, 5→6: ~761, 10→11: ~2,009). XP bar along the bottom of the screen.
 Every XP gain goes to a **skill** and to your **character level**.
@@ -218,7 +219,7 @@ el perro 150 · el gato 150 · el conejo 120 · el loro 250 · la tortuga 140 ·
 
 el pez 6 (food 30) · la naranja 2 (food 10) · la madera 4 · la piel de lobo 15
 
-Shops buy anything at **half price** (found items at the prices above).
+Prices are in **gold**, except pets (in **Lexa**). Shops buy anything back for gold at **half price** (found items at the prices above).
 
 ## Weapons
 

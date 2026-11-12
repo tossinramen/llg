@@ -25,7 +25,6 @@ namespace LLG
             renderer.sortingOrder = sortingOrder;
             fx.blade = child.transform;
             fx.jab = jab;
-            if (jab) child.transform.localScale = Vector3.one * 0.6f;     // a fist is smaller than a sword
             fx.baseAngle = FacingAngles[facing];
             fx.Apply(0);
         }
@@ -34,10 +33,13 @@ namespace LLG
         {
             if (jab)
             {
+                // the fist starts at the edge of the body on the side you face and only moves outwards,
+                // popping in from small, so it never looks like it comes from behind you
                 transform.rotation = Quaternion.Euler(0, 0, baseAngle);
-                // a short jab; facing away (up) the arm only reaches a little past the shoulder
-                float reach = baseAngle == 0 ? 0.08f + 0.22f * Mathf.Sin(u * Mathf.PI) : 0.18f + 0.34f * Mathf.Sin(u * Mathf.PI);
-                blade.localPosition = new Vector3(0, reach, 0);
+                float s = Mathf.Sin(u * Mathf.PI);
+                blade.localPosition = new Vector3(0, 0.3f * s, 0);
+                blade.localRotation = Quaternion.Euler(0, 0, -baseAngle);      // keep the fist upright
+                blade.localScale = Vector3.one * (0.35f + 0.25f * s);
             }
             else
             {

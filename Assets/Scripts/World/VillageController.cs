@@ -507,13 +507,13 @@ namespace LLG
         void Faint()
         {
             var stats = GameState.Data.stats;
-            int lost = stats.coins / 10;
-            stats.AddCoins(-lost);
+            int lost = stats.gold / 10;
+            stats.AddGold(-lost);
             stats.Heal(stats.maxHp / 2);
             player.transform.position = spawnPoint;
             foreach (var m in Mobs) m.Calm();
             UpdateArea(true);
-            dialogue.Show("", "Te desmayaste... Despiertas en la plaza. (-" + lost + " " + GameConfig.CurrencyName + ")",
+            dialogue.Show("", "Te desmayaste... Despiertas en la plaza. (-" + lost + " " + GameConfig.GoldName + ")",
                 "You fainted and woke up in the town square.");
             GameState.Save();
         }
@@ -801,10 +801,13 @@ namespace LLG
             }
 
             // where the hand is for each direction (down, right, up, left)
-            Vector2[] shoulders = { new Vector2(0.28f, 0.72f), new Vector2(0.2f, 0.82f), new Vector2(0.32f, 0.98f), new Vector2(-0.2f, 0.82f) };
-            var hand = feet + (weapon == null ? shoulders[facing] : new Vector2(0, 0.9f));
+            // where the fist appears: just outside the body on the side you face (down, right, up = above
+            // your head, left), always drawn in front of you
+            Vector2[] fistStart = { new Vector2(0.28f, 0.78f), new Vector2(0.55f, 0.85f), new Vector2(0.2f, 1.95f), new Vector2(-0.55f, 0.85f) };
+            var hand = feet + (weapon == null ? fistStart[facing] : new Vector2(0, 0.9f));
             if (weapon == null)
-                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/item_fist"), AppearancePalette.Skin[PlayerProfile.Current.appearance.skin], true, order);
+                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/item_fist"), AppearancePalette.Skin[PlayerProfile.Current.appearance.skin], true,
+                    Mathf.RoundToInt(-player.transform.position.y * 100) + 5);
             else
                 SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/" + weapon.icon), Color.white, false, order);
 
