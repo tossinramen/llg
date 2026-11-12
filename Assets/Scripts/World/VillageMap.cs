@@ -37,11 +37,11 @@ namespace LLG
 
         public void Set(Vector2Int tile, char value) => cells[tile.x, tile.y] = value;
 
-        /// <summary>Grass, path, dock and the archery range floor can be walked on.</summary>
+        /// <summary>Grass, roads, the plaza, the dock and the archery range floor can be walked on.</summary>
         public bool Walkable(Vector2Int tile)
         {
             char c = At(tile);
-            return c == '.' || c == ',' || c == '=' || c == ';';
+            return c == '.' || c == ',' || c == ':' || c == '=' || c == ';';
         }
 
         public List<Vector2Int> Find(char value)

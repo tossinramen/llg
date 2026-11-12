@@ -24,8 +24,8 @@ namespace LLG
         static readonly Dictionary<string, Sprite> Sprites = new Dictionary<string, Sprite>();
 
         static Font Builtin => Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        /// <summary>Chunky 8-pixel font for the title and headings. Use sizes 8, 16, 24, 32.</summary>
-        public static Font TitleFont => titleFont ??= Resources.Load<Font>("Fonts/PressStart2P-Regular") ?? Builtin;
+        /// <summary>Old-world blackletter pixel font for titles. Use sizes 12, 24, 36, 48 (multiples of 12).</summary>
+        public static Font TitleFont => titleFont ??= Resources.Load<Font>("Fonts/Jacquard12-Regular") ?? Builtin;
         /// <summary>Readable 16-pixel font for everything else. Use sizes 16 or 32.</summary>
         public static Font BodyFont => bodyFont ??= Resources.Load<Font>("Fonts/DotGothic16-Regular") ?? Builtin;
 
@@ -173,6 +173,33 @@ namespace LLG
             slider.targetGraphic = handle;
             slider.direction = UnityEngine.UI.Slider.Direction.LeftToRight;
             return slider;
+        }
+
+        /// <summary>A label with Spanish and English versions; it shows Spanish until its window is translated.</summary>
+        public static Text LLabel(string name, Transform parent, Vector2 pos, Vector2 size, string spanish, string english,
+            Color color, TextAnchor anchor = TextAnchor.MiddleCenter, int fontSize = 16, bool title = false, bool englishOnly = false)
+        {
+            var label = Label(name, parent, pos, size, "", color, anchor, fontSize, title);
+            label.gameObject.AddComponent<LocalizedText>().Set(spanish, english, englishOnly);
+            return label;
+        }
+
+        /// <summary>A button whose label switches language with its window.</summary>
+        public static Button LBtn(string name, Transform parent, Vector2 pos, Vector2 size, string spanish, string english, Color color, Action onClick)
+        {
+            var button = Btn(name, parent, pos, size, "", color, onClick);
+            var label = LLabel("Label", button.transform, new Vector2(0, 1), size, spanish, english, Color.white);
+            Outline(label);
+            return button;
+        }
+
+        /// <summary>The globe button that translates everything in "window" to English and back.</summary>
+        public static Button TranslateButton(Transform window, Vector2 pos)
+        {
+            var toggle = window.GetComponent<TranslateToggle>() ?? window.gameObject.AddComponent<TranslateToggle>();
+            var button = Btn("Translate", window, pos, new Vector2(26, 24), "", Blue, toggle.Flip);
+            Img("Globe", button.transform, Vector2.zero, new Vector2(16, 16), Color.white, LoadSprite("Art/UI/translate"));
+            return button;
         }
 
         public static InputField Input(string name, Transform parent, Vector2 pos, Vector2 size, string placeholder)

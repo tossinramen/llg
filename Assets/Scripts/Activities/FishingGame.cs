@@ -33,9 +33,10 @@ namespace LLG
             village = owner;
             window = UIFactory.Panel("Fishing", canvas, new Vector2(0, -8), new Vector2(600, 300)).gameObject;
             var w = window.transform;
-            UIFactory.Label("Title", w, new Vector2(0, 126), new Vector2(560, 20), "LA PESCA", UIFactory.Purple, TextAnchor.MiddleCenter, 16, true);
-            UIFactory.Img("Fish", w, new Vector2(-250, 122), new Vector2(32, 32), Color.white, UIFactory.LoadSprite("Art/Icons/food_fish"));
-            heading = UIFactory.Label("Heading", w, new Vector2(0, 98), new Vector2(560, 22), "", UIFactory.Ink);
+            UIFactory.TranslateButton(w, new Vector2(-270, 126));
+            UIFactory.LLabel("Title", w, new Vector2(0, 126), new Vector2(460, 28), "La pesca", "Fishing", UIFactory.Purple, TextAnchor.MiddleCenter, 24, true);
+            UIFactory.Img("Fish", w, new Vector2(-230, 126), new Vector2(32, 32), Color.white, UIFactory.LoadSprite("Art/Icons/food_fish"));
+            heading = UIFactory.LLabel("Heading", w, new Vector2(0, 98), new Vector2(560, 22), "", "", UIFactory.Ink);
             english = UIFactory.Label("English", w, new Vector2(0, 72), new Vector2(560, 22), "", UIFactory.Teal);
             UIFactory.Box("TimerBack", w, new Vector2(0, 50), new Vector2(404, 12), UIFactory.Faded);
             timerBar = UIFactory.Img("Timer", w, new Vector2(0, 50), new Vector2(400, 8), UIFactory.Green);
@@ -44,9 +45,9 @@ namespace LLG
             poolRow = UIFactory.Rect("Pool", w, new Vector2(0, -34), Vector2.zero);
             result = UIFactory.Label("Result", w, new Vector2(0, -78), new Vector2(560, 40), "", UIFactory.Ink);
 
-            hintButton = UIFactory.Btn("Hint", w, new Vector2(-180, -122), new Vector2(200, 26), "Pista / Hint (2 mana)", UIFactory.Blue, Hint);
-            againButton = UIFactory.Btn("Again", w, new Vector2(10, -122), new Vector2(160, 26), "Otra vez / Again", UIFactory.Green, Cast);
-            UIFactory.Btn("Leave", w, new Vector2(190, -122), new Vector2(160, 26), "Salir / Leave", UIFactory.Red, Close);
+            hintButton = UIFactory.LBtn("Hint", w, new Vector2(-180, -122), new Vector2(200, 26), "Pista (2 maná)", "Hint (2 mana)", UIFactory.Blue, Hint);
+            againButton = UIFactory.LBtn("Again", w, new Vector2(10, -122), new Vector2(160, 26), "Otra vez", "Again", UIFactory.Green, Cast);
+            UIFactory.LBtn("Leave", w, new Vector2(190, -122), new Vector2(160, 26), "Salir", "Leave", UIFactory.Red, Close);
             window.SetActive(false);
         }
 
@@ -69,7 +70,7 @@ namespace LLG
             tokens = sentence.Tokens;
             phase = Phase.Waiting;
             timer = Random.Range(1.2f, 3f);
-            heading.text = "Esperando...  (Waiting for a bite...)";
+            heading.GetComponent<LocalizedText>().Set("Esperando...", "Waiting for a bite...");
             english.text = "";
             result.text = "";
             answer.Clear();
@@ -85,7 +86,7 @@ namespace LLG
             phase = Phase.Building;
             totalTime = 10 + tokens.Length * 3 + (GameState.Has("rod_fine") ? 10 : 0);
             timer = totalTime;
-            heading.text = "¡Un pez! Forma la frase:  (A fish! Build the sentence:)";
+            heading.GetComponent<LocalizedText>().Set("¡Un pez! Forma la frase:", "A fish! Build this sentence in Spanish:");
             english.text = "\"" + sentence.english + "\"";
             hintButton.gameObject.SetActive(true);
 
@@ -153,15 +154,16 @@ namespace LLG
             {
                 int reward = 6 + tokens.Length * 2;
                 GameState.Data.fishCaught++;
+                GameState.AddItem("fish");
                 GameState.AddCurrency(reward);
                 GameState.AddXp(SkillType.Fishing, 10);
                 GameState.AddXp(SkillType.Grammar, 10);
-                End("¡Lo atrapaste!  (You caught it!)\n" + sentence.text);
+                End("¡Lo atrapaste! El pez va a tu mochila.\n" + sentence.text);
             }
             else
             {
                 GameState.Data.stats.Damage(1);
-                result.text = "Casi...  (Not quite - try again.)  -1 HP";
+                result.text = "Casi... ¡Inténtalo otra vez!  -1 HP";
                 answer.Clear();
                 Redraw();
             }
@@ -196,7 +198,7 @@ namespace LLG
         {
             phase = Phase.Result;
             result.text = message;
-            heading.text = "";
+            heading.GetComponent<LocalizedText>().Set("", "");
             Clear(poolRow);
             hintButton.gameObject.SetActive(false);
             againButton.gameObject.SetActive(true);
@@ -227,7 +229,7 @@ namespace LLG
                 if (timer <= 0)
                 {
                     GameState.Data.stats.Damage(1);
-                    End("¡Se escapó!  (It got away!)  -1 HP\n" + sentence.text);
+                    End("¡Se escapó!  -1 HP\n" + sentence.text);
                 }
             }
         }

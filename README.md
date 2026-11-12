@@ -14,8 +14,11 @@ A single-player, 16-bit style RPG for learning languages. Spanish first; Japanes
 
 - A Unity 2022.3 project with organised folders
 - Start screen: character creator, turnable character, language picker
-- A village you can walk around: bakery, candy shop, store, pond, archery range, your house,
-  a rune stone and five villagers to talk to
+- The Spanish village of Valdeluz: a cobbled plaza with a rune fountain, a church, a bakery,
+  candy shop, general store, weapon shop (Armería), pet shop (Mascotas), your house, a pond and an
+  archery range, with five villagers to talk to. Buildings and trees are separate sprites, so you
+  walk behind them, and only their base is solid
+- Minimap, profile/character sheet with equipment slots and skills, a slotted bag, pets that follow you
 - Lexa (the magical currency), shops, a backpack, HP / mana / hunger / intelligence
 - Two activities: fishing (build the sentence) and archery (shoot the correct word)
 - Pixel art for all of the above, drawn by the scripts in `Tools/art/`
@@ -34,7 +37,9 @@ All keys can be changed in **Esc → Opciones (Options)**.
 | E (or Enter) | Talk, open a shop, fish, use what you are facing |
 | Left click | Read: shows the Spanish name of whatever you click. Click the sign to close it |
 | Right click | Attack with your equipped weapon, or punch. The bow fires arrows. On a door: open it |
-| B | Backpack (equip weapons here) |
+| B | Bag: 20 slots. Click to eat, read, wear or call your pet |
+| U | Profile: equipment slots (head, neck, back, chest, legs, wrists, both hands), stats and skills |
+| Globe button | On any window, sign or dialogue: show the English translation |
 | Esc | Game menu: Resume, Options (keys + music volume), Exit Game (saves, back to title) |
 | 1–4 | Shoot a target in archery (or click it) |
 | Start screen: hold left click on the character | Drag sideways to turn them |
@@ -44,8 +49,8 @@ when you close the game, and automatically every 30 seconds.
 
 ## Credits
 
-Fonts: "Press Start 2P" (CodeMan38) and "DotGothic16" (Fontworks), both under the SIL Open Font
-License. Keep this credit if you release the game.
+Fonts: "Jacquard 12" (Sarah Cadigan-Fried) and "DotGothic16" (Fontworks), both under the SIL Open
+Font License. Keep this credit if you release the game.
 
 Music: "lofi_village" is original, composed by `Tools/audio/generate_music.py` for this project,
 so there are no licence restrictions. Replace `Assets/Resources/Audio/lofi_village.wav` with any

@@ -19,17 +19,19 @@ namespace LLG
             options = optionsWindow;
             window = UIFactory.Panel("GameMenu", canvas, new Vector2(0, 0), new Vector2(300, 220)).gameObject;
             var w = window.transform;
-            UIFactory.Label("Title", w, new Vector2(0, 76), new Vector2(260, 20), "MENÚ", UIFactory.Purple, TextAnchor.MiddleCenter, 16, true);
-            UIFactory.Btn("Resume", w, new Vector2(0, 34), new Vector2(240, 28), "Continuar (Resume)", UIFactory.Green, Close);
-            UIFactory.Btn("Options", w, new Vector2(0, -2), new Vector2(240, 28), "Opciones (Options)", UIFactory.Blue, ShowOptions);
-            UIFactory.Btn("Exit", w, new Vector2(0, -38), new Vector2(240, 28), "Salir del juego (Exit Game)", UIFactory.Red, () => village.ExitToTitle());
-            UIFactory.Label("Saved", w, new Vector2(0, -74), new Vector2(260, 20), "Tu progreso se guarda al salir.", UIFactory.Faded);
+            UIFactory.TranslateButton(w, new Vector2(-118, 78));
+            UIFactory.LLabel("Title", w, new Vector2(0, 78), new Vector2(200, 28), "Menú", "Menu", UIFactory.Purple, TextAnchor.MiddleCenter, 24, true);
+            UIFactory.LBtn("Resume", w, new Vector2(0, 34), new Vector2(240, 28), "Continuar", "Resume", UIFactory.Green, Close);
+            UIFactory.LBtn("Options", w, new Vector2(0, -2), new Vector2(240, 28), "Opciones", "Options", UIFactory.Blue, ShowOptions);
+            UIFactory.LBtn("Exit", w, new Vector2(0, -38), new Vector2(240, 28), "Salir del juego", "Exit game", UIFactory.Red, () => village.ExitToTitle());
+            UIFactory.LLabel("Saved", w, new Vector2(0, -74), new Vector2(260, 20), "Tu progreso se guarda al salir.", "Your progress is saved when you exit.", UIFactory.Faded);
             window.SetActive(false);
         }
 
         public void Show()
         {
             openedFrame = Time.frameCount;
+            window.GetComponent<TranslateToggle>().Set(false);
             window.SetActive(true);
             window.transform.SetAsLastSibling();
             Time.timeScale = 0;          // pause hunger, timers and animations

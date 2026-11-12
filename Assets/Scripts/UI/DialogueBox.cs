@@ -18,11 +18,16 @@ namespace LLG
         }
     }
 
-    /// <summary>The talking box at the bottom of the screen. E / Space / click moves to the next line.</summary>
+    /// <summary>
+    /// The talking box at the bottom of the screen. Lines are shown in Spanish; the globe button
+    /// shows the English underneath. The use key, Space, Enter or a click moves to the next line.
+    /// </summary>
     public class DialogueBox : MonoBehaviour
     {
         GameObject box;
-        Text speaker, text, english, nextHint;
+        Text speaker, text, nextHint;
+        LocalizedText english;
+        TranslateToggle translate;
         List<Line> lines;
         int index, openedFrame;
         Action onDone;
@@ -33,13 +38,16 @@ namespace LLG
         public void Build(Transform canvas, VillageController owner)
         {
             village = owner;
-            var panel = UIFactory.Panel("Dialogue", canvas, new Vector2(0, -112), new Vector2(600, 112));
-            box = panel.gameObject;
-            speaker = UIFactory.Label("Speaker", box.transform, new Vector2(0, 36), new Vector2(560, 20), "", UIFactory.Purple, TextAnchor.MiddleLeft);
-            text = UIFactory.Label("Text", box.transform, new Vector2(0, 8), new Vector2(560, 40), "", UIFactory.Ink, TextAnchor.UpperLeft);
-            english = UIFactory.Label("English", box.transform, new Vector2(0, -28), new Vector2(560, 22), "", UIFactory.Faded, TextAnchor.MiddleLeft);
+            box = UIFactory.Panel("Dialogue", canvas, new Vector2(0, -112), new Vector2(600, 112)).gameObject;
+            var b = box.transform;
+            UIFactory.TranslateButton(b, new Vector2(-270, 34));
+            translate = box.GetComponent<TranslateToggle>();
+            speaker = UIFactory.Label("Speaker", b, new Vector2(20, 34), new Vector2(520, 20), "", UIFactory.Purple, TextAnchor.MiddleLeft);
+            text = UIFactory.Label("Text", b, new Vector2(0, 6), new Vector2(560, 40), "", UIFactory.Ink, TextAnchor.UpperLeft);
             text.horizontalOverflow = HorizontalWrapMode.Wrap;
-            nextHint = UIFactory.Label("Next", box.transform, new Vector2(256, -40), new Vector2(60, 20), "", UIFactory.Teal, TextAnchor.MiddleRight);
+            english = UIFactory.LLabel("English", b, new Vector2(0, -28), new Vector2(560, 22), "", "", UIFactory.Faded,
+                TextAnchor.MiddleLeft, 16, false, true).GetComponent<LocalizedText>();
+            nextHint = UIFactory.Label("Next", b, new Vector2(240, -40), new Vector2(80, 20), "", UIFactory.Teal, TextAnchor.MiddleRight);
             box.SetActive(false);
         }
 
@@ -50,6 +58,7 @@ namespace LLG
             index = 0;
             openedFrame = Time.frameCount;
             box.SetActive(true);
+            translate.Set(false);
             Refresh();
         }
 
@@ -63,16 +72,29 @@ namespace LLG
             nextHint.text = "[" + Keybinds.KeyName(GameAction.Use) + "]";
             speaker.text = lines[index].Speaker;
             text.text = lines[index].Text;
-            english.text = lines[index].English;
+            english.Set("", lines[index].English, true);
         }
 
         void Update()
         {
             if (!Open || Time.frameCount == openedFrame) return;
-            if (!Keybinds.Down(GameAction.Use) && !Input.GetKeyDown(KeyCode.Space) && !Input.GetKeyDown(KeyCode.Return)
-                && !Input.GetMouseButtonDown(0)) return;
-
+            bool click = Input.GetMouseButtonDown(0) && !OverTranslateButton();
+            if (!Keybinds.Down(GameAction.Use) && !Input.GetKeyDown(KeyCode.Space) && !Input.GetKeyDown(KeyCode.Return) && !click) return;
             Advance();
+        }
+
+        /// <summary>Clicking the globe should translate, not skip to the next line.</summary>
+        bool OverTranslateButton()
+        {
+            var es = UnityEngine.EventSystems.EventSystem.current;
+            if (es == null) return false;
+            var data = new UnityEngine.EventSystems.PointerEventData(es) { position = Input.mousePosition };
+            var hits = new List<UnityEngine.EventSystems.RaycastResult>();
+            es.RaycastAll(data, hits);
+            foreach (var h in hits)
+                if (h.gameObject.GetComponentInParent<Button>() != null && h.gameObject.transform.IsChildOf(box.transform)
+                    && h.gameObject.GetComponentInParent<Button>().name == "Translate") return true;
+            return false;
         }
 
         /// <summary>Moves to the next line, or closes the box after the last one.</summary>

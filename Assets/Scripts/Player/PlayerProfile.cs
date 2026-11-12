@@ -19,7 +19,7 @@ namespace LLG
     /// <summary>The colours and styles the character creator offers. Add entries to offer more.</summary>
     public static class AppearancePalette
     {
-        public static readonly string[] HairStyles = { "Short", "Long", "Spiky", "Pigtails", "Buzz" };
+        public static readonly string[] HairStyles = { "Short", "Long", "Spiky", "Pigtails", "Buzz", "Bun" };
 
         public static readonly Color32[] Skin =
         {

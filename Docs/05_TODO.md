@@ -23,6 +23,11 @@ Work top to bottom. `[x]` = done, `[ ]` = not started.
 - [x] Esc menu (Resume / Options / Exit Game), rebindable keys, music volume + mute
 - [x] Original lofi background music, MMO-style cursor
 - [x] Jump (Space), crouch (Shift), run (Ctrl); progress and position saved on exit + every 30 s
+- [x] Village redrawn as a Spanish town (Valdeluz) with fake depth: side walls, cast shadows, walk-behind objects
+- [x] Shaded characters (24x32) with outfits for villagers; hat and cloak you wear show on you
+- [x] Translate (globe) buttons instead of English on every card
+- [x] Profile (U) with 8 equipment slots + skills; 20-slot bag (B); weapon shop; pet shop with 4 pets that follow you
+- [x] Minimap with shop icons, Esc and controls-page buttons above it
 
 ## Next up – make the village feel alive
 - [ ] **You:** play it and tell me what feels wrong (speed, prices, difficulty, layout)

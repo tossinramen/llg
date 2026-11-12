@@ -84,12 +84,12 @@ namespace LLG
                 sparkles.Add(UIFactory.Img("Sparkle", root, pos, size, tints[i % tints.Length], sprite));
             }
 
-            var title = UIFactory.Label("Title", root, new Vector2(0, 146), new Vector2(620, 40), GameConfig.Title,
-                UIFactory.Gold, TextAnchor.MiddleCenter, 32, true);
+            var title = UIFactory.Label("Title", root, new Vector2(0, 146), new Vector2(620, 56), GameConfig.Title,
+                UIFactory.Gold, TextAnchor.MiddleCenter, 48, true);
             UIFactory.Outline(title, 2);
             var shadow = title.gameObject.AddComponent<Shadow>();
             shadow.effectColor = new Color32(150, 60, 140, 255);
-            shadow.effectDistance = new Vector2(0, -5);
+            shadow.effectDistance = new Vector2(0, -3);
 
             tagline = UIFactory.Label("Tagline", root, new Vector2(0, 114), new Vector2(620, 20), taglines[0], Color.white);
             UIFactory.Outline(tagline);
@@ -100,9 +100,9 @@ namespace LLG
             UIFactory.Panel("CharacterPanel", root, new Vector2(-205, -12), new Vector2(196, 226));
             UIFactory.Box("Stage", root, new Vector2(-205, 18), new Vector2(150, 150), new Color32(170, 226, 250, 255));
 
-            var holder = UIFactory.Rect("CharacterPreview", root, new Vector2(-205, 18), new Vector2(96, 144));
+            var holder = UIFactory.Rect("CharacterPreview", root, new Vector2(-205, 18), new Vector2(108, 144));
             preview = holder.gameObject.AddComponent<CharacterPreview>();
-            preview.Build(new Vector2(96, 144));
+            preview.Build(new Vector2(108, 144));
 
             // hold the left mouse button on the character and drag sideways to turn them
             var stage = UIFactory.Rect("DragArea", root, new Vector2(-205, 18), new Vector2(150, 150));

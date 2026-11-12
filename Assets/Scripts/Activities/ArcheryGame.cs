@@ -34,8 +34,9 @@ namespace LLG
             village = owner;
             window = UIFactory.Panel("Archery", canvas, new Vector2(0, -8), new Vector2(600, 316)).gameObject;
             var w = window.transform;
-            UIFactory.Label("Title", w, new Vector2(0, 134), new Vector2(560, 20), "TIRO CON ARCO", UIFactory.Purple, TextAnchor.MiddleCenter, 16, true);
-            prompt = UIFactory.Label("Prompt", w, new Vector2(0, 106), new Vector2(560, 22), "", UIFactory.Ink);
+            UIFactory.TranslateButton(w, new Vector2(-270, 134));
+            UIFactory.LLabel("Title", w, new Vector2(0, 134), new Vector2(460, 28), "Tiro con arco", "Archery", UIFactory.Purple, TextAnchor.MiddleCenter, 24, true);
+            prompt = UIFactory.LLabel("Prompt", w, new Vector2(0, 106), new Vector2(560, 22), "", "", UIFactory.Ink);
             promptIcon = UIFactory.Img("PromptIcon", w, new Vector2(-250, 112), new Vector2(32, 32), Color.white);
             UIFactory.Box("TimerBack", w, new Vector2(0, 84), new Vector2(404, 12), UIFactory.Faded);
             timerBar = UIFactory.Img("Timer", w, new Vector2(0, 84), new Vector2(400, 8), UIFactory.Green);
@@ -57,8 +58,8 @@ namespace LLG
 
             summary = UIFactory.Label("Summary", w, new Vector2(0, 10), new Vector2(540, 120), "", UIFactory.Ink);
             info = UIFactory.Label("Info", w, new Vector2(0, -98), new Vector2(560, 20), "", UIFactory.Ink);
-            hintButton = UIFactory.Btn("Hint", w, new Vector2(-110, -130), new Vector2(200, 26), "Pista / Hint (2 mana)", UIFactory.Blue, Hint);
-            UIFactory.Btn("Leave", w, new Vector2(120, -130), new Vector2(160, 26), "Salir / Leave", UIFactory.Red, Close);
+            hintButton = UIFactory.Btn("Hint", w, new Vector2(-110, -130), new Vector2(200, 26), "Pista (2 maná)", UIFactory.Blue, Hint);
+            UIFactory.Btn("Leave", w, new Vector2(120, -130), new Vector2(160, 26), "Salir", UIFactory.Red, Close);
             window.SetActive(false);
         }
 
@@ -101,7 +102,7 @@ namespace LLG
                 targets[i].gameObject.SetActive(true);
             }
             answer = choices[Random.Range(0, 4)];
-            prompt.text = "Dispara a:  \"" + answer.english + "\"   (Shoot the word for this)";
+            prompt.GetComponent<LocalizedText>().Set("Dispara a:  \"" + answer.english + "\"", "Shoot the Spanish word for:  \"" + answer.english + "\"");
             var icon = string.IsNullOrEmpty(answer.icon) ? null : UIFactory.LoadSprite("Art/Icons/" + answer.icon);
             promptIcon.sprite = icon;
             promptIcon.enabled = icon != null;
@@ -111,7 +112,7 @@ namespace LLG
 
         void RefreshInfo()
         {
-            info.text = "Ronda " + round + "/" + Rounds + "     Aciertos (hits): " + hits + "     Flechas (arrows): " + arrows;
+            info.text = "Ronda " + round + "/" + Rounds + "     Aciertos: " + hits + "     Flechas: " + arrows;
         }
 
         void Shoot(int index)
@@ -151,9 +152,9 @@ namespace LLG
             range.SetActive(false);
             hintButton.gameObject.SetActive(false);
             promptIcon.enabled = false;
-            prompt.text = "";
+            prompt.GetComponent<LocalizedText>().Set("", "");
             int reward = hits * 4;
-            summary.text = (hits >= Rounds / 2 ? "¡Buen trabajo!  (Good job!)" : "¡Sigue practicando!  (Keep practising!)")
+            summary.text = (hits >= Rounds / 2 ? "¡Buen trabajo!" : "¡Sigue practicando!")
                 + "\n\nAciertos: " + hits + " / " + Rounds
                 + "\n+" + reward + " " + GameConfig.CurrencyName;
             info.text = "";

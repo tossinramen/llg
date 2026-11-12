@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace LLG
 {
-    public enum GameAction { Up, Down, Left, Right, Use, Backpack, Jump, Crouch, Run }
+    public enum GameAction { Up, Down, Left, Right, Use, Backpack, Profile, Jump, Crouch, Run }
 
     /// <summary>
     /// Which key does what. Players can change these in Options; they are remembered between sessions.
@@ -15,15 +15,18 @@ namespace LLG
 
         static readonly KeyCode[] Defaults =
         {
-            KeyCode.W, KeyCode.S, KeyCode.A, KeyCode.D, KeyCode.E, KeyCode.B,
+            KeyCode.W, KeyCode.S, KeyCode.A, KeyCode.D, KeyCode.E, KeyCode.B, KeyCode.U,
             KeyCode.Space, KeyCode.LeftShift, KeyCode.LeftControl,
         };
 
-        /// <summary>Spanish name first (for learning), English in brackets.</summary>
         static readonly string[] Names =
         {
-            "Arriba (Up)", "Abajo (Down)", "Izquierda (Left)", "Derecha (Right)", "Usar (Use)",
-            "Mochila (Backpack)", "Saltar (Jump)", "Agacharse (Crouch)", "Correr (Run)",
+            "Arriba", "Abajo", "Izquierda", "Derecha", "Usar", "Mochila", "Perfil", "Saltar", "Agacharse", "Correr",
+        };
+
+        static readonly string[] EnglishNames =
+        {
+            "Up", "Down", "Left", "Right", "Use", "Backpack", "Profile", "Jump", "Crouch", "Run",
         };
 
         static KeyCode[] keys;
@@ -45,7 +48,10 @@ namespace LLG
 
         public static KeyCode Get(GameAction action) => Keys[(int)action];
 
+        /// <summary>The action's name in Spanish.</summary>
         public static string Name(GameAction action) => Names[(int)action];
+
+        public static string EnglishName(GameAction action) => EnglishNames[(int)action];
 
         /// <summary>Changes a key. If another action already used it, the two swap.</summary>
         public static void Set(GameAction action, KeyCode key)

@@ -524,7 +524,7 @@ def make_gender_icons():
 
 
 if __name__ == "__main__":
-    make_character()
+    # characters are drawn by generate_characters.py, the village by generate_village.py
     make_background()
     make_cloud()
     make_icons()

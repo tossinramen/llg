@@ -5,28 +5,42 @@ using UnityEngine;
 
 namespace LLG
 {
+    [Serializable]
+    public class BagSlot
+    {
+        public string id = "";
+        public int count;
+        public bool Empty => string.IsNullOrEmpty(id) || count <= 0;
+    }
+
     /// <summary>Everything about the current playthrough that gets saved.</summary>
     [Serializable]
     public class SaveData
     {
         public PlayerStats stats = new PlayerStats();
         public SkillSet skills = new SkillSet();
-        public List<string> items = new List<string>();    // ids of owned rods, weapons...
+        public List<BagSlot> bag = new List<BagSlot>();
+        public List<string> equipped = new List<string>();     // one item id per EquipSlot ("" = empty)
+        public string pet = "";                                 // the pet following you
         public int fishCaught;
-        public string equipped = "";                       // weapon used on right click ("" = fists)
-        public bool hasPosition;                           // where the player was when they last saved
+        public bool hasPosition;                                // where the player was when they last saved
         public float posX, posY;
         public int facing;
+        public List<string> items = new List<string>();         // old saves only (moved into the bag on load)
     }
 
-    /// <summary>The running game: the save data, the loaded language, and helper actions.</summary>
+    /// <summary>The running game: the save data, the loaded language, inventory and helper actions.</summary>
     public static class GameState
     {
+        public const int BagSize = 20, StackSize = 20;
+
         public static SaveData Data { get; private set; }
         public static LanguagePack Pack { get; private set; }
 
         /// <summary>Short pop-up messages ("+10 Fishing XP"). The HUD listens to this.</summary>
         public static event Action<string> Toast;
+        /// <summary>Fires when the bag or equipment changes, so windows and the character can refresh.</summary>
+        public static event Action InventoryChanged;
 
         static string SavePath => Path.Combine(Application.persistentDataPath, "save.json");
 
@@ -47,10 +61,25 @@ namespace LLG
                 data.stats.coins = GameConfig.StartingCurrency;
             }
             Data = data;
-            Data.skills.LeveledUp += (skill, level) => Say("Level up! " + skill + " Lv " + level);
+            Normalise();
+            Data.skills.LeveledUp += (skill, level) => Say("¡Nivel " + level + "! " + skill);
 
             var profile = PlayerProfile.Current ?? PlayerProfile.Load();
             Pack = LanguageDatabase.Load(profile.languageCode);
+        }
+
+        /// <summary>Makes sure the bag and equipment lists have the right size, and upgrades old saves.</summary>
+        static void Normalise()
+        {
+            while (Data.bag.Count < BagSize) Data.bag.Add(new BagSlot());
+            int slots = Enum.GetValues(typeof(EquipSlot)).Length;
+            while (Data.equipped.Count < slots) Data.equipped.Add("");
+            if (Data.items != null && Data.items.Count > 0)
+            {
+                foreach (var id in Data.items) AddItem(id, 1, false);
+                Data.items.Clear();
+            }
+            RecalculateStats();
         }
 
         public static void Save()
@@ -62,13 +91,159 @@ namespace LLG
 
         public static void Say(string message) => Toast?.Invoke(message);
 
-        public static bool Has(string itemId) => Data.items.Contains(itemId);
+        static void Changed()
+        {
+            RecalculateStats();
+            InventoryChanged?.Invoke();
+        }
+
+        // ------------------------------------------------------------ bag
+
+        public static int Count(string id)
+        {
+            int n = 0;
+            foreach (var s in Data.bag) if (s.id == id) n += s.count;
+            return n;
+        }
+
+        /// <summary>True if the item is in the bag or being worn.</summary>
+        public static bool Has(string id) => Count(id) > 0 || Data.equipped.Contains(id);
+
+        /// <summary>Puts an item in the bag. Returns false if the bag is full.</summary>
+        public static bool AddItem(string id, int count = 1, bool notify = true)
+        {
+            var item = ItemDatabase.Get(id);
+            if (item == null) return false;
+            for (int n = 0; n < count; n++)
+            {
+                BagSlot target = null;
+                if (item.Stacks)
+                    foreach (var s in Data.bag)
+                        if (s.id == id && s.count < StackSize) { target = s; break; }
+                if (target == null)
+                    foreach (var s in Data.bag)
+                        if (s.Empty) { target = s; s.id = id; s.count = 0; break; }
+                if (target == null)
+                {
+                    if (notify) Say("¡La mochila está llena! (Your bag is full!)");
+                    if (notify) Changed();
+                    return false;
+                }
+                target.count++;
+            }
+            if (notify) Changed();
+            return true;
+        }
+
+        public static void RemoveAt(int index, int count = 1)
+        {
+            var s = Data.bag[index];
+            s.count -= count;
+            if (s.count <= 0) { s.id = ""; s.count = 0; }
+            Changed();
+        }
+
+        /// <summary>What happens when you click an item in the bag: eat, read, wear or call a pet.</summary>
+        public static void UseBagSlot(int index)
+        {
+            var s = Data.bag[index];
+            if (s.Empty) return;
+            var item = ItemDatabase.Get(s.id);
+            var stats = Data.stats;
+            switch (item.kind)
+            {
+                case ItemKind.Food:
+                    stats.Eat(item.power);
+                    Say("¡Qué rico! " + Capital(item.spanish) + "  +" + item.power);
+                    RemoveAt(index);
+                    break;
+                case ItemKind.Book:
+                    stats.intelligence++;
+                    stats.maxMana++;
+                    stats.RestoreMana(1);
+                    Say("Lees " + item.spanish + ". ¡Inteligencia +1!");
+                    RemoveAt(index);
+                    break;
+                case ItemKind.Weapon:
+                case ItemKind.Gear:
+                    Equip(index);
+                    break;
+                case ItemKind.Pet:
+                    Data.pet = Data.pet == item.id ? "" : item.id;
+                    Say(Data.pet == "" ? "Tu mascota descansa." : "¡" + Capital(item.spanish) + " te sigue!");
+                    Changed();
+                    break;
+                case ItemKind.Rod:
+                    Say("Usa la caña en el estanque. (Use it at the pond.)");
+                    break;
+            }
+        }
+
+        // ------------------------------------------------------------ equipment
+
+        public static ItemDef Equipped(EquipSlot slot) => ItemDatabase.Get(Data.equipped[(int)slot]);
+
+        /// <summary>Wears the item from this bag slot; whatever was in that equipment slot goes back in the bag.</summary>
+        public static void Equip(int bagIndex)
+        {
+            var s = Data.bag[bagIndex];
+            var item = ItemDatabase.Get(s.id);
+            if (item == null || item.slot == EquipSlot.None) return;
+            string old = Data.equipped[(int)item.slot];
+            Data.equipped[(int)item.slot] = item.id;
+            s.id = old;
+            s.count = string.IsNullOrEmpty(old) ? 0 : 1;
+            Say("Llevas " + item.spanish + ".");
+            Changed();
+        }
+
+        public static void Unequip(EquipSlot slot)
+        {
+            string id = Data.equipped[(int)slot];
+            if (string.IsNullOrEmpty(id)) return;
+            foreach (var s in Data.bag)
+            {
+                if (!s.Empty) continue;
+                s.id = id;
+                s.count = 1;
+                Data.equipped[(int)slot] = "";
+                Changed();
+                return;
+            }
+            Say("¡La mochila está llena! (Your bag is full!)");
+        }
+
+        public static ItemDef EquippedWeapon()
+        {
+            var item = Equipped(EquipSlot.Primary);
+            return item != null && item.kind == ItemKind.Weapon ? item : null;
+        }
+
+        public static int Attack() => EquippedWeapon()?.power ?? 0;
+
+        public static int Defense()
+        {
+            int total = 0;
+            foreach (var id in Data.equipped) total += ItemDatabase.Get(id)?.defense ?? 0;
+            return total;
+        }
+
+        static void RecalculateStats()
+        {
+            int bonus = 0;
+            foreach (var id in Data.equipped) bonus += ItemDatabase.Get(id)?.mana ?? 0;
+            var stats = Data.stats;
+            stats.maxMana = 10 + stats.intelligence + bonus;
+            stats.RestoreMana(0);
+        }
+
+        // ------------------------------------------------------------ rewards
 
         /// <summary>Gives skill XP. Each point of intelligence adds 5% bonus XP.</summary>
         public static void AddXp(SkillType skill, int amount)
         {
             amount = Mathf.RoundToInt(amount * (1f + 0.05f * Data.stats.intelligence));
-            Say("+" + amount + " " + skill + " XP");
+            Say("+" + amount + " XP " + skill);
             Data.skills.AddXp(skill, amount);
         }
 
@@ -78,26 +253,6 @@ namespace LLG
             if (amount > 0) Say("+" + amount + " " + GameConfig.CurrencyName);
         }
 
-        /// <summary>The weapon used on right click: the equipped one, or null for fists.</summary>
-        public static ItemDef EquippedWeapon()
-        {
-            var item = string.IsNullOrEmpty(Data.equipped) || !Has(Data.equipped) ? null : ItemDatabase.Get(Data.equipped);
-            return item != null && item.kind == ItemKind.Weapon ? item : null;
-        }
-
-        /// <summary>The strongest weapon owned, or null.</summary>
-        public static ItemDef BestWeapon()
-        {
-            ItemDef best = null;
-            foreach (var id in Data.items)
-            {
-                var item = ItemDatabase.Get(id);
-                if (item != null && item.kind == ItemKind.Weapon && (best == null || item.power > best.power)) best = item;
-            }
-            return best;
-        }
-
-        /// <summary>Attack power of the best weapon owned (for combat later).</summary>
-        public static int Attack() => EquippedWeapon()?.power ?? 0;
+        public static string Capital(string s) => string.IsNullOrEmpty(s) ? s : char.ToUpper(s[0]) + s.Substring(1);
     }
 }

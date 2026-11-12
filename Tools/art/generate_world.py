@@ -595,7 +595,7 @@ def make_ui():
 
 
 if __name__ == "__main__":
-    make_village()
+    # the village itself is drawn by generate_village.py
     make_items()
     make_ui()
     print("World art written to", ART)

@@ -56,7 +56,7 @@ namespace LLG
     /// <summary>An arrow fired from the bow. It flies until it hits something solid.</summary>
     public class ArrowShot : MonoBehaviour
     {
-        const float Speed = 12f, Range = 7f, Height = 0.6f;
+        const float Speed = 12f, Range = 7f, Height = 0.85f;
         static readonly float[] FacingAngles = { -90f, 0f, 90f, 180f };   // the arrow picture points right
 
         VillageController village;

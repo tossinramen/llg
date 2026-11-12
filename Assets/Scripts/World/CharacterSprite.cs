@@ -1,24 +1,24 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace LLG
 {
     /// <summary>
-    /// A character in the world, drawn from the same tinted layers as the character creator.
+    /// A character in the world, built from tinted sprite layers (see CharacterLayers).
     /// Used for the player and for villagers. The object's position is where the feet are.
     /// Handles the walk cycle, jumping (a hop with a shrinking shadow) and crouching (squashed down).
     /// </summary>
     public class CharacterSprite : MonoBehaviour
     {
-        static readonly string[] Directions = { "down", "right", "up", "right" };   // 3 = left (mirrored)
-        static readonly string[] LayerNames = { "outline", "pants", "shirt", "skin", "detail", "hair" };
         static readonly string[] WalkCycle = { "_w1", "", "_w2", "" };
-        const float JumpTime = 0.45f, JumpHeight = 0.55f, BodyHalfHeight = 0.75f;
+        const float JumpTime = 0.45f, JumpHeight = 0.55f, FeetOffset = 0.94f;
 
-        readonly SpriteRenderer[] layers = new SpriteRenderer[6];
+        readonly List<SpriteRenderer> layers = new List<SpriteRenderer>();
         Transform body, shadow;
         SortingGroup group;
         CharacterAppearance look;
+        List<Accessory> accessories;
         float walkTime, jumpTimer = -1;
         string shown;
 
@@ -28,32 +28,31 @@ namespace LLG
         public bool Crouching { get; set; }
         public bool Jumping => jumpTimer >= 0;
 
-        public void Build(CharacterAppearance appearance)
+        public void Build(CharacterAppearance appearance, List<Accessory> worn = null)
         {
             look = appearance;
+            accessories = worn;
             group = gameObject.AddComponent<SortingGroup>();
 
             var shadowRenderer = new GameObject("Shadow").AddComponent<SpriteRenderer>();
             shadow = shadowRenderer.transform;
             shadow.SetParent(transform, false);
-            shadow.localPosition = new Vector3(0, -0.2f, 0);
+            shadow.localPosition = new Vector3(0, -0.05f, 0);
+            shadow.localScale = new Vector3(1.3f, 1.1f, 1);
             shadowRenderer.sprite = UIFactory.LoadSprite("Art/UI/shadow");
-            shadowRenderer.sortingOrder = -1;
+            shadowRenderer.sortingOrder = -10;
 
             body = new GameObject("Body").transform;
             body.SetParent(transform, false);
-            body.localPosition = new Vector3(0, 0.5f, 0);
-            for (int i = 0; i < layers.Length; i++)
-            {
-                var go = new GameObject(LayerNames[i]);
-                go.transform.SetParent(body, false);
-                layers[i] = go.AddComponent<SpriteRenderer>();
-                layers[i].sortingOrder = i;
-            }
-            layers[1].color = AppearancePalette.Pants[look.pants];
-            layers[2].color = AppearancePalette.Shirt[look.shirt];
-            layers[3].color = AppearancePalette.Skin[look.skin];
-            layers[5].color = AppearancePalette.Hair[look.hairColor];
+            body.localPosition = new Vector3(0, FeetOffset, 0);
+            Refresh();
+        }
+
+        /// <summary>Changes what the character is wearing (e.g. after equipping a hat).</summary>
+        public void SetAccessories(List<Accessory> worn)
+        {
+            accessories = worn;
+            shown = null;
             Refresh();
         }
 
@@ -82,8 +81,8 @@ namespace LLG
             float squash = Crouching ? 0.8f : 1f;
             float widen = Crouching ? 1.08f : 1f;
             body.localScale = new Vector3((Facing == 3 ? -1 : 1) * widen, squash, 1);
-            body.localPosition = new Vector3(0, 0.5f - (1 - squash) * BodyHalfHeight + height, 0);
-            shadow.localScale = Vector3.one * (1 - height * 0.7f);
+            body.localPosition = new Vector3(0, FeetOffset - (1 - squash) * FeetOffset + height, 0);
+            shadow.localScale = new Vector3(1.3f, 1.1f, 1) * (1 - height * 0.7f);
 
             group.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);   // lower on screen = drawn in front
             Refresh();
@@ -91,23 +90,27 @@ namespace LLG
 
         void Refresh()
         {
-            string dir = Directions[Facing];
             string frame = Walking && !Jumping ? WalkCycle[(int)(walkTime * 8) % WalkCycle.Length] : "";
-            string key = dir + frame + Facing;
+            string key = frame + Facing;
             if (key == shown) return;
             shown = key;
 
-            Set(0, "outline_" + dir + frame);
-            Set(1, "pants_" + dir + frame);
-            Set(2, "shirt_" + dir);
-            Set(3, "skin_" + dir + frame);
-            Set(4, "detail_" + dir + frame);
-            Set(5, "hair" + look.hairStyle + "_" + dir);
-        }
-
-        void Set(int layer, string spriteName)
-        {
-            layers[layer].sprite = UIFactory.LoadSprite("Art/Character/" + spriteName);
+            var wanted = CharacterLayers.Compose(look, accessories, Facing, frame);
+            while (layers.Count < wanted.Count)
+            {
+                var go = new GameObject("Layer");
+                go.transform.SetParent(body, false);
+                layers.Add(go.AddComponent<SpriteRenderer>());
+            }
+            for (int i = 0; i < layers.Count; i++)
+            {
+                bool used = i < wanted.Count;
+                layers[i].enabled = used;
+                if (!used) continue;
+                layers[i].sprite = UIFactory.LoadSprite("Art/Character/" + wanted[i].sprite);
+                layers[i].color = wanted[i].color;
+                layers[i].sortingOrder = wanted[i].order;
+            }
         }
     }
 }

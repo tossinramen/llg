@@ -1,33 +1,25 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace LLG
 {
     /// <summary>
-    /// Draws the player character from stacked, tinted sprite layers and lets it turn to face
-    /// four directions. Left is the right-facing art mirrored.
+    /// Draws a character in a UI window (start screen, profile) from the same layers as the world
+    /// sprite, and lets it turn to face four directions. Left is the right-facing art mirrored.
     /// </summary>
     public class CharacterPreview : MonoBehaviour
     {
-        static readonly string[] Directions = { "down", "right", "up", "right" };   // index 3 = left (mirrored)
-
-        Image outline, pants, shirt, skin, detail, hair;
+        readonly List<Image> layers = new List<Image>();
         CharacterAppearance appearance;
+        List<Accessory> accessories;
+        Vector2 size;
         int facing;
 
-        public void Build(Vector2 size)
+        /// <summary>Character art is 24x32 pixels, so use a 3:4 size such as 108x144.</summary>
+        public void Build(Vector2 layerSize)
         {
-            outline = Layer("Outline", size);
-            pants = Layer("Pants", size);
-            shirt = Layer("Shirt", size);
-            skin = Layer("Skin", size);
-            detail = Layer("Detail", size);
-            hair = Layer("Hair", size);
-        }
-
-        Image Layer(string layerName, Vector2 size)
-        {
-            return UIFactory.Img(layerName, transform, Vector2.zero, size, Color.white);
+            size = layerSize;
         }
 
         /// <summary>Turn the character. +1 = clockwise, -1 = counter-clockwise.</summary>
@@ -37,30 +29,29 @@ namespace LLG
             Refresh();
         }
 
-        public void Show(CharacterAppearance look)
+        public void Show(CharacterAppearance look, List<Accessory> worn = null)
         {
             appearance = look;
+            accessories = worn;
             Refresh();
         }
 
         void Refresh()
         {
             if (appearance == null) return;
-            string dir = Directions[facing];
             transform.localScale = new Vector3(facing == 3 ? -1 : 1, 1, 1);
-
-            Set(outline, "outline_" + dir, Color.white);
-            Set(pants, "pants_" + dir, AppearancePalette.Pants[appearance.pants]);
-            Set(shirt, "shirt_" + dir, AppearancePalette.Shirt[appearance.shirt]);
-            Set(skin, "skin_" + dir, AppearancePalette.Skin[appearance.skin]);
-            Set(detail, "detail_" + dir, Color.white);
-            Set(hair, "hair" + appearance.hairStyle + "_" + dir, AppearancePalette.Hair[appearance.hairColor]);
-        }
-
-        static void Set(Image image, string spriteName, Color color)
-        {
-            image.sprite = UIFactory.LoadSprite("Art/Character/" + spriteName);
-            image.color = color;
+            var wanted = CharacterLayers.Compose(appearance, accessories, facing, "");
+            while (layers.Count < wanted.Count)
+                layers.Add(UIFactory.Img("Layer", transform, Vector2.zero, size, Color.white));
+            for (int i = 0; i < layers.Count; i++)
+            {
+                bool used = i < wanted.Count;
+                layers[i].enabled = used;
+                if (!used) continue;
+                layers[i].sprite = UIFactory.LoadSprite("Art/Character/" + wanted[i].sprite);
+                layers[i].color = wanted[i].color;
+                layers[i].transform.SetSiblingIndex(i);
+            }
         }
     }
 }

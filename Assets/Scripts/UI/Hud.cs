@@ -1,22 +1,32 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace LLG
 {
     /// <summary>
-    /// The always-visible bar (HP, mana, hunger, currency), pop-up messages, the "E: ..." prompt
-    /// and the word label that appears when you left-click something.
+    /// Everything drawn on top of the village: the stats bar (HP, mana, hunger, currency) top-left,
+    /// the minimap top-right with the menu (Esc) and controls (page) buttons above it,
+    /// pop-up messages, the "E: ..." prompt and the word sign shown when you left-click something.
     /// </summary>
     public class Hud : MonoBehaviour
     {
-        Text hp, mana, hunger, coins, toast, prompt, labelWord, labelEnglish, help, closeMark;
+        const float MapSize = 92, MapZoom = 1.4f;       // minimap diameter (canvas units) and zoom
+        static readonly Vector2 MapCentre = new Vector2(266, 98);
+
+        Text hp, mana, hunger, coins, toast, prompt, zone;
         GameObject promptBox;
-        RectTransform canvasRect, labelBox;
+        RectTransform canvasRect, labelBox, mapImage, mapArrow;
+        LocalizedText labelWord, labelEnglish;
+        TranslateToggle labelTranslate;
         Camera cam;
         Vector3 labelWorld;
+        Transform player;
+        CharacterSprite playerSprite;
         float toastTimer;
 
-        public void Build(Transform canvas)
+        public void Build(Transform canvas, Action openMenu, Action openControls)
         {
             canvasRect = (RectTransform)canvas;
             cam = Camera.main;
@@ -27,12 +37,12 @@ namespace LLG
             hunger = Stat(canvas, 2, "Art/Icons/food_bread");
             coins = Stat(canvas, 3, "Art/UI/coin");
 
-            help = UIFactory.Label("Help", canvas, new Vector2(160, 158), new Vector2(300, 40), "", Color.white, TextAnchor.MiddleRight);
-            UIFactory.Outline(help);
-            RefreshHelp();
-            Keybinds.Changed += RefreshHelp;
+            // menu and controls buttons above the minimap
+            UIFactory.Btn("MenuButton", canvas, new Vector2(248, 164), new Vector2(40, 22), "Esc", UIFactory.Purple, openMenu);
+            var page = UIFactory.Btn("ControlsButton", canvas, new Vector2(286, 164), new Vector2(28, 22), "", UIFactory.Purple, openControls);
+            UIFactory.Img("Page", page.transform, Vector2.zero, new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/page"));
 
-            toast = UIFactory.Label("Toast", canvas, new Vector2(0, 112), new Vector2(600, 60), "", Color.white);
+            toast = UIFactory.Label("Toast", canvas, new Vector2(-40, 112), new Vector2(520, 60), "", Color.white);
             UIFactory.Outline(toast);
 
             promptBox = UIFactory.Panel("Prompt", canvas, new Vector2(0, -150), new Vector2(300, 34)).gameObject;
@@ -43,9 +53,10 @@ namespace LLG
             var label = UIFactory.Panel("WordLabel", canvas, Vector2.zero, new Vector2(160, 62));
             label.gameObject.AddComponent<Button>().onClick.AddListener(HideWordLabel);
             labelBox = label.rectTransform;
-            closeMark = UIFactory.Label("Close", labelBox, Vector2.zero, new Vector2(12, 12), "x", UIFactory.Faded);
-            labelWord = UIFactory.Label("Word", labelBox, new Vector2(0, 9), new Vector2(150, 20), "", UIFactory.Ink);
-            labelEnglish = UIFactory.Label("English", labelBox, new Vector2(0, -9), new Vector2(150, 20), "", UIFactory.Faded);
+            labelWord = UIFactory.LLabel("Word", labelBox, new Vector2(10, 9), new Vector2(150, 20), "", "", UIFactory.Ink).GetComponent<LocalizedText>();
+            labelEnglish = UIFactory.LLabel("English", labelBox, new Vector2(10, -9), new Vector2(150, 20), "", "", UIFactory.Faded, TextAnchor.MiddleCenter, 16, false, true).GetComponent<LocalizedText>();
+            UIFactory.TranslateButton(labelBox, Vector2.zero);
+            labelTranslate = label.GetComponent<TranslateToggle>();
             labelBox.gameObject.SetActive(false);
 
             GameState.Toast += ShowToast;
@@ -60,19 +71,42 @@ namespace LLG
             return UIFactory.Label("Value", canvas, new Vector2(x + 44, 161), new Vector2(48, 20), "", UIFactory.Ink, TextAnchor.MiddleLeft);
         }
 
-        void RefreshHelp()
+        /// <summary>The round map in the corner. Points of interest are (tile, icon) pairs.</summary>
+        public void BuildMinimap(Transform canvas, VillageMap map, Transform playerTransform, CharacterSprite sprite,
+            List<(Vector2Int tile, string icon)> places)
         {
-            string move = Keybinds.KeyName(GameAction.Up) + Keybinds.KeyName(GameAction.Left)
-                + Keybinds.KeyName(GameAction.Down) + Keybinds.KeyName(GameAction.Right);
-            if (move.Length > 4) move = "Move keys";
-            help.text = move + " move   " + Keybinds.KeyName(GameAction.Use) + " use   "
-                + Keybinds.KeyName(GameAction.Backpack) + " bag   Esc menu\n"
-                + "Left click read   Right click attack";
+            player = playerTransform;
+            playerSprite = sprite;
+            var mask = UIFactory.Img("Minimap", canvas, MapCentre, new Vector2(MapSize, MapSize), new Color32(70, 96, 60, 255), UIFactory.LoadSprite("Art/UI/minimap_mask"));
+            mask.gameObject.AddComponent<Mask>().showMaskGraphic = true;
+            var size = new Vector2(map.Width, map.Height) * 4 * MapZoom;
+            mapImage = UIFactory.Img("Map", mask.transform, Vector2.zero, size, Color.white, UIFactory.LoadSprite("Art/UI/minimap")).rectTransform;
+            foreach (var (tile, icon) in places)
+            {
+                var pos = new Vector2((tile.x + 0.5f) * 4 * MapZoom - size.x / 2, size.y / 2 - (tile.y + 0.5f) * 4 * MapZoom);
+                bool dot = icon.EndsWith("map_dot");
+                UIFactory.Img("Place", mapImage, pos, dot ? new Vector2(6, 6) : new Vector2(12, 12),
+                    dot ? (Color)new Color32(255, 220, 90, 255) : Color.white, UIFactory.LoadSprite(icon));
+            }
+            mapArrow = UIFactory.Img("You", mask.transform, Vector2.zero, new Vector2(11, 11), Color.white, UIFactory.LoadSprite("Art/UI/map_arrow")).rectTransform;
+            UIFactory.Img("Ring", canvas, MapCentre, new Vector2(MapSize + 8, MapSize + 8), Color.white, UIFactory.LoadSprite("Art/UI/minimap_ring"));
+            zone = UIFactory.Label("Zone", canvas, MapCentre + new Vector2(0, -MapSize / 2 - 12), new Vector2(120, 18), GameConfig.TownName, Color.white);
+            UIFactory.Outline(zone);
+            UpdateMinimap();
+        }
+
+        void UpdateMinimap()
+        {
+            if (mapImage == null || player == null) return;
+            var size = mapImage.sizeDelta;
+            float px = player.position.x * 4 * MapZoom, py = -player.position.y * 4 * MapZoom;
+            mapImage.anchoredPosition = new Vector2(size.x / 2 - px, py - size.y / 2);
+            float[] angles = { 180, -90, 0, 90 };
+            mapArrow.localRotation = Quaternion.Euler(0, 0, angles[playerSprite.Facing]);
         }
 
         void OnDestroy()
         {
-            Keybinds.Changed -= RefreshHelp;
             GameState.Toast -= ShowToast;
             if (GameState.Data != null) GameState.Data.stats.Changed -= Refresh;
         }
@@ -93,40 +127,41 @@ namespace LLG
             toastTimer = 2.5f;
         }
 
-        /// <summary>Shows what the E key will do right now, or hides the prompt when given null.</summary>
+        /// <summary>Shows what the use key will do right now, or hides the prompt when given null.</summary>
         public void SetPrompt(string text)
         {
             promptBox.SetActive(text != null);
-            if (text != null) prompt.text = "E: " + text;
+            if (text != null) prompt.text = Keybinds.KeyName(GameAction.Use) + ": " + text;
         }
 
-        /// <summary>A little sign above something in the world, showing its name.</summary>
+        /// <summary>A little sign above something in the world with its Spanish name.
+        /// The globe on the sign shows the English; clicking the sign closes it.</summary>
         public void ShowWordLabel(Vector3 world, string word, string english)
         {
-            labelWord.text = word;
-            labelEnglish.text = english;
+            labelWord.Set(word, word);
+            labelEnglish.Set("", english, true);
             int longest = Mathf.Max(word.Length, english.Length);
-            labelBox.sizeDelta = new Vector2(Mathf.Max(80, longest * 8 + 52), 62);
-            ((RectTransform)closeMark.transform).anchoredPosition = new Vector2(labelBox.sizeDelta.x / 2 - 12, 17);
+            float w = Mathf.Max(110, longest * 8 + 64);
+            labelBox.sizeDelta = new Vector2(w, 62);
+            ((RectTransform)labelBox.Find("Translate")).anchoredPosition = new Vector2(-w / 2 + 22, 0);
             labelWorld = world;
             labelBox.gameObject.SetActive(true);
             labelBox.SetAsLastSibling();
+            labelTranslate.Set(false);
             PlaceLabel();
         }
 
         public void HideWordLabel() => labelBox.gameObject.SetActive(false);
 
-        public bool WordLabelOpen => labelBox.gameObject.activeSelf;
-
         void PlaceLabel()
         {
             var screen = cam.WorldToScreenPoint(labelWorld);
             if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screen, cam, out var local)) return;
-            // keep the whole label on screen and below the top bar
+            // keep the whole label on screen, below the top bar and away from the minimap
             float halfW = labelBox.sizeDelta.x / 2, halfCanvas = canvasRect.rect.width / 2;
             local += new Vector2(0, 36);
             local.x = Mathf.Clamp(local.x, -halfCanvas + halfW + 4, halfCanvas - halfW - 4);
-            local.y = Mathf.Clamp(local.y, -150, 112);
+            local.y = Mathf.Clamp(local.y, -150, local.x + halfW > 210 ? 20 : 112);
             labelBox.anchoredPosition = local;
         }
 
@@ -139,5 +174,7 @@ namespace LLG
 
             if (labelBox.gameObject.activeSelf) PlaceLabel();
         }
+
+        void LateUpdate() => UpdateMinimap();
     }
 }

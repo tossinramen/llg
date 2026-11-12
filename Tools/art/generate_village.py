@@ -103,7 +103,7 @@ ROADS = [(2, 11, 45, 12), (2, 23, 36, 24), (17, 21, 18, 22), (31, 13, 32, 24), (
 POND = (40.0, 24.5, 5.6, 4.2)        # centre x, y and radii in tiles
 FOUNTAIN = (23, 15, 3, 2)
 RANGE = (38, 2, 45, 9)                # fenced archery range
-PEOPLE = {"1": (9, 13), "2": (33, 23), "3": (35, 13), "4": (41, 6), "5": (27, 17), "P": (24, 18)}
+PEOPLE = {"1": (9, 13), "2": (33, 23), "3": (35, 13), "4": (41, 6), "5": (27, 17), "P": (24, 17)}
 
 
 # ---------------------------------------------------------------- ground
@@ -793,7 +793,8 @@ def make_village():
         if sprite_name not in saved:
             save_png(img, "World", "Objects", sprite_name + ".png")
             saved.add(sprite_name)
-        objects.append({"sprite": sprite_name, "x": bx, "y": by, "ax": ax, "ay": ay, "w": img.width, "h": img.height})
+        objects.append({"sprite": sprite_name, "x": bx, "y": by, "ax": ax, "ay": ay, "w": img.width, "h": img.height,
+                        "letter": letter or ""})
         if footprint and letter:
             fx0, fy0, fw, fh = footprint
             for ty in range(fy0, fy0 + fh):
@@ -815,7 +816,7 @@ def make_village():
         img, anc = fountain(f)
         save_png(img, "World", "Objects", f"fountain_{f}.png")
     objects.append({"sprite": "fountain_0", "frames": ["fountain_0", "fountain_1", "fountain_2"], "fps": 4,
-                    "x": fx * T + fw * T // 2, "y": (fy + fh) * T, "ax": anc[0], "ay": anc[1], "w": 60, "h": 56})
+                    "x": fx * T + fw * T // 2, "y": (fy + fh) * T, "ax": anc[0], "ay": anc[1], "w": 60, "h": 56, "letter": "R"})
     for ty in range(fy, fy + fh):
         for tx in range(fx, fx + fw):
             grid[ty][tx] = "R"

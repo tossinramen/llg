@@ -299,9 +299,9 @@ def accessory_mask(kind, direction):
     m = Mask()
     if kind == "hat":            # sombrero cordobés: flat wide brim, flat-topped crown
         if direction == "right":
-            m.ellipse(4, 4, 21, 7).rect(9, 0, 16, 5)
+            m.ellipse(4, 3, 21, 6).rect(9, -1, 16, 4)
         else:
-            m.ellipse(3, 4, 20, 7).rect(7, 0, 16, 5)
+            m.ellipse(3, 3, 20, 6).rect(7, -1, 16, 4)
     elif kind == "cloak":
         if direction == "down":
             m.poly((6, 13), (17, 13), (20, 27), (3, 27))
@@ -340,7 +340,7 @@ def accessory_layer(kind, direction):
     mask = accessory_mask(kind, direction)
     v = lit(mask, base=0.84)
     if kind == "hat":
-        v[5:8][mask[5:8]] = np.clip(v[5:8][mask[5:8]] - 0.1, 0.5, 1)   # band under the crown
+        v[3:5][mask[3:5]] = np.clip(v[3:5][mask[3:5]] - 0.12, 0.5, 1)   # band around the crown
     return to_gray_image(with_rim(v, mask, 0.38) if kind in ("hat", "beard", "cloak") else v)
 
 
