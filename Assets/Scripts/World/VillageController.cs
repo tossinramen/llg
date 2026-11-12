@@ -44,6 +44,7 @@ namespace LLG
         ProfileWindow profile;
         ControlsWindow controls;
         LessonsWindow lessons;
+        MapWindow mapWindow;
         IntrusoGame intruso;
         ArcheryGame archery;
         FishingGame fishing;
@@ -108,13 +109,15 @@ namespace LLG
             hud = gameObject.AddComponent<Hud>();
             hud.Build(canvas, OpenMenu, () => controls.Toggle());
             var village = layout.areas != null && layout.areas.Length > 0 ? layout.areas[0] : new Area { w = 112, h = 72 };
-            hud.BuildMinimap(canvas, Map, village.w, village.h, player.transform, playerSprite, MapPlaces());
+            var places = MapPlaces();
+            hud.BuildMinimap(canvas, Map, village.w, village.h, player.transform, playerSprite, places, () => mapWindow.Toggle());
             dialogue = Add<DialogueBox>(); dialogue.Build(canvas, this);
             shop = Add<ShopWindow>(); shop.Build(canvas, this);
             bag = Add<BagWindow>(); bag.Build(canvas, this);
             profile = Add<ProfileWindow>(); profile.Build(canvas, this);
             controls = Add<ControlsWindow>(); controls.Build(canvas, this);
             lessons = Add<LessonsWindow>(); lessons.Build(canvas, this);
+            mapWindow = Add<MapWindow>(); mapWindow.Build(canvas, this, Map, village.w, village.h, player.transform, playerSprite, places);
             intruso = Add<IntrusoGame>(); intruso.Build(canvas, this);
             archery = Add<ArcheryGame>(); archery.Build(canvas, this);
             fishing = Add<FishingGame>(); fishing.Build(canvas, this);
@@ -348,6 +351,8 @@ namespace LLG
                 profile.Toggle();
             else if (Keybinds.Down(GameAction.Lessons) && !lessons.Open)
                 lessons.Toggle();
+            else if (Keybinds.Down(GameAction.Map) && !mapWindow.Open)
+                mapWindow.Toggle();
             else if (Input.GetMouseButtonDown(1) && !overUI)
                 RightClick(mouse);
             else if (Input.GetMouseButtonDown(0) && !overUI)
@@ -362,6 +367,7 @@ namespace LLG
             profile.Close();
             controls.Close();
             lessons.Close();
+            mapWindow.Close();
             closedFrame = -1;
             menu.Show();
         }
@@ -512,7 +518,7 @@ namespace LLG
         void OpenRoomShop(bool greet)
         {
             if (area == null || string.IsNullOrEmpty(area.shop)) return;
-            void open() => shop.Show(GameState.Capital(area.es), area.en, ItemDatabase.ForShop(area.shop));
+            void open() => shop.Show(GameState.Capital(area.es), area.en, ItemDatabase.ForShop(area.shop), ItemDatabase.Sections(area.shop));
             if (greet && !string.IsNullOrEmpty(area.keeper) && villagers.TryGetValue(area.keeper[0], out var keeper))
             {
                 keeper.Sprite.Face(0);
@@ -727,7 +733,7 @@ namespace LLG
 
             if (weapon != null && weapon.ranged)
             {
-                ArrowShot.Spawn(this, feet, dir, damage, UIFactory.LoadSprite("Art/Icons/item_arrow"), order);
+                ArrowShot.Spawn(this, feet, dir, damage, UIFactory.LoadSprite("Art/Icons/" + weapon.projectile), order);
                 return;
             }
 

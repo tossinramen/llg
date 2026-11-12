@@ -19,16 +19,18 @@ namespace LLG
         public int chop;       // how much a hit with it damages a tree (axes are best)
         public bool ranged;    // bows fire arrows
         public int sellPrice;  // what shops pay you for it
+        public int level;      // character level needed to buy it (0 = none)
+        public string projectile;  // ranged weapons: what flies (item_arrow, item_stone, item_bullet)
 
         public bool Stacks => kind == ItemKind.Food || kind == ItemKind.Material;
 
         public ItemDef(string id, string spanish, string english, string icon, int price, ItemKind kind,
             EquipSlot slot = EquipSlot.None, int power = 0, int defense = 0, int mana = 0, int chop = 1,
-            bool ranged = false, int sell = -1)
+            bool ranged = false, int sell = -1, int level = 0, string projectile = "item_arrow")
         {
             this.id = id; this.spanish = spanish; this.english = english; this.icon = icon; this.price = price;
             this.kind = kind; this.slot = slot; this.power = power; this.defense = defense; this.mana = mana;
-            this.chop = chop; this.ranged = ranged;
+            this.chop = chop; this.ranged = ranged; this.level = level; this.projectile = projectile;
             sellPrice = sell >= 0 ? sell : System.Math.Max(1, price / 2);
         }
     }
@@ -55,22 +57,39 @@ namespace LLG
             new ItemDef("cheese",     "el queso",          "cheese",      "food_cheese",     9, ItemKind.Food, power: 15),
             new ItemDef("egg",        "el huevo",          "egg",         "food_egg",        6, ItemKind.Food, power: 12),
 
-            // ---- weapons (Armería): knives, swords, axes, bows
-            new ItemDef("knife",      "el cuchillo",       "knife",       "item_knife",      40, ItemKind.Weapon, EquipSlot.Primary, power: 2),
-            new ItemDef("pocketknife","la navaja",         "pocketknife", "item_pocketknife",35, ItemKind.Weapon, EquipSlot.Primary, power: 2),
-            new ItemDef("dagger",     "la daga",           "dagger",      "item_dagger",     80, ItemKind.Weapon, EquipSlot.Primary, power: 3),
-            new ItemDef("shortsword", "la espada corta",   "short sword", "item_shortsword",110, ItemKind.Weapon, EquipSlot.Primary, power: 4),
-            new ItemDef("sword",      "la espada",         "sword",       "item_sword",     200, ItemKind.Weapon, EquipSlot.Primary, power: 6),
-            new ItemDef("sabre",      "el sable",          "sabre",       "item_sabre",     230, ItemKind.Weapon, EquipSlot.Primary, power: 6),
-            new ItemDef("rapier",     "el estoque",        "rapier",      "item_rapier",    280, ItemKind.Weapon, EquipSlot.Primary, power: 7),
-            new ItemDef("greatsword", "el mandoble",       "greatsword",  "item_greatsword",420, ItemKind.Weapon, EquipSlot.Primary, power: 10),
-            new ItemDef("hatchet",    "el hacha de mano",  "hatchet",     "item_hatchet",    60, ItemKind.Weapon, EquipSlot.Primary, power: 3, chop: 2),
-            new ItemDef("axe",        "el hacha",          "axe",         "item_axe",       120, ItemKind.Weapon, EquipSlot.Primary, power: 5, chop: 3),
-            new ItemDef("battleaxe",  "el hacha de guerra","battle axe",  "item_battleaxe", 320, ItemKind.Weapon, EquipSlot.Primary, power: 8, chop: 3),
-            new ItemDef("shortbow",   "el arco corto",     "short bow",   "item_shortbow",  100, ItemKind.Weapon, EquipSlot.Primary, power: 3, ranged: true),
-            new ItemDef("bow",        "el arco",           "bow",         "item_bow",       150, ItemKind.Weapon, EquipSlot.Primary, power: 4, ranged: true),
-            new ItemDef("longbow",    "el arco largo",     "longbow",     "item_longbow",   260, ItemKind.Weapon, EquipSlot.Primary, power: 6, ranged: true),
-            new ItemDef("crossbow",   "la ballesta",       "crossbow",    "item_crossbow",  400, ItemKind.Weapon, EquipSlot.Primary, power: 9, ranged: true),
+            // ---- weapons (Armería). Three trees, each locked behind a character level.
+            // blades
+            new ItemDef("stick",       "el palo",              "stick",            "item_stick",         25, ItemKind.Weapon, EquipSlot.Primary, power: 2,  level: 5),
+            new ItemDef("kitchen_knife","el cuchillo de cocina","kitchen knife",   "item_kitchen_knife", 60, ItemKind.Weapon, EquipSlot.Primary, power: 3,  level: 10),
+            new ItemDef("dagger",      "la daga",              "dagger",           "item_dagger",       150, ItemKind.Weapon, EquipSlot.Primary, power: 4,  level: 15),
+            new ItemDef("shortsword",  "la espada corta",      "short sword",      "item_shortsword",   300, ItemKind.Weapon, EquipSlot.Primary, power: 6,  level: 20),
+            new ItemDef("sword",       "la espada",            "sword",            "item_sword",        550, ItemKind.Weapon, EquipSlot.Primary, power: 8,  level: 25),
+            new ItemDef("sabre",       "el sable",             "sabre",            "item_sabre",        900, ItemKind.Weapon, EquipSlot.Primary, power: 10, level: 30),
+            new ItemDef("rapier",      "el estoque",           "rapier",           "item_rapier",      1400, ItemKind.Weapon, EquipSlot.Primary, power: 12, level: 35),
+            new ItemDef("toledo",      "la espada toledana",   "Toledo sword",     "item_toledo",      2200, ItemKind.Weapon, EquipSlot.Primary, power: 15, level: 40),
+            new ItemDef("greatsword",  "el mandoble",          "greatsword",       "item_greatsword",  3200, ItemKind.Weapon, EquipSlot.Primary, power: 18, level: 45),
+            new ItemDef("tizona",      "la Tizona",            "Tizona (El Cid's sword)", "item_tizona", 5000, ItemKind.Weapon, EquipSlot.Primary, power: 22, level: 50),
+            new ItemDef("colada",      "la Colada",            "Colada (El Cid's second sword)", "item_colada", 8000, ItemKind.Weapon, EquipSlot.Primary, power: 27, level: 60),
+            // axes (also chop trees)
+            new ItemDef("hatchet",     "el hacha de mano",     "hatchet",          "item_hatchet",      120, ItemKind.Weapon, EquipSlot.Primary, power: 4,  chop: 2, level: 10),
+            new ItemDef("axe",         "el hacha",             "axe",              "item_axe",          450, ItemKind.Weapon, EquipSlot.Primary, power: 7,  chop: 3, level: 20),
+            new ItemDef("battleaxe",   "el hacha de guerra",   "battle axe",       "item_battleaxe",   1300, ItemKind.Weapon, EquipSlot.Primary, power: 12, chop: 3, level: 35),
+            new ItemDef("doubleaxe",   "el hacha doble",       "double axe",       "item_doubleaxe",   4000, ItemKind.Weapon, EquipSlot.Primary, power: 20, chop: 5, level: 50),
+            // ranged: bows -> crossbows -> medieval guns -> real guns
+            new ItemDef("sling",       "la honda",             "sling",            "item_sling",         50, ItemKind.Weapon, EquipSlot.Primary, power: 2,  ranged: true, level: 5,  projectile: "item_stone"),
+            new ItemDef("shortbow",    "el arco corto",        "short bow",        "item_shortbow",     160, ItemKind.Weapon, EquipSlot.Primary, power: 3,  ranged: true, level: 10),
+            new ItemDef("bow",         "el arco",              "bow",              "item_bow",          300, ItemKind.Weapon, EquipSlot.Primary, power: 5,  ranged: true, level: 15),
+            new ItemDef("longbow",     "el arco largo",        "longbow",          "item_longbow",      700, ItemKind.Weapon, EquipSlot.Primary, power: 8,  ranged: true, level: 25),
+            new ItemDef("crossbow",    "la ballesta",          "crossbow",         "item_crossbow",    1100, ItemKind.Weapon, EquipSlot.Primary, power: 11, ranged: true, level: 30),
+            new ItemDef("heavycrossbow","la ballesta pesada",  "heavy crossbow",   "item_heavycrossbow",2000, ItemKind.Weapon, EquipSlot.Primary, power: 14, ranged: true, level: 40),
+            new ItemDef("arquebus",    "el arcabuz",           "arquebus",         "item_arquebus",    3500, ItemKind.Weapon, EquipSlot.Primary, power: 18, ranged: true, level: 50, projectile: "item_bullet"),
+            new ItemDef("flintlock",   "la pistola de chispa", "flintlock pistol", "item_flintlock",   5500, ItemKind.Weapon, EquipSlot.Primary, power: 22, ranged: true, level: 60, projectile: "item_bullet"),
+            new ItemDef("musket",      "el mosquete",          "musket",           "item_musket",      8000, ItemKind.Weapon, EquipSlot.Primary, power: 27, ranged: true, level: 70, projectile: "item_bullet"),
+            new ItemDef("revolver",    "el revólver",          "revolver",         "item_revolver",   12000, ItemKind.Weapon, EquipSlot.Primary, power: 32, ranged: true, level: 80, projectile: "item_bullet"),
+            new ItemDef("rifle",       "el rifle",             "rifle",            "item_rifle",      18000, ItemKind.Weapon, EquipSlot.Primary, power: 40, ranged: true, level: 90, projectile: "item_bullet"),
+            // older weapons, kept so existing saves still work (no longer sold)
+            new ItemDef("knife",       "el cuchillo",          "knife",            "item_knife",         40, ItemKind.Weapon, EquipSlot.Primary, power: 2),
+            new ItemDef("pocketknife", "la navaja",            "pocketknife",      "item_pocketknife",   35, ItemKind.Weapon, EquipSlot.Primary, power: 2),
 
             // ---- armour (Herrería)
             new ItemDef("helmet",     "el casco",          "helmet",      "gear_helmet",     90, ItemKind.Gear, EquipSlot.Hat, defense: 2),
@@ -124,8 +143,15 @@ namespace LLG
         };
 
         public static readonly string[] Store = { "rod", "rod_fine", "book", "hat", "necklace", "cloak", "vest", "pants", "bracelet", "apple", "cheese", "egg" };
-        public static readonly string[] Weapons = { "knife", "pocketknife", "dagger", "shortsword", "sword", "sabre", "rapier", "greatsword",
-                                                    "hatchet", "axe", "battleaxe", "shortbow", "bow", "longbow", "crossbow" };
+        public static readonly string[] Blades = { "stick", "kitchen_knife", "dagger", "shortsword", "sword", "sabre", "rapier", "toledo", "greatsword", "tizona", "colada" };
+        public static readonly string[] Axes = { "hatchet", "axe", "battleaxe", "doubleaxe" };
+        public static readonly string[] Ranged = { "sling", "shortbow", "bow", "longbow", "crossbow", "heavycrossbow", "arquebus", "flintlock", "musket", "revolver", "rifle" };
+        public static readonly string[] Weapons = Blades;
+
+        /// <summary>Shops with several sections (the Armería): Spanish name, English name, items.</summary>
+        public static (string es, string en, string[] ids)[] Sections(string shop) => shop == "weapons"
+            ? new[] { ("Espadas", "Blades", Blades), ("Hachas", "Axes", Axes), ("A distancia", "Ranged", Ranged) }
+            : null;
         public static readonly string[] Smithy = { "helmet", "chainmail", "breastplate", "greaves", "bracers", "wood_shield", "shield", "iron_shield" };
         public static readonly string[] Pets = { "pet_dog", "pet_cat", "pet_rabbit", "pet_parrot", "pet_turtle", "pet_hamster" };
         public static readonly string[] Bakery = { "bread", "baguette", "croissant", "muffin", "churros", "ensaimada", "empanada", "tart", "donut", "sponge", "cake" };

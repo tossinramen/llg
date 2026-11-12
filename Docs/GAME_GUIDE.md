@@ -37,6 +37,7 @@ All keys can be changed in **Esc → Opciones**.
 | B | Bag (20 slots) |
 | U | Profile: equipment, stats, skills |
 | L | Lessons: choose topic and level |
+| M | Big map (or click the minimap) |
 | Left click | Read the Spanish name of anything (click the sign to close it); click a shop's menu board to shop |
 | Right click | Attack animals / chop trees (cursor becomes a fist); on a door: go in |
 | Mouse wheel | Zoom in / out |
@@ -203,28 +204,54 @@ Shops buy anything at **half price** (found items at the prices above).
 
 ## Weapons
 
-All from the **Armería**. Damage = attack; "chop" = tree damage per hit.
+All sold in the **Armería** (east street, next to the Herrería — go inside, talk to Rodrigo or click the
+menu board). The shop has three tabs: **Espadas**, **Hachas**, **A distancia**. Each weapon needs a
+**character level**; locked ones are greyed out with a padlock and show the level needed.
+Damage = attack; chop = tree damage per hit (fists 1).
 
-| Type | Weapon | Price | Damage | Chop |
+**Espadas (blades)**
+
+| Lv | Weapon | Price | Damage |
+|---|---|---|---|
+| 1 | Puños (fists) | — | 1 |
+| 5 | el palo (stick) | 25 | 2 |
+| 10 | el cuchillo de cocina (kitchen knife) | 60 | 3 |
+| 15 | la daga (dagger) | 150 | 4 |
+| 20 | la espada corta (short sword) | 300 | 6 |
+| 25 | la espada (sword) | 550 | 8 |
+| 30 | el sable (sabre) | 900 | 10 |
+| 35 | el estoque (rapier) | 1,400 | 12 |
+| 40 | la espada toledana (Toledo sword) | 2,200 | 15 |
+| 45 | el mandoble (greatsword) | 3,200 | 18 |
+| 50 | la Tizona (El Cid's sword) | 5,000 | 22 |
+| 60 | la Colada (El Cid's second sword) | 8,000 | 27 |
+
+**Hachas (axes — also chop trees)**
+
+| Lv | Weapon | Price | Damage | Chop |
 |---|---|---|---|---|
-| — | Puños (fists) | — | 1 | 1 |
-| Knives | el cuchillo (knife) | 40 | 2 | 1 |
-| | la navaja (pocketknife) | 35 | 2 | 1 |
-| | la daga (dagger) | 80 | 3 | 1 |
-| Swords | la espada corta (short sword) | 110 | 4 | 1 |
-| | la espada (sword) | 200 | 6 | 1 |
-| | el sable (sabre) | 230 | 6 | 1 |
-| | el estoque (rapier) | 280 | 7 | 1 |
-| | el mandoble (greatsword) | 420 | 10 | 1 |
-| Axes | el hacha de mano (hatchet) | 60 | 3 | 2 |
-| | el hacha (axe) | 120 | 5 | 3 |
-| | el hacha de guerra (battle axe) | 320 | 8 | 3 |
-| Bows (ranged, shoot arrows, 8-tile reach) | el arco corto (short bow) | 100 | 3 | — |
-| | el arco (bow) | 150 | 4 | — |
-| | el arco largo (longbow) | 260 | 6 | — |
-| | la ballesta (crossbow) | 400 | 9 | — |
+| 10 | el hacha de mano (hatchet) | 120 | 4 | 2 |
+| 20 | el hacha (axe) | 450 | 7 | 3 |
+| 35 | el hacha de guerra (battle axe) | 1,300 | 12 | 3 |
+| 50 | el hacha doble (double axe) | 4,000 | 20 | 5 |
 
-There are **no level requirements, durability, upgrades or enchantments yet** (all in the planner).
+**A distancia (ranged — 8-tile reach; bows/crossbows shoot arrows, the sling stones, guns bullets)**
+
+| Lv | Weapon | Price | Damage |
+|---|---|---|---|
+| 5 | la honda (sling) | 50 | 2 |
+| 10 | el arco corto (short bow) | 160 | 3 |
+| 15 | el arco (bow) | 300 | 5 |
+| 25 | el arco largo (longbow) | 700 | 8 |
+| 30 | la ballesta (crossbow) | 1,100 | 11 |
+| 40 | la ballesta pesada (heavy crossbow) | 2,000 | 14 |
+| 50 | el arcabuz (arquebus) | 3,500 | 18 |
+| 60 | la pistola de chispa (flintlock pistol) | 5,500 | 22 |
+| 70 | el mosquete (musket) | 8,000 | 27 |
+| 80 | el revólver (revolver) | 12,000 | 32 |
+| 90 | el rifle | 18,000 | 40 |
+
+There is **no durability, upgrading or enchanting yet** (in the planner).
 
 ## Armour & gear
 

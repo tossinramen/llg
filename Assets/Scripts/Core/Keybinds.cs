@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace LLG
 {
-    public enum GameAction { Up, Down, Left, Right, Use, Backpack, Profile, Lessons, Jump, Crouch, Run }
+    public enum GameAction { Up, Down, Left, Right, Use, Backpack, Profile, Lessons, Jump, Crouch, Run, Map }
 
     /// <summary>
     /// Which key does what. Players can change these in Options; they are remembered between sessions.
@@ -16,17 +16,17 @@ namespace LLG
         static readonly KeyCode[] Defaults =
         {
             KeyCode.W, KeyCode.S, KeyCode.A, KeyCode.D, KeyCode.E, KeyCode.B, KeyCode.U, KeyCode.L,
-            KeyCode.Space, KeyCode.LeftShift, KeyCode.LeftControl,
+            KeyCode.Space, KeyCode.LeftShift, KeyCode.LeftControl, KeyCode.M,
         };
 
         static readonly string[] Names =
         {
-            "Arriba", "Abajo", "Izquierda", "Derecha", "Usar", "Mochila", "Perfil", "Lecciones", "Saltar", "Agacharse", "Correr",
+            "Arriba", "Abajo", "Izquierda", "Derecha", "Usar", "Mochila", "Perfil", "Lecciones", "Saltar", "Agacharse", "Correr", "Mapa",
         };
 
         static readonly string[] EnglishNames =
         {
-            "Up", "Down", "Left", "Right", "Use", "Backpack", "Profile", "Lessons", "Jump", "Crouch", "Run",
+            "Up", "Down", "Left", "Right", "Use", "Backpack", "Profile", "Lessons", "Jump", "Crouch", "Run", "Map",
         };
 
         static KeyCode[] keys;

@@ -41,7 +41,7 @@ namespace LLG
             for (int i = 0; i < Keybinds.All.Length; i++)
             {
                 int index = i;
-                float y = 82 - i * 21;
+                float y = 86 - i * 18.5f;
                 UIFactory.LLabel("Action", w, new Vector2(-180, y), new Vector2(170, 20), Keybinds.Name(Keybinds.All[i]), Keybinds.EnglishName(Keybinds.All[i]), UIFactory.Ink, TextAnchor.MiddleLeft);
                 var button = UIFactory.Btn("Key", w, new Vector2(-40, y), new Vector2(96, 20), "", UIFactory.Teal, () => StartRebind(index));
                 keyButtons.Add(button.GetComponent<Image>());

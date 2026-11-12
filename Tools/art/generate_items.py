@@ -384,7 +384,7 @@ def effects():
     d.rounded_rectangle([1, 9, 7, 12], radius=1, fill=(246, 206, 160))
     d.rectangle([4, 13, 11, 15], fill=(176, 60, 60))
     cur = finish(img)
-    save(cur.resize((32, 32), Image.NEAREST), "Cursor", "cursor_fist")
+    save(cur.resize((24, 24), Image.NEAREST), "Cursor", "cursor_fist")     # a bit smaller than the arrow
 
     # small speaker icon for "listen" buttons
     img, d = canvas(12, 12)

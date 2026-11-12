@@ -162,7 +162,7 @@ def body_parts(direction, frame):
         shoes = [(6, 11, 29 - lift_l), (12, 17, 29 - lift_r)]
     else:  # facing right
         skin.ellipse(8, 3, 17, 13)
-        skin.rect(18, 8, 18, 10)                           # nose
+        skin.rect(18, 9, 18, 9)                            # nose (one pixel)
         skin.rect(11, 13, 14, 14)
         shirt.poly((9, 14), (15, 14), (16, 16), (15, 22), (9, 22))
         if step == 1:                                      # stride

@@ -7,28 +7,33 @@ namespace LLG
     /// <summary>
     /// A shop: a grid of item cards (picture, Spanish name, price). Click a card to buy it.
     /// The "Vender" tab lists what is in your bag so you can sell it (wood, pelts, fish...).
+    /// Some shops (the Armería) have sections, and some items need a character level:
+    /// those cards are greyed out with a padlock and the level you need.
     /// The globe button shows the English names.
     /// </summary>
     public class ShopWindow : GameWindow
     {
-        const int Columns = 4, MaxCards = 16;
-        Transform cards;
+        const int Columns = 4, MaxCards = 12;
+        Transform cards, sectionRow;
         Text money;
         Image buyTab, sellTab;
         LocalizedText greeting, feedback;
         string[] itemIds;
+        (string es, string en, string[] ids)[] sections;
+        int section;
         bool selling;
 
         public void Build(Transform canvas, VillageController owner)
         {
-            CreateWindow(canvas, owner, new Vector2(0, -4), new Vector2(560, 330), "", "");
-            greeting = UIFactory.LLabel("Greeting", W, new Vector2(0, 118), new Vector2(420, 20), "", "", UIFactory.Faded).GetComponent<LocalizedText>();
-            buyTab = UIFactory.LBtn("BuyTab", W, new Vector2(-60, 96), new Vector2(110, 22), "Comprar", "Buy", UIFactory.Gold, () => SetTab(false)).GetComponent<Image>();
-            sellTab = UIFactory.LBtn("SellTab", W, new Vector2(60, 96), new Vector2(110, 22), "Vender", "Sell", UIFactory.Faded, () => SetTab(true)).GetComponent<Image>();
+            CreateWindow(canvas, owner, new Vector2(0, -4), new Vector2(560, 334), "", "");
+            greeting = UIFactory.LLabel("Greeting", W, new Vector2(0, 120), new Vector2(420, 20), "", "", UIFactory.Faded).GetComponent<LocalizedText>();
+            buyTab = UIFactory.LBtn("BuyTab", W, new Vector2(-60, 98), new Vector2(110, 22), "Comprar", "Buy", UIFactory.Gold, () => SetTab(false)).GetComponent<Image>();
+            sellTab = UIFactory.LBtn("SellTab", W, new Vector2(60, 98), new Vector2(110, 22), "Vender", "Sell", UIFactory.Faded, () => SetTab(true)).GetComponent<Image>();
+            sectionRow = UIFactory.Rect("Sections", W, Vector2.zero, Vector2.zero);
             cards = UIFactory.Rect("Cards", W, Vector2.zero, Vector2.zero);
-            feedback = UIFactory.LLabel("Feedback", W, new Vector2(-50, -146), new Vector2(400, 20), "", "", UIFactory.Ink, TextAnchor.MiddleLeft).GetComponent<LocalizedText>();
-            UIFactory.Img("Coin", W, new Vector2(190, -146), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
-            money = UIFactory.Label("Money", W, new Vector2(228, -146), new Vector2(60, 20), "", UIFactory.Ink, TextAnchor.MiddleLeft);
+            feedback = UIFactory.LLabel("Feedback", W, new Vector2(-50, -148), new Vector2(400, 20), "", "", UIFactory.Ink, TextAnchor.MiddleLeft).GetComponent<LocalizedText>();
+            UIFactory.Img("Coin", W, new Vector2(190, -148), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
+            money = UIFactory.Label("Money", W, new Vector2(228, -148), new Vector2(60, 20), "", UIFactory.Ink, TextAnchor.MiddleLeft);
             GameState.InventoryChanged += Rebuild;
             GameState.Data.stats.Changed += Rebuild;
         }
@@ -39,9 +44,12 @@ namespace LLG
             if (GameState.Data != null) GameState.Data.stats.Changed -= Rebuild;
         }
 
-        public void Show(string spanishName, string englishName, string[] ids)
+        /// <summary>Opens a shop. "shopSections" (optional) splits the goods into tabs.</summary>
+        public void Show(string spanishName, string englishName, string[] ids, (string es, string en, string[] ids)[] shopSections = null)
         {
-            itemIds = ids;
+            sections = shopSections;
+            section = 0;
+            itemIds = sections != null ? sections[0].ids : ids;
             W.Find("Title").GetComponent<LocalizedText>().Set(spanishName, englishName);
             greeting.Set("¿Qué quieres comprar?", "What would you like to buy?");
             feedback.Set("Haz clic en algo para comprarlo.", "Click something to buy it.");
@@ -58,13 +66,32 @@ namespace LLG
             Rebuild();
         }
 
+        void SetSection(int i)
+        {
+            section = i;
+            itemIds = sections[i].ids;
+            Rebuild();
+        }
+
         void Rebuild()
         {
             if (!Open || itemIds == null) return;
             foreach (Transform child in cards) Destroy(child.gameObject);
+            foreach (Transform child in sectionRow) Destroy(child.gameObject);
             money.text = GameState.Data.stats.coins.ToString();
             buyTab.color = selling ? UIFactory.Faded : UIFactory.Gold;
             sellTab.color = selling ? UIFactory.Gold : UIFactory.Faded;
+
+            bool showSections = sections != null && !selling;
+            if (showSections)
+            {
+                for (int i = 0; i < sections.Length; i++)
+                {
+                    int index = i;
+                    UIFactory.LBtn("Section", sectionRow, new Vector2((i - (sections.Length - 1) / 2f) * 130, 72), new Vector2(124, 22),
+                        sections[i].es, sections[i].en, i == section ? UIFactory.Purple : UIFactory.Teal, () => SetSection(index));
+                }
+            }
 
             var entries = new List<(ItemDef item, int count, int bagIndex)>();
             if (selling)
@@ -84,22 +111,40 @@ namespace LLG
                 }
             }
 
-            for (int i = 0; i < entries.Count && i < MaxCards; i++)
+            float top = showSections ? 40 : 66;
+            int playerLevel = GameState.Data.level;
+            for (int i = 0; i < entries.Count && i < (showSections ? MaxCards : 16); i++)
             {
                 var (item, count, bagIndex) = entries[i];
-                var pos = new Vector2(-198 + (i % Columns) * 132, 62 - (i / Columns) * 54);
+                var pos = new Vector2(-198 + (i % Columns) * 132, top - (i / Columns) * 54);
                 bool once = item.kind != ItemKind.Food && item.kind != ItemKind.Book && item.kind != ItemKind.Material;
                 bool owned = !selling && once && GameState.Has(item.id);
+                bool locked = !selling && !owned && item.level > playerLevel;
                 int price = selling ? item.sellPrice : item.price;
-                var card = UIFactory.Btn("Card", cards, pos, new Vector2(126, 50), "", owned ? new Color32(200, 190, 170, 255) : new Color32(252, 238, 206, 255),
-                    () => { if (selling) Sell(bagIndex); else Buy(item); });
+                Color back = owned ? new Color32(200, 190, 170, 255) : locked ? new Color32(196, 188, 176, 255) : new Color32(252, 238, 206, 255);
+                var card = UIFactory.Btn("Card", cards, pos, new Vector2(126, 50), "", back, () =>
+                {
+                    if (selling) Sell(bagIndex);
+                    else if (locked) feedback.Set("Necesitas el nivel " + item.level + " para comprar esto.", "You need level " + item.level + " to buy this.");
+                    else Buy(item);
+                });
                 card.interactable = !owned;
-                UIFactory.Img("Icon", card.transform, new Vector2(-44, 7), new Vector2(24, 24), Color.white, UIFactory.LoadSprite("Art/Icons/" + item.icon));
-                UIFactory.Label("Price", card.transform, new Vector2(-44, -15), new Vector2(40, 14),
-                    owned ? "Tuyo" : price.ToString(), owned ? UIFactory.Green : (Color)new Color32(150, 100, 30, 255));
-                var name = UIFactory.LLabel("Name", card.transform, new Vector2(14, 0), new Vector2(84, 44), item.spanish, item.english, UIFactory.Ink, TextAnchor.MiddleLeft);
+                var icon = UIFactory.Img("Icon", card.transform, new Vector2(-44, 7), new Vector2(24, 24), locked ? new Color(0.45f, 0.45f, 0.45f) : Color.white,
+                    UIFactory.LoadSprite("Art/Icons/" + item.icon));
+                if (locked) UIFactory.Img("Lock", card.transform, new Vector2(-36, 4), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/lock"));
+                string priceText = owned ? "Tuyo" : locked ? "Nv " + item.level : price.ToString();
+                Color priceColor = owned ? UIFactory.Green : locked ? UIFactory.Red : (Color)new Color32(150, 100, 30, 255);
+                UIFactory.Label("Price", card.transform, new Vector2(-44, -15), new Vector2(44, 14), priceText, priceColor);
+                var name = UIFactory.LLabel("Name", card.transform, new Vector2(14, 6), new Vector2(84, 34), item.spanish, item.english,
+                    locked ? UIFactory.Faded : UIFactory.Ink, TextAnchor.MiddleLeft);
                 name.horizontalOverflow = HorizontalWrapMode.Wrap;
+                name.verticalOverflow = VerticalWrapMode.Truncate;
+                name.resizeTextForBestFit = true;      // long names shrink to fit the card
+                name.resizeTextMinSize = 10;
+                name.resizeTextMaxSize = 16;
                 name.lineSpacing = 0.85f;
+                if (locked)
+                    UIFactory.Label("Cost", card.transform, new Vector2(30, -16), new Vector2(60, 14), price.ToString(), new Color32(150, 100, 30, 255), TextAnchor.MiddleRight);
                 if (count > 1) UIFactory.Label("Count", card.transform, new Vector2(-30, 14), new Vector2(30, 14), "x" + count, UIFactory.Faded, TextAnchor.MiddleRight);
             }
             translate.Set(translate.English);     // new cards follow the current language

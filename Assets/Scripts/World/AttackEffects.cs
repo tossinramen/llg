@@ -25,6 +25,7 @@ namespace LLG
             renderer.sortingOrder = sortingOrder;
             fx.blade = child.transform;
             fx.jab = jab;
+            if (jab) child.transform.localScale = Vector3.one * 0.6f;     // a fist is smaller than a sword
             fx.baseAngle = FacingAngles[facing];
             fx.Apply(0);
         }

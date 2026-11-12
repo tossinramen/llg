@@ -39,6 +39,7 @@ namespace LLG
                 (Keybinds.KeyName(GameAction.Backpack), "Mochila", "Bag"),
                 (Keybinds.KeyName(GameAction.Profile), "Perfil y habilidades", "Profile and skills"),
                 (Keybinds.KeyName(GameAction.Lessons), "Lecciones (tema y nivel)", "Lessons (topic and level)"),
+                (Keybinds.KeyName(GameAction.Map), "Mapa grande (o clic en el minimapa)", "Big map (or click the minimap)"),
                 ("Clic izq.", "Leer el nombre de algo", "Read what something is called"),
                 ("Clic der.", "Atacar animales / cortar árboles", "Attack animals / chop trees"),
                 ("Rueda", "Acercar y alejar la cámara", "Zoom the camera in and out"),
@@ -46,7 +47,7 @@ namespace LLG
             };
             for (int i = 0; i < lines.Length; i++)
             {
-                float y = 104 - i * 20;
+                float y = 106 - i * 19;
                 var key = UIFactory.Box("Key", rows, new Vector2(-130, y), new Vector2(96, 20), UIFactory.Teal);
                 var label = UIFactory.Label("KeyName", key.transform, new Vector2(0, 1), new Vector2(96, 20), lines[i].key, Color.white);
                 UIFactory.Outline(label);

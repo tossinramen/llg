@@ -1,37 +1,15 @@
 # Runes of Speech — Planner
 
 Your ideas, organised, with a to-do list to tackle one at a time.
-**When a task is finished it gets ~~struck through~~ and marked ✅.**
+**Open tasks are at the top. When a task is finished it is ~~struck through~~, marked ✅ and moved to [Done](#done-) at the bottom.**
 What already exists is described in [GAME_GUIDE.md](GAME_GUIDE.md).
 
 Contents: [To-do list](#to-do-list) · [Design notes](#design-notes) (weapon trees, armour tiers, magic,
-dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas)
+dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) · [Done](#done-)
 
 ---
 
 ## To-do list
-
-### Done
-- ~~Speaker buttons to hear sentences, in Spanish and English~~ ✅ (English recorded; Spanish needs the task below)
-- ~~Lessons by topic with levels you can choose (Principiante → Experto); harder gives more XP~~ ✅
-- ~~XP bar at the bottom; uncapped levels; different activities give different XP~~ ✅
-- ~~Farm next to your house~~ ✅ (to look at; planting is a separate task below)
-- ~~Cats and dogs walking around~~ ✅
-- ~~Go inside buildings; talk to the shopkeeper or click the menu board to shop~~ ✅
-- ~~Many more items in every shop~~ ✅
-- ~~WoW-style unit frame: portrait, HP with hit animation, mana, hunger, Lexa beside it~~ ✅
-- ~~Wolves / wild dogs that fight back when punched, with HP bars; you can kill them~~ ✅
-- ~~Fist cursor over things you can attack~~ ✅
-- ~~Much bigger world with typical village things~~ ✅
-- ~~Only animals can be attacked, not people~~ ✅
-- ~~Archery: an arrow flies into the target you click~~ ✅
-- ~~Brainstorm more archery-style activities~~ ✅ (see [Activity ideas](#activity-ideas))
-- ~~Weapon shop with swords, axes, bows and knives~~ ✅
-- ~~Zoom with the mouse wheel~~ ✅
-- ~~Move the X on windows slightly left~~ ✅
-- ~~Cut trees (cracks animation, axes faster, regrow, wood to pick up and sell)~~ ✅
-- ~~"Remove the word that doesn't fit the category" game~~ ✅ (El intruso)
-- ~~Armoury and blacksmith buildings~~ ✅ (enchant / repair are tasks below)
 
 ### 1. Language content and sound
 - [ ] **Add Spanish voices / sound** — install the Spanish voice in Windows, record every Spanish line, check it plays everywhere
@@ -63,8 +41,6 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas)
 
 ### 4. Combat, gear and progression
 - [ ] Damage and XP mechanics pass (crits, attack speed per weapon type, enemy scaling)
-- [ ] Level requirements for weapons (fists → stick lv 5 → kitchen knife lv 10 → dagger lv 15 → sword lv 25 …; see weapon trees)
-- [ ] Add the missing weapons from the trees (stick, sling, Toledo sword, Tizona, arquebus, pistols…)
 - [ ] Armour tiers like Minecraft but our own (cloth → leather → chainmail → iron → Toledo steel → rune)
 - [ ] **Durability** on weapons and armour
 - [ ] **Repair** at the blacksmith (costs Lexa)
@@ -115,7 +91,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas)
   - **Tatoeba** — tens of thousands of Spanish–English sentence pairs, for sentence order, translation and replies.
 - Plan: a script that combines these into `pack.json` automatically, then hand-check levels 1–2.
 
-### Weapon trees (unlock levels are suggestions)
+### Weapon trees (built — all three are in the Armería, see GAME_GUIDE.md)
 
 **Melee (blades)**
 
@@ -235,3 +211,38 @@ From the brainstorm, each also listed as a to-do in section 2:
 6. **Translation bridge** — cross on planks with the correct translation.
 7. **Market haggling (Regateo)** — match spoken numbers for discounts.
 8. **Echo game** — hear a word, pick the picture.
+
+---
+
+## Done ✅
+
+Finished tasks, struck through.
+
+- ~~Speaker buttons to hear sentences, in Spanish and English~~ ✅ (English recorded; Spanish needs the task below)
+- ~~Lessons by topic with levels you can choose (Principiante → Experto); harder gives more XP~~ ✅
+- ~~XP bar at the bottom; uncapped levels; different activities give different XP~~ ✅
+- ~~Farm next to your house~~ ✅ (to look at; planting is a separate task below)
+- ~~Cats and dogs walking around~~ ✅
+- ~~Go inside buildings; talk to the shopkeeper or click the menu board to shop~~ ✅
+- ~~Many more items in every shop~~ ✅
+- ~~WoW-style unit frame: portrait, HP with hit animation, mana, hunger, Lexa beside it~~ ✅
+- ~~Wolves / wild dogs that fight back when punched, with HP bars; you can kill them~~ ✅
+- ~~Fist cursor over things you can attack~~ ✅
+- ~~Much bigger world with typical village things~~ ✅
+- ~~Only animals can be attacked, not people~~ ✅
+- ~~Archery: an arrow flies into the target you click~~ ✅
+- ~~Brainstorm more archery-style activities~~ ✅ (see [Activity ideas](#activity-ideas))
+- ~~Weapon shop with swords, axes, bows and knives~~ ✅
+- ~~Zoom with the mouse wheel~~ ✅
+- ~~Move the X on windows slightly left~~ ✅
+- ~~Cut trees (cracks animation, axes faster, regrow, wood to pick up and sell)~~ ✅
+- ~~"Remove the word that doesn't fit the category" game~~ ✅ (El intruso)
+- ~~Armoury and blacksmith buildings~~ ✅ (enchant / repair are tasks below)
+- ~~Smaller unit frame; name in its own box with space before the HP bar; hunger bar inside the frame~~ ✅
+- ~~Lexa moved below the portrait in a smaller box that fits the number~~ ✅
+- ~~Big map (M key or click the minimap) with every building and area labelled~~ ✅
+- ~~Smaller fist (punch and cursor)~~ ✅
+- ~~Smaller nose on the side view~~ ✅
+- ~~Blade tree in the Armería, locked by level, expensive (palo lv 5 … la Colada lv 60)~~ ✅
+- ~~Axe tree in the Armería (hacha de mano lv 10, hacha lv 20, hacha de guerra lv 35, hacha doble lv 50)~~ ✅
+- ~~Ranged tree in the Armería (honda lv 5 … arco … ballesta … arcabuz … pistola … rifle lv 90); guns fire bullets~~ ✅

@@ -17,8 +17,8 @@ namespace LLG
     {
         const float MapSize = 92, MapZoom = 1.4f;
         static readonly Vector2 MapCentre = new Vector2(266, 98);
-        static readonly Vector2 FramePos = new Vector2(-206, 142);
-        const float BarWidth = 120;
+        static readonly Vector2 FramePos = new Vector2(-228, 150);
+        const float BarWidth = 104, BarX = 22;
 
         Text toast, prompt, zone, nameLevel, hpText, manaText, hungerText, coins, xpText, levelText;
         GameObject promptBox, minimap;
@@ -72,39 +72,49 @@ namespace LLG
 
         void BuildUnitFrame(Transform canvas)
         {
-            frame = UIFactory.Panel("UnitFrame", canvas, FramePos, new Vector2(216, 72)).rectTransform;
-            frame.GetComponent<Image>().raycastTarget = false;
+            var frameImg = UIFactory.Panel("UnitFrame", canvas, FramePos, new Vector2(176, 56));
+            frameImg.raycastTarget = false;
+            frameImg.pixelsPerUnitMultiplier = 2;          // thinner wooden border
+            frame = frameImg.rectTransform;
 
             // round portrait: the character's head inside a gold ring
-            var mask = UIFactory.Img("Portrait", frame, new Vector2(-76, 0), new Vector2(50, 50), new Color32(170, 210, 236, 255),
+            var mask = UIFactory.Img("Portrait", frame, new Vector2(-60, 0), new Vector2(38, 38), new Color32(170, 210, 236, 255),
                 UIFactory.LoadSprite("Art/UI/minimap_mask"));
             mask.gameObject.AddComponent<Mask>().showMaskGraphic = true;
-            var holder = UIFactory.Rect("Head", mask.transform, new Vector2(0, -26), new Vector2(81, 108));
+            var holder = UIFactory.Rect("Head", mask.transform, new Vector2(0, -20), new Vector2(61, 81));
             portrait = holder.gameObject.AddComponent<CharacterPreview>();
-            portrait.Build(new Vector2(81, 108));
-            hpFlash = UIFactory.Img("Hurt", mask.transform, Vector2.zero, new Vector2(50, 50), new Color(1, 0, 0, 0));
-            UIFactory.Img("Ring", frame, new Vector2(-76, 0), new Vector2(58, 58), Color.white, UIFactory.LoadSprite("Art/UI/minimap_ring"));
+            portrait.Build(new Vector2(61, 81));
+            hpFlash = UIFactory.Img("Hurt", mask.transform, Vector2.zero, new Vector2(38, 38), new Color(1, 0, 0, 0));
+            UIFactory.Img("Ring", frame, new Vector2(-60, 0), new Vector2(44, 44), Color.white, UIFactory.LoadSprite("Art/UI/minimap_ring"));
 
-            nameLevel = UIFactory.Label("Name", frame, new Vector2(18, 20), new Vector2(130, 16), "", UIFactory.Ink, TextAnchor.MiddleLeft);
-            hpTrail = Bar("HpTrail", 3, 14, new Color32(250, 230, 150, 255), out hpFill, new Color32(206, 52, 52, 255));
-            hpText = UIFactory.Label("Hp", frame, new Vector2(16, 3), new Vector2(BarWidth, 14), "", Color.white);
+            // name plate in its own small box, then HP, mana and hunger bars with space between them
+            UIFactory.Box("NamePlate", frame, new Vector2(BarX, 12), new Vector2(BarWidth + 4, 14), new Color32(70, 52, 46, 255));
+            nameLevel = UIFactory.Label("Name", frame, new Vector2(BarX, 12), new Vector2(BarWidth - 4, 14), "", Color.white);
+            nameLevel.fontSize = 12;
+            hpTrail = Bar("HpTrail", -3, 10, new Color32(250, 230, 150, 255), out hpFill, new Color32(206, 52, 52, 255));
+            hpText = UIFactory.Label("Hp", frame, new Vector2(BarX, -3), new Vector2(BarWidth, 10), "", Color.white);
+            hpText.fontSize = 12;
             UIFactory.Outline(hpText);
-            Bar("Mana", -13, 12, Color.clear, out manaFill, new Color32(64, 120, 220, 255));
-            manaText = UIFactory.Label("ManaText", frame, new Vector2(16, -13), new Vector2(BarWidth, 12), "", Color.white);
-            UIFactory.Outline(manaText);
-            Bar("Hunger", -26, 6, Color.clear, out hungerFill, new Color32(226, 150, 50, 255));
-            hungerText = UIFactory.Label("HungerText", frame, new Vector2(98, -26), new Vector2(40, 12), "", UIFactory.Ink, TextAnchor.MiddleRight);
+            Bar("Mana", -13, 5, Color.clear, out manaFill, new Color32(64, 120, 220, 255));
+            manaText = UIFactory.Label("ManaText", frame, Vector2.zero, Vector2.zero, "", Color.white);
+            manaText.gameObject.SetActive(false);
+            Bar("Hunger", -19, 3, Color.clear, out hungerFill, new Color32(226, 150, 50, 255));
+            hungerText = UIFactory.Label("HungerText", frame, Vector2.zero, Vector2.zero, "", UIFactory.Ink);
+            hungerText.gameObject.SetActive(false);
 
-            // currency beside the frame
-            var purse = UIFactory.Panel("Purse", canvas, FramePos + new Vector2(152, 20), new Vector2(84, 30)).rectTransform;
-            UIFactory.Img("Coin", purse, new Vector2(-24, 0), new Vector2(16, 16), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
-            coins = UIFactory.Label("Coins", purse, new Vector2(18, 1), new Vector2(48, 20), "", UIFactory.Ink, TextAnchor.MiddleLeft);
+            // Lexa, in a small box under the portrait
+            var purseImg = UIFactory.Panel("Purse", canvas, FramePos + new Vector2(-50, -40), new Vector2(76, 22));
+            purseImg.pixelsPerUnitMultiplier = 2;
+            purseImg.raycastTarget = false;
+            var purse = purseImg.rectTransform;
+            UIFactory.Img("Coin", purse, new Vector2(-24, 0), new Vector2(12, 12), Color.white, UIFactory.LoadSprite("Art/UI/coin"));
+            coins = UIFactory.Label("Coins", purse, new Vector2(10, 0), new Vector2(50, 16), "", UIFactory.Ink, TextAnchor.MiddleLeft);
         }
 
         /// <summary>A bar in the unit frame: dark background, an optional trail and a coloured fill.</summary>
         RectTransform Bar(string name, float y, float height, Color trailColor, out RectTransform fill, Color fillColor)
         {
-            var back = UIFactory.Img(name + "Back", frame, new Vector2(16, y), new Vector2(BarWidth + 4, height + 4), new Color32(40, 30, 34, 255));
+            var back = UIFactory.Img(name + "Back", frame, new Vector2(BarX, y), new Vector2(BarWidth + 4, height + 2), new Color32(40, 30, 34, 255));
             RectTransform trail = null;
             if (trailColor.a > 0)
             {
@@ -152,7 +162,7 @@ namespace LLG
 
         /// <summary>The round map in the corner. Points of interest are (tile, icon) pairs.</summary>
         public void BuildMinimap(Transform canvas, VillageMap map, int width, int height, Transform playerTransform, CharacterSprite sprite,
-            List<(Vector2Int tile, string icon)> places)
+            List<(Vector2Int tile, string icon)> places, Action openMap)
         {
             player = playerTransform;
             playerSprite = sprite;
@@ -160,6 +170,8 @@ namespace LLG
             minimap = root.gameObject;
             var mask = UIFactory.Img("Minimap", root, Vector2.zero, new Vector2(MapSize, MapSize), new Color32(70, 96, 60, 255), UIFactory.LoadSprite("Art/UI/minimap_mask"));
             mask.gameObject.AddComponent<Mask>().showMaskGraphic = true;
+            mask.raycastTarget = true;
+            mask.gameObject.AddComponent<Button>().onClick.AddListener(() => openMap());     // click for the big map
             var size = new Vector2(width, height) * 4 * MapZoom;
             mapImage = UIFactory.Img("Map", mask.transform, Vector2.zero, size, Color.white, UIFactory.LoadSprite("Art/UI/minimap")).rectTransform;
             foreach (var (tile, icon) in places)
@@ -212,9 +224,9 @@ namespace LLG
             if (lastHp < 0 || s.hp > trailHp) trailHp = s.hp;
             lastHp = s.hp;
 
-            nameLevel.text = PlayerProfile.Current.playerName + "   Nv " + data.level;
+            nameLevel.text = PlayerProfile.Current.playerName + "  ·  Nv " + data.level;
             hpFill.sizeDelta = new Vector2(BarWidth * s.hp / Mathf.Max(1f, s.maxHp), hpFill.sizeDelta.y);
-            hpText.text = s.hp + " / " + s.maxHp;
+            hpText.text = s.hp + "/" + s.maxHp;
             manaFill.sizeDelta = new Vector2(BarWidth * s.mana / Mathf.Max(1f, s.maxMana), manaFill.sizeDelta.y);
             manaText.text = s.mana + " / " + s.maxMana;
             hungerFill.sizeDelta = new Vector2(BarWidth * s.hunger / Mathf.Max(1f, s.maxHunger), hungerFill.sizeDelta.y);
