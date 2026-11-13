@@ -120,6 +120,62 @@ Every XP gain goes to a **skill** and to your **character level**.
 
 ## Lessons & language
 
+**How much Spanish is in the game:** **10,090 words and 35,886 sentences** in 21 topics, across 5 levels,
+with no repeats (repeats are spotted ignoring capitals and punctuation, also between decks).
+
+| Level | Words | Sentences |
+|---|---|---|
+| 1 Principiante | 219 | 2,137 |
+| 2 Básico | 653 | 2,545 |
+| 3 Intermedio | 1,597 | 6,207 |
+| 4 Avanzado | 2,676 | 11,215 |
+| 5 Experto | 4,945 | 13,782 |
+
+Where they come from (all as plain text in `Tools/data/`; the Anki files themselves are not kept):
+
+| File | From | Gives | Levels |
+|---|---|---|---|
+| `build_spanish_pack.py` | hand-picked | 152 words, 33 sentences | by hand |
+| `words_extra.txt` | written for the game | ~440 words, ~140 sentences | by hand |
+| `imported/10000_Spanish_Vocabulary.txt` | 10000 Spanish Vocabulary (parts 1–3) | ~9,300 words + an example sentence each | by frequency: ranks 1–300 = 1, to 1,000 = 2, to 2,500 = 3, to 5,000 = 4, rest = 5 |
+| `imported/9000_Spanish_Sentences.txt` | 9000 Spanish sentences (difficulty sorted) | 8,841 sentences | easiest fifth = 1 … hardest = 5 |
+| `imported/Spanish_7000_Sentences.txt` | Spanish 7000 Intermediate/Advanced | 7,129 sentences | 3–5 by order |
+| `imported/550_Phrasal_Verbs.txt` | 550 Phrasal Verbs (parts 1–2) | 6,394 sentences | 4 (short) / 5 (long) |
+| `imported/575_Advanced_Verbs.txt` | 575 Advanced Spanish Verbs | 86 verbs, 2,415 sentences | 4–5 |
+| `imported/1001_High_Intermediate.txt` | 1001 High Intermediate Words & Sentences | 116 words, 1,096 sentences | 3–4 |
+
+Cleaning: Anki formatting, sounds and bullets removed; only the first English meaning kept; sentences of 2–14
+words only; cards whose "English" side was really Spanish skipped; ¿…? and ¡…! kept whole. The FSI Basic Course
+deck was left out because its drill cards' English doesn't match the Spanish. Words whose English meaning
+matches a topic (food, animals, verbs...) go into that topic; the rest are in **Más palabras**.
+`Tools/data/convert_decks.py` re-does all of this if the decks are put back in the project folder; run
+`python Tools/data/build_spanish_pack.py` after editing any list.
+
+**Adding more words: import a flashcard deck** (Anki or a spreadsheet):
+
+1. Get a deck: in Anki use *File → Export → Anki Deck Package (.apkg)*, or download a shared deck from
+   ankiweb.net (search "Spanish"), or make a spreadsheet with Spanish in one column and English in another.
+2. Run `python Tools/data/import_deck.py "path/to/deck.apkg"` (or `.txt` / `.csv`). It finds the Spanish
+   and English columns itself, strips Anki's formatting and sounds, sorts short cards into words and long ones
+   into sentences, spreads them over the 5 levels by their order in the deck, and uses the deck's tags as topics
+   when they match (otherwise they go in "Más palabras"). Options: `--category food`, `--level 2`,
+   `--spanish 1 --english 2`, `--limit 1000`.
+3. Open Unity: the new words are in every lesson, the mine, fishing sentences, El intruso and the battles.
+   Delete the file in `Tools/data/imported/` to take a deck out again.
+
+If a deck uses Anki's newest format the script will say so: export it as *Notes in Plain Text (.txt)* instead.
+
+**Good free sources** (fine to use; check the licence before publishing the game):
+
+| Source | What it gives | Licence |
+|---|---|---|
+| **Tatoeba** (tatoeba.org → Downloads) | tens of thousands of Spanish–English sentence pairs | CC BY 2.0 |
+| **Frequency lists** (e.g. hermitdave/FrequencyWords on GitHub) | the most common Spanish words, in order, for the levels | CC BY-SA 4.0 |
+| **Wiktionary data** (kaikki.org, Spanish) | meanings, genders and full verb conjugations | CC BY-SA |
+| **Anki shared decks** (ankiweb.net) | ready-made decks (e.g. "Spanish Top 5000") | varies: fine for your own copy, often not for publishing |
+
+Spoken audio for new words is made by `Tools/audio/generate_speech.py` (needs the Windows Spanish voice).
+
 - **Word pack:** 152 words, 33 sentences (`Tools/data/build_spanish_pack.py` → `pack.json`).
 - **12 topics:** La comida (Food), Los animales, Los colores, Los números, La casa (Home), El pueblo (Town), La ropa (Clothes), El cuerpo (Body), La familia, La naturaleza, Los verbos, Las herramientas (Tools & weapons). Plus "Todos".
 - **5 levels:** 1 Principiante · 2 Básico · 3 Intermedio · 4 Avanzado · 5 Experto.
@@ -180,16 +236,26 @@ Each catch also pays 2 + (words in the sentence) gold and 1 + 2 × rarity Lexa. 
 Buy a pickaxe from **Don Ernesto** outside the mine (north meadow, up the road from the bakery), go inside
 and press **E** in front of a rock.
 
-**How it works:** an English word appears; spell the Spanish word by clicking its letters **in order** (there are
-3 decoy letters). Every right letter is a swing of the pickaxe and the rock cracks more. Spell all the rock's words
-to break it. A wrong letter blunts the pickaxe (**Pico ●●●**); three and the rock holds. Each word has a timer.
-Hint (2 mana) places the next letter. Broken rocks turn to rubble and come back after 45 seconds.
+**How it works:** every swing of the pickaxe is a small Spanish task. The first one on each rock is always
+spelling; after that they're mixed at random:
+
+| Task | What you do |
+|---|---|
+| **Deletrea** (spell) | An English word appears: click the letters of the Spanish word **in order** (3 decoy letters). Each right letter is a hit. |
+| **¿El, la, los o las?** (article) | Choose the right article for the noun: practises gender. |
+| **Completa la frase** (gap) | A Spanish sentence with one word missing (English shown): pick the missing word. |
+| **Elige la palabra** (pick) | Pick the Spanish for an English word from four. |
+
+Finish all of a rock's tasks to break it. A wrong answer blunts the pickaxe (**Pico ●●●**); three and the rock
+holds. Each task has a timer. Hint (2 mana) places the next letter or removes a wrong option. **No mistakes at
+all = a perfect strike** ("¡Golpe perfecto!"): double find, +2 Lexa, +5 XP. Broken rocks turn to rubble and come
+back after 45 seconds.
 
 | Rock | Words to break | Pickaxe needed | Can give |
 |---|---|---|---|
-| La roca (grey) | 1 (short words) | el pico | stone, coal, copper (iron with an iron pickaxe) |
-| La veta de mineral (orange specks) | 2 | el pico de hierro | copper, iron, silver (gold nuggets with steel) |
-| La roca de cristal (gems) | 3 (long words) | el pico de acero | silver, emerald, ruby (sapphire and diamond with diamond) |
+| La roca (grey) | 2 tasks (short words) | el pico | stone, coal, copper (iron with an iron pickaxe) |
+| La veta de mineral (orange specks) | 3 tasks | el pico de hierro | copper, iron, silver (gold nuggets with steel) |
+| La roca de cristal (gems) | 4 tasks (long words) | el pico de acero | silver, emerald, ruby (sapphire and diamond with diamond) |
 
 **Archaeology:** any rock can hide a **relic** (6%, doubled by the miner's helmet, +0.2% per Mining level):
 la punta de flecha (flint arrowhead), el fósil, la moneda romana, el ánfora antigua. They're worth a lot and are

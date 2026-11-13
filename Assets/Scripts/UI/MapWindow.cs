@@ -72,7 +72,7 @@ namespace LLG
         /// down until it doesn't. Hovering it shows the translation at the bottom of the window.</summary>
         void Place(Vector2Int tile, string es, string en, Color color)
         {
-            var plateSize = new Vector2(Mathf.Max(es.Length, en.Length) * 6 + 12, 15);
+            var plateSize = new Vector2(Mathf.Max(es.Length, en.Length) * 8 + 14, 20);     // 16 px text: sharp, never shrunk
             // keep every name inside the map
             var at = TileToMap(tile);
             at.x = Mathf.Clamp(at.x, -size.x / 2 + plateSize.x / 2 + 2, size.x / 2 - plateSize.x / 2 - 2);
@@ -97,7 +97,7 @@ namespace LLG
             hover.Entered += () => tooltip.Set(es + "  =  " + en, en + "  =  " + es);
             hover.Exited += () => tooltip.Set("Pasa el ratón por un nombre para traducirlo.", "Point at a name to translate it.");
             var label = UIFactory.LLabel("Label", plate.transform, new Vector2(0, 0), plateSize - new Vector2(6, 2), es, en, color);
-            label.resizeTextMaxSize = 12;
+            label.resizeTextMaxSize = 16;
         }
 
         public void Toggle()

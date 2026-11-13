@@ -1,0 +1,653 @@
+# More Spanish for Runes of Speech (written for this game; free to use).
+# Words:      W|category|level|Spanish|English
+# Sentences:  S|category|level|Spanish|English      (no final punctuation: the words become tiles)
+# Levels: 1 Principiante, 2 Básico, 3 Intermedio, 4 Avanzado, 5 Experto
+#
+# ---------------------------------------------------------------- food
+W|food|1|la fruta|fruit
+W|food|1|la sal|salt
+W|food|1|el té|tea
+W|food|1|el café|coffee
+W|food|1|el zumo|juice
+W|food|2|la ensalada|salad
+W|food|2|el tomate|tomato
+W|food|2|la patata|potato
+W|food|2|la cebolla|onion
+W|food|2|el azúcar|sugar
+W|food|2|el jamón|ham
+W|food|2|la uva|grape
+W|food|2|el limón|lemon
+W|food|2|el helado|ice cream
+W|food|3|el aceite|oil
+W|food|3|la tortilla|omelette
+W|food|3|la paella|paella
+W|food|3|el ajo|garlic
+W|food|3|la lechuga|lettuce
+W|food|3|la pera|pear
+W|food|3|la cereza|cherry
+W|food|3|el chorizo|chorizo
+W|food|3|el yogur|yogurt
+W|food|3|la miel|honey
+W|food|3|el desayuno|breakfast
+W|food|3|la comida|lunch
+W|food|3|la cena|dinner
+W|food|4|la sandía|watermelon
+W|food|4|el melón|melon
+W|food|4|la piña|pineapple
+W|food|4|el champiñón|mushroom
+W|food|4|el pepino|cucumber
+W|food|4|los garbanzos|chickpeas
+W|food|4|las lentejas|lentils
+W|food|4|el gazpacho|gazpacho (cold soup)
+W|food|4|la harina|flour
+W|food|5|el aguacate|avocado
+W|food|5|la calabaza|pumpkin
+W|food|5|el marisco|seafood
+W|food|5|la pimienta|black pepper
+W|food|5|el vinagre|vinegar
+# ---------------------------------------------------------------- animals
+W|animal|1|el pájaro|bird
+W|animal|1|el pez|fish (animal)
+W|animal|1|la vaca|cow
+W|animal|1|el cerdo|pig
+W|animal|2|la oveja|sheep
+W|animal|2|la cabra|goat
+W|animal|2|el pato|duck
+W|animal|2|la gallina|hen
+W|animal|2|el ratón|mouse
+W|animal|2|el oso|bear
+W|animal|2|el león|lion
+W|animal|3|el burro|donkey
+W|animal|3|el zorro|fox
+W|animal|3|la ardilla|squirrel
+W|animal|3|el elefante|elephant
+W|animal|3|el mono|monkey
+W|animal|3|la serpiente|snake
+W|animal|3|la abeja|bee
+W|animal|3|la hormiga|ant
+W|animal|3|la rana|frog
+W|animal|4|el tigre|tiger
+W|animal|4|la jirafa|giraffe
+W|animal|4|el delfín|dolphin
+W|animal|4|la ballena|whale
+W|animal|4|el búho|owl
+W|animal|4|la araña|spider
+W|animal|4|el toro|bull
+W|animal|5|el murciélago|bat
+W|animal|5|el cocodrilo|crocodile
+W|animal|5|el águila|eagle
+W|animal|5|el caracol|snail
+W|animal|5|el ciervo|deer
+# ---------------------------------------------------------------- colours
+W|color|2|marrón|brown
+W|color|2|rosa|pink
+W|color|3|morado|purple
+W|color|3|gris|grey
+W|color|4|dorado|golden
+W|color|4|plateado|silver (colour)
+W|color|5|turquesa|turquoise
+# ---------------------------------------------------------------- numbers
+W|number|2|once|eleven
+W|number|2|doce|twelve
+W|number|2|trece|thirteen
+W|number|2|catorce|fourteen
+W|number|2|quince|fifteen
+W|number|3|dieciséis|sixteen
+W|number|3|diecisiete|seventeen
+W|number|3|dieciocho|eighteen
+W|number|3|diecinueve|nineteen
+W|number|3|veinte|twenty
+W|number|3|treinta|thirty
+W|number|4|cuarenta|forty
+W|number|4|cincuenta|fifty
+W|number|4|sesenta|sixty
+W|number|4|setenta|seventy
+W|number|4|ochenta|eighty
+W|number|4|noventa|ninety
+W|number|5|cien|one hundred
+W|number|5|quinientos|five hundred
+W|number|5|mil|one thousand
+W|number|5|primero|first
+W|number|5|segundo|second
+W|number|5|tercero|third
+# ---------------------------------------------------------------- home
+W|home|1|la cama|bed
+W|home|1|la silla|chair
+W|home|1|la puerta|door
+W|home|2|la cocina|kitchen
+W|home|2|el baño|bathroom
+W|home|2|el dormitorio|bedroom
+W|home|2|la lámpara|lamp
+W|home|2|el sofá|sofa
+W|home|2|la llave|key
+W|home|2|el plato|plate
+W|home|2|el vaso|glass
+W|home|3|la cuchara|spoon
+W|home|3|el tenedor|fork
+W|home|3|la taza|cup
+W|home|3|el espejo|mirror
+W|home|3|la alfombra|rug
+W|home|3|el armario|wardrobe
+W|home|3|la escalera|stairs
+W|home|3|el techo|ceiling
+W|home|4|la nevera|fridge
+W|home|4|el horno|oven
+W|home|4|la almohada|pillow
+W|home|4|la manta|blanket
+W|home|4|el jardín|garden
+W|home|5|la chimenea|fireplace
+W|home|5|el sótano|basement
+W|home|5|el balcón|balcony
+# ---------------------------------------------------------------- town
+W|town|1|la calle|street
+W|town|1|el parque|park
+W|town|2|la plaza|square
+W|town|2|la escuela|school
+W|town|2|el hospital|hospital
+W|town|2|el banco|bank (also bench)
+W|town|2|el restaurante|restaurant
+W|town|2|la farmacia|chemist
+W|town|3|la biblioteca|library
+W|town|3|el museo|museum
+W|town|3|la estación|station
+W|town|3|el ayuntamiento|town hall
+W|town|3|la iglesia|church
+W|town|3|el castillo|castle
+W|town|3|la fuente|fountain
+W|town|3|el pueblo|village
+W|town|4|la ciudad|city
+W|town|4|el barrio|neighbourhood
+W|town|4|la carnicería|butcher's shop
+W|town|4|la pescadería|fishmonger's
+W|town|4|la frutería|fruit shop
+W|town|4|el semáforo|traffic light
+W|town|5|la catedral|cathedral
+W|town|5|el mercadillo|street market
+W|town|5|la muralla|city wall
+# ---------------------------------------------------------------- clothes
+W|clothes|1|la camisa|shirt
+W|clothes|1|los zapatos|shoes
+W|clothes|2|la falda|skirt
+W|clothes|2|el vestido|dress
+W|clothes|2|los calcetines|socks
+W|clothes|2|la chaqueta|jacket
+W|clothes|3|el abrigo|coat
+W|clothes|3|la bufanda|scarf
+W|clothes|3|los guantes|gloves
+W|clothes|3|las botas|boots
+W|clothes|3|la gorra|cap
+W|clothes|4|el jersey|jumper
+W|clothes|4|el cinturón|belt
+W|clothes|4|el pijama|pyjamas
+W|clothes|4|las gafas|glasses
+W|clothes|5|el bolsillo|pocket
+W|clothes|5|el paraguas|umbrella
+# ---------------------------------------------------------------- body
+W|body|1|la boca|mouth
+W|body|1|la nariz|nose
+W|body|1|el pie|foot
+W|body|2|el pelo|hair
+W|body|2|la oreja|ear
+W|body|2|el dedo|finger
+W|body|2|la espalda|back
+W|body|3|el cuello|neck
+W|body|3|el hombro|shoulder
+W|body|3|la rodilla|knee
+W|body|3|el diente|tooth
+W|body|3|la lengua|tongue
+W|body|3|el estómago|stomach
+W|body|4|el corazón|heart
+W|body|4|el codo|elbow
+W|body|4|la muñeca|wrist
+W|body|4|la frente|forehead
+W|body|5|el tobillo|ankle
+W|body|5|la ceja|eyebrow
+W|body|5|el hueso|bone
+# ---------------------------------------------------------------- family
+W|family|1|el bebé|baby
+W|family|2|el hijo|son
+W|family|2|la hija|daughter
+W|family|2|el abuelo|grandfather
+W|family|3|el tío|uncle
+W|family|3|el primo|cousin (male)
+W|family|3|la prima|cousin (female)
+W|family|3|el marido|husband
+W|family|3|la esposa|wife
+W|family|4|el nieto|grandson
+W|family|4|la nieta|granddaughter
+W|family|4|los padres|parents
+W|family|5|el sobrino|nephew
+W|family|5|la sobrina|niece
+W|family|5|el cuñado|brother-in-law
+# ---------------------------------------------------------------- nature
+W|nature|1|el mar|sea
+W|nature|1|la luna|moon
+W|nature|1|la estrella|star
+W|nature|2|la montaña|mountain
+W|nature|2|la playa|beach
+W|nature|2|el cielo|sky
+W|nature|2|la nube|cloud
+W|nature|2|la hoja|leaf
+W|nature|3|el lago|lake
+W|nature|3|la isla|island
+W|nature|3|la piedra|stone
+W|nature|3|la arena|sand
+W|nature|3|el campo|countryside
+W|nature|3|la hierba|grass
+W|nature|3|la roca|rock
+W|nature|4|el volcán|volcano
+W|nature|4|la cueva|cave
+W|nature|4|la selva|jungle
+W|nature|4|el desierto|desert
+W|nature|4|la ola|wave
+W|nature|4|la rama|branch
+W|nature|5|la cascada|waterfall
+W|nature|5|el arcoíris|rainbow
+W|nature|5|el valle|valley
+W|nature|5|la orilla|shore
+# ---------------------------------------------------------------- verbs
+W|verb|1|ser|to be (permanent)
+W|verb|1|estar|to be (state, place)
+W|verb|1|ver|to see
+W|verb|1|dormir|to sleep
+W|verb|1|vivir|to live
+W|verb|2|hacer|to do / to make
+W|verb|2|decir|to say
+W|verb|2|venir|to come
+W|verb|2|dar|to give
+W|verb|2|leer|to read
+W|verb|2|escribir|to write
+W|verb|2|jugar|to play
+W|verb|2|abrir|to open
+W|verb|2|cerrar|to close
+W|verb|2|mirar|to look
+W|verb|2|escuchar|to listen
+W|verb|2|caminar|to walk
+W|verb|3|saber|to know (a fact)
+W|verb|3|conocer|to know (a person, a place)
+W|verb|3|poder|to be able to
+W|verb|3|salir|to go out
+W|verb|3|llegar|to arrive
+W|verb|3|trabajar|to work
+W|verb|3|estudiar|to study
+W|verb|3|pagar|to pay
+W|verb|3|vender|to sell
+W|verb|3|buscar|to look for
+W|verb|3|encontrar|to find
+W|verb|3|pensar|to think
+W|verb|3|cantar|to sing
+W|verb|3|bailar|to dance
+W|verb|3|nadar|to swim
+W|verb|3|llamar|to call
+W|verb|3|ayudar|to help
+W|verb|4|entender|to understand
+W|verb|4|empezar|to begin
+W|verb|4|terminar|to finish
+W|verb|4|recordar|to remember
+W|verb|4|olvidar|to forget
+W|verb|4|preguntar|to ask
+W|verb|4|contestar|to answer
+W|verb|4|limpiar|to clean
+W|verb|4|lavar|to wash
+W|verb|4|viajar|to travel
+W|verb|4|esperar|to wait / to hope
+W|verb|4|perder|to lose
+W|verb|4|ganar|to win / to earn
+W|verb|4|volver|to come back
+W|verb|4|subir|to go up
+W|verb|4|bajar|to go down
+W|verb|4|plantar|to plant
+W|verb|5|conseguir|to get / to achieve
+W|verb|5|elegir|to choose
+W|verb|5|sentir|to feel
+W|verb|5|seguir|to follow / to keep going
+W|verb|5|crecer|to grow
+W|verb|5|romper|to break
+W|verb|5|proteger|to protect
+W|verb|5|descubrir|to discover
+W|verb|5|enseñar|to teach / to show
+W|verb|5|cavar|to dig
+# ---------------------------------------------------------------- tools
+W|tool|2|el martillo|hammer
+W|tool|3|el pico|pickaxe
+W|tool|3|la cuerda|rope
+W|tool|4|la pala|shovel
+W|tool|4|el clavo|nail
+W|tool|5|la sierra|saw
+W|tool|5|el yunque|anvil
+# ---------------------------------------------------------------- time (new topic)
+W|time|1|el día|day
+W|time|1|la noche|night
+W|time|1|hoy|today
+W|time|1|mañana|tomorrow
+W|time|1|ayer|yesterday
+W|time|1|el lunes|Monday
+W|time|1|el martes|Tuesday
+W|time|1|el miércoles|Wednesday
+W|time|2|el jueves|Thursday
+W|time|2|el viernes|Friday
+W|time|2|el sábado|Saturday
+W|time|2|el domingo|Sunday
+W|time|2|la semana|week
+W|time|2|el mes|month
+W|time|2|el año|year
+W|time|2|la hora|hour
+W|time|2|la tarde|afternoon / evening
+W|time|3|enero|January
+W|time|3|febrero|February
+W|time|3|marzo|March
+W|time|3|abril|April
+W|time|3|mayo|May
+W|time|3|junio|June
+W|time|3|julio|July
+W|time|3|agosto|August
+W|time|3|septiembre|September
+W|time|3|octubre|October
+W|time|3|noviembre|November
+W|time|3|diciembre|December
+W|time|3|el minuto|minute
+W|time|4|la primavera|spring
+W|time|4|el verano|summer
+W|time|4|el otoño|autumn
+W|time|4|el invierno|winter
+W|time|4|siempre|always
+W|time|4|nunca|never
+W|time|5|el fin de semana|weekend
+W|time|5|a menudo|often
+W|time|5|todavía|still / yet
+# ---------------------------------------------------------------- weather (new topic)
+W|weather|1|el sol|sun
+W|weather|1|la lluvia|rain
+W|weather|2|el viento|wind
+W|weather|2|la nieve|snow
+W|weather|2|el calor|heat
+W|weather|2|el frío|cold
+W|weather|3|la tormenta|storm
+W|weather|3|la niebla|fog
+W|weather|3|el trueno|thunder
+W|weather|4|el relámpago|lightning
+W|weather|4|el hielo|ice
+W|weather|4|el tiempo|weather / time
+W|weather|5|la temperatura|temperature
+W|weather|5|el granizo|hail
+# ---------------------------------------------------------------- school (new topic)
+W|school|1|el libro|book
+W|school|1|el lápiz|pencil
+W|school|2|el cuaderno|notebook
+W|school|2|la mochila|backpack
+W|school|2|el profesor|teacher (male)
+W|school|2|la profesora|teacher (female)
+W|school|2|el alumno|pupil
+W|school|3|la clase|class
+W|school|3|la pizarra|blackboard
+W|school|3|el bolígrafo|pen
+W|school|3|la goma|rubber (eraser)
+W|school|3|la regla|ruler
+W|school|3|la palabra|word
+W|school|4|la pregunta|question
+W|school|4|la respuesta|answer
+W|school|4|el examen|exam
+W|school|4|la lección|lesson
+W|school|5|el diccionario|dictionary
+W|school|5|la asignatura|school subject
+W|school|5|el idioma|language
+# ---------------------------------------------------------------- jobs (new topic)
+W|job|2|el médico|doctor
+W|job|2|el panadero|baker
+W|job|2|el granjero|farmer
+W|job|3|el cocinero|cook
+W|job|3|el pescador|fisherman
+W|job|3|el herrero|blacksmith
+W|job|3|el policía|police officer
+W|job|3|el bombero|firefighter
+W|job|3|el camarero|waiter
+W|job|4|el carpintero|carpenter
+W|job|4|el enfermero|nurse
+W|job|4|el músico|musician
+W|job|4|el minero|miner
+W|job|4|el soldado|soldier
+W|job|4|el vendedor|seller
+W|job|5|el arquitecto|architect
+W|job|5|el abogado|lawyer
+W|job|5|el arqueólogo|archaeologist
+W|job|5|el pintor|painter
+# ---------------------------------------------------------------- describing words (new topic)
+W|adjective|1|grande|big
+W|adjective|1|pequeño|small
+W|adjective|1|bueno|good
+W|adjective|1|malo|bad
+W|adjective|1|nuevo|new
+W|adjective|1|viejo|old
+W|adjective|2|alto|tall
+W|adjective|2|bajo|short
+W|adjective|2|bonito|pretty
+W|adjective|2|feo|ugly
+W|adjective|2|caliente|hot
+W|adjective|2|frío|cold (thing)
+W|adjective|2|rápido|fast
+W|adjective|2|lento|slow
+W|adjective|2|fácil|easy
+W|adjective|2|difícil|difficult
+W|adjective|3|largo|long
+W|adjective|3|corto|short (length)
+W|adjective|3|fuerte|strong
+W|adjective|3|débil|weak
+W|adjective|3|limpio|clean
+W|adjective|3|sucio|dirty
+W|adjective|3|lleno|full
+W|adjective|3|vacío|empty
+W|adjective|3|rico|tasty / rich
+W|adjective|3|pobre|poor
+W|adjective|3|joven|young
+W|adjective|3|barato|cheap
+W|adjective|3|caro|expensive
+W|adjective|4|tranquilo|calm
+W|adjective|4|ruidoso|noisy
+W|adjective|4|oscuro|dark
+W|adjective|4|claro|light / clear
+W|adjective|4|pesado|heavy
+W|adjective|4|ligero|light (weight)
+W|adjective|4|duro|hard
+W|adjective|4|blando|soft
+W|adjective|4|seco|dry
+W|adjective|4|mojado|wet
+W|adjective|5|valiente|brave
+W|adjective|5|peligroso|dangerous
+W|adjective|5|antiguo|ancient
+W|adjective|5|precioso|beautiful / precious
+W|adjective|5|extraño|strange
+W|adjective|5|amable|kind
+# ---------------------------------------------------------------- feelings (new topic)
+W|feeling|1|feliz|happy
+W|feeling|1|triste|sad
+W|feeling|2|cansado|tired
+W|feeling|2|enfadado|angry
+W|feeling|2|contento|pleased
+W|feeling|3|nervioso|nervous
+W|feeling|3|aburrido|bored
+W|feeling|3|el miedo|fear
+W|feeling|3|el hambre|hunger
+W|feeling|3|la sed|thirst
+W|feeling|4|sorprendido|surprised
+W|feeling|4|preocupado|worried
+W|feeling|4|orgulloso|proud
+W|feeling|5|la vergüenza|embarrassment
+W|feeling|5|la alegría|joy
+# ---------------------------------------------------------------- travel (new topic)
+W|travel|2|el coche|car
+W|travel|2|el tren|train
+W|travel|2|el barco|boat
+W|travel|2|el camino|path / road
+W|travel|3|el avión|plane
+W|travel|3|la bicicleta|bicycle
+W|travel|3|el billete|ticket
+W|travel|3|la maleta|suitcase
+W|travel|3|el mapa|map
+W|travel|4|el viaje|journey
+W|travel|4|el hotel|hotel
+W|travel|4|la frontera|border
+W|travel|4|el puerto|port
+W|travel|5|el aeropuerto|airport
+W|travel|5|el equipaje|luggage
+# ---------------------------------------------------------------- useful phrases (new topic)
+W|phrase|1|hola|hello
+W|phrase|1|adiós|goodbye
+W|phrase|1|sí|yes
+W|phrase|1|no|no
+W|phrase|1|gracias|thank you
+W|phrase|1|por favor|please
+W|phrase|1|buenos días|good morning
+W|phrase|2|buenas noches|good night
+W|phrase|2|perdón|sorry / excuse me
+W|phrase|2|de nada|you're welcome
+W|phrase|2|hasta luego|see you later
+W|phrase|2|¿cómo estás?|how are you?
+W|phrase|3|me llamo|my name is
+W|phrase|3|¿cuánto cuesta?|how much is it?
+W|phrase|3|no entiendo|I don't understand
+W|phrase|3|¿dónde está?|where is it?
+W|phrase|4|¡qué bien!|great!
+W|phrase|4|¡cuidado!|careful!
+W|phrase|4|tengo hambre|I'm hungry
+W|phrase|5|¡que aproveche!|enjoy your meal!
+W|phrase|5|¡mucho gusto!|nice to meet you!
+#
+# ================================================================ sentences
+S|food|1|Bebo leche|I drink milk
+S|food|1|Me gusta el queso|I like cheese
+S|food|1|La manzana es roja|The apple is red
+S|food|2|Quiero un café con leche|I want a coffee with milk
+S|food|2|La sopa está caliente|The soup is hot
+S|food|2|Comemos arroz con pollo|We eat rice with chicken
+S|food|2|No me gusta la cebolla|I don't like onion
+S|food|3|Mi madre hace una tortilla de patatas|My mother makes a potato omelette
+S|food|3|El desayuno está en la mesa|Breakfast is on the table
+S|food|3|Compro fruta en el mercado|I buy fruit at the market
+S|food|4|Los domingos comemos paella con mi familia|On Sundays we eat paella with my family
+S|food|4|El gazpacho se come frío en verano|Gazpacho is eaten cold in summer
+S|food|5|Si tienes hambre puedes comer un bocadillo|If you are hungry you can eat a sandwich
+S|animal|1|El pájaro canta|The bird sings
+S|animal|1|La vaca es grande|The cow is big
+S|animal|2|El pato nada en el lago|The duck swims in the lake
+S|animal|2|Tengo un perro y un gato|I have a dog and a cat
+S|animal|3|La abeja hace miel|The bee makes honey
+S|animal|3|El zorro corre por el campo|The fox runs through the countryside
+S|animal|4|Las ovejas comen hierba en la montaña|The sheep eat grass on the mountain
+S|animal|5|El búho caza ratones por la noche|The owl hunts mice at night
+S|color|1|El cielo es azul|The sky is blue
+S|color|2|Mi gato es gris|My cat is grey
+S|color|3|Me gusta el vestido morado|I like the purple dress
+S|number|1|Tengo tres libros|I have three books
+S|number|2|Hay doce huevos|There are twelve eggs
+S|number|3|Mi abuelo tiene ochenta años|My grandfather is eighty years old
+S|number|4|El pan cuesta dos euros|The bread costs two euros
+S|number|5|En el pueblo viven mil personas|A thousand people live in the village
+S|home|1|La cama es grande|The bed is big
+S|home|1|Abro la puerta|I open the door
+S|home|2|La cocina está limpia|The kitchen is clean
+S|home|2|Mi dormitorio es pequeño|My bedroom is small
+S|home|3|La llave está en la mesa|The key is on the table
+S|home|3|Hay un espejo en el baño|There is a mirror in the bathroom
+S|home|4|Ponemos la leche en la nevera|We put the milk in the fridge
+S|home|5|En invierno encendemos la chimenea|In winter we light the fireplace
+S|town|1|Voy al parque|I go to the park
+S|town|2|La escuela está cerca|The school is near
+S|town|2|¿Dónde está la farmacia?|Where is the chemist?
+S|town|3|La biblioteca abre a las nueve|The library opens at nine
+S|town|3|Hay una fuente en la plaza|There is a fountain in the square
+S|town|4|El tren sale de la estación a las ocho|The train leaves the station at eight
+S|town|4|Mi barrio es muy tranquilo|My neighbourhood is very calm
+S|town|5|La catedral es el edificio más antiguo de la ciudad|The cathedral is the oldest building in the city
+S|clothes|1|Llevo una camisa blanca|I wear a white shirt
+S|clothes|2|Mis zapatos son negros|My shoes are black
+S|clothes|3|Hace frío y llevo una bufanda|It is cold and I wear a scarf
+S|clothes|4|Necesito un abrigo para el invierno|I need a coat for winter
+S|body|1|Tengo dos ojos|I have two eyes
+S|body|2|Me duele la cabeza|My head hurts
+S|body|3|Me lavo los dientes|I brush my teeth
+S|body|4|El corazón está en el pecho|The heart is in the chest
+S|family|1|Mi padre es alto|My father is tall
+S|family|2|Tengo una hermana pequeña|I have a little sister
+S|family|3|Mis abuelos viven en el campo|My grandparents live in the countryside
+S|family|4|Mi prima viene a mi casa el sábado|My cousin comes to my house on Saturday
+S|family|5|Mis padres se conocieron en Madrid|My parents met in Madrid
+S|nature|1|El mar es grande|The sea is big
+S|nature|2|La luna sale de noche|The moon comes out at night
+S|nature|2|Hay muchas estrellas|There are many stars
+S|nature|3|Subimos a la montaña|We climb the mountain
+S|nature|3|El río va al mar|The river goes to the sea
+S|nature|4|En otoño caen las hojas|In autumn the leaves fall
+S|nature|5|Detrás de la cascada hay una cueva secreta|Behind the waterfall there is a secret cave
+S|verb|1|Yo duermo mucho|I sleep a lot
+S|verb|1|Vivo en Valdeluz|I live in Valdeluz
+S|verb|2|Leo un libro|I read a book
+S|verb|2|Escribo una carta|I write a letter
+S|verb|2|Ella canta muy bien|She sings very well
+S|verb|2|Jugamos en la plaza|We play in the square
+S|verb|3|Busco mi llave|I am looking for my key
+S|verb|3|No sé la respuesta|I don't know the answer
+S|verb|3|Conozco a tu hermano|I know your brother
+S|verb|3|Puedo nadar en el lago|I can swim in the lake
+S|verb|3|Trabajo en la panadería|I work in the bakery
+S|verb|4|No entiendo la pregunta|I don't understand the question
+S|verb|4|Empezamos la clase a las nueve|We start the class at nine
+S|verb|4|Siempre olvido mi paraguas|I always forget my umbrella
+S|verb|4|Volvemos a casa por la tarde|We go back home in the afternoon
+S|verb|5|Quiero aprender español para viajar|I want to learn Spanish to travel
+S|verb|5|El arqueólogo descubrió una moneda romana|The archaeologist discovered a Roman coin
+S|verb|5|Sigue el camino hasta el puente|Follow the path to the bridge
+S|tool|2|Necesito un martillo|I need a hammer
+S|tool|3|El minero usa un pico|The miner uses a pickaxe
+S|tool|4|Cavamos con una pala|We dig with a shovel
+S|time|1|Hoy es lunes|Today is Monday
+S|time|1|Mañana es martes|Tomorrow is Tuesday
+S|time|2|El sábado no trabajo|On Saturday I don't work
+S|time|2|Son las tres|It is three o'clock
+S|time|3|Mi cumpleaños es en mayo|My birthday is in May
+S|time|3|Ayer fui al mercado|Yesterday I went to the market
+S|time|4|En verano hace mucho calor|In summer it is very hot
+S|time|4|Nunca como carne|I never eat meat
+S|time|5|Todavía no he terminado los deberes|I still haven't finished my homework
+S|weather|1|Hace sol|It is sunny
+S|weather|1|Hace frío|It is cold
+S|weather|2|Está lloviendo|It is raining
+S|weather|2|Hace mucho viento|It is very windy
+S|weather|3|Hoy hay niebla en el valle|Today there is fog in the valley
+S|weather|4|Después de la tormenta salió el arcoíris|After the storm the rainbow came out
+S|weather|5|Si nieva mañana no hay clase|If it snows tomorrow there is no class
+S|school|1|Tengo un lápiz|I have a pencil
+S|school|2|La profesora es simpática|The teacher is nice
+S|school|3|Escribo en mi cuaderno|I write in my notebook
+S|school|3|La clase empieza a las ocho|The class starts at eight
+S|school|4|El examen es muy difícil|The exam is very difficult
+S|school|5|Estudio tres idiomas en la escuela|I study three languages at school
+S|job|2|Mi tío es médico|My uncle is a doctor
+S|job|3|El panadero hace pan por la mañana|The baker makes bread in the morning
+S|job|3|El pescador vende pescado fresco|The fisherman sells fresh fish
+S|job|4|El bombero es muy valiente|The firefighter is very brave
+S|job|5|Quiero ser arqueólogo cuando sea mayor|I want to be an archaeologist when I grow up
+S|adjective|1|El perro es pequeño|The dog is small
+S|adjective|2|El examen es fácil|The exam is easy
+S|adjective|2|Mi coche es rápido|My car is fast
+S|adjective|3|La caja está vacía|The box is empty
+S|adjective|3|El agua está sucia|The water is dirty
+S|adjective|4|La piedra es muy pesada|The stone is very heavy
+S|adjective|5|El bosque es peligroso de noche|The forest is dangerous at night
+S|feeling|1|Estoy feliz|I am happy
+S|feeling|2|Estoy muy cansado|I am very tired
+S|feeling|3|Tengo miedo de los lobos|I am afraid of the wolves
+S|feeling|3|Tengo sed|I am thirsty
+S|feeling|4|Mi madre está preocupada|My mother is worried
+S|feeling|5|Estoy orgulloso de mi hermana|I am proud of my sister
+S|travel|2|Voy en tren|I go by train
+S|travel|3|Necesito un billete para Sevilla|I need a ticket to Seville
+S|travel|4|El barco sale del puerto|The boat leaves the port
+S|travel|5|Perdimos el equipaje en el aeropuerto|We lost the luggage at the airport
+S|phrase|1|Hola me llamo Ana|Hello my name is Ana
+S|phrase|1|Muchas gracias|Thank you very much
+S|phrase|2|Buenos días señor|Good morning sir
+S|phrase|2|¿Cómo estás?|How are you?
+S|phrase|3|¿Cuánto cuesta el pan?|How much is the bread?
+S|phrase|3|Perdón no entiendo|Sorry I don't understand
+S|phrase|4|¿Puedes hablar más despacio?|Can you speak more slowly?
+S|phrase|5|Encantado de conocerte|Pleased to meet you

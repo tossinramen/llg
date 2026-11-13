@@ -19,3 +19,11 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# flashcard decks (big, and their licence may not allow sharing); the imported text is in Tools/data/imported
+*.apkg
+*.colpkg
+
+# Python caches
+__pycache__/
+*.pyc

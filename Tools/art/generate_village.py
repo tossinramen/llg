@@ -354,25 +354,38 @@ def raised_terrace(out, d, grid):
             bricks(face_x[0], ya, face_x[1], yb, course=4, joint=8)
             d.line([face_x[1] if side < 0 else face_x[0], ya, face_x[1] if side < 0 else face_x[0], yb], fill=kerb_d)
 
-    # stairs at both ends: three steps going down and out, each with a lit tread and a dark riser
+    # stairs at both ends, drawn like real steps seen from the front: six narrow steps over three
+    # tiles, each one lower than the last. Every step has a lit top edge (its nose) and a brick face
+    # below it down to the plaza, so the faces form a stepped diagonal under the stairs.
     Ys, Ye = sy0 * T, (sy1 + 1) * T
+    H, N, SW = T, 6, 8                              # terrace height (px), steps, step width (px)
     for side in (-1, 1):
         edge = tx0 - 1 if side < 0 else tx1 + 1
-        for k in range(3):                          # k = 0 at the top (next to the terrace)
-            tx = edge + side * k
-            X = tx * T
-            tone = 1.06 - k * 0.09
+        start = edge * T if side > 0 else edge * T + T - 1     # pixel column next to the terrace
+        for k in range(N):
+            h = H * (N - k) / (N + 1)                          # this step's height above the plaza
+            drop = int(round(H - h))
+            xa = start + side * k * SW
+            xb = xa + side * (SW - 1)
+            x0, x1 = min(xa, xb), max(xa, xb)
+            tone = 1.08 - k * 0.05
             tread = tuple(min(255, int(c * tone)) for c in kerb)
-            d.rectangle([X, Ys, X + T - 1, Ye - 1], fill=tread)
-            rx = (X + T - 4, X + T - 1) if side > 0 else (X, X + 3)            # riser: the drop to the next step
-            d.rectangle([rx[0], Ys, rx[1], Ye - 1], fill=tuple(int(c * tone) for c in wall_d))
-            nx = X if side > 0 else X + T - 1
-            d.line([nx, Ys, nx, Ye - 1], fill=kerb_l)                           # lit nose
-            d.line([X, Ys + T, X + T - 1, Ys + T], fill=tuple(int(c * 0.8) for c in tread))
-            face = 12 - k * 4                                                    # the stair's side wall gets lower
-            bricks(X, Ye, X + T - 1, Ye + face, course=4, joint=8)
+            top, bottom = Ys + drop, Ye - 1 + drop
+            d.rectangle([x0, top, x1, bottom], fill=tread)                       # the tread
+            d.line([x0, top, x1, top], fill=kerb_l)                              # lit nose along the top
+            d.line([x0, top + 1, x1, top + 1], fill=tuple(min(255, c + 12) for c in tread))
+            outer = x1 if side > 0 else x0
+            d.line([outer, top, outer, bottom], fill=kerb_d)                     # the drop to the next step
+            d.line([x0, top + (bottom - top) // 2, x1, top + (bottom - top) // 2], fill=tuple(int(c * 0.88) for c in tread))
+            face_top, face_bottom = bottom + 1, Ye + H - 1                      # brick face down to the plaza
+            if face_bottom > face_top:
+                bricks(x0, face_top, x1, face_bottom, course=4, joint=8)
+                d.line([x0, face_top, x1, face_top], fill=kerb_d)
+        for k in range(3):                                                       # the stair tiles
+            tx = edge + side * k
             for ty in (sy0, sy1):
-                grid[ty][tx] = "Š"[0] if False else "Š"
+                grid[ty][tx] = "Š"
+            grid[sy1 + 1][tx] = "Ŧ"                                              # the stairs' front face is solid
 
     # walls are solid; the stairs are walkable
     for tx in range(tx0 - 1, tx1 + 2):

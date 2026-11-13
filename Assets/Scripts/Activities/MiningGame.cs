@@ -57,25 +57,34 @@ namespace LLG
     }
 
     /// <summary>
-    /// Mining a rock: spell Spanish words letter by letter to swing the pickaxe. Every right letter is
-    /// a hit (cracks appear); spell all the rock's words to break it. A wrong letter blunts the
-    /// pickaxe (3 and the rock holds). Stone needs 1 word, ore veins 2, crystal rocks 3.
-    /// Trains Mining (Minería) and Spelling (Ortografía).
+    /// Mining a rock. Each swing of the pickaxe is a little Spanish task, picked at random:
+    ///   Deletrea - spell the word letter by letter (each right letter is a hit)
+    ///   Género   - el, la, los or las?
+    ///   Frase    - fill the gap in a sentence
+    ///   Elige    - pick the Spanish for an English word
+    /// Stone takes 2 tasks, ore veins 3, crystal rocks 4. A wrong answer blunts the pickaxe (3 and the
+    /// rock holds). No mistakes at all = a perfect strike: one extra find. Trains Mining and Spelling.
     /// </summary>
     public class MiningGame : GameWindow
     {
+        enum Task { Spell, Gender, Gap, Pick }
         const int Sharpness = 3, HintCost = 2;
+        static readonly string[] TaskEs = { "Deletrea la palabra", "¿El, la, los o las?", "Completa la frase", "Elige la palabra" };
+        static readonly string[] TaskEn = { "Spell the word", "Which article?", "Fill the gap", "Pick the word" };
+
         Image rockImage, crack, loot;
-        Text wordText, englishText, edgeText, gearText, resultText;
+        Text wordText, englishText, edgeText, gearText, resultText, taskText;
         Image timerBar;
         Transform letters;
         Button hintButton;
         Mine.Rock rock;
         Vector2Int rockTile;
         System.Action<Vector2Int> onBroken;
-        string word, article;
-        int next, wordsLeft, wordsTotal, edge, hits, freeHints;
-        float timer, totalTime;
+        Task task;
+        string word, article, answer, gapSentence;
+        readonly List<string> options = new List<string>();
+        int next, tasksLeft, tasksTotal, edge, hits, freeHints, mistakes;
+        float timer, totalTime, shake;
         bool playing;
         readonly HashSet<string> used = new HashSet<string>();
 
@@ -87,11 +96,12 @@ namespace LLG
             rockImage = UIFactory.Img("Rock", W, new Vector2(-180, 26), new Vector2(112, 96), Color.white);
             crack = UIFactory.Img("Crack", W, new Vector2(-180, 26), new Vector2(64, 64), Color.white);
             loot = UIFactory.Img("Loot", W, new Vector2(-180, 26), new Vector2(64, 64), Color.white);
-            englishText = UIFactory.Label("English", W, new Vector2(80, 70), new Vector2(330, 20), "", UIFactory.Teal);
-            wordText = UIFactory.Label("Word", W, new Vector2(80, 38), new Vector2(330, 26), "", UIFactory.Purple, TextAnchor.MiddleCenter, 16);
-            edgeText = UIFactory.Label("Edge", W, new Vector2(80, 12), new Vector2(330, 16), "", UIFactory.Ink, TextAnchor.MiddleCenter, 12);
-            UIFactory.Box("TimerBack", W, new Vector2(80, -6), new Vector2(304, 10), UIFactory.Faded);
-            timerBar = UIFactory.Img("Timer", W, new Vector2(80, -6), new Vector2(300, 6), UIFactory.Green);
+            taskText = UIFactory.Label("Task", W, new Vector2(80, 86), new Vector2(330, 18), "", UIFactory.Ink);
+            englishText = UIFactory.Label("English", W, new Vector2(80, 64), new Vector2(330, 22), "", UIFactory.Teal);
+            wordText = UIFactory.Label("Word", W, new Vector2(80, 38), new Vector2(330, 26), "", UIFactory.Purple);
+            edgeText = UIFactory.Label("Edge", W, new Vector2(80, 14), new Vector2(330, 16), "", UIFactory.Ink, TextAnchor.MiddleCenter, 12);
+            UIFactory.Box("TimerBack", W, new Vector2(80, -4), new Vector2(304, 10), UIFactory.Faded);
+            timerBar = UIFactory.Img("Timer", W, new Vector2(80, -4), new Vector2(300, 6), UIFactory.Green);
             letters = UIFactory.Rect("Letters", W, new Vector2(0, -58), Vector2.zero);
             resultText = UIFactory.Label("Result", W, new Vector2(0, -98), new Vector2(520, 36), "", UIFactory.Ink);
             hintButton = UIFactory.LBtn("Hint", W, new Vector2(-150, -132), new Vector2(170, 24), "Pista (2 maná)", "Hint (2 mana)", UIFactory.Blue, Hint);
@@ -104,9 +114,9 @@ namespace LLG
             rock = kind;
             rockTile = tile;
             onBroken = broken;
-            wordsTotal = wordsLeft = (int)kind + 1;
+            tasksTotal = tasksLeft = (int)kind + 2;
             edge = Sharpness;
-            hits = 0;
+            hits = mistakes = 0;
             freeHints = Mine.HelmetOn ? 1 : 0;
             used.Clear();
             OpenWindow();
@@ -121,33 +131,103 @@ namespace LLG
             gearText.text = GameState.Capital(pick.spanish) + (Mine.HelmetOn ? "   ·   Casco de minero" : "") + "   ·   Minería nv "
                 + GameState.Data.skills.Get(SkillType.Mining).level + "   ·   Reliquias " + seen + "/" + Mine.Relics.Length;
             hintButton.gameObject.SetActive(true);
-            NextWord();
+            NextTask();
         }
 
-        void NextWord()
+        // ------------------------------------------------------------ tasks
+
+        void NextTask()
         {
             var pool = Lessons.Words(8);
-            var candidates = new List<(string article, string word, string english)>();
+            var nouns = new List<(string article, string word, string english)>();
             foreach (var v in pool)
             {
                 var (a, w) = Split(v.word);
                 if (w.Length < 3 || w.Length > 10 || w.Contains(" ") || used.Contains(w)) continue;
-                candidates.Add((a, w, v.english));
+                nouns.Add((a, w, v.english));
             }
-            if (candidates.Count == 0) { used.Clear(); NextWord(); return; }
-            // tougher rocks ask for longer words
-            candidates.Sort((x, y) => x.word.Length.CompareTo(y.word.Length));
-            int from = rock == Mine.Rock.Stone ? 0 : rock == Mine.Rock.Rich ? candidates.Count / 3 : candidates.Count / 2;
-            var pickWord = candidates[Random.Range(from, candidates.Count)];
+            if (nouns.Count == 0) { used.Clear(); NextTask(); return; }
+            nouns.Sort((x, y) => x.word.Length.CompareTo(y.word.Length));
+            int from = rock == Mine.Rock.Stone ? 0 : rock == Mine.Rock.Rich ? nouns.Count / 3 : nouns.Count / 2;
+            var pickWord = nouns[Random.Range(from, nouns.Count)];
             word = pickWord.word;
             article = pickWord.article;
             used.Add(word);
-            englishText.text = "\"" + pickWord.english + "\"   (" + (wordsTotal - wordsLeft + 1) + "/" + wordsTotal + ")";
-            next = 0;
+
+            // the first task of a rock is always spelling; after that, a mix
+            float r = Random.value;
+            task = tasksLeft == tasksTotal ? Task.Spell : r < 0.4f ? Task.Spell : r < 0.6f ? Task.Gender : r < 0.8f ? Task.Gap : Task.Pick;
+            if (task == Task.Gender && article.Length == 0) task = Task.Pick;
+            if (task == Task.Gap && !MakeGap()) task = Task.Pick;
+            options.Clear();
+            int n = tasksTotal - tasksLeft + 1;
+            taskText.text = TaskEs[(int)task] + "   (" + n + "/" + tasksTotal + ")";
+            switch (task)
+            {
+                case Task.Spell:
+                    englishText.text = "\"" + pickWord.english + "\"";
+                    next = 0;
+                    if (freeHints > 0) { freeHints--; next = 1; hits++; }      // the helmet lamp shows the first letter
+                    break;
+                case Task.Gender:
+                    englishText.text = "\"" + pickWord.english + "\"";
+                    answer = article;
+                    options.AddRange(new[] { "el", "la", "los", "las" });
+                    break;
+                case Task.Pick:
+                    englishText.text = "\"" + pickWord.english + "\"";
+                    answer = (article.Length > 0 ? article + " " : "") + word;
+                    options.Add(answer);
+                    foreach (var o in nouns)
+                    {
+                        if (options.Count >= 4) break;
+                        string s = (o.article.Length > 0 ? o.article + " " : "") + o.word;
+                        if (!options.Contains(s) && Random.value < 0.5f) options.Add(s);
+                    }
+                    foreach (var o in nouns)
+                    {
+                        if (options.Count >= 4) break;
+                        string s = (o.article.Length > 0 ? o.article + " " : "") + o.word;
+                        if (!options.Contains(s)) options.Add(s);
+                    }
+                    Shuffle(options);
+                    break;
+            }
             timer = totalTime;
             playing = true;
-            if (freeHints > 0) { freeHints--; next = 1; hits++; }      // the helmet lamp shows the first letter
             Redraw();
+        }
+
+        /// <summary>A sentence from the lessons with one word taken out; the options are that word and three others.</summary>
+        bool MakeGap()
+        {
+            var sentences = Lessons.Sentences();
+            if (sentences.Count == 0) return false;
+            var sentence = sentences[Random.Range(0, sentences.Count)];
+            var tokens = sentence.Tokens;
+            if (tokens.Length < 3) return false;
+            int gap = 0;
+            for (int i = 1; i < tokens.Length; i++) if (tokens[i].Length > tokens[gap].Length) gap = i;
+            answer = tokens[gap];
+            var shown = (string[])tokens.Clone();
+            shown[gap] = "____";
+            gapSentence = string.Join(" ", shown);
+            englishText.text = "\"" + sentence.english + "\"";
+            options.Clear();
+            options.Add(answer);
+            var others = new List<string>();
+            foreach (var s in sentences)
+                foreach (var t in s.Tokens)
+                    if (t != answer && t.Length > 2 && !others.Contains(t)) others.Add(t);
+            Shuffle(others);
+            for (int i = 0; i < others.Count && options.Count < 4; i++) options.Add(others[i]);
+            Shuffle(options);
+            return options.Count >= 2;
+        }
+
+        static void Shuffle<T>(List<T> list)
+        {
+            for (int i = list.Count - 1; i > 0; i--) { int j = Random.Range(0, i + 1); (list[i], list[j]) = (list[j], list[i]); }
         }
 
         /// <summary>"GAT__" -> "G A T _ _", so each letter is easy to see.</summary>
@@ -164,57 +244,113 @@ namespace LLG
         void Redraw()
         {
             foreach (Transform c in letters) Destroy(c.gameObject);
-            wordText.text = (article.Length > 0 ? article + "  " : "") + Spaced(word.Substring(0, next).ToUpper() + new string('_', word.Length - next));
-            edgeText.text = "Pico " + new string('●', edge) + new string('○', Sharpness - edge);
+            edgeText.text = "Pico " + new string('●', edge) + new string('○', Sharpness - edge) + (mistakes == 0 ? "   ·   ¡Sin fallos!" : "");
+            int stage = Mathf.Clamp(hits / Mathf.Max(1, tasksTotal * 2), 0, 3);
             crack.enabled = hits > 0;
-            int stage = Mathf.Clamp(hits / Mathf.Max(1, wordsTotal * 2), 0, 3);      // cracks grow as you hit
             if (crack.enabled) crack.sprite = UIFactory.LoadSprite("Art/World/crack_" + stage);
 
-            // the word's letters still to place, plus a few decoys, shuffled
-            var tiles = new List<char>();
-            for (int i = next; i < word.Length; i++) tiles.Add(word[i]);
-            const string abc = "abcdefghijlmnoprstuvz";
-            var rng = new System.Random(word.GetHashCode() + next);
-            for (int k = 0; k < 3; k++) tiles.Add(abc[rng.Next(abc.Length)]);
-            for (int i = tiles.Count - 1; i > 0; i--) { int j = rng.Next(i + 1); (tiles[i], tiles[j]) = (tiles[j], tiles[i]); }
-            float x = -(tiles.Count - 1) * 19f;
-            foreach (char ch in tiles)
+            switch (task)
             {
-                char c = ch;
-                UIFactory.Btn("Letter", letters, new Vector2(x, 0), new Vector2(34, 32), c.ToString().ToUpper(), new Color32(150, 120, 90, 255), () => Swing(c));
-                x += 38;
+                case Task.Spell:
+                {
+                    wordText.text = (article.Length > 0 ? article + "  " : "") + Spaced(word.Substring(0, next).ToUpper() + new string('_', word.Length - next));
+                    var tiles = new List<char>();
+                    for (int i = next; i < word.Length; i++) tiles.Add(word[i]);
+                    const string abc = "abcdefghijlmnoprstuvz";
+                    var rng = new System.Random(word.GetHashCode() + next);
+                    for (int k = 0; k < 3; k++) tiles.Add(abc[rng.Next(abc.Length)]);
+                    for (int i = tiles.Count - 1; i > 0; i--) { int j = rng.Next(i + 1); (tiles[i], tiles[j]) = (tiles[j], tiles[i]); }
+                    float x = -(tiles.Count - 1) * 19f;
+                    foreach (char ch in tiles)
+                    {
+                        char c = ch;
+                        UIFactory.Btn("Letter", letters, new Vector2(x, 0), new Vector2(34, 32), c.ToString().ToUpper(), new Color32(150, 120, 90, 255), () => Swing(c));
+                        x += 38;
+                    }
+                    break;
+                }
+                case Task.Gender:
+                    wordText.text = "____  " + word;
+                    Options(90);
+                    break;
+                case Task.Gap:
+                    wordText.text = gapSentence;
+                    Options(124);
+                    break;
+                default:
+                    wordText.text = "?";
+                    Options(124);
+                    break;
             }
         }
 
+        void Options(float width)
+        {
+            float x = -(options.Count - 1) * (width + 8) / 2;
+            foreach (var o in options)
+            {
+                string choice = o;
+                UIFactory.Btn("Option", letters, new Vector2(x, 0), new Vector2(width, 32), choice, new Color32(150, 120, 90, 255), () => Choose(choice));
+                x += width + 8;
+            }
+        }
+
+        /// <summary>A letter in the spelling task.</summary>
         void Swing(char c)
         {
-            if (!playing) return;
+            if (!playing || task != Task.Spell) return;
             if (c == word[next])
             {
                 next++;
                 hits++;
                 shake = 0.15f;
-                if (next >= word.Length)
-                {
-                    wordsLeft--;
-                    if (wordsLeft <= 0) { Break(); return; }
-                    NextWord();
-                    return;
-                }
+                if (next >= word.Length) { TaskDone(); return; }
                 Redraw();
                 return;
             }
+            Miss();
+        }
+
+        /// <summary>An answer button in the article, gap or pick tasks.</summary>
+        void Choose(string choice)
+        {
+            if (!playing || task == Task.Spell) return;
+            if (choice == answer)
+            {
+                hits += 3;
+                shake = 0.25f;
+                TaskDone();
+                return;
+            }
+            options.Remove(choice);          // that one is gone; try again
+            Miss();
+        }
+
+        void Miss()
+        {
             edge--;
-            resultText.text = "¡El pico rebota! Esa letra no va ahí.";
+            mistakes++;
+            resultText.text = "¡El pico rebota! Esa no es.";
             if (edge <= 0) { Fail("Tu pico se ha desafilado. La roca aguanta... (The rock holds.)"); return; }
             Redraw();
+        }
+
+        void TaskDone()
+        {
+            resultText.text = "";
+            tasksLeft--;
+            if (tasksLeft <= 0) { Break(); return; }
+            NextTask();
         }
 
         void Hint()
         {
             if (!playing) return;
             if (!GameState.Data.stats.TrySpendMana(HintCost)) { GameState.Say("No tienes maná. (Not enough mana.)"); return; }
-            Swing(word[next]);
+            if (task == Task.Spell) { Swing(word[next]); return; }
+            // remove one wrong option
+            foreach (var o in options)
+                if (o != answer) { options.Remove(o); Redraw(); return; }
         }
 
         void Break()
@@ -224,19 +360,21 @@ namespace LLG
             string id = Mine.Loot(rock);
             var item = ItemDatabase.Get(id);
             bool relic = id.StartsWith("relic_");
-            bool extra = !relic && Random.value < GameState.Data.skills.Get(SkillType.Mining).level * 0.01f;
+            bool perfect = mistakes == 0;
+            bool extra = !relic && (perfect || Random.value < GameState.Data.skills.Get(SkillType.Mining).level * 0.01f);
             bool added = GameState.AddItem(id, extra ? 2 : 1);
             if (relic && !GameState.Data.relicsFound.Contains(id)) GameState.Data.relicsFound.Add(id);
             int level = (int)rock;
-            GameState.Reward(2 + wordsTotal * 2, 1 + level);
-            GameState.AddXp(SkillType.Mining, Lessons.Xp(5 + 6 * level + (relic ? 15 : 0)));
+            GameState.Reward(2 + tasksTotal * 2, 1 + level + (perfect ? 2 : 0));
+            GameState.AddXp(SkillType.Mining, Lessons.Xp(5 + 6 * level + (relic ? 15 : 0) + (perfect ? 5 : 0)));
             GameState.AddXp(SkillType.Spelling, Lessons.Xp(hits));
             rockImage.enabled = false;
             crack.enabled = false;
             loot.enabled = true;
             loot.sprite = UIFactory.LoadSprite("Art/Icons/" + item.icon);
+            taskText.text = perfect ? "¡Golpe perfecto! (Perfect strike!)" : "";
             wordText.text = "¡" + GameState.Capital(item.spanish) + (extra ? " ×2" : "") + "!";
-            englishText.text = item.english + (relic ? "  —  ¡Un hallazgo arqueológico! (An archaeological find!)" : "");
+            englishText.text = item.english + (relic ? "  —  ¡Un hallazgo arqueológico!" : "");
             edgeText.text = "";
             resultText.text = (added ? "Va a tu mochila. " : "¡Tu mochila está llena! ") + "Vale " + item.sellPrice + " " + GameConfig.GoldName + " cada uno.";
             hintButton.gameObject.SetActive(false);
@@ -248,12 +386,13 @@ namespace LLG
         {
             playing = false;
             foreach (Transform t in letters) Destroy(t.gameObject);
-            wordText.text = (article.Length > 0 ? article + "  " : "") + Spaced(word.ToUpper());
+            if (task == Task.Spell) wordText.text = (article.Length > 0 ? article + "  " : "") + Spaced(word.ToUpper());
+            else if (task == Task.Gender) wordText.text = answer + " " + word;
+            else if (task == Task.Gap) wordText.text = gapSentence.Replace("____", answer);
+            else wordText.text = answer;
             resultText.text = message;
             hintButton.gameObject.SetActive(false);
         }
-
-        float shake;
 
         protected override void Update()
         {

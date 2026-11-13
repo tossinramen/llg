@@ -13,7 +13,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 
 ### 1. Language content and sound
 - [ ] **Add Spanish voices / sound** — install the Spanish voice in Windows, record every Spanish line, check it plays everywhere
-- [ ] Much bigger word and sentence pack (target: 1,500+ words, 500+ sentences) from open sources (see notes)
+- [ ] Sort more of the imported words into topics (about 7,000 are in "Más palabras")
 - [ ] Verb conjugation data (present, past, future…) for the tense activities
 - [ ] Speaker buttons on more places (shop items, archery words, fishing sentences, bag)
 
@@ -302,3 +302,12 @@ Finished tasks, struck through.
 - ~~XP needed for every level 1–100 in the game guide~~ ✅
 - ~~The mine (La mina) with Don Ernesto, a cave with stone, ore and crystal rocks, and the spelling mining game~~ ✅
 - ~~Minería skill (mining + archaeology): ores, gems, relics, 4 pickaxes, the miner's helmet~~ ✅
+- ~~Plaza stairs drawn like real steps (six narrow steps, each lower, brick faces forming the diagonal)~~ ✅
+- ~~Swords stab straight out (no swinging, no circle facing north); axes chop in a short arc, mirrored left/right~~ ✅
+- ~~Bows and guns held out in front, bigger than the arms, pointing at the target; guns kick back with a muzzle flash; shots leave a trail~~ ✅
+- ~~New double axe icon (two crescent blades)~~ ✅
+- ~~Sharp map names (16 px text on bigger plates)~~ ✅
+- ~~Mining with four kinds of task (spell, article, sentence gap, pick the word), more tasks per rock, perfect strikes~~ ✅
+- ~~590 words in 21 topics and 171 sentences (was 152 / 33)~~ ✅
+- ~~Deck importer for Anki (.apkg) and spreadsheets (.txt/.csv)~~ ✅
+- ~~Much bigger word pack: 10,090 words and 35,886 sentences from 7 Anki decks, cleaned, de-duplicated and sorted into levels~~ ✅

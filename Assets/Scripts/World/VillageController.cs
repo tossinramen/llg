@@ -902,6 +902,10 @@ namespace LLG
             if (weapon != null && weapon.ranged)
             {
                 ArrowShot.Spawn(this, feet, dir, damage, UIFactory.LoadSprite("Art/Icons/" + weapon.projectile), order);
+                // hold the bow or gun out in front, pointing at the target, drawn over your arms
+                AimEffect.Spawn(feet + new Vector2(dir.x > 0.3f ? 0.2f : dir.x < -0.3f ? -0.2f : 0.15f, dir.y > 0.5f ? 1.05f : 0.75f), dir,
+                    UIFactory.LoadSprite("Art/Icons/" + weapon.icon), weapon.projectile == "item_bullet",
+                    Mathf.RoundToInt(-feet.y * 100) + (dir.y > 0.5f ? -2 : 6), player.transform);
                 return;
             }
 
@@ -909,12 +913,15 @@ namespace LLG
             // where the fist appears: just outside the body on the side you face (down, right, up = above
             // your head, left), always drawn in front of you
             Vector2[] fistStart = { new Vector2(0.28f, 0.78f), new Vector2(0.55f, 0.85f), new Vector2(0.2f, 1.95f), new Vector2(-0.55f, 0.85f) };
-            var hand = feet + (weapon == null ? fistStart[facing] : new Vector2(0, 0.9f));
+            // weapons start at the shoulder on the side you face (facing north: behind your head)
+            Vector2[] weaponStart = { new Vector2(0.3f, 0.7f), new Vector2(0.4f, 0.8f), new Vector2(0.3f, 1.15f), new Vector2(-0.4f, 0.8f) };
+            var hand = feet + (weapon == null ? fistStart[facing] : weaponStart[facing]);
             if (weapon == null)
-                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/item_fist"), AppearancePalette.Skin[PlayerProfile.Current.appearance.skin], true,
+                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/item_fist"), AppearancePalette.Skin[PlayerProfile.Current.appearance.skin], SwingStyle.Jab,
                     Mathf.RoundToInt(-player.transform.position.y * 100) + 5, player.transform);
             else
-                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/" + weapon.icon), Color.white, false, order, player.transform);
+                SwingEffect.Spawn(hand, facing, UIFactory.LoadSprite("Art/Icons/" + weapon.icon), Color.white,
+                    weapon.chop > 1 ? SwingStyle.Chop : SwingStyle.Stab, order, player.transform);
 
             if (target == null && tree == null)
             {

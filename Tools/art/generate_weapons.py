@@ -5,6 +5,8 @@ Run:  python Tools/art/generate_weapons.py     (after generate_items.py)
 from PIL import Image
 
 from generate_art import save
+import os
+ART_ICONS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "Assets", "Resources", "Art", "Icons")
 from generate_items import GOLD, GRIP, STEEL, WOOD, axe_icon, blade_icon, bow_icon, canvas, icon
 
 DARK_STEEL = (90, 94, 108)
@@ -38,7 +40,7 @@ def weapons():
     blade_icon("item_toledo", 12, 3, 6, blade=(236, 240, 250), hilt=(232, 190, 80))
     blade_icon("item_tizona", 13, 3, 7, blade=(250, 236, 200), hilt=(200, 40, 60), grip=(120, 30, 40))
     blade_icon("item_colada", 13, 3, 7, blade=(206, 230, 255), hilt=(60, 110, 220), grip=(40, 50, 110))
-    axe_icon("item_doubleaxe", 5, double=True, head=(232, 190, 80))
+    double_axe()
 
     # ranged
     img, d = canvas()                                     # sling: two cords and a pouch with a stone
@@ -60,6 +62,37 @@ def weapons():
         d.ellipse([1, 1, 4, 4], fill=col)
         d.point((2, 2), fill=(230, 230, 240))
         save(img, "Icons", name)
+
+
+
+def double_axe():
+    """El hacha doble: a long handle with a crescent blade on each side, a gold collar and a spike."""
+    rows = [
+        ".......kk.......",
+        "...EE..hh..EE...",
+        "..EBBb.hh.bBBE..",
+        ".EBBBBghhgBBBBE.",
+        ".EBBBBghhgBBBBE.",
+        ".EBBBBghhgBBBBE.",
+        "..EBBb.hh.bBBE..",
+        "...EE..hh..EE...",
+        ".......hh.......",
+        ".......hh.......",
+        ".......hh.......",
+        ".......hh.......",
+        ".......hh.......",
+        ".......hh.......",
+        "......wwww......",
+        "................",
+    ]
+    pal = {"k": (196, 202, 214), "h": (150, 104, 62), "g": (226, 184, 72), "B": (176, 184, 198),
+           "b": (138, 146, 160), "E": (234, 240, 248), "w": (100, 68, 44)}
+    img, d = canvas()
+    for y, row in enumerate(rows):
+        for x, ch in enumerate(row):
+            if ch != ".":
+                d.point((x, y), fill=pal[ch])
+    icon("item_doubleaxe", img)
 
 
 if __name__ == "__main__":

@@ -212,7 +212,28 @@ CATEGORIES = [
     ("number", "Los números", "Numbers"), ("home", "La casa", "Home"), ("town", "El pueblo", "Town"),
     ("clothes", "La ropa", "Clothes"), ("body", "El cuerpo", "Body"), ("family", "La familia", "Family"),
     ("nature", "La naturaleza", "Nature"), ("verb", "Los verbos", "Verbs"), ("tool", "Las herramientas", "Tools & weapons"),
+    ("time", "El tiempo y los días", "Days & time"), ("weather", "El clima", "Weather"), ("school", "La escuela", "School"),
+    ("job", "Los trabajos", "Jobs"), ("adjective", "Cómo es", "Describing words"), ("feeling", "Los sentimientos", "Feelings"),
+    ("travel", "Los viajes", "Travel"), ("phrase", "Frases útiles", "Useful phrases"), ("imported", "Más palabras", "More words"),
 ]
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def extra_lines():
+    """words_extra.txt, then every deck imported with import_deck.py (Tools/data/imported/*.txt)."""
+    files = [os.path.join(HERE, "words_extra.txt")]
+    imported = os.path.join(HERE, "imported")
+    if os.path.isdir(imported):
+        files += [os.path.join(imported, f) for f in sorted(os.listdir(imported)) if f.endswith(".txt")]
+    for path in files:
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    yield line
 
 
 def slug(text):
@@ -235,6 +256,28 @@ def main():
     for i, line in enumerate(SENTENCES.strip().splitlines()):
         tier, cat, es, en = line.split("|")
         sentences.append({"id": "s%03d" % (i + 1), "text": es, "english": en, "tier": int(tier), "category": cat})
+
+    # the bigger lists: skip anything already in the game (same Spanish)
+    def key(text):        # repeats ignore capitals, punctuation and extra spaces
+        return re.sub(r"\s+", " ", re.sub(r"[^\w\s]", "", text.lower())).strip()
+
+    known_words = {key(w["word"]) for w in words}
+    known_sentences = {key(x["text"]) for x in sentences}
+    for line in extra_lines():
+        p = line.split("|")
+        if len(p) < 5:
+            continue
+        kind, cat, tier, es, en = p[0], p[1], int(p[2]), p[3].strip(), p[4].strip()
+        if kind == "W" and key(es) not in known_words:
+            known_words.add(key(es))
+            wid = slug(en) or slug(es)
+            while wid in seen:
+                wid += "_2"
+            seen.add(wid)
+            words.append({"id": wid, "word": es, "english": en, "category": cat, "tier": tier, "icon": "", "hunger": 0})
+        elif kind == "S" and key(es) not in known_sentences:
+            known_sentences.add(key(es))
+            sentences.append({"id": "s%04d" % (len(sentences) + 1), "text": es, "english": en, "tier": tier, "category": cat})
     pack = {"language": "es", "categories": [{"id": c, "name": n, "english": e} for c, n, e in CATEGORIES],
             "words": words, "sentences": sentences}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

@@ -1,0 +1,1213 @@
+# converted from 1001_High_Intermediate_Spanish_Words__Sentences (1).apkg
+S|imported|3|Vamos a Granada mañana|We're going to Granada tomorrow
+S|imported|3|Te espero abajo|I'll wait for you downstairs
+W|imported|3|el abanico|the fan
+S|imported|3|Las damas usan abanicos cuando hace calor|Ladies use fans when it's hot
+S|imported|3|El banco queda abierto desde las ocho hasta las dos|The bank stays open from eight until two
+S|imported|3|Abrazó a sus parientes antes de salir|He embraced his relatives before he left
+W|imported|3|un abrazo|an embrace
+S|imported|3|Abrazos para los niños de todos nosotros|Hugs for the children from all of us
+S|imported|3|Siempre llevo un abrigo cuando hace frío|I always wear an overcoat when it's cold
+S|imported|3|Abra la boca, dijo el dentista|Open your mouth, said the dentist
+S|imported|3|Venga acá, rápido|Come here (Rioplatense) quickly
+S|imported|3|Nuestro trabajo nunca acaba|Our work never ends
+S|imported|3|Sus acciones me confunden|His actions confuse me
+S|imported|3|Aceptan cheques de viajero?|Do you accept travelers checks?
+W|imported|3|acerca de|about
+S|imported|3|Busco un libro acerca de la España medieval|I'm looking for a book about medieval Spain
+S|imported|3|Acérquense y podrán ver mejor|Come closer and you'll all be able to see better
+S|imported|3|Me permiten acompañarlos?|Will you all allow me to go with you?
+S|imported|3|Qué me aconsejan hacer?|What do you advise me to do?
+S|imported|3|Se acuerdan de nosotros?|Do you remember us?
+S|imported|3|Siempre nos acostamos tarde cuando visitamos un país extranjero|We always go to bed late when we visit a foreign country
+S|imported|3|El gobierno actual tiene muchos problemas|The present government has many problems
+S|imported|3|Estamos de acuerdo con usted|We agree with you
+S|imported|3|De hoy en adelante, traten de llegar a tiempo|From now on, try (ustedes) to arrive on time
+S|imported|3|No tengo tiempo para eso, y además no tengo dinero|I have no time for that, and furthermore I don't have any money
+W|imported|3|adentro|inside
+S|imported|3|Quiero ver lo que hay adentro|I want to see what there is inside
+S|imported|3|Adiós y buena suerte|Goodbye and good luck
+S|imported|3|Adónde van ustedes esta tarde?|Where are you all going this afternoon?
+S|imported|3|Hay que pasar por la aduana al llegar|It's necessary to go through Customs upon arriving
+S|imported|3|Hay muchas aerolíneas en este aeropuerto|There are many airlines in this airport
+S|imported|3|Me afeito todas las mañanas|I shave every morning
+S|imported|3|Mire qué pasa afuera|See what's going on outside
+W|imported|3|el agente|the agent
+S|imported|3|Un agente de viajes le arreglará una excursión a Andalucía|A travel agent will arrange an excursion to Andalusia for you
+S|imported|3|Nuestra visita ha sido muy agradable|Our visit has been very pleasant
+S|imported|3|Le agradezco mucho su amabilidad|I thank you very much for your kindness
+S|imported|3|Es una buena idea beber agua embotellada|It's a good idea to drink bottled water
+S|imported|3|No puedo aguantar el ruido de la calle|I can't bear the noise from the street
+W|imported|3|la aguja|the needle
+S|imported|3|Siempre traigo una aguja en caso de emergencia|I always carry a needle in case of an emergency
+S|imported|3|Estoy ocupado ahora y no puedo salir|I am busy now and can't go out
+S|imported|3|Abra la ventana y tendrá aire fresco|Open the window and you'll have fresh air
+S|imported|3|al (+ verbo en infinitivo)|on, upon (doing something)
+S|imported|3|Al ver lo que pasaba, decidimos salir|Upon seeing what was happening (pasar), we decided to leave
+S|imported|3|La oficina del alcalde está en el ayuntamiento|The mayor's office is in the city hall
+S|imported|3|Buscamos un apartamento con dos dormitorios|We're looking for an apartment with two bedrooms
+S|imported|3|Sugiero que visiten algunas aldeas en las montañas|I suggest that you visit some villages in the mountains
+S|imported|3|Me alegro de verlos otra vez|I'm glad to see you all again
+S|imported|3|Parece que está muy alegre hoy|It seems that you are very happy today
+S|imported|3|Tiene usted algo que declarar?|Do you have something to declare?
+S|imported|3|Prefiero una blusa de algodón|I prefer a cotton blouse
+S|imported|3|Creo que alguien llama a la puerta|I think someone is knocking at the door
+S|imported|3|Algunos de ustedes ya me conocen|Some of you already know me
+S|imported|3|Se puede comprar casi todo en los almacenes grandes|You can buy almost everything in the big department stores
+S|imported|3|Me pueden subir otra almohada, por favor?|Can all of you please bring up another pillow?
+S|imported|3|Trato de almorzar con la familia si puedo|I try to eat lunch with my family if I can
+S|imported|3|En España sirven el almuerzo a eso de las dos|In Spain they serve lunch at about two o'clock
+S|imported|3|Dónde puedo alquilar un coche?|Where can I rent a car?
+S|imported|3|Hay muchos edificios altos en el centro|There are many tall buildings downtown
+W|school|3|alumno, alumna|student
+S|imported|3|Lleva un grupo de alumnos a España cada verano|He takes a group of students to Spain every summer
+S|imported|3|No me gustaría vivir alli|I wouldn't like to live there
+S|imported|3|Es usted muy amable|You're very kind
+S|imported|3|La amo tanto que no puedo separarme de ella|I love her so much that I can't leave her
+S|imported|3|Quiero presentar algunos amigos míos|I'd like to introduce some friends of mine
+S|imported|3|Nuestra amistad va a durar mucho tiempo|Our friendship will last a long time
+S|imported|3|Vale la pena de visitar ambos lugares|It's worthwhile to visit both places
+S|imported|3|Por tu amor, haría cualquier cosa|For your love, I would do anything
+S|imported|3|Las avenidas principales son muy anchas|The main streets are very wide
+S|imported|3|Los viejos andan despacio|Old people walk slowly
+S|imported|3|En qué andén llega el tren de Barcelona?|On what platform does the train from Barcelona arrive?
+S|imported|3|Anoche llegué tarde|Last night I arrived late
+S|imported|3|Usa anteojos para leer|He wears eyeglasses to read
+S|imported|3|Antes de ir a Francia decidimos estudiar francés|Before going to France we decided to study French
+S|imported|3|Lea la sección de anuncios si busca empleo|Read the advertisement section if you're looking for a job
+S|imported|3|No puedo añadir nada más|I can't add anything else
+S|imported|3|Esperamos volver el año que viene|We hope to come back next year
+S|imported|3|Apague la luz al salir del cuarto|Turn off the light on leaving the room
+S|imported|3|Hay muchos aparatos útiles en la ferretería|There are many useful appliances in the hardware store
+S|imported|3|De repente apareció después de tres años de ausencia|He suddenly appeared after a three year absence
+S|imported|3|Cuál es su apellido?|What is your surname?
+S|imported|3|Aprendemos mucho en nuestros viajes al extranjero|We learn a lot in our trips abroad
+S|imported|3|Ya es tarde. Apresúrense!|It's late already. Hurry up!
+S|imported|3|Quiero aprovechar la oportunidad de hablar con el gobernador|I want to take advantage of the opportunity to speak to the governor
+S|imported|3|aquel (aquella, aquellos, aquellas)|that, those
+S|imported|3|Me acuerdo de aquellos tiempos|I remember those times
+S|imported|3|Aquí se habla español|Spanish is spoken here
+S|imported|3|Su casa está rodeada de árboles|His house is surrounded by trees
+W|imported|3|los aretes|the earrings
+S|imported|3|Tienen una buena selección de aretes en esta joyería|They have a good choice of earrings in this jewelry store
+S|imported|3|Esta habitación tiene dos armarios para la ropa|This room has two closets for clothing
+S|imported|3|Está todo arreglado para mañana?|Is everything arranged for tomorrow?
+S|imported|3|Los dormitorios están arriba|The bedrooms are upstairs
+S|imported|3|Se prohibe arrojar objetos por la ventanilla|It is forbidden to throw things out of the window
+S|imported|3|Este museo tiene una magnífica colección de arte moderno|This museum has a magnificent collection of modern art
+S|imported|3|Dónde está el Palacio de Bellas Artes?|Where is the Palace of Fine Arts?
+S|imported|3|Este artículo no tiene ningún valor|This article is of no value
+S|imported|3|Estos artistas van a ser famosos algún día|These artists are going to be famous some day
+S|imported|3|Me gustan las castañas asadas|I like roasted chestnuts
+S|imported|3|Quisiera asegurar mi equipaje|I'd like to insure my luggage
+W|imported|3|los aseos|the restroom (Hispanic)
+S|imported|3|Los aseos están a la izquierda|The restrooms are to the left
+W|imported|3|así|thus
+S|imported|3|Usted debe hacerlo así|You should do it this way
+S|imported|3|Tomen asiento, por favor|Please be seated
+S|imported|3|Queremos asistir al concierto de esta noche|We want to attend tonight's concert
+S|imported|3|Es un asunto muy delicado|It’s a very delicate matter
+S|imported|3|Se quedó atrás porque caminaba muy despacio|She remained behind because she was walking very slowly
+S|imported|3|Mi reloj debe estar atrasado|My watch must be slow
+S|imported|3|Espere la señal verde antes de empezar a atravesar|Wait for the green signal before starting to cross
+S|imported|3|No me atrevo a decirle tal cosa|I don't dare tell him such a thing
+S|imported|3|Aunque no tenemos mucho dinero, quiero comprar esta pintura|Although we don't have much money, I want to buy this painting
+S|imported|3|El autobús para en la próxima esquina|The bus stops at the next corner
+W|imported|3|el automóvil|the automobile
+S|imported|3|Si quiere, le puedo llevar en mi automovil|If you wish, I can take you in my automobile
+W|imported|3|la autoridad|the authority
+S|imported|3|No se sabe quién tiene la autoridad en este asunto|It is not known who has the authority in this matter
+S|imported|3|La Quinta Avenida es una calle elegante|Fifth Avenue is an elegant street
+S|imported|3|Trate de averiguar si es verdad todo lo que dijo|Try to find out if all what he said is true
+S|imported|3|A qué hora debe llegar el avión de Guadalajara?|At what time should the plane from Guadalajara arrive?
+W|verb|3|avisar|to inform
+S|imported|3|Haga el favor de avisarme cuando debo bajar|Please let me know when I should get off
+S|imported|3|Leí el aviso en el periódico|I read the notice in the paper
+S|imported|3|Ayer hicimos mucho y estamos cansados hoy|Yesterday we did a lot and we are tired today
+S|imported|3|Can you help me?|Puede usted ayudarme?
+S|imported|3|En el ayuntamiento hay muchas oficinas del gobierno municipal|Many offices of the municipal government are in the town hall
+S|imported|3|Me permite bailar con usted?|May I dance with you?
+S|imported|3|Mi baile favorito es el tango|My favorite dance is the tango
+S|imported|3|Creo que bajamos en la próxima parada|I think we get off at the next stop
+S|imported|3|Es más bajo que su padre|He's shorter than his father
+S|imported|3|Vamos al banco para cobrar estos cheques|Let's go to the bank to cash these checks
+S|imported|3|Los colores de la bandera americana son rojo, blanco y azul|The colors of the American flag are red, white and blue
+S|imported|3|Prefiero bañarme por la mañana|I prefer to bathe in the morning
+S|imported|3|Una habitación para dos con baño, por favor|A room for two with bath, please
+S|imported|3|Cómprelo, es muy barato|Buy it, it's very cheap
+S|imported|3|Aunque es joven, tiene la barba gris|Although he's young, he has a gray beard
+S|imported|3|Me gusta cruzar el lago en barco de vela|I like to go across the lake in a sailboat
+S|imported|3|Mucha gente rica vive en este barrio|Many rich people live in this neighborhood
+S|imported|3|No sé si tengo bastante dinero|I don't know if I have enough money
+S|imported|3|Ya basta. No quiero más|That's enough. I don't want any more
+W|imported|3|el baúl|the trunk
+S|imported|3|Creo que el baúl es demasiado pesado|I think the trunk is too heavy
+S|imported|3|Es peligroso beber y conducir|It's dangerous to drink and drive
+S|imported|3|Qué bebidas frías tiene?|What cold drinks do you have?
+S|imported|3|Madrid es una de las capitales más bellas de Europa|Madrid is one of the most gorgeous capitals in Europe
+S|imported|3|Los novios se besaron cuando terminó la ceremonia|The bride and groom kissed when the ceremony ended
+S|imported|3|Como no puedo estar contigo, te mando un beso|Since I can't be with you, I send you a kiss
+S|imported|3|Se puede aprender tanto en la biblioteca como en la escuela|You can learn as much in the library as in school
+S|imported|3|Usted habla muy bien español|You speak Spanish very well
+S|imported|3|Cuánto cuesta un billete a Segovia?|How much is a ticket to Segovia?
+S|imported|3|Tenemos blusas de algodón o de seda|We have blouses of cotton or silk
+S|imported|3|No abrió la boca para protestar|He didn't open his mouth to protest
+S|imported|3|Se celebró la boda en el hotel Ritz|The wedding took place in the Ritz Hotel
+S|imported|3|Un boleto sencillo, por favor|A one-way ticket, please
+S|imported|3|Se le perdió la bolsa|She lost her purse
+S|imported|3|Andaba con las manos en los bolsillos|He was walking with his hands in his pockets
+S|imported|3|Qué bonita estás hoy!|How pretty you look today!
+S|imported|3|Si sigues bebiendo así, estarás borracho muy pronto|If you keep on drinking like that, you'll be drunk very soon
+S|imported|3|Cuidado con el fuego en el bosque|Be careful with fire in the woods
+S|imported|3|No bote esos papeles todavía|Don't throw those papers out yet
+S|imported|3|Se me rompió la botella|My bottle broke
+S|imported|3|Se lastimó el brazo levantando tanto peso|He hurt his arm lifting so much weight
+S|imported|3|Dígame, en breve, qué pasó|Tell me, briefly, what happened
+S|imported|3|Lo dijo en broma|He said it in jest
+W|imported|3|buen, bueno|good
+S|imported|3|Buenos días. Hace buen tiempo hoy|Good morning. We have good weather today
+W|imported|3|el bulto|the package
+S|imported|3|Salió llevando un bulto de ropa|He went out carrying a bundle of clothing
+W|imported|3|el buque|the ship
+S|imported|3|Es muy agradable cruzar el océano en buque|It is very pleasant to cross the ocean by ship
+S|imported|3|Lo buscaron en todas partes pero no lo encontraron|They looked for him everywhere but didn't find him
+W|imported|3|el caballero|the gentlemen
+S|imported|3|Es un verdadero caballero|He's a real gentleman
+S|imported|3|Caben ocho personas en este ascensor|There's room for eight people in this elevator
+S|imported|3|Cada uno hace lo que quiere|Each one does what he wants
+S|imported|3|Se acercó y cayó de rodillas|He approached and fell on his knees
+S|imported|3|Las cafeterías están llenas hacia las siete de la tarde|The cafeterias are full at about seven PM
+S|imported|3|Pague en la caja, por favor|Pay at the register, please
+S|imported|3|La cajera le dará el descuento|The cashier will give you the discount
+S|imported|3|Dónde puedo comprar un par de calcetines?|Where can I buy a pair of socks?
+W|weather|3|una calentura|a temperature
+S|imported|3|Tienes una calentura y no debes salir|You have a temperature and you should not go out
+S|imported|3|Ay, el café está muy caliente!|Ow, the coffee is very hot!
+S|imported|3|En el verano hace mucho calor en el sur de España|In the summer it's very hot in southern Spain
+S|imported|3|Nuestro hotel está en la próxima calle|Our hotel is on the next street
+S|imported|3|Una habitación con dos camas|A room with two beds
+S|imported|3|Podrás sacar muchas fotos con tu nueva cámara|You'll be able to take many pictures with your new camera
+W|imported|3|la camarera|the chambermaid
+S|imported|3|Si necesita algo, pídaselo a la camarera|If you need anything, ask the chambermaid
+S|imported|3|Camarero, la cuenta, por favor|Waiter, the check, please
+S|imported|3|Quisiera cambiar esta camisa que compré ayer|I would like to exchange this shirt that I bought yesterday
+S|imported|3|Es bueno para la salud caminar todos los días|It's good for your health to walk every day
+S|imported|3|Este camino es muy largo|This road is very long
+S|imported|3|Algunos camiones son grandísimos|Some trucks are very big
+S|imported|3|En el verano llevo camisas de mangas cortas|In the summer I wear short-sleeved shirts
+S|imported|3|Muchos jóvenes usan camiseta en vez de camisa|Many young men wear T-shirts instead of shirts
+W|imported|3|la campana|the bell
+S|imported|3|Podemos oír la campana de la iglesia todas las mañanas|We can hear the church bell every morning
+S|imported|3|Pasamos los fines de semana en nuestra casa de campo|We spend the weekends in our country house
+S|imported|3|Las canciones de amor me emocionan|Love songs move me
+S|imported|3|Después de cuatro horas en el museo estamos cansados|After four hours in the museum we're tired
+S|imported|3|Como es tu cumpleaños, vamos a cantarte una canción|As it's your birthday, we're going to sing you a song
+S|imported|3|Invirtió todo su capital en ese negocio|He invested all his capital in that business
+S|imported|3|Tiene una cara muy bonita|She has a very pretty face
+S|imported|3|Caramba! Estamos perdidos|Darn it! We're lost
+S|imported|3|Dice que es inocente, pero le metieron en la cárcel|He says he's innocent, but they put him in jail
+S|imported|3|Muchos cariños para los niños|Much love to the children
+S|imported|3|Siempre ha sido muy cariñoso con sus cuñados|He's always been very affectionate with his in-laws
+S|imported|3|Todo es muy caro en esta tienda|Everything is very expensive in this store
+S|imported|3|Vamos en tu carro|Let's go in your car
+S|imported|3|Dónde puedo echar estas cartas?|Where can I mail these letters?
+S|imported|3|Creo que se me perdió la cartera|I think I lost my purse
+S|imported|3|Las nuevas carreteras son magníficas|The new highways are magnificent
+S|imported|3|Nuestra casa es su casa|Our house is your house
+S|imported|3|Su hija mayor no está casada todavía|Their oldest daughter isn't married yet
+S|imported|3|Se casó con una muchacha mucho más joven que él|He married a girl much younger than he
+S|imported|3|Casi todos llegaron a tiempo|Almost everyone arrived on time
+S|imported|3|Es un caso muy curioso|It's a very strange case
+S|imported|3|Vale la pena visitar los antiguos castillos|It's worthwhile visiting the old castles
+W|imported|3|la casualidad|the chance
+W|weather|3|el catarro|the cold (respiratory)
+S|imported|3|Ha cogido un catarro horrible|He's caught a terrible cold
+S|imported|3|Cada ciudad tiene una catedral imponente|Every city has an imposing cathedral
+S|imported|3|Se sirve la cena a las nueve y media|Supper is served at nine thirty
+S|imported|3|Se cena muy tarde en España|People dine very late in Spain
+S|imported|3|Vamos de compras al centro|Let's go shopping downtown
+S|imported|3|Dónde puedo comprar un cepillo de dientes?|Where can I buy a toothbrush?
+S|imported|3|Deme una habitación cerca del ascensor|Give me a room near the elevator
+S|imported|3|Muchos museos están cerrados los lunes|Many museums are closed on Mondays
+S|imported|3|Haga el favor de cerrar la puerta cuando sale|Please close the door when you leave
+W|imported|3|la cesta|the basket
+S|imported|3|Eche los papeles en la cesta|Throw the papers in the basket
+S|imported|3|En muchos lugares los ciegos venden billetes de lotería|In many places blind people sell lottery tickets
+S|imported|3|El cielo está lleno de nubes oscuras|The sky is full of dark clouds
+S|imported|3|Es cierto que vendrá mañana?|Is it certain that he will come tomorrow?
+S|imported|3|Me gusta ir al cine para ver películas extranjeras|I like to go to the movies to see foreign films
+W|imported|3|la cinta|the tape (audio)
+S|imported|3|Compré varias cintas de los cantantes populares|I bought several audios of the popular singers
+S|imported|3|Abróchense los cinturones|Fasten your seat belts
+S|imported|3|Hay que llamar al médico y fijar cita|You have to call the doctor and make an appointment
+S|imported|3|La capital de México es la ciudad más grande de Latinoamérica|The capital of Mexico is the largest city in Latin America
+S|imported|3|Prefiero un color más claro|I prefer a lighter color
+S|imported|3|Claro que si!|Certainly! / Most definitely!
+S|imported|3|Tiene dos clases por la mañana y una por la tarde|He has two classes in the morning and one in the afternoon
+S|imported|3|El cliente siempre tiene razón|The customer is always right
+S|imported|3|Esta isla tiene un clima ideal|This island has an ideal climate
+S|imported|3|Cuánto cobra usted por hora?|How much do you charge by the hour?
+S|imported|3|Mi mujer prepara comidas muy buenas en esta cocina|My wife prepares very good meals in this kitchen:
+S|imported|3|Dónde aprendió a cocinar tan bien?|Where did she learn to cook so well?
+S|imported|3|El cocinero prepara platos diferentes todos los días|The cook prepares different dishes every day
+S|imported|3|Como no tengo coche, tengo que usar un taxi|Since I don't have a car, I have to use a taxi
+S|imported|3|Tiene que coger el autobús número 12|You have to take bus number 12
+S|imported|3|La cola para la taquilla es muy larga|The line to the ticket office is very long
+S|imported|3|Quiere comprar un collar de perlas para su mujer|He wants to buy a pearl necklace for his wife
+S|imported|3|Para la cena comemos en el comedor|For dinner we eat in the dining room
+S|imported|3|Comenzamos a comprender mejor|We're beginning to understand better
+S|imported|3|Dónde desean comer esta noche?|Where do you want to eat tonight?
+W|imported|3|los comestibles|the groceries
+S|imported|3|Se puede comprar toda clase de comestibles en un supermercado|You can buy all kinds of groceries in a supermarket
+S|imported|3|Cuáles son las horas de comida?|What are the meal hours?
+S|imported|3|No es como su hermano|He isn't like his brother
+S|imported|3|Cómo está la familia?|How is the family?
+S|imported|3|Cómo no!|Why not!
+S|imported|3|No me siento cómodo aquí|I don't feel comfortable here
+S|imported|3|Quisiera presentar mi buen compañero, Luis|I'd like to introduce my good friend Luis
+S|imported|3|Trabaja para una compañía de seguros|He works for an insurance company
+S|imported|3|Dónde compró usted ese vestido?|Where did you buy that dress?
+S|imported|3|No comprendo muy bien el plan que presentaron|I really don't understand the plan they presented
+S|imported|3|No puedo aceptar la invitación porque tengo otro compromiso|I can't accept the invitation because I have another engagement
+S|imported|3|Quisiera salir con ella|I'd like to go out with her
+S|imported|3|Quién va a conducir, usted o yo?|Who's going to drive, you or l?
+W|imported|3|la conferencia|the conference
+S|imported|3|La conferencia sobre el presupuesto fue muy interesante|The lecture on the budget was very interesting
+S|imported|3|Estoy confuso. Qué hago ahora?|I'm confused. What do I do now?
+S|imported|3|Will you go to the movies with me?|Quiere usted ir al cine conmigo?
+S|imported|3|No conozco al alcalde, pero me gustaría conocerlo|I don't know the mayor but I'd like to meet him
+S|imported|3|No conseguirá nada gritando|You won't get anything by shouting
+W|imported|3|el consulado|the consulate
+S|imported|3|Vaya al consulado si tiene problemas|Go to the consulate if you have problems
+S|imported|3|Cuente el cambio siempre|Always count your change
+S|imported|3|Estoy muy contento de verlos|I'm very glad to see you all
+S|imported|3|Me complace contestar a su última carta|I am happy to reply to your last letter
+S|imported|3|Estoy tan cansado que no puedo continuar|I'm so tired that I can't go on
+S|imported|3|Yo estoy contra esa resolución|I'm against that resolution
+S|imported|3|Al contrario, nunca he dicho tal cosa|On the contrary, I've never said such a thing
+S|imported|3|Vamos a tomar una copa|Let's have a drink
+S|imported|3|Se lo agradezco de todo corazón|I thank you with all my heart
+S|imported|3|Le dio una corbata a su padre|She gave her father a tie
+S|imported|3|Es correcto decirlo así ?|Is it correct to say it like this?
+S|imported|3|Ha llegado ya el correo?|Has the mail come already?
+S|imported|3|Haga el favor de corregir todos mis errores|Please correct all my errors
+S|imported|3|Tenemos que correr para llegar a tiempo|We have to run to arrive on time
+S|imported|3|la corrida (de toros)|bullfight
+S|imported|3|La corrida de hoy empieza a las siete|Today's bullfight begins at seven
+S|imported|3|Este cuchillo no corta bien|This knife doesn't cut well
+S|imported|3|Todos los niños en esta clase son muy corteses|All the children in this class are very polite
+S|imported|3|Hay un camino más corto para llegar allí?|Is there a shorter road to get there?
+S|imported|3|Quiero decirte una cosa curiosa|I want to tell you a strange thing
+S|imported|3|Me puede coser estos botones?|Can you sew on these buttons for me?
+S|imported|3|Vamos a visitar algunos pueblos en la costa|We're going to visit some towns along the coast
+S|imported|3|Cuánto va a costar?|How much is it going to cost?
+S|imported|3|Nos interesa observar las costumbres de las diferentes regiones|We're interested in observing the customs of different regions
+S|imported|3|Cree usted que valga la pena? No lo creo|Do you think it's worth while? I don't think so
+S|imported|3|Los ricos tienen muchos criados|Rich people have many servants
+S|imported|3|Lo mandaron a la cárcel por todos los crímenes que había cometido|They sent him to jail for all the crimes he had committed
+S|imported|3|Dice que los vegetales crudos son más saludables|He says that raw vegetables are more healthful
+S|imported|3|Hay una cruz enorme sobre el Valle de los Caídos|There is an enormous cross above the Valley of the Fallen
+S|imported|3|Cuidado al cruzar la calle|Be careful crossing the street
+S|imported|3|Necesito un cuaderno para escribir mis notas|I need a notebook to write my notes
+S|imported|3|Está a dos cuadras de aquí|It's two blocks from here
+S|imported|3|Cuál prefiere usted?|Which one do you prefer?
+S|imported|3|Escríbame cuando llegue|Write me when you arrive
+S|imported|3|Cuándo quiere que le llame?|When do you want me to call you?
+S|imported|3|Cuánto cuesta?|How much does it cost?
+S|imported|3|Cada niño tiene su propio cuarto|Each child has his own room
+S|imported|3|Una espesa neblina cubrió el campo|A thick mist covered the countryside
+S|imported|3|Camarero, por favor. Me hace falta una cuchara para la sopa|Waiter, please. I need a spoon for the soup
+W|imported|3|la cucharita|the teaspoon
+S|imported|3|Tomo dos cucharitas de azúcar con mi café|I take two teaspoons of sugar with my coffee
+S|imported|3|Necesitamos un cuchillo para la mantequilla|We need a knife for the butter
+S|imported|3|Me levanté hoy con un dolor de cuello|I got up today with a pain in my neck
+S|imported|3|La cuenta, por favor|The check, please
+S|imported|3|Es un autor famoso por sus novelas y cuentos|He is an author famous for his novels and stories
+S|imported|3|Busca un cinturón de cuero|He's looking for a leather belt
+S|imported|3|Sacaron varios cuerpos después de la explosión|They carried out several bodies after the explosion
+S|imported|3|Cuidado! Es peligroso|Take care! lt's dangerous
+S|imported|3|Cuídese. No se enferme|Take care of yourself. Don't get sick
+S|imported|3|Qué le compramos para su cumpleaños?|What shall we buy him for his birthday?
+S|imported|3|Cumplió su promesa y ayudó a sus hermanos|He kept his promise and helped his brothers
+S|imported|3|El cura que los casó es el tío de la novia|The priest who married them is the bride's uncle
+S|imported|3|El curso de historia es interesante|The history course is interesting
+S|imported|3|Quítese la chaqueta si tiene calor|Take off your jacket if you're warm
+S|imported|3|Le pago con cheque personal?|Can I pay you with a personal check?
+W|imported|3|chico, chica|kid
+S|imported|3|Los chicos están haciendo demasiado ruido|The kids are making too much noise
+W|imported|3|el chiste|the joke
+S|imported|3|Nos pusimos a reír cuando contó el chiste|We began to laugh when he told the joke
+S|imported|3|Los dos coches chocaron en la intersección|The two cars collided at the intersection
+W|job|3|el chófer|the driver
+S|imported|3|El chófer estaba gritando porque el auto delante de él no se movía|The driver was shouting because the car in front of him wasn't moving
+W|imported|3|la dama|the lady
+S|imported|3|Damas y caballeros, siéntense porfavor|Ladies and gentlemen, please sit down
+W|imported|3|el daño|the harm
+S|imported|3|Se hizo daño cuando cayó|He hurt himself when he fell
+S|imported|3|Siempre doy algo a los mendigos|I always give something to the beggars
+S|imported|3|Cuántos kilómetros hay de aquí a la estación de ferrocarril?|How many kilometers is it from here to the railroad station?
+S|imported|3|Lo dejaron debajo de la mesa|They left it under the table
+S|imported|3|Los estudiantes deben estudiar más|The students ought to study more
+S|imported|3|Se siente débil después de su enfermedad|He feels weak after his illness
+S|imported|3|Bueno, han decidido ustedes?|Well, have you decided?
+S|imported|3|Todo lo que dice es cierto|Everything he says is true
+S|imported|3|Se cortó el dedo con el cuchillo|He cut his finger with the knife
+S|imported|3|No dejan entrar a nadie sin permiso especial|They don't let anyone enter without special permission
+S|imported|3|Espero que nadie se siente delante de nosotros|I hope no one sits down in front of us
+S|imported|3|Si quiere estar delgada, siga esta dieta|If you want to be slim, follow this diet
+W|imported|3|los demás|the rest
+S|imported|3|Los demás vendrán muy pronto|The rest of them will come very soon
+S|imported|3|Esto cuesta demasiado|This costs too much
+S|imported|3|Es más cómodo aquí dentro|It's more comfortable here inside
+W|verb|3|depender|to depend
+S|imported|3|No sé. Depende del precio|I don't know. It depends on the price
+S|imported|3|Uno de los dependientes le atenderá en seguida|One of the sales clerks will take care of you at once
+S|imported|3|El béisbol es un deporte popular en varios países de Latinoamérica|Baseball is a popular sport in several Latin American countries
+S|imported|3|La biblioteca está a la derecha|The library is to the right
+S|imported|3|Siga usted todo derecho|Continue straight ahead
+S|imported|3|El gobierno trata de desarrollar nuevas industrias|The government is trying to develop new industries
+W|verb|3|desayunarse|to eat breakfast
+S|imported|3|Dónde desayunamos hoy?|Where shall we have breakfast today?
+S|imported|3|Sirven un desayuno continental en este hotel|They serve a continental breakfast in this hotel
+S|imported|3|Después de tantas visitas queremos descansar un poco|After so many visits, we want to rest a little
+S|imported|3|Descubrió algo nuevo hoy?|Did you discover something new today?
+S|imported|3|Muchas tiendas ofrecen descuentos en el mes de agosto|Many stores offer discounts in the month of August
+S|imported|3|No he oído de él desde junio pasado|I haven't heard from him since last June
+S|imported|3|Qué desean ustedes pedir, señores?|What do you wish to order, gentlemen?
+S|imported|3|Cuántas desgracias han sufrido estos pobres niños! Por desgracia, no los puedo ayudar|How many misfortunes these poor children have suffered! Unfortunately, I cannot help them
+W|verb|3|desmayarse|to faint
+S|imported|3|Al oír la noticia se desmayó|On hearing the news she fainted
+S|imported|3|Hable usted más despacio, por favor|Speak more slowly, please
+S|imported|3|Siempre lloro cuando nos despedimos|I always cry when we say goodbye
+S|imported|3|Quieren despertarme a las siete?|Will you wake me at seven?
+S|imported|3|Podemos salir después del almuerzo|We can leave after lunch
+S|imported|3|Tome el tren con destino a Moncloa|Take the train that's going to Moncloa
+S|imported|3|Hay un jardín elegante detrás del palacio|There's an elegant garden behind the palace
+S|imported|3|Mañana te devuelvo el dinero que me prestaste|Tomorrow I'll return the money you lent me
+S|imported|3|Cuál es su día favorito?|What's your favorite day?
+S|imported|3|Hay una exposición especial de los dibujos de Picasso|There's a special exhibit of Picassos sketches
+S|imported|3|Tengo un dolor de dientes y quiero ir al dentista|I have a toothache and I want to go to the dentist
+S|imported|3|No es difícil si estudias|It's not difficult if you study
+S|imported|3|Dónde puedo cambiar dinero?|Where can I exchange money?
+S|imported|3|Gracias a Dios, por fin llegaron|Thank God, they finally arrived
+S|imported|3|Cuál es la dirección de su casa?|What's your home address?
+S|imported|3|Qué distancia hay de aquí a Salamanca?|What's the distance from here to Salamanca?
+S|imported|3|Nos divertirnos mucho anoche|We had a good time last night
+S|imported|3|Doble la esquina y verá la tienda que busca|Turn the comer and you'll see the store you're looking for
+S|imported|3|Una docena de huevos nos bastará|A dozen eggs will be enough for us
+S|imported|3|El valor del dólar está subiendo|The value of the dollar is going up
+S|imported|3|Muéstreme donde le duele|Show me where it hurts you
+S|imported|3|Siento un dolor en la espalda|I feel a pain in my back
+S|imported|3|Yo no sé donde están|I don't know where they are
+S|imported|3|Con tanto ruido no pude dormir anoche|With so much noise I couldn't sleep last night
+S|imported|3|Prefiero tomar una ducha por la mañana|I prefer to take a shower in the morning
+S|imported|3|No dudo que lo ha hecho|I don't doubt that he's done it
+S|imported|3|Quién es el dueño de esta propiedad?|Who's the owner of this property?
+S|imported|3|No me gustan los postres dulces|I don't like sweet desserts
+S|imported|3|Sufrieron mucho durante los años de la guerra|They suffered a lot during the war years
+S|imported|3|Ha llevado una vida dura|She's had a hard life
+S|imported|3|No eche nada al suelo|Don't throw anything on the floor
+S|imported|3|Qué edad tiene su hijo?|How old is your son?
+S|imported|3|El edificio es viejo pero sólido|The building is old but solid
+S|imported|3|Quiero que me paguen en efectivo|I want to be paid in cash
+S|imported|3|En efecto, es la primera vez que estoy aquí|As a matter of fact, this is the first time I’ve been here
+S|imported|3|Este es un ejemplo del progreso que estamos haciendo|This is an example of the progress that we're making
+S|imported|3|El ejército está en el norte para proteger la frontera|The army is in the north to protect the border
+S|imported|3|La maestra y los alumnos están en el museo|The teacher and the pupils are in the museum
+S|imported|3|Quién es él?|Who is he?
+S|imported|3|Quién es ella?|Who is she?
+S|imported|3|Espero que ellos lleguen pronto|I hope they arrive soon
+W|imported|3|la embajada|the embassy
+S|imported|3|Todos los paises tienen sus embajadas en la capital|All countries have their embassies in the capital
+S|imported|3|Sin embargo, quiero ir allí|Nevertheless, I want to go there
+S|imported|3|Ya empieza a hablar|He's already beginning to talk
+S|imported|3|Los empleados amenazan salir en huelga|The employees threaten to go out on strike
+S|imported|3|Qué clase de empleo busca usted?|What type of job are you looking for?
+S|imported|3|Empuje la puerta con cuidado|Push the door carefully
+S|imported|3|Se porta bien en la escuela, pero en casa causa problemas|He behaves well in school but at home he causes problems
+S|imported|3|Estoy enamorado de ti y quiero casarme contigo|I'm in love with you and I want to get married with you
+S|imported|3|Encantado de conocerle|Delighted to meet you
+S|imported|3|Encienda la luz, por favor|Turn on the light, please
+S|imported|3|Lo dejé encima de la mesa|I left it on top of the table
+S|imported|3|La encontré por casualidad en la biblioteca|I met her by chance in the library
+S|imported|3|No pudo venir porque estaba enfermo|He couldn't come because he was ill
+S|imported|3|Enfrente hay un edificio de seis pisos|Opposite there is a six-story building
+S|imported|3|Espero que no me engañen|I hope they aren't deceiving me
+S|imported|3|El humo de los cigarrillos enojó a los otros pasajeros|The cigarette smoke annoyed the other passengers
+S|imported|3|Quiero enseñarles una vista espectacular|I want to show you all a spectacular view
+S|imported|3|No entendí porque hablaban en voz baja|I didn't understand because they spoke in a low voice
+S|imported|3|Entonces éramos bastante ricos|At that time we were quite rich
+S|imported|3|La entrada es gratis para los niños|Admission is free for children
+S|imported|3|Se puede entrar?|May I come in?
+S|imported|3|Entre nosotros no hay problema|Between us there is no problem
+S|imported|3|Me entregó la carta y salió|He handed me the letter and left
+W|imported|3|el entremés|the appetizer
+S|imported|3|Durante el entremés me levanté para estirar las piernas|During the intermission I got up to stretch my legs
+S|imported|3|Quiero enviar estas cartas por correo aéreo|I want to send these letters by airmail
+S|imported|3|Me quiere envolver bien este paquete?|Will you wrap this package neatly for me?
+S|imported|3|No puedo encontrar mi equipaje|I can't find my luggage
+S|imported|3|Mi equipo favorito perdió ayer|My favorite team lost yesterday
+S|imported|3|Perdone, pero creo que se equivoca usted|Excuse me, but I believe you're mistaken
+S|imported|3|Para bajar, siempre uso la escalera|To go down, I always use the stairs
+S|imported|3|Escogimos un hotel cerca de los museos|We chose a hotel near the museums
+S|imported|3|Los ladrones se escondieron en el bosque|The thieves hid in the woods
+S|imported|3|Prometió escribir todos los días|He promised to write every day
+S|imported|3|Escuchen lo que dice el profesor|Listen to what the teacher says
+S|imported|3|Los niños van a la escuela por la mañana|The children go to school in the morning
+S|imported|3|ese, esa, esos, esas, eso (neuter pronoun)|that, those
+S|imported|3|Quiénes son esos niños?|Who are those children?
+S|imported|3|Eso es|That's it
+W|imported|3|un esfuerzo|an effort
+S|imported|3|Hay que hacer un esfuerzo|One must make an effort
+S|imported|3|No hay bastante espacio aquí para cuarenta personas|There isn't enough space here for forty people
+S|imported|3|Sintió un golpe en Ia espalda|He felt a blow on his shoulder
+S|imported|3|Fueron a España para estudiar en la universidad|They went to Spain to study in the university
+S|imported|3|Se habla español en veinte paises|Spanish is spoken in twenty countries
+S|imported|3|Es un espectáculo que no va a olvidar|It's a spectacle you won't forget
+S|imported|3|Necesito un espejo para peinarme|I need a mirror to comb my hair
+S|imported|3|Tendremos que esperar algunos minutos|We'll have to wait a few minutes
+S|imported|3|Está en la próxima esquina|It's on the next comer
+S|imported|3|Es difícil conseguir un taxi fuera de la estación|It's hard to get a taxi outside the station
+S|imported|3|Dónde podemos estacionar el coche?|Where can we park the car?
+S|imported|3|Trabaja para el estado|He works for the state
+S|imported|3|los Estados Unidos|the United States
+S|imported|3|Muchos habitantes de los Estados Unidos hablan español|Many inhabitants of the United States speak Spanish
+S|imported|3|No está aquí porque está enfermo|He isn't here because he's ill
+S|imported|3|Hay muchas estatuas romanas en la próxima sala|There are many Roman statues in the next room
+S|imported|3|Muchos puertos están en el este|Many ports are in the east
+S|imported|3|este, esta, estos, estas, esto (neuter pronoun)|this, these
+S|imported|3|Estas señoras son mis tias|These ladies are my aunts
+S|imported|3|Esto es muy importante|This is very important
+S|imported|3|Tiene un dolor de estómago|He has a stomach ache
+S|imported|3|Este traje me queda estrecho|This suit is tight on me
+S|imported|3|Las estrellas salen de noche|The stars come out at night
+S|imported|3|Es una estrella de Hollywood|He (she) is a Hollywood star
+S|imported|3|Algunos estudiantes no van a volver el semestre que viene|Some students aren't going to come back next semester
+S|imported|3|Nuestra visita fue estupenda|Our visit was wonderful
+W|imported|3|la Europa|the Europe
+S|imported|3|Hay tantos países en Europa que quisiera visitar|There are so many countries in Europe that I'd like to visit
+S|imported|3|El profesor dijo que no nos daria un examen esta semana|The teacher said that he wouldn't give us an exam this week
+S|imported|3|Exige que todos entreguen sus papeles a tiempo|He demands that they all turn in their papers on time
+S|imported|3|Su última comedia tuvo un gran éxito|His last play was a great success
+S|imported|3|Déjeme explicar por qué llegué tarde|Let me explain why I arrived late
+S|imported|3|Me gusta estudiar las lenguas extranjeras|I like to study foreign languages
+S|imported|3|Extraña mucho a su familia|She misses her family a lot
+S|imported|3|Es extraño que nadie nos conozca|It's strange that nobody knows us
+S|imported|3|Se han abierto muchas nuevas fábricas|Many new factories have opened
+S|imported|3|No es fácil aprender un idioma extranjero|It isn't easy to learn a foreign language
+S|imported|3|Las muchachas llevan faldas cortas estos días|Girls are wearing short skirts these days
+S|imported|3|Hay faltas en este ejercicio?|Are there any mistakes in this exercise?
+S|imported|3|Me hace falta un martillo|I need a hammer
+S|imported|3|Somos cinco en nuestra familia|There are five in our family
+S|imported|3|Es uno de los autores más famosos de España|He is one of Spain's most famous authors
+S|imported|3|Hay que tener fe en el presidente|We must have faith in the president
+W|imported|3|felicitaciones|congratulations
+S|imported|3|Felicitaciones en su aniversario|Congratulations on your anniversary
+S|imported|3|Feliz año nuevo!|Happy new year!
+S|imported|3|No es ni guapo ni feo|He is neither handsome nor ugly
+S|imported|3|Algunos nuevos trenes de ferrocarril van muy rápidos|Some new railroad trains go very fast
+W|verb|3|fiar|to trust
+S|imported|3|No se puede fiar de nadie|You can't trust anybody
+W|imported|3|una fiebre|a fever
+S|imported|3|Con la fiebre que tienes no puedes salir de casa|With the fever that you have you cannot go out of the house
+S|imported|3|Mañana es día de fiesta|Tomorrow is a holiday
+S|imported|3|Pronto llega el fin del semestre|The end of the semester will come soon
+S|imported|3|Necesitamos su firma, por favor|We need your signature, please
+S|imported|3|Firme usted aquí, por favor|Sign here, please
+W|imported|3|flamenco|flamenco
+S|imported|3|Los espectáculos flamencos son populares en el sur de España|Flamenco shows are popular in the south of Spain
+S|imported|3|Mandó flores a su madre|He sent flowers to his mother
+S|imported|3|Tiene usted fósforo? Lo siento, pero no fumo|Do you have a match? I'm sorry, but I don't smoke
+S|imported|3|la foto (la fotografía)|the photo
+S|imported|3|Dónde puedo revelar estas fotos?|Where can I develop these photos?
+S|imported|3|Habrían fracasado sin la ayuda del gobierno|They would have failed without help from the government
+S|imported|3|No hablo francés, pero lo entiendo un poco|I don't speak French, but I understand it a little
+S|imported|3|Francia está separada de España por los Pirineos|France is separated from Spain by the Pyrenees
+W|imported|3|la frase|the sentence
+S|imported|3|Escriban una composición de diez frases|Write a composition of ten sentences
+W|home|3|la frazada|the blanket (Latino)
+S|imported|3|Pida otra frazada si hace frío esta noche|Ask for another blanket if it's cold tonight
+S|imported|3|Perdieron la guerra en el frente del este|They lost the war on the eastern front
+S|imported|3|Al oír eso, arrugó la frente|On hearing that, he knitted his brow
+S|imported|3|El café está frío|The coffee is cold
+S|imported|3|Dos huevos fritos y un café, por favor|Two fried eggs and coffee, please
+S|imported|3|Tenemos que bajar del tren en la frontera?|Do we have to get off the train at the border?
+S|imported|3|El fiiego fue tan intenso que los bomberos no pudieron entrar en la casa|The fire was so intense that the firemen couldn't get into the house
+W|imported|3|fuera (de)|outside
+S|imported|3|Esta carretera los llevará fuera de la ciudad|This highway will take you out of the city
+S|imported|3|El toro es más fuerte que el torero, pero casi siempre pierde|The bull is stronger than the bullfighter, but he almost always loses
+S|imported|3|No se permite fumar en clase|Smoking is not permitted in class
+W|imported|3|la función|the function
+S|imported|3|La última función empieza a las once|The last show goes on at eleven
+S|imported|3|El ascensor no funciona|The elevator is out of order
+S|imported|3|El fútbol es muy popular en España|Soccer is very popular in Spain
+S|imported|3|Uso gafas solamente para leer|I use glasses only for reading
+W|imported|3|la gana|the desire
+S|imported|3|No tengo ganas de salir esta noche|I don't feel like going out tonight
+S|imported|3|Quién ganó el partido?|Who won the game?
+S|imported|3|Mucha gente busca gangas en el Rastro los domingos por la mañana|Many people look for bargains in the Rastro (flea market in Madrid) on Sunday mornings
+S|imported|3|Tiene un dolor de garganta y no puede hablar|He has a sore throat and can't speak
+S|imported|3|No me gusta gastar dinero en tonterías|I don't like to spend money on foolishness
+S|imported|3|Mucha gente vino a la ceremonia|Many people came to the ceremony
+W|imported|3|el gerente|the manager
+S|imported|3|Quiero hablar con el gerente|I want to talk to the manager
+S|imported|3|El nuevo gobierno tiene el apoyo del pueblo|The new government has the support of the people
+W|imported|3|el golpe|the blow
+S|imported|3|Fue como un golpe a la cabeza|It was like a blow to the head
+S|imported|3|Si sigues comiendo así, te pondrás gordo|If you keep on eating like that, you'll get fat
+W|imported|3|la gota|the drop (of liquid)
+S|imported|3|No queda ni una gota de agua|There's not a drop of water left
+W|imported|3|gozar (de)|to enjoy
+S|imported|3|Gozan de buena salud|They're enjoying good health
+S|imported|3|Muchas gracias por su amabilidad|Thank you very much for your kindness
+W|imported|3|gran, grande|big
+S|imported|3|El presidente Lincoln fue un gran hombre y también un hombre grande|President Lincoln was a great man and also a big man
+S|imported|3|No hay que gritar. Ya vienen|There is no need to shout. They're coming just now
+W|imported|3|el grito|the shout
+S|imported|3|Me despertó un grito en la calle|A shout in the street awakened me
+S|imported|3|Hay dos profesores y treinta alumnos en nuestro grupo|There are two teachers and thirty pupils in our group
+S|imported|3|Cuando hace frío me pongo guantes|When it's cold I put on gloves
+S|imported|3|En su familia, todos los hombres son guapos y las mujeres bonitas|In his family, all the men are handsome and the women pretty
+S|imported|3|Los guardias protegen al público|The police officers protect the public
+S|imported|3|La Guerra Civil en España duró casi tres años|The Civil War in Spain lasted almost three years
+S|imported|3|Nuestra guía nos llevó a todos los puntos de interés|Our guide took us to all the points of interest
+S|imported|3|Cuánto cuesta esta guía de México?|How much is this guidebook of Mexico?
+S|imported|3|Nos gusta viajar en el verano|We like to travel in the summer
+S|imported|3|Mucho gusto en conocerle. El gusto es mío|Pleased to meet you. The pleasure is mine
+S|imported|3|Todas las habitaciones tienen baño y teléfono|All the rooms have a bath and telephone
+S|imported|3|Yo hablo español un poco. Habla usted inglés?|I speak Spanish a little. Do you speak English?
+S|imported|3|Hay tantas cosas que hacer|There are so many things to do
+S|imported|3|Caminaba hacia la aldea|He was walking toward the village
+S|imported|3|Dónde se puede hallar un restaurante vegetariano?|Where can one find a vegetarian restaurant?
+W|feeling|3|la hambre|the hunger
+S|imported|3|No tengo hambre todavía|I'm not hungry yet
+S|imported|3|Los esperamos hasta las cuatro|We waited for them until four o'clock
+W|imported|3|hay|there is
+S|imported|3|Hay muchos lugares que visitar|There are many places to visit
+S|imported|3|Qué vista tan hermosa!|What a beautiful view!
+S|imported|3|Eche un poco de hielo en mi vaso|Put a little bit of ice in my glass
+S|imported|3|Hola. Qué tal?|Hi, how are you?
+S|imported|3|Había más hombres que mujeres en la reunión|There were more men than women at the meeting
+S|imported|3|Busco el horario de los autobuses|I am looking for the bus schedule
+S|imported|3|Hoy es el primer día de clases|Today is the first day of classes
+S|imported|3|Los obreros municipales se declararon en huelga|The municipal workers went out on strike
+S|imported|3|Ya han llegado todos los huéspedes|All the guests have already arrived
+S|imported|3|Se podía ver el humo desde lejos|You could see the smoke from far away
+S|imported|3|Un billete de ida y vuelta, por favor|A round-trip ticket, please
+S|imported|3|Me encanta aprender nuevos idiomas|I love to learn new languages
+S|imported|3|Van a la iglesia todos los domingos|They go to church every Sunday
+S|imported|3|Yo te amo igual que ama la flor la luz del día|I love you the same as a flower loves the light of day
+S|imported|3|Mucho gusto en conocerle. Igualmente|Pleased to meet you. Likewise
+S|imported|3|Va a llover. Lleva tu impermeable|It's going to rain. Take your raincoat
+S|imported|3|No me importa lo que dicen|It doesn't matter to me what they say
+S|imported|3|Los impuestos siempre suben|The taxes always go up
+S|imported|4|En caso de incendio, no use el ascensor|In case of fire, do not use the elevator
+S|imported|4|Quiere indicarme la ruta en el mapa?|Would you show me the route on the map?
+S|imported|4|Mis dos hermanos son ingenieros|My two brothers are engineers
+W|imported|4|Inglaterra|England (female)
+S|imported|4|Inglaterra y España eran rivales en la colonización del Nuevo Mundo|England and Spain were rivals in the colonization of the New World
+S|imported|4|No soy inglés pero sí hablo inglés|I'm not English but yes I do speak English
+S|imported|4|Salgan de aquí inmediatamente|Get out (ustedes) of here immediately
+S|imported|4|Quisiera visitar todos los puntos de interés|I'd like to visit all the points of interest
+W|imported|4|inútil|useless
+S|imported|4|Es inútil protestar|It's useless to protest
+S|imported|4|No podemos ir mañana|We can't go tomorrow
+W|imported|4|izquierda|left
+S|imported|4|Doble a la izquierda en la primera esquina|Turn to your left at the first corner
+S|imported|4|Nos puede dejar otra barra de jabón?|Can you leave us another bar of soap?
+S|imported|4|No hemos visto jamás tanta riqueza|We've never seen such wealth
+S|imported|4|El palacio está rodeado de jardines|The palace is surrounded by gardens
+S|imported|4|Nuestro jefe siempre llega temprano|Our boss always arrives early
+S|imported|4|Es muy joven para ocupar un puesto tan importante|He's very young to occupy such an important position
+S|imported|4|Quería comprar una joya elegante para su esposa|He wanted to buy an elegant jewel for his wife
+S|imported|4|Muchos judíos sefarditas hablan español|Many Sephardic Jews speak Spanish
+S|imported|4|El ajedrez es un juego difícil|Chess is a difficult game
+S|imported|4|Todo el mundo se levanta cuando entra el juez|Everyone stands up when the judge enters
+S|imported|4|Quiénes juegan esta tarde?|Who are the ones playing this afternoon?
+S|imported|4|Cuántos juguetes tienen los niños estos días!|How many toys children have these days
+S|imported|4|Será mejor si vamos juntos|It will be better if we go together
+S|imported|4|Juran que no lo robaron|They swear that they didn't steal it
+S|imported|4|Se vende a doscientos euros el kilo|It's sold at 200 euros a kilo
+S|imported|4|La velocidad máxima es ochenta kilómetros por hora|The speed limit is 80 kilometers (50 miles) an hour
+S|imported|4|Es la voz de mi madre, yo la reconocería en cualquier parte|It's my mother's voice, I'd recognize it anywhere
+S|imported|4|Quién escribió las notas? La secretaria las escribió|Who wrote the notes? The secretary wrote them
+S|imported|4|Ella tiene labios de rubí|She has ruby-red lips
+S|imported|4|Su casa está al otro lado de la calle|His house is on the other side of the street
+S|imported|4|El ladrón se escapó en la confusión|The thief escaped in the confusion
+S|imported|4|Hay un gran lago en el parque|There's a big lake in the park
+S|imported|4|Necesitamos una lámpara para leer|We need a reading lamp
+S|imported|4|Quiero un suéter de lana|I want a wool sweater
+S|imported|4|No podía tomar notas porque se me perdió el lápiz|I couldn't take notes because I lost my pencil
+S|imported|4|Dio un discurso muy largo|He gave a very long talk
+S|imported|4|Qué lástima que no hayan venido!|What a pity that they haven't come!
+S|imported|4|Dónde están los lavabos?|Where are the lavatories?
+S|imported|4|Dónde podemos lavar la ropa?|Where can we wash our clothes?
+W|imported|4|le|to him
+S|imported|4|Le hablo como amigo|I'm speaking to you as a friend
+S|imported|4|Esta lección es más complicada que la anterior|This lesson is more complicated than the previous one
+S|imported|4|Me gustaría leer todo lo que ha escrito|I'd like to read everything he's written
+S|imported|4|Está muy lejos de aquí|It's very far from here
+S|imported|4|Se hablan varias lenguas en la península ibérica|Several languages are spoken on the Iberian Peninsula
+S|imported|4|Más lentamente, por favor|More slowly, please
+W|imported|4|los lentes|the eyeglasses
+S|imported|4|Si pierdo mis lentes, no puedo ver nada|If I lose my glasses, I can't see a thing
+S|imported|4|El tiene tan mala letra que no puedo leer su carta|He has such a bad handwriting that I can't read his letter
+S|imported|4|El letrero dice: "Descuentos hoy y mañana|The sign says: "Discounts today and tomorrow
+S|imported|4|Levante la mano si quiere hablar|Raise your hand if you want to speak
+S|imported|4|Levántese por favor, y hable en voz alta|Stand up please, and speak in a loud voice
+S|imported|4|El juez explicó la ley a los miembros del jurado|The judge explained the law to the members of the jury
+S|imported|4|Por fin quedaron libres del tirano|Finally they were free from the tyrant
+S|imported|4|Tenemos que leer tantos libros en este curso|We have to read so many books in this course
+S|imported|4|Un abrigo ligero es ideal para noviembre|A light coat is ideal for November
+W|imported|4|el límite|the limit
+S|imported|4|Cuáles son los límites de su propiedad?|What are the boundaries of your property?
+S|imported|4|Limpian las habitaciones todos los días?|Do they clean the rooms every day?
+S|imported|4|Nuestra habitación siempre está limpia|Our room is always clean
+S|imported|4|Tienen una casa muy linda|They have a very pretty home
+S|imported|4|Lean con cuidado la tercera línea|Read the third line carefully
+S|imported|4|Su nombre no está en la lista de invitados|Your name isn't on the guest list
+S|imported|4|Es muy lista pero casi nunca está lista a tiempo|She is very bright but is almost never ready on time
+S|imported|4|Echeme veinte litros, por favor|Put in twenty liters, please
+W|imported|4|el lo|the it
+S|imported|4|No lo he visto todavía|I haven't seen him yet
+S|imported|4|Estás loco? No puedes hacer eso|Are you crazy? You can't do that
+S|imported|4|Quiénes comieron los pasteles? Los niños los comieron|Who ate the pies? The children ate them
+S|imported|4|Fue una lucha larga y cruel|It was a long, cruel struggle
+S|imported|4|Almorzamos y luego dimos un paseo|We ate lunch and then took a stroll
+S|imported|4|Es un lugar muy ameno|It's a very pleasant place
+S|imported|4|El Ritz es un hotel de lujo|The Ritz is a deluxe hotel
+S|imported|4|La luna está llena esta noche|The moon is full tonight
+S|imported|4|Es romántico caminar a la luz de la luna|It's romantic to walk in the moonlight
+S|imported|4|Hubo una llamada para usted|There was a call for you
+S|imported|4|Se llama Francisco, pero todo el mundo le llama Paco|His name is Francisco, but everyone calls him Paco
+S|imported|4|Perdí la llave y no puedo abrir la puerta|I lost my key and I can't open the door
+S|imported|4|Estamos esperando la llegada de mi primo|We're awaiting my cousin's arrival
+S|imported|4|Cuándo llega el tren de Barcelona?|When does the train from Barcelona arrive?
+S|imported|4|Llene el tanque, por favor|Fill the tank, please
+S|imported|4|El vaso está medio lleno|The glass is half full
+S|imported|4|Nos llevaron a todas partes|They took us everywhere
+S|imported|4|Una canción popular dice: "Canta y no llores|A popular song says: "Sing and don't cry
+S|imported|4|Casi nunca llueve en Madrid en el verano|It almost never rains in Madrid in the summer
+S|imported|4|La lluvia de anoche no refresco nada|Last night's rain didn't cool things off at all
+S|imported|4|Guardo mis papeles importantes en esta caja de madera|I keep my important papers in this wooden box
+S|imported|4|Las uvas no están maduras todavía|The grapes aren't ripe yet
+S|imported|4|Los maestros tienen mucha paciencia|Teachers have a lot of patience
+S|imported|4|Hace mal tiempo y me siento mal|The weather is bad and I feel bad
+S|imported|4|Permiten dos maletas en el avión|They allow two suitcases on the plane
+S|imported|4|Lo mandaré por correo aéreo|I'll send it by airmail
+S|imported|4|Me encanta su manera de hablar|I'm charmed by his way of speaking
+S|imported|4|Perdió el uso de la mano izquierda en una batalla|He lost the use of his left hand in a battle
+S|imported|4|Deje dos mantas en la cama, por favor|Please leave two blankets on the bed
+S|imported|4|Mantiene a sus tres hermanos menores|He supports his three younger brothers
+S|imported|4|Visitaremos el palacio mañana por la mañana|We'll visit the palace tomorrow morning
+S|imported|4|Un mapa de carreteras es útil|A highway map is useful
+S|imported|4|Me gusta caminar por las orillas del mar|I like to walk along the seashore
+S|imported|4|Esto es mejor pero es más caro|This is better but it's more expensive
+S|imported|4|Las medias de nilón son populares hoy día|Nylon stockings are popular these days
+S|imported|4|En muchas discotecas la acción empieza a medianoche|In many nightclubs the action begins at midnight
+S|imported|4|No me siento bien. Llame al médico, por favor|I don't feel well. Call the doctor, please
+S|imported|4|Qué medida lleva usted?|What size (measurement) do you wear?
+S|imported|4|Vinieron a las diez y media|They came at half past ten
+S|imported|4|Podemos almorzar a mediodía|We can have lunch at noon
+S|imported|4|Será mejor dejarlo para mañana|It will be better to leave it for tomorrow
+S|imported|4|Espero que mejore pronto|I hope you feel better soon
+S|imported|4|Tengo dos hermanas menores|I have two younger sisters
+S|imported|4|Tiene usted algo menos caro?|Do you have something less expensive?
+S|imported|4|No hagas caso de las mentiras que dicen de ti|Don't pay attention to the lies they tell about you
+S|imported|4|A menudo llegaba tarde|He would often arrive late
+S|imported|4|Este mercado tiene todo lo que usted necesita|This market has everything you need
+S|imported|4|Merece un premio por lo que ha hecho|He deserves a prize for what he's done
+S|imported|4|Como cenan tan tarde, toman una merienda a eso de las seis|Since they dine so late, they have an afternoon snack at about six
+S|imported|4|Vamos a pasar el mes de enero en el sur|We're going to spend the month of January in the south
+S|imported|4|La mesa en el comedor es más grande|The table in the dining room is bigger
+W|job|4|mesero, mesera|waiter
+S|imported|4|Los meseros tratan de servir rápidamente|The waiters are trying to serve quickly
+S|imported|4|No sé donde metí mi cartera|I don't know where I put my purse
+W|imported|4|el método|the method
+S|imported|4|Buscan un método más eficaz|They are looking for a more efficient method
+S|imported|4|Hay mil metros en un kilómetro|There are a thousand meters in a kilometer
+W|imported|4|mi, mis|my
+S|imported|4|Quiero presentarle mi esposa y mis hijos|I want to introduce my wife and my children to you
+S|imported|4|Tiene miedo de salir de noche|He's afraid to go out at night
+S|imported|4|Es usted miembro de esta sociedad?|Are you a member of this society?
+S|imported|4|Ella salió con el grupo mientras que yo descansaba|She went out with the group whereas I was resting
+W|imported|4|el milagro|the miracle
+S|imported|4|Es un milagro que no haya muerto|It's a miracle that I didn't die
+W|imported|4|la milla|the mile
+S|imported|4|Cuántos kilómetros hay en diez millas?|How many kilometers are there in ten miles?
+S|imported|4|Estas maletas no son mías|These suitcases aren't mine
+S|imported|4|Miren la hermosa puesta de sol!|Look (ustedes) at the beautiful sunset!
+S|imported|4|El guía mismo nos dijo la misma cosa|The guide himself told us the same thing
+S|imported|4|Le daré la mitad de todo lo que tengo|I will give you half of everything I have
+S|imported|4|Estos vestidos ya no están de moda|These dresses are no longer in fashion
+W|imported|4|el modo|the way
+S|imported|4|De qué modo podemos arreglarlo?|In what way can we arrange it?
+W|verb|4|mojar|to wet
+S|imported|4|Lleva un paraguas si no quieres mojarte|Take an umbrella if you don't want to get wet
+S|imported|4|Forgive me if I am disturbing you|Perdone si le molesto
+W|imported|4|la molestia|the bother
+S|imported|4|No es ninguna molestia|It’s no bother at all
+S|imported|4|Dale una moneda al mendigo|Give the beggar a coin
+S|imported|4|Hace más fresco en las montañas|It is cooler in the mountains
+S|imported|4|Dice que tiene muchas novias, rubias y morenas|He says he has many girlfriends, blondes and brunettes
+S|imported|4|Muéstreme lo que tiene|Show me what you have
+W|imported|4|el mozo|the porter
+S|imported|4|Busco un mozo para llevar mi equipaje|I am looking for a porter to take my luggage
+W|imported|4|muchacho, muchacha|boy
+S|imported|4|Los muchachos están jugando en la calle|The boys are playing in the street
+S|imported|4|Me divertí mucho. Muchas gracias|I enjoyed myself very much. Thanks a lot
+S|imported|4|Lo siento, pero tenemos que mudar su habitación|I'm sorry, but we have to change your room
+W|imported|4|los muebles|the furniture
+S|imported|4|Los muebles me parecen muy modernos|The furniture looks very modern to me
+S|imported|4|Ví el anuncio de su muerte en el periódico|I saw the announcement of his death in the newspaper
+S|imported|4|Estoy muerto de hambre|I'm starving to death
+S|imported|4|Aquí tiene usted una muestra de nuestro trabajo|Here you have a sample of our work
+S|imported|4|Buscan una mujer alta y delgada|They are looking for a tail, slender woman
+W|imported|4|la multa|the fine
+S|imported|4|Tuvo que pagar una multa|He had to pay a fine
+S|imported|4|Me gustaría viajar por todo el mundo|I'd like to travel all over the world
+S|imported|4|Estoy buscando una muñeca para mi sobrina|I'm looking for a doll for my niece
+S|imported|4|No hay bastante tiempo para visitar todos los museos|There isn't enough time to visit all the museums
+S|imported|4|Hay muchos programas de música en varios teatros|There are many musical programs in a number of theaters
+S|imported|4|Estamos muy bien, gracias|We are very well, thank you
+S|imported|4|En qué año nació usted?|In what year were you born?
+S|imported|4|No le dije nada|I didn't tell him anything
+S|imported|4|Dice que no sabe nadar|He says he doesn't know how to swim
+S|imported|4|Feliz Navidad!|Merry Christmas!
+S|imported|4|No he visto a nadie todavía|I haven't seen anyone yet
+S|imported|4|Tiene una nariz romana|She has a Roman nose
+S|imported|4|Son necesarias todas estas preparaciones?|Are all these preparations necessary?
+S|imported|4|Necesitamos más tiempo para verlo todo|We need more time to see everything
+S|imported|4|Niegan que lo hayan robado|They deny that they stole it
+W|imported|4|el negociante|the businessman
+S|imported|4|Muchos negociantes usan este hotel|Many businessmen use this hotel
+S|imported|4|Mi compañía tiene muchos negocios en su país|My company has a lot of business dealings in your country
+S|imported|4|Nieva sólo en las montañas|It snows only in the mountains
+S|imported|4|No habla ni español ni francés|He speaks neither Spanish nor French
+S|imported|4|Una espesa niebla cubría la montaña por la mañana|A thick fog was covering the mountain in the morning
+S|imported|4|Al norte de Madrid, hay bastante nieve para esquiar|To the north of Madrid, there's enough snow to ski
+W|imported|4|ningún, ninguno|none
+S|imported|4|Ninguno de ellos sabía la respuesta|None of them knew the answer
+W|imported|4|niño, niña|child
+S|imported|4|Es una niña muy mona|She's a very cute child
+S|imported|4|Estamos a mil metros sobre el nivel del mar|We're at a thousand meters above sea level
+S|imported|4|No, no puedo salir esta noche|No, I can't go out tonight
+S|imported|4|Qué vamos a hacer esta noche?|What are we going to do tonight?
+S|imported|4|Cuál es su nombre?|What is your name?
+S|imported|4|No conocemos todavía el norte del país|We do not yet know the north of the country
+S|imported|4|Nos llamaron y nos invitaron a la fiesta|They called us and invited us to the party
+S|imported|4|Nosotros queremos dormir pero ellos no nos dejan|We want to sleep but they don't let us
+S|imported|4|Nos dio una mala noticia|He gave us a piece of bad news
+W|imported|4|novio, novia|fiancé
+S|imported|4|Mi hijo está muy enamorado de su novia|My son is very much in love with his girlfriend
+S|imported|4|No hay ni una nube en el cielo|There's not a cloud in the sky
+S|imported|4|Está nublado y parece que va a llover|It's cloudy and it looks as if it's going to rain
+S|imported|4|Nuestro guía está muy bien preparado|Our guide is very well prepared
+S|imported|4|Qué hay de nuevo?|What's new?
+S|imported|4|Cuál es su número de teléfono?|What's your telephone number?
+S|imported|4|No he estado nunca en Guatemala|I have never been to Guatemala
+S|imported|4|Estaremos aquí cuatro o cinco días|We'll be here four or five days
+S|imported|4|Cuál es el objeto de su visita?|What is the purpose of your visit?
+W|verb|4|obligar|to oblige
+S|imported|4|Nos obligaron a tomar otra ruta|They forced us to take another route
+S|imported|4|Sus mejores obras están en este museo|His best works are in this museum
+S|imported|4|Dónde podemos obtener un pase?|Where can we get a pass?
+S|imported|4|El Océano Atlántico está entre América y Europa|The Atlantic Ocean is between America and Europe
+S|imported|4|Si no estoy ocupado mañana, tendré mucho gusto en ir con ustedes|If I’m not busy tomorrow, I’ll be very pleased to go with you
+S|imported|4|Ay, qué ocurrió?|Wow, what happened?
+S|imported|4|Odio a los políticos corruptos|I hate corrupt politicians
+S|imported|4|En el oeste tenemos los Andes|To the west we have the Andes
+S|imported|4|Venga a verme en mi oficina|Come to see me in my office
+S|imported|4|No tengo oído para la música|I have no ear for music
+S|imported|4|No oigo nada porque el tren está pasando|I can't hear a thing because the train is going
+S|imported|4|Ojalá que lleguen pronto!|I wish they'd arrive soon!
+S|imported|4|Tengo algo en el ojo|I have something in my eye
+S|imported|4|Todo huele muy bien|Everything smells very good
+S|imported|4|Hay un mal olor de tabaco aquí|There is a bad tobacco odor here
+S|imported|4|Recuerdo su cara pero olvidé su nombre|I recall his face but I forgot his name
+W|imported|4|onza|ounce
+S|imported|4|Una onza de este perfume cuesta cincuenta dólares|An ounce of this perfume costs fifty dollars
+S|imported|4|No pierdan esta oportunidad|Don't miss this opportunity
+W|imported|4|el orden|the order
+S|imported|4|Los arregló en orden alfabético|He arranged them in alphabetical order
+S|imported|4|Lo hizo según la orden que le dio su jefe|He did it in accordance with the order that his boss gave him
+S|imported|4|Hasta los niños en la escuela primaria aprenden a usar el ordenador|Even children in elementary school learn to use the computer
+S|imported|4|Tiene las orejas muy grandes|He has very big ears
+S|imported|4|Los aretes de oro cuestan más|The gold earrings cost more
+S|imported|4|No puedo comer otra cosa|I can't eat another thing
+S|imported|4|Hay que pagar la cuenta|We have to pay the bill
+S|imported|4|En qué página está?|On what page is it?
+S|imported|4|Me gustaría visitar todos los países de américa latina|I'd like to visit all the countries of Latin America
+S|imported|4|Es un paisaje muy pintoresco|It's a very picturesque landscape
+S|imported|4|Nunca he oído esa palabra|I've never heard that word
+S|imported|4|No dejen de visitar el Palacio Real|Don't fail to visit the Royal Palace
+S|imported|4|Se puso pálido cuando oyó la noticia|He became pale when he heard the news
+S|imported|4|Venden pantalones en una camisería?|Do they sell pants in a haberdashery?
+S|imported|4|Mete el pañuelo en tu bolsillo|Put your handkerchief in your pocket
+S|imported|4|No deje los papeles en la mesa|Don't leave the papers on the table
+S|imported|4|Puedo dejar aquí este paquete?|May I leave this package here?
+W|imported|4|el par|the pair
+S|imported|4|Necesito un par de calcetines|I need a pair of socks
+S|imported|4|Salió para España para estudiar en la universidad|He left for Spain in order to study at the university
+S|imported|4|La parada del autobús está en la próxima esquina|The bus stop is on the next corner
+S|imported|4|Cuando está nublado, es una buena idea llevar un paraguas|When it's cloudy, it's a good idea to take an umbrella
+S|imported|4|Pare aquí por un minuto|Stop here for a minute
+S|imported|4|Parece que no vienen|It seems that they're not coming
+S|imported|4|Yo colgaría un cuadro en esa pared|I would hang a picture on that wall
+S|imported|4|Tiene parientes en todas partes del mundo|He has relatives all over the world
+S|imported|4|No corras en el parque por la noche|Don't run in the park at night
+W|imported|4|el párrafo|the paragraph
+S|imported|4|Podemos eliminar el último párrafo|We can drop the last paragraph
+S|imported|4|Qué parte quiere usted?|What part do you want?
+S|imported|4|Creo que el partido republicano va a ganar|I think the Republican party is going to win
+S|imported|4|Vinimos la semana pasada|We came last week
+S|imported|4|Todos los pasajeros tienen que bajar aquí|All passengers have to get off here
+S|imported|4|No sabemos todavía donde vamos a pasar las vacaciones|We still don't know where we're going to spend our vacation
+W|imported|4|un paseo|a stroll
+S|imported|4|Vamos a dar un paseo por el parque|Let's take a stroll through the park
+S|imported|4|El pasillo es muy estrecho|The aisle is very narrow
+S|imported|4|Después de dar dos pasos tropezó y cayó|After taking two steps, he tripped and fell
+S|imported|4|Tome dos pastillas y llámeme por la mañana|Take two tablets and call me in the morning
+S|imported|4|El patrón trabaja tanto como sus obreros|The boss works as hard as his workers
+S|imported|4|Déjenme en paz, estoy cansado|Leave me in peace, I'm tired
+S|imported|4|El tráfico para para dejar pasar a los peatones|The traffic stops to let the pedestrians cross
+S|imported|4|No es un pecado tan grave|It is not such a serious sin
+S|imported|4|Si siente un dolor en el pecho, llame en seguida al médico|If you feel a pain in the chest, call the doctor at once
+S|imported|4|Se cortó la mano en un pedazo de metal|He cut his hand on a piece of metal
+S|imported|4|Quisiera pedirle un favor|I'd like to ask you for a favor
+S|imported|4|Pegaron un cartel en la pared|They pasted a sign on the wall
+S|imported|4|Me gusta ir al cine cuando dan una buena película|I like to go to the movies when they show a good film
+S|imported|4|No comprendió el peligro que le amenazaba|He didn't understand the danger that was threatening him
+S|imported|4|Es peligroso estar en el parque de noche|It's dangerous to be in the park at night
+S|imported|4|Tengo que cortarme el pelo|I have to have my hair cut
+S|imported|4|Los niños están jugando a la pelota|The children are playing ball
+S|imported|4|Me da pena verte así|It grieves me to see you like this
+W|imported|4|los pendientes|the earrings (Hispanic)
+S|imported|4|Busco unos pendientes como regalo para mi novia|I'm looking for earrings (Hispanic) as a gift for my girlfriend
+S|imported|4|Qué piensan ustedes hacer esta noche? Yo pienso que nos quedamos en casa|What do you intend to do tonight? I think we'll stay home
+S|imported|4|Por lo general, las pensiones son más baratas que los hoteles|In general, boarding houses are cheaper than hotels
+S|imported|4|Cómo se siente usted, mejor o peor?|How do you feel, better or worse?
+S|imported|4|Esta habitación es demasiado pequeña|This room is too small
+S|imported|4|Perdí el tren y tuve que tomar un autobús|I missed the train and had to take a bus
+S|imported|4|Me pidió perdón por lo que había hecho|He asked me for forgiveness for what he had done
+S|imported|4|Perdón, no quería interrumpir|Pardon me, I didn't mean to interrupt
+S|imported|4|Voy a comprar dos periódicos, uno en inglés y otro en español|I'm going to buy two newspapers, one in English and another in Spanish
+S|imported|4|Cuánto tiempo piensan permanecer aquí?|How long do you plan to stay here?
+S|imported|4|Con permiso, dejenme pasar|With your permission, let me (ustedes) pass
+S|imported|4|No nos permitieron entrar|They didn't let us in
+S|imported|4|Quisiéramos visitar otras ciudades, pero no tenemos tiempo|We'd like to visit other cities, but we don't have time
+W|verb|4|pertenecer|to belong
+S|imported|4|A quién pertenecen estos documentos?|To whom do these documents belong?
+S|imported|4|No puedo levantar una maleta tan pesada|I can't lift such a heavy suitcase
+S|imported|4|Tenemos que pesar el equipaje|We have to weigh the luggage
+S|imported|4|En España el peso se expresa en kilos|In Spain weight is expressed in kilos
+S|imported|4|Dígale al camarero si quiere un plato menos picante|Tell the waiter if you want a less spicy dish
+W|imported|4|pico|peak
+S|imported|4|Son las siete y pico|It's a little after seven
+S|imported|4|Me duelen los pies después de caminar tanto|My feet hurt after walking so much
+S|imported|4|La casa está construida de piedra|The house is built of stone
+S|imported|4|Cuida mucho de su piel|She takes good care of her skin
+S|imported|4|Me duele la piema izquierda|My left leg hurts
+S|imported|4|El médico me recetó algunas píldoras|The doctor prescribed some pills for me
+S|imported|4|Un artista inspirado pinta día y noche|An inspired artist paints day and night
+W|imported|4|pintoresco|picturesque
+S|imported|4|Estas aldeas son muy pintorescas|These villages are very picturesque
+S|imported|4|En estas salas tenemos las pinturas de Goya|In these rooms we have the paintings of Goya
+S|imported|4|Cuando hace calor, me refresco en la piscina|When it's hot, I cool off in the pool
+S|imported|4|Este edificio tiene seis pisos|This building has six floors
+S|imported|4|Me pueden limpiar y planchar estos pantalones?|Can you clean and press these pants for me?
+S|imported|4|Siempre llevo conmigo el plano del metro|I always carry the subway map with me
+S|imported|4|Encontraron minas de plata en México y Perú|They found silver mines in Mexico and Peru
+S|imported|4|Para el desayuno hoy comí dos plátanos|For breakfast today I ate two bananas
+S|imported|4|El plato del día tiene un precio reducido|The daily special has a lower price
+S|imported|4|Vaya a la playa si quiere nadar en el mar|Go to the beach if you want to swim in the ocean
+S|imported|4|Algunas de las plazas tienen monumentos impresionantes|Some of the plazas have impressive monuments
+S|imported|4|Firme con pluma, por favor|Sign with a pen, please
+S|imported|4|Son tan pobres que no tienen bastante para comer|They are so poor that they don't have enough to eat
+S|imported|4|Un poco más, por favor|A little more, please
+S|imported|4|Podemos contar con usted?|Can we count on you?
+S|imported|4|La poesía de Lope es bellísima|The poetry of Lope is most beautiful
+S|imported|4|La policía vino en seguida|The police came at once
+S|imported|4|Dos policías arrestaron al criminal|Two policemen arrested the criminal
+S|imported|4|Puedo poner mis cosas aquí?|Can I put my things here?
+S|imported|4|La carta fue escrita por su amigo|The letter was written by his friend
+S|imported|4|No voy porque no quiero ir|I'm not going because I don't want to go
+S|imported|4|por qué?|why?
+S|imported|4|Por qué no me avisaron?|Why didn't they let me know?
+S|imported|4|El portero nos buscará un taxi|The door man will get us a cab
+S|imported|4|Buscamos un restaurante con precios módicos|We are looking for a restaurant with moderate prices
+W|school|4|una pregunta|a question
+S|imported|4|Es una pregunta que no pudo contestar|It's a question he couldn't answer
+S|imported|4|Pregúntele al policía donde está el banco|Ask the policeman where the bank is
+S|imported|4|Su novela recibió el premio de literatura el año pasado|His novel received the literature prize last year
+S|imported|4|No se preocupe por eso|Don't worry about that
+S|imported|4|Ya han preparado las habitaciones|They've already prepared the rooms
+S|imported|4|Me puede prestar cien dólares?|Can you lend me a hundred dollars?
+S|imported|4|Tuvieron que cancelar algunos programas por problemas del presupuesto|They had to cancel some programs because of budget problems
+S|imported|4|primer, el primero|the first
+S|imported|4|El primero de enero es el primer día del año nuevo|January 1st is the first day of the new year
+W|imported|4|una prisa|a hurry
+S|imported|4|Tengo prisa porque ya es tarde|I'm in a hurry because it's already late
+S|imported|4|Pruebe usted esto, a ver si le gusta|Try this, to see if you like it
+S|imported|4|Cómo vamos a resolver todos estos problemas?|How are we going to resolve all these problems?
+S|imported|4|Se prohibe fijar carteles|No billposters allowed
+W|imported|4|la promesa|the promise
+S|imported|4|Nunca cumple su promesa|He never keeps his promise
+S|imported|4|Prometo volver temprano|I promise to come back early
+S|imported|4|Deben llegar muy pronto|They should arrive very soon
+W|imported|4|la propiedad|the property
+S|imported|4|Es una propiedad muy valiosa|It's a very valuable property
+W|imported|4|el propietario|the owner
+S|imported|4|El propietario no quiere vender|The owner doesn't want to sell
+S|imported|4|Una propina de diez por ciento basta|A ten percent tip is enough
+S|imported|4|Cuál es el propósito de su visita?|What is the purpose of your visit?
+S|imported|4|Quiere proteger nuestros intereses|He wants to protect our interests
+W|imported|4|el provecho|the profit
+S|imported|4|No saco ningún provecho de este negocio|I don't make any profit from this deal
+S|imported|4|Hay un banco en la próxima esquina|There is a bank at the next corner
+S|imported|4|El senado aprobó este proyecto|The senate approved this project
+S|imported|4|Qué prueba tiene usted?|What proof do you have?
+S|imported|4|Hay muchos pueblos tranquilos y pintorescos en el sur|There are many tranquil, picturesque villages in the south
+S|imported|4|El puente fue destruido durante la guerra|The bridge was destroyed during the war
+S|imported|4|La puerta estaba cerrada cuando llegamos|The door was closed when we arrived
+S|imported|4|Barcelona es el puerto principal de España|Barcelona is the principal port of Spain
+S|imported|4|Qué clase de puesto busca?|What kind of job are you looking for?
+S|imported|4|Una pulsera de plata es un bonito regalo|A silver bracelet is a pretty gift
+S|imported|4|Tienen que aclarar varios puntos|They have to clarify several points
+S|imported|4|Llegué a las dos en punto|I arrived at two o'clock sharp
+S|imported|4|Yo no sabía que ellos estaban aquí|I didn't know that they were here
+S|imported|4|Qué quiere usted saber?|What do you want to know?
+S|imported|4|Cuánto tiempo nos queda?|How much time do we have left?
+S|imported|4|Hay más quejas en este departamento que en ningún otro|There are more complaints in this department than in any other
+S|imported|4|De qué se quejan ustedes?|What are you complaining about?
+S|imported|4|Cuidado, no quemes la comida|Careful, don't burn the meal
+S|imported|4|Qué quieren hacer hoy?|What do you want to do today?
+S|imported|4|La chica con quien salí anoche se llama Luisa|The girl I went out with last night is called Luisa
+S|imported|4|Quién llamó?|Who called up?
+S|imported|4|Por favor, quite este plato sucio|Please take away this dirty plate
+S|imported|4|Se quitaron los zapatos antes de entrar|They took off their shoes before entering
+W|imported|4|quizás|perhaps
+S|imported|4|Ella siempre me contesta "Quizás, quizás"|She always answers me "Perhaps, perhaps"
+S|imported|4|Fue una decisión muy rápida|It was a very quick decision
+W|imported|4|rato|while
+S|imported|4|Tuvimos que esperar un rato|We had to wait for a while
+S|imported|4|Tendrá sus razones por haberlo hecho así|He must have his reasons for having done it this way
+S|imported|4|Él cree que siempre tiene razón|He thinks he's always right
+S|imported|4|La familia real se va de Madrid en el verano|The royal family leaves Madrid in the summer
+W|imported|4|el recado|the message
+S|imported|4|Deje un recado en la recepción|Leave a message at the (hotel) desk
+S|imported|4|Lleve la receta a una farmacia|Bring the prescription to a pharmacy
+S|imported|4|Espero recibir una carta importante hoy|I expect to receive an important letter today
+S|imported|4|Necesito un recibo para la aduana|I need a receipt for Customs
+S|imported|4|Le reconoci en seguida pero no recuerdo su nombre|I recognized him at once but I don't recall his name
+S|imported|4|Recuerda usted lo que dijo el guía?|Do you recall what the guide said?
+W|imported|4|recuerdo|remembrance
+S|imported|4|Recuerdos a todos en casa|Regards to all at home
+S|imported|4|Rechazaron nuestra solicitud|They rejected our request
+S|imported|4|Hay muchas tiendas donde se pueden comprar regalos|There are many stores where you can buy gifts
+S|imported|4|Bajo el antiguo régimen no había tanto crimen|Under the old regime there wasn't so much crime
+S|imported|4|Tenemos que obedecer las reglas|We have to obey the rules
+S|imported|4|Esperamos regresar el año que viene|We hope to return next year
+S|imported|4|Cómo se siente usted? Regular|How do you feel? OK
+S|imported|4|Recomiendo una visita al museo Reina Sofía|I recommend a visit to the Queen Sophia Museum
+S|imported|4|De qué se ríe usted?|What are you laughing at?
+S|imported|4|Mi reloj no anda bien|My watch isn't going right
+S|imported|4|No hay remedio para esa enfermedad|There is no remedy for that illness
+W|imported|4|el renglón|the line
+S|imported|4|En qué renglón está esa frase?|On what line is that sentence?
+S|imported|4|De repente apareció el niño|Suddenly the child appeared
+S|imported|4|Quiere usted repetir lo que dijo?|Will you repeat what you said?
+S|imported|4|No se acerque, tengo un resfriado contagioso|Don't come near me, I have a contagious cold
+S|imported|4|Respire usted fuerte, por favor|Breathe deeply, please
+S|imported|4|Les escribí varias veces, pero no respondieron|I wrote to them several times, but they didn't answer
+S|imported|4|Esperamos su respuesta|We are awaiting their reply
+S|imported|4|El tren llegó con un retraso de dos horas|The train arrived with a two hour delay
+W|imported|4|un retrato|a picture (of people)
+S|imported|4|Lleva un retrato de su esposa e hijos en su cartera|He carries a picture of his wife and children in his wallet
+S|imported|4|Es una reunión de profesores de lenguas modernas|It's a meeting of modern language teachers
+S|imported|4|Cuánto cuesta revelar un rollo?|What's the charge for developing a roll?
+S|imported|4|Se venden revistas de todas partes en esta tienda|They sell magazines from all over in this store
+S|imported|4|El Rey Juan Carlos es el nieto del Rey Alfonso XIII (trece)|King Juan Carlos is the grandson of King Alfonso XIII
+S|imported|4|Deben ser ricos si viven en este palacio|They must be rich if they live in this palace
+W|imported|4|el rincón|the corner
+S|imported|4|Pueden poner una silla pequeña en este rincón|You (all) can put a small chair in this corner
+S|imported|4|No hay muchos ríos navegables en España|There aren't many navigable rivers in Spain
+S|imported|4|Le robaron todo lo que tenía|They robbed him of everything he had
+S|imported|4|Se puso de rodillas y pidió perdón|He got down on his knees and asked for forgiveness
+S|imported|4|Cuidado, no rompa nada|Be careful, don't break anything
+S|imported|4|No es necesario traer mucha ropa|It isn't necessary to bring a lot of clothes
+S|imported|4|Esa silla está rota|That chair is broken
+S|imported|4|El ruido de los aviones me vuelve loco|The airplane noise drives me crazy
+S|imported|4|Tuvimos que cambiar de ruta por la construcción|We had to change our route because of the construction
+S|imported|4|No cambian las sábanas todos los días|They don't change the sheets everyday
+S|imported|4|No sabemos si viene o no|We don't know if he's coming or not
+S|imported|4|Sacó todo el dinero que tenía|He took out all the money he had
+W|imported|4|el saco|the bag
+S|imported|4|Examinan todos los sacos al entrar en ese edificio|They examine all bags on entering that building
+S|imported|4|Recibimos a nuestros huéspedes en la sala|We receive our guests in the living room
+S|imported|4|La salida está a la izquierda|The exit is on the left
+S|imported|4|Cuándo sale el último tren?|When does the last train leave?
+S|imported|4|Nuestra clase de matemáticas está en el salón 12 (doce)|Our math class is in room 12
+S|imported|4|Come bien y goza de buena salud|He eats well and enjoys good health
+S|imported|4|Nos saludó y hablamos por algunos minutos|He greeted us and we spoke for a few minutes
+S|imported|4|Saludos a la familia|Regards to the family
+S|imported|4|Perdió mucha sangre durante la operación|He lost a lot of blood during the operation
+S|imported|4|No estamos satisfechos con la excursión de hoy|We aren't satisfied with today's excursion
+S|imported|4|No se ven mucho pero se escriben todos los días|They don't see each other often but they write to each other every day
+S|imported|4|Tenemos que lavar y secar los platos|We have to wash and dry the dishes
+S|imported|4|La ropa ya está seca|The clothing is dry already
+S|imported|4|Cuando hace calor siempre tengo sed|When it's hot I'm always thirsty
+S|imported|4|Busca unas corbatas de seda|She is looking for some silk ties
+S|imported|4|Sígame y le indicaré el número que busca|Follow me and I'll point out the number you're looking for
+S|imported|4|Siga leyendo|Go on reading
+S|imported|4|Según el presidente, no hay nada que temer|According to the president, there is nothing to fear
+S|imported|4|Un segundo, por favor. Estoy ocupado|One second, please. I'm busy
+S|imported|4|Estaba seguro de que lo tenía conmigo|I was sure that I had it with me
+S|imported|4|Tiene seguro sobre la vida?|Do you have life insurance?
+S|imported|4|Cinco sellos de correo aéreo para los Estados Unidos|Five airmail stamps to the United States
+S|imported|4|Vamos a pasar dos semanas en la capital|We're going to spend two weeks in the capital
+S|imported|4|Nuestro plan es muy sencillo|Our plan is very simple
+S|imported|4|Siéntense, por favor, empezamos pronto|Sit down please, we're beginning soon
+S|imported|4|Lo siento, pero no puedo venir|I'm sorry, but I can't come
+S|imported|4|Como no se sentía bien, decidió quedarse en casa|Since he wasn't feeling well, he decided to stay home
+S|imported|4|Vamos a arreglar una señal en caso de emergencia|Let's arrange a signal in case of emergency
+S|imported|4|La señora Blanco es mi profesora de arte|Mrs Blanco is my art teacher
+S|imported|4|Puedo hablar con la señorita Ortiz?|May I speak with Miss Ortiz?
+S|imported|4|Los Pirineos separan España de Francia|The Pyrenees separate Spain from France
+S|imported|4|Cuál es su profesión? Soy arquitecto|What's your profession? I am an architect
+S|imported|4|Es un problema muy serio|It's a very serious problem
+S|imported|4|El servicio es muy lento hoy|The service is very slow today
+S|imported|4|Se me cayó la servilleta|I dropped my napkin
+S|imported|4|A quién sirvo primero?|Whom shall I serve first?
+S|imported|4|No sé si vienen con nosotros|I don't know if they're coming with us
+S|imported|4|El dijo que si, pero yo tengo mis dudas|He said yes, but I have my doubts
+S|imported|4|Siempre llega a las nueve en punto|He always arrives at nine sharp
+S|imported|4|Es especialista en la literatura del siglo XX (viente)|He is a specialist in twentieth century literature
+S|imported|4|Qué significa esta palabra?|What does this word mean?
+S|imported|4|Primero visitamos el palacio, y el día siguiente fuimos al museo|First we visited the palace, and the next day we went to the museum
+S|imported|4|Esta silla no es muy cómoda|This chair isn't very comfortable
+S|imported|4|Todos sus parientes parecen muy simpáticos|All of your relatives seem very nice
+S|imported|4|No se vayan sin mí|Don't leave (ustedes) without me
+S|imported|4|Es un sitio ideal para pasar las vacaciones|It's an ideal place to spend a vacation
+S|imported|4|Hablaron sobre un tema que me interesa mucho|They spoke about a topic that interests me very much
+W|imported|4|el sobre|the envelope
+S|imported|4|Necesito un sobre para esta carta|I need an envelope for this letter
+S|imported|4|Hay que cuidarse cuando hace mucho sol|You have to be careful when it's very sunny
+S|imported|4|Solamente una vez y nada más|Only once and no more
+S|imported|4|La dejaron sola por dos días|They left her alone for two days
+W|imported|4|sólo|only
+S|imported|4|Sólo usted puede ayudarme|Only you can help me
+S|imported|4|Mi hermano mayor es soltero pero contento|My older brother is unmarried but happy
+S|imported|4|Busque un lugar a la sombra|Look for a place in the shade
+S|imported|4|Los jóvenes casi nunca llevan sombrero|Young men almost never wear hats
+S|imported|4|Hay que sonreír cuando sacan una foto|You have to smile when they take a picture
+W|imported|4|su|his
+S|imported|4|Me presentó a su cuñado|He introduced me to his brother-in-law
+S|imported|4|Tengo que usar el ascensor para subir|I have to use the elevator to go up
+S|imported|4|Estos platos están sucios|These dishes are dirty
+S|imported|4|No tires los papeles al suelo|Don't throw the papers on the floor
+S|imported|4|Tengo sueño pero no puedo dormir|I'm sleepy but I can't sleep
+S|imported|4|Qué suerte encontrarte aquí!|What luck to find you here!
+S|imported|4|Por supuesto!|Of course!
+S|imported|4|Por supuesto iré con usted|Of course I’ll go with you
+S|imported|4|Pensamos pasar el invierno en el sur|We intend to spend the winter in the south
+W|imported|4|el tabaco|the tobacco
+S|imported|4|Generalmente, uno puede comprar sellos en una tienda de tabacos|Generally, one can buy stamps in a tobacco shop
+S|imported|4|Nunca hemos visto tal cosa|We've never seen such a thing
+S|imported|4|Qué tal?|How are things? / How are you?
+S|imported|4|Qué talla busca usted?|What (specific) size are you looking for?
+S|imported|4|Qué tamaño usa usted?|What size do you wear?
+S|imported|4|Habla inglés, español y también un poco de francés|He speaks English, Spanish and also a little bit of French
+S|imported|4|Yo no entendí nada. Ni yo tampoco|I didn't understand a thing. Neither did I
+S|imported|4|Van de cafetería en cafetería probando las tapas|They're going from bar to bar tasting the appetizers
+S|imported|4|Es la cola para la taquilla|It's the line for the box office
+S|imported|4|No llegue tarde|Don't arrive late
+S|imported|4|Empezamos a las cuatro de la tarde|We begin at four PM
+S|imported|4|Mandaré un tarjeta postal cada semana|I'll send a postcard every week
+S|imported|4|Una taza de té con limón, por favor|A cup of tea with lemon, please
+S|imported|4|En qué teatro dan la última comedia de Buero?|In what theater are they performing Buero's latest play?
+S|imported|4|Tenemos que pintar el techo cada cinco años|We have to paint the ceiling every five years
+S|imported|4|Es una tela muy fina|It's a very fine material
+S|imported|4|Busco una cabina de teléfonos|I am looking for a telephone booth
+S|imported|4|Nos levantamos temprano en el verano|We get up early in the summer
+S|imported|4|Tráigame otro tenedor, por favor|Please bring me another fork
+S|imported|4|Tengo mucho que hacer|I have a lot to do
+S|imported|4|No tengo tiempo para verlo todo|I don't have time to see it all
+S|imported|4|Qué tiempo hace en julio?|How is the weather in July?
+S|imported|4|Hay muchas tiendas en esta calle|There are many stores on this street
+S|imported|4|Es difícil cultivar esta tierra|It's difficult to cultivate this land
+W|imported|4|las tijeras|the scissors
+S|imported|4|Es útil traer tijeras si hay que cortar algo|It's useful to bring scissors in case you have to cut something
+S|imported|4|Hay que firmar con tinta|You have to sign in ink
+S|imported|4|Quisiéramos probar una comida típica de esta región|We'd like to try a typical meal of this region
+S|imported|4|No tires arena, chico|Don't throw sand, kid
+S|imported|4|Cuándo cambian las toallas?|When do they change the towels?
+S|imported|4|No le toque cuando está tocando el piano|Don't touch him when he's playing the piano
+S|imported|4|No han llegado todavía|They haven't arrived yet
+S|imported|4|Nos enseñó todo lo que sabía|He taught us all that he knew
+W|imported|4|todos|all
+S|imported|4|Ya estamos todos|We're all here now
+S|imported|4|Qué vamos a tomar?|What are we going to have (to eat, to drink)?
+S|imported|4|Necesitamos una tormenta para romper el calor|We need a storm to break the heat
+S|imported|4|La corrida de toros es popular en algunos países|Bullfighting is popular in some countries
+S|imported|4|Lo encarcelaron en la torre|They imprisoned him in the tower
+S|imported|4|Tienes que tomar algo para esa tos|You must take something for that cough
+S|imported|4|Trabaja más de cuarenta horas por semana|He works more than forty hours a week
+S|imported|4|No puedo terminar todo este trabajo en dos días|I can't finish all this work in two days
+S|imported|4|Puede usted traducir lo que él ha dicho?|Can you translate what he said?
+S|imported|4|Creo que he traído demasiada ropa|I think I brought too much clothing
+S|imported|4|Un traje basta para este viaje|One suit is sufficient for this trip
+S|imported|4|Todo está muy tranquilo ahora|Everything is very tranquil now
+S|imported|4|Traten de escribir claramente|Try to write clearly
+S|imported|4|Los trenes generalmente llegan a tiempo|The trains generally arrive on time
+S|imported|4|Se puso triste cuando oyó la noticia|He became sad when he heard the news
+S|imported|4|Tienes tu pasaporte?|Do you have your passport?
+S|imported|4|El último en llegar eres siempre tú|You're always the last to arrive
+S|imported|4|Es la última vez que vengo aquí|It's the last time I'm coming here
+S|imported|4|Tengo un lápiz y una pluma|I have a pencil and a pen
+W|imported|4|unos unas|some
+S|imported|4|Busco unos guantes de cuero|I'm looking for some leather gloves
+S|imported|4|Hace años que uso este producto|I've been using this product for years
+S|imported|4|Es útil saber varios idiomas|It's useful to know several languages
+W|imported|4|las vacaciones|the vacation
+S|imported|4|Vamos a tomar nuestras vacaciones en agosto|We're going to take our vacation in August
+S|imported|4|El restaurante está medio vacío hoy|The restaurant is half empty today
+S|imported|4|Dijo "vale” y se fue|He said "OK" and left
+S|imported|4|Cuánto vale esta camisa?|How much does this shirt cost?
+S|imported|4|Varios amigos nuestros han recomendado este hotel|Several friends of ours have recommended this hotel
+S|imported|4|Un vaso de agua mineral, por favor|A glass of mineral water, please
+S|imported|4|Tenemos muy buenos vecinos|We have very good neighbors
+S|imported|4|Cuál es la velocidad máxima?|What's the speed limit?
+S|imported|4|La tela que venden aquí es de buena calidad|The material that they sell here is of good quality
+S|imported|4|Por qué no vienen ustedes con nosotros?|Why don't you come with us?
+S|imported|4|Tiene una ventaja porque habla español|She has an advantage because she speaks Spanish
+S|imported|4|Las ventanas de nuestra sala dan al parque|Our living-room windows face the park
+S|imported|4|Vieron ustedes lo que pasó?|Did you see what happened?
+W|imported|4|de veras|really
+S|imported|4|De veras, yo no sé nada|Really, I don't know anything
+S|imported|4|No sabemos si nos dijo la verdad o no|We don't know if he told us the truth or not
+S|imported|4|Es un verdadero placer estar aquí con ustedes|It's a real pleasure to be here with you
+S|imported|4|Tengo vergüenza de decir que no lo he terminado|I'm ashamed to say that I haven't finished it
+S|imported|4|Qué vestido elegante lleva!|What an elegant dress she's wearing!
+S|imported|4|Me vestí rápidamente porque era tarde|I got dressed quickly because it was late
+S|imported|4|Una vez no basta|Once isn't enough
+S|imported|4|Se aprende mucho viajando|You learn a lot by travelling
+S|imported|4|Fue un viaje lleno de aventuras|It was a trip full of adventures
+S|imported|4|Los viajeros tienen que conservar sus billetes|The passengers have to hold onto their tickets
+S|imported|4|Qué es la vida? La vida es sueño|What is life? Life is a dream
+S|imported|4|Es una vieja costumbre de esta región|It's an old custom of this region
+S|imported|4|Hay mucho viento en el mes de marzo|It's very windy in the month of March
+S|imported|4|Tenemos una vista magnífica de las montañas|We have a magnificent view of the mountains
+S|imported|4|Vivimos aquí todo el año|We live here all year long
+S|imported|4|Si volamos, estaremos allí en tres horas|If we fly, we'll be there in three hours
+S|imported|4|Vuelva usted mañana|Come back tomorrow
+S|imported|4|Todos los ciudadanos tienen la obligación de votar|All citizens have the obligation to vote
+S|imported|4|Hable en voz más alta, por favor|Speak louder, please
+S|imported|4|Espero que llegue en el próximo vuelo|I hope he arrives on the next flight
+S|imported|4|Quédese con la vuelta|Keep the change
+W|body|4|de vuelta|back (home)
+S|imported|4|Estaré de vuelta a las cinco|I'll be back at five
+S|imported|4|Es para usted y su familia|It's for you and your family
+S|imported|4|Ya lo sabíamos antes de leer la noticia en el periódico|We already knew it before reading the item in the newspaper
+S|imported|4|Yo no sé qué hacer|I don't know what to do
+S|imported|4|Quítese los zapatos porque están sucios|Take off your shoes because they're dirty
