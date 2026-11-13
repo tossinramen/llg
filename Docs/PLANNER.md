@@ -298,3 +298,7 @@ Finished tasks, struck through.
 - ~~Every price in the game guide (generated from the item data)~~ ✅
 - ~~Enter to chat: your words appear in a white bubble above your head~~ ✅
 - ~~Left-click any animal (cats, dogs, chickens, pets, wolves) to read its name~~ ✅
+- ~~XP bar moved up and redesigned (framed bar, level badge, "Nivel x · xp / need" inside)~~ ✅
+- ~~XP needed for every level 1–100 in the game guide~~ ✅
+- ~~The mine (La mina) with Don Ernesto, a cave with stone, ore and crystal rocks, and the spelling mining game~~ ✅
+- ~~Minería skill (mining + archaeology): ores, gems, relics, 4 pickaxes, the miner's helmet~~ ✅

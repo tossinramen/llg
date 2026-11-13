@@ -32,7 +32,10 @@ namespace LLG
         Transform player;
         CharacterSprite playerSprite;
         string labelSpeakEs, labelSpeakEn;
-        float shakeTimer, trailHp, hurtTimer;
+        float shakeTimer, trailHp, hurtTimer, xpShown, xpTarget, badgePulse;
+        int shownLevel = -1;
+        RectTransform badge;
+        const float XpX = 18, XpY = -160, XpWidth = 400;
         Image hurt;
         Transform toastRoot;
         readonly List<Toast> toasts = new List<Toast>();
@@ -61,7 +64,7 @@ namespace LLG
 
             toastRoot = UIFactory.Rect("Toasts", canvas, new Vector2(0, 150), Vector2.zero);     // top middle, clear of speech bubbles
 
-            promptBox = UIFactory.Panel("Prompt", canvas, new Vector2(0, -140), new Vector2(320, 34)).gameObject;
+            promptBox = UIFactory.Panel("Prompt", canvas, new Vector2(0, -124), new Vector2(320, 34)).gameObject;
             prompt = UIFactory.Label("Text", promptBox.transform, new Vector2(0, 1), new Vector2(310, 24), "", UIFactory.Ink);
             promptBox.SetActive(false);
 
@@ -166,16 +169,30 @@ namespace LLG
 
         void BuildXpBar(Transform canvas)
         {
-            var back = UIFactory.Img("XpBack", canvas, new Vector2(0, -173), new Vector2(604, 10), new Color32(30, 22, 30, 230));
-            xpFill = UIFactory.Img("XpFill", back.transform, Vector2.zero, new Vector2(600, 6), new Color32(170, 110, 230, 255)).rectTransform;
+            // a wooden-framed bar near the bottom, with a round level badge on its left
+            var frameImg = UIFactory.Panel("XpFrame", canvas, new Vector2(XpX, XpY), new Vector2(XpWidth + 16, 22));
+            frameImg.pixelsPerUnitMultiplier = 2;
+            frameImg.raycastTarget = false;
+            var back = UIFactory.Img("XpBack", frameImg.transform, Vector2.zero, new Vector2(XpWidth, 10), new Color32(36, 26, 42, 255));
+            xpFill = UIFactory.Img("XpFill", back.transform, new Vector2(-XpWidth / 2, 0), new Vector2(0, 10), new Color32(136, 84, 220, 255)).rectTransform;
             xpFill.pivot = new Vector2(0, 0.5f);
-            xpFill.anchoredPosition = new Vector2(-300, 0);
+            var shine = UIFactory.Img("Shine", xpFill, Vector2.zero, Vector2.zero, new Color32(200, 164, 255, 255)).rectTransform;
+            shine.anchorMin = new Vector2(0, 1);
+            shine.anchorMax = new Vector2(1, 1);
+            shine.pivot = new Vector2(0.5f, 1);
+            shine.sizeDelta = new Vector2(0, 3);
+            shine.anchoredPosition = new Vector2(0, -1);
             for (int i = 1; i < 10; i++)
-                UIFactory.Img("Tick", back.transform, new Vector2(-300 + i * 60, 0), new Vector2(1, 8), new Color(0, 0, 0, 0.6f));
-            levelText = UIFactory.Label("Level", canvas, new Vector2(-286, -160), new Vector2(60, 16), "", Color.white, TextAnchor.MiddleLeft);
-            UIFactory.Outline(levelText);
-            xpText = UIFactory.Label("XpText", canvas, new Vector2(240, -160), new Vector2(140, 16), "", Color.white, TextAnchor.MiddleRight);
+                UIFactory.Img("Tick", back.transform, new Vector2(-XpWidth / 2 + i * XpWidth / 10, 0), new Vector2(1, 10), new Color(0, 0, 0, 0.3f));
+            xpText = UIFactory.Label("XpText", frameImg.transform, new Vector2(0, 1), new Vector2(XpWidth - 8, 16), "", Color.white, TextAnchor.MiddleCenter, 12);
             UIFactory.Outline(xpText);
+            var badgePos = new Vector2(XpX - XpWidth / 2 - 26, XpY);
+            var disc = UIFactory.Img("LevelDisc", canvas, badgePos, new Vector2(28, 28), new Color32(104, 62, 176, 255), UIFactory.LoadSprite("Art/UI/minimap_mask"));
+            disc.raycastTarget = false;
+            badge = UIFactory.Img("LevelRing", canvas, badgePos, new Vector2(34, 34), Color.white, UIFactory.LoadSprite("Art/UI/minimap_ring")).rectTransform;
+            disc.transform.SetParent(badge, true);
+            levelText = UIFactory.Label("Level", badge, new Vector2(0, 1), new Vector2(26, 16), "", Color.white, TextAnchor.MiddleCenter, 12);
+            UIFactory.Outline(levelText);
         }
 
         // ------------------------------------------------------------ minimap
@@ -256,9 +273,15 @@ namespace LLG
             gold.text = GameState.Short(s.gold) + " " + GameConfig.GoldName;
 
             int need = GameState.XpForLevel(data.level);
-            xpFill.sizeDelta = new Vector2(600f * data.xp / need, 6);
-            levelText.text = "Nv " + data.level;
-            xpText.text = data.xp + " / " + need + " XP";
+            xpTarget = XpWidth * Mathf.Clamp01(data.xp / (float)need);
+            if (shownLevel != data.level)
+            {
+                if (shownLevel >= 0) { badgePulse = 0.8f; xpShown = 0; }      // level up: the badge pops
+                else xpShown = xpTarget;
+                shownLevel = data.level;
+            }
+            levelText.text = data.level.ToString();
+            xpText.text = "Nivel " + data.level + "   ·   " + GameState.Short(data.xp) + " / " + GameState.Short(need) + " XP";
         }
 
         /// <summary>A message pops up in a small dark tag, coloured by what it is: green for
@@ -391,6 +414,10 @@ namespace LLG
         {
             UpdateToasts();
             Refresh();
+            xpShown = Mathf.MoveTowards(xpShown, xpTarget, Time.unscaledDeltaTime * Mathf.Max(60, Mathf.Abs(xpTarget - xpShown) * 4));
+            xpFill.sizeDelta = new Vector2(xpShown, 10);
+            badgePulse -= Time.unscaledDeltaTime;
+            badge.localScale = Vector3.one * (badgePulse > 0 ? 1 + 0.25f * Mathf.Sin(badgePulse / 0.8f * Mathf.PI) : 1);
             var s = GameState.Data.stats;
             // red screen edges: a flash when hit, and a slow pulse while your HP is low
             hurtTimer -= Time.unscaledDeltaTime;

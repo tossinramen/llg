@@ -31,7 +31,7 @@ from village_art import (T, DIRT, DRY, GRASS, STONE, WATER, darker, fractal, lig
 from generate_art import ART, ROOT
 
 VW, VH = 112, 72                 # the village area in tiles
-GW, GH = 146, 72                 # the whole grid (village + rooms)
+GW, GH = 162, 72                 # the whole grid (village + rooms; the mine cave is in a third column)
 PW, PH = VW * T, VH * T
 rng = np.random.default_rng(21)
 
@@ -60,19 +60,21 @@ WORDS = {
     "G": ("La chimenea", "Fireplace"),
     "ç": ("La puerta de la valla", "Gate"), "Ç": ("La puerta de la valla", "Gate"),
     "œ": ("La tienda de pesca", "Fishing Shop"),
+    "ŭ": ("La mina", "Mine"), "ŕ": ("La roca", "Rock"), "Ř": ("La veta de mineral", "Ore Vein"),
+    "ř": ("La roca de cristal", "Crystal Rock"), "ĉ": ("La vagoneta", "Mine Cart"),
     "Ŧ": ("El muro de la terraza", "Terrace Wall"), "Š": ("La escalera", "Stairs"),
     "þ": ("La torre rúnica", "Rune Tower"), "ø": ("El altar rúnico", "Rune Altar"),
     "ð": ("La Ciudadela del Sol", "Citadel of the Sun"), "Ð": ("La entrada de la Ciudadela", "Citadel Entrance"),
     "[": ("La semillería", "Seed Shop"), "(": ("La tienda de música", "Music Shop"),
     "`": ("La escuela de música", "Music School"), "+": ("El huerto", "Vegetable Patch"), "ñ": ("El piano", "Piano"),
 }
-for door in "BCSWMHDI^<>])'ÞŒ":
+for door in "BCSWMHDI^<>])'ÞŒŬ":
     WORDS[door] = ("La puerta", "Door")
 
 # ---------------------------------------------------------------- the village layout (tiles)
 PLAZA = (36, 20, 56, 34)
 ROADS = [(6, 18, 74, 19), (6, 27, 35, 28), (57, 27, 79, 28), (10, 38, 62, 39), (34, 18, 35, 39), (57, 18, 58, 39),
-         (66, 8, 67, 17), (8, 10, 9, 17), (52, 40, 53, 46), (84, 27, 100, 28), (100, 16, 101, 40), (9, 20, 10, 27)]
+         (66, 8, 67, 17), (8, 10, 9, 17), (34, 8, 35, 17), (52, 40, 53, 46), (84, 27, 100, 28), (100, 16, 101, 40), (9, 20, 10, 27)]
 BUILDINGS = [
     # key, letter, door, x0, y0, width, depth, kind, sign, extras
     ("bakery", "k", "B", 26, 16, 6, 2, "shop", "Panadería", {"shutters": (78, 112, 84), "awning": (178, 64, 52), "pots": True}),
@@ -101,7 +103,7 @@ FARM = (12, 30, 24, 36)            # crop field (inside the fence)
 YARD = (27, 31, 31, 36)            # chicken yard
 RIVER_X = 80.5
 BRIDGE_ROWS = (27, 28)
-PEOPLE = {"1": (24, 20), "3": (64, 20), "4": (66, 9), "5": (49, 28), "%": (76, 29), "&": (9, 29), "P": (46, 31)}
+PEOPLE = {"1": (24, 20), "3": (64, 20), "4": (66, 9), "5": (49, 28), "%": (76, 29), "&": (9, 29), "P": (46, 31), "ĥ": (38, 9)}
 
 # rooms: key, Spanish name, English name, shop id, keeper marker, grid position (x0, y0); size 14 x 10
 ROOMS = [
@@ -117,6 +119,7 @@ ROOMS = [
     ("music_school", "La escuela de música", "Music School", "", "!", (130, 45)),
     ("tower", "La torre rúnica", "Rune Tower", "", "Ø", (114, 56)),
     ("fishing", "La tienda de pesca", "Fishing Shop", "fishing", "§", (130, 56)),
+    ("mine", "La mina", "The Mine", "", "", (146, 1)),
 ]
 RW, RH = 14, 10
 
@@ -576,6 +579,7 @@ ROOM_STYLE = {
     "music_store": {"wall": (236, 226, 236), "dado": (120, 70, 150), "floor": "wood", "floor_col": (120, 80, 56)},
     "music_school": {"wall": (238, 230, 214), "dado": (60, 80, 150), "floor": "tile", "floor_col": (150, 120, 96)},
     "tower": {"wall": (120, 118, 140), "dado": (70, 130, 190), "floor": "stone", "floor_col": (90, 88, 110)},
+    "mine": {"wall": (92, 80, 70), "dado": (66, 56, 48), "floor": "stone", "floor_col": (100, 90, 80)},
     "fishing": {"wall": (214, 230, 236), "dado": (50, 110, 150), "floor": "wood", "floor_col": (150, 116, 80)},
 }
 SHELF_GOODS = {
@@ -809,6 +813,10 @@ def make_world():
             grid[y0 + dt - 1][dx - 1] = door
         doors[key] = (dx, y0 + dt - 1)
     place(barn(), 7 * T, 34 * T, (3, 32, 7, 2), "v", "barn")
+    mine_img = Image.open(os.path.join(ART, "World", "Objects", "mine_entrance.png")).convert("RGBA")
+    place((mine_img, (72, 76)), 34 * T + 8, 8 * T, (30, 6, 9, 2), "ŭ", "mine_entrance")
+    grid[7][34] = "Ŭ"
+    doors["mine"] = (34, 7)
     tower_img = Image.open(os.path.join(ART, "World", "Objects", "tower.png")).convert("RGBA")
     place((tower_img, (40, 144)), 62 * T + 8, 38 * T, (61, 36, 3, 2), "þ", "tower")
     grid[37][62] = "Þ"
@@ -1038,7 +1046,15 @@ def make_world():
             rplace(table(), 9, 6, "t", "table", (9, 6, 2, 1))
             img, anc = shelf("store")
             place((img, anc), (ox + 11) * T + 8, (oy + 3) * T - 2, (ox + 10, oy + 2, 3, 1), "L", "shelf_store")
-        rplace(va.flower_pot(), 12, 3, "p", "pot", (12, 3, 1, 1))
+        if key == "mine":
+            for kind, letter, tx, ty in (("stone", "ŕ", 1, 3), ("rich", "Ř", 4, 3), ("crystal", "ř", 8, 3), ("rich", "Ř", 10, 5),
+                                         ("stone", "ŕ", 1, 6), ("stone", "ŕ", 9, 7), ("crystal", "ř", 3, 7)):
+                img = Image.open(os.path.join(ART, "World", "Objects", "rock_" + kind + ".png")).convert("RGBA")
+                place((img, (14, 21)), (ox + tx + 1) * T, (oy + ty) * T + 14, (ox + tx, oy + ty, 2, 1), letter, "rock_" + kind)
+            img = Image.open(os.path.join(ART, "World", "Objects", "mine_cart.png")).convert("RGBA")
+            place((img, (12, 17)), (ox + 11) * T + 8, (oy + 8) * T + 14, (ox + 11, oy + 8, 1, 1), "ĉ", "mine_cart")
+        else:
+            rplace(va.flower_pot(), 12, 3, "p", "pot", (12, 3, 1, 1))
 
         # doors in and out
         outside = key

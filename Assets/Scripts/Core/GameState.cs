@@ -24,6 +24,7 @@ namespace LLG
         public string pet = "";                                 // the pet following you
         public int fishCaught;
         public List<string> fishSeen = new List<string>();     // kinds of fish you have caught
+        public List<string> relicsFound = new List<string>();  // relics dug up in the mine
         public bool hasPosition;                                // where the player was when they last saved
         public float posX, posY;
         public int facing;
@@ -206,6 +207,9 @@ namespace LLG
                     break;
                 case ItemKind.Bait:
                     Say("Es cebo: elígelo en la pesca. (Bait: choose it when fishing.)");
+                    break;
+                case ItemKind.Tool:
+                    Say("Úsalo en la mina: pulsa E delante de una roca. (Use it in the mine.)");
                     break;
                 case ItemKind.Tackle:
                     Say("Con la red, a veces atrapas dos peces. (With the net you sometimes catch two.)");

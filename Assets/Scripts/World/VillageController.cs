@@ -78,6 +78,8 @@ namespace LLG
         readonly Dictionary<string, float> spellReady = new Dictionary<string, float>();
         SpellbookWindow spellbook;
         ChatBox chat;
+        MiningGame mining;
+        MineRocks rocks;
         CastWindow cast;
         EnchantWindow enchant;
         Texture2D cursorNormal, cursorFist;
@@ -85,7 +87,7 @@ namespace LLG
         /// <summary>True while a window that needs your full attention is open (talking, shopping,
         /// a minigame, the menu). The bag, profile, lessons and controls windows let you keep walking.</summary>
         public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || intruso.Open || menu.Open
-                            || music.Open || watering.Open || dungeon.Open || battle.Open || cast.Open || enchant.Open || chat.Typing
+                            || music.Open || watering.Open || dungeon.Open || battle.Open || cast.Open || enchant.Open || chat.Typing || mining.Open
                             || fadeTimer >= 0 || closedFrame == Time.frameCount;
 
         /// <summary>Windows call this when they close, so the key that closed them does not also trigger something.</summary>
@@ -114,6 +116,8 @@ namespace LLG
             clickable = layout.Spawn(world);
             trees = gameObject.AddComponent<Trees>();
             trees.Build(this, clickable);
+            rocks = gameObject.AddComponent<MineRocks>();
+            rocks.Build(clickable);
 
             SpawnPlayer();
             SpawnPeople();
@@ -136,6 +140,7 @@ namespace LLG
             intruso = Add<IntrusoGame>(); intruso.Build(canvas, this);
             archery = Add<ArcheryGame>(); archery.Build(canvas, this);
             fishing = Add<FishingGame>(); fishing.Build(canvas, this);
+            mining = Add<MiningGame>(); mining.Build(canvas, this);
             music = Add<MusicGame>(); music.Build(canvas, this);
             battle = Add<BattleWindow>(); battle.Build(canvas, this);
             dungeon = Add<DungeonWindow>(); dungeon.Build(canvas, this, battle);
@@ -277,6 +282,10 @@ namespace LLG
             AddVillager('!', "Profesora Isabel", "la profesora de música", "Music Teacher", Look(0, 5, 1, 1, 2), new[] { Acc("shawl", 60, 80, 150), Acc("skirt", 50, 50, 70) },
                 L("Profesora Isabel", "¡Bienvenido a la escuela de música!", "Welcome to the music school!"),
                 L("Profesora Isabel", "Forma el verso con las palabras y la música sonará.", "Build the verse with the words and the music will play."));
+            AddVillager('ĥ', "Don Ernesto", "el minero", "Miner", Look(3, 4, 4, 7, 2), new[] { Acc("hat", 230, 190, 60), Acc("beard", 90, 80, 76) },
+                L("Don Ernesto", "¡Buenas! Esta es la mina. Dentro hay rocas, minerales y gemas.", "Hello! This is the mine. Inside there are rocks, ores and gems."),
+                L("Don Ernesto", "Para picar, deletrea las palabras. ¡Y a veces se encuentran reliquias antiguas!", "To mine, spell the words. And sometimes you find ancient relics!"),
+                L("Don Ernesto", "¿Quieres un pico?", "Want a pickaxe?"));
             AddVillager('§', "Marina", "la pescadera", "Fishmonger", Look(2, 1, 1, 1, 0), new[] { Acc("hat", 150, 160, 106), Acc("apron", 70, 120, 160) },
                 L("Marina", "¡Hola! Tengo cañas, cebos y pescado fresco.", "Hello! I have rods, bait and fresh fish."),
                 L("Marina", "Con mejor caña y mejor cebo, pescas peces más raros.", "With a better rod and better bait you catch rarer fish."));
@@ -306,7 +315,7 @@ namespace LLG
                 { 'B', "Art/Icons/food_bread" }, { 'C', "Art/Icons/food_candy" }, { 'S', "Art/Icons/item_rod" },
                 { 'W', "Art/Icons/item_sword" }, { 'M', "Art/Icons/pet_dog" }, { 'H', "Art/UI/hp_heart" },
                 { '^', "Art/Icons/gear_helmet" }, { 'n', "Art/UI/page" }, { 'o', "Art/Icons/food_egg" },
-                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" }, { 'Þ', "Art/Icons/spell_lightning" }, { 'Œ', "Art/Icons/item_rod" },
+                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" }, { 'Þ', "Art/Icons/spell_lightning" }, { 'Œ', "Art/Icons/item_rod" }, { 'Ŭ', "Art/Icons/item_pickaxe" },
             };
             var list = new List<(Vector2Int, string)>();
             foreach (var kv in icons)
@@ -551,6 +560,9 @@ namespace LLG
                 case 'Ð': return "Entrar en la Ciudadela del Sol";
                 case 'Þ': return "Entrar en la torre rúnica";
                 case 'Œ': return "Entrar en la tienda de pesca";
+                case 'Ŭ': return "Entrar en la mina";
+                case 'ŕ': case 'Ř': case 'ř': return rocks.IsBroken(player.FacingTile, what) ? null : "Picar " + Mine.RockEs[(int)Mine.KindOf(what)];
+                case 'ĉ': return "Mirar la vagoneta";
                 case 'e': return "Sentarse en el banco";
                 case 'ø': return "Encantar (el altar rúnico)";
                 case 'ç': return "Abrir la puerta";
@@ -587,7 +599,7 @@ namespace LLG
         public void Interact(char what, Vector2Int tile)
         {
             if (sitting) { StandUp(); return; }
-            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'ÞŒ".IndexOf(what) >= 0)
+            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'ÞŒŬ".IndexOf(what) >= 0)
             {
                 Teleport(door);
                 return;
@@ -627,6 +639,8 @@ namespace LLG
                 case 'Ð': dungeon.Toggle(); break;
                 case 'ø': enchant.Begin(); break;
                 case 'e': SitOn(tile); break;
+                case 'ŕ': case 'Ř': case 'ř': MineRock(what, tile); break;
+                case 'ĉ': dialogue.Show("", "La vagoneta está llena de piedras.", "The mine cart is full of stones."); break;
                 case 'ç':
                 case 'Ç': ToggleGate(tile); break;
                 case 'g': dialogue.Show("", "Al este: el bosque. ¡Cuidado con los lobos!", "East: the forest. Beware of the wolves!"); break;
@@ -644,6 +658,7 @@ namespace LLG
                         if (what == '4') dialogue.Show(villager.Lines, archery.Begin);
                         else if (what == '%') dialogue.Show(villager.Lines, StartIntruso);
                         else if (what == '!') dialogue.Show(villager.Lines, () => music.Begin(false));
+                        else if (what == 'ĥ') dialogue.Show(villager.Lines, () => shop.Show("La mina", "The Mine", ItemDatabase.MineShop, null));
                         else if (what == 'Ø') dialogue.Show(villager.Lines, enchant.Begin);
                         else if (area != null && area.interior && area.keeper == what.ToString()) OpenRoomShop(true);
                         else dialogue.Show(villager.Lines);
@@ -655,6 +670,27 @@ namespace LLG
         public void StartIntruso() => intruso.Begin();
 
         public bool Sitting => sitting;
+
+        /// <summary>E on a rock in the mine: needs a pickaxe strong enough for it.</summary>
+        void MineRock(char what, Vector2Int tile)
+        {
+            var kind = Mine.KindOf(what);
+            var pick = Mine.BestPick();
+            if (rocks.IsBroken(tile, what)) { GameState.Say("Ya está picada. Vuelve en un rato. (Already mined - it comes back soon.)"); return; }
+            if (pick == null)
+            {
+                dialogue.Show("", "Necesitas un pico. Don Ernesto los vende en la entrada de la mina.",
+                    "You need a pickaxe. Don Ernesto sells them at the mine entrance.");
+                return;
+            }
+            if (pick.tier < Mine.TierNeeded(kind))
+            {
+                string need = ItemDatabase.Get(Mine.Picks[Mine.TierNeeded(kind) - 1]).spanish;
+                dialogue.Show("", "Esta roca es muy dura. Necesitas " + need + ".", "This rock is too hard. You need a better pickaxe.");
+                return;
+            }
+            mining.Begin(kind, tile, t => rocks.Break(t, what));
+        }
 
         /// <summary>Sit down on a bench (benches are two tiles wide): E or any movement key gets you up.</summary>
         void SitOn(Vector2Int tile)

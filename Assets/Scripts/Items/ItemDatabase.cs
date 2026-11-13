@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace LLG
 {
-    public enum ItemKind { Rod, Weapon, Gear, Book, Food, Pet, Material, Instrument, Seed, Bait, Tackle }
+    public enum ItemKind { Rod, Weapon, Gear, Book, Food, Pet, Material, Instrument, Seed, Bait, Tackle, Tool }
 
     /// <summary>The equipment slots on the character sheet (U). "None" = cannot be worn.</summary>
     public enum EquipSlot { None, Hat, Necklace, Cloak, Chest, Legs, Wrists, Primary, Secondary }
@@ -59,6 +59,26 @@ namespace LLG
             new ItemDef("bait_worm",  "la lombriz",        "worm",        "bait_worm",        4, ItemKind.Bait),
             new ItemDef("bait_shrimp","la gamba",          "shrimp",      "bait_shrimp",      9, ItemKind.Bait, level: 10),
             new ItemDef("bait_squid", "el calamar",        "squid",       "bait_squid",      20, ItemKind.Bait, level: 20),
+            // ---- the mine (Don Ernesto, el minero, outside the entrance). Pickaxes: tier = hardest rock, power = extra seconds.
+            new ItemDef("pickaxe",        "el pico",            "pickaxe",          "item_pickaxe",          40, ItemKind.Tool, tier: 1),
+            new ItemDef("pickaxe_iron",   "el pico de hierro",  "iron pickaxe",     "item_pickaxe_iron",    220, ItemKind.Tool, power: 3, level: 8, tier: 2),
+            new ItemDef("pickaxe_steel",  "el pico de acero",   "steel pickaxe",    "item_pickaxe_steel",   700, ItemKind.Tool, power: 6, level: 20, tier: 3),
+            new ItemDef("pickaxe_diamond","el pico de diamante","diamond pickaxe",  "item_pickaxe_diamond",2500, ItemKind.Tool, power: 10, level: 40, tier: 4),
+            new ItemDef("hat_miner",      "el casco de minero", "miner's helmet",   "gear_miner_helmet",    150, ItemKind.Gear, EquipSlot.Hat, defense: 2, level: 5),
+            new ItemDef("ore_stone",   "la piedra",          "stone",        "ore_stone",     0, ItemKind.Material, sell: 1),
+            new ItemDef("ore_coal",    "el carbón",          "coal",         "ore_coal",      0, ItemKind.Material, sell: 4),
+            new ItemDef("ore_copper",  "el cobre",           "copper ore",   "ore_copper",    0, ItemKind.Material, sell: 8),
+            new ItemDef("ore_iron",    "el hierro",          "iron ore",     "ore_iron",      0, ItemKind.Material, sell: 15),
+            new ItemDef("ore_silver",  "la plata",           "silver",       "ore_silver",    0, ItemKind.Material, sell: 30),
+            new ItemDef("ore_gold",    "la pepita de oro",   "gold nugget",  "ore_gold",      0, ItemKind.Material, sell: 60),
+            new ItemDef("gem_emerald", "la esmeralda",       "emerald",      "gem_emerald",   0, ItemKind.Material, sell: 90),
+            new ItemDef("gem_ruby",    "el rubí",            "ruby",         "gem_ruby",      0, ItemKind.Material, sell: 120),
+            new ItemDef("gem_sapphire","el zafiro",          "sapphire",     "gem_sapphire",  0, ItemKind.Material, sell: 150),
+            new ItemDef("gem_diamond", "el diamante",        "diamond",      "gem_diamond",   0, ItemKind.Material, sell: 300),
+            new ItemDef("relic_arrowhead","la punta de flecha","flint arrowhead (relic)", "relic_arrowhead", 0, ItemKind.Material, sell: 60),
+            new ItemDef("relic_fossil","el fósil",           "fossil (relic)",            "relic_fossil",    0, ItemKind.Material, sell: 80),
+            new ItemDef("relic_coin",  "la moneda romana",   "Roman coin (relic)",        "relic_coin",      0, ItemKind.Material, sell: 120),
+            new ItemDef("relic_vase",  "el ánfora antigua",  "ancient amphora (relic)",   "relic_vase",      0, ItemKind.Material, sell: 200),
             // fish (caught; the shop also sells some). price = shop price, sell = what shops pay you
             new ItemDef("fish_boot",     "la bota vieja",   "old boot",    "fish_boot",       0, ItemKind.Material, sell: 1),
             new ItemDef("fish_sardine",  "la sardina",      "sardine",     "fish_sardine",   10, ItemKind.Food, power: 15, sell: 5),
@@ -274,6 +294,7 @@ namespace LLG
         public static readonly string[] FishingRods = { "rod", "rod_bamboo", "rod_carbon", "rod_fine", "rod_gold" };
         public static readonly string[] FishingGear = { "bait_bread", "bait_worm", "bait_shrimp", "bait_squid", "net", "hat_fishing" };
         public static readonly string[] FishingFish = { "fish_sardine", "fish_anchovy", "fish_carp", "fish_trout", "fish_seabass", "fish_salmon" };
+        public static readonly string[] MineShop = { "pickaxe", "pickaxe_iron", "pickaxe_steel", "pickaxe_diamond", "hat_miner" };
         public static readonly string[] Smithy = { "helmet", "chainmail", "breastplate", "greaves", "bracers", "wood_shield", "shield", "iron_shield" };
         public static readonly string[] Pets = { "pet_dog", "pet_cat", "pet_rabbit", "pet_parrot", "pet_turtle", "pet_hamster" };
         public static readonly string[] Bakery = { "bread", "baguette", "croissant", "muffin", "churros", "ensaimada", "empanada", "tart", "donut", "sponge", "cake" };
@@ -283,7 +304,7 @@ namespace LLG
         public static string[] ForShop(string shop) => shop switch
         {
             "bakery" => Bakery, "candy" => CandyShop, "store" => Store, "weapons" => Weapons,
-            "smithy" => TierItems(0), "pets" => Pets, "seeds" => Seeds(), "music" => Music, "fishing" => FishingRods, _ => new string[0],
+            "smithy" => TierItems(0), "pets" => Pets, "seeds" => Seeds(), "music" => Music, "fishing" => FishingRods, "mine" => MineShop, _ => new string[0],
         };
 
         static Dictionary<string, ItemDef> byId;
@@ -328,9 +349,11 @@ namespace LLG
             Table("Semillería (seeds) — Don Ramón", Seeds());
             Table("Tienda de música (instruments) — Marta", Music);
             foreach (var s in Sections("fishing")) Table("Tienda de pesca (fishing) — Marina: " + s.en, s.ids);
+            Table("La mina (mining) — Don Ernesto, outside the mine", MineShop);
             var found = new List<string>();
             foreach (var f in Fishery.All) found.Add(f.id);
-            found.AddRange(new[] { "fish", "orange", "wood", "pelt" });
+            found.AddRange(new[] { "ore_stone", "ore_coal", "ore_copper", "ore_iron", "ore_silver", "ore_gold", "gem_emerald", "gem_ruby",
+                "gem_sapphire", "gem_diamond", "relic_arrowhead", "relic_fossil", "relic_coin", "relic_vase", "fish", "orange", "wood", "pelt" });
             foreach (var c in Crops) found.Add("crop_" + c.id);
             Table("Found, caught or grown (sell them in any shop; fish marked with a price are also sold by Marina)", found);
             return sb.ToString();
@@ -347,7 +370,10 @@ namespace LLG
                 case ItemKind.Weapon: return i.power + " damage" + (i.chop > 1 ? ", chops ×" + i.chop : "") + (i.ranged ? ", ranged" : "");
                 case ItemKind.Gear:
                     return (i.defense > 0 ? "+" + i.defense + " defence" : "") + (i.mana > 0 ? "+" + i.mana + " mana" : "")
-                        + (i.id == "hat_fishing" ? "; fish bite 40% sooner, more rare fish" : "");
+                        + (i.id == "hat_fishing" ? "; fish bite 40% sooner, more rare fish" : "")
+                        + (i.id == "hat_miner" ? "; lamp shows the first letter of each rock, ×2 relics" : "");
+                case ItemKind.Tool: return "breaks " + (i.tier == 1 ? "stone" : i.tier == 2 ? "ore veins" : i.tier == 3 ? "crystal rocks" : "everything, finds sapphires and diamonds")
+                        + (i.power > 0 ? ", +" + i.power + " s per word" : "");
                 case ItemKind.Rod: return "lands up to " + Fishery.RarityEn[i.tier] + " fish" + (i.power > 0 ? ", +" + i.power + " s to reel" : "");
                 case ItemKind.Tackle: return "25% chance of a second fish";
                 case ItemKind.Bait:

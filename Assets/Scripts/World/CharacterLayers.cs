@@ -77,7 +77,7 @@ namespace LLG
             if (GameState.Data == null) return list;
             var hat = GameState.Equipped(EquipSlot.Hat);
             if (hat != null) list.Add(new Accessory("hat", hat.id == "helmet" ? new Color32(176, 182, 196, 255)
-                : hat.id == "hat_fishing" ? new Color32(150, 160, 106, 255) : new Color32(56, 50, 58, 255)));
+                : hat.id == "hat_fishing" ? new Color32(150, 160, 106, 255) : hat.id == "hat_miner" ? new Color32(230, 190, 60, 255) : new Color32(56, 50, 58, 255)));
             if (GameState.Equipped(EquipSlot.Cloak) != null) list.Add(new Accessory("cloak", new Color32(170, 44, 54, 255)));
             return list;
         }
