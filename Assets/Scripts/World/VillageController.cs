@@ -79,6 +79,14 @@ namespace LLG
         SpellbookWindow spellbook;
         ChatBox chat;
         MiningGame mining;
+        ForgeGame forge;
+        SerEstarGame serEstar;
+        CourtesyGame courtesy;
+        ArticleGame articles;
+        BingoGame bingo;
+        PairsGame pairs;
+        HarvestGame harvest;
+        ReplyWindow reply;
         MineRocks rocks;
         CastWindow cast;
         EnchantWindow enchant;
@@ -88,6 +96,7 @@ namespace LLG
         /// a minigame, the menu). The bag, profile, lessons and controls windows let you keep walking.</summary>
         public bool Busy => dialogue.Open || shop.Open || archery.Open || fishing.Open || intruso.Open || menu.Open
                             || music.Open || watering.Open || dungeon.Open || battle.Open || cast.Open || enchant.Open || chat.Typing || mining.Open
+                            || forge.Open || serEstar.Open || courtesy.Open || articles.Open || bingo.Open || pairs.Open || harvest.Open || reply.Open
                             || fadeTimer >= 0 || closedFrame == Time.frameCount;
 
         /// <summary>Windows call this when they close, so the key that closed them does not also trigger something.</summary>
@@ -122,11 +131,13 @@ namespace LLG
             SpawnPlayer();
             SpawnPeople();
             SpawnCreatures(world);
+            SpawnBosses(world);
 
             var canvas = UIFactory.Canvas("VillageCanvas", 0);
             canvas.SetParent(transform, false);
             hud = gameObject.AddComponent<Hud>();
             hud.Build(canvas, OpenMenu, () => controls.Toggle());
+            hud.BuildActionBar(canvas, CastSlot, SpellCooldown);
             var village = layout.areas != null && layout.areas.Length > 0 ? layout.areas[0] : new Area { w = 112, h = 72 };
             var places = MapPlaces();
             hud.BuildMinimap(canvas, Map, village.w, village.h, player.transform, playerSprite, places, () => mapWindow.Toggle());
@@ -149,6 +160,14 @@ namespace LLG
             chat = Add<ChatBox>(); chat.Build(canvas, this, player.transform);
             spellbook = Add<SpellbookWindow>(); spellbook.Build(canvas, this, cast);
             enchant = Add<EnchantWindow>(); enchant.Build(canvas, this);
+            forge = Add<ForgeGame>(); forge.Build(canvas, this);
+            serEstar = Add<SerEstarGame>(); serEstar.Build(canvas, this);
+            courtesy = Add<CourtesyGame>(); courtesy.Build(canvas, this);
+            articles = Add<ArticleGame>(); articles.Build(canvas, this);
+            bingo = Add<BingoGame>(); bingo.Build(canvas, this);
+            pairs = Add<PairsGame>(); pairs.Build(canvas, this);
+            harvest = Add<HarvestGame>(); harvest.Build(canvas, this);
+            reply = Add<ReplyWindow>(); reply.Build(canvas, this);
             farm = Add<Farm>(); farm.Build(Map, world, watering);
             options = Add<OptionsWindow>(); options.Build(canvas);
             menu = Add<GameMenu>(); menu.Build(canvas, this, options);
@@ -217,7 +236,7 @@ namespace LLG
             foreach (var s in layout.spawns)
             {
                 var at = VillageMap.Center(new Vector2Int(s.x, s.y));
-                if (s.kind == "wolf" || s.kind == "wilddog") Mobs.Add(Mob.Spawn(this, parent, s.kind, at));
+                if (s.kind == "wolf" || s.kind == "wilddog") Mobs.Add(Mob.Spawn(this, parent, s.kind, at, s.level));
                 else Wanderer.Spawn(this, parent, s.kind, at, s.room ? 1.5f : s.kind == "chicken" ? 1.8f : 3f);
             }
         }
@@ -245,7 +264,8 @@ namespace LLG
                 L("Mateo", "Cuando el corcho se hunda, ¡tira rápido!", "When the bobber sinks, strike fast!"));
             AddVillager('3', "Luna", "la niña", "Girl", Look(0, 3, 3, 4, 0), new[] { Acc("skirt", 196, 60, 76) },
                 L("Luna", "¡Me encantan los caramelos!", "I love sweets!"),
-                L("Luna", "¿Has visto los gatos del pueblo? ¡Son muy simpáticos!", "Have you seen the village cats? They are very friendly!"));
+                L("Luna", "¿Has visto los gatos del pueblo? ¡Son muy simpáticos!", "Have you seen the village cats? They are very friendly!"),
+                L("Luna", "¿Jugamos a las parejas?", "Shall we play pairs?"));
             AddVillager('4', "Don Felipe", "el arquero", "Archer", Look(4, 4, 4, 2, 1), new[] { Acc("cloak", 60, 100, 64), Acc("beard", 172, 172, 178), Acc("hat", 50, 46, 52) },
                 L("Don Felipe", "Soy Don Felipe, el maestro de tiro con arco.", "I am Don Felipe, the archery master."),
                 L("Don Felipe", "Dispara a la palabra correcta.", "Shoot the correct word."));
@@ -286,6 +306,22 @@ namespace LLG
                 L("Don Ernesto", "¡Buenas! Esta es la mina. Dentro hay rocas, minerales y gemas.", "Hello! This is the mine. Inside there are rocks, ores and gems."),
                 L("Don Ernesto", "Para picar, deletrea las palabras. ¡Y a veces se encuentran reliquias antiguas!", "To mine, spell the words. And sometimes you find ancient relics!"),
                 L("Don Ernesto", "¿Quieres un pico?", "Want a pickaxe?"));
+            AddVillager('μ', "Sera y Estela", "las gemelas", "The Twins", Look(1, 3, 2, 1, 0), new[] { Acc("skirt", 70, 120, 200) },
+                L("Sera", "Yo soy Sera: digo cómo SON las cosas.", "I am Sera: I say what things ARE."),
+                L("Sera", "Mi gemela Estela dice cómo ESTÁN. ¿Sabes cuál usar?", "My twin Estela says how they are right now. Do you know which to use?"));
+            AddVillager('ν', "Don Cortés", "el maestro de cortesía", "Master of Manners", Look(0, 0, 5, 7, 2), new[] { Acc("hat", 40, 40, 50), Acc("beard", 220, 220, 226), Acc("cloak", 110, 40, 50) },
+                L("Don Cortés", "Con los amigos, tú. Con los mayores, usted.", "With friends, tú. With elders, usted."),
+                L("Don Cortés", "Llegan diez visitas. ¡Salúdalas bien!", "Ten visitors are coming. Greet them properly!"));
+            AddVillager('ο', "Doña Lola", "la tabernera", "Tavern Keeper", Look(2, 5, 3, 0, 5), new[] { Acc("apron", 240, 236, 226), Acc("skirt", 120, 50, 60) },
+                L("Doña Lola", "¡Bienvenido a la taberna! Hoy hay bingo.", "Welcome to the tavern! There's bingo today."),
+                L("Doña Lola", "Yo canto los números. Tú los marcas en tu cartón.", "I call the numbers. You mark them on your card."));
+            foreach (var spec in Specialists.All)
+            {
+                var worn = new List<Accessory>();
+                foreach (var (kind, r, g, b) in spec.worn) worn.Add(Acc(kind, r, g, b));
+                AddVillager(spec.marker, spec.name, spec.roleEs, spec.roleEn, Look(spec.skin, spec.hairStyle, spec.hairColor, spec.shirt, spec.pants),
+                    worn.ToArray(), L(spec.name, spec.greetEs, spec.greetEn));
+            }
             AddVillager('§', "Marina", "la pescadera", "Fishmonger", Look(2, 1, 1, 1, 0), new[] { Acc("hat", 150, 160, 106), Acc("apron", 70, 120, 160) },
                 L("Marina", "¡Hola! Tengo cañas, cebos y pescado fresco.", "Hello! I have rods, bait and fresh fish."),
                 L("Marina", "Con mejor caña y mejor cebo, pescas peces más raros.", "With a better rod and better bait you catch rarer fish."));
@@ -317,7 +353,7 @@ namespace LLG
                 { 'B', "Art/Icons/food_bread" }, { 'C', "Art/Icons/food_candy" }, { 'S', "Art/Icons/item_rod" },
                 { 'W', "Art/Icons/item_sword" }, { 'M', "Art/Icons/pet_dog" }, { 'H', "Art/UI/hp_heart" },
                 { '^', "Art/Icons/gear_helmet" }, { 'n', "Art/UI/page" }, { 'o', "Art/Icons/food_egg" },
-                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" }, { 'Þ', "Art/Icons/spell_lightning" }, { 'Œ', "Art/Icons/item_rod" }, { 'Ŭ', "Art/Icons/item_pickaxe" },
+                { 'Ð', "Art/Bosses/guardian" }, { ']', "Art/Icons/seed_tomato" }, { ')', "Art/Icons/item_guitar" }, { '\'', "Art/Icons/item_flute" }, { 'Þ', "Art/Icons/spell_lightning" }, { 'Œ', "Art/Icons/item_rod" }, { 'Ŭ', "Art/Icons/item_pickaxe" }, { 'Λ', "Art/Icons/item_book" }, { 'Ψ', "Art/Icons/crop_wheat" },
             };
             var list = new List<(Vector2Int, string)>();
             foreach (var kv in icons)
@@ -391,6 +427,9 @@ namespace LLG
 
             char facing = Map.At(player.FacingTile);
             hud.SetPrompt(sitting ? "Levantarse" : Describe(facing));
+
+            for (int i = 0; i < 6; i++)
+                if (Input.GetKeyDown(KeyCode.Alpha1 + i) || Input.GetKeyDown(KeyCode.Keypad1 + i)) { CastSlot(i); return; }
 
             if (Input.GetKeyDown(KeyCode.Escape))
                 OpenMenu();
@@ -566,12 +605,19 @@ namespace LLG
                 case 'ŕ': case 'Ř': case 'ř': return rocks.IsBroken(player.FacingTile, what) ? null : "Picar " + Mine.RockEs[(int)Mine.KindOf(what)];
                 case 'ĉ': return "Mirar la vagoneta";
                 case 'e': return "Sentarse en el banco";
+                case 'U': return "Forjar verbos en el yunque";
+                case 'x': return "Ordenar el puesto: ¿el o la?";
+                case 'Ψ': return "Cosechar palabras";
                 case 'ø': return "Encantar (el altar rúnico)";
                 case 'ç': return "Abrir la puerta";
                 case 'Ç': return "Cerrar la puerta";
                 case '+': return farm.Describe(player.FacingTile);
                 case 'D': return "Llamar a la puerta";
-                case 'I': case '<': case '>': return "Abrir la puerta";
+                case 'I': case '<': return "Abrir la puerta";
+                case '>': return "Entrar en la taberna";
+                case 'Λ': return "Entrar en la academia";
+                case 'Ω': return FloorNumber() > 0 ? "Desafiar a " + DungeonData.Floors[FloorNumber() - 1].es : null;
+                case 'Ξ': return "Subir al siguiente piso";
                 case 'A': return "Tiro con arco";
                 case 'F': case 'V': return "Pescar";
                 case 'R': return "Tocar la fuente rúnica";
@@ -601,7 +647,16 @@ namespace LLG
         public void Interact(char what, Vector2Int tile)
         {
             if (sitting) { StandUp(); return; }
-            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'ÞŒŬ".IndexOf(what) >= 0)
+            if (what == 'Ω') { FightBoss(); return; }
+            if (what == 'Ξ')
+            {
+                int n = FloorNumber();
+                if (n > 0 && GameState.Data.dungeonFloor >= n && portals.TryGetValue(tile, out var up)) Teleport(up);
+                else if (n > 0) dialogue.Show("", "La escalera está cerrada. Vence a " + DungeonData.Floors[n - 1].es + " para subir.",
+                    "The stairs are sealed. Defeat " + DungeonData.Floors[n - 1].en + " to go up.");
+                return;
+            }
+            if (portals.TryGetValue(tile, out var door) && "BCSWM^H])'ÞŒŬΛ>Ð".IndexOf(what) >= 0)
             {
                 Teleport(door);
                 return;
@@ -641,6 +696,9 @@ namespace LLG
                 case 'Ð': dungeon.Toggle(); break;
                 case 'ø': enchant.Begin(); break;
                 case 'e': SitOn(tile); break;
+                case 'U': forge.Begin(); break;
+                case 'x': articles.Begin(); break;
+                case 'Ψ': harvest.Begin(); break;
                 case 'ŕ': case 'Ř': case 'ř': MineRock(what, tile); break;
                 case 'ĉ': dialogue.Show("", "La vagoneta está llena de piedras.", "The mine cart is full of stones."); break;
                 case 'ç':
@@ -657,7 +715,13 @@ namespace LLG
                     if (villagers.TryGetValue(what, out var villager))
                     {
                         villager.Sprite.Face((playerSprite.Facing + 2) % 4);     // turn to face the player
+                        var specialist = Specialists.Find(what);
                         if (what == '4') dialogue.Show(villager.Lines, archery.Begin);
+                        else if (specialist != null) dialogue.Show(villager.Lines, () => reply.Begin(specialist));
+                        else if (what == '3') dialogue.Show(villager.Lines, pairs.Begin);
+                        else if (what == 'μ') dialogue.Show(villager.Lines, serEstar.Begin);
+                        else if (what == 'ν') dialogue.Show(villager.Lines, courtesy.Begin);
+                        else if (what == 'ο') dialogue.Show(villager.Lines, bingo.Begin);
                         else if (what == '%') dialogue.Show(villager.Lines, StartIntruso);
                         else if (what == '!') dialogue.Show(villager.Lines, () => music.Begin(false));
                         else if (what == 'ĥ') dialogue.Show(villager.Lines, () => shop.Show("La mina", "The Mine", ItemDatabase.MineShop, null));
@@ -672,6 +736,62 @@ namespace LLG
         public void StartIntruso() => intruso.Begin();
 
         public bool Sitting => sitting;
+
+        /// <summary>Which floor of the citadel you are standing on (0 = not in the citadel).</summary>
+        int FloorNumber() => area != null && area.key.StartsWith("floor") && int.TryParse(area.key.Substring(5), out int n) ? n : 0;
+
+        /// <summary>E in front of a boss: it taunts you, then the fight (a unit test) begins. Beaten bosses can be fought again.</summary>
+        void FightBoss()
+        {
+            int n = FloorNumber();
+            if (n <= 0) return;
+            var floor = DungeonData.Floors[n - 1];
+            if (GameState.Data.level < floor.level)
+            {
+                dialogue.Show(floor.es, "Eres demasiado débil. Vuelve cuando tengas el nivel " + floor.level + ".",
+                    "You are too weak. Come back at level " + floor.level + ".");
+                return;
+            }
+            bool again = GameState.Data.dungeonFloor >= n;
+            dialogue.Show(floor.es, again ? "¿Otra vez tú? Esta vez no será tan fácil. (" + floor.testEs + ")" : "¡Nadie pasa de aquí! Prepárate: " + floor.testEs + ".",
+                again ? "You again? It won't be so easy this time." : "No one gets past me! Get ready: " + floor.en + ".", () => battle.Begin(floor));
+        }
+
+        /// <summary>The bosses stand in their halls: one figure per floor, on the tiles marked for it.</summary>
+        void SpawnBosses(Transform parent)
+        {
+            if (layout.areas == null) return;
+            var marks = Map.Find('Ω');
+            foreach (var a in layout.areas)
+            {
+                if (!a.key.StartsWith("floor") || !int.TryParse(a.key.Substring(5), out int n) || n < 1 || n > DungeonData.Floors.Length) continue;
+                var mine = marks.FindAll(t => a.Contains(t));
+                if (mine.Count == 0) continue;
+                Vector2 at = Vector2.zero;
+                foreach (var t in mine) at += VillageMap.Center(t);
+                BossFigure.Spawn(parent, DungeonData.Floors[n - 1], at / mine.Count);
+            }
+        }
+
+        // ------------------------------------------------------------ the spell bar (keys 1-6)
+
+        /// <summary>Casts the spell in a slot of the action bar (0-5).</summary>
+        public void CastSlot(int slot)
+        {
+            if (Busy) return;
+            var slots = GameState.Data.spellSlots;
+            string id = slot >= 0 && slot < slots.Count ? slots[slot] : "";
+            var spell = Magic.GetSpell(id);
+            if (spell == null || Magic.Rank(id) == 0)
+            {
+                GameState.Say("Ranura " + (slot + 1) + " vacía. Pon un hechizo desde el libro (" + Keybinds.KeyName(GameAction.Spells) + ").");
+                return;
+            }
+            CastInWorld(spell);
+        }
+
+        /// <summary>Seconds until a spell can be cast again (0 = ready).</summary>
+        public float SpellCooldown(string id) => spellReady.TryGetValue(id, out float ready) ? Mathf.Max(0, ready - Time.time) : 0;
 
         /// <summary>E on a rock in the mine: needs a pickaxe strong enough for it.</summary>
         void MineRock(char what, Vector2Int tile)
@@ -769,8 +889,8 @@ namespace LLG
             var mob = word == null ? MobAt(world) : null;
             if (mob != null)
             {
-                word = mob.spanish;
-                english = mob.english;
+                word = mob.spanish + "  ·  Nv " + mob.level;
+                english = mob.english + "  ·  level " + mob.level;
                 anchor = mob.Position + new Vector2(0, 1f);
             }
             if (word == null)
@@ -964,7 +1084,9 @@ namespace LLG
         /// <summary>Your weapon (or arrow) hits an animal: Hielo runes slow it, Vampiro runes heal you.</summary>
         public void HitMob(Mob mob, int damage, Vector2 from)
         {
-            mob.TakeHit(damage, from);
+            var (dealt, crit) = Combat.PlayerHit(mob.level);      // your level against the monster's
+            mob.TakeHit(dealt, from);
+            if (crit) GameState.Say("¡Golpe crítico! -" + dealt);
             int ice = Magic.OnWeapon("ice");
             if (ice > 0) mob.Slow(1.5f * ice);
             int vampire = Magic.OnWeapon("vampire");
@@ -1032,7 +1154,7 @@ namespace LLG
                     foreach (var m in Mobs)
                         if (!m.Dead && Vector2.Distance(m.Position, me) < 6)
                         {
-                            m.TakeHit(power, me);
+                            m.TakeHit(Combat.SpellHit(power, m.level), me);
                             WorldFx.Burst(m.Position, new Color(0.6f, 0.45f, 0.3f), 8, order);
                         }
                     break;
@@ -1045,7 +1167,7 @@ namespace LLG
                     if (target == null) break;
                     var color = s.id == "spark" ? new Color(1f, 0.6f, 0.2f) : s.id == "lightning" ? new Color(1f, 0.95f, 0.4f) : new Color(0.9f, 0.3f, 0.2f);
                     WorldFx.Burst(target.Position + new Vector2(0, 0.4f), color, s.id == "meteor" ? 24 : 12, order);
-                    target.TakeHit(power, me);
+                    target.TakeHit(Combat.SpellHit(power, target.level), me);
                     break;
             }
         }
@@ -1062,7 +1184,7 @@ namespace LLG
                 GameState.Say("¡El escudo bloquea el golpe! (The shield blocks the hit!)");
                 return;
             }
-            int dmg = Mathf.Max(1, raw - GameState.Defense() / 2);
+            int dmg = Mathf.Max(1, raw);      // armour and levels are already worked out by Combat.MobHit
             GameState.Data.stats.Damage(dmg);
             playerSprite.Flash();
             GameState.Say("-" + dmg + " HP");

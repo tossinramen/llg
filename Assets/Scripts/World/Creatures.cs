@@ -98,7 +98,7 @@ namespace LLG
     public class Mob : MonoBehaviour
     {
         public string kind, spanish, english;
-        public int maxHp, hp, damage, xp;
+        public int maxHp, hp, damage, xp, level;
         public bool Dead => hp <= 0;
         public bool Hostile { get; private set; }
 
@@ -117,7 +117,7 @@ namespace LLG
         /// <summary>The Hielo rune on your weapon: the animal moves at half speed for a while.</summary>
         public void Slow(float seconds) { if (!Dead) slowed = Mathf.Max(slowed, seconds); }
 
-        public static Mob Spawn(VillageController owner, Transform parent, string kind, Vector2 at)
+        public static Mob Spawn(VillageController owner, Transform parent, string kind, Vector2 at, int level = 0)
         {
             var go = new GameObject("Mob " + kind);
             go.transform.SetParent(parent, false);
@@ -132,6 +132,8 @@ namespace LLG
             m.r.sprite = m.frames[0];
             if (kind == "wolf") { m.spanish = "El lobo"; m.english = "Wolf"; m.maxHp = 14; m.damage = 3; m.speed = 3.3f; m.xp = 30; }
             else { m.spanish = "El perro salvaje"; m.english = "Wild Dog"; m.maxHp = 9; m.damage = 2; m.speed = 3.5f; m.xp = 20; }
+            m.level = level > 0 ? level : kind == "wolf" ? 6 : 2;
+            m.maxHp = Combat.MobHp(m.maxHp, m.level);            // stronger with every level (see Combat)
             m.hp = m.maxHp;
             m.bar = new HealthBar(go.transform, 0.75f);
             m.bar.Set(1, false);
@@ -167,9 +169,9 @@ namespace LLG
             bar.Set(0, false);
             respawnTimer = 30f;
             Hostile = false;
-            int coins = kind == "wolf" ? Random.Range(6, 13) : Random.Range(3, 9);
+            int coins = kind == "wolf" ? Combat.GoldReward(6, 12, level) : Combat.GoldReward(3, 8, level);
             GameState.AddGold(coins);
-            GameState.AddXp(SkillType.Combat, xp);
+            GameState.AddXp(SkillType.Combat, Combat.XpReward(xp, level));
             GameState.Say("¡Derrotaste a " + spanish.ToLower() + "!");
             if (kind == "wolf" && Random.value < 0.6f) village.DropItem("pelt", Position);
         }
@@ -211,7 +213,7 @@ namespace LLG
                 if (dist < 1.1f && biteTimer <= 0)
                 {
                     biteTimer = 1.2f;
-                    village.DamagePlayer(damage, pos);
+                    village.DamagePlayer(Combat.MobHit(damage, level), pos);
                 }
             }
             else

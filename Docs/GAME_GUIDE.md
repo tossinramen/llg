@@ -36,10 +36,11 @@ All keys can be changed in **Esc → Opciones**.
 | E | Use: talk, go through doors, fish, shop, sleep, sit on a bench (E or any move key to get up) |
 | Enter | Chat: type a message, Enter again to say it; it floats above your head in a white speech bubble (Esc cancels) |
 | B | Bag (20 slots) |
-| U | Profile: equipment, stats, skills |
+| U | Profile: equipment and three tabs of skills: **Idioma** (language), **Oficios** (trades), **Combate** (combat, with your fighting numbers) |
 | L | Lessons: choose topic and level |
 | M | Big map (or click the minimap) |
-| K | Spellbook: learn, upgrade, prepare (★) and cast (▶) spells |
+| K | Spellbook: learn and upgrade spells, and choose each spell's slot on the bar |
+| **1 2 3 4 5 6** | **Cast the spell in that slot** of the spell bar (the six squares above the XP bar). You can also click a slot |
 | Left click | Read the Spanish name of anything (click the sign to close it); a shop's menu board opens the shop |
 | Right click | Attack animals / chop trees (cursor becomes a fist); on a door: go in |
 | Mouse wheel | Zoom in / out |
@@ -223,18 +224,42 @@ Spoken audio for new words is made by `Tools/audio/generate_speech.py` (needs th
 Your **lesson choice** (L key: a topic and a level, Principiante → Experto) decides what most activities ask.
 "Todos los temas" = every topic. Harder levels give more XP (×1 … ×4).
 
-| Activity | Where | What you do | Lessons it uses |
-|---|---|---|---|
-| **Tiro con arco** (archery) | Archery range, Don Felipe | English word shown → shoot the target with the Spanish | **Words** of your topic and level |
-| **La pesca** (fishing) | Pond, river or lake | Strike, then build the Spanish sentence word by word | **Sentences** of your topic and level (rarer fish = longer ones) |
-| **El intruso** (odd one out) | Tomás the woodcutter, or the lessons window | Four words, one from a different topic | **Words** by topic, up to your level (not "Más palabras": it isn't a real topic) |
-| **La música** | Music school (Isabel or the piano) | Click a verse's words in order | Half songs written for the game, half **sentences** of your topic and level |
-| **Regar** (watering) | Your vegetable patch | A quick question per plot | **Words** of your topic and level |
-| **La mina** (mining) | The mine, the hills | Spell / article / fill the gap / pick the word | **Words** (spell, article, pick) and **sentences** (gap) of your topic and level |
-| **Jefes** (boss fights) | La Ciudadela del Sol | A unit test: 8–17 right answers to win | Half the floor's own topic (basic words, food & animals, ser/estar, replies, past, future, word order, translation, everything); half **all your words and sentences at the floor's level** (floors 1–2 = level 1 … floors 9–10 = level 5), not just your topic. No repeats in a fight |
-| **Leer** (reading) | Left-click anything | See the Spanish name | The names of things in the world (signs, buildings, animals, people) |
-| **Hechizos** (spells, K) | Anywhere / battles | Spell the spell's word letter by letter | The 7 spell words |
-| Shops, talking, the bag | Everywhere | — | Item names and villagers' lines (written for the game) |
+**Each kind of Spanish has its own place to train:**
+
+| Lesson | Where to train it | Activity |
+|---|---|---|
+| **Verb tenses** (present / past / future) | Bruno's anvil in the **Herrería** | La forja de verbos |
+| **Ser vs estar** | Sera y Estela in **La Academia** | ¿Ser o estar? |
+| **Tú vs usted** (informal / formal) | Don Cortés in **La Academia** | ¿Tú o usted? |
+| **El / la / los / las** (gender and number) | The **fruit stalls** in the plaza | ¿El o la? |
+| **Numbers** | Doña Lola in **La Taberna** | El bingo |
+| **Vocabulary by topic** | The **scarecrow** in the wheat fields; Luna; the archery range; Tomás | La cosecha de palabras; Las parejas; Tiro con arco; El intruso |
+| **Building sentences** | Pond, river, lake; the music school | La pesca; La música |
+| **Conversation** (answering people) | Six specialists around the world | Reply tiles |
+| **Spelling** | The mine and the hills; the spellbook | La mina; Hechizos |
+| **Everything, as a test** | La Ciudadela del Sol | The ten bosses |
+
+**Every activity:**
+
+| Activity | Where | What you do | Lessons it uses | Rewards |
+|---|---|---|---|---|
+| **La forja de verbos** | Herrería: press E at the anvil | Forge a blade in 5 strikes. Each strike: pick the right verb form for the person and the time ("ayer · yo · cantar" → canté), then stop the hammer in the middle of the bar. A wrong form cools the metal (3 = scrap) | 30 regular verbs (levels 1–2), plus 22 irregular ones from level 3 (ser, ir, tener, hacer...), in present, past and future | 5 gold per quality point (max 75); Grammar + Crafting XP |
+| **¿Ser o estar?** | Academy: Sera y Estela | 60-second rush: a sentence with a gap; left = the SER form, right = the ESTAR form (A / D or ← / →). It tells you why each time (profession, place, mood...). A mistake costs 4 s | 36 ser/estar sentences written for the game | 3 gold per right answer + 2 per best streak; Grammar XP |
+| **¿Tú o usted?** | Academy: Don Cortés | Ten visitors arrive (a friend, the mayor, a child, a stranger...). Pick the phrase in the right form. 3 lives | 14 kinds of visitor × 12 phrase pairs | 4 gold per right answer; Conversation + Grammar XP |
+| **¿El o la?** | The fruit stalls in the plaza (E) | 45-second rush: a noun appears; pick el, la, los or las (keys 1–4) | **Every noun** of your topic and level | 2 gold per right answer + streak; Vocabulary + Grammar XP |
+| **El bingo** | Tavern: Doña Lola | She calls numbers in words ("treinta y cinco"); click them on your 4×4 card. Four in a row wins. A number she hasn't called costs a life | Numbers 1–30 (levels 1–2), 1–60 (level 3), 1–99 (levels 4–5) | 30+ gold for a line; Vocabulary + Listening XP |
+| **Las parejas** | Luna, by the candy shop | Memory: 16 cards, 8 Spanish words and their 8 meanings | **Words** of your topic and level | Up to 44 gold (fewer turns = more); Vocabulary + Reading XP |
+| **La cosecha de palabras** | The scarecrow in the wheat fields (south) | Words fall; move the basket (mouse or A / D) and catch only the words of the topic shown. 45 s, 3 lives | **Words of every topic** up to your level | 3 gold per word; Vocabulary + Farming XP |
+| **Conversación** | Simón (lake), Rosa (wheat fields), Benito (north-east meadow), Pepe (hills), Inés (forest path), Tomé (south bridge) | They say something; you build a fitting reply from word tiles (two tiles don't belong) | 24 exchanges written for the game | Gold, Conversation XP, and a gift if you made 2 mistakes or fewer |
+| **Tiro con arco** (archery) | Archery range, Don Felipe | English word shown → shoot the target with the Spanish | **Words** of your topic and level | Gold, Archery + Vocabulary XP |
+| **La pesca** (fishing) | Pond, river or lake | Strike, then build the Spanish sentence word by word | **Sentences** of your topic and level (rarer fish = longer ones) | Fish, gold, Fishing + Grammar XP |
+| **El intruso** (odd one out) | Tomás the woodcutter | Four words, one from a different topic | **Words** by topic, up to your level | Gold, Vocabulary XP |
+| **La música** | Music school | Click a verse's words in order | Half songs written for the game, half **sentences** of your topic and level | Gold, Music + Grammar XP |
+| **Regar** (watering) | Your vegetable patch | "¿Cómo se dice...?" per plot | **Words** of your topic and level | Faster crops, Farming XP |
+| **La mina** (mining) | The mine, the hills | Spell / article / fill the gap / pick the word | **Words** and **sentences** of your topic and level | Ores, gems, relics; Mining + Spelling XP |
+| **Jefes** (boss fights) | Inside La Ciudadela del Sol | A unit test: 8–17 right answers to win | Half the floor's own topic; half **all your words and sentences at the floor's level** | Gold, Lexa, Combat XP, a grade |
+| **Leer** (reading) | Left-click anything | See the Spanish name | Names of things in the world | Reading XP |
+| **Hechizos** (spells) | Keys 1–6 | Spell the spell's word letter by letter | The 7 spell words | Magic XP |
 
 ## Fishing
 
@@ -351,7 +376,9 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Tu casa (your house) | Yes | Bed (sleep), fireplace, table, shelf, rug |
 | Iglesia (church) | No | "Closed today" |
 | Ayuntamiento (town hall) | No | "Closed, come back tomorrow" |
-| Taberna (tavern) | No | "Opens at night" |
+| Taberna (tavern) | Yes | Doña Lola's bingo (numbers); tables and barrels |
+| La Academia (academy) | Yes | South street, east end (where the Rune Tower used to be). Sera y Estela (ser/estar) and Don Cortés (tú/usted); a lesson board |
+| La Ciudadela del Sol | Yes (10 halls) | The dungeon: walk in, floor by floor |
 | Neighbours' houses (×2) | No | "Nobody is home" |
 | Granero (barn), Molino (windmill), Gallinero (chicken coop) | No | Farm buildings |
 
@@ -375,36 +402,71 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | Don Ramón | el semillero (seed seller) | Inside the Semillería | Seed shop; farming tips |
 | Marta | la vendedora de música (music seller) | Inside the music shop | Music shop |
 | Profesora Isabel | la profesora de música (music teacher) | Inside the music school | Starts the music game |
+| Sera y Estela | las gemelas (the twins) | Inside the Academy | ¿Ser o estar? |
+| Don Cortés | el maestro de cortesía (master of manners) | Inside the Academy | ¿Tú o usted? |
+| Doña Lola | la tabernera (tavern keeper) | Inside the Tavern | Bingo |
+| Simón | el pescador del lago (lake fisherman) | South shore of the lake | Conversation; gives worms |
+| Rosa | la segadora (reaper) | By the wheat fields | Conversation; gives bread |
+| Benito | el apicultor (beekeeper) | North-east meadow | Conversation; gives sweets |
+| Pepe | el buscador de oro (prospector) | The hills | Conversation; gives coal |
+| Inés | la cazadora (huntress) | Forest path, south | Conversation; gives apples |
+| Tomé | el peregrino (pilgrim) | By the south bridge | Conversation (uses usted) |
 | Don Ernesto | el minero (miner) | Outside the mine | Sells pickaxes and the miner's helmet; explains mining |
 | Marina | la pescadera (fishmonger) | Inside the fishing shop | Fishing shop; tips about rods and bait |
 | Doña Runa | la encantadora (enchantress) | Inside La Torre Rúnica | Opens the enchanting altar |
 
 People cannot be attacked.
 
+## Combat: levels, damage, XP and gold
+
+Everything in a fight depends on **your level against the monster's level**. Click a monster (left click) to see
+its level. All of this is in `Assets/Scripts/Core/Combat.cs`.
+
+| What | Formula | In words |
+|---|---|---|
+| **Level gap** | × (1 + 5% per level of difference), between ×0.3 and ×2.5 | You hit harder and take less from monsters below you; the reverse for monsters above you |
+| **Your attack** | weapon damage (fists 1) + rune bonus, +4% per character level, +1% per Combat level (melee) or Archery level (bows, guns) | Then × the level gap, ± 10% luck |
+| **Critical hit** | 5% + 3% per Suerte rune rank + 0.2% per Combat level (max 40%) | Double damage ("¡Golpe crítico!") |
+| **Spell damage** | the spell's power, +3% per character level, × the level gap | |
+| **A monster's health** | its base health, +30% per monster level | A level 15 wolf has 73 HP (base 14) |
+| **A monster's bite** | its base bite, +12% per monster level, × the level gap | |
+| **Your armour** | blocks defence ÷ (defence + 20 + 4 × monster level), at most 75% | The same armour blocks less against stronger monsters |
+| **XP for a kill** | base XP, +15% per monster level; full within 2 levels below you, −15% per level under that (never below 10%); +10% per level above you (up to +50%) | Monsters far below you are worth almost nothing; ones above you are worth more |
+| **Gold for a kill** | the monster's base drop, +20% per monster level | |
+| **Safety** | after any bite nothing can hurt you for 0.5 s | |
+
+**Example at level 10 with a short sword (6 damage) and 6 defence, against a level 13 wolf:**
+your hit = 6 × 1.36 × 0.85 ≈ 7 (the wolf has 14 × 4.6 = 64 HP); its bite = 3 × 2.44 × 1.15 ≈ 8.4, armour blocks
+6 ÷ (6 + 20 + 52) = 8%, so about 8 damage a bite. Come back at level 16 and you hit for 11 and take 6.
+
+**Bosses are different:** they are unit tests (see [The dungeon](#the-dungeon-la-ciudadela-del-sol)); only right answers hurt them.
+
 ## Animals & monsters
 
-Only **two kinds of animal fight**: wolves and wild dogs. Everything else is harmless.
+Only **two kinds of animal fight**: wolves and wild dogs, but they come at **different levels** depending on where
+they live. The numbers below are for level 1 of each; see the table above for how levels change them.
 
-| Creature | Where | HP | Damage per bite | Bites | Speed | Behaviour | Drops |
-|---|---|---|---|---|---|---|---|
-| **El lobo** (wolf) | Forest beyond the bridge: 5 wolves in the clearings | 14 | **3** | 1 every 1.2 s each | 3.3 (you walk 4.5, run 7.5) | Neutral until you hit one; the rest of the pack within 6 tiles joins in; gives up past 14 tiles from you or 18 from home | 6–12 gold, 60% wolf pelt, 30 Combat XP |
-| **El perro salvaje** (wild dog) | Olive grove (south-west): 3 dogs | 9 | **2** | 1 every 1.2 s each | 3.5 | Same, its own pack | 3–8 gold, 20 Combat XP |
+| Creature | Base HP | Base bite | Bites | Speed | Behaviour | Base drops |
+|---|---|---|---|---|---|---|
+| **El lobo** (wolf) | 14 | 3 | 1 every 1.2 s | 3.3 (you walk 4.5, run 7.5) | Neutral until you hit one; the pack within 6 tiles joins in; gives up past 14 tiles from you or 18 from home | 6–12 gold, 60% wolf pelt, 30 Combat XP |
+| **El perro salvaje** (wild dog) | 9 | 2 | 1 every 1.2 s | 3.5 | Same, its own pack | 3–8 gold, 20 Combat XP |
 
-**How much a bite really hurts:** damage = bite − (your defence ÷ 2), never below 1. After any bite you are safe for 0.5 s.
-At level 1 (20 HP, no armour) one wolf needs 7 bites (about 8 s) to knock you out, but the **whole pack of 5** joins in,
-so a fight there can be over in a few seconds. That's why it can feel like one-shotting: start with the dogs,
-wear armour (Herrería) and level up first. Escudo de luz blocks a bite completely.
+**Where they are, and their levels** (a good order to fight them in):
 
-| Your defence | Wolf bite | Dog bite |
+| Area | Monsters | Levels |
 |---|---|---|
-| 0 | 3 | 2 |
-| 2 | 2 | 1 |
-| 4+ | 1 | 1 |
+| Olive grove (south-west of the village) | 3 wild dogs | 2, 3, 4 |
+| Forest clearings (across the bridge) | 5 wolves | 6–10 |
+| Wheat fields and the south road | 3 wild dogs | 8, 9, 10 |
+| Deep forest (north and east clearings, near the Rune Tower) | 4 wolves | 12–16 |
+| North-east meadow and the hills | 3 wild dogs | 13, 14, 16 |
+| East lands (around the lake and the far roads) | 4 wolves | 18–22 |
 
-**Bosses** (La Ciudadela del Sol) hit once per turn: floor 1 hits for 4, and each floor hits 2 more (floor 10: 22), minus defence ÷ 2.
-| Village cats & dogs | Streets (5) | — | — | Wander; harmless | — |
-| Chickens | Chicken yard (4) | — | — | Wander and peck | — |
-| Shop animals | Pet shop | — | — | Wander in the pen | — |
+| Harmless | Where |
+|---|---|
+| Village cats and dogs | Streets |
+| Chickens | Chicken yard |
+| Shop animals | Pet shop |
 
 Killed animals return after 30 seconds. **Pets** you buy follow you (choose one in the bag).
 
@@ -881,8 +943,13 @@ Levels keep going after 100 (the formula is 80 × level^1.4).
 ## The dungeon: La Ciudadela del Sol
 
 A Machu Picchu-style stone citadel at the end of the forest path (east, across the bridge).
-Press E at the doorway to see the ten floors. Each floor needs a character level and the floor below
-it beaten. **A boss fight is a unit test on that floor's topic:** the boss falls after a set number of right
+**You walk through it.** Press E at the doorway to enter the first hall. Each hall has its **boss standing at the
+back** (a different look for every floor: a mossy golem, a spider queen, a troll king, a hooded sorcerer, an ice
+king, a feathered serpent, a lava giant, a mirror witch, a black knight, a demon king) and a **staircase** in the
+top-right corner. Walk up to the boss and press E to fight. The stairs to the next floor open once that floor's
+boss is beaten; the doormat at the bottom takes you back down (or outside from floor 1). **Beaten bosses stay
+in their halls and can be fought again** for practice (a rematch pays 40%). Each boss needs a character level
+(5, 10, 15 ... 50). **A boss fight is a unit test on that floor's topic:** the boss falls after a set number of right
 answers (floor 1: 8, then one more each floor, floor 10: 17), whatever your level or weapon, so it can't be
 one-shot. Pick a move, then answer the Spanish question within 12 seconds (keys 1–4 work). **No translations
 or hints.** The boss only strikes back when you get one wrong or run out of time: each hit takes 12% + 1% per
@@ -896,7 +963,7 @@ more: rewards × (0.6 + 0.6 × your accuracy).
 | Move | Effect |
 |---|---|
 | Atacar | A right answer = one bar off the boss. A strong or enchanted weapon gives a chance (up to 25%) of a critical: two bars. Vampiro heals, Hielo may freeze the boss |
-| Hechizo | Your prepared spell (★ in the spellbook): spell its word letter by letter before the timer ends. A wrong letter fizzles |
+| Hechizo | Choose one of the spells on your bar, then spell its word letter by letter before the timer ends. A wrong letter fizzles |
 | Defender | A right answer heals 8% of your HP and halves the next hit |
 | Comer | Eat your best food (no question): heals half its value |
 | Huir | Leave the battle |
@@ -919,8 +986,11 @@ Bosses also give Combat XP (40 × floor).
 ## Magic (K)
 
 Press **K** for the spellbook. Spells unlock by character level and are learned and levelled up (ranks I–V)
-with **Lexa**. Learning costs level × 20 Lexa; each rank after that costs more. **★** chooses the spell the
-battle "Hechizo" move uses; **▶** casts it now, at the nearest animal. To cast, click the letters of the
+with **Lexa**. Learning costs level × 20 Lexa; each rank after that costs more. **How to cast:** learned spells go onto the
+**spell bar**, the six squares above the XP bar. Press **1, 2, 3, 4, 5 or 6** (or click the square) to cast
+the spell in that slot at the nearest animal. In the spellbook, the number button on each spell shows its slot;
+click it to move the spell to the next slot. A slot turns blue when you lack the mana and grey with a countdown
+while the spell recharges. **▶** in the spellbook also casts it now. To cast, click the letters of the
 spell's word **in order**; one wrong letter and it fizzles ("¡Fsss!").
 
 | Lv | Spell | Word | Mana | Effect (rank I → V) |
@@ -949,6 +1019,6 @@ One enchantment per item (a different one replaces it); ranks I–III cost **100
 
 ## Not built yet
 
-Quests, a story, the gym and strength, gear upgrades (+1…+10),
-durability, repairs, music in battle, conversations, and Spanish voice recordings.
+Quests and story scenes (the storyline itself is written in [STORY.md](STORY.md)), the gym and strength,
+gear upgrades (+1…+10), durability, repairs, music in battle, and Spanish voice recordings.
 These are all in [PLANNER.md](PLANNER.md).

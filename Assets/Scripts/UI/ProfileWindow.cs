@@ -30,6 +30,21 @@ namespace LLG
             "Cooking", "Fishing", "Farming", "Trading", "Crafting", "Exploration", "Magic", "Archery", "Combat", "Woodcutting", "Music", "Mining",
         };
 
+        /// <summary>The three kinds of skill, each on its own tab.</summary>
+        static readonly (string es, string en, string blurbEs, string blurbEn, SkillType[] skills)[] Tabs =
+        {
+            ("Idioma", "Language", "Lo que sabes de español", "How much Spanish you know",
+                new[] { SkillType.Vocabulary, SkillType.Grammar, SkillType.Reading, SkillType.Listening, SkillType.Spelling, SkillType.Conversation }),
+            ("Oficios", "Trades", "Trabajos y pasatiempos", "Jobs and pastimes",
+                new[] { SkillType.Fishing, SkillType.Farming, SkillType.Mining, SkillType.Woodcutting, SkillType.Cooking, SkillType.Crafting,
+                        SkillType.Trading, SkillType.Music, SkillType.Exploration }),
+            ("Combate", "Combat", "Luchar con armas y magia", "Fighting with weapons and magic",
+                new[] { SkillType.Combat, SkillType.Archery, SkillType.Magic }),
+        };
+        readonly List<Image> tabButtons = new List<Image>();
+        Transform tabRoot;
+        int tab;
+
         readonly Dictionary<EquipSlot, ItemSlotView> slotViews = new Dictionary<EquipSlot, ItemSlotView>();
         readonly List<Text> levels = new List<Text>();
         readonly List<RectTransform> bars = new List<RectTransform>();
@@ -60,21 +75,15 @@ namespace LLG
             info = UIFactory.LLabel("Info", W, new Vector2(-116, -134), new Vector2(210, 20), "", "", UIFactory.Teal).GetComponent<LocalizedText>();
             infoEnglish = info;
 
-            // ---- skills (right half)
-            UIFactory.LLabel("SkillsTitle", W, new Vector2(112, 106), new Vector2(200, 20), "Habilidades", "Skills", UIFactory.Purple);
+            // ---- right half: language skills, trades and combat are kept apart, one tab each
             UIFactory.Img("Divider", W, new Vector2(8, -8), new Vector2(2, 250), new Color32(200, 170, 120, 255));
-            var skills = (SkillType[])System.Enum.GetValues(typeof(SkillType));
-            for (int i = 0; i < skills.Length; i++)
+            for (int i = 0; i < Tabs.Length; i++)
             {
-                float y = 88 - i * 13f;
-                UIFactory.LLabel("Skill", W, new Vector2(78, y), new Vector2(120, 16), SkillSpanish[i], SkillEnglish[i], UIFactory.Ink, TextAnchor.MiddleLeft);
-                levels.Add(UIFactory.Label("Level", W, new Vector2(156, y), new Vector2(40, 16), "", UIFactory.Ink, TextAnchor.MiddleRight));
-                UIFactory.Img("BarBack", W, new Vector2(196, y), new Vector2(34, 6), new Color32(120, 100, 84, 255));
-                var bar = UIFactory.Img("Bar", W, new Vector2(196, y), new Vector2(34, 4), UIFactory.Gold).rectTransform;
-                bar.pivot = new Vector2(0, 0.5f);
-                bar.anchoredPosition = new Vector2(179, y);
-                bars.Add(bar);
+                int index = i;
+                tabButtons.Add(UIFactory.LBtn("Tab", W, new Vector2(52 + i * 62, 106), new Vector2(58, 20), Tabs[i].es, Tabs[i].en, UIFactory.Teal,
+                    () => { tab = index; Refresh(); }).GetComponent<Image>());
             }
+            tabRoot = UIFactory.Rect("TabRows", W, Vector2.zero, Vector2.zero);
             GameState.InventoryChanged += Refresh;
         }
 
@@ -104,17 +113,52 @@ namespace LLG
             }
 
             var s = data.stats;
-            stats.text = "ATQ " + GameState.Attack() + "   DEF " + GameState.Defense() + "   INT " + s.intelligence
+            stats.text = "ATQ " + Combat.AttackPower().ToString("0.#") + "   DEF " + GameState.Defense() + "   INT " + s.intelligence
                 + "\nVida " + s.hp + "/" + s.maxHp + "   Maná " + s.mana + "/" + s.maxMana;
 
-            var skills = (SkillType[])System.Enum.GetValues(typeof(SkillType));
-            for (int i = 0; i < skills.Length; i++)
+            ShowTab();
+        }
+
+        /// <summary>The rows of the tab you picked: each skill with its level and progress; the combat tab also lists your fighting numbers.</summary>
+        void ShowTab()
+        {
+            foreach (Transform c in tabRoot) Destroy(c.gameObject);
+            for (int i = 0; i < tabButtons.Count; i++) tabButtons[i].color = i == tab ? UIFactory.Gold : UIFactory.Teal;
+            var data = GameState.Data;
+            float y = 82;
+            UIFactory.LLabel("Blurb", tabRoot, new Vector2(112, y), new Vector2(196, 14), Tabs[tab].blurbEs, Tabs[tab].blurbEn, UIFactory.Faded, TextAnchor.MiddleCenter, 12);
+            y -= 20;
+            foreach (var skill in Tabs[tab].skills)
             {
-                var p = data.skills.Get(skills[i]);
-                levels[i].text = "Nv " + p.level;
-                float fill = Mathf.Clamp01(p.xp / (float)SkillSet.XpForNextLevel(p.level));
-                bars[i].sizeDelta = new Vector2(34 * fill, 4);
+                var p = data.skills.Get(skill);
+                UIFactory.LLabel("Skill", tabRoot, new Vector2(72, y), new Vector2(110, 16), SkillSpanish[(int)skill], SkillEnglish[(int)skill], UIFactory.Ink, TextAnchor.MiddleLeft);
+                UIFactory.Label("Level", tabRoot, new Vector2(148, y), new Vector2(40, 16), "Nv " + p.level, UIFactory.Purple, TextAnchor.MiddleRight);
+                UIFactory.Img("BarBack", tabRoot, new Vector2(194, y), new Vector2(44, 7), new Color32(120, 100, 84, 255));
+                var bar = UIFactory.Img("Bar", tabRoot, new Vector2(194, y), new Vector2(42, 5), UIFactory.Gold).rectTransform;
+                bar.pivot = new Vector2(0, 0.5f);
+                bar.anchoredPosition = new Vector2(173, y);
+                bar.sizeDelta = new Vector2(42 * Mathf.Clamp01(p.xp / (float)SkillSet.XpForNextLevel(p.level)), 5);
+                y -= 18;
             }
+            if (Tabs[tab].es == "Combate")
+            {
+                var s = data.stats;
+                y -= 6;
+                var lines = new (string es, string en)[]
+                {
+                    ("Nivel " + data.level, "Level " + data.level),
+                    ("Ataque " + Combat.AttackPower().ToString("0.#") + " por golpe", "Attack " + Combat.AttackPower().ToString("0.#") + " per hit"),
+                    ("Crítico " + Mathf.RoundToInt(Combat.CritChance() * 100) + "% (daño doble)", "Critical " + Mathf.RoundToInt(Combat.CritChance() * 100) + "% (double damage)"),
+                    ("Defensa " + GameState.Defense() + ": bloquea " + Mathf.RoundToInt(Combat.Mitigation(data.level) * 100) + "%", "Defence " + GameState.Defense() + ": blocks " + Mathf.RoundToInt(Combat.Mitigation(data.level) * 100) + "%"),
+                    ("Vida " + s.hp + "/" + s.maxHp + "   Maná " + s.mana + "/" + s.maxMana, "HP " + s.hp + "/" + s.maxHp + "   Mana " + s.mana + "/" + s.maxMana),
+                };
+                foreach (var (es, en) in lines)
+                {
+                    UIFactory.LLabel("Stat", tabRoot, new Vector2(112, y), new Vector2(196, 16), es, en, UIFactory.Ink, TextAnchor.MiddleLeft);
+                    y -= 17;
+                }
+            }
+            translate.Set(translate.English);
         }
 
         static string SlotKey(EquipSlot slot) => slot switch

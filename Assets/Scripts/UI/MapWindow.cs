@@ -26,7 +26,7 @@ namespace LLG
             ('B', "Panadería", "Bakery", -3), ('C', "Dulcería", "Candy Shop", 2), ('S', "Tienda", "General Store", -3),
             ('W', "Armería", "Weapon Shop", -3), ('^', "Herrería", "Blacksmith", 2), ('M', "Mascotas", "Pet Shop", -3),
             ('H', "Tu casa", "Your House", -3), ('I', "Iglesia", "Church", -6), ('<', "Ayuntamiento", "Town Hall", -4), ('>', "Taberna", "Tavern", 2),
-            (']', "Semillas", "Seed Shop", 2), (')', "Música", "Music Shop", -3), ('\'', "Escuela de música", "Music School", -3), ('Þ', "Torre rúnica", "Rune Tower", -5), ('Œ', "Pesca", "Fishing Shop", 2), ('Ŭ', "La mina", "Mine", -6),
+            (']', "Semillas", "Seed Shop", 2), (')', "Música", "Music Shop", -3), ('\'', "Escuela de música", "Music School", -3), ('Þ', "Torre rúnica", "Rune Tower", -5), ('Œ', "Pesca", "Fishing Shop", 2), ('Ŭ', "La mina", "Mine", -6), ('Λ', "Academia", "Academy", 2),
         };
 
         RectTransform mapRect, arrow;
@@ -75,7 +75,7 @@ namespace LLG
         /// down until it doesn't. Hovering it shows the translation at the bottom of the window.</summary>
         void Place(Vector2Int tile, string es, string en, Color color)
         {
-            var plateSize = new Vector2(Mathf.Max(es.Length, en.Length) * 5 + 10, 13);     // the bold title font at its own pixel size (10): sharp and compact
+            var plateSize = new Vector2(Mathf.Max(es.Length, en.Length) * 6 + 12, 16);     // bold 12 px text on a dark plate
             // keep every name inside the map
             var at = TileToMap(tile);
             at.x = Mathf.Clamp(at.x, -size.x / 2 + plateSize.x / 2 + 2, size.x / 2 - plateSize.x / 2 - 2);
@@ -94,15 +94,15 @@ namespace LLG
                 }
                 if (placed) break;
             }
-            var plate = UIFactory.Box("Plate", mapRect, pos, plateSize, new Color(0.12f, 0.1f, 0.1f, 0.55f));
+            var plate = UIFactory.Box("Plate", mapRect, pos, plateSize, new Color(0.1f, 0.08f, 0.1f, 0.82f));
             plate.raycastTarget = true;
             var hover = plate.gameObject.AddComponent<HoverHandle>();
             hover.Entered += () => tooltip.Set(es + "  =  " + en, en + "  =  " + es);
             hover.Exited += () => tooltip.Set("Pasa el ratón por un nombre para traducirlo.", "Point at a name to translate it.");
             var label = UIFactory.LLabel("Label", plate.transform, new Vector2(0, 1), plateSize - new Vector2(4, 0), es, en, color);
-            label.font = UIFactory.TitleFont;
-            label.fontSize = 10;
-            label.resizeTextMaxSize = 10;
+            label.fontSize = 12;
+            label.resizeTextMaxSize = 12;
+            UIFactory.Outline(label);
         }
 
         public void Toggle()

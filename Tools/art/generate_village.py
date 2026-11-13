@@ -60,6 +60,8 @@ WORDS = {
     "G": ("La chimenea", "Fireplace"),
     "ç": ("La puerta de la valla", "Gate"), "Ç": ("La puerta de la valla", "Gate"),
     "œ": ("La tienda de pesca", "Fishing Shop"),
+    "λ": ("La academia", "Academy"), "Ω": ("El jefe", "Boss"), "Ξ": ("La escalera", "Stairs"),
+    "Ψ": ("El espantapájaros", "Scarecrow"),
     "ŭ": ("La mina", "Mine"), "ŕ": ("La roca", "Rock"), "Ř": ("La veta de mineral", "Ore Vein"),
     "ř": ("La roca de cristal", "Crystal Rock"), "ĉ": ("La vagoneta", "Mine Cart"),
     "Ŧ": ("El muro de la terraza", "Terrace Wall"), "Š": ("La escalera", "Stairs"),
@@ -68,7 +70,7 @@ WORDS = {
     "[": ("La semillería", "Seed Shop"), "(": ("La tienda de música", "Music Shop"),
     "`": ("La escuela de música", "Music School"), "+": ("El huerto", "Vegetable Patch"), "ñ": ("El piano", "Piano"),
 }
-for door in "BCSWMHDI^<>])'ÞŒŬ":
+for door in "BCSWMHDI^<>])'ÞŒŬΛ":
     WORDS[door] = ("La puerta", "Door")
 
 # ---------------------------------------------------------------- the village layout (tiles)
@@ -95,6 +97,7 @@ BUILDINGS = [
     ("pets", "m", "M", 38, 36, 6, 2, "shop", "Mascotas", {"shutters": (196, 140, 60), "awning": (210, 150, 70), "paw": True}),
     ("tavern", "r", ">", 46, 36, 6, 2, "shop", "Taberna", {"shutters": (120, 70, 50), "two_story": True, "wall": (236, 222, 196)}),
     ("house_s", "d", "D", 54, 36, 5, 2, "house", None, {"shutters": (66, 100, 140), "pots": True}),
+    ("academy", "λ", "Λ", 60, 36, 6, 2, "shop", "Academia", {"shutters": (120, 60, 60), "two_story": True, "wall": (240, 232, 214)}),
     ("fishing", "œ", "Œ", 54, 42, 6, 2, "shop", "Pesca", {"shutters": (50, 110, 150), "awning": (50, 120, 170), "wall": (236, 232, 222), "pots": True}),
 ]
 FOUNTAIN = (45, 26, 3, 2)
@@ -110,7 +113,9 @@ FARM = (12, 30, 24, 36)            # crop field (inside the fence)
 YARD = (27, 31, 31, 36)            # chicken yard
 RIVER_X = 80.5
 BRIDGE_ROWS = (27, 28, 91, 92)            # the town bridge and the new bridge to the south road
-PEOPLE = {"1": (24, 20), "3": (64, 20), "4": (66, 9), "5": (49, 28), "%": (76, 29), "&": (9, 29), "P": (46, 31), "ĥ": (38, 9)}
+PEOPLE = {"1": (24, 20), "3": (64, 20), "4": (66, 9), "5": (49, 28), "%": (76, 29), "&": (9, 29), "P": (46, 31), "ĥ": (38, 9),
+          # specialists you can talk to (you build your reply): lake fisher, reaper, beekeeper, prospector, huntress, pilgrim
+          "α": (150, 54), "β": (46, 90), "γ": (140, 18), "δ": (150, 68), "ε": (103, 62), "ζ": (86, 93)}
 
 # rooms: key, Spanish name, English name, shop id, keeper marker, grid position (x0, y0); size 14 x 10
 ROOMS = [
@@ -127,6 +132,18 @@ ROOMS = [
     ("tower", "La torre rúnica", "Rune Tower", "", "Ø", (114, 56)),
     ("fishing", "La tienda de pesca", "Fishing Shop", "fishing", "§", (130, 56)),
     ("mine", "La mina", "The Mine", "", "", (146, 1)),
+    ("floor1", "Piso 1: Palabras básicas", "Floor 1: Basic words", "", "", (146, 12)),
+    ("floor2", "Piso 2: Comida y animales", "Floor 2: Food and animals", "", "", (146, 23)),
+    ("floor3", "Piso 3: Ser o estar", "Floor 3: Ser or estar", "", "", (146, 34)),
+    ("floor4", "Piso 4: Preguntas y respuestas", "Floor 4: Questions and replies", "", "", (146, 45)),
+    ("floor5", "Piso 5: El pasado", "Floor 5: The past", "", "", (146, 56)),
+    ("floor6", "Piso 6: El futuro", "Floor 6: The future", "", "", (146, 67)),
+    ("floor7", "Piso 7: Frases largas", "Floor 7: Long sentences", "", "", (146, 78)),
+    ("floor8", "Piso 8: Traducción", "Floor 8: Translation", "", "", (146, 89)),
+    ("floor9", "Piso 9: Todo", "Floor 9: Everything", "", "", (114, 67)),
+    ("floor10", "Piso 10: La prueba final", "Floor 10: The final test", "", "", (130, 67)),
+    ("academy", "La academia", "Academy", "", "", (114, 78)),
+    ("tavern", "La taberna", "Tavern", "", "", (130, 78)),
 ]
 RW, RH = 14, 10
 ROOMS = [(k, es, en, shop, keeper, (x + VW - 112, y)) for k, es, en, shop, keeper, (x, y) in ROOMS]     # rooms sit right of the world
@@ -321,6 +338,32 @@ def make_ground(grid):
         d.line([X, Y + 14, X + 15, Y + 14], fill=(40, 70, 96))
         grid[dock_y][tx] = "="
     return out, water, (x - 1, dock_y)
+
+
+def stairs_up():
+    """Stone steps going up through a dark archway: the way to the next floor of the citadel."""
+    img = Image.new("RGBA", (32, 34), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rectangle([2, 4, 29, 27], fill=rgba((96, 92, 104)), outline=rgba((60, 56, 68)))
+    d.ellipse([6, 2, 25, 20], fill=rgba((20, 16, 26)))
+    d.rectangle([6, 11, 25, 27], fill=rgba((20, 16, 26)))
+    for i, y in enumerate((23, 19, 15)):
+        d.rectangle([7 + i * 2, y, 24 - i * 2, y + 4], fill=rgba((170 - i * 26, 166 - i * 26, 178 - i * 26)))
+        d.line([7 + i * 2, y, 24 - i * 2, y], fill=rgba((214 - i * 30, 210 - i * 30, 222 - i * 30)))
+    d.polygon([(16, 5), (13, 9), (19, 9)], fill=rgba((250, 210, 90)))            # an arrow: up
+    d.rectangle([15, 9, 17, 12], fill=rgba((250, 210, 90)))
+    return img, (16, 30)
+
+
+def brazier():
+    img = Image.new("RGBA", (16, 26), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.ellipse([2, 21, 13, 25], fill=(10, 8, 6, 80))
+    d.rectangle([7, 12, 8, 23], fill=rgba((60, 56, 64)))
+    d.polygon([(2, 9), (13, 9), (11, 14), (4, 14)], fill=rgba((84, 80, 92)))
+    d.polygon([(4, 9), (8, 0), (11, 9)], fill=rgba((240, 120, 40)))
+    d.polygon([(6, 9), (8, 3), (10, 9)], fill=rgba((255, 220, 90)))
+    return img, (8, 24)
 
 
 # ---------------------------------------------------------------- the raised terrace in the plaza
@@ -616,6 +659,18 @@ ROOM_STYLE = {
     "music_store": {"wall": (236, 226, 236), "dado": (120, 70, 150), "floor": "wood", "floor_col": (120, 80, 56)},
     "music_school": {"wall": (238, 230, 214), "dado": (60, 80, 150), "floor": "tile", "floor_col": (150, 120, 96)},
     "tower": {"wall": (120, 118, 140), "dado": (70, 130, 190), "floor": "stone", "floor_col": (90, 88, 110)},
+    "floor1": {"wall": (120, 118, 128), "dado": (90, 88, 100), "floor": "stone", "floor_col": (110, 108, 118)},
+    "floor2": {"wall": (96, 80, 116), "dado": (70, 50, 90), "floor": "stone", "floor_col": (92, 80, 104)},
+    "floor3": {"wall": (100, 124, 92), "dado": (70, 96, 64), "floor": "stone", "floor_col": (104, 116, 96)},
+    "floor4": {"wall": (110, 124, 150), "dado": (80, 96, 130), "floor": "stone", "floor_col": (104, 114, 134)},
+    "floor5": {"wall": (170, 206, 230), "dado": (110, 160, 210), "floor": "stone", "floor_col": (150, 180, 206)},
+    "floor6": {"wall": (110, 150, 96), "dado": (200, 160, 60), "floor": "stone", "floor_col": (116, 132, 100)},
+    "floor7": {"wall": (96, 60, 54), "dado": (200, 90, 40), "floor": "stone", "floor_col": (84, 62, 60)},
+    "floor8": {"wall": (130, 96, 150), "dado": (190, 170, 220), "floor": "stone", "floor_col": (110, 96, 124)},
+    "floor9": {"wall": (70, 72, 86), "dado": (150, 40, 46), "floor": "stone", "floor_col": (84, 86, 98)},
+    "floor10": {"wall": (110, 40, 46), "dado": (240, 190, 70), "floor": "stone", "floor_col": (90, 50, 56)},
+    "academy": {"wall": (240, 232, 214), "dado": (150, 60, 60), "floor": "check", "floor_col": (236, 226, 206)},
+    "tavern": {"wall": (214, 190, 150), "dado": (120, 70, 50), "floor": "wood", "floor_col": (130, 90, 60)},
     "mine": {"wall": (92, 80, 70), "dado": (66, 56, 48), "floor": "stone", "floor_col": (100, 90, 80)},
     "fishing": {"wall": (214, 230, 236), "dado": (50, 110, 150), "floor": "wood", "floor_col": (150, 116, 80)},
 }
@@ -911,6 +966,7 @@ def make_world():
         for tx in (fx0 - 1, fx1 + 1):
             place(va.fence(True), tx * T + 8, ty * T + 16, (tx, ty, 1, 1), "N", "fence_v")
     place(scarecrow(), 18 * T + 8, 33 * T + 14, None, "?", "scarecrow")
+    place(scarecrow(), 46 * T + 8, 83 * T + 14, (46, 83, 1, 1), "Ψ", "scarecrow")       # the word-harvest scarecrow
     yx0, yy0, yx1, yy1 = YARD
     for tx in range(yx0 - 1, yx1 + 2):
         for ty in (yy0 - 1, yy1 + 1):
@@ -1037,10 +1093,12 @@ def make_world():
             place(va.bush("lavender" if i % 2 else "rose", i), tx * T + 8, ty * T + 14, (tx, ty, 1, 1), "u", "lavender" if i % 2 else "rosebush")
 
     # creatures: wolves in the forest clearings, wild dogs in the olive grove, cats and dogs in town
-    for cx, cy in clearings:
-        spawns.append({"kind": "wolf", "x": cx, "y": cy})
-    for x, y in ((16, 58), (40, 64), (26, 50), (45, 96), (90, 98), (150, 88), (140, 20)):
-        spawns.append({"kind": "wilddog", "x": x, "y": y})
+    for (cx, cy), lv in zip(clearings, (7, 6, 8, 9, 10, 12, 13, 15, 16)):
+        spawns.append({"kind": "wolf", "x": cx, "y": cy, "level": lv})
+    for x, y, lv in ((160, 72, 18), (140, 96, 20), (165, 14, 22), (158, 36, 19)):
+        spawns.append({"kind": "wolf", "x": x, "y": y, "level": lv})
+    for x, y, lv in ((16, 58, 2), (40, 64, 3), (26, 50, 4), (45, 96, 8), (90, 98, 10), (150, 88, 16), (140, 20, 14), (70, 96, 9), (125, 82, 13)):
+        spawns.append({"kind": "wilddog", "x": x, "y": y, "level": lv})
     for kind, x, y in (("pet_cat", 42, 24), ("pet_dog", 52, 29), ("pet_cat", 21, 24), ("pet_dog", 63, 30), ("pet_cat", 48, 40)):
         spawns.append({"kind": kind, "x": x, "y": y})
 
@@ -1058,6 +1116,7 @@ def make_world():
         grid[ty][tx] = ch
 
     # ---- rooms
+    origin = {}
     for key, es, en, shop, keeper, (ox, oy) in ROOMS:
         rimg = room_ground(key)
         save_png(rimg, "World", "Rooms", f"room_{key}.png")
@@ -1112,6 +1171,27 @@ def make_world():
             rplace(table(), 9, 6, "t", "table", (9, 6, 2, 1))
             img, anc = shelf("store")
             place((img, anc), (ox + 11) * T + 8, (oy + 3) * T - 2, (ox + 10, oy + 2, 3, 1), "L", "shelf_store")
+        if key.startswith("floor"):
+            n = int(key[5:])
+            grid[oy + 4][ox + 6] = grid[oy + 4][ox + 7] = "Ω"                    # the boss stands here (the game draws it)
+            if n < 10:
+                img, anc = stairs_up()
+                place((img, anc), (ox + 12) * T, (oy + 4) * T, (ox + 11, oy + 3, 2, 1), "Ξ", "stairs_up")
+            for tx in (2, 11):                                                    # braziers either side of the hall
+                img, anc = brazier()
+                place((img, anc), (ox + tx) * T + 8, (oy + 7) * T + 14, (ox + tx, oy + 7, 1, 1), "f", "brazier")
+        if key == "academy":
+            grid[oy + 4][ox + 3] = "μ"                                            # Sera (ser / estar)
+            grid[oy + 4][ox + 10] = "ν"                                           # Don Cortés (tú / usted)
+            rplace(notice_board(), 6, 3, "n", "notice_board", (6, 3, 1, 1))
+            rplace(table(), 6, 7, "t", "table", (6, 7, 2, 1))
+        if key == "tavern":
+            img, anc = counter()
+            place((img, anc), (ox + 7) * T, (oy + 6) * T, (ox + 3, oy + 5, 8, 1), "K", "counter")
+            grid[oy + 4][ox + 7] = "ο"                                            # Doña Lola (bingo)
+            rplace(table(), 2, 7, "t", "table", (2, 7, 2, 1))
+            rplace(table(), 10, 7, "t", "table", (10, 7, 2, 1))
+            rplace(va.barrels(), 1, 3, "b", "barrels", (1, 3, 1, 1))
         if key == "mine":
             for kind, letter, tx, ty in (("stone", "ŕ", 1, 3), ("rich", "Ř", 4, 3), ("crystal", "ř", 8, 3), ("rich", "Ř", 10, 5),
                                          ("stone", "ŕ", 1, 6), ("stone", "ŕ", 9, 7), ("crystal", "ř", 3, 7)):
@@ -1119,10 +1199,24 @@ def make_world():
                 place((img, (14, 21)), (ox + tx + 1) * T, (oy + ty) * T + 14, (ox + tx, oy + ty, 2, 1), letter, "rock_" + kind)
             img = Image.open(os.path.join(ART, "World", "Objects", "mine_cart.png")).convert("RGBA")
             place((img, (12, 17)), (ox + 11) * T + 8, (oy + 8) * T + 14, (ox + 11, oy + 8, 1, 1), "ĉ", "mine_cart")
-        else:
+        elif not key.startswith("floor"):
             rplace(va.flower_pot(), 12, 3, "p", "pot", (12, 3, 1, 1))
 
         # doors in and out
+        if key.startswith("floor"):
+            n = int(key[5:])
+            origin[n] = (ox, oy)
+            if n == 1:                                                            # from the citadel's doorway
+                portals.append({"x": 100, "y": 15, "tx": ox + 6, "ty": oy + RH - 2, "face": 2})
+                for ex_x in (6, 7):
+                    portals.append({"x": ox + ex_x, "y": oy + RH - 1, "tx": 100, "ty": 16, "face": 0})
+            else:                                                                 # stairs up from the floor below, and back down
+                px, py = origin[n - 1]
+                for sx in (11, 12):
+                    portals.append({"x": px + sx, "y": py + 3, "tx": ox + 6, "ty": oy + RH - 2, "face": 2})
+                for ex_x in (6, 7):
+                    portals.append({"x": ox + ex_x, "y": oy + RH - 1, "tx": px + 11, "ty": py + 4, "face": 0})
+            continue
         outside = key
         dx, dy = doors[outside]
         portals.append({"x": dx, "y": dy, "tx": ox + 6, "ty": oy + RH - 2, "face": 2})

@@ -51,7 +51,7 @@ namespace LLG
                 bool canLearn = level >= s.level;
                 float y = 96 - i * 37;
                 var back = UIFactory.Box("Row", rows, new Vector2(0, y), new Vector2(540, 34),
-                    GameState.Data.preparedSpell == s.id && rank > 0 ? new Color32(230, 214, 250, 255) : new Color32(246, 236, 214, 255));
+                    Magic.SlotOf(s.id) >= 0 && rank > 0 ? new Color32(230, 214, 250, 255) : new Color32(246, 236, 214, 255));
                 UIFactory.Img("Icon", back.transform, new Vector2(-250, 0), new Vector2(20, 20), canLearn ? Color.white : new Color(0.4f, 0.4f, 0.4f),
                     UIFactory.LoadSprite("Art/Icons/" + s.icon));
                 UIFactory.LLabel("Name", back.transform, new Vector2(-180, 6), new Vector2(110, 14), s.es, s.en, UIFactory.Ink, TextAnchor.MiddleLeft, 16);
@@ -66,12 +66,13 @@ namespace LLG
                 var upBtn = UIFactory.LBtn("Upgrade", back.transform, new Vector2(140, 0), new Vector2(104, 24), up,
                     rank >= Magic.MaxSpellRank ? "Max" : (rank == 0 ? "Learn " : "Upgrade ") + GameState.Short(cost),
                     canLearn && rank < Magic.MaxSpellRank ? UIFactory.Gold : UIFactory.Faded, () => { if (Magic.Upgrade(spell)) Rebuild(); });
-                UIFactory.LBtn("Prepare", back.transform, new Vector2(212, 0), new Vector2(34, 24), "★", "★",
+                int slot = Magic.SlotOf(s.id);
+                UIFactory.LBtn("Slot", back.transform, new Vector2(212, 0), new Vector2(34, 24), slot >= 0 ? (slot + 1).ToString() : "–", slot >= 0 ? (slot + 1).ToString() : "–",
                     rank > 0 ? UIFactory.Purple : UIFactory.Faded, () =>
                     {
                         if (Magic.Rank(spell.id) == 0) return;
-                        GameState.Data.preparedSpell = spell.id;
-                        GameState.Say(spell.es + " está listo para la batalla.");
+                        Magic.NextSlot(spell.id);
+                        GameState.Say(spell.es + ": ranura " + (Magic.SlotOf(spell.id) + 1) + " (tecla " + (Magic.SlotOf(spell.id) + 1) + ").");
                         Rebuild();
                     });
                 UIFactory.LBtn("Cast", back.transform, new Vector2(250, 0), new Vector2(30, 24), "▶", "▶",
@@ -83,7 +84,7 @@ namespace LLG
                     });
             }
             UIFactory.LLabel("Legend", rows, new Vector2(0, -150), new Vector2(520, 14),
-                "★ = preparar para la batalla     ▶ = lanzar ahora", "★ = ready it for battle     ▶ = cast it now", UIFactory.Faded, TextAnchor.MiddleCenter, 12);
+                "Número = su ranura en la barra (teclas 1-6; clic para cambiarla)     ▶ = lanzar ahora", "Number = its slot on the bar (keys 1-6; click to move it)     ▶ = cast it now", UIFactory.Faded, TextAnchor.MiddleCenter, 12);
             translate.Set(translate.English);
         }
     }

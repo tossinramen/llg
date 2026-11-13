@@ -64,7 +64,7 @@ namespace LLG
 
             toastRoot = UIFactory.Rect("Toasts", canvas, new Vector2(0, 150), Vector2.zero);     // top middle, clear of speech bubbles
 
-            promptBox = UIFactory.Panel("Prompt", canvas, new Vector2(0, -124), new Vector2(320, 34)).gameObject;
+            promptBox = UIFactory.Panel("Prompt", canvas, new Vector2(0, -104), new Vector2(320, 30)).gameObject;
             prompt = UIFactory.Label("Text", promptBox.transform, new Vector2(0, 1), new Vector2(310, 24), "", UIFactory.Ink);
             promptBox.SetActive(false);
 
@@ -121,6 +121,48 @@ namespace LLG
             // Lexa, in a small box under the portrait
             gold = Purse(canvas, FramePos + new Vector2(-38, -41), "Art/UI/coin");
             coins = Purse(canvas, FramePos + new Vector2(-38, -65), "Art/UI/lexa");
+        }
+
+        // ------------------------------------------------------------ the spell bar (six slots, keys 1-6)
+        readonly Image[] slotIcons = new Image[6];
+        readonly Text[] slotTimers = new Text[6];
+        System.Func<string, float> spellCooldown;
+
+        /// <summary>Six spell slots above the XP bar. Press 1-6 (or click a slot) to cast what is in it.</summary>
+        public void BuildActionBar(Transform canvas, System.Action<int> use, System.Func<string, float> cooldownLeft)
+        {
+            spellCooldown = cooldownLeft;
+            for (int i = 0; i < 6; i++)
+            {
+                int slot = i;
+                var view = ItemSlotView.Create(canvas, new Vector2(XpX - 65 + i * 26, XpY + 24), 24, () => use(slot));
+                slotIcons[i] = view.icon;
+                view.icon.rectTransform.sizeDelta = new Vector2(16, 16);
+                view.count.gameObject.SetActive(false);
+                var key = UIFactory.Label("Key", view.icon.transform.parent, new Vector2(-7, 7), new Vector2(10, 10), (i + 1).ToString(), Color.white, TextAnchor.MiddleCenter, 12);
+                UIFactory.Outline(key);
+                slotTimers[i] = UIFactory.Label("Timer", view.icon.transform.parent, new Vector2(0, -1), new Vector2(22, 14), "", Color.white, TextAnchor.MiddleCenter, 12);
+                UIFactory.Outline(slotTimers[i]);
+            }
+        }
+
+        void UpdateActionBar()
+        {
+            if (slotIcons[0] == null) return;
+            var slots = GameState.Data.spellSlots;
+            int mana = GameState.Data.stats.mana;
+            for (int i = 0; i < 6; i++)
+            {
+                var spell = i < slots.Count ? Magic.GetSpell(slots[i]) : null;
+                bool has = spell != null && Magic.Rank(spell.id) > 0;
+                slotIcons[i].enabled = has;
+                slotTimers[i].text = "";
+                if (!has) continue;
+                slotIcons[i].sprite = UIFactory.LoadSprite("Art/Icons/" + spell.icon);
+                float wait = spellCooldown != null ? spellCooldown(spell.id) : 0;
+                slotIcons[i].color = wait > 0 ? new Color(0.35f, 0.35f, 0.4f) : mana < spell.mana ? new Color(0.5f, 0.55f, 0.9f) : Color.white;
+                if (wait > 0) slotTimers[i].text = Mathf.CeilToInt(wait).ToString();
+            }
         }
 
         /// <summary>A small money box under the portrait: icon + amount.</summary>
@@ -413,6 +455,7 @@ namespace LLG
         void Update()
         {
             UpdateToasts();
+            UpdateActionBar();
             Refresh();
             xpShown = Mathf.MoveTowards(xpShown, xpTarget, Time.unscaledDeltaTime * Mathf.Max(60, Mathf.Abs(xpTarget - xpShown) * 4));
             xpFill.sizeDelta = new Vector2(xpShown, 10);

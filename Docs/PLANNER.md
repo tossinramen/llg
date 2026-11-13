@@ -19,13 +19,10 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] Speaker buttons on more places (shop items, archery words, fishing sentences, bag)
 
 ### 2. New lesson activities
-- [ ] Fill in the blank with the right tense
-- [ ] Pick the correct form of the verb
 - [ ] Put the sentence in the correct order (as its own lesson, not only fishing)
 - [ ] Match the picture to the word (easier levels; fruits etc.)
 - [ ] Choose the correct reply to a sentence (harder levels: pick lines to build your reply)
 - [ ] English → Spanish translation by clicking words to complete the sentence
-- [ ] Word Rain — catch falling words that match the prompt
 - [ ] Rune Lock — spell the word on dials to open a chest or door
 - [ ] Cooking orders — serve "dos huevos y pan" before the customer leaves
 - [ ] Whack-a-word — hit moles in the farm field holding words from the topic
@@ -34,7 +31,6 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 - [ ] Echo game — hear a word, click the matching picture (needs Spanish voice)
 
 ### 3. Conversation, charisma and persuasion
-- [ ] Talk to villagers by clicking words in order to build your reply
 - [ ] Conversation skill that raises **Charisma** and **Persuasion** (new stats)
 - [ ] Uses for persuasion: better prices, unlocking dialogue, quests
 - [ ] Radio station (listening practice: short Spanish "broadcasts" with questions)
@@ -61,7 +57,7 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 ### 7. Quests and story
 - [ ] Quest system (quest text in English); quest log window
 - [ ] First quests from the villagers (fetch, deliver, defeat wolves, learn a topic)
-- [ ] A story / plot at the beginning (see notes)
+- [ ] Turn Docs/STORY.md into quests and scenes (quest log, opening scene, per-act locks)
 
 ### 8. Later
 - [ ] PvP with other players using upgraded gear (multiplayer — last, after single player is finished)
@@ -323,3 +319,15 @@ Finished tasks, struck through.
 - ~~Boss questions come half from all your lessons at the floor's level (words both ways, sentence meaning, fill the gap), no repeats~~ ✅
 - ~~The music game and El intruso use your lessons too~~ ✅
 - ~~List of every activity and the lessons it uses (game guide)~~ ✅
+- ~~Map place names easier to read (bigger, bold, dark plates)~~ ✅
+- ~~Beaten bosses can be fought again~~ ✅
+- ~~The dungeon is a place you walk through: ten halls, a boss figure in each, stairs that open when you win~~ ✅
+- ~~All ten bosses redrawn (48 px, faces, armour, props)~~ ✅
+- ~~Places to train each lesson: verb forge (tenses), ¿Ser o estar?, ¿Tú o usted?, ¿El o la?, bingo (numbers)~~ ✅
+- ~~More fun activities: Las parejas (memory), La cosecha de palabras (word rain)~~ ✅
+- ~~New buildings: La Academia; the Tavern opens~~ ✅
+- ~~Six specialists (lake fisher, reaper, beekeeper, prospector, huntress, pilgrim) you answer by building a reply~~ ✅
+- ~~RPG combat system: monster levels, level gap, crits, armour %, XP and gold scaling (in the guide)~~ ✅
+- ~~Spell bar: six slots, keys 1–6~~ ✅
+- ~~Profile: language skills, trades and combat on separate tabs~~ ✅
+- ~~A storyline (Docs/STORY.md)~~ ✅

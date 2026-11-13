@@ -35,7 +35,8 @@ namespace LLG
         public List<PlotState> plots = new List<PlotState>();   // your vegetable patch
         public int dungeonFloor;                                // highest dungeon floor beaten
         public List<SpellRank> spells = new List<SpellRank>();  // spells you know (K) and their rank
-        public string preparedSpell = "";                       // the spell the battle "Hechizo" move uses
+        public string preparedSpell = "";                       // (old saves) the spell battles used
+        public List<string> spellSlots = new List<string>();    // the action bar: 6 slots, cast with keys 1-6
         public List<EnchantEntry> enchants = new List<EnchantEntry>();   // runes on your weapons and armour
     }
 
@@ -103,6 +104,9 @@ namespace LLG
             while (Data.bag.Count < BagSize) Data.bag.Add(new BagSlot());
             int slots = Enum.GetValues(typeof(EquipSlot)).Length;
             while (Data.equipped.Count < slots) Data.equipped.Add("");
+            while (Data.spellSlots.Count < 6) Data.spellSlots.Add("");
+            foreach (var known in Data.spells)                     // spells learned before the bar existed go onto it
+                if (!Data.spellSlots.Contains(known.id)) Magic.PutOnBar(known.id);
             if (Data.items != null && Data.items.Count > 0)
             {
                 foreach (var id in Data.items) AddItem(id, 1, false);

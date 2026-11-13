@@ -42,6 +42,7 @@ namespace LLG
         public string kind;
         public int x, y;
         public bool room;
+        public int level;      // monsters only (0 = the kind's usual level)
     }
 
     [Serializable]

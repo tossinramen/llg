@@ -71,11 +71,35 @@ namespace LLG
             var entry = GameState.Data.spells.Find(x => x.id == s.id);
             if (entry == null) GameState.Data.spells.Add(new SpellRank { id = s.id, rank = 1 });
             else entry.rank++;
-            if (string.IsNullOrEmpty(GameState.Data.preparedSpell)) GameState.Data.preparedSpell = s.id;
+            if (rank == 0) PutOnBar(s.id);
             GameState.Say(rank == 0 ? "¡Aprendes " + s.es + "!" : s.es + " sube al rango " + (rank + 1) + ".");
             GameState.AddXp(SkillType.Magic, 20);
             GameState.Save();
             return true;
+        }
+
+        /// <summary>Puts a spell in the first empty slot of the action bar (if it isn't on it yet).</summary>
+        public static void PutOnBar(string spellId)
+        {
+            var slots = GameState.Data.spellSlots;
+            while (slots.Count < 6) slots.Add("");
+            if (slots.Contains(spellId)) return;
+            int free = slots.IndexOf("");
+            if (free >= 0) slots[free] = spellId;
+        }
+
+        /// <summary>Which slot a spell is in (0-5), or -1.</summary>
+        public static int SlotOf(string spellId) => GameState.Data.spellSlots.IndexOf(spellId);
+
+        /// <summary>Moves a spell to the next slot (1 -> 2 ... 6 -> 1), swapping with whatever is there.</summary>
+        public static void NextSlot(string spellId)
+        {
+            var slots = GameState.Data.spellSlots;
+            while (slots.Count < 6) slots.Add("");
+            int at = slots.IndexOf(spellId);
+            int to = at < 0 ? (slots.IndexOf("") >= 0 ? slots.IndexOf("") : 0) : (at + 1) % 6;
+            if (at >= 0) slots[at] = slots[to];
+            slots[to] = spellId;
         }
 
         // ---------------------------------------------------------------- enchantments

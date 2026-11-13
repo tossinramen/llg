@@ -232,6 +232,40 @@ namespace LLG
         }
     }
 
+    /// <summary>A boss standing in its hall: a big sprite that breathes, and turns grey-ish once beaten.</summary>
+    public class BossFigure : MonoBehaviour
+    {
+        SpriteRenderer r;
+        DungeonData.Floor floor;
+        Vector2 home;
+
+        public static void Spawn(Transform parent, DungeonData.Floor floor, Vector2 at)
+        {
+            var go = new GameObject("Boss " + floor.sprite);
+            go.transform.SetParent(parent, false);
+            var b = go.AddComponent<BossFigure>();
+            b.floor = floor;
+            b.home = at + new Vector2(0, 1.1f);
+            b.r = go.AddComponent<SpriteRenderer>();
+            b.r.sprite = UIFactory.LoadSprite("Art/Bosses/" + floor.sprite);
+            b.r.sortingOrder = Mathf.RoundToInt(-(at.y - 0.4f) * 100);
+            var shadow = new GameObject("Shadow").AddComponent<SpriteRenderer>();
+            shadow.transform.SetParent(go.transform, false);
+            shadow.transform.localPosition = new Vector3(0, -1.45f, 0);
+            shadow.transform.localScale = new Vector3(3.2f, 1.6f, 1);
+            shadow.sprite = UIFactory.LoadSprite("Art/UI/shadow");
+            shadow.sortingOrder = b.r.sortingOrder - 1;
+            go.transform.position = b.home;
+        }
+
+        void Update()
+        {
+            transform.position = home + new Vector2(0, Mathf.Sin(Time.time * 2 + floor.number) * 0.06f);
+            bool beaten = GameState.Data != null && GameState.Data.dungeonFloor >= floor.number;
+            r.color = beaten ? new Color(0.8f, 0.8f, 0.86f, 1) : Color.white;
+        }
+    }
+
     /// <summary>
     /// Inside La Ciudadela del Sol: the ten floors (terraces) you climb. Each floor has a boss, needs
     /// a character level, and opens once you beat the floor below it.
@@ -394,19 +428,40 @@ namespace LLG
             timerBar.sizeDelta = new Vector2(400, 6);
             var stats = GameState.Data.stats;
             Move("Atacar", -207, UIFactory.Red, () => Ask("attack"));
-            var prepared = Magic.GetSpell(GameState.Data.preparedSpell);
-            if (prepared != null && Magic.Rank(prepared.id) == 0) prepared = null;
-            Move(prepared == null ? "Hechizo" : prepared.es + " (" + prepared.mana + ")", -69, UIFactory.Purple, () =>
-            {
-                if (prepared == null) { Say("No sabes hechizos. Apréndelos en el libro (K)."); return; }
-                if (prepared.id == "meteor" && meteorWait > 0) { Say("El meteoro necesita " + meteorWait + " turnos más."); return; }
-                if (stats.mana < prepared.mana) { Say("No tienes maná."); return; }
-                AskSpell(prepared);
-            });
+            Move("Hechizo", -69, UIFactory.Purple, ShowSpells);
             Move("Defender", 69, UIFactory.Blue, () => Ask("defend"));
             Move("Comer", 207, UIFactory.Green, Eat);
             Move("Huir", 0, UIFactory.Faded, Flee, -122);
             Refresh();
+        }
+
+        /// <summary>The spells on your action bar, as buttons (with their number and mana cost).</summary>
+        void ShowSpells()
+        {
+            var stats = GameState.Data.stats;
+            var slots = GameState.Data.spellSlots;
+            var known = new List<(int slot, Magic.Spell spell)>();
+            for (int i = 0; i < slots.Count; i++)
+            {
+                var s = Magic.GetSpell(slots[i]);
+                if (s != null && Magic.Rank(s.id) > 0) known.Add((i, s));
+            }
+            if (known.Count == 0) { Say("No tienes hechizos en la barra. Apréndelos en el libro (K)."); return; }
+            Clear(moves);
+            prompt.text = "¿Qué hechizo?";
+            for (int k = 0; k < known.Count; k++)
+            {
+                var (slot, s) = known[k];
+                var pos = new Vector2(-184 + (k % 3) * 184, -88 - (k / 3) * 34);
+                UIFactory.Btn("Spell", moves, pos, new Vector2(176, 28), (slot + 1) + ". " + s.es + " (" + s.mana + ")", UIFactory.Purple, () =>
+                {
+                    if (phase != Phase.Choose) return;
+                    if (s.id == "meteor" && meteorWait > 0) { Say("El meteoro necesita " + meteorWait + " turnos más."); return; }
+                    if (stats.mana < s.mana) { Say("No tienes maná."); return; }
+                    AskSpell(s);
+                });
+            }
+            UIFactory.Btn("Back", moves, new Vector2(0, -88 - ((known.Count + 2) / 3) * 34), new Vector2(120, 26), "Volver", UIFactory.Faded, ShowMoves);
         }
 
         void Move(string label, float x, Color color, Action onClick, float y = -88)
@@ -612,7 +667,8 @@ namespace LLG
             // the grade, like a test: more right answers = better rewards
             float accuracy = asked > 0 ? correct / (float)asked : 1;
             string grade = accuracy >= 0.9f ? "Sobresaliente" : accuracy >= 0.75f ? "Notable" : accuracy >= 0.6f ? "Bien" : "Aprobado";
-            float bonus = 0.6f + accuracy * 0.6f;
+            bool again = GameState.Data.dungeonFloor >= floor.number;          // a rematch pays 40%
+            float bonus = (0.6f + accuracy * 0.6f) * (again ? 0.4f : 1f);
             int reward = Mathf.RoundToInt(floor.number * 60 * bonus);
             int gold = Mathf.RoundToInt(floor.number * 40 * bonus);
             if (GameState.Data.dungeonFloor < floor.number) GameState.Data.dungeonFloor = floor.number;

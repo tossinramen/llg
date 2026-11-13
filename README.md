@@ -4,6 +4,7 @@ A single-player, 16-bit style RPG for learning languages. Spanish first; Japanes
 
 ## Read these in order
 
+- **[Docs/STORY.md](Docs/STORY.md) – the storyline (acts, characters, the quests it will become)**
 - **[Docs/GAME_GUIDE.md](Docs/GAME_GUIDE.md) – everything in the game right now (buildings, people, items, weapons, skills, XP)**
 - **[Docs/PLANNER.md](Docs/PLANNER.md) – ideas and the to-do list (finished tasks get struck through)**
 
