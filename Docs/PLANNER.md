@@ -319,3 +319,7 @@ Finished tasks, struck through.
 - ~~Boss fights are unit tests: a set number of right answers to win, the boss only hits on mistakes, a grade at the end~~ ✅
 - ~~The Rune Tower moved to a clearing in the forest; its sign says "Runas"~~ ✅
 - ~~A much bigger world (176 × 104): the lake, wheat fields, hills with rocks to mine, a second bridge, roads, groves~~ ✅
+- ~~All text in a clearer bold font: Jersey 20 for everything, Jersey 10 for titles~~ ✅
+- ~~Boss questions come half from all your lessons at the floor's level (words both ways, sentence meaning, fill the gap), no repeats~~ ✅
+- ~~The music game and El intruso use your lessons too~~ ✅
+- ~~List of every activity and the lessons it uses (game guide)~~ ✅

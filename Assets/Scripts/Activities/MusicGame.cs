@@ -98,7 +98,14 @@ namespace LLG
                 return;
             }
             round++;
+            // half the verses are songs written for the game, half are sentences from your lessons (topic and level)
             var verse = Verses[Random.Range(0, Verses.Length)];
+            var lessons = Lessons.Sentences().FindAll(x => x.Tokens.Length >= 3 && x.Tokens.Length <= 8);
+            if (lessons.Count > 0 && Random.value < 0.5f)
+            {
+                var pick = lessons[Random.Range(0, lessons.Count)];
+                verse = (pick.text, pick.english);
+            }
             words = verse.es.Split(' ');
             english.Set("\"" + verse.en + "\"", "\"" + verse.en + "\"");
             info.Set("Toca las palabras en orden.  Verso " + round + "/" + Rounds, "Click the words in order.  Verse " + round + "/" + Rounds);

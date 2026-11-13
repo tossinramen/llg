@@ -218,6 +218,24 @@ Spoken audio for new words is made by `Tools/audio/generate_speech.py` (needs th
 | **Sleeping** | Bed in your house | Restores HP and mana, saves. | — |
 | **Rune fountain** | Plaza | Refills mana. | — |
 
+## Activities and the lessons they use
+
+Your **lesson choice** (L key: a topic and a level, Principiante → Experto) decides what most activities ask.
+"Todos los temas" = every topic. Harder levels give more XP (×1 … ×4).
+
+| Activity | Where | What you do | Lessons it uses |
+|---|---|---|---|
+| **Tiro con arco** (archery) | Archery range, Don Felipe | English word shown → shoot the target with the Spanish | **Words** of your topic and level |
+| **La pesca** (fishing) | Pond, river or lake | Strike, then build the Spanish sentence word by word | **Sentences** of your topic and level (rarer fish = longer ones) |
+| **El intruso** (odd one out) | Tomás the woodcutter, or the lessons window | Four words, one from a different topic | **Words** by topic, up to your level (not "Más palabras": it isn't a real topic) |
+| **La música** | Music school (Isabel or the piano) | Click a verse's words in order | Half songs written for the game, half **sentences** of your topic and level |
+| **Regar** (watering) | Your vegetable patch | A quick question per plot | **Words** of your topic and level |
+| **La mina** (mining) | The mine, the hills | Spell / article / fill the gap / pick the word | **Words** (spell, article, pick) and **sentences** (gap) of your topic and level |
+| **Jefes** (boss fights) | La Ciudadela del Sol | A unit test: 8–17 right answers to win | Half the floor's own topic (basic words, food & animals, ser/estar, replies, past, future, word order, translation, everything); half **all your words and sentences at the floor's level** (floors 1–2 = level 1 … floors 9–10 = level 5), not just your topic. No repeats in a fight |
+| **Leer** (reading) | Left-click anything | See the Spanish name | The names of things in the world (signs, buildings, animals, people) |
+| **Hechizos** (spells, K) | Anywhere / battles | Spell the spell's word letter by letter | The 7 spell words |
+| Shops, talking, the bag | Everywhere | — | Item names and villagers' lines (written for the game) |
+
 ## Fishing
 
 Buy a rod at **La tienda de pesca** (Marina, on the road down to the pond), then press E at the pond or the river.

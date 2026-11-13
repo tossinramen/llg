@@ -68,15 +68,16 @@ namespace LLG
             var pack = GameState.Pack;
 
             // pick a topic with at least three words at this level, then one word from another topic
-            var topics = new List<CategoryEntry>(pack.categories);
-            if (!string.IsNullOrEmpty(Lessons.Category)) topics = topics.FindAll(c => c.id == Lessons.Category);
+            // "Más palabras" is a mixed bag, not a real topic, so it can't have an odd one out
+            var topics = pack.categories.FindAll(c => c.id != "imported");
+            if (!string.IsNullOrEmpty(Lessons.Category) && Lessons.Category != "imported") topics = topics.FindAll(c => c.id == Lessons.Category);
             List<VocabEntry> inTopic = null;
             CategoryEntry topic = null;
             for (int tries = 0; tries < 20 && (inTopic == null || inTopic.Count < 3); tries++)
             {
                 topic = topics[Random.Range(0, topics.Count)];
                 inTopic = pack.words.FindAll(w => w.category == topic.id && w.tier <= Mathf.Max(2, Lessons.Level));
-                if (inTopic.Count < 3) topics = new List<CategoryEntry>(pack.categories);
+                if (inTopic.Count < 3) topics = pack.categories.FindAll(c => c.id != "imported");
             }
             var others = pack.words.FindAll(w => w.category != topic.id && w.tier <= Mathf.Max(2, Lessons.Level));
             Shuffle(inTopic);

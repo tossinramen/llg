@@ -101,8 +101,82 @@ namespace LLG
 
         static T Pick<T>(IList<T> list) => list[UnityEngine.Random.Range(0, list.Count)];
 
-        /// <summary>A question for this floor. Battles never show translations or hints.</summary>
+        static readonly HashSet<string> askedThisFight = new HashSet<string>();
+
+        /// <summary>Call when a fight starts, so no question repeats during it.</summary>
+        public static void NewFight() => askedThisFight.Clear();
+
+        /// <summary>A question for this floor: half on the floor's own topic, half from all your lessons at the
+        /// floor's level (words both ways, what a sentence means, fill the gap). No translations or hints.</summary>
         public static Question Ask(Floor floor)
+        {
+            for (int tries = 0; tries < 8; tries++)
+            {
+                var q = UnityEngine.Random.value < 0.5f ? FromLessons(floor) : FromTopic(floor);
+                if (q != null && askedThisFight.Add(q.prompt + "|" + q.options[q.answer])) return q;
+            }
+            return FromTopic(floor);
+        }
+
+        /// <summary>The level of the lessons a floor tests: floors 1-2 = 1 ... floors 9-10 = 5.</summary>
+        static int TierFor(Floor floor) => Mathf.Clamp((floor.number + 1) / 2, 1, 5);
+
+        static List<T> Sample<T>(List<T> list, int n)
+        {
+            var picked = new List<T>();
+            for (int k = 0; k < n * 4 && picked.Count < n && list.Count > 0; k++)
+            {
+                var x = list[UnityEngine.Random.Range(0, list.Count)];
+                if (!picked.Contains(x)) picked.Add(x);
+            }
+            return picked;
+        }
+
+        static Question FromLessons(Floor floor)
+        {
+            var pack = GameState.Pack;
+            int tier = TierFor(floor);
+            var words = pack.words.FindAll(w => w.tier == tier && w.word.Length <= 28 && w.english.Length <= 32);
+            var sentences = pack.sentences.FindAll(x => x.tier == tier && x.text.Length <= 60 && x.english.Length <= 60);
+            if (words.Count < 4 || sentences.Count < 4) return null;
+            switch (UnityEngine.Random.Range(0, 4))
+            {
+                case 0:                                   // English word -> Spanish
+                {
+                    var four = Sample(words, 4);
+                    return Make("\"" + four[0].english + "\"", four[0].word, four.GetRange(1, four.Count - 1).ConvertAll(w => w.word));
+                }
+                case 1:                                   // Spanish word -> English
+                {
+                    var four = Sample(words, 4);
+                    return Make("¿Qué significa \"" + four[0].word + "\"?", four[0].english, four.GetRange(1, four.Count - 1).ConvertAll(w => w.english));
+                }
+                case 2:                                   // what a sentence means
+                {
+                    var four = Sample(sentences, 4);
+                    return Make(four[0].text, four[0].english, four.GetRange(1, four.Count - 1).ConvertAll(x => x.english));
+                }
+                default:                                  // fill the gap
+                {
+                    var sentence = sentences[UnityEngine.Random.Range(0, sentences.Count)];
+                    var tokens = sentence.Tokens;
+                    if (tokens.Length < 3) return null;
+                    int gap = 0;
+                    for (int i = 1; i < tokens.Length; i++) if (tokens[i].Length > tokens[gap].Length) gap = i;
+                    string answer = tokens[gap];
+                    var shown = (string[])tokens.Clone();
+                    shown[gap] = "____";
+                    var wrong = new List<string>();
+                    foreach (var other in Sample(sentences, 12))
+                        foreach (var t in other.Tokens)
+                            if (wrong.Count < 3 && t != answer && t.Length > 2 && !wrong.Contains(t) && UnityEngine.Random.value < 0.3f) wrong.Add(t);
+                    if (wrong.Count < 3) return null;
+                    return Make(string.Join(" ", shown), answer, wrong);
+                }
+            }
+        }
+
+        static Question FromTopic(Floor floor)
         {
             var test = floor.test;
             if (test == Test.Everything) test = (Test)UnityEngine.Random.Range(0, (int)Test.Everything);
@@ -113,10 +187,8 @@ namespace LLG
                 case Test.FoodAnimals:
                 {
                     var pool = pack.words.FindAll(w => w.tier <= 2 && (test == Test.Words || w.category == "food" || w.category == "animal"));
-                    var right = Pick(pool);
-                    var wrong = pool.FindAll(w => w != right).ConvertAll(w => w.word);
-                    Shuffle(wrong);
-                    return Make("\"" + right.english + "\"", right.word, wrong);
+                    var four = Sample(pool, 4);
+                    return Make("\"" + four[0].english + "\"", four[0].word, four.GetRange(1, four.Count - 1).ConvertAll(w => w.word));
                 }
                 case Test.SerEstar: { var x = Pick(SerEstar); return Make(x.q, x.a, x.wrong); }
                 case Test.Past: { var x = Pick(Past); return Make(x.q, x.a, x.wrong); }
@@ -131,7 +203,7 @@ namespace LLG
                 }
                 case Test.Order:
                 {
-                    var s = Pick(pack.sentences.FindAll(p => p.Tokens.Length >= 4));
+                    var s = Pick(pack.sentences.FindAll(p => p.tier <= TierFor(floor) && p.Tokens.Length >= 4 && p.Tokens.Length <= 8));
                     var right = s.text;
                     var wrong = new List<string>();
                     for (int k = 0; k < 12 && wrong.Count < 3; k++)
@@ -146,10 +218,10 @@ namespace LLG
                 }
                 default:  // Translate: English sentence -> the Spanish one
                 {
-                    var s = Pick(pack.sentences);
-                    var wrong = pack.sentences.FindAll(p => p != s).ConvertAll(p => p.text);
-                    Shuffle(wrong);
-                    return Make("\"" + s.english + "\"", s.text, wrong);
+                    int tier = TierFor(floor);
+                    var four = Sample(pack.sentences.FindAll(p => p.tier == tier && p.text.Length <= 60), 4);
+                    if (four.Count < 4) four = Sample(pack.sentences, 4);
+                    return Make("\"" + four[0].english + "\"", four[0].text, four.GetRange(1, 3).ConvertAll(p => p.text));
                 }
             }
         }
@@ -299,6 +371,7 @@ namespace LLG
             needed = 7 + f.number;
             bossMax = bossHpNow = needed * PerAnswer;
             asked = correct = 0;
+            DungeonData.NewFight();
             defending = shielded = false;
             frozenTurns = meteorWait = 0;
             title.text = "Piso " + f.number + ": " + f.es;

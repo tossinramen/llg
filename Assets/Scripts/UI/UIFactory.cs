@@ -27,7 +27,7 @@ namespace LLG
         /// <summary>Old-world blackletter pixel font for titles. Use sizes 12, 24, 36, 48 (multiples of 12).</summary>
         public static Font TitleFont => titleFont ??= Resources.Load<Font>("Fonts/Jersey10-Regular") ?? Builtin;
         /// <summary>Readable 16-pixel font for everything else. Use sizes 16 or 32.</summary>
-        public static Font BodyFont => bodyFont ??= Resources.Load<Font>("Fonts/DotGothic16-Regular") ?? Builtin;
+        public static Font BodyFont => bodyFont ??= Resources.Load<Font>("Fonts/Jersey20-Regular") ?? Builtin;
 
         public static Sprite LoadSprite(string path)
         {
@@ -122,7 +122,6 @@ namespace LLG
             label.resizeTextMaxSize = fontSize;        // FitText's normal (largest) size
             label.raycastTarget = false;
             label.gameObject.AddComponent<FitText>();
-            if (!title) label.gameObject.AddComponent<BoldText>();     // thicker strokes: easier to read
             return label;
         }
 
