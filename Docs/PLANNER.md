@@ -312,3 +312,10 @@ Finished tasks, struck through.
 - ~~590 words in 21 topics and 171 sentences (was 152 / 33)~~ ✅
 - ~~Deck importer for Anki (.apkg) and spreadsheets (.txt/.csv)~~ ✅
 - ~~Much bigger word pack: 21,077 words and 48,640 sentences from 17 Anki decks, cleaned, de-duplicated and sorted into levels~~ ✅
+- ~~Re-levelled every word and sentence with one rule (frequency for words, hardest word + length for sentences)~~ ✅
+- ~~A cute chibi puppy instead of the old dog~~ ✅
+- ~~The bench stands upright (backrest on posts, ground visible under it, seat sticking out)~~ ✅
+- ~~Easier-to-read text: bold Jersey 10 for titles and boss names (was blackletter), thicker body text~~ ✅
+- ~~Boss fights are unit tests: a set number of right answers to win, the boss only hits on mistakes, a grade at the end~~ ✅
+- ~~The Rune Tower moved to a clearing in the forest; its sign says "Runas"~~ ✅
+- ~~A much bigger world (176 × 104): the lake, wheat fields, hills with rocks to mine, a second bridge, roads, groves~~ ✅

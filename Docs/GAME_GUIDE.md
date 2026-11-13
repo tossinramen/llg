@@ -125,11 +125,20 @@ with no repeats (repeats are spotted ignoring capitals and punctuation, also bet
 
 | Level | Words | Sentences |
 |---|---|---|
-| 1 Principiante | 306 | 2,138 |
-| 2 Básico | 979 | 2,716 |
-| 3 Intermedio | 3,709 | 6,351 |
-| 4 Avanzado | 8,758 | 13,901 |
-| 5 Experto | 7,325 | 23,534 |
+| 1 Principiante | 1,172 | 5,850 |
+| 2 Básico | 2,407 | 8,766 |
+| 3 Intermedio | 3,647 | 11,677 |
+| 4 Avanzado | 5,954 | 11,662 |
+| 5 Experto | 7,897 | 10,685 |
+
+**How the levels are decided (one rule for everything):**
+- **Words** by how common they are: the 10000 Spanish Vocabulary deck is in frequency order, so its order is
+  each word's rank; words not in it are ranked by how often they appear across all 48k sentences. Ranks 1–500
+  = level 1, to 1,500 = 2, to 3,500 = 3, to 7,000 = 4, the rest = 5. A phrase is as hard as its hardest word.
+- **Sentences** by their hardest word (names ignored), a little harder when long; then the easiest 12% are
+  level 1, the next 18% level 2, 24% level 3, 24% level 4, 22% level 5. A short sentence of easy words is level 1
+  whichever deck it came from.
+- The hand-written lists (`build_spanish_pack.py`, `words_extra.txt`) keep the levels they were given.
 
 Where they come from (all as plain text in `Tools/data/`; the Anki files themselves are not kept):
 
@@ -157,7 +166,8 @@ deck, then checked card by card); cards whose "English" was really Spanish skipp
 decks that wrote the English twice cut to one translation. Left out: the **FSI Basic Course** (its English doesn't
 match), the **C1/C2 Idioms** deck (explanations in Spanish only), and the conjugation drills in Beginner to
 Advanced (they could become a verb-forms activity later). Words whose English meaning matches a topic go into it;
-the rest are in **Más palabras**. `Tools/data/convert_decks.py` re-does all of this if the decks are put back in
+the rest are in **Más palabras** (a second pass also looks at the last word of the English, e.g. "cold tap"
+→ home). `Tools/data/convert_decks.py` re-does all of this if the decks are put back in
 the project folder; run `python Tools/data/build_spanish_pack.py` after editing any list.
 
 **Adding more words: import a flashcard deck** (Anki or a spreadsheet):
@@ -276,6 +286,17 @@ chance of a double find. Each rock also pays 2 + 2 per word in gold and 1 + rock
 
 ## World & places
 
+The world is **176 × 104 tiles** (it was 112 × 72). Besides the village and the forest:
+
+| Place | Where | What's there |
+|---|---|---|
+| **El lago** (the lake) | East, past the forest (road east from the forest path) | A big lake you can fish in (pond fish), meadows and groves |
+| **Los campos** (wheat fields) | South of the village, by the long south road | Golden wheat, olive groves, wild dogs |
+| **Las colinas** (the hills) | South-east | Rocks and ore veins you can mine in the open (needs a pickaxe), wild dogs |
+| **El puente del sur** (south bridge) | Where the south road crosses the river | Joins the village side to the east lands |
+| Roads | A loop: forest path south → south road west → the village; and east to the lake and down the east side | |
+
+
 The world is 112 × 72 tiles, plus 7 interiors.
 
 | Area | What's there |
@@ -308,7 +329,7 @@ The world is 112 × 72 tiles, plus 7 interiors.
 | La mina (the mine) | Yes (a cave) | North meadow, up the road from the bakery. Don Ernesto outside sells pickaxes and the miner's helmet; inside are 7 rocks to mine and a cart |
 | Tienda de pesca (fishing shop) | Yes | Marina; rods, bait, the net, the fishing hat and fresh fish (by the road down to the pond) |
 | Escuela de música (music school) | Yes | Profesora Isabel and a piano: the music game (north street, east end) |
-| La Torre Rúnica (Rune Tower) | Yes | Round stone tower with glowing rune windows (south street, east end). Doña Runa and **el altar rúnico**: enchant your weapons and armour |
+| La Torre Rúnica (Rune Tower) | Yes | Round stone tower with glowing rune windows and a "Runas" sign, in its own clearing deep in the forest (take the forest path south from the bridge, then the little path east). Doña Runa and **el altar rúnico**: enchant your weapons and armour |
 | Tu casa (your house) | Yes | Bed (sleep), fireplace, table, shelf, rug |
 | Iglesia (church) | No | "Closed today" |
 | Ayuntamiento (town hall) | No | "Closed, come back tomorrow" |
@@ -843,15 +864,22 @@ Levels keep going after 100 (the formula is 80 × level^1.4).
 
 A Machu Picchu-style stone citadel at the end of the forest path (east, across the bridge).
 Press E at the doorway to see the ten floors. Each floor needs a character level and the floor below
-it beaten. Battles are turn-based: pick a move, then answer the Spanish question within 12 seconds
-(keys 1–4 work). **No translations or hints.** Wrong or late = the move fails. Then the boss strikes
-(armour softens it). Lose = 10% of your gold and you leave with half HP.
+it beaten. **A boss fight is a unit test on that floor's topic:** the boss falls after a set number of right
+answers (floor 1: 8, then one more each floor, floor 10: 17), whatever your level or weapon, so it can't be
+one-shot. Pick a move, then answer the Spanish question within 12 seconds (keys 1–4 work). **No translations
+or hints.** The boss only strikes back when you get one wrong or run out of time: each hit takes 12% + 1% per
+floor of your max HP (13%–22%; armour softens it by up to 40%), so about 5–8 mistakes and you're out. Lose =
+10% of your gold and you leave with half HP. Under the boss: "Faltan 5 · 3/4 bien" = right answers still needed,
+and your score so far.
+
+**Your grade at the end:** Sobresaliente (90%+ right), Notable (75%+), Bien (60%+), Aprobado. Better grades pay
+more: rewards × (0.6 + 0.6 × your accuracy).
 
 | Move | Effect |
 |---|---|
-| Atacar | (Weapon damage + rune bonus) × 2 + level ÷ 2 + a little luck. Vampiro heals, Hielo may freeze the boss |
+| Atacar | A right answer = one bar off the boss. A strong or enchanted weapon gives a chance (up to 25%) of a critical: two bars. Vampiro heals, Hielo may freeze the boss |
 | Hechizo | Your prepared spell (★ in the spellbook): spell its word letter by letter before the timer ends. A wrong letter fizzles |
-| Defender | Halves the boss's next hit, +3 HP |
+| Defender | A right answer heals 8% of your HP and halves the next hit |
 | Comer | Eat your best food (no question): heals half its value |
 | Huir | Leave the battle |
 

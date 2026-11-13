@@ -41,9 +41,14 @@ def tower():
     d.ellipse([30, 110, 50, 128], fill=(40, 30, 50))
     d.line([(40, 112), (40, 144)], fill=(70, 56, 80))
     d.point((46, 132), fill=(232, 190, 80))
-    d.rectangle([26, 104, 54, 109], fill=(246, 244, 236), outline=(40, 70, 140))   # little tile sign
-    for x in range(30, 52, 3):
-        d.point((x, 106), fill=(30, 56, 120))
+    import os as _os                                                              # its sign, like the shops'
+    from PIL import ImageFont
+    font = ImageFont.truetype(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "Assets", "Resources", "Fonts", "DotGothic16-Regular.ttf"), 16)
+    d.rectangle([16, 95, 64, 113], fill=(246, 244, 236), outline=(40, 70, 140))
+    d.fontmode = "1"
+    tw = d.textlength("Runas", font=font)
+    for dx in (0, 1):                                                             # drawn twice: bold
+        d.text((40 - tw / 2 + dx, 95), "Runas", font=font, fill=(30, 56, 120))
     save(img, "World/Objects", "tower")
 
 

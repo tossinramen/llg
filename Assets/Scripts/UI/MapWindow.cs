@@ -10,13 +10,15 @@ namespace LLG
     /// </summary>
     public class MapWindow : GameWindow
     {
-        const float Scale = 3.7f;      // canvas units per tile
+        float Scale = 3.7f;            // canvas units per tile (worked out so the whole world fits the window)
         static readonly (string es, string en, int x, int y)[] Regions =
         {
             ("La plaza", "Town Square", 46, 31), ("La granja", "Farm", 18, 33), ("El bosque", "Forest", 97, 44),
             ("El estanque", "Pond", 58, 57), ("El río", "River", 80, 62), ("El campo de tiro", "Archery Range", 66, 3),
             ("El molino", "Windmill", 8, 5), ("La viña", "Vineyard", 71, 58), ("El olivar", "Olive Grove", 18, 60),
             ("El puente", "Bridge", 81, 26), ("La Ciudadela del Sol", "Citadel of the Sun", 100, 10),
+            ("El lago", "Lake", 150, 33), ("Los campos", "Wheat Fields", 46, 83), ("Las colinas", "Hills", 151, 80),
+            ("El puente del sur", "South Bridge", 81, 95),
         };
         // label offset from the door, in tiles: neighbours alternate above / below so names don't overlap
         static readonly (char door, string es, string en, int dy)[] Buildings =
@@ -41,6 +43,7 @@ namespace LLG
         {
             player = playerTransform;
             playerSprite = sprite;
+            Scale = Mathf.Min(600f / width, 266f / height);
             size = new Vector2(width, height) * Scale;
             CreateWindow(canvas, owner, new Vector2(0, -2), new Vector2(size.x + 40, size.y + 92), "Mapa de Valdeluz", "Map of Valdeluz");
             tooltip = UIFactory.LLabel("Tooltip", W, new Vector2(40, -size.y / 2 - 22), new Vector2(size.x - 120, 16),
@@ -72,7 +75,7 @@ namespace LLG
         /// down until it doesn't. Hovering it shows the translation at the bottom of the window.</summary>
         void Place(Vector2Int tile, string es, string en, Color color)
         {
-            var plateSize = new Vector2(Mathf.Max(es.Length, en.Length) * 8 + 14, 20);     // 16 px text: sharp, never shrunk
+            var plateSize = new Vector2(Mathf.Max(es.Length, en.Length) * 5 + 10, 13);     // the bold title font at its own pixel size (10): sharp and compact
             // keep every name inside the map
             var at = TileToMap(tile);
             at.x = Mathf.Clamp(at.x, -size.x / 2 + plateSize.x / 2 + 2, size.x / 2 - plateSize.x / 2 - 2);
@@ -96,8 +99,10 @@ namespace LLG
             var hover = plate.gameObject.AddComponent<HoverHandle>();
             hover.Entered += () => tooltip.Set(es + "  =  " + en, en + "  =  " + es);
             hover.Exited += () => tooltip.Set("Pasa el ratón por un nombre para traducirlo.", "Point at a name to translate it.");
-            var label = UIFactory.LLabel("Label", plate.transform, new Vector2(0, 0), plateSize - new Vector2(6, 2), es, en, color);
-            label.resizeTextMaxSize = 16;
+            var label = UIFactory.LLabel("Label", plate.transform, new Vector2(0, 1), plateSize - new Vector2(4, 0), es, en, color);
+            label.font = UIFactory.TitleFont;
+            label.fontSize = 10;
+            label.resizeTextMaxSize = 10;
         }
 
         public void Toggle()

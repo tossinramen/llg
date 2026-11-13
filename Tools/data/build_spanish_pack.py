@@ -233,7 +233,7 @@ def extra_lines():
             for line in f:
                 line = line.strip()
                 if line and not line.startswith("#"):
-                    yield line
+                    yield line, os.path.basename(path)
 
 
 def slug(text):
@@ -262,6 +262,103 @@ def tidy_pair(kind, es, en):
     return es, en
 
 
+# ---------------------------------------------------------------- one rule for every level
+MANUAL = ("words_extra.txt",)                      # hand-made lists keep the levels they were given
+FREQ_LIST = "10000_Spanish_Vocabulary.txt"         # a frequency-ordered deck: its order is the word's rank
+WORD_LEVELS = (500, 1500, 3500, 7000)              # rank below each = level 1, 2, 3, 4; the rest = 5
+SENTENCE_SHARE = (0.12, 0.18, 0.24, 0.24, 0.22)    # how the sentences are shared out over levels 1-5
+SMALL = {"del", "con", "por", "para", "que", "una", "los", "las", "uno", "sin", "sus", "mis", "tus", "nos", "les", "muy", "mas", "más"}
+ARTICLES = ("el ", "la ", "los ", "las ", "un ", "una ")
+
+
+def head(word):
+    """The main word of an entry: "la casa" -> "casa", "dar su brazo a torcer" -> "brazo"."""
+    w = word.lower().strip("¿¡?!.,; ")
+    for a in ARTICLES:
+        if w.startswith(a):
+            w = w[len(a):]
+    parts = [t for t in re.findall(r"[a-záéíóúñü]+", w) if len(t) > 2] or re.findall(r"[a-záéíóúñü]+", w) or [w]
+    return max(parts, key=len)
+
+
+def level_of(rank, steps):
+    for lv, top in enumerate(steps, start=1):
+        if rank < top:
+            return lv
+    return 5
+
+
+def relevel(words, sentences):
+    """Words: by how common they are (the frequency deck's order, otherwise how often the word turns up in
+    all the sentences). Sentences: the level of their hardest word, one more if long (9+ words), two if
+    very long (12+). Built-in and hand-made entries keep their levels. Also sorts more words into topics."""
+    from collections import Counter
+    from import_deck import topic_for
+    tokens = Counter()
+    for x in sentences:
+        tokens.update(t for t in re.findall(r"[a-záéíóúñü]+", x["text"].lower()))
+    token_rank = {t: i for i, (t, _) in enumerate(tokens.most_common())}
+    freq_rank = {}
+    for w in words:
+        if w.get("_src") == FREQ_LIST:
+            freq_rank.setdefault(head(w["word"]), len(freq_rank))
+    for w in words:
+        src = w.pop("_src", None)
+        w.pop("_order", None)
+        if src is None or src in MANUAL:
+            continue
+        def rank_of(t):
+            if t in freq_rank:
+                return freq_rank[t]
+            if t in token_rank and tokens[t] >= 3:
+                return int(token_rank[t] * 1.6)        # word forms in sentences are a bit more spread out than headwords
+            return 20000
+        whole = w["word"].lower().strip("¿¡?!.,; ")
+        for art in ARTICLES:
+            if whole.startswith(art):
+                whole = whole[len(art):]
+        parts = [t for t in re.findall(r"[a-záéíóúñü]+", whole) if len(t) > 2 and t not in SMALL] or [head(w["word"])]
+        if whole in freq_rank:                         # the whole entry is ranked (e.g. "a pesar de")
+            rank = freq_rank[whole]
+        else:                                          # a phrase is as hard as its hardest word
+            rank = max(rank_of(t) for t in parts)
+        w["tier"] = level_of(rank, WORD_LEVELS)
+        if w["category"] == "imported":                # second pass at topics: the English head noun
+            en = re.sub(r"\(.*?\)", "", w["english"].lower()).strip()
+            last = en.split()[-1] if en.split() else ""
+            guess = topic_for(w["word"], en)
+            if guess == "imported" and last:
+                guess = topic_for(w["word"], last)
+            w["category"] = guess
+    # sentences: difficulty = the rank of the hardest word (names ignored), a little harder when long;
+    # then the easiest SENTENCE_SHARE[0] are level 1, and so on, so the levels climb smoothly
+    scored = []
+    for x in sentences:
+        src = x.pop("_src", None)
+        if src is None or src in MANUAL:
+            continue
+        raw = x["text"].split()
+        toks = []
+        for i, t in enumerate(raw):
+            clean_t = re.sub(r"[^a-záéíóúñüA-ZÁÉÍÓÚÑÜ]", "", t)
+            if not clean_t or (i > 0 and clean_t[0].isupper()):
+                continue                               # names like Tom, Madrid
+            toks.append(clean_t.lower())
+        def tr(t):                                     # the frequency list when it knows the word; otherwise counts in the sentences
+            if t in freq_rank:
+                return freq_rank[t]
+            return token_rank[t] * 2 if tokens.get(t, 0) >= 3 else 99999
+        hardest = max((tr(t) for t in toks), default=0)
+        scored.append((hardest * (1 + 0.07 * max(0, len(raw) - 5)), x))
+    scored.sort(key=lambda p: p[0])
+    bounds, acc = [], 0
+    for share in SENTENCE_SHARE:
+        acc += share
+        bounds.append(acc * len(scored))
+    for i, (_, x) in enumerate(scored):
+        x["tier"] = next(lv for lv, b in enumerate(bounds, start=1) if i < b)
+
+
 def main():
     words, seen = [], set()
     for line in WORDS.strip().splitlines():
@@ -285,7 +382,7 @@ def main():
 
     known_words = {key(w["word"]) for w in words}
     known_sentences = {key(x["text"]) for x in sentences}
-    for line in extra_lines():
+    for line, source in extra_lines():
         p = line.split("|")
         if len(p) < 5:
             continue
@@ -299,10 +396,13 @@ def main():
             while wid in seen:
                 wid += "_2"
             seen.add(wid)
-            words.append({"id": wid, "word": es, "english": en, "category": cat, "tier": tier, "icon": "", "hunger": 0})
+            words.append({"id": wid, "word": es, "english": en, "category": cat, "tier": tier, "icon": "", "hunger": 0,
+                          "_src": source, "_order": len(words)})
         elif kind == "S" and key(es) not in known_sentences:
             known_sentences.add(key(es))
-            sentences.append({"id": "s%04d" % (len(sentences) + 1), "text": es, "english": en, "tier": tier, "category": cat})
+            sentences.append({"id": "s%04d" % (len(sentences) + 1), "text": es, "english": en, "tier": tier, "category": cat,
+                              "_src": source})
+    relevel(words, sentences)
     pack = {"language": "es", "categories": [{"id": c, "name": n, "english": e} for c, n, e in CATEGORIES],
             "words": words, "sentences": sentences}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

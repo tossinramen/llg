@@ -307,6 +307,8 @@ namespace LLG
             villagers[marker] = new Villager { Name = villagerName, Role = role, RoleEnglish = roleEnglish, Lines = new List<Line>(lines), Sprite = sprite };
         }
 
+        int VillageWidth => layout.areas != null && layout.areas.Length > 0 ? layout.areas[0].w : 112;
+
         /// <summary>Icons on the minimap: shops, the pond, the archery range, the fountain, wolves, villagers.</summary>
         List<(Vector2Int, string)> MapPlaces()
         {
@@ -321,7 +323,7 @@ namespace LLG
             foreach (var kv in icons)
             {
                 var found = Map.Find(kv.Key);
-                if (found.Count > 0 && found[0].x < 112) list.Add((found[0], kv.Value));
+                if (found.Count > 0 && found[0].x < VillageWidth) list.Add((found[0], kv.Value));
             }
             var fountain = Map.Find('R');
             if (fountain.Count > 0) list.Add((fountain[0] + new Vector2Int(1, 0), "Art/UI/mana_drop"));
@@ -335,7 +337,7 @@ namespace LLG
             foreach (var marker in villagers.Keys)
             {
                 var t = Map.Find(marker)[0];
-                if (t.x < 112) list.Add((t, "Art/UI/map_dot"));
+                if (t.x < VillageWidth) list.Add((t, "Art/UI/map_dot"));
             }
             return list;
         }

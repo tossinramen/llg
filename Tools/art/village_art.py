@@ -670,37 +670,45 @@ def barrels():
 
 
 def bench():
-    """A park bench seen from the front: a slatted backrest, a slatted seat, cast-iron legs and armrests."""
-    img = Image.new("RGBA", (36, 28), (0, 0, 0, 0))
-    shadow_ellipse(img, 18, 25, 17, 3)
+    """A park bench standing up, seen from the front: an upright slatted backrest on posts that go down to
+    the ground (you can see the ground through the gap under it), a thin seat with its front edge, legs,
+    armrests, and the seat's shadow on the ground."""
+    W, H = 36, 32
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    iron, iron_l = rgba((42, 38, 46)), rgba((92, 86, 100))
-    wood, wood_l, wood_d = rgba((170, 116, 70)), rgba((206, 156, 102)), rgba((104, 68, 42))
-    # back posts and a middle support behind the slats
-    for x in (4, 17, 30):
-        d.rectangle([x, 2, x + 1, 17], fill=iron)
-    # three backrest slats with a lit top edge
+    d.ellipse([1, 25, 35, 31], fill=(10, 8, 6, 80))                           # shadow on the ground
+    d.rectangle([3, 22, 33, 26], fill=(10, 8, 6, 60))                          # darker under the seat
+    iron, iron_l, iron_d = rgba((44, 40, 48)), rgba((96, 90, 104)), rgba((26, 24, 30))
+    wood, wood_l, wood_d = rgba((178, 122, 74)), rgba((214, 164, 110)), rgba((110, 72, 44))
+    # back posts: from the top of the backrest right down to the ground
+    for x in (4, 30):
+        d.rectangle([x, 1, x + 1, 27], fill=iron)
+        d.point((x, 1), fill=iron_l)
+    # the backrest: three upright-facing slats with a lit top edge and a shaded bottom edge
     for y in (2, 6, 10):
-        d.rectangle([2, y, 33, y + 2], fill=wood, outline=wood_d)
-        d.line([3, y, 32, y], fill=wood_l)
-    # the seat: deeper slats seen from a little above, then the front edge
-    d.polygon([(1, 14), (34, 14), (35, 19), (0, 19)], fill=wood)
-    for y in (16, 18):
-        d.line([1, y, 34, y], fill=wood_d)
-    d.line([1, 14, 34, 14], fill=wood_l)
-    d.rectangle([0, 19, 35, 20], fill=wood_d)
-    # armrests: a curl of iron at each end
+        d.rectangle([2, y, 33, y + 2], fill=wood)
+        d.line([2, y, 33, y], fill=wood_l)
+        d.line([2, y + 2, 33, y + 2], fill=wood_d)
+    # gap under the backrest (the ground shows through): nothing drawn from y 13 to 16
+    # the seat: a narrow top surface and a darker front edge, so it reads as a shelf sticking out
+    d.rectangle([1, 17, 34, 18], fill=wood_l)
+    d.rectangle([1, 19, 34, 20], fill=wood)
+    d.line([1, 21, 34, 21], fill=wood_d)
+    for x in range(6, 33, 7):
+        d.line([x, 17, x, 18], fill=wood)
+    # armrests: iron scrolls from the backrest down to the seat at each end
     for x, step in ((1, 1), (34, -1)):
-        d.line([x, 9, x + 3 * step, 9], fill=iron_l)
-        d.line([x, 9, x, 13], fill=iron)
-        d.point((x + 3 * step, 10), fill=iron)
-    # front legs with little curled feet
+        d.line([x, 9, x, 16], fill=iron)
+        d.line([x, 9, x + 2 * step, 9], fill=iron_l)
+        d.point((x + 2 * step, 10), fill=iron)
+    # front legs: down from the seat to the ground, with little feet
     for x, foot in ((3, -1), (17, 0), (31, 1)):
-        d.rectangle([x, 20, x + 1, 25], fill=iron)
+        d.rectangle([x, 22, x + 1, 27], fill=iron)
+        d.point((x, 22), fill=iron_l)
+        d.line([x, 28, x + 1, 28], fill=iron_d)
         if foot:
-            d.point((x + (0 if foot < 0 else 1) + foot, 25), fill=iron)
-        d.point((x, 21), fill=iron_l)
-    return img, (18, 25)
+            d.point((x + (0 if foot < 0 else 1) + foot, 28), fill=iron_d)
+    return img, (18, 28)
 
 
 def fruit_stall():

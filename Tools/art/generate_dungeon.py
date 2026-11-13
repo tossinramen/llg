@@ -181,26 +181,26 @@ def pets():
         hop.paste(img, (0, -1))
         save(hop, "Icons", name + "_hop")
 
-    dog = [
+    dog = [                                  # a chibi puppy: floppy ears, shiny eyes, tongue out, waggy tail
         "................",
-        ".........dd.....",
-        "........dbbbb...",
-        "........dbbbbbb.",
-        "........dbebbbbn",
-        "........ddbbmmmm",
-        "t.......ddbbmmm.",
-        "tt.......bbbb...",
-        ".tbbbbbbbbbbb...",
-        "..bbbbbbbbbbbl..",
-        "..bbbbbbbbbbll..",
-        "..bbbbbbbbbbl...",
-        "..bb.bb...bb.bb.",
-        "..bb.bb...bb.bb.",
-        "..ff.ff...ff.ff.",
+        "................",
+        "................",
+        "....oooo........",
+        "..oooooooo......",
+        ".EoWkooWkoE.....",
+        ".EokkookkoE.....",
+        ".EBccnnccBE.....",
+        ".EoocpccoE...tt.",
+        "...oooooo...t...",
+        "...oooooooooo...",
+        "...oooooodooo...",
+        "...cooooddooo...",
+        "...oo.oo.oo.oo..",
+        "...cc.cc.cc.cc..",
         "................",
     ]
-    draw(dog, {"b": (176, 120, 72), "d": (110, 70, 42), "e": (20, 16, 16), "n": (30, 20, 20), "m": (226, 190, 146),
-               "t": (176, 120, 72), "l": (214, 170, 120), "f": (120, 80, 50)}, "pet_dog")
+    draw(dog, {"o": (214, 150, 84), "d": (170, 104, 56), "E": (128, 78, 46), "c": (250, 232, 200), "k": (40, 28, 30),
+               "W": (255, 255, 255), "n": (40, 28, 30), "p": (240, 110, 130), "B": (246, 160, 150), "t": (214, 150, 84)}, "pet_dog")
     cat = [                                  # a chibi orange tabby: big head, shiny eyes, blush, curly tail
         "................",
         ".o.......o......",

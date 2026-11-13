@@ -30,8 +30,8 @@ from village_art import (T, DIRT, DRY, GRASS, STONE, WATER, darker, fractal, lig
                          shadow_ellipse, tones)
 from generate_art import ART, ROOT
 
-VW, VH = 112, 72                 # the village area in tiles
-GW, GH = 162, 72                 # the whole grid (village + rooms; the mine cave is in a third column)
+VW, VH = 176, 104                # the whole outdoor world in tiles (the old village was 112 x 72)
+GW, GH = VW + 50, VH            # the whole grid (the world + the rooms in three columns to its right)
 PW, PH = VW * T, VH * T
 rng = np.random.default_rng(21)
 
@@ -74,7 +74,10 @@ for door in "BCSWMHDI^<>])'ÞŒŬ":
 # ---------------------------------------------------------------- the village layout (tiles)
 PLAZA = (36, 20, 56, 34)
 ROADS = [(6, 18, 74, 19), (6, 27, 35, 28), (57, 27, 79, 28), (10, 38, 62, 39), (34, 18, 35, 39), (57, 18, 58, 39),
-         (66, 8, 67, 17), (8, 10, 9, 17), (34, 8, 35, 17), (52, 40, 53, 46), (84, 27, 100, 28), (100, 16, 101, 40), (9, 20, 10, 27)]
+         (66, 8, 67, 17), (8, 10, 9, 17), (34, 8, 35, 17),
+         # the new lands: south of the forest path, the road east to the lake, the long road south and the fields
+         (100, 40, 101, 92), (101, 27, 168, 28), (168, 27, 169, 92), (100, 91, 169, 92), (20, 39, 21, 92), (20, 91, 100, 92),
+         (101, 46, 110, 47), (52, 46, 53, 47), (130, 60, 168, 61), (52, 40, 53, 46), (84, 27, 100, 28), (100, 16, 101, 40), (9, 20, 10, 27)]
 BUILDINGS = [
     # key, letter, door, x0, y0, width, depth, kind, sign, extras
     ("bakery", "k", "B", 26, 16, 6, 2, "shop", "Panadería", {"shutters": (78, 112, 84), "awning": (178, 64, 52), "pots": True}),
@@ -99,10 +102,14 @@ TERRACE = (42, 23, 50, 29)         # the raised square round the fountain (top s
 TERRACE_STAIRS = (26, 27)          # rows of the stairs that come down at the west and east ends
 RANGE = (62, 4, 71, 12)
 POND = (58.0, 52.0, 7.0, 5.0)
+LAKE = (150.0, 44.0, 12.0, 8.0)    # El lago, out east past the forest
+FOREST = (84, 0, 127, 76)          # the dark pine forest (between the river and the open lands)
+FIELDS = (26, 78, 66, 88)          # wheat fields in the south
+HILLS = (132, 64, 170, 100)        # rocky hills in the south-east
 FARM = (12, 30, 24, 36)            # crop field (inside the fence)
 YARD = (27, 31, 31, 36)            # chicken yard
 RIVER_X = 80.5
-BRIDGE_ROWS = (27, 28)
+BRIDGE_ROWS = (27, 28, 91, 92)            # the town bridge and the new bridge to the south road
 PEOPLE = {"1": (24, 20), "3": (64, 20), "4": (66, 9), "5": (49, 28), "%": (76, 29), "&": (9, 29), "P": (46, 31), "ĥ": (38, 9)}
 
 # rooms: key, Spanish name, English name, shop id, keeper marker, grid position (x0, y0); size 14 x 10
@@ -122,6 +129,7 @@ ROOMS = [
     ("mine", "La mina", "The Mine", "", "", (146, 1)),
 ]
 RW, RH = 14, 10
+ROOMS = [(k, es, en, shop, keeper, (x + VW - 112, y)) for k, es, en, shop, keeper, (x, y) in ROOMS]     # rooms sit right of the world
 
 
 def tile_mask(rects, w=PW, h=PH):
@@ -141,7 +149,8 @@ def make_ground(grid):
     dry = fractal(PW, PH, 9, (64, 20, 6)) > 0.72
     img[dry] = tones(np.clip(fractal(PW, PH, 4) * 1.2 - 0.2, 0, 1), DRY)[dry]
     # the forest floor beyond the river is darker and mossier
-    forest = xx > (RIVER_X + 3) * T
+    edge = (noise(PW, PH, 30, 41) - 0.5) * 3 * T
+    forest = (xx > (RIVER_X + 3) * T) & (xx < FOREST[2] * T + edge) & (yy < FOREST[3] * T + edge)
     dark = [(44, 70, 44), (56, 84, 50), (70, 98, 56), (86, 112, 62), (104, 126, 70)]
     img[forest] = tones(np.clip((n - 0.3) * 1.4 + 0.05, 0, 1), dark)[forest]
 
@@ -163,6 +172,9 @@ def make_ground(grid):
     # pond
     cx, cy, rx, ry = POND[0] * T, POND[1] * T, POND[2] * T, POND[3] * T
     rad = np.hypot((xx - cx) / rx, (yy - cy) / ry) + (noise(PW, PH, 24, 5) - 0.5) * 0.35
+    lx, ly, lrx, lry = LAKE[0] * T, LAKE[1] * T, LAKE[2] * T, LAKE[3] * T
+    lrad = np.hypot((xx - lx) / lrx, (yy - ly) / lry) + (noise(PW, PH, 30, 51) - 0.5) * 0.3
+    rad = np.minimum(rad, lrad)
     water = rad < 1.0
     pbank = (rad >= 1.0) & (rad < 1.1)
     img[pbank] = tones(np.clip(noise(PW, PH, 3, 8), 0, 1), [(92, 80, 58), (112, 98, 70), (134, 120, 88)])[pbank]
@@ -220,7 +232,7 @@ def make_ground(grid):
             d.rectangle([X, Y, X + 15, Y + 15], fill=(150, 108, 70))
             for k in range(0, 16, 4):
                 d.line([X + k, Y, X + k, Y + 15], fill=(112, 78, 52))
-            if ty == BRIDGE_ROWS[0]:
+            if ty in (27, 91):
                 d.line([X, Y, X + 15, Y], fill=(86, 60, 40))
                 d.rectangle([X, Y - 2, X + 15, Y - 1], fill=(120, 84, 54))
             else:
@@ -229,12 +241,12 @@ def make_ground(grid):
 
     # tufts and flowers on grass
     grass_ok = ~(road | plaza | water | pbank | river | bank)
-    for _ in range(26000):
+    for _ in range(int(26000 * VW * VH / (112 * 72))):
         x, y = int(rng.integers(1, PW - 2)), int(rng.integers(2, PH - 1))
         if not grass_ok[y, x]:
             continue
         r = rng.random()
-        if x > (RIVER_X + 3) * T:
+        if forest[y, x]:
             if r < 0.85:
                 d.point((x, y), fill=(36, 60, 38)); d.point((x + 1, y - 1), fill=(36, 60, 38))
             elif r < 0.92:
@@ -251,7 +263,19 @@ def make_ground(grid):
             d.point((x, y), fill=(150, 120, 196)); d.point((x, y - 1), fill=(170, 140, 210))
         else:
             d.point((x, y), fill=(232, 196, 70))
-    for _ in range(4000):
+    # the wheat fields in the south: golden rows with darker furrows
+    fx0, fy0, fx1, fy1 = FIELDS
+    for ty in range(fy0, fy1 + 1):
+        for tx in range(fx0, fx1 + 1):
+            X, Y = tx * T, ty * T
+            if road[Y + 8, X + 8]:
+                continue
+            d.rectangle([X, Y, X + 15, Y + 15], fill=(196, 164, 82))
+            for k in range(0, 16, 4):
+                d.line([X, Y + k, X + 15, Y + k], fill=(160, 126, 60))
+                for j in range(1, 16, 3):
+                    d.line([X + j, Y + k + 1, X + j, Y + k - 1], fill=(226, 196, 104))
+    for _ in range(int(4000 * VW * VH / (112 * 72))):
         x, y = int(rng.integers(0, PW - 2)), int(rng.integers(0, PH - 2))
         if road[y, x] and not plaza[y, x]:
             d.point((x, y), fill=(120, 100, 80)); d.point((x + 1, y), fill=(226, 208, 176))
@@ -831,9 +855,9 @@ def make_world():
     grid[7][34] = "Ŭ"
     doors["mine"] = (34, 7)
     tower_img = Image.open(os.path.join(ART, "World", "Objects", "tower.png")).convert("RGBA")
-    place((tower_img, (40, 144)), 62 * T + 8, 38 * T, (61, 36, 3, 2), "þ", "tower")
-    grid[37][62] = "Þ"
-    doors["tower"] = (62, 37)
+    place((tower_img, (40, 144)), 110 * T + 8, 46 * T, (109, 44, 3, 2), "þ", "tower")    # deep in the forest
+    grid[45][110] = "Þ"
+    doors["tower"] = (110, 45)
     citadel_img = Image.open(os.path.join(ART, "World", "Objects", "citadel.png")).convert("RGBA")
     place((citadel_img, (88, 136)), 100 * T + 8, 16 * T, (95, 13, 11, 3), "ð", "citadel")
     grid[15][100] = "Ð"
@@ -956,15 +980,44 @@ def make_world():
     for _ in range(40):
         tree("olive", int(r.integers(34, 50)), int(r.integers(44, 68)), int(r.integers(0, 2)))
     # forest: dense pines and cypresses, leaving the path and a few clearings open
-    clearings = [(92, 14), (100, 30), (95, 45), (104, 58), (90, 62)]
-    for ty in range(2, VH - 2):
-        for tx in range(84, VW - 2):
+    clearings = [(92, 14), (100, 30), (95, 45), (104, 58), (90, 62), (114, 20), (120, 34), (118, 62), (112, 72)]
+    for ty in range(2, FOREST[3]):
+        for tx in range(84, FOREST[2]):
             if any(math.hypot(tx - cx, ty - cy) < 4 for cx, cy in clearings):
+                continue
+            if math.hypot(tx - 110, ty - 41) < 6:       # the rune tower's clearing
                 continue
             if 92 <= tx <= 108 and 5 <= ty <= 18:       # keep the citadel's grounds clear
                 continue
             if r.random() < 0.34:
                 tree("pine" if r.random() < 0.75 else "cypress", tx, ty, int(r.integers(0, 2)))
+    # the open lands: groves and lone trees (not on the lake, the fields or the hills)
+    lx, ly, lrx, lry = LAKE
+    for _ in range(900):
+        tx, ty = int(r.integers(3, VW - 3)), int(r.integers(3, VH - 3))
+        if tx < 84 and ty < 70:
+            continue                                     # the old village keeps its own trees
+        if FOREST[0] <= tx < FOREST[2] and ty < FOREST[3]:
+            continue
+        if math.hypot((tx - lx) / (lrx + 2), (ty - ly) / (lry + 2)) < 1 or (FIELDS[0] <= tx <= FIELDS[2] and FIELDS[1] <= ty <= FIELDS[3]):
+            continue
+        roll = r.random()
+        kind = "pine" if tx > 128 and roll < 0.5 else "olive" if roll < 0.55 else "cypress" if roll < 0.8 else "orange"
+        tree(kind, tx, ty, int(r.integers(0, 2)))
+    for gx, gy, n in ((140, 12, 30), (160, 80, 18), (60, 98, 25), (110, 96, 22), (8, 82, 20)):
+        for _ in range(n):                               # groves: trees bunched together
+            tree("pine" if gx > 120 else "olive", gx + int(r.normal(0, 3)), gy + int(r.normal(0, 2)), int(r.integers(0, 2)))
+    # the hills: boulders you can mine, out in the open
+    hx0, hy0, hx1, hy1 = HILLS
+    for i in range(26):
+        tx, ty = int(r.integers(hx0, hx1)), int(r.integers(hy0, hy1))
+        kind, letter = (("rich", "Ř") if i % 4 == 0 else ("stone", "ŕ"))
+        if free(tx, ty) and free(tx + 1, ty):
+            img = Image.open(os.path.join(ART, "World", "Objects", "rock_" + kind + ".png")).convert("RGBA")
+            place((img, (14, 21)), (tx + 1) * T, ty * T + 14, (tx, ty, 2, 1), letter, "rock_" + kind)
+    for i, (tx, ty) in enumerate(((150, 30), (138, 52), (122, 86), (60, 76), (90, 84), (40, 94), (165, 66), (12, 76))):
+        if free(tx, ty):
+            place(va.bush("lavender" if i % 2 else "rose", i), tx * T + 8, ty * T + 14, (tx, ty, 1, 1), "u", "lavender" if i % 2 else "rosebush")
     for tx in range(0, VW, 2):
         tree("cypress" if r.random() < 0.3 else "olive", tx, 1, int(r.integers(0, 2)))
         tree("olive" if r.random() < 0.7 else "cypress", tx + 1, VH - 1, int(r.integers(0, 2)))
@@ -986,7 +1039,7 @@ def make_world():
     # creatures: wolves in the forest clearings, wild dogs in the olive grove, cats and dogs in town
     for cx, cy in clearings:
         spawns.append({"kind": "wolf", "x": cx, "y": cy})
-    for x, y in ((16, 58), (40, 64), (26, 50)):
+    for x, y in ((16, 58), (40, 64), (26, 50), (45, 96), (90, 98), (150, 88), (140, 20)):
         spawns.append({"kind": "wilddog", "x": x, "y": y})
     for kind, x, y in (("pet_cat", 42, 24), ("pet_dog", 52, 29), ("pet_cat", 21, 24), ("pet_dog", 63, 30), ("pet_cat", 48, 40)):
         spawns.append({"kind": kind, "x": x, "y": y})

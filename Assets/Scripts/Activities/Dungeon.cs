@@ -243,8 +243,9 @@ namespace LLG
         DungeonData.Question question;
         Phase phase;
         string pendingMove;
-        int bossHpNow;
+        int bossHpNow, bossMax, asked, correct, needed;
         bool defending, shielded;
+        const int PerAnswer = 10;          // one right answer = one bar of the boss's HP
         int frozenTurns, meteorWait, spellNext;
         Magic.Spell spell;
         float timer, wait, shake;
@@ -294,7 +295,10 @@ namespace LLG
         public void Begin(DungeonData.Floor f)
         {
             floor = f;
-            bossHpNow = f.hp;
+            // a unit test: the boss falls after this many right answers, whatever your level
+            needed = 7 + f.number;
+            bossMax = bossHpNow = needed * PerAnswer;
+            asked = correct = 0;
             defending = shielded = false;
             frozenTurns = meteorWait = 0;
             title.text = "Piso " + f.number + ": " + f.es;
@@ -302,7 +306,7 @@ namespace LLG
             portrait.Show(PlayerProfile.Current.appearance, CharacterLayers.FromEquipment());
             window.SetActive(true);
             window.transform.SetAsLastSibling();
-            Say(f.es + " te desafía.");
+            Say(f.es + " te desafía. Acierta " + needed + " preguntas para vencer.");
             ShowMoves();
         }
 
@@ -398,7 +402,8 @@ namespace LLG
             Clear(answers);
             prompt.text = "";
             Say("¡Fsss! El hechizo se apaga.");
-            EndPlayerTurn();
+            asked++;
+            EndPlayerTurn(true);
         }
 
         void CastSpell()
@@ -413,14 +418,17 @@ namespace LLG
                 case "shield": shielded = true; Say("¡Escudo de luz! El próximo golpe no te hará daño."); break;
                 case "ice": frozenTurns = 1; Say("¡Hielo! " + floor.es + " está congelado."); break;
                 default:
-                    bossHpNow = Mathf.Max(0, bossHpNow - power);
+                    int hits = spell.id == "meteor" ? 2 : (spell.id == "lightning" || spell.id == "quake") && Magic.Rank(spell.id) >= 3 ? 2 : 1;
+                    bossHpNow = Mathf.Max(0, bossHpNow - hits * PerAnswer);
                     shake = 0.3f;
-                    Say("¡" + spell.es + "! -" + power);
+                    Say("¡" + spell.es + "!" + (hits > 1 ? " ¡Doble!" : ""));
                     if (spell.id == "meteor") meteorWait = 4;
                     break;
             }
+            asked++;
+            correct++;
             GameState.AddXp(SkillType.Magic, 6);
-            EndPlayerTurn();
+            EndPlayerTurn(false);
         }
 
         void Answer(int index)
@@ -429,6 +437,8 @@ namespace LLG
             Clear(answers);
             bool right = index == question.answer;
             var stats = GameState.Data.stats;
+            asked++;
+            if (right) correct++;
             if (!right)
             {
                 Say(index < 0 ? "¡Se acabó el tiempo!" : "¡Fallaste! Era: " + question.options[question.answer]);
@@ -436,24 +446,27 @@ namespace LLG
             else if (pendingMove == "defend")
             {
                 defending = true;
-                stats.Heal(3);
-                Say("Te defiendes. (+3 HP)");
+                int heal = Mathf.Max(3, stats.maxHp * 8 / 100);
+                stats.Heal(heal);
+                Say("Te defiendes: el próximo golpe hará la mitad. (+" + heal + " HP)");
             }
             else
             {
-                int weapon = GameState.EquippedWeapon()?.power ?? 1;
-                int dmg = (weapon + Magic.WeaponBonus()) * 2 + GameState.Data.level / 2 + UnityEngine.Random.Range(2, 6);
+                // one right answer = one bar; a strong or enchanted weapon only adds a chance of a double hit
+                int weapon = (GameState.EquippedWeapon()?.power ?? 1) + Magic.WeaponBonus();
+                bool crit = UnityEngine.Random.value < Mathf.Min(0.25f, weapon / 100f);
+                int dmg = PerAnswer * (crit ? 2 : 1);
                 bossHpNow = Mathf.Max(0, bossHpNow - dmg);
                 shake = 0.3f;
-                string extra = "";
+                string extra = crit ? "  ¡Crítico!" : "";
                 int vampire = Magic.OnWeapon("vampire");
                 if (vampire > 0) { stats.Heal(vampire * 2); extra = "  (+" + vampire * 2 + " HP)"; }
                 int ice = Magic.OnWeapon("ice");
                 if (ice > 0 && UnityEngine.Random.value < 0.15f * ice) { frozenTurns = 1; extra += "  ¡Congelado!"; }
-                Say("¡Golpe! -" + dmg + extra);
+                Say("¡Correcto! ¡Golpe!" + extra);
                 GameState.AddXp(SkillType.Vocabulary, 3);
             }
-            EndPlayerTurn();
+            EndPlayerTurn(!right);
         }
 
         void Eat()
@@ -472,20 +485,25 @@ namespace LLG
             GameState.Data.stats.Heal(heal);
             Say("Comes " + food.spanish + ". (+" + heal + " HP)");
             Clear(moves);
-            EndPlayerTurn();
+            EndPlayerTurn(false);
         }
 
-        void EndPlayerTurn()
+        bool bossStrikes;
+
+        /// <summary>After your move. The boss only strikes back when you got it wrong (or ran out of time).</summary>
+        void EndPlayerTurn(bool mistake)
         {
             Refresh();
             if (bossHpNow <= 0) { Win(); return; }
+            bossStrikes = mistake;
             phase = Phase.Enemy;
-            wait = 1.2f;
+            wait = mistake ? 1.2f : 0.6f;
         }
 
         void EnemyTurn()
         {
             if (meteorWait > 0) meteorWait--;
+            if (!bossStrikes) { ShowMoves(); return; }
             if (frozenTurns > 0)
             {
                 frozenTurns--;
@@ -500,7 +518,11 @@ namespace LLG
                 ShowMoves();
                 return;
             }
-            int dmg = Mathf.Max(1, floor.damage - GameState.Defense() / 2);
+            // a mistake costs a share of your max HP (more on higher floors): about 5-8 mistakes and you're out
+            var st = GameState.Data.stats;
+            float share = 0.12f + 0.01f * floor.number;
+            float armour = 1 - Mathf.Min(0.4f, GameState.Defense() / 200f);
+            int dmg = Mathf.Max(1, Mathf.CeilToInt(st.maxHp * share * armour));
             if (defending) dmg = Mathf.Max(1, dmg / 2);
             defending = false;
             GameState.Data.stats.Damage(dmg);
@@ -514,13 +536,18 @@ namespace LLG
         {
             phase = Phase.Over;
             Clear(moves);
-            int reward = floor.number * 60;
+            // the grade, like a test: more right answers = better rewards
+            float accuracy = asked > 0 ? correct / (float)asked : 1;
+            string grade = accuracy >= 0.9f ? "Sobresaliente" : accuracy >= 0.75f ? "Notable" : accuracy >= 0.6f ? "Bien" : "Aprobado";
+            float bonus = 0.6f + accuracy * 0.6f;
+            int reward = Mathf.RoundToInt(floor.number * 60 * bonus);
+            int gold = Mathf.RoundToInt(floor.number * 40 * bonus);
             if (GameState.Data.dungeonFloor < floor.number) GameState.Data.dungeonFloor = floor.number;
             GameState.AddCurrency(reward);
-            GameState.AddGold(floor.number * 40);
-            GameState.AddXp(SkillType.Combat, floor.number * 40);
-            prompt.text = "¡Venciste a " + floor.es + "!  +" + floor.number * 40 + " " + GameConfig.GoldName + "  +" + reward + " " + GameConfig.CurrencyName;
-            Say("¡Victoria!");
+            GameState.AddGold(gold);
+            GameState.AddXp(SkillType.Combat, Mathf.RoundToInt(floor.number * 40 * bonus));
+            prompt.text = "Nota: " + grade + " (" + correct + "/" + asked + ")   +" + gold + " " + GameConfig.GoldName + "  +" + reward + " " + GameConfig.CurrencyName;
+            Say("¡Venciste a " + floor.es + "!");
             GameState.Save();
             UIFactory.Btn("Leave", moves, new Vector2(0, -96), new Vector2(180, 30), "Salir", UIFactory.Green, Close);
         }
@@ -558,8 +585,9 @@ namespace LLG
             var s = GameState.Data.stats;
             playerBar.sizeDelta = new Vector2(144f * s.hp / Mathf.Max(1, s.maxHp), 8);
             playerHp.text = PlayerProfile.Current.playerName + "  " + s.hp + "/" + s.maxHp + "  Maná " + s.mana;
-            bossBar.sizeDelta = new Vector2(144f * bossHpNow / floor.hp, 8);
-            bossHp.text = floor.es + "  " + bossHpNow + "/" + floor.hp;
+            bossBar.sizeDelta = new Vector2(144f * bossHpNow / Mathf.Max(1, bossMax), 8);
+            int left = Mathf.CeilToInt(bossHpNow / (float)PerAnswer);
+            bossHp.text = "Faltan " + left + "  ·  " + correct + "/" + asked + " bien";      // answers still needed, score so far
         }
 
         static void Clear(Transform t)
