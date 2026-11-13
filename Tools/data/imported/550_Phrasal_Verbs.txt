@@ -1880,7 +1880,7 @@ S|verb|5|El propietario quería más dinero, pero me reí de él|The landlord wa
 S|verb|5|John se rió de la sugerencia de que cambiara su comportamiento|John laughed off the suggestion that he change his behavior
 S|verb|4|Se parecen tanto que es fácil mezclarlos|They look so alike that it’s easy to mix them up
 S|verb|4|Creo que lo estoy confundiendo con otra persona|I think I’m mixing him up with someone else
-S|verb|4|No haga preguntas ahora; me confundirás!|Please don’t ask questions now; you’ll mix me up!
+S|verb|4|¡No haga preguntas ahora; me confundirás!|Please don’t ask questions now; you’ll mix me up!
 S|verb|4|Has confundido al orador con tu pregunta|You mixed up the speaker with your question
 S|verb|5|Mezclé la cita y fui a cortarme el pelo el día equivocado|I mixed the appointment up and went for a haircut on the wrong day
 S|verb|5|Ordené todos los papeles y los has vuelto a mezclar|I sorted all the papers and you’ve mixed them up again
@@ -5266,7 +5266,7 @@ S|verb|5|Es particularmente despreciable que este tipo de personas se aprovechen
 S|verb|5|Estas megacorporaciones están muy dispuestas a aprovecharse de los consumidores|These megacorporations are all too willing to prey upon consumers
 S|verb|4|Palabra, hermano mío, me elevaste como una cometa|Word up, my brother, you got me high as a kite
 S|verb|4|Atención, chicos, esta noche se va a caer|Word up, boys, it’s goin’ down tonight
-S|verb|5|!!!Palabra !!! Hoy tengo un nuevo video para ti|Word up!!! I have a new video for you today
+S|verb|4|!!!Palabra!!! Hoy tengo un nuevo video para ti|Word up!!! I have a new video for you today
 S|verb|4|Palabra, hermano|Word up, bro
 S|verb|4|¡Palabra, chicos y chicas!|Word up, guys and gals!
 S|verb|4|Oye, ¿has dicho algo, hombre?|Hey, word up, man?

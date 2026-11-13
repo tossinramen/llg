@@ -240,6 +240,28 @@ def slug(text):
     return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
 
 
+ENGLISHY = re.compile(r"\b(the|to|of|is|and|you|it|with|my|this|that|in|at|on)\b", re.I)
+SPANISHY = re.compile(r"[áéíóúñ¿¡]|\b(el|la|los|las|que|de|y|es|en|por|para|con|a|al|del)\b|(ar|er|ir|ción|mente|aste|ando|iendo)$", re.I)
+
+
+def tidy_pair(kind, es, en):
+    """Last clean-up for every imported line: trailing dashes, missing ¿ ¡, backwards cards, same on both sides."""
+    es = re.sub(r"[\s\-–—]+$", "", es).strip()
+    en = re.sub(r"[\s\-–—]+$", "", en).strip()
+    if kind == "W" and ENGLISHY.search(es) and not SPANISHY.search(es) and (
+            SPANISHY.search(en) or (len(en.split()) == 1 and not ENGLISHY.search(en))):
+        es, en = en, es                                   # the card was the wrong way round
+    if kind == "S":
+        if es.endswith("?") and "¿" not in es and es.count("?") == 1:
+            es = "¿" + es
+        if es.endswith("!") and "¡" not in es and es.count("!") == 1:
+            es = "¡" + es
+    same = re.sub(r"\W", "", es.lower()) == re.sub(r"\W", "", en.lower())
+    if not es or not en or (same and (kind == "S" or ENGLISHY.search(es))):     # words like "piano" = "piano" are fine
+        return "", ""
+    return es, en
+
+
 def main():
     words, seen = [], set()
     for line in WORDS.strip().splitlines():
@@ -268,6 +290,9 @@ def main():
         if len(p) < 5:
             continue
         kind, cat, tier, es, en = p[0], p[1], int(p[2]), p[3].strip(), p[4].strip()
+        es, en = tidy_pair(kind, es, en)
+        if not es:
+            continue
         if kind == "W" and key(es) not in known_words:
             known_words.add(key(es))
             wid = slug(en) or slug(es)

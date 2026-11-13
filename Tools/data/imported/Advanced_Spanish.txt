@@ -1,0 +1,4887 @@
+# converted from Advanced_Spanish.apkg
+W|imported|4|la Divisa|currency
+W|imported|4|los Campesinos|peasents
+W|imported|4|la incertidumbre|uncertainty
+W|travel|4|el fronterizo|border
+W|imported|4|la membrana|membrane
+W|imported|4|climático|climatic
+W|imported|4|la franja|strip
+W|imported|4|resistente|resistant
+W|imported|4|el soporte|support
+W|imported|4|el concilio|council
+W|imported|4|el porqué|reason
+W|verb|4|Alentar|to encourage
+W|imported|4|el encargo|assignment
+W|imported|4|la carcajada|laughter
+W|verb|4|Respaldar|to endorse
+W|verb|4|paralizar|to paralyze
+W|verb|4|devorar|to devour
+W|imported|4|el bloqueo|blockade
+W|imported|4|la agresión|aggression
+W|imported|4|el timbre|bell
+W|imported|4|la manía|obsession
+W|imported|4|el tocayo|namesake
+W|imported|4|los trámites|processes
+W|imported|4|el dominguero|Sunday tripper
+W|verb|4|picotear|to pick at
+W|verb|4|sesear|to pronounce "c" and "z" as "s
+W|imported|4|la piel de gallina|goosebumps
+W|imported|4|a lo largo de|throughout
+W|imported|4|junto a|alongside
+W|imported|4|con tal de que|provided that
+W|imported|4|la agrupación|grouping
+W|imported|4|la planificación|planning
+W|imported|4|la jugada|move
+W|imported|4|el pretexto|pretext
+W|verb|4|encaminar|to channel
+W|verb|4|sujetar|to hold
+W|imported|4|la denominación|denomination
+W|imported|4|defensivo|defensive
+W|verb|4|sacrificar|to sacrifice
+W|imported|4|el analista|the analyst
+W|imported|4|la viuda|widow
+W|imported|4|el directivo|the directive
+W|imported|4|el azar|chance
+W|imported|4|el militante|activist
+W|imported|4|la puta|whore
+W|imported|4|sistemático|systematic
+W|imported|4|sutil|subtle
+W|imported|4|la gama|range
+W|imported|4|legítimo|legitimate
+W|verb|4|dialogar|to converse
+W|imported|4|la revelación|revelation
+W|imported|4|el bordo|board
+W|imported|4|afortunadamente|fortunately
+W|verb|4|mecanografiar|to type
+W|verb|4|rezumar|to ooze
+W|imported|4|la trastienda|backroom
+W|imported|4|la grabadora|tape recorder
+W|imported|4|la bala|bullet
+W|imported|4|el votante|voter
+W|verb|4|entusiasmar|to get enthusiastic
+W|imported|4|turco|turkish
+W|imported|4|el himno|hymn
+W|imported|4|la condena|conviction
+W|verb|4|debilitar|to weaken
+W|verb|4|complementar|to complement
+W|imported|4|la licencia|licence
+W|imported|4|el participante|participant
+W|imported|4|vano|vain
+W|verb|4|protagonizar|to star
+W|imported|4|protestante|protestant
+W|imported|4|a menos que|unless
+W|verb|4|evadirse|to disconnect
+W|imported|4|malcriada|bad-mannered
+W|imported|4|manchada|stained
+W|imported|4|la urgencia|urgency
+W|imported|4|la salvación|salvation
+W|imported|4|el matiz|nuance
+W|imported|4|illuminado|lit
+W|imported|4|emocional|emotional
+W|imported|4|el retiro|retirement
+W|imported|4|el pabellón|pavilion
+W|imported|4|la proximidad|proximity
+W|imported|4|risueño|smiling
+W|imported|4|penosa|shy
+W|imported|4|tuerto|one-eyed man
+W|imported|4|morbo|morbid fascination
+W|verb|4|empalagar|to make one sick
+W|verb|4|suscitar|to give rise to
+W|imported|4|el chiquillo|kid
+W|imported|4|el fundamento|foundation
+W|imported|4|la sospecha|suspicion
+W|school|4|sujeto|subject
+W|imported|4|mixto|mixed
+W|imported|4|el misil|misile
+W|imported|4|vasco|basque
+W|imported|4|el arreglo|repair
+W|imported|4|el adjetivo|adjective
+W|imported|4|el revolucionario|revolutionary
+W|imported|4|el reparto|distribution
+W|imported|4|obscuro|obscure
+W|imported|4|inmortal|immortal
+W|verb|4|frustrar|to frustrate
+W|verb|4|aliviar|to relieve
+W|imported|4|el transcurso|course
+W|imported|4|salarial|salary
+W|imported|4|la ambición|ambition
+W|imported|4|quincena|fortnight
+W|verb|4|aturdir|to fluster
+W|verb|4|enmadrarse|to get very attached to one's own mother
+W|imported|4|concuñado|husband of the sister of your spouse
+W|imported|4|consuegro|father in law of my son
+W|imported|4|el resol|glare of the sun
+W|verb|4|recogerse|to go indoors
+W|imported|4|franco|frank
+W|imported|4|el ingenio|ingenuity
+W|verb|4|englobar|to encompass
+W|imported|4|la antena|antenna
+W|imported|4|la corporación|corporation
+W|imported|4|corporal|corporal
+W|imported|4|la ganancia|profit
+W|imported|4|automático|automatic
+W|imported|4|anónimo|anonymous
+W|imported|4|darse la mano|to shake hands
+W|imported|4|duende|magic
+W|imported|4|pardo|brownish grey
+W|imported|4|desvelado|sleepless
+W|imported|4|la chapuza|lousy piece of work
+W|imported|4|mimoso|cuddly
+W|verb|4|pavonearse|to strut
+W|imported|4|semejante|similar
+W|imported|4|el guerrillero|guerilla
+W|imported|4|el afecto|affection
+W|imported|4|el abandono|abandonment
+W|imported|4|restante|remaining
+W|verb|4|compensar|to compensate
+W|imported|4|el trapo|cloth
+W|imported|4|espesa|thick
+W|imported|4|estrecha|narrow
+W|imported|4|fija|fixed
+W|imported|4|la innovación|innovation
+W|imported|4|la vertiente|slope
+W|verb|4|retroceder|to go back
+W|verb|4|desatar|to untie
+W|imported|4|el cauce|riverbed
+W|imported|4|el boliviano|Bolivian
+W|imported|4|la atracción|attraction
+W|imported|4|el auge|boom
+W|imported|4|el expediente|file
+W|imported|4|la eficiencia|efficiency
+W|imported|4|el pilar|pillar
+W|imported|4|la retirada|retreat
+W|verb|4|preservar|to preserve
+W|imported|4|plenamente|fully
+W|imported|4|el descendiente|descendant
+W|imported|4|la programación|programming
+W|verb|4|asearse|to smarten oneself up
+W|travel|4|la embarcación|boat
+W|imported|4|la mierda|shit
+W|imported|4|metropolitano|metropolitan
+W|imported|4|la irregularidad|irregularity
+W|imported|4|tradicionalmente|traditionally
+W|imported|4|el esplendor|splendor
+W|number|4|la decena|tens
+W|imported|4|la pretensión|pretensión
+W|imported|4|asada|roasted
+W|imported|4|blanda|soft
+W|imported|4|montés|wild
+W|imported|4|el catálogo|catalog
+W|imported|4|el deterioro|deterioration
+W|imported|4|el ajuste|adjustment
+W|imported|4|el delincuente|criminal
+W|imported|4|el filo|blade
+W|imported|4|madrileño|of madrid
+W|imported|4|la variante|variant
+W|verb|4|ocasionar|to cause
+W|imported|4|el auxilio|help
+W|imported|4|el suministro|supply
+W|imported|4|el profeta|prophet
+W|imported|4|la lente|lens
+W|imported|4|el gigante|giant
+W|imported|4|afilado|sharp
+W|imported|4|amorosa|loving
+W|imported|4|atrevida|daring
+W|imported|4|cotidiano|daily
+W|imported|4|despiadado|heartless
+W|imported|4|la furia|fury
+W|imported|4|bíblico|biblical
+W|verb|4|evocar|to evoke
+W|imported|4|la disminución|decrease
+W|imported|4|agria|sour
+W|imported|4|potente|powerful
+W|imported|4|ardiente|burning
+W|imported|4|ansiosa|anxious
+W|imported|4|nimia|trivial
+W|job|4|mesero|waiter
+W|imported|4|integral|comprehensive
+W|imported|4|distante|distant
+W|imported|4|ferroviario|rail
+W|imported|4|la decadencia|decadence
+W|imported|4|adulto|adult
+W|imported|4|la prenda|garment
+W|imported|4|la preferencia|preference
+W|imported|4|agotada|exhausted
+W|imported|4|dichosa|fortunate
+W|imported|4|fútbol|football
+W|imported|4|gol|goal
+W|imported|4|el rigor|rigor
+W|verb|4|adornar|to adorn
+W|imported|4|la facción|faction
+W|verb|4|embelesar|to enchant
+W|verb|4|librar|to free
+W|verb|4|sancionar|to sanction
+W|imported|4|austriaco|Austrian
+W|imported|4|la liga|league
+W|imported|4|el defensor|defender
+W|imported|4|la corona|wreath
+W|imported|4|cuesta arriba|uphill
+W|imported|4|ponerse a|to start
+W|imported|4|glaciar|glacial
+W|imported|4|sanguíneo|bloody
+W|imported|4|bizantino|byzantine
+W|imported|4|la transferencia|transfer
+W|imported|4|la finalidad|purpose
+W|verb|4|rematar|to conclude
+W|verb|4|precipitar|to hasten
+W|imported|4|la partitura|score
+W|school|4|el gobernante|ruler
+W|imported|4|el bloguero|blogger
+W|imported|4|de a pie|average
+W|imported|4|foráneos|non-native
+W|imported|4|lo de|the matter
+W|imported|4|el corral|farmyard
+W|imported|4|oriundo de|native
+W|imported|4|la detención|detention
+W|imported|4|violado|violated
+W|imported|4|el asombro|astonishment
+W|imported|4|decarativo|decorative
+W|imported|4|el uranio|uranium
+W|imported|4|la diana|target
+W|imported|4|el sindicato|union
+W|imported|4|el rastro|trace
+W|imported|4|la renuncia|resignation
+W|verb|4|frecuentar|to frequent
+W|verb|4|consagrar|to devote
+W|verb|4|granjear|to earn
+W|imported|4|el mosaico|mosaic
+W|imported|4|la intimidad|privacy
+W|imported|4|independientemente|independently
+W|imported|4|radiactivo|radioactive
+W|imported|4|el pasto|pasture
+W|imported|4|la piedad|mercy
+W|imported|4|expresivo|expressive
+W|imported|4|la coordinación|coordination
+W|imported|4|el cazador|hunter
+W|imported|4|ampliamente|amply
+W|imported|4|lamentable|regrettable
+W|verb|4|sumergir|to submerge
+W|verb|4|desembocar|to flow into
+W|imported|4|holanda|holland
+W|verb|4|equivaler|to be equivalent to
+W|imported|4|el milenio|millenium
+W|imported|4|la latitud|latitude
+W|imported|4|tardío|later
+W|verb|4|implantar|to implantar
+W|imported|4|la pauta|guideline
+W|imported|4|la dinámica|dynamics
+W|imported|4|el elector|voter
+W|verb|4|emerger|to emerge
+W|imported|4|el reclamo|claim
+W|imported|4|la rivera|brook
+W|imported|4|indudablemente|undoubtedly
+W|imported|4|la reconstrucción|reconstruction
+W|imported|4|el original|original
+W|imported|4|la distinción|distinction
+W|imported|4|el ciego|blind man
+W|imported|4|el inmigrante|immigrant
+W|imported|4|la gramática|grammar
+W|imported|4|idéntico|identical
+W|imported|4|indiferente|indifferent
+W|verb|4|alegar|to allege
+W|imported|4|el encanto|charm
+W|imported|4|funcional|functional
+W|imported|4|el artesano|craftsman
+W|imported|4|el complemento|complement
+W|imported|4|energético|energetic
+W|imported|4|el pianista|pianist
+W|imported|4|inicialmente|initially
+W|imported|4|el monopolio|monopoly
+W|verb|4|improvisar|to improvise
+W|imported|4|la arcilla|clay
+W|imported|4|aplicado|diligent
+W|imported|4|la controversia|controversy
+W|imported|4|la contradicción|contradiction
+W|imported|4|insuficiente|insufficient
+W|imported|4|el químico|chemist
+W|imported|4|supuestamente|supposedly
+W|imported|4|el entendimiento|understanding
+W|imported|4|el equivalente|equivalent
+W|time|4|el acta|minutes
+W|imported|4|la charla|chat
+W|imported|4|la complejidad|complexity
+W|imported|4|la concha|shell
+W|imported|4|polaco|Polish
+W|imported|4|el temblor|tremor
+W|imported|4|el manto|cloak
+W|imported|4|indonesia|indonesia
+W|imported|4|perteneciente|belonging
+W|imported|4|el astrónomo|astronomer
+W|imported|4|el bando|faction
+W|imported|4|la invención|invention
+W|imported|4|obviamente|obviously
+W|imported|4|geométrico|geometric
+W|imported|4|el rebelde|rebel
+W|imported|4|prestigioso|prestigious
+W|imported|4|el amo|master
+W|imported|4|la cooperativa|cooperative
+W|nature|4|fluvial|river
+W|imported|4|estrictamente|strictly
+W|imported|4|ilustrado|illustrated
+W|imported|4|la correspondencia|correspondence
+W|imported|4|el vídeo|video
+W|verb|4|expandir|to expand
+W|imported|4|el atleta|athlete
+W|imported|4|el jazz|jazz
+W|imported|4|el nudo|knot
+W|imported|4|obligatorio|compulsory
+W|imported|4|periódico|periodic
+W|verb|4|entretener|to entertain
+W|imported|4|la ingle|groin
+W|imported|4|la zona lumbar|small of back
+W|imported|4|la nalga|buttock
+W|imported|4|la pestaña|eyelash
+W|imported|4|la barbilla|chin
+S|imported|4|la ventana de la nariz|nostril
+W|imported|4|la mandibula|jaw
+W|imported|4|el poro|pore
+W|imported|4|el dedo corazón|Middle finger
+W|imported|4|el índice|index finger
+S|imported|4|la palma de la mano|palm
+W|imported|4|la cuticula|cuticle
+W|imported|4|la planta del pie|sole
+W|imported|4|la región plantar|instep
+W|imported|4|el arco plantar|arch
+W|imported|4|la almohadilla|ball
+S|imported|4|El dedo gordo del pie|big toe
+W|town|4|el empeine|bridge
+S|imported|4|El dedo pequeño del pie|little toe
+W|verb|4|estremecer|to shake
+W|verb|4|demorar|to delay
+W|food|4|el dulce|candy
+W|imported|4|eclesiástico|ecclesiastical
+W|imported|4|el alza|raise
+W|imported|4|el pulso|pulse
+W|imported|4|el rector|rector
+W|imported|4|el religioso|member of a religious order
+W|imported|4|la eliminación|elimination
+W|imported|4|la transparencia|transparency
+W|imported|4|la vocal|vowel
+W|verb|4|diferir|to difer
+W|imported|4|periodístico|journalistic
+W|imported|4|ortodoxo|orthodox
+W|verb|4|licenciar|to license
+W|verb|4|persistir|to persist
+W|imported|4|la portada|title page
+W|imported|4|proveniente de|coming from
+W|imported|4|riguroso|rigorous
+W|imported|4|el embarazo|pregnancy
+W|imported|4|la reelección|reelection
+W|imported|4|tamaño|such a
+W|imported|4|el psicólogo|psychologist
+W|imported|4|racional|rational
+W|imported|4|el frontal|frontal
+W|imported|4|el intercostal|intercostal
+W|imported|4|el biceps|biceps
+W|imported|4|el abdominal|abdominals
+W|imported|4|los cuádriceps|quadriceps
+W|imported|4|el pectoral|pectoral
+W|imported|4|el deltoideo|deltoid
+W|imported|4|el tendón porpoliteo|hamstring
+W|imported|4|el tendón de aquiles|achilles tendon
+W|imported|4|el dorsal|latissimus dorsi
+W|imported|4|el tríceps|triceps
+W|imported|4|el glúteo|buttock
+W|imported|4|los gemelos|calf
+W|imported|4|el omoplato|shoulder blade
+W|imported|4|el esternón|breast bone
+W|imported|4|el cúbito|ulna
+W|imported|4|la pelvis|pelvis
+W|imported|4|el peroné|fibula
+W|imported|4|el metatarso|metatarsal
+W|imported|4|la tibia|tibia
+W|imported|4|el fémur|femur
+W|imported|4|el metacarpo|metacarpal
+W|imported|4|la caja torácica|rib cage
+W|imported|4|el húmero|humerus
+W|imported|4|el cartilago|cartilage
+W|imported|4|las vértebras cervicales|cervical vertebrae
+W|imported|4|las vértebras dorsales|thoracic vertebrae
+W|imported|4|las vértebras lumbares|lumbar vertebrae
+W|imported|4|el coxis|tailbone
+W|imported|4|la espina dorsal|spine
+W|imported|4|los músculos|muscles
+W|imported|4|los órganos reproductores|reproductive organs
+W|imported|4|la trompa de falopio|fallopian tube
+W|imported|4|el útero|uterus
+W|imported|4|el cuello uterino|cervix
+W|imported|4|el foliculo|follicle
+W|imported|4|la vejiga|bladder
+W|imported|4|el clitoris|clitoris
+W|imported|4|los labios|labia
+W|imported|4|el esperma|sperm
+W|food|4|el óvulo|egg
+W|imported|4|la fertilización|fertilization
+W|imported|4|la hormona|hormone
+W|imported|4|la ovulación|ovulation
+W|imported|4|estéril|infertile
+W|imported|4|impotente|impotent
+W|imported|4|fértil|fertile
+W|imported|4|la menstruación|menstruation
+W|imported|4|el coito|intercourse
+S|imported|4|la enfermedad de transmission sexual|sexually transmitted diseases
+W|imported|4|el conductor seminal|ejaculatory duct
+W|imported|4|el conductor deferente|vas deferens
+W|imported|4|el uréter|ureter
+W|imported|4|la vesícula seminal|seminal vesicle
+W|imported|4|el prepucio|foreskin
+W|imported|4|el escroto|scrotum
+W|imported|4|la próstata|prostate
+W|imported|4|la anticoncepción|contraception
+W|clothes|4|el anillo cervical|cap
+W|imported|4|el condón|condom
+W|imported|4|el dispositivo intrauterino DIU|IUD
+W|imported|4|la prevención|prevention
+W|imported|4|el ayudante|assistant
+W|imported|4|la caballería|cavalry
+W|imported|4|el pionero|pioneer
+W|imported|4|suavemente|gently
+W|imported|4|la seña|sign
+W|imported|4|volcánico|volcanic
+W|imported|4|geológico|geological
+W|imported|4|extremadamente|extremely
+W|verb|4|erguir|to erect
+W|imported|4|el ademán|gesture
+W|imported|4|el as|ace
+W|verb|4|arrebatar|to snatch
+W|verb|4|abrasar|to burn
+W|imported|4|la cocaína|cocaine
+W|verb|4|concretar|to concrete
+W|verb|4|disimular|to cover up
+W|imported|4|el desplazamiento|displacement
+W|verb|4|suscribir|to sign
+W|imported|4|referente|regarding
+W|imported|4|guatemalteco|guatemalan
+W|imported|4|la municipilidad|municipality
+W|imported|4|el noble|nobleman
+W|imported|4|la inclinación|inclination
+W|imported|4|sereno|serene
+W|imported|4|los órganos internos|internal organs
+W|imported|4|el duodeno|duodenum
+W|imported|4|el riñon|kidney
+W|imported|4|el intestino delgado|small intestine
+W|imported|4|el intestino grueso|large intestine
+W|imported|4|la glándula del tiroides|thyroid gland
+W|imported|4|la epiglotis|epiglottis
+W|imported|4|las cuerdas vocales|vocal cords
+W|imported|4|los sistemas|body systems
+W|imported|4|respiratorio|respiratory
+W|imported|4|digestivo|digestive
+W|imported|4|cardiovascular|cardiovascular
+W|imported|4|linfático|lymphatic
+W|imported|4|urinario|urinary
+W|imported|4|la glándula|gland
+W|imported|4|endocrino|endocrine
+W|imported|4|el nervio|nerve
+W|imported|4|reproductor|reproductive
+W|imported|4|vocabulario|vocabulary
+W|imported|4|los parientes|relatives
+W|imported|4|los niños|children
+W|imported|4|el/la compañero/a|partner
+W|imported|4|las etapas|stages
+W|imported|4|la adolescente|teenager
+W|imported|4|los tratamientos|titles
+W|imported|4|señora|mrs
+W|imported|4|señor|mr
+W|imported|4|el terminal|terminal
+W|imported|4|cinematográfico|movie
+W|imported|4|la ganadería|stockbreeding
+W|verb|4|enredar|to get tangled up
+W|imported|4|costoso|costly
+W|imported|4|el láser|laser
+W|imported|4|el molde|mold
+W|imported|4|olimpia|olympia
+W|imported|4|la indeferencia|indifference
+W|imported|4|irlandés|irish
+W|imported|4|la imprenta|printing
+W|imported|4|la ventura|fortune
+W|imported|4|fotográfico|photographic
+W|imported|4|atmosférico|atmospheric
+W|imported|4|la vereda|path
+W|imported|4|verosímil|credible
+W|imported|4|la víspera|eve
+W|imported|4|la suspensión|suspension
+W|imported|4|repleto|packed
+W|verb|4|prevalecer|to prevail
+W|imported|4|la perla|pearl
+W|imported|4|el grabado|engraving
+W|imported|4|la maniobra|maneuver
+W|imported|4|el borracho|drunkard
+W|imported|4|la coincidencia|simultaneous occurrence
+W|imported|4|frágil|fragile
+W|imported|4|el demócrata|democrat
+W|imported|4|compacto|compact
+W|imported|4|natal|native
+W|imported|4|el vicio|vice
+W|imported|4|la cercanía|closeness
+W|imported|4|las relaciones|relationships
+W|imported|4|la ayudante|assistant
+W|imported|4|la socia|business partner
+W|imported|4|el amigo por correspondencia|pen friend
+W|imported|4|el prometido|fiancé
+W|imported|4|la prometida|fiancée
+W|imported|4|la pareja prometida|engaged couple
+W|imported|4|las emociones|emotions
+W|imported|4|el ceño fruncido|frown
+W|imported|4|seguro de sí mismo|confident
+W|verb|4|suspirar|to sigh
+S|imported|4|Los acontecimientos de una vida|life events
+W|imported|4|empezar el colegio|to start school
+W|imported|4|conseguir un trabajo|to get a job
+W|imported|4|tener un hijo|to have a baby
+W|imported|4|el bar mitzvah|bar mitzvah
+W|imported|4|hacer testamento|to make a will
+W|imported|4|la partida de nacimiento|birth certificate
+S|imported|4|la celebración de la boda|wedding reception
+W|imported|4|las celebraciones|celebrations
+W|imported|4|la fiesta de cumpleaños|birthday party
+W|imported|4|los festivales|festivals
+W|imported|4|la pascua judia|passover
+W|imported|4|el Ramadán|Ramadan
+S|imported|4|El día de acción de gracias|Thanksgiving
+W|imported|4|el día de Halloween|Halloween
+W|imported|4|el Diwali|Diwali
+W|imported|4|la procesión|procession
+W|imported|4|satisfactorio|satisfactory
+W|imported|4|obvio|obvious
+W|imported|4|materno|motherly
+W|imported|4|ficticio|fictitous
+W|verb|4|desbordar|to overflow
+W|imported|4|la comodidad|comfort
+W|imported|4|la minería|mining industry
+W|imported|4|informático|computer
+W|verb|4|retomar|to take back again
+W|imported|4|el partidario|supporter
+W|imported|4|la privatización|privatization
+W|imported|4|la mecánica|mechanics
+W|verb|4|exiliar|to exile
+W|imported|4|la esclavitud|slavery
+W|imported|4|la deficiencia|deficiency
+W|imported|4|el montaje|assembly
+W|imported|4|el traslado|transfer
+W|imported|4|la tregua|truce
+W|imported|4|registrado|registered
+W|verb|4|desencadenar|to unchain
+W|imported|4|el ganadero|rancher
+W|imported|4|el conquistador|conqueror
+W|imported|4|alternativo|alternative
+W|imported|4|el chorro|jet
+W|verb|4|reperar|to repair
+W|imported|4|el recorte|cutting
+W|imported|4|el sedimento|sediment
+W|imported|4|la incorporación|incorporation
+W|imported|4|la modernización|modernization
+W|imported|4|místico|mystic
+W|imported|4|la ropa de niño|children's clothing
+W|imported|4|el body|vest
+W|imported|4|el corchete|popper
+W|imported|4|el pelele con pies|babygro
+W|imported|4|el pijama enterizo|sleepsuit
+W|imported|4|el pelele sin pies|romper suit
+W|imported|4|el buzo|snowsuit
+W|imported|4|las manoplas|mittens
+W|imported|4|los patucos|booties
+W|imported|4|el pañal de felpa|Terry nappy
+W|imported|4|el pañal desechable|disposable nappy
+W|imported|4|braguitas de plástico|plastic pants
+S|imported|4|El gorro para el sol|sunhat
+W|imported|4|el niño pequeño|toddler
+W|imported|4|los pantalones cortos|shorts
+W|imported|4|los pantalones con peto|dungarees
+W|imported|4|los pantalones vaqueros|jeans
+W|imported|4|la capucha|hood
+W|imported|4|las sandalias|sandals
+W|imported|4|la trenca|duffle coat
+W|imported|4|el chaquetón|anorak
+W|imported|4|las botas de agua|Wellington boots
+W|imported|4|el ligotipo|logo
+W|imported|4|las zapatillas de deporte|trainers
+W|imported|4|el uniforme del equipo|football strip
+W|imported|4|las zapatillas|slippers
+W|imported|4|la ropa para dormir|nightwear
+W|imported|4|la fibra natural|natural fibre
+W|imported|4|sintético|synthetic
+S|imported|4|¿se puede lavar a máquina?|is it machine washable?
+S|imported|4|¿le valdrá esto a un niño de dos años?|will this fit a 2 year old?
+W|imported|4|la ropa de caballero|men's clothing
+W|imported|4|el botón|button
+W|imported|4|los zapatos de piel|leather shoes
+W|imported|4|el traje de chaqueta|business suit
+W|imported|4|la solapa|lapel
+W|imported|4|el ojal|button hole
+W|imported|4|la gabardina|rain coat
+W|imported|4|el forro|lining
+W|imported|4|la rebeca|cardigan
+W|imported|4|la Americana sport|sports jacket
+W|imported|4|el cuello de pico|v-neck
+W|imported|4|el cuello redondo|round neck
+W|imported|4|los tejanos|jeans
+W|imported|4|la ropa casual|casual wear
+W|imported|4|los calzoncillos|briefs
+W|imported|4|los calzoncillos de pata|boxer shorts
+W|imported|4|la ropa de señora|women's clothing
+W|imported|4|el dobladillo|hem
+W|imported|4|hasta la rodilla|knee-length
+W|imported|4|de vestir|formal
+W|imported|4|sin tirantes|strapless
+W|imported|4|el traje de noche|evening dress
+W|imported|4|sport|casual
+W|imported|4|la combinación|slip
+W|imported|4|el tirante|strap
+W|imported|4|las ligas|suspenders
+W|imported|4|el corsé con liguero|basque
+W|imported|4|las bragas|knickers
+W|imported|4|el velo|veil
+W|imported|4|el ramo de flores|bouquet
+W|imported|4|el vestido de novia|wedding dress
+W|imported|4|el corsé|corset
+W|imported|4|sastre|tailored
+W|imported|4|con aros|underwired
+W|imported|4|la hombrera|shoulder pad
+W|imported|4|la cinturilla|waistband
+W|imported|4|el sujetador deportivo|sports bra
+S|imported|4|Al cuello y con los hombros al aire|halter neck
+W|imported|4|los accessorios|accessories
+W|imported|4|la hebilla|buckle
+W|imported|4|el asa|handle
+W|imported|4|la punta|tip
+W|imported|4|el alfiler de corbata|tie-pin
+W|imported|4|las joyas|jewellery
+W|imported|4|el colgante|pendant
+W|imported|4|el broche|broach
+W|imported|4|el collar de perlas|string of pearls
+W|imported|4|el eslabón|link
+W|imported|4|el joyero|jewellery box
+W|imported|4|los bolsos|bags
+W|imported|4|el monedero|purse
+W|imported|4|las asas|handles
+W|imported|4|el bolso de mano|handbag
+W|imported|4|la bolsa de viaje|holdall
+W|imported|4|la suela|sole
+W|imported|4|la cordonera|lace
+W|body|4|la lengüeta|tongue
+W|imported|4|el tacón|heel
+W|imported|4|el zapato de cordoneras|lace-up
+W|imported|4|el zapato de tacón|high heel shoe
+W|imported|4|la bota de trekking|walking boot
+W|imported|4|la zapatilla deportiva|trainer
+W|imported|4|el zapato de caballero|brogue
+W|imported|4|la bailarina|pump
+W|imported|4|estorbo|hindrance
+W|imported|4|la artimaña|cunning ruse
+W|verb|4|enjuagar|to rinse
+W|imported|4|secar con el secador|to blow dry
+W|imported|4|la peluquera|hairdresser
+W|imported|4|la clienta|client
+W|imported|4|el secador|hairdryer
+W|imported|4|la laca|hairspray
+W|imported|4|las tenacillas|curling tongs
+W|imported|4|la plancha de pelo|hair straighteners
+W|imported|4|la horquilla|hairpin
+W|imported|4|el suavizante|conditioner
+W|imported|4|los estilos|styles
+W|imported|4|la cola de caballo|ponytail
+W|imported|4|la trenza|plait
+W|imported|4|el moño francés|French pleat
+W|imported|4|el moño|bun
+W|imported|4|las coletas|pigtails
+W|imported|4|la melena|bob
+W|imported|4|el pelo corto|crop
+W|imported|4|la permanente|perm
+W|imported|4|los reflejos|highlights
+W|imported|4|la peluca|wig
+W|imported|4|castaño|brunette
+W|imported|4|rojizo|aubern
+W|imported|4|teñido|dyed
+W|imported|4|la goma del pelo|hairtie
+W|imported|4|graso|greasy
+W|imported|4|cortar las puntas|to trim
+W|imported|4|el barbero|barber
+W|imported|4|la caspa|dandruff
+W|verb|4|alisar|to straighten
+W|imported|4|las puntas abiertas|split ends
+S|imported|4|El tinte para el pelo|hair dye
+W|imported|4|la sombra de ojos|eye shadow
+W|imported|4|el rímel|mascara
+W|imported|4|el lápiz de ojos|eyeliner
+W|imported|4|el colorete|blusher
+W|imported|4|el maquillaje de fondo|foundation
+W|imported|4|la barra de labios|lipstick
+W|imported|4|el lápiz de cejas|eyebrow pencil
+S|imported|4|El cepillo para las cejas|eyebrow brush
+W|imported|4|el brillo de labios|lip gloss
+W|imported|4|el pincel de labios|lip brush
+W|imported|4|el lápiz de labios|lip liner
+W|imported|4|el lápiz corrector|concealer
+W|imported|4|los polvos compactos|face powder
+W|imported|4|la borla|powder puff
+W|imported|4|la polvera|compact
+W|imported|4|la reivindicación|demand
+W|imported|4|los tratamientos de belleza|beauty treatments
+W|imported|4|la limpieza de cutis|facial
+S|imported|4|la depilacíon a la cera|wax
+S|imported|4|la cama de rayos ultravioletas|sunbed
+W|verb|4|exfoliar|to exfoliate
+W|imported|4|la pedicura|pedicure
+W|imported|4|la manicura|manicure
+W|imported|4|la Lima de uñas|nail file
+W|imported|4|las tijeras de uñas|nail scissors
+W|imported|4|el quitasmalte|nail varnish remover
+W|imported|4|el esmalte de uñas|nail varnish
+W|imported|4|el cortaúñas|nail clippers
+W|imported|4|los artículos de tocador|toiletries
+W|imported|4|la leche limpiadora|cleanser
+W|imported|4|el tónico|toner
+W|imported|4|la crema hidratante|moisturizer
+W|imported|4|la crema auto-bronceadora|self-tanning cream
+W|imported|4|el agua de colonia|eau de toillette
+W|imported|4|el cutis|complexion
+W|imported|4|hipoalergénico|hypoallergenic
+W|imported|4|el tono|shade
+W|imported|4|el bronceado|tan
+W|imported|4|el tatuaje|tattoo
+W|imported|4|antiarrugas|anti-wrinkle
+W|imported|4|las bolas de algodón|cotton balls
+W|imported|4|por descontado|of course
+W|verb|4|enfurruñarse|to sulk
+W|imported|4|la hemorragia nasal|nosebleed
+W|imported|4|el estornudo|sneeze
+W|imported|4|el inhalador|inhaler
+W|imported|4|el asma|asthma
+W|imported|4|los calambres|cramps
+W|imported|4|el derrame cerebral|stroke
+W|imported|4|la tensión arterial|blood pressure
+W|imported|4|el infarto de miocardio|heart attack
+W|imported|4|la fiebre del heno|hayfever
+W|imported|4|el eccema|eczema
+W|imported|4|el sarampión|measels
+W|job|4|la enfermera|nurse
+S|imported|4|El lector de rayos x|X-ray viewer
+W|imported|4|la paciente|patient
+W|imported|4|la báscula|scales
+W|imported|4|el brazal|cuff
+S|imported|4|El monitor electric de la presión sanguinea|electric blood pressure monitor
+W|imported|4|la inoculación|inoculation
+W|imported|4|el examen médico|medical examination
+S|imported|4|necesito ver a un médico|I need to see a doctor
+W|imported|4|me duele aquí|it hurts here
+W|imported|4|la torcedura|sprain
+W|imported|4|el cabestrillo|sling
+W|imported|4|el collarín|neck brace
+S|imported|4|El tirón en el cuello|whiplash
+W|imported|4|el hematoma|bruise
+W|imported|4|la astilla|splinter
+W|imported|4|la quemadura de sol|sunburn
+W|imported|4|la ampolla|blister
+S|imported|4|la lesión en la cabeza|head injury
+W|imported|4|la conmoción|concussion
+W|imported|4|el envenenamiento|poisoning
+W|imported|4|la descarga eléctrica|electric shock
+S|imported|4|¿se pondrá bien?|will he/she be all right?
+S|imported|4|por favor llame a una ambulancia|please call an ambulance
+S|imported|4|¿dónde le duele?|where does it hurt?
+W|imported|4|la pomada|ointment
+W|imported|4|la tirita|plaster
+W|imported|4|el imperdible|safety pin
+W|imported|4|los analgésicos|painkillers
+W|imported|4|la toallita antiséptica|antiseptic wipe
+W|imported|4|el desinfectante|antiseptic
+W|imported|4|la gasa|gauze
+W|imported|4|el vendaje|dressing
+W|imported|4|la tablilla|splint
+W|imported|4|el esparadrapo|adhesive tape
+W|imported|4|la reanimación|resuscitation
+W|imported|4|el shock|shock
+W|imported|4|la respiración|respiration
+W|verb|4|ahogarse|to choke
+S|imported|4|¿me puede ayudar?|can you help?
+S|imported|4|¿sabe primeros auxilios?|do you know first aid?
+W|imported|4|el quirófano|operating theatre
+W|imported|4|la gráfica del paciente|chart
+W|imported|4|la anestesista|anaesthetist
+W|imported|4|el análisis de sangre|blood test
+W|imported|4|la sala de urgencias|emergency room
+W|imported|4|la silla de ruedas|wheelchair
+W|imported|4|la ecografía|scan
+W|imported|4|ingresado|admitted
+W|imported|4|dado de alta|discharged
+W|imported|4|la clinica|clinic
+W|imported|4|las horas de visita|visiting hours
+W|imported|4|la sala de pediatría|childrens ward
+W|imported|4|la sala de maternidad|maternity ward
+W|imported|4|la habitación privada|private room
+W|imported|4|el paciente externo|outpatient
+S|imported|4|la unidad de cuidados intensivos|intensive care unit
+W|imported|4|los servicios|departments
+W|imported|4|la otorrinonaringología|ENT
+W|imported|4|la cardiología|cardiology
+W|imported|4|la ortopedia|orthopeady
+W|imported|4|la ginecología|gynaecology
+W|imported|4|la fisioterapia|physiotherapy
+W|imported|4|la dermatología|dermatology
+W|imported|4|la pediatría|paediatrics
+W|imported|4|la radiología|radiology
+W|imported|4|la maternidad|maternity
+W|imported|4|la psiquiatría|psychiatry
+W|imported|4|la oftalmología|ophthalmology
+W|imported|4|la neurología|neurology
+W|imported|4|la oncología|oncology
+W|imported|4|la urología|urology
+W|imported|4|la endocrinología|endocrinology
+W|imported|4|la cirugía plástica|plastic surgery
+W|imported|4|la patología|pathology
+W|imported|4|el análisis|test
+W|imported|4|el especialista|consultant
+W|imported|4|el dentista|dentist
+W|imported|4|la encia|gum
+W|imported|4|el premolar|premolar
+W|imported|4|el incisivo|incisor
+W|imported|4|el colmillo|canine
+W|imported|4|el dolor de muelas|toothache
+W|imported|4|la placa bacteriana|plaque
+W|imported|4|la caries|decay
+W|imported|4|el empaste|filling
+W|imported|4|el hilo dental|dental floss
+W|imported|4|la extracción|extraction
+W|imported|4|el torno del dentista|drill
+W|imported|4|la sonda|probe
+W|imported|4|el delental|apron
+W|imported|4|el sillón del dentista|dentist's chair
+W|imported|4|usar el hilo dental|to floss
+W|imported|4|el aparato corrector|brace
+W|imported|4|los rayos x dentales|dental x-ray
+W|imported|4|la dentadura postiza|dentures
+W|imported|4|el óptico|optician
+W|imported|4|la funda|case
+W|imported|4|la montura|frame
+W|imported|4|el líquido limpiador|cleaning fluid
+W|imported|4|la solucíon desinfectante|disinfectant solution
+S|imported|4|El estuche para las lentillas|lens case
+W|imported|4|el examen de ojos|eye test
+W|imported|4|las lentes de contacto|contact lenses
+W|imported|4|el cristalino|lens
+W|imported|4|el iris|iris
+W|imported|4|la retina|retina
+W|imported|4|el nervio óptico|optic nerve
+W|imported|4|la dioptría|diopter
+W|imported|4|la catarata|cataract
+W|imported|4|el astigmatismo|astigmatism
+W|imported|4|la hipermetropía|long sight
+W|imported|4|la miopía|short sight
+W|imported|4|bifocal|bifocal
+W|imported|4|espantoso|frightening
+W|imported|4|la prueba del embarazo|pregnancy test
+W|imported|4|el cordón umbilical|umbilical cord
+W|imported|4|la placenta|placenta
+W|imported|4|el feto|foetus
+W|imported|4|el ultrasonido|ultrasound
+W|imported|4|la concepción|conception
+W|imported|4|prenatal|antenatal
+W|imported|4|el embrión|embryo
+W|imported|4|romper aguas|to break waters
+W|imported|4|la amniocentesis|amniocentesis
+W|imported|4|el líquido amniótico|amniotic fluid
+W|imported|4|la dilatación|dilation
+W|imported|4|la epidural|epidural
+W|imported|4|la episiotomía|episiotomy
+W|imported|4|la cesárea|caesarean section
+W|imported|4|los puntos|stitches
+W|imported|4|de nalgas|breech
+W|imported|4|prematuro|premature
+W|imported|4|el ginecólogo|gynaecologist
+W|imported|4|el aborto espontáneo|miscarriage
+W|imported|4|el tocólogo|obstetrician
+W|imported|4|la indemnización|compensation
+W|imported|4|el gotero|drip
+W|imported|4|el catéter|catheter
+W|imported|4|la comadrona|midwife
+W|imported|4|la incubadora|incubator
+W|imported|4|provocar el parto|to induce labour
+W|imported|4|los fórceps|forceps
+W|imported|4|la ventosa|ventouse cup
+W|imported|4|el parto asistido|assisted delivery
+W|imported|4|la pulsera de identificación|identity tag
+W|imported|4|el recién nacido|newborn baby
+W|imported|4|el peso al nacer|birth weight
+W|imported|4|la lactancia|nursing
+W|imported|4|el sacaleches|breast pump
+S|imported|4|El sujetador para la lactancia|nursing bra
+W|imported|4|dar el pecho|to breastfeed
+W|imported|4|los discos protectores|pads
+W|imported|4|las terapias alternativas|alternative therapy
+W|imported|4|la colchoneta|mat
+W|imported|4|el shiatsu|shiatsu
+W|imported|4|la quiropráctica|chiropractic
+W|imported|4|la osteopatía|osteopathy
+W|imported|4|la reflexología|reflexology
+W|imported|4|la meditación|meditation
+W|imported|4|el terapeuta|counsellor
+W|imported|4|el reiki|reiki
+W|imported|4|la acupunctura|acupuncture
+W|imported|4|la ayurveda|ayurveda
+W|imported|4|la hipnoterapia|hypnotherapy
+W|imported|4|la terapia de grupo|group therapy
+W|imported|4|los aceites esenciales|essential oils
+W|imported|4|el herbolario|herbalism
+W|imported|4|la aromaterapia|aromatherapy
+W|imported|4|la homeopatía|homeopathy
+W|imported|4|la acupresión|acupressure
+W|imported|4|la terapeuta|therapist
+W|imported|4|la psicoterapia|psychotherapy
+W|imported|4|la cristaloterapia|crystal healing
+W|imported|4|la hidroterapia|hydrotherapy
+W|imported|4|la naturopatía|naturopathy
+W|imported|4|el feng shui|feng shui
+W|imported|4|la relajación|relaxation
+W|imported|4|el suplemento|supplement
+W|imported|4|atuendo|attire
+W|imported|4|el alero|eaves
+W|imported|4|el canalón|gutter
+W|imported|4|la chinenea|chimney
+S|imported|4|la ventana de la buhardilla|dormer window
+W|imported|4|la teja|tile
+W|imported|4|la contraventana|shutter
+W|imported|4|el porche|porch
+W|imported|4|la Puerta principal|front door
+W|imported|4|adosado|terraced
+W|imported|4|no adosado|detached
+W|imported|4|adosado por un lado|semi-detached
+W|imported|4|la vivienda urbana|townhouse
+S|imported|4|la vivienda de una planta|bungalow
+W|imported|4|la luz del porche|porch light
+W|imported|4|la alarma antirrobo|burglar alarm
+W|imported|4|el inquilino|tennant
+W|imported|4|el pasamanos|handrail
+W|imported|4|el descansillo|landing
+W|imported|4|la barandilla|banister
+W|imported|4|el vestíbulo|hallway
+W|imported|4|el felpudo|doormat
+W|imported|4|la aldaba|door knocker
+W|imported|4|la cerradura|lock
+W|imported|4|el cerrojo|bolt
+W|imported|4|el interfono|intercom
+W|imported|4|las instalaciones internas|internal systems
+W|imported|4|el calentador de convección|convection heater
+W|imported|4|el filamento|filament
+W|imported|4|la toma de tierra|earthing
+W|imported|4|el enchufe macho|plug
+S|imported|4|la bombilla de ahorro de energía|energy saving bulb
+W|imported|4|la clavija|pin
+W|imported|4|neutro|neutral
+W|imported|4|con corriente|live
+W|imported|4|los cables|cables
+W|imported|4|el voltaje|voltage
+W|imported|4|el amperio|amp
+W|imported|4|la corriente eléctrica|power
+W|imported|4|el generador|generator
+W|imported|4|el fusible|fuse
+S|imported|4|la caja de los fusibles|fuse box
+W|imported|4|el enchufe hembra|socket
+W|imported|4|el interruptor|switch
+W|imported|4|la corriente alterna|alternating current
+W|imported|4|la corriente continua|direct current
+S|imported|4|El contador de la luz|electricity meter
+W|imported|4|el corte de luz|power cut
+W|imported|4|el transformador|transformer
+W|imported|4|el suministro de electricidad|mains supply
+S|imported|4|la válvula de la presión|pressure valve
+W|imported|4|el tubo de desagüe|overflow pipe
+W|imported|4|el tanque del agua|water chamber
+W|imported|4|el termostato|thermostat
+W|imported|4|el quemador|gas burner
+W|imported|4|la caldera|boiler
+W|imported|4|la resistencia|heating element
+W|imported|4|la llave del desagüe|drain cock
+W|imported|4|el tanque|tank
+W|imported|4|el aislamiento|insulation
+W|imported|4|el fregador|sink
+W|imported|4|la toma del agua|supply pipe
+W|imported|4|el triturador de basuras|waste disposal unit
+W|imported|4|el desagüe|drain
+W|imported|4|la llave de paso|shutoff valve
+W|imported|4|el flotador|float ball
+W|imported|4|la tapa|seat
+W|imported|4|la cisterna|cistern
+W|imported|4|la eliminación de desechos|waste disposal
+W|imported|4|el cubo para reciclar|recycling bin
+W|imported|4|el pedal|pedal
+W|imported|4|el cubo de basura|rubbish bin
+S|imported|4|El armario para clasificar la basura|sorting unit
+W|imported|4|los despercicios orgánicos|organic waste
+W|imported|4|el cuarto de estar|living room
+W|imported|4|la vase|vase
+W|imported|4|el cojín|cushion
+W|imported|4|la mesa de café|coffee table
+W|imported|4|el aplique|wall light
+W|home|4|la cheminée|fireplace
+W|imported|4|la moldura|moulding
+W|imported|4|el estor|roller blind
+W|imported|4|el estor de láminas|venetian blind
+W|imported|4|el visillo|net curtain
+W|body|4|el respaldo|back
+W|body|4|la pata|leg
+W|imported|4|el mantel individual|place mat
+W|imported|4|la ración|portion
+W|imported|4|la anfitriona|hostess
+W|imported|4|estaba buenísimo|that was delicous
+W|imported|4|estoy lleno, gracias|I've had enough
+S|imported|4|¿puedo repetir, por favor?|can I have some more please?
+W|imported|4|la taza de café|coffee cup
+W|imported|4|la taza de té|tea cup
+W|imported|4|la cucharilla de café|teaspoon
+W|imported|4|la cafetera de émbolo|cafetière
+W|imported|4|la jarra|jug
+W|imported|4|la huevera|egg cup
+W|imported|4|la copa de vino|wine glass
+W|imported|4|la cristalería|glasswear
+W|imported|4|el servilletero|napkin ring
+W|imported|4|el plato de pan|side plate
+W|imported|4|el plato llano|dinner plate
+W|imported|4|el cubierto|place setting
+W|imported|4|el plato sopero|soup bowl
+W|imported|4|los estantes|shelves
+S|imported|4|El frente de la cocina|splashback
+W|imported|4|el extractor|extractor
+W|imported|4|la placa vitro-cerámica|ceramic hob
+W|imported|4|los electrodomésticos|appliances
+W|imported|4|el horno microondas|microwave oven
+W|imported|4|el hervidor|kettle
+W|imported|4|el tostador|toaster
+W|imported|4|el cuenco mezclador|mixing bowl
+W|imported|4|la cuchilla|blade
+W|imported|4|el robot de cocina|food processor
+W|imported|4|el friegaplatos|dishwasher
+S|imported|4|la máquina de los cubitos|ice maker
+S|imported|4|El cajón de las verduras|crisper
+W|imported|4|el frigorífico congelador|fridge-freezer
+W|imported|4|la placa|hob
+W|verb|4|congelar|to freeze
+W|imported|4|el escurridor|draining board
+W|verb|4|descongelar|to defrost
+W|imported|4|cocer al vapor|to steam
+W|imported|4|extender con el rodillo|to roll
+W|verb|4|remover|to stir
+W|verb|4|escalfar|to poach
+W|imported|4|cocer al horno|to bake
+W|imported|4|asar a la parilla|to grill
+W|imported|4|los utensilios de cocina|kitchenware
+W|imported|4|el cuchillo de sierra|bread knife
+W|imported|4|la tabla para cortar|chopping board
+W|imported|4|el cuchillo de cocina|kitchen knife
+W|imported|4|el hacha de cocina|cleaver
+W|imported|4|el afilador|knife sharpener
+W|imported|4|el mazo de cocina|meat tenderizer
+W|imported|4|el mondador|peeler
+W|imported|4|el descorazonador|apple corer
+W|imported|4|el mortero|grater
+W|imported|4|la mano de postero|pestle
+S|imported|4|El mazo para puré de patatas|masher
+W|imported|4|el abrelatas|can opener
+W|imported|4|el prensaajos|garlic press
+W|imported|4|la cuchara de servir|serving spoon
+W|imported|4|la pala para pescado|Fish slice
+W|imported|4|la cuchara de madera|wooden spoon
+W|imported|4|la espumadera|slotted spoon
+W|imported|4|el tenedor para trinchar|carving fork
+W|imported|4|la cuchara para helado|scoop
+W|imported|4|el batidor de varillas|whisk
+W|imported|4|el colador|sieve
+W|imported|4|la sartén|frying pan
+W|imported|4|antiadherente|non-stick
+W|imported|4|el wok|wok
+W|imported|4|la cazuela de barro|earthenware dish
+W|home|4|de cristal|glass
+W|imported|4|el cuenco|mixing bowl
+W|imported|4|el molde para suflé|soufflé dish
+W|imported|4|resistente al horno|ovenproof
+W|imported|4|la fuente para gratinar|gratin dish
+W|imported|4|el molde individual|ramekin
+W|imported|4|la cazuela|casserole dish
+W|imported|4|la báscula de cocina|scales
+W|imported|4|la jarra graduada|measuring jug
+W|imported|4|el molde para bizcocho|cake tin
+W|imported|4|el molde redondo|pie tin
+W|imported|4|la flanera|flan tin
+W|imported|4|la brocha de cocina|pastry brush
+W|imported|4|el rodillo de cocina|rolling pin
+W|imported|4|la manga pastelera|piping bag
+W|imported|4|el molde para magdalenas|muffin tray
+W|imported|4|la bandeja de horno|baking tray
+W|imported|4|la rejilla|cooling rack
+W|imported|4|la manopla de cocina|oven glove
+S|imported|4|la lámpara de la mesilla|bedside lamp
+W|imported|4|el cabecero|headboard
+W|imported|4|la mesilla de noche|bedside table
+W|imported|4|la colcha|bed spread
+S|imported|4|la bolsa de agua caliente|hot-water bottle
+W|imported|4|la radio despertador|clock radio
+W|imported|4|el reloj despertador|alarm clock
+S|imported|4|la caja de pañuelos de papel|box of tissues
+W|imported|4|la ropa de cama|bed linen
+S|imported|4|la funda de la almohada|pillowcase
+W|imported|4|el cubrecanapé|valance
+W|imported|4|la cama individual|single bed
+W|imported|4|la manta eléctrica|electric blanket
+W|imported|4|la cama de matrimonio|double bed
+W|imported|4|el estribo|footboard
+W|imported|4|la moqueta|carpet
+W|imported|4|el insomnio|insomnia
+W|imported|4|poner el despertador|to set the alarm
+W|verb|4|roncar|to snore
+W|imported|4|el armario empotrado|built in wardrobe
+W|imported|4|el toallero|towel rail
+W|imported|4|el bidé|bidet
+S|imported|4|la puerta de la ducha|shower door
+S|imported|4|El grifo de agua fría|cold tap
+S|imported|4|El grifo de agua caliente|hot tap
+S|imported|4|la alcachofa de la ducha|shower head
+W|imported|4|la tapa del wáter|toilet seat
+W|imported|4|el wáter|toilet
+W|imported|4|la escobilla del wáter|toilet brush
+S|imported|4|El armario de las medicinas|medicine cabinet
+S|imported|4|El rollo de papel higiénico|toilet roll
+W|imported|4|darse una ducha|to take a shower
+W|imported|4|la alfombrilla de baño|bath mat
+W|imported|4|la cortina de ducha|shower curtain
+W|imported|4|darse un baño|to take a bath
+W|imported|4|la higiene dental|dental hygiene
+W|imported|4|el enjuague bucal|mouthwash
+W|imported|4|la piedra pómez|pumice stone
+S|imported|4|El cepillo para la espalda|back brush
+W|imported|4|el desodorante|deodorant
+W|imported|4|la jabonera|soap dish
+W|imported|4|el gel de ducha|shower gel
+S|imported|4|la crema para la cara|face cream
+W|imported|4|el gel de baño|bubble bath
+W|imported|4|los polvos de talco|talcum powder
+W|imported|4|la leche del cuerpo|body lotion
+W|imported|4|la toalla de baño|bath towel
+W|imported|4|la toalla de lavabo|hand towel
+W|imported|4|las toallas|towels
+W|imported|4|el afeitado|shaving
+W|imported|4|la maquinilla eléctrica|electric razor
+W|imported|4|la espuma de afeitar|shaving foam
+S|imported|4|la cuchilla de afeitar desechable|disposable razor
+W|imported|4|la hoja de afeitar|razor blade
+W|imported|4|el aftershave|aftershave
+S|imported|4|la habitación de los niños|nursery
+W|imported|4|el cuidado del bebé|baby care
+S|imported|4|la crema para las escoceduras|nappy rash cream
+W|imported|4|la toallita húmeda|wet wipe
+W|imported|4|el cambiador|changing mat
+W|imported|4|el orinal|potty
+W|imported|4|la bañera de plástico|baby bath
+W|imported|4|la hora de dormir|sleeping
+W|imported|4|los barrotes|bars
+W|imported|4|la chichonera|bumper
+W|imported|4|el vellón|fleece
+W|imported|4|el sonajero|rattle
+W|imported|4|el moisés|moses basket
+W|imported|4|el muñeco de peluche|soft toy
+W|imported|4|la casa de muñecas|doll's house
+W|imported|4|la casa de juguetes|playhouse
+W|imported|4|el oso de peluche|Teddy bear
+S|imported|4|El cesto de los juguetes|toy basket
+W|imported|4|el cierre de seguridad|child lock
+W|imported|4|el escuchabebés|baby monitor
+W|imported|4|la barrera de seguridad|stair gate
+W|imported|4|la tetina|teat
+W|imported|4|la silleta de paseo|pushchair
+W|imported|4|el cochecito de niños|pram
+W|imported|4|el capazo|carrycot
+W|imported|4|la bolsa del bebé|changing bag
+W|imported|4|la mochila de bebé|baby sling
+W|imported|4|el lavadero|utility room
+W|imported|4|la colada|laundry
+W|imported|4|la ropa limpia|clean clothes
+S|imported|4|El cesto de la colada|laundry basket
+W|imported|4|la lavadora secadora|washer-dryer
+S|imported|4|la pinza para la ropa|clothes peg
+S|imported|4|la cuerda para tender la ropa|clothes line
+W|verb|4|centrifugar|to spin
+W|imported|4|la centrifugadora|spin dryer
+S|imported|4|¿cómo funciona la lavadora?|how do I operate the washing machine?
+W|imported|4|el equipo de limpieza|cleaning equipment
+S|imported|4|El tubo de la aspiradora|suction hose
+W|imported|4|la fregona|mop
+W|imported|4|el recogedor|dust pan
+W|imported|4|el polvo|powder
+W|imported|4|el detergente|detergent
+W|imported|4|el trapo del polvo|duster
+W|imported|4|la cera|polish
+W|imported|4|las acciones|activities
+W|imported|4|pasar la bayeta|to wipe
+W|verb|4|restregar|to scrub
+W|imported|4|limpiar el polvo|to dust
+W|imported|4|sacar brillo|to polish
+W|imported|4|la sierra de vaivén|jigsaw
+W|imported|4|el taladro inalámbrico|rechargeable drill
+W|imported|4|el taladro eléctronico|electric drill
+W|imported|4|la broca|drill bit
+W|imported|4|la pistola para encolar|glue gun
+W|imported|4|el torno de banco|vice
+W|imported|4|la abrazadera|clamp
+W|imported|4|la lijadora|sander
+W|imported|4|la sierra circular|circular saw
+W|imported|4|el banco de trabajo|workbench
+W|imported|4|la cola de carpintero|wood glue
+W|imported|4|la guimbarda|router
+W|imported|4|las virutas de madera|wood shavings
+S|imported|4|el organizador de las herramientas|tool rack
+W|imported|4|el taladro manual|bit brace
+W|imported|4|el alargador|extension lead
+W|imported|4|las técnicas|techniques
+W|verb|4|taladrar|to drill
+W|imported|4|clavar con el martillo|to hammer
+W|verb|4|tornear|to turn
+W|verb|4|tallar|to carve
+W|imported|4|el hilo de estaño|solder
+W|verb|4|soldar|to solder
+W|imported|4|los materiales|materials
+S|imported|4|El tablero de densidad media|MDF
+W|imported|4|el contrachapado|plywood
+W|imported|4|el aglomerado|chipboard
+W|imported|4|el cartón madera|hardboard
+W|imported|4|la madera de pino|softwood
+W|imported|4|la madera noble|hardwood
+W|imported|4|el barniz|varnish
+W|imported|4|el tinte para madera|woodstain
+W|imported|4|el acero inoxidable|stainless steel
+W|imported|4|galvanizado|galvanized
+S|imported|4|la caja de las herramientas|toolbox
+W|imported|4|la llave de boca|spanner
+W|imported|4|la llave inglesa|adjustable spanner
+W|imported|4|las tenazas de alambre|needle-nose pliers
+W|imported|4|la llave de tubo|socket wrench
+W|imported|4|la arandela|washer
+W|food|4|la tuerca|nut
+W|imported|4|los alicates|Bull-nose pliers
+W|home|4|el cúter|knife
+W|imported|4|la cinta métrica|tape measure
+W|imported|4|el destornillador|screwdriver
+W|imported|4|los cabezales de destornillador|screwdriver bits
+W|imported|4|las brocas|drill bits
+W|imported|4|la broca para metal|metal bit
+W|imported|4|el escariador|reamer
+W|imported|4|las brocas para madera|carpentry bits
+W|imported|4|la broca para madera|flat wood bit
+W|imported|4|la broca de seguridad|security bit
+W|imported|4|la broca de albañilería|masonry bit
+W|imported|4|el destornillador de estrella|phillips screwdriver
+W|imported|4|el tornillo|screw
+W|imported|4|el pelacables|wire strippers
+W|imported|4|el soldador|soldering iron
+W|imported|4|el cortaalambres|wire cutters
+W|imported|4|la cinta aislante|insulating tape
+W|imported|4|la sierra de calar|fretsaw
+W|imported|4|el escalpelo|scalpel
+W|imported|4|el serrucho de costilla|tenon saw
+W|imported|4|el serrucho|handsaw
+W|imported|4|las gafas de seguridad|safety goggles
+S|imported|4|la caja para cortar en inglete|mitre block
+W|imported|4|la sierra para metales|hacksaw
+W|imported|4|la lana de acero|wire wool
+W|imported|4|el papel de lija|sandpaper
+W|imported|4|las tenazas|wrench
+W|imported|4|el formón|chisel
+W|imported|4|la piedra afiladora|sharpening stone
+W|imported|4|el cortatuberías|pipe cutter
+W|imported|4|el desatascador|plunger
+W|imported|4|el papel pintado|wallpaper
+W|imported|4|la cuerda de plomada|Plumb line
+W|imported|4|el raspador|scraper
+W|imported|4|la escalera de mano|step ladder
+W|verb|4|empapelar|to wall paper
+W|imported|4|la brocha de empapelador|wallpaper brush
+W|imported|4|la mesa de encolar|pasting table
+W|imported|4|la brocha de encolar|pasting brush
+W|imported|4|la cola para empapelar|wallpaper paste
+W|verb|4|enyesar|to plaster
+W|verb|4|alicatar|to tile
+W|imported|4|el rodillo|roller
+W|imported|4|la brosse|brush
+W|imported|4|la lata de pintura|paint tin
+W|imported|4|la masilla|filler
+S|imported|4|la bandeja para la pintura|paint tray
+W|imported|4|la cinta adhesiva protectora|masking tape
+W|imported|4|la trementina|turpentine
+W|imported|4|el aguarrás|white spirit
+W|imported|4|la pintura al agua|emulsion
+W|imported|4|con brillo|gloss
+W|imported|4|mate|mat
+W|imported|4|el papel de apresto|lining paper
+W|imported|4|la imprimación|primer
+S|imported|4|El papel estampado en relieve|embossed paper
+W|imported|4|la primera mano|undercoat
+W|imported|4|la última mano|top coat
+W|imported|4|el conservante|preservative
+W|imported|4|el sellante|sealant
+W|imported|4|el disolvente|solvent
+W|imported|4|el cemento blanco|grout
+W|imported|4|los estilos de jardín|garden styles
+W|imported|4|la terraza ajardinada|patio garden
+S|imported|4|El jardín en la azotea|roof garden
+S|imported|4|Los adornos para el jardín|garden features
+W|imported|4|la cesta colgante|hanging basket
+W|imported|4|la espaldera|trellis
+W|imported|4|la pérgola|pergola
+W|imported|4|la rocalla|Rock garden
+W|imported|4|el jardín acuático|water garden
+W|imported|4|el jardín clásico|formal garden
+W|imported|4|el jardín campestre|cottage garden
+S|imported|4|El jardín de plantas herbáceas|herb garden
+W|imported|4|el parterre|flowerbed
+S|imported|4|El montón de abono compuesto|compost heap
+W|imported|4|el cobertizo|shed
+W|imported|4|el invernadero|greenhouse
+S|imported|4|El arriate de plantas herbáceas|herbaceous border
+S|imported|4|la capa superior de la tierra|top soil
+W|imported|4|la creta|chalk
+W|imported|4|el cieno|silt
+W|imported|4|el entarimado|decking
+W|imported|4|las plantas de jardín|garden plants
+W|imported|4|los tipos de plantas|types of plants
+W|imported|4|annual|annual
+W|imported|4|bienal|biennial
+W|imported|4|el bulbo|bulb
+W|imported|4|el junco|rush
+W|imported|4|las malas hierbas|weeds
+W|imported|4|la planta acuática|water plant
+W|imported|4|de hoja caduca|deciduous
+W|imported|4|de hoja perenne|evergreen
+W|imported|4|la conifera|conifer
+S|imported|4|Las plantas podadas con formas|topiary
+W|imported|4|la planta alpestre|alpine
+W|imported|4|la planta suculenta|succulent
+W|imported|4|la planta de maceta|potted plant
+W|imported|4|la planta de sombra|shade plant
+W|imported|4|la planta trepadora|climber
+W|imported|4|el arbusto de flor|flowering shrub
+S|imported|4|la planta para cubrir suelo|ground cover
+W|imported|4|ornamental|ornamental
+W|imported|4|las herramientas de jardinería|garden tools
+S|imported|4|El rastrillo para el césped|lawn rake
+S|imported|4|la podadera de mango largo|long-handled shears
+W|imported|4|la azada|hoe
+W|imported|4|el abono compuesto|compost
+W|imported|4|las semillas|seeds
+W|imported|4|la harina de huesos|bone meal
+W|imported|4|la grava|gravel
+S|imported|4|la bolsa para la hierba|grass bag
+W|imported|4|el guarnecedor|trimmer
+W|imported|4|la cesta de jardinero|trug
+W|imported|4|la carretilla|wheelbarrow
+W|imported|4|el desplantador|trowel
+W|imported|4|las tijeras de podar|secateurs
+W|imported|4|la cizalla|shears
+W|imported|4|la sierra de mano|hand saw
+W|imported|4|el semillero|seed tray
+W|imported|4|los guantes de jardín|gardening gloves
+W|imported|4|el hilo de bramante|twine
+W|imported|4|las etiquetas|labels
+W|imported|4|las anillas|ring ties
+W|imported|4|las cañas|canes
+W|imported|4|la criba|sieve
+W|imported|4|la maceta|plant pot
+W|imported|4|las botas de goma|rubber boots
+W|imported|4|el riego|watering
+W|imported|4|el pulverizador|spray gun
+W|imported|4|la regadera|watering can
+W|imported|4|la manguera|hose pipe
+W|imported|4|el aspersor|sprinkler
+W|imported|4|la boquilla|nozzle
+W|imported|4|el enrollador de manguera|hose reel
+W|imported|4|la estaca|stake
+W|imported|4|poner césped|to turf
+S|imported|4|hacer agujeros con la horquilla|to spike
+W|imported|4|abonar en la superficie|to top dress
+W|imported|4|quitar las flores muertos|to dead head
+W|verb|4|rociar|to spray
+W|imported|4|la caña|cane
+W|verb|4|injertar|to graft
+W|verb|4|propogar|to propogate
+W|imported|4|el esqueje|cutting
+W|verb|4|apuntalar|to stake
+W|verb|4|transplantar|to transplant
+W|verb|4|escardar|to weed
+W|imported|4|cubrir la tierra|to mulch
+W|verb|4|cosechar|to harvest
+W|imported|4|plantar en tiesto|to pot up
+W|verb|4|airear|to aerate
+W|imported|4|biológico|organic
+W|imported|4|el drenaje|drainage
+W|imported|4|el plantón|seedling
+W|imported|4|el subsuelo|subsoil
+W|imported|4|el herbicida|weedkiller
+W|imported|4|los servicios de emergencia|emergency services
+W|imported|4|el ambulancero|paramedic
+W|imported|4|el agente de policía|police officer
+W|imported|4|las esposas|handcuffs
+W|imported|4|la porra|truncheon
+W|imported|4|el coche de policía|police car
+W|imported|4|las luces|lights
+W|imported|4|la estación de policía|police station
+W|imported|4|el comisario|inspector
+W|imported|4|el detective|detective
+W|imported|4|la denuncia|complaint
+W|imported|4|el sospechoso|suspect
+W|imported|4|el arresto|arrest
+W|imported|4|la celda|police cell
+W|imported|4|los bomberos|fire brigade
+W|imported|4|el chorro de agua|water jet
+W|imported|4|la cabina|cab
+W|imported|4|el coche de bomberos|fire engine
+W|imported|4|la salida de incendios|fire escape
+W|imported|4|el parque de bomberos|fire station
+W|imported|4|el detector de humo|smoke detector
+W|imported|4|la alarma contra incendios|fire alarm
+W|imported|4|el extintor|fire extinguisher
+W|imported|4|la boca de agua|hydrant
+S|imported|4|hay un incendio en|there's a fire at
+W|imported|4|ha habido un accidente|there's been an accident
+S|imported|4|¡llame a la policía!|call the police!
+W|imported|4|la tarjeta de débito|debit card
+W|imported|4|el número de cuenta|account number
+W|imported|4|las hojas de ingreso|paying-in slips
+W|imported|4|los folletos|leaflets
+W|imported|4|el director de banco|bank manager
+W|imported|4|el talonario de cheques|chequebook
+W|imported|4|los ahorros|savings
+W|imported|4|los impuestos|tax
+W|imported|4|el descubierto|overdraft
+W|imported|4|el tipo de interés|interest rate
+W|imported|4|la hoja de reintegro|withdrawal slip
+W|imported|4|la domiciliación bancaria|direct debit
+W|imported|4|la comisión bancaria|bank charge
+S|imported|4|la ranura de la tarjeta|card slot
+W|imported|4|las divisas|foreign currency
+W|imported|4|la oficina de cambio|bureau de change
+W|imported|4|el cheque de viaje|travellers cheque
+W|imported|4|el tipo de cambio|exchange rate
+S|imported|4|El valor de las acciones|share price
+W|imported|4|el agente de bolsa|stockbroker
+W|imported|4|la asesora financiera|financial advisor
+W|imported|4|el valor nominal|denomination
+W|imported|4|la inversión|investment
+W|imported|4|los dividendos|dividends
+W|imported|4|el contable|accountant
+W|imported|4|el patrimonio neto|equity
+S|imported|4|¿podría cambiar esto por favor?|can I change this please?
+S|imported|4|¿a cuánto está al cambio hoy?|what's today's exchange rate?
+W|imported|4|las comunicaciones|communications
+W|imported|4|el empleado de correos|postal worker
+W|imported|4|el matasellos|postmark
+W|imported|4|el código postal|postal code
+W|imported|4|por avión|by airmail
+W|imported|4|el correo certificado|registered post
+W|imported|4|el remite|return address
+W|imported|4|la recogida|collection
+W|imported|4|el giro postal|postal ordery
+W|imported|4|no doblar|do not bend
+W|imported|4|la saca postal|mail bag
+W|imported|4|el telegrama|telegram
+W|imported|4|hacia arriba|this way up
+W|imported|4|el mensajero|courier
+W|imported|4|el auricular|headset
+W|imported|4|el teléfono inalámbrico|cordless phone
+W|imported|4|el contestador automático|answering machine
+W|imported|4|el videoteléfono|video phone
+W|imported|4|la cabina telefónica|telephone box
+W|imported|4|el teléfono inteligente|smartphone
+W|imported|4|el teléfono móvil|mobile phone
+W|imported|4|las monedas revueltas|coin return
+W|imported|4|el teléfono público|public telephone
+W|imported|4|la información telefónica|directory enquiries
+S|imported|4|la llamada a cobro revertido|reverse charge call
+W|imported|4|el mensaje de voz|voice message
+W|imported|4|el operador|operator
+W|imported|4|la aplicación|app
+W|imported|4|comunicado|engaged
+W|imported|4|la clave de acceso|passcode
+S|imported|4|¿me podría dar el número de....?|can you give me the number of....?
+S|imported|4|¿cuál es el prefijo de larga distancia para llamar a....?|what is the dialing code for.....?
+S|imported|4|¡mándame un mensaje de texto!|text me!
+S|imported|4|la llave de la habitación|room key
+W|imported|4|los mensajes|messages
+W|imported|4|la casilla|pigeonhole
+W|imported|4|la recepcionista|receptionist
+W|imported|4|el registro|register
+S|imported|4|El número de la habitación|room number
+W|imported|4|el botones|porter
+W|home|4|las habitaciones|rooms
+S|imported|4|la habitación con dos camas individuales|twin room
+S|imported|4|El cuarto de baño privado|private bathroom
+W|imported|4|el servicio de lavandaría|laundry service
+W|imported|4|la bandeja del desayuno|breakfast tray
+W|imported|4|el servicio de habitaciones|room service
+W|imported|4|el minibar|mini bar
+W|imported|4|la pensión completa|full board
+W|imported|4|la media pensión|half board
+S|imported|4|la habitación con desayuno incluido|bed and breakfast
+S|imported|4|¿tiene alguna habitación libre?|do you have any vacancies?
+W|imported|4|tengo una reserva|I have a reservation
+W|imported|4|quiero una habitación individual|I'd like a single room
+S|imported|4|quiero una habitación para tres días|I'd like a room for three nights
+S|imported|4|¿cuánto cuesta la habitación por día?|what is the charge per night?
+S|imported|4|¿cuándo tengo que dejar la habitación?|when do I have to vacate the room?
+W|imported|4|el atrio|atrium
+W|imported|4|la segunda planta|second floor
+W|imported|4|la primera planta|first floor
+W|imported|4|la escalera mecánica|escalator
+W|imported|4|la planta baja|ground floor
+W|imported|4|la sección de zapatería|shoe department
+W|imported|4|la sección infantil|childrens department
+W|imported|4|la sección de equipajes|luggage department
+W|imported|4|el directorio|store directory
+W|imported|4|los probadores|changing rooms
+S|imported|4|El cuarto para cambiar a los bebés|baby changing facilities
+S|imported|4|¿cuánto cuesta esto?|how much is this?
+S|imported|4|¿puedo cambiar esto?|may I exchange this?
+W|imported|4|la perfumería|perfumery
+W|imported|4|los productos de belleza|beauty
+W|imported|4|la ropa de hogar|linen
+S|imported|4|El mobilario para el hogar|home furnishings
+W|imported|4|la mercería|haberdashery
+W|imported|4|el menaje de hogar|kitchenware
+W|imported|4|las vajillas|China
+W|imported|4|los aparatos eléctricos|electrical goods
+W|imported|4|la iluminación|lighting
+W|imported|4|los artículos deportivos|sports
+W|imported|4|la cinta transportadora|conveyor belt
+W|imported|4|las ofertas|offers
+S|imported|4|la bolsa de la compra|shopping bag
+W|imported|4|los cereales|cereals
+W|imported|4|las conservas|tinned food
+W|imported|4|la confitería|confectionery
+S|imported|4|la carne y las aves|meat and poultry
+W|imported|4|la charcutería|deli
+W|imported|4|los congelados|frozen food
+W|imported|4|los platos preparados|convenience food
+W|imported|4|las bebidas|drinks
+W|imported|4|los productos de limpieza|cleaning products
+W|imported|4|los artículos de aseo|toiletries
+S|imported|4|Los artículos para el bebé|baby products
+W|imported|4|la comida para animales|pet food
+W|imported|4|las revistas|magazines
+W|imported|4|la higiene femenina|feminine hygiene
+W|imported|4|el cuidado dental|dental care
+W|imported|4|los desodorantes|deodorants
+W|imported|4|las vitaminas|vitamins
+W|imported|4|el dispensario|dispensary
+W|imported|4|el farmacéutico|pharmacist
+S|imported|4|El jarabe para la tos|cough medicine
+W|imported|4|los remedios de herbolario|herbal remedies
+S|imported|4|El cuidado de la piel|skin care
+S|imported|4|la loción para después del sol|aftersun
+W|imported|4|la crema protectora|sun screen
+W|imported|4|la crema protectora total|sunblock
+W|imported|4|el repelente de insectos|insect repellent
+W|imported|4|el pañuelo de papel|tissue
+W|imported|4|la compresa|sanitary towel
+W|imported|4|el tampón|tampon
+W|imported|4|el salvaslip|panty liner
+W|imported|4|la cápsula|capsule
+W|imported|4|la cuchara medidora|measuring spoon
+W|imported|4|el mode de empleo|instructions
+W|imported|4|el supositorio|suppository
+W|imported|4|el cuentagotas|dropper
+W|imported|4|la jeringuilla|syringe
+W|imported|4|el spray|spray
+W|imported|4|los polvos|powder
+W|imported|4|el hierro|iron
+W|imported|4|el calcio|calcium
+W|imported|4|el magnesio|magnesium
+W|imported|4|la insulina|insulin
+W|imported|4|el complejo vitamínico|multivitamins
+W|imported|4|los efectos secundarios|side-effects
+W|imported|4|la fecha de caducidad|expiry date
+S|imported|4|Las píldoras para el mareo|travel sickness pills
+W|imported|4|soluble|soluble
+W|imported|4|la medicación|medication
+W|imported|4|el laxante|laxative
+W|imported|4|el calmante|sedative
+S|imported|4|la pastilla para la garganta|throat lozenge
+W|imported|4|el somnífero|sleeping pill
+W|imported|4|el antiinflamatorio|anti-inflammatory
+W|imported|4|la floristería|florist
+W|nature|4|las flores|flowers
+W|imported|4|la acacia|acacia
+W|imported|4|el alheli|stocks
+W|imported|4|la gerbera|gerbera
+W|imported|4|la fresia|freesia
+W|imported|4|el gladiolo|gladiolus
+W|imported|4|la gypsofila|gypsophila
+W|imported|4|el jarrón|vase
+W|imported|4|la peonía|peony
+W|imported|4|el ramo|bunch
+W|imported|4|el envoltorio|wrapping
+W|imported|4|los arreglos|arrangements
+W|imported|4|las flores secas|dried flowers
+W|imported|4|el popurrí|pot-pourri
+W|imported|4|la guirnalda|garland
+S|imported|4|¿me da un ramo de.... por favor?|can I have a bunch of..... please?
+S|imported|4|¿me los puede envolver?|can I have them wrapped?
+S|imported|4|¿puedo adjuntar un mensaje?|can I attach a message?
+S|imported|4|¿Los puede enviar a....?|can you send them to...?
+S|imported|4|¿cuánto tiempo durarán éstos?|how long will these last?
+W|imported|4|¿huelen?|are they fragrant?
+W|imported|4|el vendedor de periódicos|newsagent
+W|imported|4|los cigarrillos|cigarettes
+W|imported|4|el paquete de tabaco|packet of cigarettes
+W|imported|4|los sellos|stamps
+W|imported|4|el mechero|lighter
+W|imported|4|el tubo|stem
+W|imported|4|la cazoleta|bowl
+W|imported|4|la pipa|pipe
+W|imported|4|el puro|cigar
+W|imported|4|el vendedor de golosinas|confectioner
+W|imported|4|la caja de bombones|box of chocolates
+W|imported|4|la barrita|snack bar
+W|imported|4|el chocolate con leche|milk chocolate
+W|imported|4|el chocolate negro|plain chocolate
+W|imported|4|el chocolate blanco|white chocolate
+W|imported|4|las golosinas a granel|pick and mix
+W|imported|4|los caramelos duros|boiled sweets
+W|imported|4|la trufa|truffle
+W|imported|4|las golosinas|confectionery
+W|food|4|el bombón|chocolate
+W|imported|4|la tableta de chocolate|chocolate bar
+W|imported|4|los caramelos|sweets
+W|imported|4|la piruleta|lollipop
+W|imported|4|el toffee|toffee
+W|imported|4|la pastilla de menta|mint
+W|imported|4|el caramelo blando|jellybean
+W|imported|4|la gominola|fruit gum
+W|imported|4|el regaliz|liquorice
+W|imported|4|las otras tiendas|other shops
+W|imported|4|la verdulería|greengrocer's
+W|imported|4|el ultramarinos|grocer's
+W|imported|4|la tienda de antigüedades|antiques shop
+S|imported|4|la tienda de articulos de regalo|gift shop
+W|imported|4|la tienda de discos|record shop
+W|imported|4|la tienda de licores|off licence
+W|imported|4|la pajarería|pet shop
+W|imported|4|la tienda de muebles|furniture shop
+W|imported|4|la boutique|boutique
+W|imported|4|la sastrería|tailor's
+W|imported|4|la pelequería|hairdresser's
+W|imported|4|el vivero|garden centre
+W|imported|4|la tienda de fotografía|camera shop
+W|imported|4|la agencia inmobilaría|Estate agent's
+W|imported|4|la herboristería|health food shop
+S|imported|4|la tienda de artículos usados|second hand shop
+S|imported|4|la tienda de materiales de arte|art shop
+W|food|4|los alimentos|food
+W|imported|4|el gancho|meat hook
+W|imported|4|el alfilador|knife sharpener
+W|food|4|las salchicas|sausages
+W|imported|4|las asaduras|offal
+W|imported|4|curado|cured
+W|imported|4|de granja|free range
+W|imported|4|la carne blanca|white meat
+W|imported|4|la carne roja|red meat
+W|imported|4|la carne magra|lean meat
+W|imported|4|los cortes|cuts
+W|imported|4|la loncha|slice
+W|imported|4|la carne picada|mince
+W|imported|4|el solomillo|fillet
+W|imported|4|el filete de cadera|rump steak
+W|imported|4|el filete de lomo|sirloin steak
+W|imported|4|la chuleta|chop
+W|imported|4|el asado|joint
+W|imported|4|las aves|poultry
+W|imported|4|la pechuga|breast
+W|imported|4|el pollo preparado|dressed chicken
+W|imported|4|la carne de caza|game
+W|imported|4|el faisán|pheasant
+W|imported|4|la codorniz|quail
+W|imported|4|la oca|goose
+W|imported|4|las gambas peladas|peeled prawns
+W|imported|4|el salmonete|red mullet
+W|imported|4|los filetes de mero|halibut fillets
+W|imported|4|la truca arco iris|rainbow trout
+W|imported|4|las aletas de raya|skate wings
+W|imported|4|el rape|monkfish
+W|imported|4|el pez espada|swordfish
+W|imported|4|el lenguado|Dover sole
+W|imported|4|la platija|lemon sole
+W|imported|4|el abadejo|haddock
+W|imported|4|la raya|skate
+W|imported|4|la pescadilla|whiting
+W|imported|4|el besugo|sea bream
+W|imported|4|el cangrejo de río|crayfish
+W|imported|4|el berberecho|cockle
+W|imported|4|la navaja|razer-shell
+W|imported|4|el langostino|king prawn
+W|imported|4|sin piel|skinned
+W|imported|4|sin escamas|descaled
+W|imported|4|sin espinas|boned
+W|imported|4|en filetes|filleted
+W|imported|4|la rodaja|steak
+W|imported|4|la escama|scale
+S|imported|4|¿Me lo puede limpiar?|will you clean it for me?
+W|food|4|las verduras|vegetables
+W|imported|4|la haba|broad bean
+W|imported|4|el maíz dulce|sweet corn
+W|imported|4|los brotes de soja|bean sprout
+W|imported|4|el quingombó|okra
+W|imported|4|los palmitos|palm hearts
+W|imported|4|la cabezuela|floret
+S|imported|4|¿vende verduras biológicas?|do you sell organic vegetables?
+S|imported|4|¿son productos locales?|are these grown locally?
+W|imported|4|la rócula|rocket
+W|imported|4|el berro|watercress
+W|imported|4|el radicchio|radicchio
+W|imported|4|la col de bruselas|brussel sprout
+W|imported|4|la col rizada|kale
+W|imported|4|la acedera|sorrel
+W|imported|4|la escarola|endive
+W|imported|4|el colinabo|kohirabi
+W|imported|4|la acelga china|pak-choi
+W|imported|4|la berza|spring greens
+W|imported|4|el calabacín gigante|marrow
+W|imported|4|la guindilla|chilli
+W|imported|4|la coliflor|cauliflower
+W|imported|4|el tomate cherry|cherry tomato
+W|imported|4|el apio-nabo|celeriac
+W|food|4|la zanahoría|carrot
+W|imported|4|la raíz del taro|taro root
+W|imported|4|el fruto del pan|breadfruit
+W|imported|4|la castaña de agua|water chesnut
+W|imported|4|la patata nueva|new potato
+W|imported|4|la mandioca|cassava
+W|imported|4|firme|firm
+W|imported|4|la pulpa|flesh
+S|imported|4|¿me da un kilo de patatas, por favor?|can I have one kilo of potatoes please?
+S|imported|4|¿cuánto Vale el kilo?|what's the price per kilo?
+S|imported|4|¿cómo se llaman ésos?|what are those called?
+W|imported|4|el boniato|sweet potato
+W|imported|4|la remolacha|beetroot
+W|imported|4|el nabo sueco|swede
+W|imported|4|el topinambur|Jerusalem artichoke
+W|imported|4|el rábano picante|horseradish
+W|imported|4|la cebolleta|spring onion
+W|imported|4|el puerro|leek
+W|food|4|el champiñon|mushroom
+W|imported|4|la calabaza bellota|acorn squash
+W|imported|4|los cítricos|citrus fruit
+W|imported|4|la mandarina clementina|clementine
+W|imported|4|el ugli|ugli fruit
+W|imported|4|la médula|pith
+W|imported|4|el gajo|segment
+W|imported|4|la mandarina satsuma|satsuma
+W|imported|4|el kumquat|kumquat
+W|imported|4|la fruta con hueso|stoned fruit
+W|imported|4|la nectarina|nectarine
+W|imported|4|el albaricoque|apricot
+W|imported|4|la cesta de fruta|basket of fruit
+S|imported|4|Las bayas y los melones|berries and melons
+W|imported|4|la grosella|red currant
+W|imported|4|la grosella negra|blackcurrant
+W|imported|4|la grosella blanca|white currant
+W|imported|4|la frambuesa logan|loganberry
+W|imported|4|la grosella espinosa|gooseberry
+W|imported|4|la pepita|seed
+W|imported|4|la fibra|fibre
+W|imported|4|podrido|rotten
+W|imported|4|sin pepitas|seedless
+S|imported|4|¿Están maduros?|are they ripe?
+S|imported|4|¿puedo probar uno?|can I try one?
+S|imported|4|¿hasta cuándo durarán?|how long will they keep?
+W|imported|4|el phisicallis|Cape gooseberry
+W|imported|4|el maracuyá|passion fruit
+W|imported|4|la guayaba|guava
+W|imported|4|la granada|pomegranate
+W|imported|4|la feijoa|feijoa
+W|imported|4|el higo chumbo|prickly pear
+W|imported|4|la carambola|starfruit
+W|imported|4|el tomate de árbol|tamarillo
+W|imported|4|los fruto secos|nuts and dried fruit
+W|imported|4|el piñón|pine nut
+W|imported|4|el pistacho|pistachio
+W|imported|4|el anacardo|cashew nut
+W|imported|4|el cacahuete|peanut
+W|imported|4|la nuez de brasil|brazilnut
+W|imported|4|la pacana|pecan
+W|imported|4|la macadamia|macadamia
+W|imported|4|la pasa sultana|sultana
+W|imported|4|la pasa|raisin
+W|imported|4|la pasa de corinto|currant
+W|imported|4|desecado|dessicated
+W|imported|4|tostado|roasted
+W|imported|4|de temporada|seasonal
+W|imported|4|las frutas tropicales|tropical fruit
+W|imported|4|la fruta escarchada|candied fruit
+S|imported|4|Los granos y las legumbres|grains and pulses
+W|imported|4|los granos|grains
+W|imported|4|la cebada|barley
+W|imported|4|el mijo|millet
+W|imported|4|la quinoa|quinoa
+W|imported|4|el grano|kernel
+W|imported|4|perfumado|fragranced
+W|imported|4|poner a remojo|to soak
+W|imported|4|dede fácil cocción|easy cook
+W|imported|4|el arroz largo|white rice
+W|imported|4|el arroz integral|brown rice
+W|imported|4|el arroz salvaje|wild rice
+W|imported|4|el arroz bomba|pudding rice
+W|imported|4|los granos procesados|processed grains
+W|imported|4|el cuscús|couscous
+W|imported|4|el trigo partido|cracked wheat
+W|imported|4|la sémola|semolina
+W|imported|4|el salado|bran
+S|imported|4|Las alubias y los guisantes|beans and peas
+W|imported|4|la alubia blanca|butter beans
+W|imported|4|la alubia blanca pequeña|haricot beans
+W|imported|4|la alubia roja|red kidney beans
+W|imported|4|la alubia morada|aduki beans
+W|imported|4|las habas|broad beans
+W|imported|4|la semilla de soja|soya beans
+S|imported|4|la alubia de ojo negro|black-eyed beans
+W|imported|4|la alubia pinta|pinto beans
+W|imported|4|la alubia mung|mung beans
+W|imported|4|la alubia flageolet|flageolet beans
+W|imported|4|la lenteja castellana|brown lentils
+W|imported|4|le lenteja roja|red lentils
+W|imported|4|los guisantes tiernos|green peas
+W|imported|4|los guisantes secos|split peas
+W|imported|4|la pipa de calabaza|pumpkin seed
+W|imported|4|la mostaza en grano|mustard seed
+W|imported|4|el carvi|caraway
+W|imported|4|la semilla de sésamo|sesame seed
+W|imported|4|la pipa de girasol|sunflower seed
+S|imported|4|Las hierbas y las especias|herbs and spices
+W|imported|4|la vainilla|vanilla
+W|imported|4|la macis|mace
+W|imported|4|la cúrcuma|turmeric
+W|imported|4|el ramillete aromático|bouquet garni
+W|imported|4|la pimienta de jamaica|allspice
+W|imported|4|la pimienta en grano|peppercorn
+W|imported|4|el heno griego|fenugreek
+W|imported|4|machacado|crushed
+W|imported|4|el cardamono|cardamom
+W|imported|4|el curry en polvo|curry powder
+W|imported|4|laminado|flakes
+W|imported|4|las ramas|sticks
+W|imported|4|la citronela|lemon grass
+W|imported|4|los clavos|cloves
+W|imported|4|el anis estrellado|star anise
+W|imported|4|las hierbas|herbs
+W|imported|4|las semillas de hinojo|fennel seeds
+W|imported|4|los cebollinos|chives
+W|imported|4|la menta|mint
+W|imported|4|la salvia|sage
+W|imported|4|el albahaca|basil
+W|imported|4|los alimentos embotellados|bottled foods
+W|imported|4|el aceite de nueces|walnut oil
+W|imported|4|el aceite de almendras|almond oil
+S|imported|4|El aceite de semillas de uva|grapeseed oil
+W|imported|4|el corcho|cork
+W|imported|4|el aceite de girasol|sunflower oil
+W|imported|4|el aceite de sésamo|sesame seed oil
+W|imported|4|el aceite de avellanas|hazelnut oil
+W|food|4|los aceites|oils
+W|imported|4|el aceite aromatizado|flavoured oil
+W|imported|4|las confituras|sweet spreads
+W|imported|4|la crema de limón|lemon curd
+W|imported|4|la mermelada de frambuesa|rasberry jam
+W|imported|4|la mermelada de naranja|marmalade
+W|imported|4|la miel líquida|clear honey
+W|imported|4|la miel compacta|set honey
+W|imported|4|el jarabe de arce|maple syrup
+W|imported|4|los condimentos|condiments and spreads
+W|imported|4|el vinagre de sidra|cider vinegar
+W|imported|4|el chutney|chutney
+W|imported|4|el vinagre balsámico|balsamic vinegar
+W|imported|4|el vinagre de malta|malt vinegar
+W|imported|4|el vinagre de vino|wine vinegar
+W|imported|4|el ketchup|ketchup
+W|imported|4|la mostaza inglesa|English mustard
+W|imported|4|la mostaza francesa|French mustard
+W|imported|4|la mantequilla de cacahuetes|peanut butter
+W|imported|4|el chocolate para untar|chocolate spread
+W|imported|4|el tarro hermético|sealed jar
+W|imported|4|la fruta en conserva|preserved fruit
+W|imported|4|el aceite vegetal|vegetable oil
+W|imported|4|el aceite de maíz|corn oil
+W|imported|4|el aceite de cacahuete|groundnut oil
+W|imported|4|el aceite de colza|rapeseed oil
+S|imported|4|El aceite de presión en frío|cold-pressed oil
+W|imported|4|los productos lácteos|dairy produce
+W|imported|4|el queso azul|blue cheese
+W|imported|4|el queso cremoso|soft cheese
+W|imported|4|el queso semicurado|semi-hard cheese
+W|imported|4|el queso cremoso semicurado|cream cheese
+W|imported|4|el queso rallado|grated cheese
+W|imported|4|el queso curado|hard cheese
+W|imported|4|la leche de vaca|cows milk
+W|imported|4|la leche semidesnatada|semi-skimmed milk
+W|imported|4|la leche desnatada|skimmed milk
+W|imported|4|el cartón de leche|milk carton
+W|imported|4|la leche de cabra|goats milk
+W|imported|4|la nata liquida|single cream
+W|imported|4|la nata para montar|double cream
+W|imported|4|la nata agria|sour cream
+W|imported|4|el yogurt|yogurt
+W|food|4|los huevos|eggs
+W|imported|4|la clara|egg white
+S|imported|4|El huevo pasado por agua|boiled egg
+W|imported|4|el huevo de oca|goose egg
+W|imported|4|el huevo de gallina|hen's egg
+W|imported|4|el huevo de cordoniz|quail egg
+W|imported|4|el huevo de pato|duck egg
+W|imported|4|pasteurizado|pasteurised
+W|imported|4|sin pasteurizar|unpasteurised
+W|imported|4|sin grasa|fat free
+W|imported|4|sin sal|unsalted
+W|imported|4|la leche de oveja|sheep's milk
+S|imported|4|El suero de la leche|buttermilk
+W|imported|4|la lactosa|lactose
+W|imported|4|homogeneizado|homogenised
+W|imported|4|el yogurt helado|frozen yogurt
+S|imported|4|El pan y las harinas|breads and flours
+W|imported|4|el pan de molde|sliced bread
+W|imported|4|las semillas de amapola|poppy seeds
+W|imported|4|el pan de centeno|Rye bread
+W|imported|4|la baguette|baguette
+W|imported|4|haciendo pan|making bread
+W|imported|4|la harina blanca|white flour
+W|imported|4|la harina morena|brown flour
+W|imported|4|la harina integral|wholemeal flour
+W|imported|4|la levadura|yeast
+W|verb|4|amasar|to knead
+W|imported|4|el pan blanco|white bread
+W|imported|4|la hogaza|loaf
+W|imported|4|el pan moreno|brown bread
+W|imported|4|el pan integral|wholemeal bread
+W|imported|4|la rebanada|slice
+W|imported|4|el pan con grano|granary bread
+S|imported|4|El pan al bicarbonato sódico|soda bread
+W|imported|4|el pan fermentado|sourdough bread
+W|imported|4|el pan sin levadura|flatbread
+W|imported|4|la rosquilla|bagel
+W|imported|4|el bollo|bap
+W|imported|4|el panecillo|roll
+W|imported|4|el plumcake|fruit bread
+W|imported|4|el pan con semillas|seeded bread
+W|imported|4|el naan|naan bread
+W|imported|4|el pan de pita|pitta bread
+W|imported|4|el biscote|crispbread
+W|imported|4|la harina con levadura|self-raising flour
+W|imported|4|la harina para pan|strong flour
+W|verb|4|glasear|to glaze
+W|imported|4|el pan rallado|bread crumbs
+W|imported|4|el rebanador|slicer
+W|imported|4|el profiterol|éclair
+W|imported|4|la masa de profiteroles|choux pastry
+W|imported|4|el hojaldre|puff pastry
+W|imported|4|la masa brisa|filo pastry
+W|imported|4|la tartaleta de fruta|fruit tart
+W|imported|4|el merengue|meringue
+W|food|4|los pasteles|cakes
+W|imported|4|el muffin|muffin
+W|imported|4|cubierto de chocolate|chocolate coated
+W|imported|4|el pastel de chocolate|chocolate cake
+W|imported|4|el trozo|slice
+W|imported|4|el arroz con leche|rice pudding
+S|imported|4|¿puedo tomar un trazo?|may I have a slice please?
+W|imported|4|los trocitos de chocolate|chocolate chip
+W|imported|4|las galletas|biscuits
+W|imported|4|la mousse|mousse
+W|imported|4|el sorbete|sorbet
+W|imported|4|la florentina|florentine
+W|imported|4|las soletillas|sponge fingers
+S|imported|4|El postre de soletillas, gelatina de frutas y nata|trifle
+W|imported|4|las tartas para celebraciones|celebration cakes
+W|imported|4|el último piso|top tier
+W|imported|4|el primer paso|bottom tier
+W|imported|4|el mazapán|marzipan
+W|imported|4|la tarta nupcial|wedding cake
+W|imported|4|la alcorza|icing
+W|imported|4|las velas de cumpleaños|birthday candles
+W|imported|4|la tarta de cumpleaños|birthday cake
+W|imported|4|el salami|salami
+W|imported|4|el salchichón|pepperoni
+W|imported|4|la quiche|flan
+W|imported|4|el paté|pâté
+W|imported|4|la carne fresca|uncooked meat
+W|imported|4|la mozzarella|mozzarella
+W|imported|4|el brie|brie
+W|imported|4|el queso de cabra|goats cheese
+W|imported|4|el cheddar|cheddar
+W|imported|4|el parmesano|parmesan
+W|imported|4|el camembert|camembert
+W|imported|4|el queso de bola|edam
+W|imported|4|el manchego|manchego
+W|imported|4|los pasteles de carne|pies
+W|imported|4|la aceituna negra|black olive
+W|imported|4|la aceituna verde|green olive
+W|imported|4|el mostrador de bocadillos|sandwich counter
+W|imported|4|el pescado ahumado|smoked fish
+W|imported|4|el jamón serrano|prosciutto
+W|imported|4|las alcaparras|capers
+W|imported|4|la aceituna rellena|stuffed olive
+W|imported|4|en aceite|in oil
+W|imported|4|en salmuera|in brine
+W|imported|4|adobado|marinated
+S|imported|4|Coja un número, por favor|take a number please
+S|imported|4|¿puedo probar un poco de eso?|can I try some of that please?
+S|imported|4|¿me pone seis lonchas de aquél?|may I have six slices of that please?
+W|imported|4|el agua embotellada|bottled water
+W|imported|4|el agua del grifo|tap water
+W|imported|4|la tónica|tonic water
+W|imported|4|las bebidas calientes|hot drinks
+W|imported|4|la bolsita de té|tea bag
+W|imported|4|el té en hoja|loose leaf tea
+W|imported|4|el café molido|ground coffee
+W|imported|4|la bebida malteada|malted drink
+W|imported|4|los refrescos|soft drinks
+W|imported|4|el zumo de uva|grape juice
+W|imported|4|la naranjada|orangeade
+W|imported|4|las bebidas alcohólicas|alcoholic drinks
+W|imported|4|la ginebra|gin
+W|imported|4|la cerveza amarga|bitter
+W|imported|4|la cerveza negra|stout
+W|imported|4|el whisky|whisky
+W|imported|4|el coñac|brandy
+W|imported|4|el vino de jerez|sherry
+W|imported|4|el campari|campari
+W|imported|4|rosé|rosado
+W|color|4|tinto|red
+W|imported|4|el licor|liqueur
+W|imported|4|el tequila|tequila
+W|imported|4|el toldo|awning
+W|clothes|4|la sombrilla|umbrella
+W|imported|4|la máquina del café|coffee machine
+W|imported|4|el café con leche|white coffee
+W|imported|4|el café solo|black coffee
+S|imported|4|El café de cafetera eléctrica|filter coffee
+W|imported|4|el cacao en polvo|cocoa powder
+W|imported|4|el cappuccino|cappuccino
+W|imported|4|la espuma|froth
+W|imported|4|el café con hielo|iced coffee
+W|imported|4|la infusión|herbal tea
+W|imported|4|el té con leche|tea with milk
+W|imported|4|el té sólo|black tea
+W|imported|4|la manzanilla|camomile tea
+W|imported|4|el té con limón|tea with lemon
+W|imported|4|la menta poleo|mint tea
+W|imported|4|el té con hielo|iced tea
+S|imported|4|Los zumos y los batidos|juices and milkshakes
+W|imported|4|el zumo de naranja|orange juice
+W|imported|4|el zumo de manzana|apple juice
+W|imported|4|el zumo de piña|pineapple juice
+W|imported|4|el batido de chocolate|chocolate milkshake
+W|imported|4|el batido de fresa|strawberry milkshake
+W|imported|4|el batido de café|coffee milkshake
+W|imported|4|el sandwich tostado|toasted sandwich
+W|imported|4|el medidor óptico|optic
+W|clothes|4|los vasos|glasses
+W|imported|4|el grifo de cerveza|beer tap
+W|imported|4|la champanera|ice bucket
+W|imported|4|el cenicero|ashtray
+W|imported|4|el posavasos|coaster
+W|imported|4|el sacacorchos|corkscrew
+W|imported|4|la coctelera|cocktail shaker
+W|imported|4|el agitador|stirrer
+W|imported|4|el medidor|measure
+W|imported|4|el gin tonic|gin and tonic
+S|imported|4|El whiskey escocés con agua|Scotch and water
+W|imported|4|el ron con cola|rum and cola
+W|imported|4|el cubito de hielo|ice cube
+W|imported|4|el vodka con naranja|vodka and orange
+W|imported|4|el martini|martini
+W|imported|4|un trago|a shot
+W|imported|4|sin hielo|without ice
+W|imported|4|con hielo y limón|ice and lemon
+W|imported|4|con hielo|with ice
+W|imported|4|los aperitivos|bad snacks
+W|imported|4|los anacardos|cashew nuts
+W|imported|4|las almendras|almonds
+W|imported|4|los cacahuetes|peanuts
+W|food|4|las aceitunas|olives
+W|imported|4|el ayudante del chef|commis chef
+W|imported|4|el chef|chef
+W|imported|4|la bandeja|tray
+W|food|4|la lista de vinos|wines
+S|imported|4|El menú de la cena|evening menu
+S|imported|4|El menú de la comida|lunch menu
+W|imported|4|à la carte|a la carta
+W|imported|4|los platos del día|specials
+S|imported|4|El carrito de los postres|sweet trolley
+W|imported|4|servicio incluido|service included
+W|imported|4|servicio no incluido|service not included
+W|imported|4|el menú para niños|child's meal
+W|imported|4|los platos|courses
+W|imported|4|el acompañamiento|side order
+S|imported|4|una mesa para dos, por favor|a table for two please
+S|imported|4|¿hay menú del día?|is there a fixed price menu?
+S|imported|4|¿tiene platos vegetarianos?|do you have any vegetarian dishes?
+S|imported|4|¿podemos pagar por separado?|can we pay separately?
+S|imported|4|¿dónde están los servicios, por favor?|where are the toilets, please?
+W|imported|4|la comida rápida|fast food
+W|imported|4|la servilleta de papel|paper napkin
+S|imported|4|la hamburguesa con patatas fritas|burger meal
+W|imported|4|la lista de precios|price list
+W|imported|4|la lata de bebida|canned drink
+W|imported|4|la entrega a domicilio|home delivery
+W|imported|4|el puesto callejero|Street stall
+W|imported|4|la pizzería|pizza parlour
+W|imported|4|la hamburguesería|burger bar
+S|imported|4|para comer en el local|eat-in
+W|imported|4|para llevar|take-away
+W|imported|4|recalentar|re-heat
+S|imported|4|¿me lo pone para llevar?|can I have that to go please?
+S|imported|4|¿entregan a domicilio?|do you deliver?
+W|imported|4|la hamburguesa de pollo|chicken burger
+W|imported|4|la hamburguesa vegetariana|veggie burger
+W|food|4|la salchica|sausage
+W|imported|4|el perrito caliente|hot dog
+W|imported|4|el club sandwich|club sandwich
+W|imported|4|el sandwich abierto|open sandwich
+W|imported|4|el pincho moruno|kebab
+W|imported|4|los porciones de pollo|chicken nuggets
+W|imported|4|la crêpe|crêpes
+W|imported|4|los ingredientes|ingredients
+S|imported|4|El pescado y las patatas fritas|Fish and chips
+W|imported|4|las costillas|ribs
+W|imported|4|la fruta desecada|dried fruit
+W|imported|4|la galleta de centeno|crispbread
+W|imported|4|el buffet de desayuno|breakfast buffet
+W|imported|4|el zumo de frutas|fruit juice
+W|imported|4|el croissant|croissant
+W|imported|4|la mesa del desayuno|breakfast table
+W|imported|4|el cacao|hot chocolate
+W|imported|4|el pan dulce francés|brioche
+W|imported|4|el huevo frito|fried egg
+W|imported|4|el desayuno inglés|English breakfast
+W|imported|4|los arenques ahumados|kippers
+W|imported|4|los huevos revueltos|scrambled eggs
+W|imported|4|los crepes|pancakes
+W|imported|4|los gofres|waffles
+W|imported|4|las gachas de avena|porridge
+W|imported|4|el yogurt de frutas|fruit yogurt
+W|imported|4|la fruta fresca|fresh fruit
+W|food|4|la comida principal|dinner
+W|imported|4|el soufflé|soufflé
+W|imported|4|las albóndigas|meatballs
+W|imported|4|el revuelto|stir fry
+W|imported|4|los fideos|noodles
+W|imported|4|la ensalada mixta|mixed salad
+W|imported|4|la ensalada verde|green salad
+W|imported|4|el aliño|dressing
+W|imported|4|en salsa|in sauce
+W|imported|4|escalfado|poached
+W|imported|4|hecho puré|mashed
+W|imported|4|cocido en el horno|baked
+W|imported|4|frito con poco aceite|pan fried
+W|imported|4|en vinagre|pickled
+W|imported|4|frito con mucho aceite|deep fried
+W|imported|4|en almíbar|in syrup
+W|imported|4|aliñado|dressed
+W|school|4|la alumna|pupil
+W|imported|4|el pupitre|desk
+W|imported|4|la colegiala|schoolgirl
+W|imported|4|el colegial|schoolboy
+W|school|4|los idiomas|languages
+W|imported|4|las actividades|activities
+W|imported|4|el proyector digital|digital projector
+W|imported|4|el lápiz de colores|colouring pencil
+W|imported|4|el estuche|pencil case
+W|imported|4|la enciclopedia|encyclopedia
+W|imported|4|las formas|shapes
+W|imported|4|la diagonal|diagonal
+W|imported|4|la hipotenusa|hypotenuse
+W|imported|4|el paralelogramo|parallelogram
+W|imported|4|el pentágono|pentagon
+W|imported|4|el octágono|octagon
+W|imported|4|los cuerpos geométricos|solids
+W|imported|4|el cono|cone
+W|imported|4|el ápice|apex
+W|imported|4|las líneas|lines
+W|imported|4|paralelo|parallel
+W|imported|4|perpendicular|perpendicular
+W|imported|4|curvo|curved
+W|imported|4|las medidas|measurements
+W|imported|4|el numerador|numerator
+W|imported|4|el denominador|denominator
+W|imported|4|el quebrado|fraction
+W|imported|4|las dimensiones|dimensions
+W|imported|4|la anchura|width
+W|imported|4|la longitud|length
+W|imported|4|la profundidad|depth
+W|imported|4|la escuadra|set square
+W|time|4|multiplicado por|times
+W|imported|4|dividido por|divided by
+W|imported|4|igual a|equals
+W|imported|4|el porcentaje|percentage
+W|imported|4|la pesa|weight
+W|imported|4|la balanza de muelle|spring balance
+W|imported|4|el crisol|crucible
+W|imported|4|el mechero bunsen|bunsen burner
+W|imported|4|el trípode|tripod
+W|imported|4|el frasco de cristal|glass bottle
+W|imported|4|el embudo|funnel
+W|imported|4|el matraz|flask
+S|imported|4|El soporte de la agarradera|clamp stand
+W|imported|4|la agarradera|clamp
+W|imported|4|el tubo de ensayo|test tube
+W|imported|4|el cronómetro|timer
+W|imported|4|la cápsula de petri|petri dish
+W|imported|4|el bisturí|scalpel
+W|imported|4|la mano de mortero|pestle
+W|imported|4|el filtro de papel|filter paper
+W|imported|4|las gafas protectoras|safety goggles
+W|imported|4|el ocular|eye piece
+W|imported|4|el botón de ajuste|focusing knob
+W|imported|4|la lente del objectivo|objective lens
+W|imported|4|la pipeta|pipette
+W|imported|4|la varilla de cristal|glass rod
+W|imported|4|el vasos de precipitados|beaker
+W|imported|4|la platina|stage
+W|imported|4|la pinza|crocodile clip
+W|imported|4|el portaobjetos|slide
+W|imported|4|el microscopio|microscope
+W|imported|4|el electrodo negativo|negative electrode
+W|imported|4|la pila|battery
+W|imported|4|el electrodo positivo|positive electrode
+W|imported|4|la enseñanza superior|college
+W|imported|4|la secretaría|admissions
+W|imported|4|el refectorio|refectory
+W|imported|4|el centro de salud|health centre
+W|imported|4|el campo de deportes|sports field
+W|imported|4|el colegio mayor|hall of residence
+W|imported|4|la bibliotecaría|librarian
+W|imported|4|el mostrador de préstamos|loans desk
+W|imported|4|la sala de lecturas|reading room
+W|imported|4|la lista de lecturas|reading list
+S|imported|4|la tarjeta de la biblioteca|library card
+W|imported|4|coger prestado|to borrow
+W|imported|4|la fecha de devolución|return date
+W|imported|4|el estudiante|undergraduate
+W|imported|4|la licenciada|graduate
+W|imported|4|la toga|robe
+W|imported|4|el anfiteatro|lecture theatre
+W|imported|4|la ceremonia de graduación|graduation ceremony
+W|town|4|las escuelas|schools
+W|imported|4|la modelo|model
+S|imported|4|la escuela de bellas artes|art college
+W|imported|4|el conservatorio|music school
+W|imported|4|la academia de danza|dance academy
+W|imported|4|posgrado|postgraduate
+W|imported|4|el máster|masters
+W|imported|4|la tesina|dissertation
+W|imported|4|la zoología|zoology
+W|imported|4|la historia del arte|history art
+W|imported|4|las ciencias económicas|economics
+W|imported|4|la bandeja de entrada|in-tray
+W|imported|4|el portabolígrafos|desktop organizer
+W|imported|4|el ordenador portátil|laptop
+W|imported|4|la bandeja de salida|out-tray
+W|imported|4|el archivador|filing cabinet
+W|imported|4|la silla giratoria|swivel chair
+W|imported|4|el equipo de oficina|office equipment
+S|imported|4|la bandeja para el papel|paper tray
+W|imported|4|la máquina del fax|fax machine
+W|verb|4|ampliar|to enlarge
+W|verb|4|fotocopiar|to photocopy
+W|imported|4|necesito hacer unas fotocopias|I need to make some copies
+W|imported|4|los materiales de oficina|office supplies
+W|imported|4|el membrete|letterhead
+W|imported|4|la nota con saludos|compliments slip
+W|imported|4|la caja archivador|box file
+W|imported|4|el bloc de apuntes|note pad
+W|imported|4|el rótulo|tab
+W|imported|4|el archivador suspendido|hanging file
+W|imported|4|el divisor|divider
+W|imported|4|la carpeta de acordeón|concertina file
+W|imported|4|la carpeta de anillas|lever arch file
+W|imported|4|las grapas|staples
+W|imported|4|el papel celo|sticky tape
+S|imported|4|El soporte del papel celo|tape dispenser
+S|imported|4|la almohadilla de la tinta|ink pad
+W|imported|4|la goma elástica|rubber band
+W|imported|4|el sujetapapeles|paper clip
+W|imported|4|la chincheta|drawing pin
+W|imported|4|el tablón de anuncios|notice board
+W|imported|4|el caballete|easel
+W|imported|4|el ejecutivo|executive
+W|imported|4|la sala de reuniones|meeting room
+W|imported|4|el orden del día|agenda
+S|imported|4|¿cuál es su horario de oficina?|what are your office hours?
+W|verb|4|presidir|to chair
+W|imported|4|la oradora|speaker
+W|imported|4|la comida de negocios|business lunch
+W|imported|4|el trato|business deal
+W|imported|4|el director general|managing director
+W|imported|4|la nómina|staff
+W|imported|4|el departamento de ventas|sales department
+W|imported|4|el departamento legal|legal department
+W|imported|4|el departamento de contabilidad|accounts department
+S|imported|4|El departamento de atención al cliente|customer service department
+W|imported|4|el departamento de márketing|marketing department
+S|imported|4|El departamento de recursos humanos|personnel department
+W|imported|4|la oficina central|head office
+W|imported|4|el hardware|hardware
+W|imported|4|la llave de memoria|memory stick
+W|imported|4|el disco duro extrerno|external hard drive
+W|imported|4|el ipad|ipad
+W|imported|4|el RAM|RAM
+W|imported|4|los bytes|bytes
+W|imported|4|el sistema|system
+W|imported|4|el servidor|server
+W|imported|4|el procesador|processor
+W|imported|4|el cable de alimentación|power cable
+W|imported|4|la barra del menú|menubar
+W|imported|4|la barra de aceso|toolbar
+W|imported|4|el fichero|file
+W|imported|4|el icono|icon
+W|imported|4|la barra de desplazamiento|scrollbar
+W|imported|4|el internet|internet
+W|imported|4|la cuenta de correo|e-mail account
+W|imported|4|el proveedor de servicios|service provider
+W|imported|4|entrar en el sistema|to log on
+W|imported|4|el documento adjunto|attachment
+W|imported|4|los medios de comunicación|media
+W|imported|4|el estudio de televisión|television studio
+W|imported|4|el plató|set
+S|imported|4|la grúa de la cámara|camera crane
+W|imported|4|el cámara|cameraman
+W|imported|4|la serie televisiva|television series
+W|imported|4|en directo|live
+W|imported|4|en diferido|prerecorded
+W|imported|4|la reportera|reporter
+W|imported|4|el autocue|autocue
+S|imported|4|la presentadora de las noticias|newsreader
+W|imported|4|los actores|actors
+W|imported|4|la claqueta|clapper board
+W|imported|4|el plató de rodaje|film set
+W|imported|4|la radio|radio
+W|imported|4|el técnico de sonido|sound technician
+W|imported|4|la mesa de mezclas|mixing desk
+W|imported|4|el micrófono|microphone
+W|imported|4|el estudio de grabación|recording studio
+W|imported|4|la estación de radio|radio station
+W|imported|4|la frecuencia|frequency
+W|imported|4|el pinchadiscos|DJ
+W|imported|4|la onda corta|short wave
+W|imported|4|la emisión|broadcast
+W|imported|4|la onda media|medium wave
+W|imported|4|la longitud de onda|wavelength
+W|imported|4|la onda larga|long wave
+W|verb|4|sintonizar|to tune
+W|imported|4|analógico|analog
+W|imported|4|el alguacil|Court officer
+W|imported|4|el jurado|jury
+W|imported|4|la tribuna del jurado|jury box
+W|imported|4|la sala del tribunal|courtroom
+W|imported|4|el auditor|Court official
+W|imported|4|la taquígrafa|stenographer
+W|imported|4|el acusado|acused
+W|imported|4|la defensa|defence
+W|imported|4|el funcionario de prisiones|prison guard
+W|imported|4|el sospecho|suspect
+W|imported|4|el retrato robot|photofit
+W|imported|4|el criminal|criminal
+W|imported|4|los antecedentes|criminal record
+W|imported|4|la asesoría jurídica|legal advice
+W|imported|4|la citación|summons
+W|imported|4|la orden judical|warrant
+W|imported|4|la fecha del juicio|Court date
+S|imported|5|cómo se declara el acusado|plea
+W|imported|5|inocente|innocent
+W|imported|5|absuelto|acquitted
+W|imported|5|la sentencia|sentence
+W|imported|5|la apelación|appeal
+W|imported|5|la libertad condicional|parole
+S|imported|5|quiero ver a un abogado|I want to see a lawyer
+S|imported|5|¿dónde está el juzgado?|where is the courthouse?
+W|imported|5|puedo pagar la fianza|can I post bail?
+W|imported|5|las tierras de labranza|farmland
+W|imported|5|la casa de labranza|farm house
+W|imported|5|el ganado|livestock
+W|imported|5|el cultivador|cultivator
+W|imported|5|la cosechadora|combine harvestor
+W|imported|5|los tipos de granja|types of farm
+S|imported|5|la granja de tierras cultivables|arable farm
+W|imported|5|la vaquería|dairy farm
+W|imported|5|el rebaño|flock
+S|imported|5|la granja de ganado ovino|sheep farm
+W|imported|5|la granja avícola|poultry farm
+S|imported|5|la granja de ganado porcino|pig farm
+W|imported|5|la piscifactoría|Fish farm
+W|imported|5|la granja de frutales|fruit farm
+W|imported|5|el viñedo|vineyard
+W|imported|5|el surco|furrow
+W|verb|5|arar|to plough
+W|verb|5|recolectar|to harvest
+W|imported|5|la manada|herd
+W|imported|5|el silo|silo
+W|imported|5|el comedero|trough
+W|imported|5|las cosechas|crops
+W|imported|5|la colza|rapeseed
+W|imported|5|la alfalfa|alfalfa
+W|imported|5|el lino|flax
+W|imported|5|la caña de azúcar|sugarcane
+W|imported|5|el cerdito|piglet
+W|imported|5|el ternero|calf
+W|imported|5|el cabrito|kid
+W|imported|5|el potro|foal
+W|imported|5|el polluelo|chick
+W|imported|5|el gallo|cockerel
+W|school|5|el redil|pen
+W|imported|5|el gallinero|chicken coop
+W|imported|5|la pocilga|pigsty
+W|imported|5|el andamio|scaffolding
+W|imported|5|la viga del tejado|rafter
+W|imported|5|la caretilla elevadora|fork-lift truck
+W|imported|5|el dintel|lintel
+W|imported|5|la viga de acero|girder
+S|imported|5|El cinturón de las herramientas|toolbelt
+W|imported|5|la viga de madera|beam
+W|imported|5|el cemento|cement
+W|imported|5|la hormigonera|cement mixer
+W|imported|5|el ladrillo|brick
+W|imported|5|el bloque de hormigón|concrete block
+W|imported|5|las herramientas|tools
+W|imported|5|la argamasa|mortar
+W|imported|5|el mazo|sledgehammer
+W|imported|5|la maquinaria|machinery
+W|imported|5|la apisonadora|roller
+W|imported|5|el camión volquete|dumper truck
+W|imported|5|la grúa|crane
+W|imported|5|el martillo neumático|pneumatic drill
+W|imported|5|el revestimiento|resurfacing
+W|imported|5|la excavadora mecánica|mechanical digger
+W|imported|5|las profesiones|occupations
+W|imported|5|el electricista|electrician
+W|imported|5|el albañil|builder
+S|imported|5|El empleado de la limpieza|cleaner
+W|imported|5|el pelequero|hairdresser
+W|imported|5|la pescadera|fishmonger
+W|imported|5|la florista|florist
+W|imported|5|la dependienta|shop assistant
+W|imported|5|la agente inmobilario|Estate agent
+W|imported|5|la dentista|dentist
+W|imported|5|la farmacéutica|pharmacist
+W|imported|5|la veterinaría|vet
+W|imported|5|el marino|sailer
+W|imported|5|la metralleta|machine gun
+W|imported|5|la placa de identificación|identity badge
+W|imported|5|el guardia de seguridad|security guard
+W|imported|5|la maqueta|model
+W|imported|5|la científica|scientist
+W|imported|5|el bibliotecario|librarian
+W|imported|5|el conductor de autobús|bus driver
+W|imported|5|el camionero|lorry driver
+W|imported|5|el taxista|taxi driver
+W|imported|5|el piloto|pilot
+W|imported|5|la agente de viajes|travel agent
+W|imported|5|el gorro de cocinero|chef's hat
+W|imported|5|el tutú|tutu
+W|imported|5|la cantante|singer
+W|imported|5|el deportista|sportsman
+W|job|5|la pintora|painter
+W|imported|5|las notas|notes
+W|imported|5|el periodista|journalist
+W|imported|5|la redactora|editor
+W|imported|5|la modista|seamstress
+W|imported|5|el sastre|tailor
+W|travel|5|las carreteras|roads
+W|imported|5|la caseta de peaje|toll booth
+W|imported|5|las señales horizontales|Road markings
+W|imported|5|la via de acceso|slip road
+W|imported|5|de sentido único|one-way
+W|imported|5|la línea divisoria|divider
+W|imported|5|la mediana|central reservation
+W|imported|5|el paso elevado|fly over
+W|imported|5|el carril de adelantamiento|outside lane
+W|imported|5|el carril central|middle lane
+S|imported|5|El carril para el tráfico lento|inside lane
+W|imported|5|el paso de peatones|pedestrian crossing
+W|imported|5|el teléfono de emergencia|emergency phone
+W|imported|5|el aparcamiento para minusválidos|disabled parking
+W|imported|5|el atasco de tráfico|traffic jam
+W|imported|5|el navegador por satélite|sat nav
+W|imported|5|el policía de tráfico|traffic policeman
+W|imported|5|el parquímetro|parking meter
+W|imported|5|el desvío|diversion
+W|imported|5|dar marcha atrás|to reverse
+S|imported|5|¿es está la carretera hacia...?|is this the road to...?
+S|imported|5|¿dónde se puede aparcar?|where can I park?
+W|imported|5|las señales de tráfico|Road signs
+W|imported|5|prohibido el paso|no entry
+W|imported|5|peligro|hazard
+W|imported|5|no stopping|prohibido parar
+S|imported|5|no torcer a la derecha|no right turn
+W|imported|5|el asiento del conductor|driver's seat
+W|imported|5|la puerta automática|automatic door
+W|imported|5|la rueda delantera|front wheel
+W|imported|5|la rueda trasera|rear wheel
+W|imported|5|los tipos de autobuses|types of buses
+W|imported|5|el número de ruta|route number
+S|imported|5|El autobús de dos pisos|double decker bus
+W|imported|5|el trolebús|trolley bus
+W|imported|5|el autobús escolar|school bus
+W|imported|5|el microbús|minibus
+W|imported|5|el autobús turístico|tourist bus
+W|imported|5|el autobús de enlace|shuttle bus
+W|imported|5|el billete de autobús|bus ticket
+W|imported|5|el botón de parada|stop button
+S|imported|5|¿para usted en....?|do you stop at?
+W|imported|5|la marquesina|bus shelter
+S|imported|5|la rampa para sillas de ruedas|wheelchair access
+S|imported|5|¿qué autobús va a....?|which bus goes to....?
+W|imported|5|el capó|bonnet
+W|imported|5|el retrovisor exterior|wing mirror
+W|imported|5|el espejo retrovisor|rear view mirror
+W|imported|5|el limpiaparabrisas|windscreen wiper
+W|imported|5|el parachoques|bumper
+W|imported|5|la puerta del maletero|tailgate
+W|imported|5|la silla para niños|child seat
+W|imported|5|los modelos|types
+W|imported|5|el coche eléctrico|electric car
+S|imported|5|El coche de cinco puertas|hatchback
+W|imported|5|el coche ranchera|estate
+W|imported|5|el coche descapotable|convertible
+W|imported|5|el coche deportivo|sports car
+W|imported|5|el monovolumen|people carrier
+W|imported|5|el todoterreno|four-wheel drive
+W|imported|5|el coche de época|vintage
+W|imported|5|la limousine|limousine
+W|imported|5|la zona de abastecimiento|forecourt
+W|imported|5|con plomo|leaded
+W|imported|5|el lavadero de coches|car wash
+W|imported|5|el diesel|diesel
+W|imported|5|el anticongelante|antifreeze
+W|imported|5|sin plomo|unleaded
+W|imported|5|el líquido limpiaparabrisas|screenwash
+W|imported|5|lleno por favor|fill the tank
+W|imported|5|el interior|interior
+W|imported|5|el asiento trasero|back seat
+W|imported|5|el reposabrazos|armrest
+W|imported|5|el reposacabezas|headrest
+W|imported|5|el pestillo|door lock
+W|imported|5|el tirador|handle
+W|imported|5|de cuatro puertas|four-door
+W|imported|5|el acelerador|accelerator
+W|imported|5|de tres puertas|three-door
+W|imported|5|manual|manual
+W|imported|5|el encendido|ignition
+W|imported|5|el embrague|clutch
+S|imported|5|¿me puede decir cómo se va a...?|can you tell me the way to...?
+S|imported|5|¿dónde hay un parking?|where is the car park?
+S|imported|5|¿se puede aparcar aquí?|can I park here?
+W|imported|5|los controles|controls
+W|imported|5|la bocina|horn
+W|imported|5|el salpicadero|dashboard
+W|imported|5|las luces de emergencia|hazard lights
+W|imported|5|la navegación por satélite|satellite navigation
+S|imported|5|El volante a la izquierda|left-hand drive
+W|imported|5|el indicador de temperatura|temperature guage
+W|imported|5|la radio del coche|car radio
+S|imported|5|Los mandos de la calefacción|heater controls
+W|imported|5|la palanca de cambios|gear stick
+W|imported|5|el cuentarevoluciones|rev counter
+W|imported|5|el indicador de velocidad|speedometer
+S|imported|5|El indicador de la gasolina|fuel guage
+W|imported|5|el conmutator de luces|lights switch
+W|imported|5|el cuentakilómetros|odometer
+W|imported|5|el airbag|airbag
+S|imported|5|El volante a la derecha|right-hand drive
+W|imported|5|el depósito del limpiaparabrisas|screen wash reservoir
+S|imported|5|la varilla del nivel del aceite|dipstick
+W|imported|5|el filtro del aire|air filter
+S|imported|5|El depósito del líquido de frenos|brake fluid reservoir
+S|imported|5|El depósito del líquido refrigerante|coolant reservoir
+W|imported|5|la culata|cylinder head
+W|imported|5|la chapa|bodywork
+W|imported|5|el techo solar|sun roof
+W|imported|5|el tapacubo|hubcap
+W|imported|5|la caja de cambios|gearbox
+W|imported|5|la transmisión|transmission
+S|imported|5|El eje de la transmisión|driveshaft
+W|imported|5|el pinchazo|puncture
+W|imported|5|la rueda de repuesto|spare tyre
+S|imported|5|Los tornillos de la rueda|wheel nuts
+W|imported|5|cambiar una rueda|to change a wheel
+W|imported|5|el silenciador|silencer
+W|imported|5|el accidente de coche|car accident
+S|imported|5|El tanque de la gasolina|petrol tank
+W|imported|5|la avería|breakdown
+W|imported|5|la correa del disco|Cam belt
+W|imported|5|el turbo|turbocharger
+W|imported|5|el distribuidor|distributor
+W|imported|5|el ralentí|timing
+W|imported|5|la caja de fusibles|fuse box
+W|imported|5|el chasis|chassis
+W|imported|5|la bujía|spark plug
+W|imported|5|el freno de mano|handbrake
+W|imported|5|la presión del neumático|tyre pressure
+W|imported|5|el alternador|alternator
+W|imported|5|la correa del ventilador|fan belt
+S|imported|5|mi coche se ha averiado|I've broken down
+W|imported|5|mi coche no arranca|my car won't start
+W|imported|5|la motocicleta|motorbike
+W|imported|5|el claxon|horn
+W|imported|5|el portaequipaje|carrier
+W|imported|5|el captafaros|reflector
+W|imported|5|la luz trasera|tail light
+W|imported|5|el depósito del aceite|oil tank
+S|imported|5|El pedal de los frenos|brake pedal
+W|imported|5|el eje|axle
+W|imported|5|el guardabarros|mudguard
+W|imported|5|la visera|visor
+W|imported|5|la cinta reflectante|reflector strap
+W|imported|5|la rodillera|knee pad
+W|imported|5|el traje de cuero|leathers
+W|imported|5|los tipos|types
+W|imported|5|la moto de carreras|racing bike
+W|imported|5|la moto de carretera|tourer
+W|imported|5|la moto de cross|dirt bike
+W|imported|5|la vespa|scooter
+W|imported|5|el tándem|tandem
+W|imported|5|la bicicleta de carreras|racing bike
+W|imported|5|la bicicleta de montaña|mountain bike
+W|imported|5|la bicicleta de paseo|touring bike
+W|imported|5|el soporte del sillín|seat post
+W|imported|5|la botella del agua|water bottle
+W|imported|5|las marchas|gears
+W|imported|5|la cubierta|tyre
+S|imported|5|El diente de la rueda|cog
+W|imported|5|la bicicleta de carretera|Road bike
+W|imported|5|el carril de bicicletas|cycle lane
+W|imported|5|el tubo superior|crossbar
+W|imported|5|el manillar|handlebar
+W|imported|5|la palanca de cambio|gear lever
+W|imported|5|la palanca de frenos|brake lever
+W|imported|5|la banda de rodadura|tread
+W|imported|5|la válvula|valve
+S|imported|5|la palanca de la llanta|tyre lever
+W|imported|5|el parche|patch
+W|imported|5|el kit de reparaciones|repair kit
+W|imported|5|el candado|lock
+W|imported|5|la bomba|pump
+S|imported|5|la silla para el niño|child seat
+W|imported|5|el faro trasero|rear light
+W|imported|5|la patilla de apoyo|kickstand
+W|imported|5|las ruedas de apoyo|stabilisers
+W|imported|5|el taco del freno|break lock
+W|imported|5|la dinamo|dynamo
+W|imported|5|la baca para bicicletas|bike rack
+W|imported|5|el calzapié|toe clip
+W|imported|5|la correa del calzapié|toe strap
+W|verb|5|pedalear|to pedal
+W|imported|5|cambiar de marcha|to change gear
+W|imported|5|el número de andén|platform number
+W|imported|5|el viajero de cercanías|commuter
+W|imported|5|los tipos de tren|types of train
+W|imported|5|el tren de vapor|steam train
+W|imported|5|la locomotora|engine
+W|imported|5|el tren diesel|diesel train
+W|imported|5|la cabina del conductor|driver's cab
+W|imported|5|el rail|rail
+W|imported|5|el tren eléctrico|electric train
+S|imported|5|El tren de alta velocidad|high-speed train
+W|imported|5|el monorrail|monorail
+W|imported|5|el tren de mercancías|freight train
+W|imported|5|el sistema de megafonia|public address system
+W|imported|5|el vagón restaurante|dining car
+W|imported|5|el cochecama|sleeping compartment
+W|imported|5|la red ferroviaria|rail network
+W|imported|5|el tren intercity|inter-city train
+W|imported|5|la hora punta|rush hour
+W|imported|5|el plano del metro|underground map
+W|imported|5|el revisor|ticket inspector
+W|imported|5|el rail electrificado|live rail
+W|imported|5|la palanca de emergencia|emergency lever
+W|imported|5|el avión de pasajeros|airliner
+W|body|5|el morro|nose
+W|imported|5|la cabina de pilotaje|cockpit
+W|imported|5|el fuselaje|fuselage
+W|imported|5|el timón|rudder
+W|imported|5|el estabilizador|tailplane
+W|imported|5|la aleta|fin
+W|imported|5|el alerón|alleron
+W|imported|5|el tren de aterrizaje|landing gear
+W|imported|5|el tren delantero|nosewheel
+W|imported|5|el apoyabrazos|armrest
+W|imported|5|la luz de lectura|reading light
+W|imported|5|el compartimento portaequipajes|overhead locker
+W|imported|5|la azafata de vuelo|flight attendant
+W|imported|5|el globo aerostático|hot-air balloon
+W|imported|5|el ultraligero|microlight
+W|imported|5|el planeador|glider
+W|imported|5|el biplano|biplane
+W|imported|5|la hélice|propeller
+W|imported|5|el hidroavión|sea plane
+W|imported|5|el jet privado|private jet
+W|imported|5|el caza|fighter plane
+W|imported|5|el aspa|rotor blade
+W|imported|5|el avión de bombardeo|bomber
+W|imported|5|el copiloto|co-pilot
+W|imported|5|la clase preferente|business class
+W|imported|5|la pista de estacionamiento|apron
+W|imported|5|el remolque del equipaje|baggage trailer
+W|imported|5|la terminal|terminal
+W|imported|5|el vehículo de servicio|service vehicle
+W|imported|5|la pasarela|walkway
+W|imported|5|el avión de línea|airliner
+W|imported|5|el vuelo nacional|domestic flight
+W|imported|5|la conexión|connection
+W|imported|5|el vuelo internacional|international flight
+W|imported|5|inmigración|immigration
+W|imported|5|el exceso de equipaje|excess baggage
+W|imported|5|la cinta de equipajes|carousel
+S|imported|5|la máquina de rayos x|X-ray machine
+W|imported|5|el folleto de viajes|holiday brochure
+W|imported|5|reservar un vuelo|to book a flight
+W|verb|5|facturar|to check-in
+W|imported|5|la torre de control|control tower
+W|imported|5|el mostrador de facturación|check-in desk
+S|imported|5|El número de puerta de embarque|gate number
+W|imported|5|las salidas|departures
+W|imported|5|las llegadas|arrivals
+W|imported|5|la pantalla de información|information screen
+S|imported|5|la tienda libre de impuestos|duty-free shop
+W|imported|5|la recogida de equipajes|baggage reclaim
+W|imported|5|la parada de taxis|taxi rank
+W|imported|5|el alquiler de coches|car hire
+W|imported|5|el radar|radar
+W|imported|5|la antena de radio|radio antenna
+W|imported|5|el alcázar|quarter deck
+W|imported|5|la línea de flotación|plimsoll line
+W|imported|5|el ojo de buey|porthole
+W|imported|5|el bote salvavidas|lifeboat
+W|imported|5|la quilla|keel
+W|imported|5|el transatlántico|ocean liner
+W|imported|5|la sala de máquinas|engine room
+W|imported|5|el camarote|cabin
+W|imported|5|el ancla|anchor
+W|imported|5|el noray|bollard
+W|imported|5|el cabrestante|windlass
+W|imported|5|la lancha motora|speedboat
+W|imported|5|la barca de remos|rowing boat
+W|imported|5|la piragua|canoe
+W|imported|5|otras embarcaciones|other ships
+W|imported|5|el motor fueraborda|outboard motor
+W|imported|5|la zodiac|inflatable dinghy
+W|imported|5|el hidrodeslizador|hydrofoil
+W|imported|5|el yate|yacht
+W|imported|5|el catamarán|catamaran
+W|imported|5|el aerodeslizador|hovercraft
+W|imported|5|el buque portacontenedores|container ship
+W|imported|5|las jarcias|rigging
+W|imported|5|el buque de carga|freighter
+W|imported|5|el petrolero|oil tanker
+W|imported|5|el barco de guerra|battleship
+W|imported|5|la falsa torre|conning tower
+W|imported|5|el submarino|submarine
+W|imported|5|la carretera de acceso|access road
+W|imported|5|las aduanas del puerto|customs house
+W|imported|5|la dársena|dock
+W|imported|5|la carga|cargo
+W|imported|5|la terminal del ferry|ferry terminal
+W|imported|5|la ventanilla de pasajes|ticket office
+W|imported|5|el muelle comercial|container port
+W|imported|5|el muelle de pasajeros|passenger port
+W|imported|5|el barco de pesca|fishing boat
+W|imported|5|el punto de amarre|mooring
+W|imported|5|el puerto de pesca|fishing port
+W|imported|5|el embarcadero|pier
+W|imported|5|el espigón|jetty
+W|imported|5|el guardacostas|coastguard
+W|imported|5|el capitán del puerto|harbour master
+W|verb|5|fondear|to drop anchor
+W|imported|5|el dique seco|dry dock
+W|verb|5|amarrar|to moor
+W|verb|5|zarpar|to set sail
+S|imported|5|El poste de la portería|goalpost
+W|imported|5|la línea de banda|sideline
+W|imported|5|el juez de línea|line judge
+W|imported|5|la línea de gol|goal line
+W|imported|5|la zona final|end zone
+W|imported|5|las rodilleras|pads
+W|imported|5|el tiempo muerto|time out
+S|imported|5|El mal pase de balón|fumble
+W|imported|5|la puntuación|score
+W|imported|5|la animadora|cheerleader
+S|imported|5|¿cómo van?|what is the score?
+S|imported|5|¿quién va ganando?|who is winning?
+W|imported|5|el rugby|rugby
+W|imported|5|la zona de marca|in-goal area
+W|imported|5|la línea de fondo|dead ball line
+W|imported|5|el campo de rugby|rugby pitch
+W|imported|5|el uniforme de rugby|rugby strip
+W|imported|5|la abierta|ruck
+W|imported|5|la melée|scrum
+W|imported|5|el círculo central|centre circle
+W|imported|5|el área de penalty|penalty area
+W|imported|5|la línea de meta|goal line
+W|imported|5|el área de meta|goal area
+W|imported|5|el defensa|defender
+W|imported|5|la bandera de esquina|corner flag
+W|imported|5|el futbolista|footballer
+W|imported|5|el poste|goalpost
+W|imported|5|el larguero|crossbar
+W|imported|5|tirar de cabeza|to head
+W|imported|5|el tiro libre|free kick
+W|imported|5|el saque de banda|throw-in
+W|imported|5|hacer un pase|to pass
+W|imported|5|hacer una parada|to save
+W|imported|5|hacer una entrada|to tackle
+W|imported|5|marcar un gol|to score a goal
+W|imported|5|el córner|corner
+W|imported|5|la tarjeta amarilla|yellow card
+W|imported|5|el fuera de juego|off-side
+W|imported|5|la prórroga|extra time
+W|imported|5|la substitución|substitution
+W|imported|5|la zona de ataque|attack zone
+W|imported|5|la zona neutral|neutral zone
+W|imported|5|la zona de defensa|defending zone
+W|imported|5|el círculo de face-off|face-off circle
+S|imported|5|la pista de hockey sobre hielo|ice hockey rink
+W|imported|5|el patín de cuchilla|ice-skate
+W|imported|5|el hockey sobre hierba|field hockey
+S|imported|5|El jugador de hockey sobre hielo|ice hockey player
+W|imported|5|el críquet|cricket
+W|imported|5|la línea de bateador|crease
+W|imported|5|el lanzador|bowler
+S|imported|5|El protector de la cara|face mask
+W|imported|5|el campo de críquet|pitch
+S|imported|5|El protector de la pierna|leg pad
+W|imported|5|la pelota de críquet|cricket ball
+W|imported|5|interceptar y devolver|to field
+W|imported|5|el guardián del rastrillo|wicket-keeper
+W|imported|5|el jugador de críquet|cricketer
+S|imported|5|la línea de tiro libre|free-throw line
+W|imported|5|la línea central|centreline
+S|imported|5|la línea de tres puntos|three-point line
+W|imported|5|el tablero|backboard
+W|imported|5|el jugador de baloncesto|basketball player
+W|imported|5|el aro|hoop
+W|imported|5|el salto entre dos|jump ball
+W|imported|5|fuera de banda|out of bounds
+W|imported|5|el balonvolea|volleyball
+W|imported|5|el base|baseman
+W|imported|5|la plataforma de lanzamiento|pitcher's mound
+W|imported|5|el exterior izquierdo|left field
+W|imported|5|el centro del campo|centre field
+W|imported|5|el turno|inning
+W|imported|5|safe|a salvo
+W|imported|5|el strike|strike
+W|imported|5|el fallo|foul ball
+W|imported|5|la máscara|mask
+W|imported|5|el exterior derecho|right field
+W|imported|5|la línea de falta|foul line
+W|imported|5|el pitcher|pitcher
+W|imported|5|el catcher|catcher
+W|imported|5|el juez de silla|umpire
+W|imported|5|la línea de servicio|service line
+W|imported|5|la muñequera|wristband
+W|imported|5|la pista de tenis|tennis court
+W|imported|5|el individual|singles
+W|imported|5|los dobles|doubles
+W|imported|5|el tiebreak|tiebreak
+W|imported|5|cuarenta iguales|deuce
+W|imported|5|la dejada|dropshot
+W|imported|5|el peloteo|rally
+W|imported|5|¡red!|let
+W|imported|5|el tiro con efecto|slice
+W|imported|5|el recogepelotas|ball boy
+W|imported|5|el mate|smash
+W|imported|5|los tenis|tennis shoes
+W|imported|5|los golpes|strokes
+W|imported|5|la volea|volley
+W|imported|5|el resto|return
+W|imported|5|el revés|backhand
+W|imported|5|los juegos de raqueta|racquet games
+W|imported|5|el racketball|raquetball
+W|imported|5|el hoyo|hole
+W|imported|5|hacer un swing|to swing
+W|imported|5|el búnker|bunker
+W|imported|5|la banderola|flag
+W|imported|5|el rough|rough
+W|imported|5|el buggy|buggy
+W|imported|5|la jugadora de golf|golfer
+W|imported|5|la pelota de golf|golf ball
+W|imported|5|el tee|tee
+W|imported|5|el carrito de golf|golf trolley
+W|imported|5|la bolsa de golf|golf bag
+W|imported|5|el zapato de golf|golf shoe
+W|imported|5|los palos de golf|golf clubs
+W|imported|5|el palo de madera|wood
+W|imported|5|el putter|putter
+W|imported|5|el palo de hierro|iron
+W|imported|5|el wedge|wedge
+W|imported|5|hacer un drive|to drive
+S|imported|5|tirar al hoyo con un putter|to putt
+W|imported|5|hacer un chip|to chip
+W|imported|5|el bajo par|under par
+W|imported|5|el sobre par|over par
+W|imported|5|el hoyo en uno|hole in one
+W|imported|5|el handicap|handicap
+W|imported|5|el caddy|caddy
+W|imported|5|los espectadores|spectators
+W|imported|5|el swing de práctica|practice swing
+W|imported|5|el backswing|backswing
+W|imported|5|la línea de juego|line of play
+W|imported|5|el aletismo|athletics
+W|imported|5|la línea de salida|starting line
+W|imported|5|el cajón de salida|starting blocks
+W|imported|5|el esprinter|sprinter
+W|imported|5|el lanzamiento de discus|discus
+W|imported|5|la atleta|athlete
+W|imported|5|el lanzamiento de peso|shotput
+W|imported|5|batir un récord|to break a record
+W|imported|5|la fotofinish|photo finish
+W|imported|5|la maratón|marathon
+W|imported|5|el salto con pértiga|pole vault
+W|imported|5|la marca personal|personnel best
+W|imported|5|el listón|crossbar
+W|imported|5|el salto de altura|high jump
+W|imported|5|el salto de longitud|long jump
+W|imported|5|la carrera de vallas|hurdles
+W|imported|5|el salto mortal|somersault
+W|imported|5|los ejercicios de suelo|floor exercises
+W|imported|5|la gimnasta|gymnast
+W|imported|5|la barrera de equilibrio|beam
+W|imported|5|la voltereta|tumble
+W|imported|5|la gimnasia rítmica|rhythmic gymnastics
+W|imported|5|la barra fija|horizontal bar
+W|imported|5|las parallelas|parallel bars
+W|imported|5|las parallelas asimétricas|asymmetric bars
+W|imported|5|el caballo con arcos|pommel horse
+W|imported|5|el podio|podium
+W|imported|5|las medallas|medals
+W|imported|5|el bronce|bronze
+W|imported|5|los deportes de combate|combat sports
+W|imported|5|el adversario|opponent
+W|imported|5|el taekwondo|tae-kwon-do
+W|imported|5|el judo|judo
+W|imported|5|el aikido|aikido
+W|imported|5|el kendo|kendo
+W|imported|5|la careta|mask
+W|imported|5|el kung fu|kung fu
+W|imported|5|el full contact|kickboxing
+W|imported|5|los movimientos|actions
+W|imported|5|el agarre|hold
+W|imported|5|el derribo|throw
+W|imported|5|la inmovilización|pin
+W|imported|5|la patada|kick
+W|imported|5|el puñetazo|punch
+W|imported|5|el salto|jump
+W|imported|5|el ring|boxing ring
+W|imported|5|el protegedientes|mouth guard
+W|imported|5|los guantes de boxeo|boxing gloves
+S|imported|5|El k.o|knockout
+W|imported|5|el saco de arena|punch bag
+W|imported|5|el cinturón negro|black belt
+W|imported|5|las artes marciales|martial arts
+W|imported|5|la defensa personal|self defence
+W|imported|5|la capoeira|capoeira
+W|imported|5|el sumo|sumo wrestling
+W|imported|5|el tai-chi|tai-chi
+W|imported|5|el manguito|armband
+W|imported|5|las gafas de natación|goggles
+S|imported|5|la pinza para la nariz|nose clip
+W|clothes|5|el gorro de baño|cap
+W|imported|5|el saltador|diver
+W|imported|5|tirarse de cabeza|to dive
+W|imported|5|el giro|turn
+W|imported|5|el traje de buzo|wetsuit
+W|imported|5|el cinturón de pesas|weight belt
+W|imported|5|la botella de aire|air cylinder
+W|imported|5|el regulador|regulator
+W|imported|5|el salto alto|high dive
+W|imported|5|hacer agua|to tread water
+W|imported|5|el salto de salida|racing dive
+W|imported|5|las taquillas|lockers
+W|imported|5|el socorrista|lifeguard
+W|imported|5|la zona profunda|deep end
+W|imported|5|la zona poca profunda|shallow end
+W|imported|5|el tirón|cramp
+W|imported|5|la natación sincronizada|synchronised swimming
+W|imported|5|la brújala|compass
+W|imported|5|la botavara|boom
+W|imported|5|la vela mayor|mainsail
+W|imported|5|el mástil|mast
+W|imported|5|el foque|headsail
+W|imported|5|la escotera|cleat
+W|imported|5|la caña del timón|tiller
+W|imported|5|la bengala|flare
+W|imported|5|el salvavidas|lifebuoy
+W|imported|5|la balsa salvavidas|life raft
+W|imported|5|el remero|rower
+W|imported|5|el piragüisimo|canoeing
+W|imported|5|el windsurfista|windsurfer
+W|imported|5|la tabla|board
+W|imported|5|el windsurf|windsurfing
+S|imported|5|la cinta para el pie|footstrap
+W|imported|5|el esquí acuático|water skiing
+W|imported|5|la carrera de motoras|speed boating
+W|imported|5|la moto acuática|jet skiing
+W|imported|5|el surfista|surfer
+W|imported|5|el esquiador acuático|water skier
+W|verb|5|virar|to tack
+W|imported|5|la rompiente|surf
+W|imported|5|la escota|sheet
+W|imported|5|la orza|centreboard
+W|imported|5|el jinete|rider
+W|imported|5|la silla de montar|saddle
+W|imported|5|la bota de montar|riding boot
+W|imported|5|la cincha|girth
+W|imported|5|el pantalón de montar|jodhpurs
+W|imported|5|las riendas|reins
+W|imported|5|la crin|maine
+W|imported|5|la gorra de montar|riding hat
+W|imported|5|el borrén|pommel
+S|imported|5|la silla de montar de señora|side-saddle
+W|imported|5|la frontalera|browband
+W|imported|5|la muserola|noseband
+W|imported|5|el bocado|bit
+W|imported|5|la brida|bridle
+W|imported|5|la fusta|riding crop
+W|imported|5|las modalidades|events
+W|imported|5|el caballo de carreras|racehorse
+W|imported|5|la carrera de caballos|horse race
+W|imported|5|la carrera de obstáculos|steeplechase
+W|imported|5|la carrera al trote|harness race
+W|imported|5|el rodeo|rodeo
+W|imported|5|el concurso de saltos|showjumping
+W|imported|5|la carrera de carrozas|carriage race
+W|imported|5|la doma y monta|dressage
+W|imported|5|el trote|trot
+W|imported|5|el medio galope|canter
+W|imported|5|el mozo de cuadra|groom
+W|imported|5|el galope|gallop
+W|imported|5|el cabestro|halter
+W|imported|5|el cercado|paddock
+W|imported|5|el ruedo|arena
+W|imported|5|el hipódromo|racecourse
+W|imported|5|la carrera sin obstáculos|flat race
+W|imported|5|el plomo|weight
+W|imported|5|el anzuelo|hook
+W|imported|5|el cebo|bait
+W|imported|5|la red para recoger|landing net
+W|imported|5|el señuelo|lure
+W|imported|5|la caja de aparejos|tackle box
+S|imported|5|la red para las capturas|keep net
+W|imported|5|el sedal|line
+W|imported|5|la caña de pescar|fishing rod
+W|imported|5|el carrete|reel
+S|imported|5|Las botas altas de goma|waders
+W|imported|5|el pescador de caña|angler
+W|imported|5|los tipos de pesca|types of fishing
+S|imported|5|la pesca en agua dulce|freshwater fishing
+W|imported|5|la pesca con mosca|fly fishing
+W|imported|5|la pesca deportiva|sport fishing
+W|imported|5|la pesca de altura|deep sea fishing
+S|imported|5|la pesca en la orilla|surfcasting
+W|imported|5|coger con la red|to net
+W|verb|5|cebar|to bait
+W|imported|5|los aparejos|tackle
+W|imported|5|la ropa impermeable|waterproofs
+W|imported|5|la pértiga|pole
+W|imported|5|la licencia de pesca|fishing permit
+S|imported|5|la pesca en alta mar|Marine fishing
+W|imported|5|la nasa|creel
+W|imported|5|la pesca con arpón|spear fishing
+W|imported|5|la telesilla|chairlift
+W|imported|5|el teleférico|cable car
+W|imported|5|el bastón|ski pole
+W|imported|5|la esquiadora|skier
+W|imported|5|la bota de esquí|ski boot
+W|imported|5|la chaqueta de esquí|ski jacket
+W|imported|5|la pista de esquí|ski run
+W|imported|5|el descenso|downhill skiing
+W|imported|5|el slálom|slalom
+W|imported|5|los deportes de invierno|winter sports
+W|imported|5|la escalada en hielo|ice climbing
+W|imported|5|el patín|skate
+W|imported|5|el snowboarding|snowboarding
+W|imported|5|el luge|luge
+W|imported|5|la moto de nieve|snowmobile
+W|imported|5|tirarse en trineo|sledding
+W|imported|5|el esquí alpino|alpine skiing
+W|imported|5|el slálom gigante|giant slalom
+W|imported|5|fuera de pista|off-piste
+W|imported|5|el curling|curling
+W|imported|5|el trineo con perros|dog sledding
+W|imported|5|el biatlón|biathlon
+W|imported|5|el patinaje de velocidad|speed skating
+W|imported|5|los otros deportes|other sports
+W|imported|5|el vuelo sin motor|gliding
+W|imported|5|el ala delta|hang-glider
+S|imported|5|El vuelo con ala delta|hang-gliding
+W|imported|5|el paracaídas|parachute
+W|imported|5|el paracaídisimo|parachuting
+W|imported|5|el parapente|paragliding
+S|imported|5|El paracaídisimo en caída libre|sky diving
+W|imported|5|el rappel|abseiling
+W|imported|5|el puenting|bungee jumping
+W|imported|5|el rally|rally driving
+W|imported|5|el piloto de carreras|racing driver
+W|imported|5|el automovilísimo|motor racing
+W|imported|5|el motocross|motorcross
+W|imported|5|el motociclismo|motorbike racing
+W|imported|5|montar en monopatín|skateboarding
+W|imported|5|el patinaje en línea|inline skating
+W|imported|5|el florete|foil
+W|imported|5|el esgrima|fencing
+W|imported|5|el bolo|pin
+W|imported|5|la flecha|arrow
+W|imported|5|el carcaj|quiver
+W|imported|5|el tiro con arco|archery
+W|imported|5|la bola de bowling|bowling ball
+W|imported|5|el billar americano|pool
+W|imported|5|la bicicleta fija|exercise bike
+W|imported|5|la máquina de ejercicios|gym machine
+W|imported|5|las pesas|free weights
+W|imported|5|la máquina de remos|rowing machine
+W|imported|5|la entrenadora personal|personal trainer
+W|imported|5|la máquina de step|step machine
+W|imported|5|la banda de paseo|treadmill
+W|imported|5|la máquina de cross|cross trainer
+W|imported|5|la sauna|sauna
+W|imported|5|los ejercicios|exercises
+W|imported|5|el estiramiento|stretch
+W|imported|5|la flexión con estiramiento|lunge
+W|imported|5|los leotardos|tights
+W|imported|5|la flexión|press-up
+W|imported|5|ponerse en cuclillas|squat
+W|imported|5|el ejercicio de biceps|bicep curl
+W|imported|5|los ejercicios de piernas|leg press
+W|imported|5|los ejercicios pectorales|chest press
+W|imported|5|el levantamiento de pesas|weight training
+W|imported|5|la barra de pesas|weight bar
+W|imported|5|el footing|jogging
+W|imported|5|el pilates|pilates
+W|imported|5|correr en parada|to jog on the spot
+W|verb|5|flexionar|to flex
+W|imported|5|la gimnasia prepugilística|boxercise
+W|imported|5|la tabla de gimnasia|circuit training
+W|imported|5|saltar a la comba|skipping
+W|imported|5|el telón|curtain
+W|imported|5|los bastidores|wings
+W|imported|5|el decarado|set
+W|imported|5|la platea|circle
+W|imported|5|las butacas|seating
+W|imported|5|el patio de butacas|stalls
+W|imported|5|el palco|box
+W|imported|5|la platea alta|upper circle
+W|imported|5|el guión|script
+W|imported|5|el telón de fondo|backdrop
+S|imported|5|El foso de la orquesta|Orchestra pit
+W|imported|5|el acomodador|usher
+W|imported|5|la música clásica|classical music
+W|imported|5|el bis|encore
+S|imported|5|Quisiera dos entradas para la sesión de esta noche|I'd like two tickets for tonight's performance
+S|imported|5|¿a qué hora empieza?|what time does it start?
+W|imported|5|las palomitas|popcorn
+W|imported|5|el póster|poster
+W|imported|5|la película de suspense|thriller
+W|imported|5|la película de terror|horror film
+W|imported|5|la película de oeste|western
+S|imported|5|la película de ciencia ficción|science fiction film
+W|imported|5|la película de aventuras|adventure
+S|imported|5|la película de dibujos animados|animated film
+W|imported|5|el contrabajo|double bass
+W|imported|5|el violin|violin
+W|imported|5|la viola|viola
+W|imported|5|el violoncelo|cello
+W|imported|5|la clave de fa|bass clef
+W|imported|5|la clave de sol|treble clef
+W|imported|5|el penta-grama|staff
+W|imported|5|la notación|notation
+W|imported|5|la obertura|overture
+W|imported|5|la sinfonia|symphony
+W|imported|5|la sonata|sonata
+W|imported|5|los instrumentos|instruments
+W|imported|5|la pausa|rest
+W|imported|5|sostenido|sharp
+W|imported|5|bemol|flat
+W|imported|5|la batura|baton
+W|imported|5|el viento-madera|woodwind
+W|imported|5|el oboe|oboe
+W|imported|5|el corno inglés|cor anglais
+W|imported|5|el clarinete bajo|bass clarinet
+W|imported|5|el fagote|bassoon
+W|imported|5|el contrafagote|double bassoon
+W|imported|5|el timbal|kettledrum
+W|imported|5|el gong|gong
+W|imported|5|el vibráfono|vibraphone
+W|imported|5|los bongos|bongos
+W|imported|5|el tambor pequeño|snare drum
+W|imported|5|los platillos|cymbals
+W|imported|5|la pandereta|tambourine
+W|imported|5|las maracas|maracas
+W|imported|5|el viento-metal|brass
+W|imported|5|el trombón de varas|trombone
+W|imported|5|el corno de caza|French horn
+W|imported|5|la tuba|tuba
+W|imported|5|los fans|fans
+W|imported|5|el guitarrista|guitarist
+W|imported|5|el batería|drummer
+W|imported|5|el concierto de rock|rock concert
+W|imported|5|el traste|fret
+W|imported|5|la guitarra eléctrica|electric guitar
+W|imported|5|los estilos musicales|musical styles
+W|color|5|el blues|blues
+W|imported|5|el punk|punk
+W|imported|5|la música folk|folk music
+W|imported|5|la música de baile|dance
+W|imported|5|el heavy metal|heavy metal
+W|imported|5|la melodía|melody
+W|imported|5|el reggae|reggae
+W|imported|5|la música country|country
+W|imported|5|el turista|tourist
+W|imported|5|la atracción turística|tourist attraction
+W|imported|5|la estatuilla|statuette
+W|imported|5|la visita con guía|guided tour
+W|imported|5|los recuerdos|souvenirs
+W|imported|5|el precio de entrada|entrance fee
+W|imported|5|la guía del viajero|guide book
+W|imported|5|las pilas|batteries
+W|imported|5|la cámara de video|camcorder
+W|imported|5|las indicaciones|directions
+W|imported|5|la máquina fotográfica|camera
+S|imported|5|¿dónde está.....?|where is.....?
+W|imported|5|me he perdido|I'm lost
+S|imported|5|¿podría decir me cómo se va a....?|can you tell me the way to...?
+W|imported|5|la ruina famosa|famous ruin
+W|imported|5|el edificio histórico|historic building
+W|imported|5|el casino|casino
+W|home|5|los jardines|gardens
+S|imported|5|El plano de la planta|floor plan
+W|time|5|las horas|times
+W|imported|5|la oficina de información|tourist information
+S|imported|5|Las actividades al aire libre|outdoor activities
+W|imported|5|el reloj de sol|sundial
+W|imported|5|los jardines clásicos|formal gardens
+W|imported|5|el safari park|safari park
+W|imported|5|montar en patinete|skateboarding
+W|imported|5|el sendero para caballos|bridle path
+W|imported|5|la ornitología|bird watching
+W|imported|5|el picnic|picnic
+W|imported|5|el área de juegos|playground
+W|imported|5|la piscina de plástico|paddling pool
+W|imported|5|los columpios|swings
+W|imported|5|el subibaja|seesaw
+W|imported|5|la estructura para escalar|climbing frame
+W|imported|5|la bolsa de playa|beach bag
+W|imported|5|la torre de vigilancia|lifeguard tower
+S|imported|5|la barrera contra el viento|windbreak
+W|imported|5|el paseo marítimo|promenade
+S|imported|5|El sombrero para el sol|sunhat
+W|imported|5|la crema bronceadora|suntan lotion
+W|imported|5|la pelota de playa|beach ball
+W|imported|5|la toalla de playa|beach towel
+W|imported|5|el castillo de arena|sandcastle
+S|imported|5|El contenedor de la basura|waste disposal
+W|imported|5|las duchas|showers
+W|imported|5|el punto eléctrico|electric hook up
+W|imported|5|el doble techo|flysheet
+W|imported|5|la roulotte|caravan
+W|imported|5|la oficina del director|site manager's office
+W|imported|5|hay plazas libres|pitches available
+W|imported|5|montar una tienda|to pitch a tent
+S|imported|5|El palo de la tienda|tent pole
+W|imported|5|el catre de campaña|camp bed
+W|imported|5|la mesa de picnic|picnic bench
+W|imported|5|la cámper|camper van
+W|imported|5|el remolque|trailer
+W|imported|5|la hoguera|campfire
+W|imported|5|la pastilla para hogueras|firelighter
+W|imported|5|encender una hoguera|to light a fire
+W|imported|5|la estructura|frame
+W|imported|5|la cantimplora|water bottle
+W|imported|5|el suelo aislante|ground sheet
+W|imported|5|el termo|vacuum flask
+S|imported|5|la loción contra los insectos|insect repellent
+W|imported|5|la mosquitera|mosquito net
+W|imported|5|la ropa termoaislante|thermals
+W|imported|5|las botas de trekking|walking boots
+W|imported|5|el hornillo|camping stove
+W|imported|5|la esterilla|sleeping mat
+S|imported|5|El ocio en el hogar|home entertainment
+W|imported|5|la radio digital|digital radio
+W|imported|5|el ipod|ipod
+W|imported|5|el disco de dvd|DVD disk
+W|imported|5|el reproductor de DVD|DVD player
+W|imported|5|el tocadiscos|record player
+S|imported|5|El lector de compact disks|CD player
+W|imported|5|el amplificador|amplifier
+W|imported|5|los auriculares|headphones
+S|imported|5|El equipo de alta fidelidad|hi-fi system
+W|imported|5|el pie del altavoz|speaker stand
+W|imported|5|el sintonizador digital|digital box
+W|imported|5|el borde del ocular|eyecup
+W|imported|5|la antena parabólica|satellite dish
+S|imported|5|El televisor de pantalla plana|flatscreen TV
+W|imported|5|la consola|console
+W|imported|5|el avance rápido|fast forward
+W|imported|5|el botón para grabar|record
+W|imported|5|el botón para rebobinar|rewind
+W|imported|5|el play|play
+W|imported|5|el mando a distancia|remote control
+W|imported|5|el stop|stop
+W|imported|5|el compact disc|compact disk
+W|imported|5|la casete|cassette tape
+W|imported|5|estéreo|stereo
+W|imported|5|la transmisión por secuencias|streaming
+W|imported|5|alta definición|high definition
+W|imported|5|el magnetofón|cassette player
+W|imported|5|la televisión por cable|cable television
+S|imported|5|El canal de pay per view|pay per view channel
+W|imported|5|la wi-fi|wifi
+W|imported|5|el largometraje|feature film
+W|imported|5|cambiar de canal|to change channel
+W|imported|5|encender la televisión|to turn the television on
+W|imported|5|apagar la televisión|to turn the television off
+W|imported|5|sintonizar la radio|to tune the radio
+W|imported|5|el alquitrán|tar
+W|imported|5|provecho|benefit
+W|verb|5|mascullar|to mumble
+W|imported|5|dar grima a alguien|to set someone's teeth on edge
+W|imported|5|el gentío|crowd
+W|imported|5|angosta|narrow
+W|imported|5|el portón|large door
+W|body|5|el pescuezo|neck
+W|imported|5|la losa|slab
+W|imported|5|la lápida|gravestone
+W|imported|5|turbio|cloudy
+W|imported|5|la cúpula|dome
+W|imported|5|la manija|handle
+W|imported|5|caer de bruces|to fall flat on one's face
+W|verb|5|lacrar|to seal with wax
+W|imported|5|los postigos|shutters
+W|imported|5|el recinto|enclosure
+W|imported|5|la hojarasca|dead leaves
+W|imported|5|el contorno|outline
+W|verb|5|despedazar|to tear apart
+W|imported|5|la centinela|sentry
+W|imported|5|hablar sin ambages|to come straight to the point
+W|imported|5|la baldosa|tile
+W|imported|5|hasta la médula|to the core
+W|home|5|la techumbre|roof
+W|verb|5|ondular|to wave
+W|imported|5|rendir pleitesía a alguien|to show respect for
+W|imported|5|rayano|bordering on
+W|verb|5|solventar|to settle
+W|imported|5|escombros|debris
+W|verb|5|chamuscar|to scorch
+W|imported|5|humeantes|smoking
+W|imported|5|hurgar en|to rummage in
+W|verb|5|zanjar|to resolve
+W|imported|5|el embuste|lie
+W|imported|5|citado|aforementioned
+W|home|5|el domicilio|home
+W|imported|5|el disparador|shutter release
+W|imported|5|la rueda del diafragma|aperture dial
+W|imported|5|l'objectif|lens
+W|imported|5|la cámara reflex|SLR camera
+W|imported|5|el filtro|filter
+W|imported|5|la tapa del objectivo|lens cap
+W|imported|5|el flash electrónico|flash gun
+W|imported|5|el fotómetro|lightmeter
+W|imported|5|el teleobjectivo|zoom lens
+W|imported|5|los tipos de cámara|types of camera
+W|imported|5|la cámara Polaroid|Polaroid camera
+W|imported|5|la cámara APS|APS camera
+W|imported|5|el flash|flash
+W|imported|5|el teléfono con cámara|camera phone
+W|imported|5|la cámara desechable|disposable camera
+W|verb|5|fotografiar|to photograph
+W|imported|5|apaisado|landscape
+W|imported|5|en formato vertical|portrait
+W|imported|5|el álbum de fotos|photo album
+W|imported|5|el portarretratos|photoframe
+W|imported|5|los problemas|problems
+W|imported|5|subexpuesto|underexposed
+W|imported|5|sobreexpuesto|overexposed
+W|imported|5|desenfocado|out of focus
+W|imported|5|los ojos rojos|red eye
+W|imported|5|el visor|viewfinder
+S|imported|5|la funda de la cámara|camera case
+S|imported|5|me gustaría revelar este carrete|I'd like this film processed
+W|imported|5|el tablero de ajedrez|chessboard
+W|imported|5|el alfil|bishop
+W|imported|5|el peón|pawn
+W|imported|5|el scrabble|scrabble
+W|imported|5|el backgammon|backgammon
+W|imported|5|el dado|dice
+W|imported|5|los juegos de mesa|board games
+W|imported|5|el monopoly|monopoly
+W|imported|5|la filatelia|stamp collecting
+W|imported|5|los dardos|darts
+W|imported|5|el comodín|joker
+W|imported|5|la jota|jack
+W|imported|5|las cartas|cards
+W|imported|5|la pica|spade
+W|imported|5|el trébol|club
+W|verb|5|barajar|to shuffle
+W|imported|5|el perdedor|loser
+W|imported|5|la partida|game
+W|imported|5|la apuesta|bet
+W|imported|5|el póquer|poker
+W|town|5|el bridge|bridge
+W|imported|5|la baraja|pack of cards
+W|imported|5|te toca a ti|it is your move
+W|imported|5|tira los dados|roll the dice
+W|verb|5|cuadrar|to tally
+W|imported|5|desmerecer de algo|to compare unfavourably with something
+W|imported|5|la pitillera|cigarette case
+W|imported|5|la colilla|cigarette end
+W|imported|5|plegarias|prayers
+W|verb|5|calar|to soak
+W|verb|5|diluirse|to dissolve
+W|verb|5|guisar|to cook
+W|imported|5|losonjas|flattery
+W|imported|5|el apagón|power cut
+W|verb|5|escamar|to scale
+W|verb|5|constatar|to confirm
+W|imported|5|el féretro|coffin
+W|imported|5|la fosa|pit
+W|verb|5|matizar|to vary
+W|verb|5|hincar|to thrust
+W|verb|5|corretear|to harass
+W|imported|5|panceta|streaky bacon
+W|imported|5|azul añil|indigo
+W|imported|5|las pinturas|paints
+W|imported|5|las pinturas al óleo|oil paints
+W|imported|5|las acuarelas|watercolour paint
+W|imported|5|la pintura acrílica|acrylic paint
+W|imported|5|las otras manualidades|other crafts
+W|imported|5|el bloc de dibujo|sketch pad
+W|imported|5|el boceto|sketch
+W|imported|5|el carboncillo|charcoal
+W|imported|5|la impresión|printing
+W|imported|5|el cincel|chisel
+W|imported|5|la talla en madera|woodworking
+W|imported|5|la herramienta para modelar|modelling tool
+W|imported|5|el torno de alfarero|potter's wheel
+W|imported|5|el modelismo|model making
+W|imported|5|la papiroflexia|origami
+W|imported|5|el papel maché|paper-mâché
+W|imported|5|la orfebrería|jewellery making
+W|imported|5|la guía del hilo|thread guide
+W|imported|5|el carrete de hilo|thread reel
+W|imported|5|la rueda de ajuste|balance wheel
+W|imported|5|el selector de puntada|stitch selector
+S|imported|5|El pie de la aguja|presser foot
+S|imported|5|la placa de la aguja|needle plate
+W|imported|5|la bobina|bobbin
+W|imported|5|el hilo|thread
+W|imported|5|el dedal|thimble
+W|imported|5|el costurero|sewing basket
+W|imported|5|el jaboncillo|tailor's chalk
+W|imported|5|el alfiler|pin
+W|imported|5|el alfiletero|pincushion
+W|imported|5|el maniquí|tailor's dummy
+W|verb|5|enhebrar|to thread
+W|imported|5|la puntada|stich
+W|verb|5|hilvanar|to tack
+W|imported|5|el bordado en cañamazo|needlepoint
+W|imported|5|el bordado|embroidery
+W|imported|5|la aguja de ganchillo|crochet hook
+W|imported|5|el ganchillo|crochet
+W|imported|5|el macramé|macramé
+W|imported|5|la labor de retales|patchwork
+W|imported|5|el acolchado|quilting
+W|imported|5|el bolillo|Lace bobbin
+W|imported|5|la labor de encaje|lace-making
+W|imported|5|el telar|loom
+W|imported|5|la aguja de tejer|knitting needle
+W|imported|5|la madeja|skein
+W|verb|5|descoser|to unpick
+W|imported|5|el nailon|nylon
+W|verb|5|regentar|to run
+W|imported|5|la reja|bars
+W|imported|5|pulcritud|neatness
+W|imported|5|el sepulcro|tomb
+W|imported|5|solícita|obliging
+W|imported|5|profundizar en algo|to go more deeply into something
+W|verb|5|rebosar|to overflow
+W|imported|5|el monaguillo|alter boy
+W|imported|5|bálsamo|comfort
+W|imported|5|galimatías|gibberish
+W|imported|5|maléfico|evil
+W|imported|5|el sino|fate
+W|imported|5|el manjar|delicacy
+W|imported|5|la atalaya|watchtower
+W|nature|5|tierra|earth
+W|imported|5|urano|Uranus
+W|imported|5|el sistema solar|solar system
+W|imported|5|la nebulosa|nebula
+W|imported|5|el meteorito|meteor
+W|imported|5|el agujero negro|black hole
+W|imported|5|la luna llena|full moon
+W|imported|5|la luna nueva|new moon
+W|imported|5|la media luna|crescent moon
+W|imported|5|la exploración espacial|space exploration
+W|imported|5|la escotilla|crew hatch
+W|imported|5|el propulsor|thruster
+W|imported|5|el traje espacial|space suit
+W|imported|5|el transbordador espacial|space shuttle
+W|imported|5|el lanzacohetes|booster
+W|imported|5|el astranauta|astronaut
+W|imported|5|el módulo lunar|lunar module
+W|imported|5|la rampa de lanzamiento|launch pad
+W|imported|5|la estación espacial|space station
+W|imported|5|los prismáticos|binoculars
+W|imported|5|el continente|continent
+W|imported|5|la tierra firme|land
+W|imported|5|la cadena montañosa|mountain range
+W|imported|5|el núcleo interno|inner core
+W|imported|5|el núcleo externo|outer core
+W|imported|5|el círculo polar ártico|Arctic circle
+W|imported|5|el trópico de cáncer|tropic of cancer
+W|imported|5|los trópicos|tropics
+W|imported|5|el trópico de capricornio|tropic of Capricorn
+W|imported|5|las zonas|zones
+W|imported|5|el ecuador|equator
+W|imported|5|el hemisferio sur|southern hemisphere
+W|imported|5|el hemisferio norte|northern hemisphere
+W|imported|5|el polo norte|North pole
+W|imported|5|la ceniza|ash
+W|imported|5|el magma|magna
+W|imported|5|entrar en erupción|to erupt
+W|imported|5|el surtido|assortment
+W|imported|5|surtido|assorted
+W|verb|5|tapiar|to wall in
+W|imported|5|contiguo|adjacent
+W|verb|5|surtir|to supply
+W|verb|5|trajinar|to bustle about
+W|imported|5|la pólvora|gunpowder
+W|imported|5|el santurrón|sanctimonious person
+W|imported|5|la estocada|stab
+W|imported|5|deprovisto de algo|devoid of something
+W|imported|5|la conserjería|porter's lodge
+W|imported|5|la necrología|obituary
+W|imported|5|la ladera|slope
+W|nature|5|las rocas|rocks
+W|imported|5|el desfiladero|gorge
+W|imported|5|el géiser|geyser
+W|imported|5|el acantilado|cliff
+W|imported|5|el arrecife de coral|coral reef
+W|imported|5|el estuario|estuary
+W|imported|5|el canguro|kangaroo
+W|imported|5|el prostíbulo|brothel
+W|imported|5|la exosfera|exosphere
+W|imported|5|la aurora|aurora
+W|imported|5|la termoesfera|thermosphere
+W|imported|5|la ionosfera|ionosphere
+W|imported|5|los rayos ultravioleta|ultraviolet rays
+W|imported|5|la troposfera|troposphere
+W|imported|5|la estratosfera|stratosphere
+W|imported|5|la mesoesfera|mesosphere
+W|imported|5|el aguanieve|sleet
+W|imported|5|el chubasco|shower
+W|imported|5|caluroso|hot
+W|imported|5|el temporal|gate
+W|imported|5|está lloviendo|it's raining
+W|imported|5|estamos a.... grados|it's.... degrees
+W|nature|5|el arcoiris|rainbow
+W|imported|5|la helada|freeze
+W|imported|5|el monzón|monsoon
+W|verb|5|afilar|to sharpen
+W|verb|5|sepultar|to bury
+W|imported|5|el berrinche|tantrum
+W|imported|5|el camposanto|cemetry
+W|imported|5|ígneo|igneous
+W|imported|5|el granito|granite
+W|imported|5|el basalto|basalt
+W|imported|5|sedimentario|sedimentary
+W|imported|5|la piedra arenisca|sandstone
+W|imported|5|la piedra caliza|limestone
+W|imported|5|el pedernal|flint
+W|imported|5|el conglomerado|conglomerate
+W|imported|5|metamórfico|metamorphic
+W|imported|5|el esquisto|schist
+W|imported|5|el gneis|gneiss
+W|imported|5|las gemas|gems
+W|imported|5|el rubi|ruby
+W|imported|5|el azabache|jet
+W|imported|5|el ópolo|opal
+W|imported|5|la piedra lunar|moonstone
+W|imported|5|el turmalina|tourmaline
+W|imported|5|la aguamarina|aquamarine
+W|imported|5|los minerales|minerals
+W|imported|5|la mica|mica
+W|imported|5|el hematites|hematite
+W|imported|5|la calcita|calcite
+W|imported|5|la malaquita|malachite
+W|imported|5|el ónice|onyx
+W|imported|5|el grafito|graphite
+W|imported|5|los metales|metals
+W|imported|5|el platino|platinum
+W|imported|5|el niquel|nickel
+W|imported|5|el cobre|copper
+W|imported|5|el estaño|tin
+W|imported|5|el aluminio|aluminium
+W|imported|5|el mercurio|mercury
+W|imported|5|el zinc|zinc
+W|animal|5|los animales|animals
+W|imported|5|los mamíferos|mammals
+W|imported|5|los bigotes|whiskers
+W|imported|5|el cachorro|puppy
+W|imported|5|el gatito|kitten
+W|imported|5|la cría|pup
+W|imported|5|la morsa|walrus
+W|imported|5|el orificio|blowhole
+W|imported|5|el asta|antler
+W|imported|5|la pezuña|hoof
+W|imported|5|la giba|hump
+W|imported|5|la trompa|trunk
+W|imported|5|el cuerno|horn
+W|imported|5|el gorila|gorilla
+W|imported|5|el koala|koala
+W|imported|5|la zarpa|claw
+W|imported|5|el oso panda|panda
+W|imported|5|la estilográfica|fountain pen
+W|imported|5|el alboroto|disturbance
+W|imported|5|el canario|canary
+W|imported|5|la golondrina|swallow
+W|imported|5|el cuervo|crow
+W|imported|5|el pájaro carpintero|woodpecker
+W|imported|5|la grulla|crane
+W|imported|5|la garra|claw
+W|imported|5|los reptiles|reptiles
+W|imported|5|las escamas|scales
+W|imported|5|el lagarto|lizard
+W|imported|5|el caparazón|shell
+W|animal|5|el galápago|turtle
+W|imported|5|el hocico|snout
+W|imported|5|los anfibios|amphibians
+W|food|5|los peces|Fish
+W|imported|5|el caballito de mar|sea horse
+W|imported|5|el pez de colores|goldfish
+W|imported|5|la aleta dorsal|dorsal fin
+W|imported|5|la agalla|gill
+W|imported|5|la aleta pectoral|pectoral fin
+W|imported|5|la carpa koi|koi carp
+W|imported|5|los invertebrados|invertebrates
+W|imported|5|la termita|termite
+W|imported|5|el aquijón|sting
+W|imported|5|el ciempiés|centipede
+W|nature|5|las plantas|plants
+W|imported|5|la ramita|twig
+W|imported|5|el sauce|willow
+W|imported|5|el trunco|trunk
+W|imported|5|el álamo|poplar
+W|imported|5|el eucalipto|eucalyptus
+W|imported|5|el alerce|larch
+W|imported|5|la haya|beech
+W|imported|5|el abedul|birch
+W|imported|5|el cedro|cedar
+W|imported|5|el olmo|elm
+W|imported|5|el tilo|lime
+W|imported|5|el acebo|holly
+W|imported|5|la planta de flor|flowering plant
+W|imported|5|el cáliz|calyx
+W|imported|5|el estambre|stamen
+W|imported|5|el ramúnculo|buttercup
+W|imported|5|el brezo|heather
+W|imported|5|la dedalera|foxglove
+W|imported|5|los narcisos silvestres|bluebells
+W|imported|5|la prímula|primrose
+W|imported|5|el lupino|lupins
+W|imported|5|la ortiga|nettle
+W|imported|5|el bordillo|kerb
+S|imported|5|la calle de sentido único|one-way system
+W|imported|5|el edificio de oficinas|office block
+W|imported|5|el edificio de pisos|apartment block
+W|imported|5|la farola|Street light
+W|imported|5|el callejón|alley
+W|imported|5|la señal de tráfico|Street sign
+W|imported|5|la baliza|bollard
+W|town|5|los edificios|buildings
+W|imported|5|la zona industrial|industrial estate
+W|imported|5|la periferia|suburb
+W|imported|5|la zona peatonal|pedestrian zone
+W|imported|5|la calle lateral|side street
+W|imported|5|la boca de alcantarilla|manhole
+W|imported|5|la alcantarilla|gutter
+W|imported|5|el sumidero|drain
+S|imported|5|Los edificios y las estructuras|buildings and structures
+W|imported|5|el torreón|turret
+W|imported|5|el foso|moat
+W|imported|5|el florón|finial
+W|imported|5|el frontón|gable
+W|imported|5|la mezquita|mosque
+W|imported|5|la bóveda|vault
+W|imported|5|la sinagoga|synagogue
+W|imported|5|la cornisa|cornice
+W|imported|5|la columna|pillar
+W|imported|5|el arquitrabe|architrave
+W|imported|5|renacimiento|Renaissance
+W|imported|5|barroco|baroque
+W|imported|5|el friso|frieze
+W|imported|5|rococó|rococo
+W|imported|5|el contrafuerte|buttress
+W|imported|5|neoclásico|neoclassical
+W|imported|5|el estilo modernista|art nouveau
+W|imported|5|art decó|art deco
+W|imported|5|los datos|reference
+W|imported|5|el minutero|minute hand
+S|imported|5|la aguja de la hora|hour hand
+W|imported|5|media hora|half an hour
+W|imported|5|un cuarto de hora|a quarter of an hour
+W|imported|5|veinte minutos|twenty minutes
+W|imported|5|cuarenta minutos|fourty minutes
+S|imported|5|son las tres en punto|it's three o'clock
+W|imported|5|la una y cinco|five past one
+W|imported|5|la una y diez|ten past one
+W|imported|5|la una y cuarto|quarter past one
+W|imported|5|la una y veinte|twenty past one
+W|imported|5|la una y veinticinco|twenty five past one
+W|imported|5|la trotteuse|second hand
+W|imported|5|la una y media|one thirty
+W|imported|5|las dos menos veinticinco|twenty five to two
+W|imported|5|las dos menos veinte|twenty to two
+W|imported|5|las dos menos cuarto|quarter to two
+W|imported|5|las dos menos diez|ten to two
+W|imported|5|las dos menos cinco|five to two
+W|imported|5|las dos en punto|two o'clock
+S|imported|5|la noche y el día|night and day
+W|imported|5|el alba|dawn
+W|imported|5|la puesto de sol|sunset
+W|imported|5|el anochecer|dusk
+W|imported|5|llegas temprano|you're early
+W|imported|5|llegas tarde|you're late
+W|imported|5|llegaré dentro de poco|I'll be there soon
+W|imported|5|por favor, sé puntual|please be on time
+S|imported|5|¿a qué hora comienza?|what time does it start?
+S|imported|5|¿a qué hora termina?|what time does it finish?
+S|imported|5|¿cuánto dura?|how long will it last?
+W|imported|5|se está haciendo tarde|it's getting late
+W|imported|5|el traqueteo|the rattling
+W|imported|5|el alcantarillado|sewer system
+W|imported|5|la verja|iron gate
+W|imported|5|el títere|puppet
+W|imported|5|el almanaque|calendar
+W|time|5|lunes|monday
+W|time|5|martes|tuesday
+W|time|5|miércoles|Wednesday
+W|time|5|jueves|Thursday
+W|time|5|viernes|Friday
+W|time|5|sábado|Saturday
+W|time|5|domingo|Sunday
+W|imported|5|el día laborable|work day
+W|imported|5|la lumbre|fire
+W|verb|5|dilapidar|to squander
+W|imported|5|la herrumbre|rust
+W|imported|5|el desguace|scrapyard
+W|imported|5|codicia|greed
+W|verb|5|trastornarse|to go out of one's mind
+W|time|5|los años|years
+W|imported|5|Mil novecientos|nineteen hundred
+W|imported|5|Mil novecientos uno|nineteen hundred and one
+W|imported|5|Mil novecientos diez|nineteen ten
+W|imported|5|dos mil uno|two thousand and one
+W|imported|5|las estaciones|seasons
+W|imported|5|la década|decade
+W|imported|5|quince días|fortnight
+W|imported|5|esta semana|this week
+W|imported|5|antes de ayer|the day before yesterday
+W|imported|5|pasado mañana|the day after tomorrow
+W|imported|5|anual|annual
+S|imported|5|es el siete de febrero del dos mil dos|it's February 7th, two thousand and two
+W|imported|5|los números|numbers
+W|imported|5|ciento diez|one hundred and ten
+W|imported|5|setecientos|seven hundred
+W|imported|5|diez mil|ten thousand
+W|imported|5|veinte mil|twenty thousand
+W|imported|5|cincuenta mil|fifty thousand
+S|imported|5|cincuenta y cinco mil quinientos|fifty-five thousand five hundred
+W|imported|5|un millón|one million
+W|imported|5|Mil millones|one billion
+W|imported|5|decimotecero|thirteenth
+W|imported|5|décimo octavo|eighteenth
+W|imported|5|décimo noveno|nineteenth
+W|imported|5|vigésimo primero|twenty-first
+W|imported|5|vigésimo segundo|twenty second
+W|imported|5|vigésimo tercero|twenty-third
+W|imported|5|el tiovivo|merry go round
+W|imported|5|el fogón|stove
+S|imported|5|Los pesos y las medias|weights and measures
+W|imported|5|el pie cuadrado|Square foot
+W|imported|5|el metro cuadrado|square metre
+W|imported|5|la libra|pound
+W|imported|5|la balanza|scales
+W|imported|5|el kilómetro|kilometre
+W|imported|5|el miligramo|miligram
+W|imported|5|el medio litro|half-litre
+W|imported|5|la medida de capacidad|liquid measure
+W|imported|5|el tetrabrik|carton
+W|imported|5|la tarrina|tub
+W|imported|5|el rollo|roll
+W|imported|5|el mapamundi|world map
+W|imported|5|el mar del norte|North sea
+W|imported|5|el océano ártico|Arctic ocean
+W|imported|5|las montañas rocosas|Rocky Mountains
+W|imported|5|el mar caribe|carribean sea
+W|imported|5|el amazonas|Amazonia
+W|imported|5|el océano pacifico|Pacific ocean
+W|imported|5|los andes|andes
+W|imported|5|el océano atlántico|Atlantic ocean
+W|imported|5|el mar Báltico|Baltic sea
+W|imported|5|el mar mediterráneo|Mediterranean Sea
+W|imported|5|Siberia|Siberia
+W|imported|5|el mar negro|black sea
+W|imported|5|el mar caspio|Caspian sea
+W|imported|5|el himalaya|Himalayas
+W|imported|5|el mar de omán|Arabian sea
+W|imported|5|el océano índico|Indian ocean
+W|imported|5|el mar rojo|red sea
+W|imported|5|el sáhara|Sahara dessert
+W|imported|5|el océano antártico|Southern ocean
+S|imported|5|América del Norte y Central|North and Central America
+W|imported|5|Hawaii|Hawaii
+W|imported|5|Alaska|Alaska
+W|imported|5|Groenlandia|Greenland
+W|imported|5|Estados Unidos de América|United States of America
+W|imported|5|Belice|Belize
+W|imported|5|Cuba|Cuba
+W|imported|5|Bahamas|Bahamas
+W|imported|5|Haití|Haiti
+W|imported|5|República Dominicana|Dominican Republic
+W|imported|5|Saint Kitts y Nevis|St. Kitts and Nevis
+W|imported|5|Dominica|Dominica
+W|imported|5|Santa Lucía|St. Lucia
+S|imported|5|San Vicente y las Granadinas|St. Vincent and the The Grenadines
+W|imported|5|Granada|Grenada
+W|imported|5|América del sur|South America
+W|imported|5|Venezuela|Venezuela
+W|imported|5|Columbia|Columbia
+W|imported|5|las Islas Galápagos|Galapagos Islands
+W|imported|5|Suriname|Suriname
+W|imported|5|la Guayana Francesa|French Guiana
+W|imported|5|Argentina|Argentina
+W|imported|5|Uruguay|Uruguay
+W|imported|5|las Malvinas|Falkland Islands
+W|imported|5|el principado|principality
+W|imported|5|el territorio|territory
+W|imported|5|la provincia|province
+W|imported|5|el distrito|district
+W|imported|5|Reino Unido|United Kingdom
+W|imported|5|Portugal|Portugal
+W|imported|5|las Islas Baleares|Balearic Islands
+W|imported|5|Andorra|Andorra
+W|imported|5|Bélgica|Belgium
+W|imported|5|los Países bajos|Netherlands
+W|imported|5|Luxemburgo|Luxembourg
+W|imported|5|Dinamarca|Denmark
+W|imported|5|Noruega|Norway
+W|imported|5|Suecia|Sweden
+W|imported|5|Finlandia|Finland
+W|imported|5|Estonia|Estonia
+W|imported|5|Letonia|Latvia
+W|imported|5|Lituania|Lithuania
+W|imported|5|Kaliningrado|Kaliningrad
+W|imported|5|Polonia|Poland
+W|imported|5|República Checa|Czech Republic
+W|imported|5|Austria|Austria
+W|imported|5|Liechtenstein|Liechtenstein
+W|imported|5|Suiza|Switzerland
+W|imported|5|Mónaco|Monaco
+W|imported|5|Córcega|Corsica
+W|imported|5|Cerdeña|Sardinia
+W|imported|5|San Marino|San Marino
+W|imported|5|la ciudad del vaticano|Vatican City
+W|imported|5|Sicilia|Sicily
+W|imported|5|Malta|Malta
+W|imported|5|Eslovenia|Slovenia
+W|imported|5|Croacia|Croatia
+W|imported|5|Hungría|Hungary
+W|imported|5|Eslovaquia|Slovakia
+W|imported|5|Ucrania|Ukraine
+W|imported|5|Belarús|Belarus
+W|imported|5|Moldavia|Moldova
+W|imported|5|Rumania|Romania
+W|imported|5|Serbia|Serbia
+W|imported|5|Bosnia y Herzegovina|Bosnia and Herzogovina
+W|imported|5|Albania|Albania
+W|imported|5|Macedonia|Macedonia
+W|imported|5|Bulgaria|Bulgaria
+W|imported|5|Grecia|Greece
+W|imported|5|Kosovo|Kosovo
+W|imported|5|Montenegro|Montenegro
+W|imported|5|Islandia|Iceland
+W|imported|5|Marruecos|Morocco
+W|imported|5|Sáhara Occidental|Western Sahara
+W|imported|5|Mauritania|Mauritania
+W|imported|5|Senegal|Senegal
+W|imported|5|Gambia|Gambia
+W|imported|5|Guinea-Bissau|Guinea-Bissau
+W|imported|5|Guinea|Guinea
+W|imported|5|Sierra Leona|Sierra Leone
+W|imported|5|Liberia|Liberia
+W|imported|5|Costa de Marfil|Ivory Coast
+W|imported|5|Burquina Faso|Burkina Faso
+W|imported|5|Malí|Mali
+W|imported|5|Argelia|Algeria
+W|imported|5|Mali|Mali
+W|imported|5|Túnez|Tunisia
+W|imported|5|Libia|Libya
+W|imported|5|Niger|Niger
+W|imported|5|Ghana|Ghana
+W|imported|5|Togo|Togo
+W|imported|5|Benin|Benin
+W|imported|5|Nigeria|Nigeria
+W|imported|5|Santo Tomé y Príncipe|São Tomé and Principe
+W|imported|5|Camerún|Cameroon
+W|imported|5|Chad|Chad
+W|imported|5|Egipto|Egypt
+W|imported|5|Sudán|Sudan
+W|imported|5|Sudán del sur|South Sudan
+W|imported|5|Eritrea|Eritrea
+W|imported|5|Djibouti|Djibouti
+W|imported|5|Etiopia|Ethiopia
+W|imported|5|Somalia|Somalia
+W|imported|5|Kenya|Kenya
+W|imported|5|Uganda|Uganda
+W|imported|5|República Centroafricana|Central African Republic
+W|imported|5|Gabón|Gabon
+W|imported|5|Congo|Congo
+W|imported|5|Cabinda|Cabinda
+W|imported|5|República Democrática del Congo|Democratic Republic of the Congo
+W|imported|5|Rwanda|Rwanda
+W|imported|5|Burundi|Burundi
+W|imported|5|Tanzania|Tanzania
+W|imported|5|Mozambique|Mozambique
+W|imported|5|Malawi|Malawi
+W|imported|5|Zambia|Zambia
+W|imported|5|Angola|Angola
+W|imported|5|Namibia|Namibia
+W|imported|5|Botswana|Botswana
+W|imported|5|Zimbabwe|Zimbabwe
+W|imported|5|Lesotho|Lesotho
+W|imported|5|Swazilandia|Swaziland
+W|imported|5|Comoros|Comoros
+W|imported|5|Madagascar|Madagascar
+W|imported|5|Mauricio|Mauritius
+W|imported|5|la Turchia|Turkey
+W|imported|5|Cipro|Cyprus
+W|imported|5|Federación Rusa|Russian Federation
+W|imported|5|Georgia|Georgia
+W|imported|5|Armenia|Armenia
+W|imported|5|Azerbaiyán|Azerbaijan
+W|imported|5|Irán|Iran
+W|imported|5|Iraq|Iraq
+W|imported|5|Siria|Syria
+W|imported|5|Libano|Lebanon
+W|imported|5|Israel|Israel
+W|imported|5|Jordania|Jordan
+W|imported|5|Arabia Saudita|Saudi Arabia
+W|imported|5|Kuwait|Kuwait
+W|imported|5|Bahrein|Bahrain
+W|imported|5|Qatar|Qatar
+W|imported|5|Emiratos Árabes Unidos|United Arab Emirates
+W|imported|5|Omán|Oman
+W|imported|5|Yemen|Yemen
+W|imported|5|Kazajstán|Kazakhstan
+W|imported|5|Uzbekistán|Uzbekistan
+W|imported|5|Turkmenistán|Turkmenistan
+W|imported|5|Afganistán|Afghanistan
+W|imported|5|Tayikistán|Tajikistan
+W|imported|5|Kirguistán|Kyrgyzstan
+W|imported|5|Pakistán|Pakistan
+W|imported|5|India|India
+W|imported|5|Maldivas|Maldives
+W|imported|5|Sri Lanka|Sri Lanka
+W|imported|5|China|China
+W|imported|5|Mongolia|Mongolia
+W|imported|5|Correa del Norte|North Korea
+W|imported|5|Corea del Sur|South Korea
+W|imported|5|Nepal|Nepal
+W|imported|5|Bhutan|Bhutan
+W|imported|5|Bangladesh|Bangladesh
+W|imported|5|Birmania|Burma
+W|imported|5|Tailandia|Thailand
+W|imported|5|Laos|Laos
+W|imported|5|Australasia|Australasia
+W|imported|5|Tasmania|Tasmania
+W|imported|5|Nueva Zelandia|New Zealand
+W|imported|5|Viet Nam|Vietnam
+W|imported|5|Camboya|Cambodia
+W|imported|5|Malasia|Malaysia
+W|imported|5|Singapore|Singapore
+W|imported|5|Sungapur|Singapore
+W|imported|5|Brunei|Brunei
+W|imported|5|Filipinas|Philippines
+W|imported|5|Timor Oriental|East Timor
+W|imported|5|Papua Nueva Guinea|Papua New Guinea
+W|imported|5|Islas Salomón|Solomon Islands
+W|imported|5|Vanuatu|Vanuatu
+W|imported|5|Fiji|Fiji
+W|imported|5|Afanarse por hacer algo|to strive to do something
+W|imported|5|partículas y antónimos|particles and antonyms
+W|imported|5|a, hacia|to
+W|imported|5|de, desde|from
+W|imported|5|alrededor de|around
+W|imported|5|en frente de|opposite
+W|imported|5|Al otro lado de|across
+W|imported|5|often|a menudo
+W|number|5|primer|first
+W|imported|5|algunos|some
+W|imported|5|unos|about
+W|imported|5|grueso|thick
+W|imported|5|incorrecto|wrong
+W|imported|5|silencioso|quiet
+W|imported|5|vacio|empty
+W|imported|5|el final|end
+W|imported|5|frases útiles|useful phrases
+W|imported|5|frases esenciales|essential phrases
+W|imported|5|excuse me|perdone
+W|imported|5|así vale|that's fine
+W|imported|5|está bien|that's correct
+W|imported|5|está mal|that's wrong
+W|imported|5|saludos|greetings
+S|imported|5|¿comó está?|how are you?
+S|imported|5|me llamo|my name is
+S|imported|5|¿cómo se llama?|what is your name?
+W|imported|5|este es|this is...
+W|imported|5|letreros|signs
+W|imported|5|información|tourist information
+W|imported|5|entrada|entrance
+W|imported|5|salida de emergencia|emergency exit
+W|imported|5|empuje|push
+W|imported|5|no smoking|prohibido fumar
+W|imported|5|fuera de servicio|out of order
+W|imported|5|horario de apertura|opening times
+W|imported|5|entrada libre|free admission
+W|imported|5|llame antes de entrar|knock before entering
+W|imported|5|rebajado|reduced
+W|imported|5|saldos|sale
+W|imported|5|prohibido pisar el césped|keep off the grass
+W|imported|5|ayuda|help
+W|imported|5|no lo sé|I don't know
+S|imported|5|¿habla inglés, francés...?|do you speak English, French...?
+S|imported|5|hablo inglés, espanol|I speak English, Spanish
+S|imported|5|¿me lo puede escribir?|please write it down for me
+W|imported|5|he perdido|I have lost.....
+W|imported|5|indicaciones|directions
+S|imported|5|¿cómo voy a...?|how do I get to....?
+W|imported|5|a la izquierda|to the left
+W|imported|5|todo recto|straight ahead
+S|imported|5|¿a qué distancia está....?|how far is....?
+W|imported|5|todas las direcciones|all directions
+W|imported|5|precaución|caution
+W|imported|5|prohibida la entrada|no entry
+W|imported|5|disminuir velocidad|slow down
+W|imported|5|desvío|diversion
+W|imported|5|circular por la derecha|keep to the right
+W|imported|5|autopista|motorway
+W|imported|5|no parking|prohibido aparcar
+W|imported|5|callejón sin salida|no through road
+W|imported|5|sentido único|one-way
+W|imported|5|ceda el paso|give way
+W|imported|5|carretera cortada|Road closed
+W|imported|5|obras|roadworks
+W|imported|5|curva peligrosa|dangerous bend
+S|imported|5|¿a qué hora es el desayuno?|what time is breakfast?
+S|imported|5|El número de mi habitación es el|my room number is
+S|imported|5|voleré a las|I'll be back at....o'clock
+W|imported|5|dónde está el comedor|where is the dining room?
+W|imported|5|me marcho mañana|I'm leaving tomorrow
+W|imported|5|comida y bebida|eating and drinking
+W|imported|5|¡salud!|cheers
+W|imported|5|está buenísimo|it's delicous
+W|imported|5|está malísimo|it's awful
+W|imported|5|yo no bebo|I don't drink
+W|imported|5|yo no fumo|I don't smoke
+W|imported|5|yo no como carne|I don't eat meat
+W|imported|5|ya no más, gracias|no more for me
+S|imported|5|¿puedo repetir?|may I have some more?
+S|imported|5|¿me trae la cuenta?|may we have the bill?
+S|imported|5|¿me da un recibo?|can I have a receipt?
+W|imported|5|zona de no fumadores|no-smoking area
+W|imported|5|no me encuentro bien|I don't feel well
+W|imported|5|tengo náuseas|I feel sick
+S|imported|5|¿cuál es el número del médico más cercano?|what is the telephone number of the nearest doctor?
+W|imported|5|tengo fiebre|I have a temperature
+W|imported|5|estoy embarazada de..... meses|I'm.... months pregnant
+S|imported|5|necesito una receta para|I need a prescription for
+S|imported|5|normalmente tomo|I normally take
+S|imported|5|soy alérgico a|I'm allergic to
+S|imported|5|¿estará bien?|will he/she be all right?
+W|imported|5|imputar a|to attribute to
+W|verb|5|amainar|to abate
+W|verb|5|delinear|to outline
+W|imported|5|el fardo|bundle
+W|verb|5|encharcar|to swamp
+W|imported|5|el villancico|Christmas carol
+W|imported|5|el pesebre|manger
+W|verb|5|repuntar|to pick up
+W|verb|5|empaquetar|to pack
+W|imported|5|el necio|fool
+W|imported|5|necio|foolish
+W|imported|5|el cuartelillo|police station
+W|imported|5|migajas|crumbs
+W|imported|5|el lacayo|footman
+W|verb|5|olfatear|to smell
+W|imported|5|la hemeroteca|newspaper library
+W|verb|5|gatear|to crawl
+W|verb|5|desmenuzar|to crumble
+W|verb|5|vedar|to prohibit
+W|verb|5|atinar|to be right
+W|imported|5|colérico|furious
+W|imported|5|la hazaña|feat
+W|imported|5|meditabundo|pensive
+W|imported|5|afán|eagerness
+W|verb|5|entallar|to cut
+W|verb|5|ensartar|to string
+W|imported|5|el modisto|dressmaker
+W|verb|5|dictaminar|to determine
+W|imported|5|la enagua|pettycoat
+W|imported|5|zalamerías|flattery
+W|verb|5|avenirse|to come to an agreement
+W|imported|5|el pudor|modesty
+W|verb|5|amenizar|to make pleasant
+W|imported|5|melancolía|sadness
+W|verb|5|resguardar|to protect
+W|verb|5|resguardarse|to take shelter
+W|imported|5|cháchara|chatter
+W|imported|5|la necedad|crasness
+W|imported|5|el parangón|comparison
+W|imported|5|dar el pésame|to give one's condolences
+W|imported|5|el picaporte|door handle
+W|imported|5|el cortaplumas|penknife
+W|imported|5|el lacre|sealing wax
+W|verb|5|embargar|to seize
+W|verb|5|plasmar|to capture
+W|imported|5|la lucidez|clarity
+W|verb|5|impregnar|to impregnate
+W|imported|5|el conjuro|spell
+W|imported|5|el brío|spirit
+W|imported|5|la congoja|anguish
+W|verb|5|desenroscar|to unscrew
+W|imported|5|la petaca|cigarette case
+W|verb|5|engullir|to gobble
+W|imported|5|el polizón|stowaway
+W|imported|5|el vaivén|swaying
+W|imported|5|el hedor|stench
+W|imported|5|los víveres|provisions
+W|imported|5|el ataúd|coffin
+W|verb|5|petrechar|to supply
+W|imported|5|el chivatazo|tip off
+W|imported|5|la pernera|trouser leg
+W|imported|5|el fango|mud
+W|imported|5|point-blank|a quemarropa
+W|imported|5|la lapa|limpet
+W|imported|5|propicio|favourable
+W|imported|5|la bruma|mist
+W|verb|5|auscultar|to sound
+W|imported|5|maltrecho|battered
+W|verb|5|escanciar|to pour
+W|verb|5|otear|to scan
+W|verb|5|enfilar|to thread
+W|imported|5|el terrado|flat roof
+W|verb|5|acristalar|to glaze
+W|imported|5|el obús|shell
+W|imported|5|la embestida|attack
+W|imported|5|el vendaval|gale
+W|imported|5|el resplandor|brilliance
+W|imported|5|el abasto|supply
+W|imported|5|moribundo|dying
+W|imported|5|la muleta|crutch
+W|imported|5|la muda|change of underwear
+W|imported|5|tácito|unspoken
+W|verb|5|lucir|to shine
+W|imported|5|la alhaja|jewel
+W|imported|5|el pomo|knob
+W|imported|5|el mentón|chin
+W|imported|5|la cuartilla|sheet of paper
+W|verb|5|deambular|to wonder
+W|verb|5|escenificar|to stage
+W|verb|5|aletear|to flutter
+W|imported|5|la bandada|flock
+W|verb|5|escabullirse|to slip away
+W|imported|5|atilado|elegant
+W|imported|5|premiado|prize winning
+W|verb|5|homenajear|to honour
+W|imported|5|el boato|show
+W|imported|5|magistral|masterly
+W|imported|5|el pelotón|pack
+W|imported|5|gacetillero|gossip columnist
+W|imported|5|la valía|worth
+W|imported|5|la venia|permission
+W|imported|5|su señoría|his lordship
+W|imported|5|el complot|plot
+W|verb|5|trascender|to leak out
+W|verb|5|esclarecer|to explain
+W|imported|5|el anónimo|anonymous letter
+W|imported|5|la estafeta|sub post office
+W|imported|5|el indulto|pardon
+W|verb|5|encajar|to fit
+W|imported|5|la consigna|order
+W|imported|5|desembarazarse de algo|to get rid of something
+W|verb|5|lloviznar|to drizzle
+W|verb|5|amedrentar|to scare
+W|verb|5|sentenciar|to sentence
+W|imported|5|compungido|remorseful
+W|verb|5|atenazar|to grip
+W|verb|5|flaquear|to weaken
+W|verb|5|aupar|to help up
+W|verb|5|semejar|to resemble
+W|imported|5|cobijo|shelter
+W|verb|5|supurar|to supurate
+W|imported|5|postrimerías|final stages
+W|imported|5|ventisquero|snowdrift
+W|verb|5|acribillar|to riddle
+W|verb|5|canjear|to exchange
+W|verb|5|encubrir|to hide
+W|imported|5|las patillas|sidepiece
+W|verb|5|rechinar|to creek
+W|imported|5|empañado|misty
+W|imported|5|los calzones|underpants
+W|imported|5|ocaso|sunset
+W|imported|5|postrado|bed ridden
+W|imported|5|forajido|bandit
+W|imported|5|chapuzón|swim
+W|imported|5|mantillo|mould
+W|imported|5|embriagador|intoxicating
+W|imported|5|guadaña|scythe
+W|imported|5|garrote|stick
+W|imported|5|montículo|mound
+W|imported|5|bellota|acorn
+W|imported|5|grillete|fetter
+W|imported|5|patraña|tall story
+W|imported|5|manada|herd
+W|imported|5|sabueso|bloodhound
+W|imported|5|simio|ape
+W|imported|5|argolla|ring
+W|imported|5|bravuconada|boast
+W|imported|5|topo|mole
+W|imported|5|revoltijo|jumble
+W|imported|5|desvaído|pale
+W|imported|5|cartógrafo|cartographer
+W|imported|5|escabeche|pickle
+W|imported|5|reseña|outline
+W|imported|5|papada|double chin
+W|imported|5|abecedario|alphabet
+W|imported|5|alimaña|pest
+W|imported|5|empinado|steep
+W|imported|5|andrajoso|ragged
+W|imported|5|quebradizo|fragile
+W|imported|5|desaseada|dirty
+W|imported|5|descaro|cheek
+W|imported|5|pavor|dread
+W|imported|5|brusquedad|suddenness
+W|imported|5|comadreja|weasel
+W|imported|5|madriguera|burrow
+W|imported|5|huidizo|elusive
+W|imported|5|acuosos|watery
+W|imported|5|fiera|wild beast
+W|imported|5|desaire|slight
+W|imported|5|montaje|assembly
+W|imported|5|baladronada|boast
+W|imported|5|mengua|reduction
+W|imported|5|otrora|one-time
+W|imported|5|zarpa|paw
+W|imported|5|poniente|west
+W|imported|5|cantera|quarry
+W|imported|5|regusto|aftertaste
+W|imported|5|surco|furrow
+W|imported|5|marea|tide
+W|imported|5|sauce|willow
+W|imported|5|topar con|to run into
+W|imported|5|buey|ox
+W|imported|5|fuelles|bellows
+W|imported|5|encerado|waxed
+W|imported|5|hato|bundle
+W|imported|5|perdiz|partridge
+W|imported|5|cacillo|ladle
+W|imported|5|chichón|bump
+W|imported|5|maizal|corn field
+W|imported|5|mazorca|cob
+W|imported|5|dinero contante|cash
+W|imported|5|cavernoso|deep
+W|imported|5|improperio|insult
+W|imported|5|gimoteo|whine
+W|imported|5|vejiga|bladder
+W|imported|5|calzón|shorts
+W|imported|5|vidriera|glass window
+W|imported|5|palpitante|throbbing
+W|imported|5|chapado|plated
+W|imported|5|alcolchado|quilted
+W|imported|5|jubón|doublet
+W|imported|5|incumbencia|concern
+W|imported|5|atracadero|pier
+W|imported|5|granuja|rogue
+W|imported|5|manotazo|slap
+W|imported|5|caricia|caress
+W|imported|5|viraje|tack
+W|imported|5|repentino|sudden
+W|imported|5|manto|cloak
+W|imported|5|verdoso|greenish
+W|imported|5|bondadoso|kind hearted
+W|imported|5|alarde|display
+W|imported|5|atisbo|inkling
+W|imported|5|hechicera|sorceress
+W|imported|5|pudor|modesty
+W|imported|5|baranda|rail
+W|imported|5|ultraje|insult
+W|imported|5|pedregoso|rocky
+W|imported|5|seno|breast
+W|imported|5|varado|beached
+W|town|5|orilla|bank
+W|imported|5|divisa|emblem
+W|imported|5|extraviado|missing
+W|imported|5|torvo|grim
+W|imported|5|jaspeado|speckled
+W|body|5|pellejo|skin
+W|imported|5|amargado|bitter
+W|imported|5|molinero|miller
+W|imported|5|yermo|uninhabited
+W|imported|5|talante|mood
+W|imported|5|tromba|whirlwind
+W|imported|5|cascote|piece of rubble
+W|imported|5|púa|prickle
+W|imported|5|resbaladizo|slippery
+W|imported|5|moho|rust
+W|imported|5|palangana|washbasin
+W|imported|5|voluta|scroll
+W|imported|5|hilo|thread
+W|imported|5|tejido|fabric
+W|imported|5|demacrado|drawn
+W|imported|5|articulación|joint
+W|imported|5|baratija|trinket
+W|imported|5|mocoso|brat
+W|imported|5|adiestrado|trained
+W|imported|5|beneplácito|blessing
+W|imported|5|portento|marvel
+W|imported|5|tajo|cut
+W|imported|5|forraje|fodder
+W|imported|5|erial|uncultivated land
+W|imported|5|llanura|plain
+W|imported|5|deslumbrante|dazzling
+W|imported|5|peana|pedestal
+W|imported|5|dicha|happiness
+W|imported|5|frutal|fruit tree
+W|imported|5|parra|grapevine
+W|imported|5|frescor|freshness
+W|imported|5|brasero|brazier
+W|imported|5|vasija|pot
+W|imported|5|astride|a horcajadas
+W|imported|5|empalizada|palisade
+W|imported|5|ofebre|goldsmith
+W|imported|5|prestamista|moneylender
+W|imported|5|añoranza|nostalgia
+W|imported|5|osamenta|skeleton
+W|imported|5|cerco|enclosure
+W|imported|5|estancia|stay
+W|imported|5|redil|sheepfold
+W|imported|5|vara|stick
+W|imported|5|coraza|cuirass
+W|imported|5|malla|mesh
+W|imported|5|pomo|knob
+W|imported|5|savia|sap
+W|imported|5|adusto|harsh
+W|imported|5|tenue|thin
+W|imported|5|follaje|foliage
+W|imported|5|forúncolo|boil
+W|travel|5|ribete|border
+W|imported|5|recio|strong
+W|imported|5|alforja|saddlebag
+W|imported|5|mimbre|willow
+W|imported|5|labranza|Cultivation
+W|imported|5|burlona|mocking
+W|imported|5|bicho|small animal
+W|imported|5|junco|rush
+W|imported|5|estela|wake
+W|imported|5|informe|shapeless
+W|imported|5|lodazal|mudhole
+W|imported|5|vado|ford
+W|imported|5|cacharro|pot
+W|imported|5|desvencijado|rickety
+W|imported|5|lindero|adjoining
+W|imported|5|altozano|small hill
+W|imported|5|brea|tar
+W|imported|5|camada|litter
+W|imported|5|abrazadera|bracket
+W|imported|5|trecho|stretch
+W|imported|5|destartalado|large and rambling
+W|imported|5|cayado|crook
+W|imported|5|encallecido|hardened
+W|imported|5|avispa|wasp
+W|imported|5|por doquier|all over
+W|imported|5|rebuzno|bray
+W|imported|5|heno|hay
+W|imported|5|reguero|trail
+W|imported|5|remilgado|finicky
+W|feeling|5|airado|angry
+W|imported|5|estima|esteem
+W|imported|5|edicto|edict
+W|imported|5|estrafalario|odd
+W|imported|5|pasmado|astonished
+W|imported|5|bufón|clown
+W|imported|5|venia|permission
+W|imported|5|lona|canvas
+W|imported|5|cordel|cord
+W|imported|5|achaparrado|stocky
+W|imported|5|fragua|forge
+W|imported|5|jornalero|labourer
+W|imported|5|afanosa|hard
+W|imported|5|cazuela|pot
+W|imported|5|biombo|folding screen
+W|imported|5|tracionero|treacherous
+W|imported|5|tajada|slice
+W|imported|5|deprovisto|devoid
+W|imported|5|improcedente|inadmissible
+W|imported|5|indagación|investigation
+W|imported|5|mastín|mastiff
+W|imported|5|taimado|sly
+W|imported|5|limítrofe|bordering
+W|imported|5|fecundidad|fertility
+W|imported|5|palo|stick
+W|imported|5|bondadosa|kind-hearted
+W|imported|5|simiente|seed
+W|imported|5|fanfarrón|boastful
+W|imported|5|vocinglero|loud-mouthed
+W|imported|5|borrascoso|stormy
+W|imported|5|dispar|different
+W|imported|5|prostíbulo|brothel
+W|imported|5|palafrén|palfrey
+W|imported|5|armiño|stoat
+W|imported|5|ceñudo|frowning
+W|imported|5|gremio|trade
+W|imported|5|escorpión|scorpion
+W|imported|5|encrucijada|crossroads
+W|imported|5|viruela|smallpox
+W|imported|5|rejo|spike
+W|animal|5|bragueta|fly
+W|imported|5|multitud|crowd
+W|imported|5|afelpado|plush
+W|imported|5|ballesta|crossbow
+W|imported|5|liebre|hare
+W|imported|5|saeta|arrow
+W|imported|5|brizna|blade
+W|imported|5|conejera|Warren
+W|imported|5|ojeada|glance
+W|imported|5|avispado|bright
+W|imported|5|desparpajo|self-confidence
+W|imported|5|apetitoso|appetizing
+W|imported|5|grajo|rook
+W|imported|5|babosa|slug
+W|imported|5|adivinanza|riddle
+W|imported|5|malestar|discomfort
+W|imported|5|jadeante|panting
+W|imported|5|columnata|colonnade
+W|imported|5|sarnoso|scabious
+W|imported|5|rugoso|rough
+W|imported|5|desganado|not hungry
+W|imported|5|agraciado|attractive
+W|imported|5|jirón|rag
+W|imported|5|hachazo|blow with an axe
+W|imported|5|cenagosa|muddy
+W|imported|5|islote|small island
+W|imported|5|boscoso|wooded
+W|imported|5|anhelo|longing
+W|imported|5|Zarzamora|blackberry
+W|imported|5|brezo|heather
+W|imported|5|jabalí|wild boar
+W|imported|5|vertiente|slope
+W|imported|5|hondonada|hollow
+W|imported|5|picha|prick
+W|imported|5|indulto|pardon
+W|imported|5|andrajosa|ragged
+W|food|5|callo|corn
+W|imported|5|costra|crust
+W|imported|5|nauseabundo|nauseating
+W|imported|5|rancio|rancid
+W|imported|5|zarzal|bramble patch
+W|imported|5|luciérnaga|glow worm
+W|imported|5|patíbulo|scaffold
+W|imported|5|crepúsculo|twilight
+W|imported|5|cabezota|pig headed
+W|imported|5|podredumbre|rotteness
+W|imported|5|peto|bodice
+W|imported|5|stealthily|a hurtadillas
+W|imported|5|matorral|thicket
+W|imported|5|sigiliso|stealthy
+W|imported|5|surtidor|jet
+W|imported|5|guateado|quilted
+W|imported|5|obsequioso|differential
+W|imported|5|caprichoso|whimsical
+W|imported|5|chusma|rabble
+W|imported|5|mozalbete|lad
+W|imported|5|esperanzado|hopeful
+W|imported|5|vocerío|shouting
+W|imported|5|rimbombante|pompous
+W|imported|5|cáñamo|hemp
+W|imported|5|flagelo|scourge
+W|imported|5|abotargado|swollen
+W|imported|5|cabriola|skip
+W|imported|5|son|sound
+W|imported|5|tarado|defective
+W|imported|5|alondra|lark
+W|imported|5|plegaria|prayer
+W|imported|5|pútrido|putrid
+W|imported|5|probidad|integrity
+W|imported|5|alacena|cupboard
+W|imported|5|avena|oats
+W|imported|5|cervatillo|fawn
+W|imported|5|guarnación|adornment
+W|imported|5|estrado|platform
+W|imported|5|peltre|pewter
+W|imported|5|puerro|leek
+W|imported|5|pichón|pigeon
+W|imported|5|arenque|herring
+W|imported|5|comensal|fellow diner
+W|imported|5|caballerizo|groom
+W|imported|5|coleta|ponytail
+W|imported|5|musgo|moss
+W|imported|5|obsequio|gift
+W|imported|5|humedal|wetland
+W|imported|5|chuleta|chop
+W|imported|5|remache|rivet
+W|imported|5|gaita|bagpipes
+W|imported|5|morsa|walrus
+W|imported|5|vigía|look out
+W|imported|5|molino|mill
+W|imported|5|ariete|battering ram
+W|imported|5|piara|herd
+W|imported|5|ruiseñor|nightingale
+W|imported|5|paño|cloth
+W|imported|5|embarrado|muddy
+W|imported|5|estrépito|noise
+W|imported|5|gentío|crowd
+W|imported|5|jaez|harness
+W|verb|5|renegar|to curse
+W|imported|5|gacela|gazelle
+W|imported|5|librea|livery
+W|imported|5|comedor|dining room
+W|imported|5|arcón|large chest
+W|imported|5|campechano|good natured
+W|imported|5|saltimanqui|acrobat
+W|imported|5|mora|BlackBerry
+W|imported|5|vendaje|bandage
+W|imported|5|bucle|curl
+W|feeling|5|regocijo|joy
+W|imported|5|menguado|depleted
+W|imported|5|quieto|still
+W|imported|5|dosel|canopy
+W|imported|5|esparanzado|hopeful
+W|imported|5|aprisco|sheepfold
+W|imported|5|dique|dyke
+W|imported|5|dentellada|bite
+W|imported|5|cenagal|bog
+W|imported|5|altillo|attic
+W|imported|5|maloliente|stinking
+W|imported|5|Zarrapastroso|scrubby
+W|imported|5|forúnculo|boil
+W|imported|5|calado|soaked
+W|imported|5|hinchazón|swelling
+W|imported|5|vientre|belly
+W|job|5|quehacer|job
+W|imported|5|ofrenda|tribute
+W|imported|5|tripulación|crew
+W|imported|5|guijarro|pebble
+W|imported|5|fajín|sash
+W|imported|5|imberbe|beardless
+W|imported|5|lastimera|pitiful
+W|imported|5|encapotado|cloudy
+W|imported|5|pellizco|pinch
+W|imported|5|desgarbado|clumsy
+W|imported|5|desganada|not hungry
+W|imported|5|estimado|esteemed
+W|imported|5|piojoso|lousy
+W|imported|5|harapiento|tattered
+W|imported|5|amasijo|hotchpotch
+W|imported|5|pala|spade
+W|feeling|5|apesdumbrado|sad
+W|imported|5|engreído|vain
+W|animal|5|gallina|hen
+W|imported|5|letrina|latrine
+W|imported|5|rebosante de|brimming with
+W|imported|5|piojo|louse
+W|imported|5|rechoncho|thickest
+W|imported|5|arenisca|sandstone
+W|imported|5|milano|red kite
+W|imported|5|pira|pyre
+W|imported|5|lino|flax
+W|imported|5|desastrada|scruffy
+W|verb|5|asolar|to raze to the ground
+W|imported|5|exiguo|meagre
+W|imported|5|isleño|islander
+W|imported|5|cofre|chest
+W|imported|5|jauría|pack of hounds
+W|imported|5|podenco|hound
+W|imported|5|cacerola|pan
+W|imported|5|támesis|Thames
+W|imported|5|trabajoso|hard
+W|imported|5|fresno|ash tree
+W|imported|5|bocina|horn
+W|imported|5|jofaina|washbasin
+W|imported|5|bizco|cross-eyed
+W|imported|5|mugre|dirt
+W|imported|5|porquería|dirt
+W|imported|5|titiritero|puppeteer
+W|imported|5|velludo|hairy
+W|imported|5|espadachín|skilled swordsman
+W|imported|5|blasón|coat of arms
+W|imported|5|puñal|dagger
+W|imported|5|ramalazo|fit
+W|imported|5|cabo|thread
+W|imported|5|ronroneo|purr
+W|imported|5|bodega|storeroom
+W|imported|5|moco|snot
+W|imported|5|cuartel|barracks
+W|imported|5|encharcado|swamped
+W|imported|5|enseña|ensign
+W|imported|5|rigor|severity
+W|imported|5|aneno|pleasant
+W|imported|5|pulla|cutting remark
+W|imported|5|ramera|where
+W|imported|5|refulgente|brilliant
+W|imported|5|desdeñoso|scornful
+W|imported|5|plañidera|mourner
+W|imported|5|engorrosa|bothersome
+W|imported|5|petrechos|supplies and stores
+W|imported|5|disposición|arrangement
+W|imported|5|rudo|coarse
+W|imported|5|dureza|hardness
+W|imported|5|ocioso|idle
+W|imported|5|maullido|mew
+W|imported|5|bondad|goodness
+W|imported|5|pechera|shirt front
+W|imported|5|áspero|rough
+W|imported|5|entrecortado|laboured
+W|imported|5|caballería|cavalry
+W|imported|5|caprichosa|whimsical
+W|imported|5|correoso|tough
+W|imported|5|mansedumbre|gentleness
+W|imported|5|desperdicio|waste
+W|imported|5|artero|cunning
+W|imported|5|dato|piece of information
+W|job|5|herrero|blacksmith
+W|imported|5|patria|land
+W|imported|5|incógnita|unknown quantity
+W|imported|5|atronadora|deafening
+W|imported|5|resplendor|brilliance
+W|imported|5|chisporroteo|spitting
+W|imported|5|altivo|haughty
+W|imported|5|ralo|thin
+W|imported|5|penumbra|half light
+W|imported|5|aurora|dawn
+W|imported|5|parche|patch
+W|imported|5|jergón|straw mattress
+W|imported|5|ronzal|halter
+W|imported|5|fardo|bundle
+W|imported|5|zanja|ditch
+W|imported|5|cogote|back of the neck
+W|imported|5|escabroso|rough
+W|imported|5|escarbado|steep
+W|imported|5|mortaja|shroud
+W|imported|5|maniático|obsessive
+W|imported|5|pasa|raisin
+W|imported|5|herejía|heresy
+W|imported|5|cumbre|submit
+W|imported|5|chillona|shrill
+W|imported|5|hormigueo|tingling
+W|imported|5|morro|snout
+W|imported|5|apretón|squeeze
+W|imported|5|hureño|unsociable
+W|imported|5|espinosa|prickly
+W|imported|5|inconcebible|inconceivable
+W|imported|5|escaramuza|skirmish
+W|imported|5|salivazo|gobbet of spit
+W|imported|5|tripa|intestine
+W|imported|5|verdugo|executioner
+W|imported|5|recodo|bend
+W|imported|5|matanza|slaughter
+W|imported|5|borrachera|drunkeness
+W|imported|5|chiquillada|childish prank
+W|imported|5|hazaña|feat
+W|imported|5|rapiña|robbery
+W|imported|5|estruendo|uproar
+W|imported|5|haz|bundle
+W|imported|5|gualdrapa|horse blanket
+W|imported|5|prieto|tight
+W|imported|5|coño|cunt
+W|imported|5|cabrón|bastard
+W|imported|5|picado|rotten
+W|imported|5|puntapié|kick
+W|imported|5|hurón|ferret
+W|imported|5|pantera|panther
+W|imported|5|ventanal|large window
+W|imported|5|abedul|birch
+W|imported|5|desdiladero|narrow mountain pass
+W|imported|5|inenarrable|inexpressible
+W|imported|5|barrigón|potbellied
+W|imported|5|lucero|bright star
+W|imported|5|zopenco|blockhead
+W|imported|5|arrollador|overwhelming
+W|imported|5|empalagoso|sickly sweet
+W|imported|5|armazón|frame
+W|imported|5|raso|satin
+W|imported|5|cojín|cushion
+W|imported|5|bamboleo|swinging
+W|imported|5|gargantilla|choker
+W|imported|5|ristra|string
+W|imported|5|pesaroso|sorrowful
+W|imported|5|enroscado|coiled
+W|imported|5|oleaje|swell
+W|imported|5|olfato|smell
+W|imported|5|ensueño|dream
+W|imported|5|ratero|thief
+W|imported|5|nimiedad|insignificance
+W|imported|5|ingranqueable|impassable
+W|imported|5|huso horario|time zone
+W|imported|5|rencoroso|spiteful
+W|imported|5|desabrido|tasteless
+W|imported|5|mortífero|deadly
+W|imported|5|desgracia|misfortune
+W|imported|5|mote|nickname
+W|imported|5|amotinado|riotous
+W|imported|5|saña|rage
+W|imported|5|cuneta|gutter
+W|imported|5|curtidor|tanner
+W|imported|5|desmán|excess
+W|imported|5|llorica|crybaby
+W|imported|5|quedar rezgado|to be left behind
+W|imported|5|desmontable|detachable
+W|imported|5|vaivén|swaying
+W|imported|5|reja|bars
+W|imported|5|alambrada|wire fence
+W|verb|5|zarandear|to shake
+W|imported|5|planicie|plain
+W|imported|5|álamo|poplar
+W|imported|5|llavero|key ring
+W|imported|5|barmejo|reddish
+W|imported|5|esmero|care
+W|imported|5|rígido|rigid
+W|imported|5|on one's back|a cuestas
+W|imported|5|meada|piss
+W|imported|5|urraca|magpie
+W|imported|5|abolengo|ancestry
+W|imported|5|macilento|pale
+W|imported|5|payaso|clown
+W|imported|5|mástil|pole
+W|imported|5|asta|flag pole
+W|imported|5|rematadamente|terribly
+W|imported|5|desembarcadero|quay
+W|imported|5|dentado|serrated
+W|imported|5|escisión|split
+W|imported|5|mirilla|peephole
+W|imported|5|anodina|harmless
+W|imported|5|almizcle|musk
+W|imported|5|gropingly|a tientas
+W|imported|5|en vilo|on tenterhooks
+W|imported|5|desprevenido|unprepared
+W|imported|5|sarta|string
+W|imported|5|tonel|barrel
+W|imported|5|palabrería|verbiage
+W|verb|5|deparar|to provide with
+W|imported|5|antaño|long ago
+W|imported|5|pavesa|piece of ash
+W|imported|5|asomo|appearance
+W|imported|5|azotaina|beating
+W|imported|5|pavoroso|terrifying
+W|imported|5|in fits and starts|a trompicones
+W|imported|5|estremecedor|alarming
+W|imported|5|chirrido|creak
+W|imported|5|cántico|song
+W|imported|5|pezuña|hoof
+W|imported|5|garfio|hook
+W|imported|5|desdentada|toothless
+W|imported|5|odre|wineskin
+W|imported|5|aleatorio|random
+W|imported|5|pormenorizado|detailed
+W|imported|5|fuelle|bellows
+W|imported|5|jaleo|row
+W|imported|5|puchero|cooking pot
+W|imported|5|consuelo|solace
+W|imported|5|sotana|cassock
+W|imported|5|desdibujado|blurred
+W|imported|5|manicomio|lunatic asylum
+W|imported|5|caoba|mahogany
+W|imported|5|destartalada|rickety
+W|imported|5|codiciosa|greedy
+W|imported|5|barcaza|barge
+W|imported|5|humeante|smoking
+W|imported|5|mohosa|mouldy
+W|imported|5|picaporte|door handle
+W|imported|5|descomunal|huge
+W|imported|5|sebo|grease
+W|imported|5|ignota|unknown
+W|imported|5|premura|urgency
+W|imported|5|lucio|pike
+W|imported|5|adoquín|paving stone
+W|imported|5|deriva|drift
+W|imported|5|blancuzcas|whitish
+W|imported|5|desastrado|scruffy
+W|imported|5|poso|sediment
+W|imported|5|alce|elk
+W|imported|5|canillera|shin guard
+W|imported|5|barranco|gully
+W|imported|5|tejón|badger
+W|imported|5|raposa|vixen
+W|imported|5|sobaco|armpit
+W|imported|5|brillo|brightness
+W|imported|5|resplandor|sparkle
+W|imported|5|mortecino|faint
+W|imported|5|desgraciado|unlucky
+W|imported|5|canosa|gray-haired
+W|imported|5|asidero|handle
+W|imported|5|lastimero|pitiful
+W|imported|5|tea|torch
+W|imported|5|respingón|turned up
+W|imported|5|nómina|payroll
+W|imported|5|iracunda|irate
+W|imported|5|minucia|trifle
+W|imported|5|fisura|crack
+W|imported|5|estilizado|slender
+W|imported|5|retoño|sprout
+W|imported|5|escotado|low cut
+W|imported|5|temerario|rash
+W|imported|5|moratón|bruise
+W|imported|5|jolgorio|fun
+W|imported|5|apelmazado|compact
+W|imported|5|perno|bolt
+W|imported|5|prole|offspring
+W|imported|5|temeridad|rashness
+W|imported|5|apogeo|peak
+W|imported|5|dispositivo|device
+W|imported|5|forro|lining
+W|imported|5|revuelta|disturbance
+W|imported|5|estribor|starboard
+W|imported|5|zanco|stilt
+W|imported|5|huero|empty
+W|imported|5|olla|pot
+W|imported|5|riada|flood
+W|imported|5|garito|gaming house
+W|imported|5|cántaro|pitcher
+W|imported|5|brocheta|skewer
+W|imported|5|deslustrada|polished
+W|imported|5|dádiva|gift
+W|imported|5|carlinga|cockpit
+W|imported|5|provechosa|beneficial
+W|imported|5|licorera|decanter
+W|imported|5|resquemor|resentment
+W|imported|5|llevadero|bearable
+W|imported|5|grumo|lump
+W|imported|5|tamiz|sieve
+W|imported|5|achispada|tipsy
+W|imported|5|mordacidad|sharpness
+W|imported|5|la intemperie|the elements
+W|imported|5|buen recaudo|safe place
+W|imported|5|en ristre|at the ready
+W|imported|5|debidamente|properly
+W|imported|5|inmediaciones|surrounding area
+W|imported|5|bastidor|frame
+W|imported|5|benevolente|benevolent
+W|imported|5|tramo|section
+W|imported|5|mecedora|rocking chair
+W|imported|5|Acólito|Alter boy
+W|imported|5|Admonición|Warning
+W|imported|5|Aciago|Ill-faited
+W|imported|5|Atronador|Deafening
+W|imported|5|Aureola|Halo
+W|imported|5|Claraboya|Skylight
+W|feeling|5|Apesadumbrado|Sad
+W|imported|5|Cuadrícula|Grid
+W|imported|5|Compuerta|Sluice

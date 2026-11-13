@@ -1,0 +1,1900 @@
+# converted from Advanced_Spanish_Vocabulary_and_Phrases.apkg
+W|imported|4|beca|scholarship
+W|imported|4|por eso|that's why
+W|imported|4|desde luego|of course
+W|imported|4|el paro|strike
+W|imported|4|retraso|delay
+W|imported|4|el susto|scare
+W|imported|4|ajetreado|very busy
+W|verb|4|desprenderse|to become detached
+W|imported|4|en el acto|immediately
+W|imported|4|formar parte|to be a part of
+W|imported|4|pegarse un susto|frighten
+W|imported|4|alcázar|fortress
+W|imported|4|el parador|state owned hotel
+W|verb|4|averiarse|to get damaged
+W|imported|4|matriculado|registered
+W|imported|4|no tener inconveniente|to have no objection
+W|travel|4|el trayecto|journey
+W|imported|4|la cajetilla|pack of cigarettes
+W|imported|4|la corrida|bullfight
+W|imported|4|asfixiado|suffocated
+W|imported|4|interesarse por|to become interested in
+W|imported|4|retirado|remote
+W|imported|4|el sobresaliente|first class mark
+W|imported|4|la comisaría|police station
+W|imported|4|la oposición|public competitive examination
+W|imported|4|la póliza|tax stamp
+W|imported|4|a lo mejor|perhaps
+W|imported|4|calculado|under control
+W|imported|4|de todos formas|anyway
+W|imported|4|renunciar a|to resign
+W|imported|4|el acero|steel
+W|imported|4|el tablao|flamenco club
+W|imported|4|el/la solista|soloist
+W|imported|4|la animanción|liveliness
+W|imported|4|dejar de + infinitive|to stop + gerund
+W|imported|4|hasta el momento|so far
+W|imported|4|pictório|pictorial
+S|imported|4|resultar + adj|to turn out, to be + adj
+W|imported|4|tocar la lotería|to win the pools
+W|imported|4|vuelta por la ciudad|to go for a walk in town
+W|imported|4|buhardilla|attic
+W|imported|4|la parcela|parcel of land
+W|imported|4|el particular|private
+W|imported|4|folleto|brochure
+W|imported|4|importe|value
+W|imported|4|el como mínimo|the very least
+W|imported|4|de antelación|beforehand
+W|verb|4|retrasarse|to be late
+S|imported|4|servir a alguien en algo|to help someone do something
+W|imported|4|tan sólo|just
+W|verb|4|telefonear|to telephone
+W|imported|4|el agrado|pleasure
+W|imported|4|la filial|subsidiary
+W|imported|4|la quiniela|pools coupon
+W|imported|4|la trasada|mischief
+W|imported|4|a partir de|starting from
+W|imported|4|atender a|to pay attention to
+W|imported|4|conveniente|suitable
+W|imported|4|traviesio|mischievous
+W|verb|4|salvarse|to save
+W|imported|4|comunicar con|to join
+W|imported|4|el duro|peseta coin
+W|imported|4|el platillo|saucer
+S|imported|4|¡qué cosa!|what an idea!
+S|imported|4|¡ya lo creo!|yes indeed!
+W|imported|4|aprisa|quickly
+W|imported|4|hacerse entender|to make oneself understood
+W|verb|4|volverse|to become
+W|imported|4|por todos partes|everywhere
+W|imported|4|a eso de|at about
+W|imported|4|on time|a tiempo
+W|imported|4|claro está|of course
+S|imported|4|en vez, en cambio, en lugar|instead
+W|verb|4|llevarse|to take away
+W|imported|4|me gusta más|I prefer
+W|imported|4|las chulettas|chops
+W|verb|4|acostumbrarse|to accustom one's self to
+W|imported|4|eso es|that's right
+W|verb|4|parecerse|to resemble
+W|imported|4|el jugete|toy
+W|imported|4|el platero|silversmith
+S|imported|4|¿le parece bien?|is that all right with you?
+W|imported|4|de antemano|beforehand
+W|imported|4|envuelto|covered
+W|imported|4|imponente|imposing
+W|imported|4|ir de jira|to go for a picnic
+S|imported|4|llegar a + inf|to succeed in
+W|imported|4|ocuparse de|to be busy with
+S|imported|4|volver a + inf|to do again
+W|imported|4|el modismo|idiom
+W|imported|4|el partida|departure
+W|imported|4|en cuanto a mí|as for me
+W|imported|4|enteramente|entirely
+W|imported|4|estar en camino|to be on the way
+W|imported|4|hace algun tiempo|some time ago
+W|imported|4|el orgullo|price
+W|imported|4|la tela, el paño|fabric
+W|imported|4|antes de que|before
+W|imported|4|largo rato|a long time
+S|imported|4|pensar + inf|to intend to
+W|imported|4|por entero|entirely
+W|imported|4|puesto que|since
+W|imported|4|sumo|greatest
+W|imported|4|el aicionado|fan
+W|imported|4|a lo lejos|in the distance
+W|imported|4|en seguida|immediately
+S|imported|4|estar para + inf|to be about to
+W|imported|4|faltaba una hora|it was one hour before
+W|imported|4|más allá, más lejos|further on
+S|imported|4|no + verb + más que|verb + nothing but
+W|imported|4|no me falta nada|I lack nothing
+W|imported|4|el licenciado|licensed
+W|imported|4|el renombre|fame
+W|imported|4|los restos|remains
+W|imported|4|hospitalario|hospitable
+W|imported|4|pausado|slow
+W|imported|4|por si acaso|just in case
+W|imported|4|sumiso|submissive
+W|imported|4|el acierto|right answer
+W|imported|4|el éxtasis|ecstasy
+W|imported|4|la leña|firewood
+W|imported|4|anímico|psychic
+W|imported|4|conservado|preserved
+S|imported|4|¡que mala pata!|how unlucky!
+W|imported|4|el cigarro|cigar
+W|imported|4|el conferenciante|speaker
+W|imported|4|el escaparate|shop window
+S|imported|4|hasta dentro en un rato|see you soon
+W|imported|4|el perchero|rack
+W|imported|4|la bombilla|light bulb
+W|imported|4|la rebaja|price reduction
+S|imported|4|tener ganas de + verb|to feel like + verb
+W|verb|4|quebrarse|to break down
+W|verb|4|realizer|to carry out
+W|imported|4|esforzado|endeavored
+W|nature|4|ola|wave
+W|imported|4|aseguro|assured
+W|imported|4|sudando|sweating
+W|verb|4|jubliar|to retire
+W|imported|4|asombrada|amazed
+W|imported|4|escoba|broom
+W|imported|4|dones|gifts
+W|imported|4|estanque|pond
+W|imported|4|aprueba|approves
+W|imported|4|deseo|desire
+W|imported|4|paseo|walk
+W|imported|4|finca|estate
+W|imported|4|colonos|settlers
+W|imported|4|senda|path
+W|imported|4|extravida|lost
+W|imported|4|amordazar|muzzle
+W|imported|4|alcaide|warden
+W|home|4|tenedor|fork
+W|home|4|cuchara|spoon
+W|home|4|cuchillo|knife
+W|home|4|sotano|basement
+W|imported|4|desaprobar|disapprove
+W|imported|4|adiestramiento|training
+W|imported|4|onírica|dream
+W|imported|4|cesa|ceases
+W|imported|4|meras|mere
+W|imported|4|engañosa|misleading
+W|imported|4|ruego|prayer
+W|imported|4|pelirroja|redhead
+W|home|4|muro|wall
+W|home|4|vidrio|glass
+W|imported|4|precavidos|cautious
+W|imported|4|pasadizo|passageway
+W|imported|4|rastras|dragged
+W|imported|4|trastes|dishes
+W|imported|4|mermelada|jam
+W|imported|4|gana|desire
+W|imported|4|metido|tucked
+W|imported|4|bandejas|trays
+W|imported|4|asientos|seating
+W|imported|4|trago|drink
+W|imported|4|ráfagas|bursts
+W|imported|4|vivienda|housing
+W|imported|4|inquilino|tenant
+W|imported|4|noviazgo|courtship
+W|imported|4|avecinaba|approaching
+W|imported|4|exime, exento|exempt
+W|imported|4|incautar|seize
+W|imported|4|pandilla, mara|gang
+W|imported|4|se trata|it is
+W|imported|4|descartado|discarded
+W|imported|4|tiroteo|gunfire
+W|imported|4|repartidoras|spreader
+W|body|4|rostro|face
+W|imported|4|fuga|leakage
+W|imported|4|cúmulo|accumulation
+W|imported|4|paños menores|underwear
+W|imported|4|asco|disgust
+W|imported|4|llenarse de grasa|full of grease
+W|imported|4|tregua|truce
+W|imported|4|unirse|join
+W|imported|4|reclutar|recruit
+W|imported|4|lectores|audience
+W|imported|4|acalorados|heated
+W|imported|4|tapa de la caja|box cover
+W|travel|4|recorrido|travel
+W|imported|4|triturado|crushed
+W|imported|4|etiqueta|label
+W|imported|4|acarmelada|carmel
+W|imported|4|siquera|at least
+W|imported|4|meneando|wagging
+W|imported|4|cebo|bait
+W|food|4|manteca|butter
+W|imported|4|paja|straw
+W|imported|4|qué pena|what a shame
+W|imported|4|qué lastima|what a pity
+W|imported|4|gemelos|twins
+W|imported|4|apodo|nickname
+W|imported|4|prestado|borrowed
+W|imported|4|lamida|lick
+W|imported|4|valga|worth
+W|imported|4|espantar|frighten
+W|imported|4|canica|marble
+W|imported|4|ramas|branches
+W|imported|4|siembra|sowing
+W|imported|4|huyeron|they fled
+W|imported|4|cosecha|harvest
+W|imported|4|alivio|relief
+W|imported|4|se supone que|it is assumed that
+W|imported|4|indagar|inquire
+W|imported|4|reos|inmate
+W|imported|4|abogar|plead
+W|imported|4|mayormente|mainly
+W|imported|4|empeño|determination
+W|imported|4|omiso|ignored
+W|imported|4|alegatos|allegations
+W|imported|4|campamento|camp
+W|imported|4|piecietos|little feet
+W|imported|4|citando|urban resident
+W|imported|4|puesta|setting
+W|imported|4|ganga|bargain
+W|imported|4|petróleo|oil worker
+W|imported|4|hartar|satiate
+W|imported|4|cifra|figure
+W|imported|4|recintos|campuses
+W|imported|4|recortes|cuts
+W|imported|4|sosteniendo|holding
+W|imported|4|otorgando|giving
+W|imported|4|condado|county
+W|imported|4|padrastro|stepfather
+W|imported|4|fianza|bail
+W|imported|4|ejército|army
+W|imported|4|amenaza|threat
+W|imported|4|amparados|covered
+W|imported|4|vencerse|expire
+W|imported|4|vigencia|validity
+W|imported|4|acogerse|benefit
+W|imported|4|agobia|overwhelm
+W|imported|4|viuda|widow
+W|job|4|músicos|musicians
+W|imported|4|acústica|acoustic
+W|imported|4|estilo|style
+W|imported|4|pedgadizo|catchy
+W|imported|4|impresionate|impressive
+W|imported|4|sugerencias|suggestions
+W|imported|4|ramificarse|branch out
+W|imported|4|espactáculo en directo|live show
+W|imported|4|alas|wings
+W|imported|4|susto|fright
+W|animal|4|hormiga|ant
+W|imported|4|proseguir|pursue
+W|imported|4|sueldo|salary
+W|imported|4|vuelta|return
+W|imported|4|colchón|mattress
+W|imported|4|ensimismado|abstracted
+W|imported|4|ausentado|absented
+W|imported|4|trifunos|triumphs
+W|imported|4|hecatombes|slaughters
+W|imported|4|ansia|craving
+W|imported|4|cacachuate|peanut
+W|imported|4|empedrada|paved
+W|imported|4|boliche|jack
+W|weather|4|hielo|ice
+W|imported|4|rechazo|rejection
+W|imported|4|terremoto|earthquake
+W|imported|4|sarampión|measles
+W|imported|4|rastro, reguero|trail
+W|imported|4|engaños|wiles
+W|imported|4|perdidamente enamoradas|madly in love
+W|imported|4|has dado en clavo|you've hit the nail on the head
+W|imported|4|tapas duras|hardcover
+W|imported|4|libro de bolsillo|paperback
+W|imported|4|auge|boom
+W|imported|4|remesas|remittances
+W|imported|4|aporte|input
+W|imported|4|despedida|farewell
+W|imported|4|manzanilla|chamomile
+W|imported|4|botanas|snacks
+W|travel|4|jornada|journey
+W|imported|4|carrera|race
+W|imported|4|raptadas|abducted
+W|imported|4|desamparada|helpless
+W|imported|4|fines|ends
+W|imported|4|siniestro|incident
+W|imported|4|reinvindicar|reclaim
+W|imported|4|anajenar|alienate
+W|imported|4|los tórtolos|the lovebirds
+W|imported|4|rondar|haunt
+W|imported|4|añorar|yearn
+W|imported|4|menospreciar|disparage
+W|imported|4|raíz|root
+W|imported|4|víniculo|link
+W|imported|4|embriagado|intoxicated
+W|imported|4|extirpar|remove
+W|imported|4|ágape|amor espiritual
+W|imported|4|ternura|tenderness
+W|imported|4|desbocar|run wild
+W|imported|4|sobrantes|surplus
+W|imported|4|alojando|boarding
+W|imported|4|estiércol|manure
+W|imported|4|recursivos|resourceful
+W|imported|4|huellas dactilares, huellas digitales|fingerprints
+W|imported|4|bronca|anger
+W|imported|4|grata|pleasant
+W|imported|4|a pesar de que|although
+W|imported|4|postulaciones|applications
+W|imported|4|echar balones fuera|a way of shirking blame
+W|imported|4|jauja|easy
+W|imported|4|tocayo|namesake
+W|imported|4|contándo|counting
+S|imported|4|romper una lanza por alguien|stand up for someone
+W|imported|4|como agua de mayo|like rain in May
+W|imported|4|estar en ascuas|be on edge
+W|imported|4|jugar a dos bandas|to try to reach two objectives at once
+S|imported|4|la gota que colma el vaso|the straw that breaks the camel's back (the drop that fills (overfills) the glass)
+W|imported|4|degollar|behead
+W|imported|4|vejatorio|vexatious
+W|imported|4|radica|lies
+W|imported|4|rasgo|feature
+W|imported|4|rastreo|tracking
+W|imported|4|través|through
+W|imported|4|los titulares|the headlines
+W|imported|4|austral|southern
+W|imported|4|la fanfarronada|bluff
+W|imported|4|vedados|forbidden
+S|imported|4|haber + de + inf|to be supposed to
+W|imported|4|harapos|rags
+W|imported|4|casas chatas|flat houses
+W|imported|4|pezones|nipples
+W|imported|4|guardabarros|mudguard
+W|home|4|cielorraso|ceiling
+W|imported|4|bultos|packages
+W|imported|4|pitillo|cigarette
+W|imported|4|desalojar|evict
+W|imported|4|trasero|rear
+W|imported|4|factura|bill
+W|imported|4|medidores|gauges
+W|imported|4|rodantes|trailers
+W|imported|4|balazos|gunshots
+W|imported|4|mensualmente|monthly
+W|imported|4|hincapié|emphasis
+W|imported|4|endilgan|saddled with
+W|imported|4|disparos|shooting
+W|imported|4|feculentos|starchy
+W|imported|4|consejería|counseling
+W|imported|4|ajenas|foreign
+W|imported|4|roñoso|mangy
+W|imported|4|avergüence|ashamed
+W|imported|4|profugo|fugitive
+W|imported|4|animate|cheer up
+W|imported|4|carruaje|carriage
+W|job|4|panadera|baker
+W|imported|4|puta|bitch
+W|imported|4|putas decarajo|fucking sluts
+W|imported|4|carajo|fuck
+W|imported|4|vete al carajo|go to hell
+W|imported|4|cornudos|cuckolds
+W|imported|4|cabron|fucker
+W|imported|4|cabroncito|little bastard
+W|imported|4|verga|cock
+W|imported|4|mierda|shit
+W|imported|4|sin rumbo|aimlessly
+W|imported|4|arranque|boot
+W|imported|4|bobería|silliness
+W|imported|4|trompas|tubes
+W|imported|4|cuando quieras|anytime
+W|imported|4|abucheos|boos
+W|imported|4|puerca|sow
+W|imported|4|zorra|bitch
+W|imported|4|polla|cock
+W|imported|4|joder, follar|fuck
+W|imported|4|me cago|I shit
+W|imported|4|colmar|fill up
+W|imported|4|patera|dinghy
+W|imported|4|trata|trafficking
+W|imported|4|salirse de sus cabales|go out of one's mind
+W|imported|4|irse la olla|go out of one's mind
+W|imported|4|perder un tornillo|missing a screw
+W|imported|4|perder el juicio|losing my mind
+W|imported|4|brote|outbreak
+W|imported|4|previsora|foresighted
+W|imported|4|ahorros|savings
+W|imported|4|lencería|lingerie
+W|imported|4|cagadas de palomas|pigeon droppings
+W|imported|4|yerma, erial|barren
+W|imported|4|pugnaz|pugnacious
+W|imported|4|afiebrado|feverish
+W|imported|4|pliega|folds
+W|imported|4|llanuras|plains
+W|imported|4|soñé|i dreamed
+W|imported|4|soberanía|sovereignty
+W|imported|4|trazos|strokes
+W|imported|4|brotaban|they sprouted
+W|verb|4|flugurar|to flash
+W|imported|4|desplegar|unfold
+W|imported|4|acariciada|cherished
+W|imported|4|pulsátil|pulsating
+W|imported|4|hijastro|stepson
+W|imported|4|naufragio|shipwreck
+W|imported|4|guinda|cherry on
+W|imported|4|repunte|upturn
+W|imported|4|orina|urine
+W|imported|4|abismo|abyss
+W|imported|4|mallorquines|Mallorcans
+W|imported|4|el paso de cebra|crosswalk
+W|imported|4|salidas de bolsa|IPOs
+W|imported|4|opas|business takeovers
+W|imported|4|adquisiciones|acquisitions
+W|imported|4|fusiones|mergers
+W|imported|4|vigas y voladizos|beams and cantilevers
+W|imported|4|hito|milestone
+W|imported|4|rascacielos|skyscraper
+W|imported|4|granel|bulk
+W|imported|4|hervidero|swarm
+W|imported|4|cota|dimension
+W|imported|4|fachada|facade
+W|imported|4|trepanacion|trephine
+W|verb|4|palidecer|to pale
+W|imported|4|chaflanes|bevels or chamfers
+W|imported|4|truncos huecos de hormigón|concrete hollow trunks
+W|imported|4|destacado|prominent
+W|imported|4|noctámbulo|night owl
+W|imported|4|lápida|tablet
+W|imported|4|se yergue|it stands
+W|imported|4|el boricua|the Puerto Rican
+W|imported|4|franquicia|franchise
+W|verb|4|amansar|to tame or break
+W|imported|4|paraísos fiscales|tax havens
+W|imported|4|una cala|a cove
+W|imported|4|farero|lighthouse keeper
+W|imported|4|pinares|pines
+W|imported|4|arenal|sandy
+W|imported|4|ermita|hermitage
+W|imported|4|repecho|slope
+W|imported|4|retinto|deep purple
+W|imported|4|techumbre de paja|thached roof
+W|imported|4|gama alta|high end
+W|imported|4|las marismas|the marshes
+W|imported|4|vistoso|ornate
+W|imported|4|mobiliario de madera tallada|carved furniture
+W|imported|4|molinete|pinwheel
+W|imported|4|marea menguante|ebb tide
+W|imported|4|morrón pétreo|stone bell
+W|imported|4|arremete|lashes
+W|imported|4|el pueblo amurallado|the walled town
+W|imported|4|fondeadero|anchorage
+W|imported|4|rehén, rehenes|hostage
+W|imported|4|charro|horseman
+W|imported|4|finos|fine
+W|imported|4|recamados|embroidered
+W|imported|4|goda|Gothic
+W|imported|4|feriantes|carnies
+W|imported|4|mozo|porter
+W|imported|4|juramentos|oaths
+W|imported|4|hambrienta|hungry
+W|imported|4|lentes|lenses
+W|imported|4|alacranes|scorpions
+W|imported|4|cordeles|strings
+W|imported|4|jarrón|vase
+W|imported|4|corno|horn
+W|imported|4|quijada|jaw
+W|imported|4|quemantes|burning
+W|imported|4|pan de payés|country or peasant bread
+W|imported|4|rodajas de pan integral|slices of bread
+W|imported|4|viandas|root vegetables
+W|imported|4|esparcidos|scattered
+W|imported|4|capacitación|training
+W|imported|4|infernal|infernal
+W|travel|4|trayecto|journey
+W|imported|4|conmutar|commute
+W|verb|4|descuartizar|to quarter
+W|imported|4|cohibido, cohibida|self-conscious
+W|imported|4|carnicero|butcher
+W|imported|4|alentado|encouraged
+W|imported|4|párrafo|paragraph
+W|imported|4|nacido y criado|born and raised
+W|imported|4|desastre|disaster
+W|imported|4|clavos y una placa|pins and a plate
+W|imported|4|estresante|stressful
+W|imported|4|aferrarse|hang on
+W|imported|4|las oraciones|the sentences
+W|imported|4|entre semana|weekday
+W|imported|4|retroalimentacion|feedback
+W|imported|4|resumen|in sum
+W|imported|4|desmesurada|disproportionate
+W|imported|4|los permisos eólicos|wind permits
+W|imported|4|contable|accountant
+W|imported|4|huérfana|orphan
+W|imported|4|bares de pintxos|tapas bars in Basque country
+W|imported|4|ecuación|equation
+W|imported|4|medioambiental|environmental
+W|imported|4|ranuras|slots
+W|imported|4|vejiga hiperactiva|overactive bladder
+W|imported|4|el mundo allende|the world beyond
+W|imported|4|los periplos internos|domestic journeys
+W|imported|4|de la capital guipuzcoana|of San Sebastian
+W|imported|4|poner en entredicho|call into question
+W|imported|4|rescatistas|rescuers
+W|imported|4|rabia|rage
+W|imported|4|hermanastro|stepbrother
+W|imported|4|godos|goths
+W|imported|4|veladore|nightstand
+W|imported|4|incruento|bloodless
+W|imported|4|minusvalía|handicap
+S|imported|4|hacer leña del árbol caído|piling on, excessive or untimely criticism of someone or something
+W|imported|4|zona horaria|time zone
+W|imported|4|diferencia horaria|time difference
+W|imported|4|tintorería|dry cleaner
+W|imported|4|auriculares|headphones
+W|imported|4|cohete|rocket
+W|imported|4|reclusorio|prison
+W|imported|4|presos|prisoners
+W|imported|4|reanuda|resumes
+W|imported|4|rodaje|filming
+W|imported|4|rebaño|herd
+W|verb|4|arrimar|to move up
+W|verb|4|entrechocar|to clash
+W|imported|4|celda alcolchada|padded cell
+W|imported|4|verdugos|executioners
+W|imported|4|bólido|meteorite
+W|imported|4|paulatinamente|gradually
+W|imported|4|trampa|trap
+W|imported|4|alcantarillado, cloaca|sewer
+W|imported|4|apego|addiction
+W|imported|4|espejismo|mirage
+W|imported|4|altibajos|ups and downs
+W|imported|4|rezo|prayers
+W|imported|4|fijeza|fixed
+W|imported|4|hazañas|exploits
+W|imported|4|descabellado|wild
+W|imported|4|dondequiera|wherever
+W|imported|4|carente|lacking
+W|imported|4|travesuras|antics
+W|imported|4|acartonado|stiff
+W|adjective|4|grifo|tap
+W|imported|4|ensoñación|reverie
+W|imported|4|mentira|lie
+W|number|4|millar|thousand
+W|imported|4|vitrina|showcase
+W|imported|4|atole|gruel
+W|imported|4|acuclilla|squats
+W|imported|4|mi lugar de nacimiento|my birthplace
+W|imported|4|Carolina del Norte|North Carolina
+W|imported|4|vacaciones familiares|family vacation
+W|imported|4|Voy a mejorar|I will improve
+W|imported|4|estudio|study
+W|imported|4|práctica|practice
+W|imported|4|mi escrito|my writing
+W|imported|4|una actualización|an update
+W|imported|4|horario|schedule
+W|imported|4|dificultad|difficulty
+S|imported|4|Mi padre fue liberado desde el hospital el lunes|My father was released from the hospital on Monday
+S|imported|4|Él parece estar recuperando bien|He seems to be recovering well
+S|imported|4|Mi semana pinta muy bonita|My week looks ("paints") very nice
+W|imported|4|rajados|cracked
+W|imported|4|medicantes|beggars
+W|imported|4|sanguijuelas|leeches
+W|imported|4|cordilleras fritas|French mountain ranges
+W|imported|4|lagartijas|lizards
+W|imported|4|tripulantes|crew
+W|imported|4|matorrales|shrubbery
+W|imported|4|ventiscas|blizzards
+W|imported|4|afasia|aphasia
+W|verb|4|morar|to dwell
+W|imported|4|adivinanza, acertijo|riddle
+W|imported|4|trino|trill
+W|imported|4|aún, todavía|yet
+W|imported|4|aun, incluso, siquiera|even
+W|imported|4|siquiera, aunque, aún cuando|though
+W|imported|4|trompo|spin
+S|imported|4|Te hice fuera de la arcilla|I made you out of clay
+W|imported|4|una sobredosis|an overdose
+W|imported|4|foránea|foreign
+W|imported|4|copado|cornered
+W|imported|4|arrendamiento|lease
+W|imported|4|ciudad natal|hometown
+W|imported|4|ciudad dormitorio, suburbio|suburb
+W|imported|4|golpe|stroke
+W|imported|4|historias cortas|short stories
+W|imported|4|informes|records
+W|imported|4|patio|backyard
+W|imported|4|terrazo|backyard
+W|imported|4|fecha tope|deadline
+W|imported|4|segundo mano|second hand
+S|imported|4|forma de vida, estilo de vida|lifestyle
+S|imported|4|un previsto para el vuelo|a planned trip
+W|imported|4|un notición|big news
+W|imported|4|ortografía|spelling
+W|imported|4|matices|nuances
+W|imported|4|acme|summit
+W|imported|4|susurro|whisper
+S|imported|4|basado en una historia real|based on a true story
+W|imported|4|ídem|ditto
+W|imported|4|la encrucijada|the crossroads
+W|imported|4|puntos de bonificación|bonus points
+W|imported|4|pautado|written
+W|imported|4|neoyorquino|New Yorker
+W|imported|4|querella|complaint
+W|imported|4|izar|hoist
+W|imported|4|rayadura|scratch
+W|imported|4|troyanos|trojans
+W|verb|4|mofarse|to scoff
+W|imported|4|ascuas|embers
+W|imported|4|quejica|complainer
+W|imported|4|me resulta|i find
+W|imported|4|términos|terms
+W|verb|4|desabrochar|to unfasten
+W|verb|4|desamarrar|to untie
+W|imported|4|bagre|catfish
+W|imported|4|dar carpetazo a|shelve
+W|imported|4|la renta básica|basic income
+W|imported|4|acoso sexual|sexual harrassment
+W|imported|4|señala|says
+W|imported|4|atentado|attack
+W|imported|4|homenajea|homage
+W|imported|4|tendencia|trend
+W|verb|4|opacar|to overshadow
+W|imported|4|embriones|embryos
+W|food|4|alimentos|foods
+W|imported|4|tasa|rate
+W|imported|4|regrupacion|reuniting
+W|imported|4|rendimiento|performance
+W|imported|4|glóbulos blancos|white blood cells
+W|imported|4|la fecha límite|the deadline
+W|imported|4|Robo termina en balacera|Robbery ends in shooting
+W|imported|4|células madre|stem cells
+W|imported|4|tejidos humanos|human tissues
+W|imported|4|las urnas|the polls
+S|imported|4|en un paraje de Madrid|in an area of Madrid
+W|imported|4|trotamundos|globetrotter
+W|imported|4|turista comodón|complacent tourist
+W|imported|4|parroquia|parish
+W|imported|4|medio ambiente|environment
+W|verb|4|conmulgar|to commune
+W|imported|4|una voz cascada|a cracked voice
+W|imported|4|la afonía, ronquera|hoarseness
+W|imported|4|el rimel|mascara
+W|imported|4|forzosamente una reprimida|forcibly repressed
+W|imported|4|ginebra|gin
+W|imported|4|paradójicamente|paradoxically
+W|imported|4|entorno|environment
+W|imported|4|trajín|grind
+W|imported|4|ajetreo|hustle and bustle
+W|imported|4|calificativos|adjectives
+W|imported|4|acomplejados|feel inferior
+W|imported|4|pozos|wells
+W|imported|4|los perdedores|the losers
+W|imported|4|proteínas magras|lean proteins
+W|imported|4|la valoración|valuation
+W|imported|4|tribunal de apelaciones|appeals court
+W|verb|4|avalar|to endorse
+W|imported|4|las escuchas|eavesdropping
+W|imported|4|la nave rusa|the Russian vessel
+W|imported|4|los últimos sondeos|the latest polls
+W|imported|4|un idilio rentable|a profitable affair
+W|imported|4|tala|logging
+W|imported|4|la gran estafa|the great scam
+S|imported|4|un recorrido por el mapamundi|a tour of the world map
+W|imported|4|cauces|channels
+W|imported|4|manantial|source
+W|imported|4|movilizaciones|demonstrations
+W|imported|4|arropados|wrapped
+W|imported|4|el ideario|the ideology
+W|imported|4|un miliciano|a militiaman
+W|imported|4|primera enmienda|first amendment
+W|imported|4|votantes|voters
+W|verb|4|malabar|to juggle
+W|imported|4|las guaguas|the buses
+W|imported|4|oleadas|surges
+W|imported|4|insólito|unusual
+W|imported|4|desamor|heartbreak
+W|imported|4|el estatut|the statute
+W|imported|4|horas lectivas|teaching hours
+W|imported|4|heces|feces
+W|imported|4|revueltas|revolts
+W|imported|4|escaños|seats
+W|imported|4|la Generalitat|the government
+W|imported|4|ambas lenguas vehiculares|both common languages
+W|imported|4|noticias incómodas|unwelcome news
+W|imported|4|recopilar|gather
+W|imported|4|sesgo|bias
+W|imported|4|cuentos de hadas|fairy tales
+W|imported|4|paro|unemployment
+W|imported|4|potestad|authority
+W|imported|4|una asignatura troncal|a core subject
+W|imported|4|la constatación|the realization
+W|verb|4|encadenar|to link
+W|imported|4|trimestral|quarterly
+W|imported|4|submuestra|subsample
+W|imported|4|ficheros|files
+W|imported|4|registros|records
+W|imported|4|encuestas|polls
+W|imported|4|flaqueza|infirmity
+W|verb|4|enrocar|to castle
+W|imported|4|aleatotio|random
+W|imported|4|parados|uemployed persons
+W|animal|4|las viboras|the snakes
+W|animal|4|chango|monkey
+W|imported|4|chismes|gossip
+W|imported|4|sedoso|silky
+S|imported|4|me conformo con un peli|I'm happy with a movie
+W|imported|4|me cuesta mucho|It is hard for me
+S|imported|4|Me cuesta un huevo hacerlo|It cost me an egg to do (It was hard to do)
+W|imported|4|lana me da cosa|wool repulses me
+S|imported|4|dar se te bien al futbol|you are good at football
+W|imported|4|dormillón|sleepyhead
+W|imported|4|echarse un siesta|take a nap
+W|imported|4|en absoluto|no way
+W|imported|4|eres un crack|you're really good
+W|imported|4|guiri|foreigner in Spain
+W|imported|4|hablar por los codos|talktative
+W|imported|4|hacer transbordo|to change trains
+W|imported|4|¡Leches!|For God's sake!
+W|imported|4|menos mal|luckily
+W|imported|4|pan comido|piece of cake
+W|imported|4|no es para tonto|no big deal
+W|verb|4|pasarse|to go too far
+W|imported|4|por adelantado|up front
+W|imported|4|por un tubo|in droves
+W|imported|4|Digo...|Used to say "I mean" after you mispeak
+S|imported|4|¿qué echan?|what's on (tv, movies)?
+S|imported|4|¡qué ilusión!|how exciting!
+S|imported|4|¡qué impresionante!|how impressive!
+S|imported|4|¿qué lleva?|what's in it?
+W|imported|4|rumbo a|on the way to
+W|imported|4|soy un paquete|I am useless
+W|imported|4|la yegua|the mare
+W|imported|4|varón|male
+W|imported|4|nuera|daughter in law
+W|imported|4|luz, luces|light
+W|imported|4|el tijeras|scissors
+W|imported|4|reavivar|revive
+W|imported|4|andanzas|wanderings
+W|verb|4|malversar|to embezzle
+W|imported|4|el declive|the decline
+W|verb|4|boicotear|to boycott
+W|imported|4|la jerga|the jargon
+W|imported|4|cobaya|guinea pig
+W|imported|4|subasta|auction
+W|imported|4|claroscuros|the contrast of light and shade
+W|imported|4|bachillerato|baccalaureate
+W|imported|4|malcriado|spoiled child
+W|imported|4|descollar|stand out
+W|imported|4|desdicha|unhappiness
+W|imported|4|el bien ajeno|the good of others
+W|imported|4|idoneidad para el cargo|fitness for office
+W|imported|4|compinchados|in cahoots
+W|imported|4|elucubraciones|speculations
+W|imported|4|peajes|road tolls
+W|imported|4|grillo|cricket
+W|imported|4|astillero|shipyard
+W|imported|4|gilipollas|asshole
+W|imported|4|duranzo|peach
+W|imported|4|alambre|wire
+W|imported|4|buitres|vultures
+W|imported|4|desahucios|evictions
+W|imported|4|formación|training
+W|imported|4|gomería|tire shop
+W|imported|4|tetas|tits
+W|imported|4|piscina, pileta, alberca|pool
+W|imported|4|capilla|chapel
+W|imported|4|arrorró|lullabies
+W|imported|4|lotes|lot
+W|imported|4|almendra|almond
+W|imported|4|canciller|chancellor
+W|imported|4|maltrato|abuse
+W|verb|4|lidiar|to fight
+W|imported|4|vigente|in force
+W|imported|4|blanqueador|bleach
+W|imported|4|herrumbe|rust
+W|verb|4|avizorar|to envision
+W|imported|4|la mala ortografía|the bad spelling
+W|imported|4|los dislates gramaticales|grammatical blunders
+W|imported|4|no es preciso|it is not necessary
+W|verb|4|esgrimir|to wield
+W|imported|4|con destreza|skillfully
+W|imported|4|cremalleras|zippers
+W|imported|4|destrezas|skills
+W|imported|4|pitufos|smurfs
+W|imported|4|guión|screenplay
+W|imported|4|go ahead|seguir adelante
+W|imported|4|cada cuanto|how often
+W|imported|4|yo quepo|i fit
+S|imported|4|y as e|in front of i or hi
+S|imported|4|o as u|in front of o or ho
+W|imported|4|que tiene sentido|it makes sense
+W|imported|4|muy cerca|close by
+W|imported|4|capricho|caprice
+W|imported|4|tumbos|tumbles
+W|imported|4|Tapón del Darién|Darien Gap
+W|imported|4|reciclaje profesional|professional retraining
+W|imported|4|súper paranoico|super paranoid
+W|imported|4|frambuesas|raspberries
+W|imported|4|peatones|pedestrians
+W|imported|4|el desliz|the slip
+W|imported|4|víspera|eve
+W|imported|4|rubro|category
+W|imported|4|rayas|stripes
+W|imported|4|ojivas|warheads
+W|imported|4|familia acomodada|wealthy family
+W|imported|4|oriunda|native
+W|imported|4|anfitriona|hostess
+W|food|4|aguacate|avocado
+W|imported|4|escalfe|poach
+W|imported|4|sintonice|tune
+W|verb|4|enganchar|to hook
+W|imported|4|villancicos|christmas carols
+W|imported|4|brebajes|concoctions
+W|imported|4|un aventón|a lift
+W|imported|4|demás|others
+W|imported|4|redacción|writing
+W|imported|4|eje|axis
+W|imported|4|desperdigados|scattered
+W|imported|4|quehaceres hogareños|household chores
+W|imported|4|cerezas|cherries
+W|imported|4|fallo|decision
+W|imported|4|juerga|spree
+W|imported|4|aguardiente|inexpensive anise liquor
+W|imported|4|coterráneo|person from the same area orcountry
+W|imported|4|los panas|the friends
+W|imported|4|pana|corduroy
+W|imported|4|resaca|hangover
+W|imported|4|autogestión|employee-run business
+W|imported|4|mediciones|measurements
+W|imported|4|mitin|rally
+W|verb|4|dimitir|to resign
+W|imported|4|derrota|defeat
+W|imported|4|Oriente Próximo|Middle East
+W|imported|4|cotizado|valued
+W|imported|4|quijotescos|quixotic
+W|imported|4|cogida a contrapié|caught off guard
+W|imported|4|panorama espeluzante|grisly
+W|imported|4|veta|vein
+W|imported|4|los efectos nocivos|the harmful effects
+W|imported|4|una letanía de dolencias|a litany of ailments
+W|verb|4|profundizar|to delve
+W|imported|4|mezclilla|denim
+W|verb|4|sobregirar|to overdraw
+W|imported|4|aseo|cleanliness
+W|imported|4|fibras sensibles|heartstrings
+W|imported|4|sazón|seasoning
+W|imported|4|mentiras piadosas|white lies
+W|imported|4|pizarra|chalkboard
+W|imported|4|millas|miles
+W|imported|4|chacra|ranch
+W|imported|4|sequía|drought
+W|imported|4|hallazgos|findings
+W|imported|4|hepático|of or relating to the liver
+W|imported|4|alguacil|sheriff
+W|food|4|hortaliza|vegetable
+W|imported|4|estropajos|wash pads
+S|imported|4|¿Usted cuenteme que hará?|Tell me what you'll do?
+W|imported|4|Le corrijo|I correct...
+W|imported|4|pulgada|inch
+W|imported|4|motas de heno|flecks of hay
+S|imported|4|Hola, ¿puedo practicar mi español contigo?|Hi, I can practice my Spanish with you?
+S|imported|4|Quisiera una cerveza de Dos Equis ámbar, el grande, con treinta y dos onzas|I'd like a beer Two Equis Amber, the largest, with thirty-two ounces
+S|imported|4|¿Puedo tener las fajitas con pollo, camarones, y carne de res?|Can I have (get me) the fajitas with chicken, shrimp and beef?
+S|imported|4|¿Como te llamas?|What's your name?
+S|imported|4|es un hueso duro de roer|it's a hard nut to crack (a hard bone to gnaw)
+S|imported|4|Quiero escuchar las buenas noticias y practicar mi español. ¿Por qué no juntos?|I want to hear the good news and to practice my Spanish. Why not together?
+S|imported|4|¿Está bien si yo adoro con ustedes?|Is it okay if I worship with you all?
+W|imported|4|urbes|large cities
+W|imported|4|lápiz labial|lipstick
+S|imported|4|Nunca se enfaden|They are never upset with each other
+W|imported|4|flor de loto|lotus flower
+W|imported|4|diserta|lectures
+S|imported|4|¿Qué te cuentas?|Tell me about your day. What do you have to say for yourself?
+S|imported|4|Pues nada|That's it. (I'm going.)
+W|imported|4|frases claves|key phrases
+W|imported|4|crispación|tension
+W|imported|4|camión|truck
+W|imported|4|no pasa nada|nothing's happening
+W|verb|4|sospesar|to weigh
+W|imported|4|ático|attic
+W|imported|4|deuda|debt
+W|imported|4|seculas|aftermath
+W|verb|4|sabotear|to sabotage
+W|imported|4|las memories duraderas|lasting memories
+W|imported|4|recato|reserve
+W|imported|4|poco caritativa|uncharitable
+W|imported|4|cajero andantes|walking ATMs
+W|imported|4|ajuste psicológico|psychological adjustment
+W|imported|4|los islamistas marroquíes|Moroccan Islamists
+W|imported|4|la enésima|the umpteenth
+W|imported|4|metedura de pata|gaffe
+W|imported|4|Civil Procedure|Procedimiento Civil
+W|imported|4|Criminal law|Derecho criminal o penal
+W|imported|4|Contracts|Contratos
+W|imported|4|Employment law|Derecho laboral
+W|imported|4|arraigada|rooted
+S|imported|4|Esta disponibilidad es menor cuanto menor es la antelación de la solicitud|This availability is lower the less in advance of the application
+W|imported|4|los materiales didácticos|teaching materials
+W|imported|4|franja de edad|age group
+W|imported|4|pago en metálico|payment in cash
+W|imported|4|las clases magistrales|lectures
+W|imported|4|carné de estudiante|student card
+W|imported|4|al titular|the holder
+W|imported|4|eres una plasta|you're a pain
+W|imported|4|no seas pesado|don't be a pain
+W|imported|4|no podría estar mejor|i couldn't be better
+S|imported|4|lo que pasa es que|what happens is that... (SOMETHING TO SAY TO BUY SOME TIME)
+W|imported|4|escénico|scenic
+W|imported|4|un montón|a lot
+W|imported|4|estufa|stove
+W|verb|4|embeber|to imbibe
+W|imported|4|continued|continuado
+W|imported|4|caraqueño|a person from Caracas
+W|imported|4|acción de gracias|Thankgiving
+S|imported|4|la sesión de la tarde|matinee, the afternoon session
+W|imported|4|mulos|mules
+W|imported|4|los pueblos indígenas|indigenous peoples
+W|imported|4|la hermoteca|the archive
+W|imported|4|sobornos|bribes
+W|imported|4|gestión|effort
+W|imported|4|illiterate|analfabetos
+W|verb|4|asfaltar|to asphalt
+W|imported|4|la gestión de residuos|waste management
+W|imported|4|recolección de residuos|waste collection
+W|imported|4|abastecimiento de agua|water supply
+W|imported|4|calle desolada|desolate street
+W|imported|4|omóplatos|shoulder blades
+W|imported|4|ovnis|UFOs
+W|imported|4|perturbadores|disturbing
+W|imported|4|tentación|temptation
+W|imported|4|ligados|linked
+W|imported|4|indultos|pardons
+W|imported|4|nóminas|payrolls
+W|imported|4|rezagado|lagging
+W|verb|4|contrarrestar|to counter
+W|imported|4|un jardín vallado|a fenced or walled garden
+W|imported|4|tajante|cutting
+W|imported|4|diamonds|diamantes
+W|imported|4|while|mientras
+W|imported|4|bola de estambre|ball of yarn
+W|imported|4|remo|rowing
+W|imported|4|forajidos|outlaws
+W|imported|4|cangrejo|crab
+W|verb|4|malograr|to spoil
+W|imported|4|vainas|pods
+W|imported|4|cachonda|horny
+W|imported|4|una media|an average
+W|imported|4|malabares|jugglling
+W|imported|4|langosta|lobster
+W|imported|4|una medusa|a jellyfish
+W|imported|4|campo de prácticas|driving range
+W|imported|4|sucedido|happened
+W|imported|4|buena abogacía|good lawyering
+W|imported|4|carpeta|folder
+W|imported|4|albures|puns
+W|imported|4|naipe, carta|playing card
+W|imported|4|evangelio|gospel
+W|verb|4|aniquilar|to annihilate
+W|verb|4|escoltar|to escort
+W|verb|4|fichar|to sign
+W|imported|4|sorteo|the draft
+W|verb|4|orientar|to guide
+W|verb|4|pepenar|to scavenge
+W|verb|4|vengar|to avenge
+W|verb|4|enfatizar|to emphasize
+W|imported|4|el yugo|the yoke
+S|imported|4|un arma de doble filo|a double-edged weapon
+W|imported|4|inkpen|pluma
+W|imported|4|brown-haired|moreno
+W|imported|4|blond|rubio
+W|imported|4|used|usado
+W|verb|4|cobijar|to shelter
+W|verb|4|aviviar|to fuel
+W|imported|4|un váler|a toilet
+W|imported|4|saneamiento|sanitation
+W|imported|4|reembolsable|reimbursable
+W|imported|4|su intervención|his speech
+W|imported|4|escasez de agua|water scarcity
+W|imported|4|el último|the last
+W|imported|4|acuario|aquarium
+W|imported|4|gremiales|guilds
+W|imported|4|pisotón|stomp
+W|imported|4|en punga|at odds
+W|imported|4|Hazaña con ribetes históricos|Feat with historic borders
+W|imported|4|matones|bullies
+W|imported|4|caza de focas|seal hunting
+W|imported|4|reacios|reluctant
+W|imported|4|anocheciendo|dusk
+W|imported|4|cuarentena|quarantine
+W|imported|4|ungüento|ointment
+W|imported|4|restantes|the others
+W|imported|4|mendigos|beggars
+W|imported|4|marcados|marked
+W|imported|4|asiduo|regular
+W|imported|4|cirugías estéticas|cosmetic surgery
+W|imported|4|chorro|squirt
+W|imported|4|los enjambres|the swarms
+W|verb|4|encasillar|to pigeonhole
+W|imported|4|depredador|predator
+W|imported|4|berenjenas|eggplant
+W|imported|4|pasantías|internships
+W|imported|4|prórroga|extension
+W|imported|4|absuelto de proxenetismo|acquitted
+W|imported|4|aumento|increase
+W|nature|4|cerros|mountains
+W|imported|4|un solo|a single one
+W|imported|4|unos cuantos|a few
+W|imported|4|excursión|field trip
+W|imported|4|cualesquiera|any
+W|imported|4|el que, la que|the one who
+W|imported|4|no one|nadie
+W|imported|4|la cliente|the customer
+W|imported|4|main|principal
+W|imported|4|la meca|the mecca
+W|imported|4|hundido|sunken
+W|imported|4|plusvalía|appreciation
+W|imported|4|cisjordania|West Bank
+W|imported|4|capacidades diferentes|disabled
+W|imported|4|muy desgastante|very draining
+W|verb|4|congeniar|to hit it off
+W|imported|4|replantear|rethink
+W|imported|4|autosuperación|self-improvement
+W|imported|4|abreviaturas|abbreviations
+W|imported|4|jota de picas|jack of spades
+W|imported|4|as de bastos|ace of clubs
+W|imported|4|reina de corazones|queen of hearts
+W|imported|4|rey de diamantes|king of diamonds
+W|imported|4|comodín|joker
+W|imported|4|curules|seats
+W|imported|4|soltura|looseness
+W|imported|4|caducado|expired
+W|imported|4|agua tibia|warm water
+W|verb|4|aplazar|to delay
+W|imported|4|apio|celery
+W|imported|4|plumazo|stroke of the pen
+W|imported|4|maniobra|maneuver
+W|imported|4|adecuación|adequacy
+W|imported|4|candentes|hot
+W|imported|4|un sin techo|homeless
+W|imported|4|el tedio|boredom
+W|imported|4|ansiolíticos|antianxiety medications
+W|imported|4|un puñadito|a handful
+W|imported|4|pipas de girasol|sunflower seeds
+W|imported|4|prometedor|promising
+W|imported|4|un embudo|a funnel
+W|imported|4|levadura|yeast
+W|imported|4|cucharadas soperas|tablespoons
+W|imported|4|coartada|alibi
+W|imported|4|el Occidente|the West
+W|imported|4|las cuentas de servicios|utility bills
+W|verb|4|encarar|to confront
+W|imported|4|gastos inesperados|unexpected expenses
+W|imported|4|hacinamiento|overcrowding
+W|imported|4|ambulatorio de barrio|neighborhood clinic
+W|imported|4|un recoveco|a nook
+W|imported|4|una alabanza|a praise
+W|verb|4|agrandarse|to enlarge
+W|imported|4|metiche|nosy
+W|imported|4|mariscal|marshal
+W|imported|4|amolado|to be bothered
+W|imported|4|represalia|reprisal
+W|imported|4|asolado|devastated
+W|imported|4|feto|fetus
+W|verb|4|sellar|to seal
+W|imported|4|distraído|distracted
+W|imported|4|desatendidas|neglected
+S|imported|4|contrarrestando la inequidad en el acceso a las ondas radiales|offsetting the unequal access to the airwaves
+W|imported|4|tertulia|bull session
+W|feeling|4|júbilo|joy
+W|imported|4|jeta|mug
+W|imported|4|cinta aislante|electrical tape
+W|verb|4|agredir|to attack
+W|imported|4|los conocedores|the conoisseurs
+W|imported|4|vitalicio|lifetime
+W|imported|4|tirador|shooter
+W|imported|4|derrumbe|collapse
+W|imported|4|diana|target
+W|imported|4|autorretrato|self-portrait
+W|verb|4|alabar|to praise
+W|imported|4|la cuarta parte|one quarter
+W|imported|4|cartón|cardboard
+W|imported|4|los acreedores|the creditors
+W|imported|4|en mora|delinquent
+W|imported|4|caniculares|scorching
+W|verb|4|estorbar|to clog
+W|imported|4|el viejo trazado|the old path
+W|imported|4|agua dulce|fresh water
+W|imported|4|frenazo|slowdown
+W|imported|4|chabola|shack
+W|imported|4|tolda|awning
+W|imported|4|regidor, concejal|councilman
+W|imported|4|trepadora|creeper
+W|verb|4|acongojar|to wring out
+W|imported|4|metas a largo plazo|long-term goals
+W|imported|4|conjunto de herramientas|tool set
+W|imported|4|airosa|airy
+W|imported|4|me avisa|let me know
+W|imported|4|orar, rezar, rogar, suplicar|to pray
+S|imported|4|¡god bless you!|Salud!
+W|imported|4|Dios te bendiga|God bless you
+W|imported|4|solapa|lapel
+W|imported|4|vaina|pod
+W|imported|4|peritaje|expertise
+W|imported|4|jugadores|players
+W|verb|4|sonrojar|to blush
+W|imported|4|más aseados|neater
+W|imported|4|piropo|compliment
+W|imported|4|ojos hinchados|puffy eyes
+W|imported|4|yate|yacht
+W|verb|4|desbancar|to unseat
+W|imported|4|sangriento|bloody
+W|imported|4|la seguridad vial|road safety
+W|verb|4|remachar|to rivet
+W|imported|4|crucigramas|crosswords
+W|imported|4|noches portuarias|harbor nights
+W|imported|4|adulador|flatterer
+W|imported|4|fruslerías|trinkets
+W|imported|4|adilad|champion
+W|imported|4|depliarse las piernas|shave her legs
+W|imported|4|van a la zaga|they lag behind
+W|imported|4|la coyuntura|the economic situation
+W|verb|4|pervivir|to survive hard times
+W|imported|4|abatidas|brought down
+W|imported|4|condicíon polifacética, camaleónica|versatile
+W|imported|4|zafiros|sapphires
+W|imported|4|golsinas|candies
+S|imported|4|¿Cómo has sido tu semana?|How has your week been?
+W|imported|4|mi moción o argumento|my motion or argument
+S|imported|4|Fui a la corte para un caso|I went to court for a case
+W|imported|4|licenciada en Informática|degree in computer scientce
+W|imported|4|no lo soporto|I cannot stand him
+W|verb|4|constar|to record
+W|imported|4|chilpayate|child
+W|verb|4|chambear|to work
+W|imported|4|merol|alimento.
+W|imported|4|canallada|despicable
+W|imported|4|sajón|Saxon
+W|imported|4|alcaldesa|mayoress
+W|imported|4|bandera arco iris|rainbow flag
+W|imported|4|OMC|WTO
+W|imported|4|PIB|GDP
+W|verb|4|mimar|to pamper
+W|imported|4|no strings attached|sin ataduras
+W|imported|4|códigos culturales|cultural codes
+W|imported|4|una manaza más lejos|a block away
+W|imported|4|vírica|viral
+W|imported|4|un ictus|a stroke
+W|imported|4|el asedio|the seige
+W|imported|4|divagando|rambling
+W|imported|4|hablando consigo misma|talking to herself
+W|imported|4|frente al quehacer|facing the task
+W|imported|4|inigualable|unmatched
+W|imported|4|existe de ordinaro|there is ordinarily
+W|imported|4|reimprimiéndo|reprinting
+W|imported|4|conciudadanos|fellow citizens
+S|imported|4|típicos cotilleos de pueblo sureño|typical southern town gossip
+W|imported|4|tiendas de empeño|pawn shops
+W|imported|4|esta agudeza|this sharpness
+W|imported|4|poco propicio|inauspicious
+W|imported|4|más acertadas|most successful
+W|imported|4|carencias|shortcomings
+W|imported|4|mermada|impaired
+W|imported|4|recleos|misgivings
+W|imported|4|Mandos de Operaciones|Operations Command
+W|imported|4|lagunas|lagoons
+W|imported|4|los humedales|the wetlands
+W|imported|4|las praderas|the meadows
+W|imported|4|jaqueca|migrane
+W|imported|4|sujetador|bra
+W|imported|4|el culebrón|the saga
+W|imported|4|motes|nicknames
+W|imported|4|onanistas|masturbators
+W|verb|4|recurrir|to appeal
+W|imported|4|cefalea|headache
+W|imported|4|certeza|certainty
+W|food|4|jitomate|tomato
+W|imported|4|Persona de campo|pajueranos
+W|imported|4|corvina|croaker
+W|imported|4|pendejo|stupid
+W|imported|4|garrafa|carafe
+W|imported|4|anfibia|amphibious
+W|imported|4|un slogan mediático|a media slogan
+W|imported|4|sacerdotisa vudú|voodoo priestess
+W|imported|4|bóveda familiar|family vault
+W|imported|4|chiringuito|snack bar
+W|imported|4|un tranvía|a streetcar
+W|imported|4|locuaces|loquacious
+W|imported|4|largas rastas|long dreadlocks
+W|verb|4|refaccionar|to repair
+W|imported|4|anfitrión|host
+W|imported|4|camada de pasajeros|batch of passengers
+W|imported|4|por descuido|carelessly
+W|imported|4|las vigas ardiendo|the burning beams
+S|imported|4|¡No contaban con mi astucia!|They didn't count on my cunning!
+W|imported|4|chicharra|cicada
+W|imported|4|un poco burdos|a little crude
+W|imported|4|demasiado torpe|too clumsy
+W|imported|4|esfuma|vanishes
+W|imported|4|barriga abultada|bulging belly
+W|imported|4|sus achaques|his infirmities
+W|imported|4|qué flojera|what laziness
+S|imported|4|muerde un tallo de apio|bites a celery stalk
+W|imported|4|largometraje|feature film
+W|animal|4|ardilla|squirrel
+W|imported|4|una gran incultura|a great lack of culture
+W|verb|4|manotear|to slap
+W|verb|4|ningunear|to look down on
+W|imported|4|frenos|brakes
+W|imported|4|plaintiff|demandante
+W|imported|4|defendant|demandado
+W|imported|4|reclamación|complaint
+W|imported|4|summary judgment|juicio sumario
+W|imported|4|judgment|juicio
+W|imported|4|dicho sea de paso|by the way
+W|imported|4|no rush|no hay prisa
+W|imported|4|cualquier hora|any hour
+W|imported|4|satanás|Satan
+W|job|4|nodriza|nurse
+W|imported|4|polluelos|chicks
+S|imported|4|No seas borrego, explota tu peronalidad|Don't be a lamb, exploit your personality
+S|imported|4|Educa tu mirada y no te aferres a tus pertenencias|Educate your eyes and don't cling to your belongings
+W|verb|4|ostenar|to hold
+W|imported|4|en tropel|in droves
+W|imported|4|sociedad asediada|beseiged society
+W|imported|4|despiadada y inhóspita|heartless and inhospitable
+W|imported|4|facts|hechos
+W|imported|4|canela|cinnamon
+W|imported|4|limosna|alms
+W|imported|4|sin margen|borderless
+W|imported|4|un ser querido|a loved one
+W|imported|4|entrada en años|advanced in years
+W|imported|4|ciudades carpas|tent cities
+W|imported|4|retiro|retreat
+W|imported|4|apabullante|overwhelming
+W|imported|4|contención|containment
+W|imported|4|albañil|builder
+W|imported|4|micros|buses
+W|verb|4|arrodillarse|to kneel
+W|imported|4|un hombre culto|an educated or cultured man
+W|imported|4|exabrupto|outburst
+W|imported|4|él ha enloquecido|he as gone mad
+W|imported|4|galpón|shed
+W|imported|4|lombrices|worms
+W|imported|4|quedarse sin|to run out
+W|imported|4|ataúd|coffin
+W|imported|4|ajolote|salamander
+W|imported|4|un entramado|a network
+W|imported|4|sin remedio|without remedy
+W|imported|4|Me pregunto|I wonder
+W|imported|4|dulces sueños|sweet dreams
+W|imported|4|curuba|passion fruit
+W|imported|4|menso|someone who is stupid and
+W|imported|4|Perder el control|chispotear
+W|imported|4|no me simpatizas|I do not like you
+W|imported|4|sabires|pidgin
+W|verb|4|cotizar|to quote
+W|verb|4|suavizar|to relax
+W|imported|4|presupuesto|budget
+W|imported|4|condena vicaria|vicarious condemnation
+W|imported|4|dizque|supposedly
+W|imported|4|redada|raid
+W|imported|4|afición|hobby
+W|imported|4|una vientena de días|some twenty days
+W|imported|4|vigilantes jurados|security guards
+W|imported|4|la velada|cocktail party
+W|imported|4|bis|encore
+W|verb|4|encorvar|to bend
+W|imported|4|cualquier atisbo de saludo|any hint of greeting
+W|imported|4|ignoto|unknown
+W|imported|4|lemas|slogans
+W|imported|4|con fosforito|with flourescent
+W|imported|4|tormento, suplico|torture
+W|imported|4|estanco|watertight
+W|imported|4|silvestre|wild
+W|imported|4|decepcionado|disappointed
+W|imported|4|vara de madera|wooden stick
+W|imported|4|como sea|either way
+W|imported|4|enano|dwarf
+W|imported|4|prepotente|arrogant
+W|imported|4|Cenicienta|Cinderella
+W|imported|4|luctuoso|mournful
+W|imported|4|dote|dowry
+W|imported|4|sueco|Swedish
+W|imported|4|las chuches|the sweets
+W|imported|4|micromecenazgo|crowdfunding
+W|imported|4|gangrenando|eating away
+W|imported|4|sin tregua|unremitting
+W|imported|4|hembra|female animal
+S|imported|4|Yo sólo lo haría un poco|I would ony do that a little
+S|imported|4|Claro, es trampa|Sure, it is cheating
+W|imported|4|pibes|kids
+W|imported|4|humedales|wetlands
+W|imported|4|despedido|dismissed
+W|imported|4|desmiente|denies
+W|imported|4|hipotecado|mortgaged
+W|imported|4|una majestuosa eclosión|a majestic hatching
+W|imported|4|lirismo|lyricism
+W|imported|4|todo fue sobre ruedas|everything went smoothly
+W|imported|4|voy de mochilera|I go backpacking
+W|imported|4|achacosa|sickly
+W|imported|4|placentera|pleasant
+W|imported|4|indiscutible|undisputed
+W|imported|4|apuñalado|stabbed
+W|imported|4|un firme partidario|a staunch supporter
+W|imported|4|Me he registrado|I have signed up
+S|imported|4|para ver si estoy preparado para el desafío|to see if I am up for the challenge
+W|imported|4|crecí|I grew up
+W|imported|4|descuento|discount
+S|imported|4|Me pregunto por qué nunca regresé|I wonder why I ever came back
+S|imported|4|¿como andas?|how are you?
+W|imported|4|la peste|the plague
+W|imported|4|la abadía|the abbey
+W|imported|4|rehenes|hostages
+W|imported|4|azulejos|tiles
+W|imported|4|exastro|former star
+W|imported|4|para colmo|to top it off
+W|imported|4|quimica|chemistry
+W|imported|4|recaudación|collection
+W|verb|4|esnifar|to snort
+W|imported|4|la morosidad|delinquencies
+S|imported|4|Los lugares más propicios para ligar|the easiest places to flirt
+W|imported|4|amor veraniego|summer love
+W|imported|4|regulador bursátil|securities regulator
+W|imported|4|subida de tipos|rate hike
+W|imported|4|se recomienda acceder|it is recommended to access
+W|imported|4|sucursales|branches
+S|imported|4|a la hora de acometer|at the time of undertaking
+W|imported|4|derechos plenos|full rights
+W|imported|4|trabas burocráticas|red tape
+W|imported|4|la coquetería|flirtation
+W|imported|4|victimario|victimizer
+W|imported|4|complaciente|accommodating
+W|imported|4|tentado|tempted
+W|imported|4|más bromoso|foggier
+W|imported|4|la aridez|aridity
+W|imported|4|piorrea|pyorrhea
+S|imported|4|La rosa de los vientos|The rose of the winds
+W|imported|4|desvelar|unveil
+W|imported|4|reliquias|relics
+W|verb|4|forjar|to forge
+W|imported|4|tartamudos|stutterers
+W|imported|4|guerra santa|holy war
+W|imported|4|ratifico su condena|uphold his conviction
+W|imported|4|Alá|Allah
+W|imported|4|me rindo|I give up
+W|imported|4|es un trato|it's a deal
+W|imported|4|el extraradio|the outskirts
+W|imported|4|Pazo en venta|Manor for sale
+W|imported|4|inmobiliaria|property
+W|imported|4|al boca a boca|word of mouth
+W|imported|4|contuve|I held
+W|imported|4|no se aleje|don't stray
+W|imported|4|alejarse|move away
+S|imported|4|Quedo atenta a que me confirmes para que practiquemos|I remain attentive to you to confirm me that we practice
+W|imported|4|sounds good|suena bien
+W|imported|4|verdad o reto|truth or dare
+W|imported|4|una puta broma|a fucking joke
+W|imported|4|hangover|resaca
+W|imported|4|no corte|don't hang up
+W|imported|4|intentar, probar|to try or test
+W|verb|4|mear|to piss
+W|verb|4|ahondar|to delve
+W|nature|4|índole|nature
+W|imported|4|chismosa|gossip
+W|imported|4|estribos|stirrups
+W|imported|4|despedida de soltero|bachelor party
+W|imported|4|me late|beats me
+W|imported|4|vertedero|dump
+W|imported|4|ahijada|goddaughter
+W|imported|4|la ama de llaves|the housekeeper
+W|imported|4|niñera|nanny
+W|imported|4|curandera|medicine woman
+W|imported|4|autoestima|self-esteem
+W|imported|4|trato|treatment
+W|imported|4|voto|vote
+W|imported|4|sumidero|sink
+W|imported|4|otorgue|grant
+W|verb|4|desgajarse|to break off
+W|imported|4|policultivo|polyculture
+W|imported|4|Vi caricaturas|I saw cartoons
+W|imported|4|I went|fui
+W|imported|4|los viajeros|the travelers
+W|imported|4|castañales|chesnut trees
+W|imported|4|álamos|aspen trees
+W|imported|4|chopos|poplar trees
+W|imported|4|ambos son los tuyos|both are yours
+W|imported|4|learning|aprendiendo
+W|imported|4|podría|I/he might, could
+W|imported|4|beginning|comenzando
+W|verb|4|atenerse|to keep
+W|imported|4|albergue|hostel
+W|imported|4|temporada|season
+W|imported|4|fideos|noodles
+W|imported|4|hunos|huns
+W|imported|4|solamente, sólo|only
+W|imported|4|quimio|chemo
+W|imported|4|fusil|rifle
+W|imported|4|lastimada|hurt
+W|imported|4|albañilería|masonry
+W|imported|4|plomería|plumbing
+W|imported|4|ultramarinos|groceries
+W|imported|4|estética|cosmetics
+W|imported|4|cofradía|brotherhood
+W|imported|4|forzosamente complicado|necessarily complicated
+W|imported|4|servilletas|napkins
+S|imported|4|¿Existe realmente el libre albedrío?|Is there really free will?
+W|imported|4|pastizales|grassland
+W|imported|4|wapiti|elk
+W|imported|4|i was away|estaba lejos
+W|imported|4|descubrimiento|discovery
+W|imported|4|declaración|deposition
+W|imported|4|camioneta|pickup truck
+W|imported|4|settlement|asentamiento
+W|imported|4|expulsado|ejected
+W|imported|4|back|espalda
+W|imported|4|regulations|reglamentos
+W|imported|4|Día de Trabajo|Labor Day
+W|imported|4|dictamen|opinion
+W|imported|4|perito de seguros|insurance adjuster
+W|imported|4|fundas|pillowcases
+W|imported|4|tan sabroso|as delicious
+W|imported|4|la carpa dorada|the goldfish
+W|imported|4|el reloj de péndulo|the grandfather clock
+W|imported|4|todos, todas|everyone
+W|imported|4|ninguno, ninguna|neither one
+W|imported|4|lo mismo|the same
+W|imported|4|lo mejor|the best
+W|imported|4|lo peor|the worst
+W|imported|4|no importa|it doesn't matter
+W|imported|4|una relación|a relationship
+W|imported|4|la contraportada|back cover
+W|imported|4|el letero|the sign
+W|imported|4|la persona no honrada|dishonest person
+W|imported|4|la billetera, cartera|wallet
+W|imported|4|el perro de lana|poodle
+W|imported|4|el desván|the attic
+W|imported|4|el casero|the landlord
+W|imported|4|tener sentido|makes sense
+W|imported|4|impredecible|unpredictable
+W|imported|4|asiduos|regular customers
+W|imported|4|puré de papas|mashed potatoes
+W|imported|4|me hace falta|I need
+W|imported|4|Quería comprobar|I wanted to check
+W|imported|4|Bebida alcohólica de alta graduación|pulque
+S|imported|4|¿tuviste un buen día?|did you have a good day?
+S|imported|4|no fue muy emocionante, aunque|it wasn't very exciting though
+S|imported|4|nada malo, sólo un día normal|nothing bad, just a regular day
+W|imported|4|reducto inca|Inca stronghold
+W|imported|4|codearse con|hobnob
+W|imported|4|Misuri|Missouri
+W|imported|4|velero|sailboat
+W|imported|4|renuente|reluctant
+W|imported|4|mascada|headscarf
+W|imported|4|cáscara|shell
+W|imported|4|prestaciones|performances
+W|imported|4|con base|on the basis
+W|verb|4|estremecerse|to shudder
+W|verb|4|traslaparse|to overlap
+W|imported|4|prórrogas de plazos|extensions of deadlines
+W|imported|4|huida|flight
+W|verb|4|transigir|to compromise
+W|verb|4|aducir|to adduce
+W|imported|4|remate|auction
+W|imported|4|señuelo|decoy, lure, bait
+W|imported|4|bochornosas|shameful
+W|imported|4|podadores|pruners
+W|imported|4|vestiduras|vestments
+W|imported|4|estancamiento|stalemate
+W|imported|4|punto muerto|deadlock
+W|imported|4|embarque|shipment
+W|imported|4|artimañas, tretas|tricks
+W|imported|4|corredor|broker
+W|imported|4|cierre|shutdown
+W|imported|4|siderúgica|steelmaker
+W|imported|4|Tener pinta|To look like
+S|imported|4|Tiene pinta de ser bueno|It looks good
+S|imported|4|Tiene pinta de ser malo|It looks bad
+S|imported|4|Él tiene pinta de ser buena gente|He looks like a good guy
+S|imported|4|Tiene pinta de estar muy rico|It looks good (with food)
+W|imported|4|Tiene buena pinta|It looks good
+W|imported|4|Tiene mala pinta|It looks bad
+W|imported|4|Tener que ver con|to have to do with
+S|imported|4|¿Qué tiene que ver el arte con la realidad?|What does art have to do with reality?
+S|imported|4|No tiene nada que ver|It has nothing to do with
+S|imported|4|Tiene algo que ver conmigo|It has something to do with me
+W|imported|4|Tengo prisa|I am in a hurry
+S|imported|4|Él no me hace caso|He doesn’t pay attention to me
+W|imported|4|Yo no hago falta|I’m not needed
+S|imported|4|¿Hago falta?|Am I needed?
+W|imported|4|Tú me das asco|you disgust me
+W|imported|4|Te doy asco|I disgust you
+S|imported|4|¿Te doy pena?|Am I embarassing you?
+S|imported|4|No me dí cuenta de la hora y llegué tarde|I didn’t realise the time and arrived late
+W|imported|4|Él se da cuenta|He realizes
+W|imported|4|cerrajeros|locksmiths
+W|imported|4|tachan de|branded as
+W|imported|4|a las escondidas|hide and seek
+W|imported|4|lustrabotas|shoeshine
+W|imported|4|juerguista|party animal
+W|imported|4|derrochador|spendthrift
+W|imported|4|recompensa|reward
+W|verb|4|albanzarse|to pounce or swoop
+W|imported|4|apaciguamiento|appeasement
+W|imported|4|salvedad|proviso
+W|imported|4|desviar|divert
+W|imported|4|pedido|order
+W|verb|4|sondear|to probe
+W|verb|4|esmerarse|to strive
+W|imported|4|miramiento|a courtesy
+W|imported|4|aceptación|acceptance
+W|imported|4|remolcador|tug
+W|verb|4|rebasar|to exceed
+W|imported|4|sobrecoger|startling
+W|imported|4|manivela|a crank
+W|imported|4|sentadillas|squats
+W|imported|4|predicador|preacher
+W|imported|4|delay|retraso
+S|imported|4|Es bueno saber de ti|It is good to hear from you
+W|imported|4|Easter|Pascua
+W|imported|4|claxon|horn
+W|imported|4|atardeceres|sunsets
+S|imported|4|más ocupados y más impredecible|busier and more unpredictable
+W|imported|4|por el retraso|for the delay
+W|imported|4|diligente|diligent
+W|imported|4|hogareño|home-loving
+W|imported|4|afortunado|lucky
+W|imported|4|compositores|songwriters
+W|imported|4|mal genio|bad mood
+W|imported|4|constante|constant
+W|imported|4|cuencas|basins
+W|imported|4|tiene sentido|makes sense
+W|imported|4|amapola|poppy
+W|imported|4|apreciados connacionales|dear fellow countrymen
+W|imported|4|quisiéramos|we would like
+W|imported|4|aportes|contributions
+W|imported|4|compromiso permenente|ongoing commitment
+W|imported|4|está realizando|is making or conducting
+W|verb|4|fortalecer|to strengthen
+W|imported|4|házmelo saber|let me know
+W|imported|4|cuando estés listo|when you are ready
+W|imported|4|bombeo de petróleo|oil pumping
+W|imported|4|panorama|outlook
+W|imported|4|ahogamiento|drowning
+W|imported|4|trabajadora social|social worker
+W|imported|4|moción|motion
+W|imported|4|huracán|hurricane
+S|imported|4|¿y tú, qué haces?|and what do you do?
+W|imported|4|la forma de ser|lifestyle
+W|imported|4|son apreciados|they are appreciated
+S|imported|4|Es frecuente confundir renta con riqueza|Income and wealth are often confused
+W|imported|4|somewhat|algo
+W|imported|4|health club|club
+W|imported|4|lo que quiera|whatever you want
+W|imported|4|sureño, sureña|southern
+W|imported|4|la gaveta|drawer
+W|imported|4|diamante|diamond
+W|imported|4|el cacique|the chief
+W|imported|4|balsa de juncos|reed raft
+W|imported|4|gruñir, rezongar|grumble
+W|imported|4|pasas|raisins
+W|imported|4|gimnasio|gym
+W|imported|4|la escuela secundaria|high school
+W|imported|4|lo cual|which
+W|imported|4|asesinato|murder
+W|imported|4|meditar|meditate
+W|imported|4|portada|cover
+W|imported|4|nabo|turnip
+W|imported|4|un precio fijo|a fixed price
+S|imported|4|se estropea mi coche cada invierno --o-- mi coche se estropea cada invierno|my car breaks down every winter
+W|imported|4|ensayos|essays
+W|imported|4|un farol|a streetlight
+W|imported|4|conchas|shells
+W|imported|4|el bulevar|boulevard
+W|imported|4|dos días atras|two days ago
+W|imported|4|durante cinco minutos|for five minutes
+W|imported|4|a causa de|because of
+W|imported|4|amargura|bitterness
+W|imported|4|el premio gordo|the grand prize
+W|verb|4|quedarquedarse|to meetto stay
+W|imported|4|adicional|additional
+W|animal|4|buho|owl
+W|verb|4|empapar|to soak
+W|imported|4|el hecho de|the fact of
+W|imported|4|recortar el personal|to layoff
+W|imported|4|tarde o temprano|sooner or later
+W|imported|4|sapo|toad
+W|animal|4|rana|frog
+W|imported|4|pijos|posh
+W|verb|4|trasnochar|to stay up late
+S|imported|4|Pasar la noche en vela|to stay up all night
+W|imported|4|trágico|tragic
+W|imported|4|no tener cuidado|not be careful
+W|imported|4|verdaderamente|truly
+W|imported|4|otras tres|three more
+W|imported|4|espantarse con|to become afraid of
+S|imported|4|¿Cómo puedo ayudarte?|How can I help you?
+S|imported|4|¿estabas lesionado?|were you injured?
+W|imported|4|las facturas del hospital|hospital bills
+S|imported|4|¿sacaste un vistazo a él?|did you get a look at him?
+S|imported|4|¿quieres venir mañana por la mañana?|do you want to come in tomorrow morning?
+W|imported|4|cheque de pago|paycheck
+S|imported|4|sí, manejamos ese tipo de casos|yes, we handle those kinds of cases
+S|imported|4|que tengas un buen día|have a good day
+W|imported|4|eso fue divertido|that was fun
+W|imported|4|dar consejos|to give advice
+W|town|4|el vecindario|the neighborhood
+W|imported|4|la báscula de baño|bathroom scale
+W|imported|4|can|bote
+W|imported|4|más a menudo|more often
+W|imported|4|daily|diariamente
+W|imported|4|garage|garaje
+W|imported|4|teenager|adolescente
+W|imported|4|broke|sin plata
+W|imported|4|la estimación|admiration
+W|imported|4|understudy|suplente
+W|imported|4|fifty|cincuenta
+W|feeling|4|feliz, contento, alegre|happy
+W|imported|4|excited|illusionado
+W|imported|4|un aumento|a raise
+W|imported|4|el desorden|clutter
+W|imported|4|remorse|remordimiento
+W|imported|4|llamar por teléfono|to telephone
+W|imported|4|stadium|estadio
+W|imported|4|gymnast|gimnasta
+W|imported|4|una elección|a choice
+W|imported|4|reseñas|reviews
+W|imported|4|orden alfabético|alphabetically
+W|imported|4|delicious|sabroso
+W|imported|4|los acontecimientos|the events
+W|imported|4|la ciudadano|the citizen
+W|imported|4|spoiled|consentida
+W|imported|4|echar flores|to flatter
+W|imported|4|echar la culpa|to blame
+S|imported|4|hay cupo|there's space
+W|imported|4|llevar la contraria|to take the opposite point of view
+W|imported|4|a fuerza de|by dint of
+W|imported|4|a revés|inside out
+W|imported|4|tener mala cara|to look bad
+W|imported|4|tener envidia|to be envious
+W|imported|4|meter las narices|to snoop around
+S|imported|4|poner a alguien por las nubes|to heap praise on
+W|imported|4|poner en claro|to make clear
+W|imported|4|poner en ridículo|to make look ridiculous
+W|imported|4|poner pleito|to sue
+W|imported|4|quedar boquiabierto|to be left astonished
+S|imported|4|quedar con el diá y la noche|to be left penniless
+W|imported|4|tomárselo con calma|to take it easy
+W|imported|4|jam|atasco
+W|imported|4|storage room|trastero
+W|imported|4|confidence|confianza
+W|imported|4|elusive|huidizo
+W|imported|4|hazelnut|avellana
+W|imported|4|cashew|anacardo
+W|imported|4|Por si las moscas|Just in case
+W|imported|4|desarticulación|dismantling
+W|imported|4|en tanto|while, meanwhile
+W|verb|4|saldar|to pay off, discharge
+W|imported|4|sent|enviadas
+W|imported|4|North Pole|Polo norte
+W|imported|4|attacked|atentados
+W|imported|4|fuerzas de tierra|ground forces
+S|imported|4|España tomó de nuevo su oferta|Spain took back its offer
+W|imported|4|el portavoz|spokesperson
+W|imported|4|líderes mundiales|world leaders
+W|imported|4|valores occidentales|Western values
+W|imported|4|semana corta|short week
+W|imported|4|limpie hacia fuera|wipe it out
+W|verb|4|socavar|to undermine
+W|imported|4|consecuencias inesperadas|unexpected consequences
+W|imported|4|highlighter|resaltador
+W|imported|4|recollection, meditation|recogimiento
+S|imported|4|Espero que la fiesta esté un montón de diversión|I hope the party is a lot of fun
+W|imported|4|lazo|loop
+W|imported|4|intervalo|interval
+W|imported|4|circuito|circuit
+W|imported|4|me sentí bien|I felt good
+W|imported|4|gossiping, curious|chismoso
+W|imported|4|notice|aviso
+W|imported|4|line|fila
+W|imported|4|street dog|perro callejero
+W|imported|4|Creole, mixed race|criollo
+W|verb|4|esposar|to handcuff
+W|imported|4|leave, furlough; license, permit|licencia
+W|imported|4|chévere|cool Que es agradable
+W|imported|4|tapete|surface
+W|imported|4|embalaje, envases|packaging
+W|imported|4|estera|mat
+W|imported|4|aciete de linaza|linseed oil
+W|imported|4|uso indebido|improper use
+W|imported|4|núcleo de alta densidad|high-density core
+W|imported|4|pesebre|manger
+W|imported|4|Hoja de Vida|resume
+W|imported|4|pasado de moda|out of fashion
+S|imported|4|recorrido desde y hacia la casa|travel time from and to the house
+W|imported|4|anuncio|advertisement
+S|imported|4|con ve ni en te|convienent
+W|imported|4|cautiverio|captivity
+W|imported|4|arbatrario, arbatraria|arbitrary
+W|verb|4|menoscabar|to impair
+W|imported|4|con sevicia|with cruelty
+W|imported|4|clumsy|torpe
+W|imported|4|better|mejor
+W|imported|4|great|estupendo
+W|imported|4|swollen|hinchado
+W|imported|4|sensitive|sensible
+W|imported|4|un diagnostico diferenciado|A differential diagnosis
+W|imported|4|inflated|inflado
+S|imported|4|¡Bless you!|salud!
+W|imported|4|ma qui lla je|makeup
+S|imported|4|far ma ceu ti cos|pharmaceuticals
+W|imported|4|training|entrenamiento
+W|imported|4|carousel|carrusel
+S|imported|4|di fi cul ta da desdificultAdades|difficulties
+W|imported|4|leafy|frondoso
+W|imported|4|sausage|salchicha
+W|imported|4|cordón|cord
+S|imported|4|¿have you lost...?|has perdido...?
+W|verb|4|expedir|to issue
+W|imported|4|enforceable|exequible
+W|imported|4|among other innovations|entre otras novedades
+W|imported|4|guilds|agremiaciones
+W|verb|4|instaurar|to set up, establish
+W|imported|4|claridad jurídica|legal clarity
+W|imported|4|readiness|prontitud
+W|imported|4|evidentiary matters|materia probatoria
+W|imported|4|impeccable|intachable
+W|imported|4|grantor|poderdante
+W|imported|4|trading, purchase and sale|compraventa
+W|imported|4|fraud, deceit, malice, intent|dolo
+W|imported|4|la gestión de los honorarios|management of fees
+W|imported|4|ejercicio de la abogacía|practice of law
+W|imported|4|deserved|merecido
+W|imported|4|responsibilidad extracontractual|tort
+W|imported|4|surprised|sorprendido
+W|imported|4|cuantia|amount
+W|imported|4|signed|firmado
+W|imported|4|jurisdicción|jurisdiction
+W|imported|4|legislación|legislation
+W|imported|4|semaforo en rojo|red traffic light
+W|imported|4|dos soberanías|two sovereigns
+W|imported|4|En este entendido|With this understanding
+W|imported|4|uno de los deberes|one of the duties
+W|imported|4|judicial orders|encargos judiciales
+W|imported|4|entreprenuers|emprendedores
+W|imported|4|cirugía|surgery
+W|imported|4|telefóno|phone
+W|imported|4|whole wheat bread|pan integral
+W|imported|4|stewed|guisada
+W|imported|4|bug|bicho
+W|imported|4|scoundrel|canalla
+W|imported|4|joint|porro
+W|imported|4|idiot, asshole|boludo
+W|imported|4|resquicio de duda|glimmer of doubt
+W|imported|4|la añoranza del saber|the nostolgia of knowledge
+W|imported|4|escote de vértigo|dizzying neckline
+W|imported|4|strictly, to the letter|rajatabla
+W|imported|4|tirar con arco|archery
+W|imported|4|bookish|libresco
+W|imported|4|syllabus|prontuario
+W|imported|4|he has qualified|ha matizado
+W|imported|4|meollo|the crux; bone marrow
+W|imported|4|bolts|pernos
+W|imported|4|felices pasacuas|Happy Holidays
+W|imported|4|impresentable|unpresentable
+W|imported|4|tornillo|screw
+W|imported|4|renacuajos|tadpoles
+W|imported|4|bajante|descendant
+W|imported|4|parido|calved
+W|imported|4|bicéfalo|bicephalousQue tiene dos cabezas.
+W|imported|4|trancón|traffic jam
+W|imported|4|agujetas|shoelaces
+W|imported|4|vagos|slackers
+W|imported|4|sobrecogedor, sobrecogedora|overwhelming
+W|imported|4|dullQue tiene poco o ningún sabor|insulso
+W|imported|4|tener un largo viaje|to have a long journey
+W|imported|4|pensamientos|thoughts
+S|imported|4|las ofertas de trabajo que ves|the job postings that you see
+W|imported|4|Perdóname|pardon me
+W|imported|4|Yo empecé|I started
+W|imported|4|notificaciones|notifications
+W|imported|4|desaparecen|they disappear
+W|imported|4|testimonio de oídas|hearsay
+W|imported|4|groundhog|marmota
+W|imported|4|certain|cierto
+W|imported|4|trial|juicio
+W|imported|4|glorification|enaltecimiento
+W|imported|4|ineptitude, inexperience|impericia
+W|imported|4|spy|espia
+W|imported|4|shyster|tinterillo
+W|imported|4|threat|amenaza
+W|imported|4|plumber|fontanero
+W|imported|4|fábrica|factory
+S|imported|4|¿when do I start?|cuando empiezo?
+W|imported|4|suplente|a substitute
+W|verb|4|sustituir|to substitute
+W|imported|4|sinful|pecaminoso
+W|imported|4|por cierto|by the way
+W|imported|4|dirección de correo electrónico|email address
+W|imported|4|encías|gums
+W|imported|4|comités|caucuses
+W|imported|4|knot|nudo
+W|imported|4|sponsor|patrocinador
+W|imported|4|campaña|campaign
+W|imported|4|se ve favorecida|is favored
+W|imported|4|remaining|restante
+W|imported|4|volunteering|trabajo voluntario
+W|imported|4|partners|socios
+W|imported|4|fence|cerca
+S|imported|4|¡que te rinda!|Hope you get a lot done!
+W|imported|4|collateral|colateral
+W|imported|4|las partes|the parties
+W|imported|4|wisely|sabiamente
+W|verb|4|agilizar|to expedite
+W|imported|4|restful|reposado
+W|imported|4|ado, fuss, fanfare, ballyhoo|alharaca
+W|imported|4|judges|jueces
+W|imported|4|pulpería|grocery store
+W|verb|4|asir|to grab, grasp
+W|imported|4|su travesía|his journey
+S|imported|4|su calzado cada vez más en el fango|his shoes increasingly in the mud
+W|imported|4|gagPañuelo|la mordaza
+W|imported|4|tragó la selvatragar|the jungle swallowed
+W|imported|4|ventarrones|gales
+W|imported|4|entre manglares|among mangrove swamps
+S|imported|4|un retén de la Policía|a police checkpoint
+W|imported|4|cinco pies de altura|five feet tall
+W|imported|4|sarpullido|rash
+W|imported|4|cabildero|lobbyist
+W|imported|4|unas fechas propuestas|some proposed dates
+W|imported|4|el amor cortés|courtly love
+W|imported|4|juramento|oath
+W|imported|4|suministro|a supply
+W|imported|4|algas marinas|seaweed
+W|imported|4|encurtido de repollo|pickled cabbage
+W|imported|4|consultores|consultants
+W|imported|4|en la medida|as far as
+W|imported|4|contestación|responsiveness
+W|verb|4|acceder|to access
+W|imported|4|el apego|attachment
+W|imported|4|at the same time|a su vez
+W|imported|4|altos mandos|high command
+W|imported|4|inhabilitaciones|disqualifications
+W|imported|4|enfado|anger
+W|imported|4|borradores|drafts
+W|imported|4|rotativa|rotating
+W|imported|4|equilibrista|a tightrope walker
+W|imported|4|los umbrales electorales|electoral thresholds
+W|verb|4|indultar|to pardon
+W|imported|4|crímenes de lesa humanidad|crimes against humanity
+W|imported|4|un delito político|a political crime or offense
+W|imported|4|dejación de las mismas|abandonment of the same
+S|imported|4|como está redactado quiebra el régimen constitucional|as written it bankrupts or breaks the constitutional regime
+W|imported|4|cianuro|cyanide
+W|imported|4|galgos|greyhounds
+W|imported|4|liderazgo|leadership
+W|imported|4|destilado|distilled
+W|imported|4|usura|usury
+W|imported|4|pisco|a white brandy made in Peru from muscat grapes
+W|imported|4|droga antidepresiva|antidepression drug
+W|imported|4|dye|colorante
+W|imported|4|batidos|shakes
+W|imported|4|parathyroid|paratiroides
+W|imported|4|en disputa|in dispute
+W|imported|4|alcance|scope
+W|imported|4|broad|ancho
+W|imported|4|fireworks|fuegos artificiales
+W|imported|4|armory|arsenal
+W|imported|4|o se supone que es|or is supposed to
+W|imported|4|small step|pasito
+W|imported|4|you forgot|olvidaste
+W|imported|4|herramientas|tools
+W|imported|4|el homicida|the murder
+W|imported|4|acabo de ver|I just saw
+W|imported|4|corrector ortográfico|spell checker
+W|imported|4|boat|barco
+W|imported|4|summer|verano
+W|imported|4|mazorcas de maíz|ears of corn
+W|food|4|carne de res|beef
+W|imported|4|peppers|pimientos
+W|imported|4|butón|button
+W|imported|4|surcharge|recargo
+W|imported|4|parking|estacionamiento
+W|imported|4|claim, complaint|reclamo
+W|imported|4|lifeguard, lifejacket|salvavidas
+W|imported|4|como el resto de cosas|like the other things
+W|imported|4|entresijos|ins and outs
+W|imported|4|issues|asuntos
+S|imported|4|Lo di|I gave it
+S|imported|4|Nos vemos a las ocho|See you at 8

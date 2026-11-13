@@ -51,7 +51,9 @@ def tidy(text):
     """Clean a field and strip bullets, quotes and dashes at the ends."""
     t = clean(text)
     t = re.sub(r"^[\s•·\-–—*\"“”'«»]+", "", t)
-    t = re.sub(r"[\s\"“”'«»]+$", "", t)
+    t = re.sub(r"[\s\"“”'«»\-–—]+$", "", t)
+    t = re.sub(r"([¿¡])\s+", r"\1", t)
+    t = re.sub(r"\s+([?!.,;:])", r"\1", t)
     return re.sub(r"\s+", " ", t).strip()
 
 
@@ -71,13 +73,28 @@ def sentence(es, en):
         return None
     if not SPANISH_MARK.search(es) and SPANISH_MARK.search(en):              # the sides are swapped
         es, en = en, es
+    if es.endswith("?") and "¿" not in es and es.count("?") == 1:
+        es = "¿" + es
+    if es.endswith("!") and "¡" not in es and es.count("!") == 1:
+        es = "¡" + es
     return es, en
 
 
 def word(es, en):
-    es, en = tidy(es), tidy(en)
+    es, en = re.sub(r"\s*\([^)]*\)", "", tidy(es)).strip(), re.sub(r"\s*\([^)]*\)", "", tidy(en)).strip()
     en = re.split(r"\s*[,;/]\s*", en)[0].strip()                             # first meaning only
     es = re.sub(r"^(El|La|Los|Las|Un|Una) ", lambda m: m.group(1).lower() + " ", es)
+    english_es = bool(re.match(r"(to|the|a|an) \w", es, re.I)) and not re.search(r"[áéíóúñ]", es)
+    spanish_en = bool(re.match(r"(el|la|los|las) \w", en, re.I)) or bool(re.search(r"[ñ¿¡]", en))
+    if english_es or (spanish_en and not re.search(r"[áéíóúñ¿¡]", es)):
+        es, en = en, es
+        es = re.sub(r"^(El|La|Los|Las|Un|Una) ", lambda m: m.group(1).lower() + " ", es)
+    if not SPANISH_MARK.search(es) and SPANISH_MARK.search(en) and not re.search(r"[áéíóúñ]", es):
+        es, en = en, es                                  # only the "English" side looks Spanish: swap
+    if re.match(r"(to|the) \w", es, re.I):
+        return None
+    if es.endswith("?") and "¿" not in es: es = "¿" + es
+    if es.endswith("!") and "¡" not in es: es = "¡" + es
     if not es or not en or len(es) > 40 or len(en) > 50 or re.search(r"[|\[\]{}=<>_\d]", es + en):
         return None
     return es, en
@@ -166,6 +183,147 @@ def deck_7000(path):
     return out
 
 
+# ---------------------------------------------------------------- the second batch of decks
+def no_parens(text):
+    return re.sub(r"\s*\([^)]*\)", "", text).strip()
+
+
+def undouble(text):
+    """Some decks write the English twice ("Why? Why?"): keep one."""
+    t = text.strip()
+    half = len(t) // 2
+    for cut in range(half - 2, half + 3):
+        a, b = t[:cut].strip(), t[cut:].strip()
+        if a and a == b:
+            return a
+    return t
+
+
+def sides(a, b):
+    """(Spanish, English) from two fields, whichever way round the card has them."""
+    ta, tb = tidy(a), tidy(b)
+    score = lambda t: len(SPANISH_MARK.findall(t)) * 2 - len(ENGLISH_MARK.findall(t)) * 2 + len(re.findall(r"[áéíóúñ¿¡]", t)) * 3
+    return (a, b) if score(ta) >= score(tb) else (b, a)
+
+
+def card(es, en, level, cat="imported"):
+    """A word or a sentence, whichever the Spanish looks like."""
+    es, en = tidy(no_parens(tidy(es))), tidy(en)          # notes in brackets out first, then trim the ends
+    if not es:
+        return None
+    n = len(es.split())
+    if n >= 5 or (n >= 2 and (es[-1:] in ".!?" or es[:1] in "¿¡")):
+        s_ = sentence(es, en)
+        return ("S", cat, level) + s_ if s_ else None
+    w = word(es, no_parens(en))
+    if not w:
+        return None
+    adj = "(adj" in tidy(en) or "(adj" in tidy(es)
+    return ("W", "adjective" if adj else (cat if cat != "imported" else topic_for(*w)), level) + w
+
+
+def orientation(notes, a_name, b_name):
+    """For each note type: True if field a holds the Spanish (decided by the whole deck, not card by card)."""
+    votes = {}
+    score = lambda t: len(SPANISH_MARK.findall(t)) * 2 - len(ENGLISH_MARK.findall(t)) * 2 + len(re.findall(r"[áéíóúñ¿¡]", t)) * 3 \
+        - (4 if re.match(r"to \w", t) else 0)
+    for model, f, _ in notes:
+        a, b = tidy(f.get(a_name, "")), tidy(f.get(b_name, ""))
+        votes[model] = votes.get(model, 0) + (1 if score(a) > score(b) else -1 if score(b) > score(a) else 0)
+    return {m: v >= 0 for m, v in votes.items()}
+
+
+def deck_advanced(path):
+    """Advanced Spanish: words and phrases (Spanish front)."""
+    notes = notes_of(path)
+    way = orientation(notes, "Front", "Back")
+    out = []
+    for i, (model, f, _) in enumerate(notes):
+        if "Spanish" in f:
+            es, en = f.get("Spanish", ""), f.get("English", "")
+        else:
+            es, en = (f.get("Front", ""), f.get("Back", "")) if way.get(model, True) else (f.get("Back", ""), f.get("Front", ""))
+        c = card(es, en, 4 if i < len(notes) / 2 else 5)
+        if c: out.append(c)
+    return out
+
+
+def deck_examples(path):
+    """Advanced Spanish Examples: sentences grouped by a root word with its frequency per million (FPM)."""
+    out = []
+    for _, f, _ in notes_of(path):
+        try:
+            fpm = float(tidy(f.get("FPM", "")) or 0)
+        except ValueError:
+            fpm = 0
+        level = 3 if fpm >= 50 else 4 if fpm >= 10 else 5
+        s_ = sentence(f.get("Spanish", ""), f.get("English", ""))
+        if s_: out.append(("S", "imported", level) + s_)
+    return out
+
+
+def deck_mixed(path, level=4):
+    """Decks with Front/Back (either way round), cloze Text/Extra, or Spanish/English fields."""
+    notes = notes_of(path)
+    way = orientation(notes, "Front", "Back")
+    out = []
+    for model, f, tags in notes:
+        if "Text" in f:                                  # cloze: Spanish text (answers filled in), English in Extra
+            es, en = f.get("Text", ""), f.get("Extra", "")
+        elif "Spanish" in f:
+            es, en = f.get("Spanish", ""), f.get("English", "")
+        else:
+            es, en = (f.get("Front", ""), f.get("Back", "")) if way.get(model, True) else (f.get("Back", ""), f.get("Front", ""))
+        cat = "verb" if "verbs" in tags.split() else "imported"
+        c = card(es, en, level, cat)
+        if c: out.append(c)
+    return out
+
+
+def deck_assimil(path):
+    """Assimil Using Spanish: Spanish sentences with the English written twice. Advanced."""
+    out = []
+    for _, f, _ in notes_of(path):
+        es_t = tidy(f.get("Front", ""))
+        n = max(1, len(re.findall(r"[.!?…]+(?=\s|$)", es_t)))
+        parts = re.split(r"(?<=[.!?…])\s+", undouble(tidy(f.get("Back", ""))))
+        s_ = sentence(es_t, " ".join(parts[:n]))
+        if s_: out.append(("S", "imported", 5 if len(s_[0].split()) > 8 else 4) + s_)
+    return out
+
+
+def deck_beginner_advanced(path):
+    """Beginner to Advanced: ranked words (with example sentences), two-sided cards with sentences,
+    and Flashcard Space cards. The conjugation drills and picture cards are skipped."""
+    out = []
+    for model, f, tags in notes_of(path):
+        if "Ranking" in f and "Spanish" in f:
+            try:
+                rank = int(re.sub(r"\D", "", tidy(f.get("Ranking", ""))) or 5000)
+            except ValueError:
+                rank = 5000
+            level = level_for(rank, 10000)
+            c = card(f["Spanish"], f.get("English", ""), level)
+            if c: out.append(c)
+            s_ = sentence(f.get("Example-Spanish", ""), f.get("Example-English", ""))
+            if s_: out.append(("S", c[1] if c else "imported", level) + s_)
+        elif "Sentence-Front" in f:
+            es, en = sides(f.get("Front", ""), f.get("Back", ""))
+            c = card(es, en, 3)
+            if c: out.append(c)
+            for a, b in (("Sentence-Front", "Sentence-Back"), ("Sentence2-Front", "Sentence2-Back")):
+                se, sn = sides(f.get(a, ""), f.get(b, ""))
+                s_ = sentence(se, sn)
+                if s_: out.append(("S", "imported", 3) + s_)
+        elif "FrontText" in f:
+            es, en = sides(f.get("FrontText", ""), f.get("BackText", ""))
+            c = card(es, en, 2)
+            if c: out.append(c)
+            s_ = sentence(f.get("SentenceExample", ""), f.get("SentenceExampleTranslation", ""))
+            if s_: out.append(("S", "imported", 2) + s_)
+    return out
+
+
 READERS = [
     ("1001_High_Intermediate*.apkg", "1001_High_Intermediate", deck_1001),
     ("550_Phrasal_Verbs*.apkg", "550_Phrasal_Verbs", deck_phrasal),
@@ -173,6 +331,15 @@ READERS = [
     ("9000_Spanish_sentences*.apkg", "9000_Spanish_Sentences", deck_9000),
     # FSI_Spanish_Basic_Course: skipped - its drill cards' English doesn't line up with the Spanish
     ("Spanish_7000*.apkg", "Spanish_7000_Sentences", deck_7000),
+    ("Advanced_Spanish.apkg", "Advanced_Spanish", deck_advanced),
+    ("Advanced_Spanish_Examples*.apkg", "Advanced_Spanish_Examples", deck_examples),
+    ("Advanced_Spanish_Phrases_and_Vocabulary*.apkg", "Advanced_Spanish_Phrases", lambda p: deck_mixed(p, 4)),
+    ("Advanced_Spanish_Sentences*.apkg", "Advanced_Spanish_Sentences", lambda p: deck_mixed(p, 4)),
+    ("Advanced_Spanish_Vocabulary.apkg", "Advanced_Spanish_Vocabulary", lambda p: deck_mixed(p, 4)),
+    ("Advanced_Spanish_Vocabulary_and_Phrases*.apkg", "Advanced_Spanish_Vocab_Phrases", lambda p: deck_mixed(p, 4)),
+    ("Assimil_Using_Spanish*.apkg", "Assimil_Using_Spanish", deck_assimil),
+    ("Beginner_to_Advanced_Spanish*.apkg", "Beginner_to_Advanced", deck_beginner_advanced),
+    # C1C2 idioms: skipped - its explanations are in Spanish only (the game needs the English)
 ]
 
 
@@ -187,7 +354,7 @@ def main():
     pack = json.load(open(os.path.join(ROOT, "Assets", "Resources", "Languages", "es", "pack.json"), encoding="utf-8"))
     have_w = {key(w["word"]) for w in pack["words"]}
     have_s = {key(s["text"]) for s in pack["sentences"]}
-    mine = {name for _, name, _ in READERS}
+    mine = {name for pattern, name, _ in READERS if glob.glob(os.path.join(ROOT, pattern))}
     for f in glob.glob(os.path.join(OUT, "*.txt")):          # re-running replaces our own files, not other imports
         if os.path.splitext(os.path.basename(f))[0] in mine:
             for line in open(f, encoding="utf-8"):

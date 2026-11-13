@@ -1,0 +1,500 @@
+# converted from Advanced_Spanish_Vocabulary.apkg
+W|verb|4|estar a la venta|to be for sale
+W|verb|4|hacer horas extraordinarias|to work overtime
+W|imported|4|el accionista|shareholder
+W|imported|4|el desempleado|unemployed person
+W|imported|4|la gerencia|management
+W|imported|4|las pérdidas|losses
+W|imported|4|el socio|partner
+W|verb|4|pagar a plazos|to pay in installments
+W|verb|4|pedir un préstamo|to take out a loan
+W|imported|4|las deudas|debts
+W|imported|4|los gastos|expenses
+W|imported|4|la tarjeta de cajero|ATM card
+W|imported|4|la licorería|liquor store
+W|imported|4|la mecedora|rocking chair
+W|job|4|el/la mesero|waiter
+W|imported|4|la minuta|menu
+W|verb|4|moverse|to move
+W|verb|4|mullir|to soften
+W|imported|4|la mudanza|move
+W|imported|4|el agnóstico|agnostic
+W|imported|4|el altruista|altruist
+W|imported|4|el anglicano|anglican
+W|imported|4|el ateo|athiest
+W|imported|4|el budista|buddhist
+W|imported|4|el católico|catholic
+W|imported|4|el conservador|conservatist
+W|imported|4|el creyente|believer
+W|imported|4|el derechista|right-winger
+W|imported|4|el hipócrita|hypocrite
+W|imported|4|el izquierdista|left-winger
+W|imported|4|el liberal|liberal
+W|imported|4|el materialista|materialistic
+W|imported|4|el pagano|pagan
+W|imported|4|el protestante|protestant
+W|verb|4|cambiar de opinión|to change one's mind
+W|verb|4|dedicarse a|to dedicate oneself to
+W|imported|4|la conversión|conversion
+W|imported|4|el clero|clergy
+W|imported|4|el oyente|listener
+W|verb|4|parquear|to park
+W|verb|4|poner pero|to find fault
+W|imported|4|por casualidad|by chance
+W|imported|4|el probador|fitting room
+W|imported|4|puede ser que|maybe
+W|verb|4|sorber|to sip
+W|imported|4|in sips|a sorbitos
+W|imported|4|montaraz|rough
+W|verb|4|desmontar|to take apart
+W|imported|4|en un santiamén|in an instant
+W|verb|4|ensamblar|to assemble
+W|imported|4|la pieza|piece
+W|imported|4|la extrañeza|surprise
+W|verb|4|resignarse|to resign
+W|verb|4|hacerse a|to get used to
+W|verb|4|hacerse a la idea|to get used to the idea
+W|verb|4|vagar|to wander
+W|imported|4|el adagio|adage
+W|imported|4|adelgazante|slimming
+W|imported|4|la brecha|gap
+W|verb|4|bregar|to struggle
+W|imported|4|la brega|struggle
+W|imported|4|la befa|taunt
+W|imported|4|la agonía|anguish
+W|imported|4|previsto|anticipated
+W|verb|4|desgraciar|to ruin
+W|verb|4|tartamudear|to stammer
+W|imported|4|fundir un fusible|blow a fuse
+W|imported|4|el cambio de marcha|gear change
+W|imported|4|mi corazón se estremece|my heart trembled
+W|imported|4|el bastardo|bastard
+W|imported|4|eso me basta|that's enough for me
+W|verb|4|sobrar|to be left over
+W|imported|4|de sobra|more than enough
+W|imported|4|es de sobra conocido|it's common knowledge
+W|verb|4|hinchar|to inflate
+W|verb|4|hincharse de|to swell up with
+W|imported|4|el gozo|enjoyment
+W|imported|4|de reojo|out of the corner of one's eye
+W|imported|4|escueto|plain
+W|imported|4|el suspiro|sigh
+W|imported|4|la obscenidad|obscenity
+W|verb|4|arrastrar|to drag
+W|verb|4|adelantarse a|to anticipate
+W|imported|4|buen gusto|good taste
+W|imported|4|la franqueza|frankness
+W|verb|4|coincidir|to coincide
+W|imported|4|amplia de miras|broad-minded
+W|imported|4|el papel de cartas|writing paper
+S|imported|4|me basta con estar así|I'm content being like this
+W|verb|4|husmear|to scent
+W|verb|4|aguzar/fomentar|to incite
+W|verb|4|aguzar el oído|to prick up one's ears
+W|verb|4|aguzar la vista|to keep one's eyes peeled
+W|imported|4|el/la transúente|passer-by
+W|imported|4|cinco días seguidos|five days running
+W|verb|4|oficiar|to celebrate
+W|imported|4|deshecho|destroyed
+W|imported|4|desfasado|obselete
+W|verb|4|desfasar|to phase out
+W|verb|4|desperezarse|to strech
+W|verb|4|prescindir de|to dispense with
+W|verb|4|ir al grano|to get to the point
+W|imported|4|la hacha|axe
+W|imported|4|la añoranza|nostalgia
+W|verb|4|echar a correr|to break into a run
+W|verb|4|echar a reír|to burst out laughing
+S|verb|4|asentir con la cabeza la cabezada|to nod, shake your head
+W|verb|4|dar/echar una cabezada|to nod off
+W|imported|4|el celo|zeal
+W|verb|4|dar celos a|to make somebody jealous
+W|verb|4|tener celos a|to be jealous of somebody
+W|imported|4|se ruega no fumar|please do not smoke
+W|verb|4|discurrir|to think up
+W|imported|4|el bullicio|din
+W|verb|4|empapar/embeber|to drench
+W|verb|4|abotargarse|to swell up
+W|imported|4|me sentí reconfortado|I felt comforted
+W|verb|4|reconfortar|to comfort
+W|verb|4|atinar a hacer algo|to manage to do something
+W|imported|4|el percance|mishap
+W|verb|4|despeinar|to ruffle someone's hair
+W|imported|4|procedente de|from
+W|verb|4|reprochar|to reproach
+W|imported|4|si me apresuraba|if I hurried
+W|imported|4|la mueca|expression
+W|verb|4|hacer una mueca|to make a face
+W|verb|4|afiliar|to sharpen
+W|verb|4|dirigirse a|to head for
+W|imported|4|par|even
+W|imported|4|de par en par|wide open
+W|imported|4|sin parangón|incomprable
+W|imported|4|versado en|versed in
+W|imported|4|el despecho|spite
+W|verb|4|despachar|to deal with
+W|imported|4|la virtud|virtue
+W|verb|4|despacharse bien|to give somebody
+W|imported|4|mediante|by means of
+W|imported|4|por medio de|by means of
+W|verb|4|correr el riesgo|to run the risk
+W|verb|4|arriesgar/poner en peligro|to put at risk
+W|imported|4|cuantioso|substantial
+W|imported|4|apocado|timid
+W|verb|4|desdeñar|to scorn
+W|verb|4|optar|to choose
+W|imported|4|el Todopoderoso|the Almighty
+W|imported|4|la bravata|threat
+W|verb|4|pasar inadvertido|to go unnoticed
+W|home|4|capital|key
+W|imported|4|de importancia capital|of great importance
+W|verb|4|efectuar|to carry out
+W|imported|4|veloz|quick
+W|verb|4|dignarse|to deign to do sth.
+W|imported|4|suelta|loose
+W|imported|4|majo/a|good-looking
+W|verb|4|azorar|to embarrass
+W|verb|4|azorarse|to get embarrassed
+W|verb|4|caer en gracia a|to take a liking to
+S|imported|4|caigo en gracia a él|I take a liking to him
+W|home|4|el lecho|bed
+W|imported|4|lecho de muerte|deathbed
+W|verb|4|volver de vacío|to come back empty-handed
+W|imported|4|el cansancio|tiredness
+W|verb|4|tantear|to feel
+W|imported|4|el olvido|oblivion
+W|imported|4|la alma|soul
+W|verb|4|conformarse con|to be content with sth
+W|imported|4|su preferido|his favourite
+W|imported|4|la tenacidad|tenacity
+W|verb|4|perder la paciencia con|to lose patience
+W|verb|4|joder a alguien|to piss somebody off
+W|verb|4|dar dedo|to finger
+W|imported|4|el maricón|gay man
+W|imported|4|la grosería|swear word
+W|verb|4|respaldar a alguien|to stand up for someone
+W|verb|4|hacer frente a alguien|to stand up to something
+W|verb|4|frisar en los trienta|to be around thirty
+W|verb|4|proveerse de|to stock up on
+W|imported|4|honestamente|honestly
+W|imported|4|el comportamento|behaviour
+W|imported|4|más vale + infinitive|you had better....
+W|imported|4|el quinceañero|teenager
+W|imported|4|nombre de pila|first name
+W|imported|4|el tópico|cliché
+W|imported|4|la recluta|recruit
+W|verb|4|presumir, alardear|to show off
+W|imported|4|la envidia|envy
+W|verb|4|susurrar, cuchichear|to whisper
+W|imported|4|ansia de poder|thirst for power
+W|verb|4|burlarse de alguien|to make fun of somebody
+W|imported|4|paso a paso|step by step
+W|imported|4|el digusto|upset
+W|imported|4|la tardanza|lateness
+W|imported|4|al rato|shortly afterwards
+W|imported|4|hacer rato|a while ago
+W|verb|4|distraer|to entertain
+W|imported|4|menudo|small
+W|imported|4|sonado|notorious
+W|imported|4|la frialdad|indifference
+W|verb|4|deducir|to deduce
+W|imported|4|desprecio|disdain
+W|verb|4|aparentar|to seem
+W|imported|4|el atillo|bundle
+W|verb|4|desorbitar|to exaggerate
+W|imported|4|desorbinante|excessive
+W|verb|4|desorbitarse|to get out of hand
+W|verb|4|meterse con|to hassle
+W|verb|4|lamer|to lick
+W|verb|4|deslumbrar|to dazzle
+W|imported|4|terso|smooth
+W|verb|4|rechistar|to complain
+W|imported|4|el tíron|pull
+W|imported|4|el escalofrío|chill
+W|imported|4|la tetilla|nipple
+W|imported|4|la polla|dick
+W|imported|4|el recleo|distrust
+W|verb|4|largar|to give
+W|imported|4|el carnet de identidad|identification card
+W|verb|4|franquear|to clear
+W|verb|4|mosquearse|to become suspicious
+W|imported|4|enterado|well-informed
+W|verb|4|pellizcar|to pinch
+W|imported|4|ahora mismo|right now
+W|imported|4|no ya|not only
+W|verb|4|ahogar|to drown
+W|verb|4|humillar|to humiliate
+W|verb|4|desconfiar|to distrust
+W|imported|4|atóntio|astonished
+W|verb|4|rapar|to crop
+W|imported|4|el malhumor|bad mood
+W|job|4|el/la abogado|lawyer
+W|verb|4|abrochar|to fasten
+W|imported|4|acaso, tal vez|perhaps
+W|imported|4|el acumulador|battery
+W|home|4|la alcoba|bedroom
+W|home|4|la recámara|bedroom
+W|verb|4|amueblar|to furnish
+W|imported|4|la azotea|terrace
+W|imported|4|la banqueta|sidewalk
+W|imported|4|los bienes inmuebles|real estate
+W|imported|4|la bocacalle|intersection
+W|verb|4|brindar por|to make a toast to
+W|imported|4|el campeón/la campeóna|champion
+W|imported|4|la carie|cavity
+W|imported|4|el/la cartero|mailman
+W|imported|4|el/la chaperón|chaperone
+W|imported|4|la chequera|checkbook
+W|imported|4|el coctel|cocktail
+W|imported|4|la coleta/la trenza|pigtail
+W|imported|4|con retraso|late
+W|imported|4|el/la conserje|receptionist
+W|imported|4|al contado|cash
+W|verb|4|copear|to have drinks
+W|imported|4|el corredor|corridor
+W|imported|4|el/la cirujano|surgeon
+W|imported|4|la desviación|detour
+W|verb|4|echarle el diente|to try hard
+W|imported|4|la droguería|drugstore
+W|verb|4|echar de menos|to miss
+W|verb|4|enderezar|to straighten
+W|verb|4|endosar|to endorse
+W|verb|4|enviudar|to become a widow
+W|imported|4|el escote|neckline
+W|imported|4|la esmalte|enamel
+W|imported|4|el esquema|outline
+W|verb|4|estar encinta|to be pregnant
+W|verb|4|estar para ir|to be about to go
+W|imported|4|estar por hacer|yet to be done
+W|imported|4|la faena|task
+W|verb|4|filmar, rodar|to film
+W|verb|4|hacer caso|to pay attention
+W|verb|4|hacer escala en|to stop over in
+W|imported|4|hervido/a|boiled
+W|verb|4|hervir, bullir|to boil
+W|imported|4|el/la inquilino|tenant
+W|imported|4|el jerez|sherry
+W|imported|4|el jonrón|home run
+W|verb|4|estar de balde|to be doing nothing
+W|imported|4|en balde|in vain
+W|imported|4|de balde|free of charge
+W|imported|4|ni siquiera|not even
+W|imported|4|el/la asesor|advisor
+W|imported|4|el escrúpulo|scruple
+W|imported|4|sin escrúpulos|unscripulous
+W|verb|4|reñir con|to fight with
+W|imported|4|lo mínimo posible|the minimum possible
+W|imported|4|tras otra|after another
+S|imported|4|devoraba una novela tras otra|I devoured novels one after another
+W|imported|4|A pesar de ello|in spite of this
+W|imported|4|el examen de ingreso|entrance exam
+W|imported|4|pese a|despite
+W|imported|4|decente|decent
+W|imported|4|bajo el mismo techo|under the same roof
+W|verb|4|apasionarse|to be fascinated
+W|verb|4|carecer de algo|to lack something
+W|imported|4|apartado de|apart from
+W|verb|4|especializarse|to specialise
+W|verb|4|prestarse para|to lend itself to
+W|verb|4|hurgar|to rummage around
+W|imported|4|la gesta|feat
+W|imported|4|me apetece salir|I feel like going out
+W|imported|4|el estrado|platform
+W|imported|4|la vislumbre|glimmer
+W|verb|4|estar pendiente|to be waiting
+S|imported|4|a pesar de no tener tiempo|in spite of having no time
+W|imported|4|justo cuando|just as
+W|imported|4|perspicaz|perceptive
+W|imported|4|disminuido|disabled
+W|imported|4|despojado|bereft
+W|imported|4|el teniente|lieutenant
+W|verb|4|someter|to submit
+W|body|4|la cabecera|head
+W|imported|4|el ánimo|encouragement
+W|imported|4|con todo|yet
+W|imported|4|sobria|sober
+W|imported|4|hermosa|beautiful
+W|imported|4|la traición|betrayal
+W|verb|4|abjurar|to renounce
+W|imported|4|la marea|tide
+W|imported|4|desenvoltura|assurance
+W|imported|4|del mismo modo|likewise
+W|imported|4|abarcador|comprehensive
+W|imported|4|el desuso|disuse
+W|imported|4|el retazo|fragment
+W|verb|4|encuadrar|to frame
+W|imported|4|el engranaje|mechanism
+W|verb|4|atornillar|to screw
+W|imported|4|dentro de poco|shortly
+W|imported|4|el recambio|spare
+W|imported|4|indefenso|defenseless
+W|imported|4|desamparado|helpless
+W|imported|4|desposeído|deprived
+W|imported|4|verb + de golpe|suddenly...
+W|clothes|4|los lazos|ties
+W|imported|4|la deriva|drift
+W|verb|4|estar a la deriva|to be adrift
+W|verb|4|extraviarse|to lose one's way
+W|imported|4|el ámbito|scope
+W|imported|4|por culpa|because
+W|verb|4|hallarse|to find oneself
+W|imported|4|el desconcierto|confusion
+W|imported|4|desnudo|bare
+W|imported|4|abrumador|overwhelming
+W|imported|4|novísimo|newest
+W|imported|4|el graznido|squawk
+W|verb|4|entrecerrar|to squint
+W|imported|4|el sudor|sweat
+W|imported|4|irrefrenable|uncontrollable
+W|imported|4|turgente|swollen
+W|imported|4|turbado|disturbed
+W|verb|4|sumir|to sink
+W|imported|4|la dureza|hardness
+W|imported|4|espeso|thick
+W|verb|4|espesar|to thicken
+W|imported|4|el grumo|lump
+W|imported|4|la ráfaga|gust
+W|imported|4|el desvanecimiento|faint
+W|verb|4|caer desvanecido|to fall in a faint
+W|verb|4|desvanecer|to make disappear
+W|imported|4|la anchoa|anchovy
+W|verb|4|importunar|to bother
+W|imported|4|el/la remitente|sender
+W|imported|4|volante|flying
+W|verb|4|atiborrar|to fill
+S|imported|4|me asombra verte trabajar tanto|I'm amazed to see you working so hard
+W|imported|4|la vorágine|vortex
+W|imported|4|el llorón|crybaby
+W|verb|4|imperar|to prevail
+W|verb|4|delictivo|criminal
+W|imported|4|underlying|subyacente
+W|verb|4|irse al traste|to fall through
+W|verb|4|optar a|to compete for sth
+W|imported|4|ingente|huge
+W|imported|4|la súplica|plea
+W|nature|4|la onda|wave
+W|imported|4|displicente|offhand
+W|imported|4|melena|long hair
+W|imported|4|rocoso|rocky
+W|imported|4|el peñasco|large rock
+W|verb|4|cegar|to blind
+W|verb|4|mecer|to rock
+S|imported|4|1. el muelle 2. el muelle|1. the spring, springy/soft. 2. wharf, quay, pier
+W|verb|4|deslizar|to slip
+W|adjective|4|el estrépito|noise
+W|imported|4|el despiste|error
+W|verb|4|ingerir|to consume
+W|imported|4|namely|a saber
+W|imported|4|funesto|ill-fated
+W|imported|4|el rango|rank
+S|imported|4|ser del agrado de alguien|to be to sb's liking
+W|imported|4|la ingenuidad|ingenuousness
+W|adjective|4|militar|military
+W|verb|4|alejar|to move away
+W|verb|4|transcurrir|to elapse
+W|imported|4|el borde|edge
+W|imported|4|constar de|to consist of
+W|imported|4|me consta que|I have evidence that
+W|imported|4|abogar por alguien|to defend someone
+W|verb|4|arrepentir|to reprent
+W|verb|4|cagar|to shit
+W|imported|4|zafarse de|to escape from
+W|imported|4|cocer, cocinar|to cook
+W|imported|4|hostigar, molestar|to bother
+W|imported|4|guardarse de hacer algo|to avoid doing something
+W|verb|4|mobilizar|to mobilize
+W|verb|4|acalorarse|to get excited
+S|imported|4|conclusive, resounding, overwhelming, severe, tough, aggressive|contundente
+S|imported|4|en la suerte y en la desgracia|for better or worse
+W|imported|4|el noviazgo|engagement
+W|imported|4|irse a la quiebra|to go bankrupt
+W|imported|4|dar consuelo a alguien|to comfort
+W|verb|4|abofetear|to slap
+W|imported|4|chabacana|vulgar
+W|imported|4|iracundo|passionate
+W|imported|4|quisquilloso|oversensitive
+W|imported|4|embobar embobarse|to stupefy
+W|imported|4|el obsequio|gift
+W|imported|4|por obsequio de|for the sake of
+S|imported|4|ir a la vanguardia de|to be at the forefront of
+W|imported|4|la verbena|street party
+W|imported|4|la cerradurra|lock
+W|imported|4|la rotonda|roundabout
+W|imported|4|la greguría|a play on words
+W|verb|4|parlotear|to gab
+W|animal|4|la lechuza|owl
+W|imported|4|atigrado|tabby
+W|verb|4|parpadear/pestañar|to blink
+W|imported|4|el embotellamiento|traffic jam
+W|imported|4|el tamiz|sieve
+W|verb|4|tamizar|to sift
+W|verb|4|enfurecerse|to infuriate
+W|imported|4|nuevamente|anew
+W|verb|4|transtornar|to disturb
+W|verb|4|tambalearse|to teeter
+W|imported|4|chillón|shrill
+W|imported|4|el abatimiento|reduction
+W|verb|4|escrudriñar|to scrutinize
+W|verb|4|centellear|to twinkle
+W|verb|4|resoplar|to puff
+W|imported|4|una mirada de soslayo|sideways glance
+W|verb|4|halgar|to flatter
+W|verb|4|apesadumbrar|to distress
+W|imported|4|a regañadientes|reluctantly
+W|verb|4|rugir|to roar
+W|imported|4|desaliñado|untidy
+W|imported|4|aliviado|relieved
+W|imported|4|el aullido|howl
+W|imported|4|el umbral|doorstep
+W|verb|4|titilar|to twinkle
+W|adjective|4|ronco|hoarse
+W|imported|4|el pulcro|neat
+W|imported|4|un sobresalto|a start
+W|imported|4|el beicon, el tocino|bacon
+W|verb|4|aborrecer|to loathe
+W|verb|4|bramar|to roar or to bellow
+W|imported|4|entretanto|meanwhile
+W|imported|4|por si|if
+W|imported|4|el tunante|rogue
+W|imported|4|el envolotrio|bundle
+W|imported|4|la col, el repollo|cabbage
+W|imported|4|arruinar, estropear|to ruin
+W|imported|4|el llanto|crying
+W|imported|4|la renda|piece of clothing
+W|verb|4|estrujar|to squeeze
+W|verb|4|dormitar|to snooze
+W|verb|4|guiñar|to wink
+W|verb|4|follarse|to screw
+W|verb|4|mamar|to suck
+W|adjective|4|ensordecer esordecedor|to deafen
+W|imported|4|quita de en medio|get out of the way
+W|verb|4|juguetear|to play
+W|imported|4|encariñarse con|to grow fond of
+W|imported|4|apuesto|handsome
+W|verb|4|esquivar|to avoid
+W|imported|4|reclamar reclamarse|to claim
+W|verb|4|bufar|to snort
+W|verb|4|graznar|to croak
+W|imported|4|la rendija|crack
+W|imported|4|la amargura|grief
+W|verb|4|bregar/forcejear|to struggle
+W|verb|4|jadear|to pant
+W|imported|4|fofo|soft
+W|imported|4|el regazo|lap
+W|verb|4|gimotear|to whine
+W|verb|4|amortiguar|to soften
+W|imported|4|el crujido|rustle
+W|imported|4|el enredo|tangle
+W|verb|4|desparramar|to scatter
+W|imported|4|el allanamiento|raid
+W|verb|4|impersionar|to impress
+W|verb|4|agazaparse|to crouch down
+W|imported|4|querer decir|to mean
+W|imported|4|el silbido|whistle
+W|imported|4|condenado|damned
+W|imported|4|el ultraje|outrage
+W|imported|4|el apremio|urgency
+S|imported|4|el respingo dar un respingo|a start, jump
+W|verb|4|empuñar|to grasp
+W|imported|4|rendir rendirse|to produce
+W|imported|4|mugriento|filthy

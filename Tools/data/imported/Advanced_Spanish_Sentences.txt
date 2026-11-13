@@ -1,0 +1,233 @@
+# converted from Advanced_Spanish_Sentences.apkg
+S|imported|4|Muevas las sillas|You move the chairs
+S|imported|4|Ella tropieza con la sofa|She bumps into the sofa
+W|imported|4|Confiesan.|They confess.
+S|imported|4|El programa comienza|The program begins
+S|imported|4|Convertimos el dinero a dólares|We convert the money into dollars
+S|imported|4|Él pide ayuda|He asks for help
+S|imported|4|Ella ríe mucho|She laughs a lot
+S|imported|4|Consigue un trabajo|He gets a job
+S|imported|4|Despides el empleado|You fire the employee
+S|imported|4|Ella gime|She groans
+S|imported|4|Él colige la verdad desde los hechos|He deduces the truth from the facts
+S|imported|4|El sacredote te bendice|The priest blesses you
+S|imported|4|¿Qué pides?|What are you asking for?
+S|imported|4|Tiemblo con la rabia|I tremble with rage
+S|imported|4|Este concierto me parece absurdo|This concert seems absurd to me
+S|imported|4|Cada cuatro años elegimos un nuevo líder|Every four years we elect a new leader
+S|imported|4|Os despertáis|You (pl. fam.) wake up
+S|imported|4|Os dormís|You (pl. fam.) fall asleep
+S|imported|4|Te llamas Miguel|Your name is Mike
+S|imported|4|A ellos les interesa la película|The movie is interesting to them
+S|imported|4|¿Qué te importa?|What is important to you?
+S|imported|4|¿Estás escribiéndoles?|Are you writing to them?
+S|imported|4|¿Por qué estás diciéndomelo?|Why are you telling it (m.) to me?
+S|imported|4|Están sentándose|They are sitting down
+S|imported|4|Están siguiéndonos|They are following us
+S|imported|4|Ella trabaja por dos horas|She worked for two hours
+S|imported|4|Me tropecé en el peldaño de tu casa|I bumped into your house's step
+S|imported|4|Estuvisteis aquí por no más de diez minutos|You (pl. fam.) were here for no more than ten minutes
+S|imported|4|Tuvieron trabajar por nueve horas ayer|They had to work for nine hours yesterday
+S|imported|4|Ya me puse mis zapatos|I already put on my shoes
+S|imported|4|Estuvimos allí por una media hora|We were there for half an hour
+S|imported|4|Estuve en la tienda por treinta segundos|I was in the store for thirty seconds
+S|imported|4|¿Por qué te fuiste?|Why did you go away?
+S|imported|4|Les dije mi nombre a los niños|I told the children my name
+S|imported|4|No les dije nada|I didn't tell them anything
+S|imported|4|¿Te dijo lo que me dijo ayer?|Did he tell you what he told me yesterday?
+S|imported|4|El azúcar atrajo las moscas|The sugar attracted the flies
+S|imported|4|Le di un paquete a Brandi ayer|I gave Brandi a package yesterday
+S|imported|4|Nos vio en el cinema|She saw us at the movies
+S|imported|4|Le dije, ¿cuándo vamos?|I said to her, when do we leave?
+S|imported|4|Ella durmió por catorce horas y cincuenta minutos|She slept for 14 hours and 50 minutes
+S|imported|4|Él pidió más café|He requested more coffee
+S|imported|4|Nuestro abogado nos advertió del peligro|Our lawyer warned us of the danger
+S|imported|4|¿Te advirtieron de tus derechos?|Did they advise you of your rights?
+S|imported|4|Dorotea sigió el camino amarillo de ladrillos|Dorothy followed the yellow brick road
+S|imported|4|¿Leíste mi periódico?|Did you read my newspaper?
+S|imported|4|El plato huyó con la cuchara|The dish ran away with the spoon
+S|imported|4|Humpty Dumpty se cayó|Humpty Dumpty fell down
+S|imported|4|La rama se cayó del árbol|The branch fell from the tree
+S|imported|4|Condujisteis noventa millas|You (pl. fam.) drove 90 miles
+S|imported|4|Deduje la repuesta|I deduced the answer
+S|imported|4|Mencken vivió en Baltimore toda su vida|Mencken lived in Baltimore his entire life
+S|imported|4|Una de sus canciones más conocidas es "Vengo|One of her most famous songs is "Vengo
+S|imported|4|Él discutió el queso|He discussed cheese
+S|imported|4|No supieron hasta ayer|They didn't find out until yesterday
+S|imported|4|¿Por qué no quisisteis salir?|Why did you (pl. fam.) refuse to leave?
+S|imported|4|Nos conocimos en un ascensor|We met each other on an elevator
+S|imported|4|Invitabamos a todos a nuestras fiestas|We used to invite everyone to our parties
+S|imported|4|Llevábamos uniformes a la escuela|We wore uniforms to school
+S|imported|4|Melissa estaba embarazada|Melissa was pregnant
+S|imported|4|Llevabais sombreros ridículos|You (pl. fam.) wore silly hats
+S|imported|4|El gato estaba en el desván|The cat was in the attic
+S|imported|4|Mi pluma no funcionaba|My pen didn't work
+S|imported|4|Nadie escuchaba mientras que el político hablaba|Nobody was listening while the politician was speaking
+S|imported|4|Escuchaban la radio mientras estudiaban|They were listening to the radio while they were studying
+W|imported|4|Intentábamos.|We were trying.
+S|imported|4|Me duchaba mientras ellos desayunaban|I was taking a shower while they were eating breakfast
+S|imported|4|Pensábamos mucho en ti|We were thinking about you a lot
+S|imported|4|Anita odiaba el color rojo|Annie hated the color red
+S|imported|4|¿Lo conocías?|Did you know him?
+S|imported|4|Estabamos muy triste por mucho tiempo|We were very sad for a long time
+S|imported|4|Me gustaban las flores en el jardín|I liked the flowers in the garden
+S|imported|4|Aunque el me molestaba lo amaba|Even though he bothered me, I loved him
+S|imported|4|Ella se preocupaba mucho por ti|She worried about you a lot
+S|imported|4|¿En qué pensabas?|What were you thinking about?
+S|imported|4|El año pasado no podían hablar español|Last year, they couldn't speak Spanish
+S|imported|4|El pan estaba mohoso y yo no podía comerlo|The bread was moldy and I couldn't eat it
+S|imported|4|Él nos mentía con frecuencia, pero nunca le decíamos nada|He frequently lied to us, but we never said anything to him
+S|imported|4|Ella nunca estaba feliz|She was never happy
+S|imported|4|Eran las cuatro y cuarto cuando encontré el dinero|It was quarter after four when I found the money
+S|imported|4|Sonó el telefono|The telephone rang
+S|imported|4|Yo iba a darle pasta de dientes para su mal aliento|I was going to give him toothpaste for his bad breath
+S|imported|4|¿A dónde ibais a enviar este grifo?|Where were you (pl. fam.) going to send this faucet?
+S|imported|4|Habrá dos almohadas en la cama|There will be two pillows on the bed
+S|imported|4|No habrá ruido durante el programa|There will not be any noise during the program
+S|imported|4|Lo pondré en la sala|I'll put it in the living room
+S|imported|4|Habrá trescientas chicas allí|There will be three hundred girls there
+S|imported|4|No le diré tu secreto a nadie|I will not tell your secret to anyone
+S|imported|4|Te pondrás tu sombrero|You will put on your hat
+S|imported|4|No se acostarán hasta la medianoche|They will not go to bed until midnight
+S|imported|4|Mi carro no cabrá en el garaje|My car won't fit in the garage
+S|imported|4|¿Por qué leería alguien esto?|Why would anybody read this?
+S|imported|4|La pulsera está rota|The bracelet is broken
+S|imported|4|¿Por cuántos años has conocido Robyn?|For how many years have you known Robyn?
+S|imported|4|¿Han vuelto los recién casados?|Have the newlyweds returned?
+S|imported|4|Habíamos salido por ocho años antes de casarnos|We had dated for 8 years before getting married
+S|imported|4|¿Te habían provisto con bastante información?|Had they provided you with enough information?
+W|imported|4|¡Vuela!|Fly!
+W|imported|4|¡Comienza!|Begin!
+W|imported|4|¡Sigue!|Continue!
+W|imported|4|¡Confiesa!|Confess!
+S|imported|4|¡No practiques ahora!|Don't practice now!
+S|imported|4|¡No pagues la cuenta!|Don't pay the bill!
+S|imported|4|¡Ten el dinero para mañana!|Have the money by tomorrow!
+S|imported|4|¡Sé amable!|Be kind!
+W|imported|4|¡Pague!|Pay!
+W|imported|4|¡Hágalo!|Do it!
+S|imported|4|¡Toque el piano!|(Usted) Play the piano!
+W|imported|4|¡Léalo!|Read it!
+S|imported|4|¡Tráigalo aquí!|(Usted) Bring it here!
+W|imported|4|¡Levántese!|Stand up!
+W|imported|4|¡Démelo!|Give it to me!
+W|imported|4|¡Siéntase!|Sit down!
+S|imported|4|¡Póngalo allí!|(Usted) Put it there!
+S|imported|4|¡No lo haga!|(Usted) Don't do it!
+S|imported|4|¡Dígale un cuento!|(Usted) Tell him a story!
+W|imported|4|¡Acuéstense!|Go to bed!
+S|imported|4|¡Lávense las manos!|(Ustedes) Wash your hands!
+S|imported|4|¡Cepíllense los dientes!|(Ustedes) Brush your teeth!
+S|imported|4|¡No salgáis!|(Vosotros) Don't leave!
+S|imported|4|¡No os acostéis!|(Vosotros) Don't go to bed!
+S|imported|4|¡No mintamos!|Let's not lie!
+W|imported|4|¡Cantémosles!|Let's sing to them!
+S|imported|4|¡Seamos personas honradas!|Let's be honest people!
+S|imported|4|¡No nos vayamos esta noche!|Let's not go away tonight!
+S|imported|4|¡Vámonos hoy!|Let's go away today!
+S|imported|4|Sugieren que lo hagas|They suggest that you do it
+S|imported|4|Pide que estemos aquí a las nueve|He requests that we be here at nine
+S|imported|4|¿Por qué pides que lo haga yo?|Why do you request that I do it?
+S|imported|4|¿Quieres que yo cuente el dinero?|Do you want me to count the money?
+S|imported|4|Espero que todo me vaya bien|I hope that everything goes well for me
+S|imported|4|¿Por qué no crees que lo conozcamos?|Why don't you believe that we know him?
+S|imported|4|Ella no está segura de que siempre diga la verdad|She isn't sure he always tells the truth
+S|imported|4|No me imagino que él lo crea tampoco|I don't imagine that he believes it either
+S|imported|4|Dudo que le guste esta nueva posición|I doubt that he likes this new position
+S|imported|4|No estoy convencido de que él esté listo para tan grande responsibidad|I'm not convinced that he is ready for so great a responsibility
+S|imported|4|Quiero que todo le salga bien|I want everything to go well for him
+S|imported|4|Es necesario que les llames el martes|It is necessary that you call them Tuesday
+S|imported|4|Es importante que nadie sepa ese secreto|It's important that no one knows that secret
+S|imported|4|Es una lástima que el helado tenga tantas calorías|It's a shame that ice cream has so many calories
+S|imported|4|Puede ser que Donald no sea lo que dice que es|It may be that Donald isn't what he says he is
+S|imported|4|Secaré los platos mientras que los laves|I'll dry the dishes while you wash them
+S|imported|4|Él nunca estará feliz hasta que sepa conjugar los verbos|He'll never be happy until he knows how to conjugate verbs
+S|imported|4|Te escribiré a menos que me diverta|I'll write to you unless I'm having a good time
+S|imported|4|Quiero vivir en una ciudad donde no haya crimen|I want to live in a city where there isn't any crime
+S|imported|4|Acaso lo conozcas|Maybe you know him
+S|imported|4|Tal vez él no sea la persona más inteligente en el mundo|Maybe he isn't the smartest person in the world
+S|imported|4|Aunque me grites, no cambiaré mi idea|Even if you yell at me, I won't change my mind
+S|imported|4|Aunque pongas el gato en el sótano, ella todavía estornudará|Even if you put the cat in the basement, she will still sneeze
+S|imported|4|Aunque piensen que estoy loco, sé tengo razón|Although you all may think I'm crazy, I know I'm right
+S|imported|4|No había nadie en la clase que hablara francés|There wasn't anyone in the class who spoke French
+S|imported|4|Señor Limpio pidió que nos quitáramos los zapatos antes de entrar en su palacio|Mr. Clean requested that we take off our shoes before entering his palace
+S|imported|4|Preparó la cena para que no nos moriéramos de hambre|She prepared the dinner so that we wouldn't die of hunger
+S|imported|4|Estudió en case de que hubiera un examen el día siguente|She studied in case there was a test the next day
+S|imported|4|No creímos que nadie nos oyera|We didn't think that anyone heard us
+S|imported|4|¿Había alguien allí que supiera "El otoño del patriarca"?|Was there anyone there who knew "The Autumn of the Patriarch"?
+S|imported|4|Pedimos que continuaran sin nosotros|We asked that they continue without us
+S|imported|4|No estamos convencidos que Muffett tuviera miedo a la araña|We're not convinced that Muffett was afraid of the spider
+S|imported|4|Es un milagro que la aerolínea no perdiera tu equipaje|It is a miracle that the airline didn't lose your luggage
+S|imported|4|Este anillo valdría mucho más dinero si el diamante fuera genuino|This ring would be worth a lot more money if the diamond were genuine
+S|imported|4|¿Si los cerdos pudieran volar, a dónde irían?|If pigs could fly, where would they go?
+S|imported|4|Él se ve como si perdiera su mejor amigo|He looks as if he lost his best friend
+S|imported|4|Fue como si no pudiera recordar nada|It was as if I couldn't remember anything
+S|imported|4|Ella vivía cada día como si lo fuera el último|She lived each day as if it were her last
+S|imported|4|Ella se veía como si perdiera mucho peso|She looked as though she lost a lot of weight
+S|imported|4|¿Si pudieras, echarías al correo estas cartas para mi?|Could you mail these letters for me?
+S|imported|4|¿Si pudieras, me harías un favor?|Would (could) you do a favor for me?
+S|imported|4|¿Si pudieras, te callarías, por favor?|Could you be quiet please?
+S|imported|4|Quisiera que nevara|I wish that it would snow
+S|imported|4|Quisiéramos que se fueran a su casa|We wish that they would go home
+S|imported|4|¿Habréis planchado vuestros vestidos para esta tarde?|Will you (pl. fam.) have your dresses ironed by this afternoon?
+W|imported|4|a la vuelta|around the corner
+S|imported|4|¿De qué parte es la señora?|Where's the lady from?
+S|imported|4|Páseme el agua|Hand me the water
+S|imported|4|Déme más vino|Give me more wine
+S|imported|4|Juan lo quiere amueblado|John wants it furnished
+S|imported|4|¡Y yo que estoy sin comer!|And here I am without having eaten!
+S|imported|4|¡Y Nancy que está sin carro!|And here's Nancy without a car!
+S|imported|4|Mi ducha está a tu disposición|You're welcome to use my shower
+S|imported|4|¿La han atendido bien en Inmigración?|Have they taken good care of you (formal, fem.) in Immigration?
+S|imported|4|Le han revisado las maletas|They have searched his suitcases
+S|imported|4|Elena nos lava las camisas|Elena washes our shirts
+S|imported|4|Tenga la bondad de vestirse en seguida|Please dress right away (formal)
+S|imported|4|Estoy seguro que para este momento se lo habrán dicho todo|I'm sure they'll have told her everything by now
+S|imported|4|¿Cuándo habrá occurido esto?|When could this have happened?
+S|imported|4|Habrás sabido que ella estaba casada|You must have known that she was married
+S|imported|4|Te habrá dado un falso número de teléfono|She must have given you a fake telephone number
+S|imported|4|Yo te habría llamado pero mi teléfono no funciona|I would have called you, but my phone doesn't work
+S|imported|4|¿Me habrías dicho la repuesta si la supieras?|Would you have told me the answer if you knew it?
+S|imported|4|¿Habríais ido a la playa si no lloviera?|Would you (pl. fam.) have gone to the beach if it weren't raining?
+S|imported|4|Si ella no fuera tan egoista, te habría ayudado|If she weren't so selfish, she would have helped you
+S|imported|4|¿Dónde habría escondido ella el dinero?|Where do you suppose she had hidden the money?
+S|imported|4|¿Nos habrían mentido?|Do you suppose they had lied to us?
+S|imported|4|Es ridículo que yo haya tenido que esperar en esta cola por una hora|It's ridiculous that I've had to wait in this line for an hour
+S|imported|4|No contrataeré a nadie que haya conseguido su diploma en línea|I will not hire anyone who has gotten his degree online
+S|imported|4|No te dirá nada hasta que le hayas pagado|He will not tell you anything until you have paid him
+S|imported|4|Tan pronto como hayas puesto la mesa, cenaremos|As soon as you've set the table, we'll eat dinner
+S|imported|4|No se acostará hasta que se haya cepillado los dientes|He will not go to bed until he's brushed his teeth
+S|imported|4|Nunca conocerás la verdadera felicidad hasta que hayas comparecido ante un tribunal|You will never know true happiness until you have appeared in court
+S|imported|4|Les escribimos una carta en caso de que no nos hubieran entendido|We wrote them a letter in case they hadn't understood us
+S|imported|4|Yo no creía nunca que ella hubiera sido Miss Venezuela|I never believed that she had been Miss Venezuela
+S|imported|4|Si me hubieras llamado diez minutos antes, yo no habría estado en casa|If you had called me ten minutes earlier, I wouldn't have been home
+S|imported|4|No sé donde estaría si no te habría conocido|I don't know where I'd be if I hadn't met you
+S|imported|4|Si no hubiera habido una nevada ayer, habría habido una hoy|If there hadn't been a snowstorm yesterday, there would have been one today
+S|imported|4|Si hubiéramos sabido que tenías dificultades, te habríamos ofrecido ayuda|If we had known that you were in trouble, we would have offered you help
+S|imported|4|Si alguien me hubiera dicho eso, yo no lo habría creído|If anyone had told me that, I wouldn't have believed it
+S|imported|4|Quisiéramos que nos hubieras dicho que esto será una fiesta formal|We wish you had told us that this would be a formal party
+S|imported|4|Yo quisiera que no hubiera hecho tanto frío|I wish it hadn't been so cold
+S|imported|4|Si se mantiene correctamente un carro durará por veinte años|If it is maintained properly, a car will last for 20 years
+S|imported|4|¿Cuándo se sacaron estas fotos?|When were these pictures taken?
+S|imported|4|Había tanto ruido en el restaurante que no se podía pensar|There was so much noise in the restaurant that you couldn't think
+S|imported|4|Quería que se entregaran las flores para el decimocuarto|I wanted the flowers delivered by the 14th
+S|imported|4|No se había pintado la casa durante cincuenta años|The house hadn't been painted in 50 years
+S|imported|4|Si se haya visto una corrida, se ha visto todas|If you've seen one bullfight, you've seen them all
+S|imported|4|No se ha vivido hasta que se haya oído Phish tocar "Primer Tubo|You haven't lived until you've heard Phish play "First Tube
+S|imported|4|La televisión será puesta cuando Ron entra esta casa|The TV will be turned on when Ron enters this house
+S|imported|4|Esta colcha fue cosida completamente a mano por Mamá|This quilt was sewn completely by hand by Mom
+S|imported|4|Espero que mi casa sea comprada por una persona agradable|I hope my house is bought by a nice person
+S|imported|4|Es sólo una broma para molestar|It is only a joke to tease
+S|imported|4|Me hizo daño el desayuno|Breakfast made me sick
+S|imported|4|¡Qué pequeña!|How small!
+S|imported|4|¡Qué gorda!|How fat!
+S|imported|4|¡Cómo habla!|How she talks!
+S|imported|4|¡Cómo come!|How he eats!
+S|imported|4|Se me rompío la taza|I broke the cup
+S|imported|4|Se me cayeron los platos|I dropped the plates
+S|imported|4|Se nos olvidó su nombre|We forgot his name
+S|imported|4|Que alquiles la casa|Hope you rent the house
+S|imported|4|Que vendas el camión|Hope you sell the truck
+S|imported|4|Que no abran los libros|Don't let them open the books
+S|imported|4|Que salgan las muchacas|Let the girls go out
+S|imported|4|Que diga la verdad|Make him tell the truth

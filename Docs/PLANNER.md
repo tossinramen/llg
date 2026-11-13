@@ -13,7 +13,8 @@ dungeon, villains, battles, crops, music) · [Activity ideas](#activity-ideas) �
 
 ### 1. Language content and sound
 - [ ] **Add Spanish voices / sound** — install the Spanish voice in Windows, record every Spanish line, check it plays everywhere
-- [ ] Sort more of the imported words into topics (about 7,000 are in "Más palabras")
+- [ ] Sort more of the imported words into topics (about 17,700 are in "Más palabras")
+- [ ] Verb-forms activity (conjugation drills: the Beginner to Advanced deck has 3,695)
 - [ ] Verb conjugation data (present, past, future…) for the tense activities
 - [ ] Speaker buttons on more places (shop items, archery words, fishing sentences, bag)
 
@@ -310,4 +311,4 @@ Finished tasks, struck through.
 - ~~Mining with four kinds of task (spell, article, sentence gap, pick the word), more tasks per rock, perfect strikes~~ ✅
 - ~~590 words in 21 topics and 171 sentences (was 152 / 33)~~ ✅
 - ~~Deck importer for Anki (.apkg) and spreadsheets (.txt/.csv)~~ ✅
-- ~~Much bigger word pack: 10,090 words and 35,886 sentences from 7 Anki decks, cleaned, de-duplicated and sorted into levels~~ ✅
+- ~~Much bigger word pack: 21,077 words and 48,640 sentences from 17 Anki decks, cleaned, de-duplicated and sorted into levels~~ ✅

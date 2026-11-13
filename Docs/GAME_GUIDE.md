@@ -120,36 +120,45 @@ Every XP gain goes to a **skill** and to your **character level**.
 
 ## Lessons & language
 
-**How much Spanish is in the game:** **10,090 words and 35,886 sentences** in 21 topics, across 5 levels,
+**How much Spanish is in the game:** **21,077 words and 48,640 sentences** in 21 topics, across 5 levels,
 with no repeats (repeats are spotted ignoring capitals and punctuation, also between decks).
 
 | Level | Words | Sentences |
 |---|---|---|
-| 1 Principiante | 219 | 2,137 |
-| 2 Básico | 653 | 2,545 |
-| 3 Intermedio | 1,597 | 6,207 |
-| 4 Avanzado | 2,676 | 11,215 |
-| 5 Experto | 4,945 | 13,782 |
+| 1 Principiante | 306 | 2,138 |
+| 2 Básico | 979 | 2,716 |
+| 3 Intermedio | 3,709 | 6,351 |
+| 4 Avanzado | 8,758 | 13,901 |
+| 5 Experto | 7,325 | 23,534 |
 
 Where they come from (all as plain text in `Tools/data/`; the Anki files themselves are not kept):
 
-| File | From | Gives | Levels |
-|---|---|---|---|
-| `build_spanish_pack.py` | hand-picked | 152 words, 33 sentences | by hand |
-| `words_extra.txt` | written for the game | ~440 words, ~140 sentences | by hand |
-| `imported/10000_Spanish_Vocabulary.txt` | 10000 Spanish Vocabulary (parts 1–3) | ~9,300 words + an example sentence each | by frequency: ranks 1–300 = 1, to 1,000 = 2, to 2,500 = 3, to 5,000 = 4, rest = 5 |
-| `imported/9000_Spanish_Sentences.txt` | 9000 Spanish sentences (difficulty sorted) | 8,841 sentences | easiest fifth = 1 … hardest = 5 |
-| `imported/Spanish_7000_Sentences.txt` | Spanish 7000 Intermediate/Advanced | 7,129 sentences | 3–5 by order |
-| `imported/550_Phrasal_Verbs.txt` | 550 Phrasal Verbs (parts 1–2) | 6,394 sentences | 4 (short) / 5 (long) |
-| `imported/575_Advanced_Verbs.txt` | 575 Advanced Spanish Verbs | 86 verbs, 2,415 sentences | 4–5 |
-| `imported/1001_High_Intermediate.txt` | 1001 High Intermediate Words & Sentences | 116 words, 1,096 sentences | 3–4 |
+| File | From | Levels |
+|---|---|---|
+| `build_spanish_pack.py`, `words_extra.txt` | written for the game (~590 words, ~170 sentences) | by hand |
+| `imported/10000_Spanish_Vocabulary.txt` | 10000 Spanish Vocabulary (parts 1–3): words + an example sentence each | by frequency rank |
+| `imported/9000_Spanish_Sentences.txt` | 9000 Spanish sentences, difficulty sorted | easiest fifth = 1 … hardest = 5 |
+| `imported/Spanish_7000_Sentences.txt` | Spanish 7000 Intermediate/Advanced sentences | 3–5 |
+| `imported/550_Phrasal_Verbs.txt` | 550 Phrasal Verbs (parts 1–2) | 4–5 |
+| `imported/575_Advanced_Verbs.txt` | 575 Advanced Spanish Verbs (+ usage sentences) | 4–5 |
+| `imported/1001_High_Intermediate.txt` | 1001 High Intermediate Words & Sentences | 3–4 |
+| `imported/Advanced_Spanish.txt` | Advanced Spanish (words and phrases) | 4–5 |
+| `imported/Advanced_Spanish_Examples.txt` | Advanced Spanish Examples (10,500 sentences) | by how common the root word is |
+| `imported/Advanced_Spanish_Phrases.txt` | Advanced Spanish Phrases and Vocabulary | 4 |
+| `imported/Advanced_Spanish_Sentences.txt` | Advanced Spanish Sentences | 4 |
+| `imported/Advanced_Spanish_Vocabulary.txt` | Advanced Spanish Vocabulary | 4 |
+| `imported/Advanced_Spanish_Vocab_Phrases.txt` | Advanced Spanish Vocabulary and Phrases | 4 |
+| `imported/Assimil_Using_Spanish.txt` | Assimil Using Spanish (main + exercises) | 4–5 |
+| `imported/Beginner_to_Advanced.txt` | Beginner to Advanced Spanish (ranked words + examples) | by frequency rank |
 
-Cleaning: Anki formatting, sounds and bullets removed; only the first English meaning kept; sentences of 2–14
-words only; cards whose "English" side was really Spanish skipped; ¿…? and ¡…! kept whole. The FSI Basic Course
-deck was left out because its drill cards' English doesn't match the Spanish. Words whose English meaning
-matches a topic (food, animals, verbs...) go into that topic; the rest are in **Más palabras**.
-`Tools/data/convert_decks.py` re-does all of this if the decks are put back in the project folder; run
-`python Tools/data/build_spanish_pack.py` after editing any list.
+Cleaning: Anki formatting, sounds, bullets, notes in brackets and trailing dashes removed; only the first English
+meaning kept; sentences of 2–14 words; cards the wrong way round flipped (decided per card type over the whole
+deck, then checked card by card); cards whose "English" was really Spanish skipped; missing ¿ and ¡ added;
+decks that wrote the English twice cut to one translation. Left out: the **FSI Basic Course** (its English doesn't
+match), the **C1/C2 Idioms** deck (explanations in Spanish only), and the conjugation drills in Beginner to
+Advanced (they could become a verb-forms activity later). Words whose English meaning matches a topic go into it;
+the rest are in **Más palabras**. `Tools/data/convert_decks.py` re-does all of this if the decks are put back in
+the project folder; run `python Tools/data/build_spanish_pack.py` after editing any list.
 
 **Adding more words: import a flashcard deck** (Anki or a spreadsheet):
 

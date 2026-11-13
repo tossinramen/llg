@@ -1,0 +1,4344 @@
+# converted from Beginner_to_Advanced_Spanish.apkg
+W|imported|2|alemán|German
+W|imported|2|concreto|concrete
+W|imported|2|debido: debido a|due to
+W|imported|2|imposible|impossible
+W|imported|2|inmediato|immediate
+W|imported|2|interior|interior
+W|imported|2|interno|internal
+W|imported|2|mas|but
+W|travel|2|plano|plane
+W|imported|2|pleno|complete
+W|imported|2|privado|private
+W|imported|2|supuesto; por supuesto|supposed: of course
+W|imported|2|unido|united
+W|imported|2|aun|even
+W|imported|2|perfectamente|perfectly
+W|imported|2|precisamente|precisely
+W|imported|2|recién|recently
+W|imported|2|simplemente|simply
+W|imported|2|artista|artist
+W|imported|2|modelo|model
+W|imported|2|actitud|attitude
+W|imported|2|altura|height
+W|imported|2|autoridad|authority
+W|body|2|boca|mouth
+W|imported|2|calidad|quality
+W|imported|2|capacidad|capacity
+W|food|2|carne|meat
+W|imported|2|carta|letter
+W|imported|2|causa|cause
+W|imported|2|ciencia|science
+W|imported|2|circunstancia|circumstance
+W|food|2|comida|food
+W|imported|2|compañía|company
+W|imported|2|comunicación|communication
+W|imported|2|conciencia|conscience
+W|imported|2|confianza|confidence
+W|imported|2|consecuencia|consequence
+W|imported|2|construcción|construction
+W|imported|2|conversación|conversation
+W|imported|2|costumbre|habit
+W|imported|2|cultura|culture
+W|imported|2|decisión|decision
+W|imported|2|defensa|defense
+W|imported|2|dirección|direction
+W|imported|2|distancia|distance
+W|imported|2|educación|education
+W|imported|2|elección|election
+W|imported|2|empresa|firm
+W|imported|2|energía|energy
+W|imported|2|enfermedad|illness
+W|town|2|escuela|school
+W|imported|2|esperanza|hope
+W|family|2|esposa|wife
+W|imported|2|etapa|stage
+W|imported|2|existencia|existence
+W|imported|2|explicación|explanation
+W|imported|2|fecha|date
+W|imported|2|fiesta|party
+W|nature|2|flor|flower
+W|imported|2|frase|phrase
+W|imported|2|fuente|source
+W|imported|2|función|function
+W|imported|2|generación|generation
+W|family|2|hija|daughter
+W|imported|3|hoja|sheet
+W|imported|2|impresión|impression
+W|imported|2|intención|intention
+W|imported|2|investigación|investigation
+W|imported|2|labor|labor
+W|imported|2|lectura|the reading
+W|school|2|lengua|language
+W|imported|2|letra|letter
+W|imported|2|lucha|fight
+W|imported|2|madera|wood
+W|imported|2|máquina|machine
+W|time|2|marcha|march
+W|imported|2|masa|mass
+W|imported|2|materia|matter
+W|imported|2|mayoría|majority
+W|imported|2|memoria|memory
+W|imported|2|mente|mind
+W|imported|2|mitad|half
+W|imported|2|música|music
+W|nature|2|naturaleza|nature
+W|imported|2|nota|note
+W|imported|2|noticia|news
+W|imported|2|operación|operation
+W|imported|2|opinión|opinion
+W|imported|2|oportunidad|opportunity
+W|imported|2|pared|interior wall
+W|imported|2|pareja|couple
+W|imported|2|paz|peace
+W|imported|2|película|movie
+W|nature|2|piedra|stone
+W|body|2|piel|skin
+W|imported|2|pieza|piece
+W|nature|2|planta|plant
+W|imported|2|población|population
+W|imported|2|política|politics
+W|imported|2|posición|position
+W|imported|2|preocupación|worry
+W|imported|2|presencia|presence
+W|imported|2|presión|pressure
+W|imported|2|propiedad|property
+W|imported|2|prueba|proof
+W|imported|2|responsabilidad|responsibility
+W|imported|2|reunión|meeting
+W|imported|2|revista|magazine
+W|imported|2|revolución|revolution
+W|home|2|sala|room
+W|body|2|sangre|blood
+W|imported|2|santa|saint
+W|imported|2|seguridad|security
+W|imported|2|serie|series
+W|imported|2|solución|solution
+W|imported|2|tarea|task
+W|imported|2|teoría|theory
+W|imported|2|tradición|tradition
+W|imported|2|visión|vision
+W|imported|2|visita|visit
+W|imported|2|voluntad|will
+W|imported|2|alma|soul
+W|imported|2|arma|weapon
+W|imported|2|acto|act
+W|school|2|alumno|student
+W|imported|2|ambiente|environment
+W|nature|2|árbol|tree
+W|imported|2|arte|art
+W|imported|2|artículo|article
+W|imported|2|asunto|matter
+W|imported|2|banco|financial bank
+W|body|2|brazo|arm
+W|animal|2|caballo|horse
+W|weather|2|calor|heat
+W|imported|2|carácter|personality
+W|imported|2|cargo|position
+W|nature|2|cielo|sky
+W|imported|2|concepto|concept
+W|imported|2|contacto|contact
+W|imported|2|control|control
+W|body|2|corazón|heart
+W|imported|2|cuadro|painting
+W|imported|2|curso|course
+W|adjective|2|derecho|right
+W|imported|2|desarrollo|development
+W|imported|2|destino|destination
+W|imported|2|dolor|pain
+W|town|2|edificio|building
+W|imported|2|elemento|element
+W|imported|2|encuentro|meeting
+W|imported|2|equipo|team
+W|imported|2|error|error
+W|imported|2|espíritu|spirit
+W|imported|2|éxito|success
+W|imported|2|grado|degree
+W|imported|2|gusto|pleasure
+W|family|2|hermano|brother
+W|home|2|hogar|home
+W|imported|2|instrumento|instrument
+W|imported|2|juicio|judgment
+W|school|2|lenguaje|language
+W|imported|2|límite|limit
+W|town|2|mercado|market
+W|imported|2|metro|meter
+W|imported|2|miembro|member
+W|imported|2|motivo|motive
+W|imported|2|negocio|business
+W|imported|2|norte|north
+W|imported|2|origen|origin
+W|imported|2|oro|gold
+W|imported|2|pensamiento|thought
+W|animal|2|perro|dog
+W|imported|2|personaje|character
+W|home|2|piso|floor
+W|imported|2|plan|plan
+W|imported|2|precio|price
+W|imported|2|presidente|president
+W|imported|2|producto|product
+W|imported|2|propósito|intention
+W|imported|2|proyecto|project
+W|imported|2|recurso|resource
+W|imported|2|respeto|respect
+W|nature|2|río|river
+W|imported|2|ritmo|rhythm
+W|feeling|2|sentimiento|feeling
+W|imported|2|silencio|silence
+W|imported|2|sitio|place
+W|weather|2|sol|sun
+W|imported|2|teatro|theater
+W|imported|2|teléfono|phone
+W|imported|2|término|term
+W|imported|2|terreno|ground
+W|imported|2|texto|text
+W|imported|2|título|title
+W|imported|2|tono|tone
+W|imported|2|uso|use
+W|time|2|verano|summer
+W|food|2|vino|wine
+W|imported|2|autor|writer
+W|imported|2|director|director
+W|job|2|doctor|doctor
+W|imported|2|jefe|leader
+W|imported|2|profesor|professor
+W|nature|2|mar|sea
+W|imported|2|radio|radio
+W|number|2|millón|million
+W|imported|2|aquello|that over there
+W|imported|2|ése, ésa|that one
+W|imported|2|suyo|his
+S|verb|2|Asistí a la reunión. No pudo asistir a la boda|I attended the meeting. He couldn't attend the wedding
+W|verb|2|consistir|to consist of
+W|verb|2|contemplar|to contemplate
+W|verb|2|definir|to define
+W|verb|2|distinguir|to distinguish
+W|verb|2|extender|to extend
+W|verb|2|intervenir|to intervene
+W|verb|2|pronunciar|to pronounce
+S|verb|2|Surgieron dudas durante la reunión. Del agua surgió una figura|Doubts arose during the meeting
+W|verb|2|transformar|to transform
+W|imported|3|americano|American
+W|imported|3|consciente|conscious
+W|imported|3|convencido|convinced
+W|imported|3|correspondiente|corresponding
+W|imported|3|evidente|evident
+W|imported|3|extremo|edge
+W|imported|3|fijo|fixed
+W|imported|3|griego|Greek
+W|imported|3|inmenso|immense
+W|imported|3|intelectual|intellectual
+W|imported|3|literario|literary
+W|imported|3|muchísimo|great many
+W|imported|3|numeroso|numerous
+W|imported|3|objetivo|objective
+W|imported|3|obligado|obliged
+W|adjective|3|oficial|official
+W|imported|3|permanente|permanent
+W|imported|3|positivo|positive
+W|imported|3|posterior|rear
+W|imported|3|previo|previous
+W|imported|3|reciente|recent
+W|imported|3|relacionado|related
+W|imported|3|seguido|in a row
+W|adjective|3|técnico|technical
+W|imported|3|vecino|neighbor
+W|imported|3|absolutamente|absolutely
+W|imported|3|acaso|by chance
+S|imported|3|¿Acaso crees que no lo sé? ¿Es acaso posible que se haya olvidado?|Do you think I don't know? Is it possible that she forgot?
+W|imported|3|acerca|about
+W|imported|3|aparte|apart
+W|imported|3|justamente|just
+W|imported|3|prácticamente|practically
+W|imported|3|profundamente|profoundly
+W|school|3|estudiante|student
+W|imported|3|juez|judge
+W|imported|3|periodista|journalist
+W|imported|3|poeta|poet
+W|job|3|policía|police
+W|imported|3|representante|representative
+W|feeling|3|alegría|joy
+W|imported|3|amistad|friendship
+W|imported|3|ausencia|absence
+W|imported|3|batalla|battle
+W|imported|3|belleza|beauty
+W|imported|3|busca|search
+W|imported|3|cadena|chain
+W|home|3|cama|bed
+W|imported|3|cámara|camera
+W|imported|3|canción|song
+W|imported|3|capa|layer
+W|imported|3|característica|characteristic
+W|imported|3|carga|load
+W|imported|3|categoría|category
+W|imported|3|columna|column
+W|imported|3|compra|shopping
+W|imported|3|comunidad|community
+W|imported|3|conclusión|conclusion
+W|imported|3|conducta|conduct
+W|imported|3|consideración|consideration
+W|imported|3|costa|coast
+W|imported|3|creación|creation
+W|imported|3|crisis|crisis
+W|imported|3|crítica|criticism
+W|imported|3|culpa|blame
+W|imported|3|derecha|right
+W|imported|3|disciplina|discipline
+W|imported|3|discusión|discussion
+W|imported|3|entrevista|interview
+W|imported|3|escena|scene
+W|body|3|espalda|back
+W|town|3|estación|station
+W|nature|3|estrella|star
+W|imported|3|estructura|structure
+W|imported|3|facilidad|ease
+W|imported|3|facultad|faculty
+W|imported|3|fe|faith
+W|imported|3|fotografía|photograph
+W|imported|3|frecuencia|frequency
+W|travel|3|frontera|border
+W|family|3|hermana|sister
+W|town|3|iglesia|church
+W|imported|3|ilusión|illusion
+W|imported|3|influencia|influence
+W|imported|3|inquietud|restlessness
+W|imported|3|institución|institution
+W|imported|3|inteligencia|intelligence
+W|imported|3|interpretación|interpretation
+W|nature|3|isla|island
+W|imported|3|justicia|justice
+W|imported|3|juventud|youth
+W|food|3|leche|milk
+W|imported|3|lista|list
+W|imported|3|literatura|literature
+W|imported|3|llamada|call
+W|weather|3|lluvia|rain
+W|imported|3|marca|mark
+W|imported|3|mirada|gaze
+W|imported|3|misión|mission
+W|imported|3|moda|fashion
+W|imported|3|moneda|coins
+W|nature|3|montaña|mountain
+W|imported|3|niña|child
+W|imported|3|norma|standard
+W|imported|3|novela|novel
+W|imported|3|obligación|obligation
+W|town|3|oficina|office
+W|imported|3|organización|organization
+W|imported|3|página|page
+W|imported|3|participación|participation
+W|imported|3|partida|game
+W|imported|3|pasión|passion
+W|imported|3|personalidad|personality
+W|imported|3|perspectiva|perspective
+W|body|3|pierna|leg
+W|imported|3|pintura|painting
+W|town|3|plaza|square
+W|imported|3|prensa|press
+W|imported|3|profesión|profession
+W|imported|3|profundidad|depth
+W|imported|3|punta|tip
+W|nature|3|rama|branch
+W|imported|3|reacción|reaction
+W|imported|3|referencia|reference
+W|imported|3|región|region
+W|imported|3|regla|rule
+W|imported|3|religión|religion
+W|imported|3|representación|representation
+W|imported|3|resistencia|resistance
+W|imported|3|riqueza|riches
+W|clothes|3|ropa|clothes
+W|imported|3|rueda|wheel
+W|imported|3|satisfacción|satisfaction
+W|imported|3|señal|sign
+W|imported|3|sensación|sensation
+W|home|3|silla|chair
+W|imported|3|sombra|shade
+W|imported|3|sorpresa|surprise
+W|imported|3|suma|sum
+W|imported|3|superficie|surface
+W|imported|3|técnica|technique
+W|imported|3|televisión|TV
+W|imported|3|unidad|unit
+W|school|3|universidad|university
+W|imported|3|velocidad|speed
+W|imported|3|venta|sale
+W|home|3|ventana|window
+W|imported|3|violencia|violence
+W|imported|3|virtud|virtue
+W|feeling|3|hambre|hunger
+W|imported|3|acceso|access
+W|imported|3|accidente|accident
+W|imported|3|acontecimiento|event
+W|food|3|alimento|food
+W|imported|3|análisis|analysis
+W|imported|3|aparato|device
+W|imported|3|argumento|argument
+W|imported|3|ataque|attack
+W|travel|3|avión|plane
+W|travel|3|barco|boat
+W|town|3|barrio|neighborhood
+W|imported|3|beneficio|benefit
+W|food|3|café|coffee
+W|imported|3|capítulo|chapter
+W|imported|3|cine|cinema
+W|imported|3|círculo|circle
+W|travel|3|coche|car
+W|imported|3|colegio|high school
+W|imported|3|comentario|remark
+W|imported|3|comportamiento|behavior
+W|imported|3|compromiso|compromise
+W|imported|3|conflicto|conflict
+W|imported|3|consejo|advice
+W|imported|3|criterio|criterion
+W|imported|3|cuento|story
+W|body|3|dedo|finger
+W|imported|3|defecto|defect
+W|imported|3|departamento|department
+W|imported|3|diálogo|dialogue
+W|imported|3|discurso|lecture
+W|imported|3|documento|document
+W|imported|3|dueño|owner
+W|imported|3|ejercicio|exercise
+W|imported|3|empleado|employee
+W|job|3|empleo|work
+W|imported|3|equilibrio|balance
+W|imported|3|espectáculo|spectacle
+W|imported|3|examen|examination
+W|imported|3|exceso|excess
+W|imported|3|experto|expert
+W|imported|3|fracaso|failure
+W|food|3|fruto|fruit
+W|imported|3|fuego|fire
+W|imported|3|gasto|expense
+W|animal|3|gato|cat
+W|imported|3|gesto|gesture
+W|imported|3|habitante|inhabitant
+W|imported|3|honor|honor
+W|town|3|hospital|hospital
+W|school|3|idioma|language
+W|imported|3|indio|Indian
+W|imported|3|individuo|individual
+W|imported|3|instante|instant
+W|time|3|invierno|winter
+W|imported|3|kilómetro|kilometer
+W|imported|3|marco|frame
+W|family|3|marido|husband
+W|imported|3|matrimonio|marriage
+W|imported|3|mensaje|message
+W|imported|3|método|method
+W|imported|3|nacimiento|birth
+W|imported|3|organismo|organization
+W|food|3|pan|bread
+W|imported|3|período|period
+W|imported|3|plazo|deadline
+W|imported|3|premio|prize
+W|town|3|puente|bridge
+W|travel|3|puerto|port
+W|imported|3|régimen|regime
+W|imported|3|remedio|alternative
+W|imported|3|rey|king
+W|imported|3|riesgo|risk
+W|imported|3|ruido|noise
+W|imported|3|salto|jump
+W|imported|3|sector|sector
+W|imported|3|signo|sign
+W|imported|3|sonido|sound
+W|imported|3|sur|south
+W|home|3|techo|ceiling
+W|imported|3|territorio|territory
+W|imported|3|en torno a torno|about
+W|imported|3|tratamiento|treatment
+W|travel|3|tren|train
+W|imported|3|vehículo|vehicle
+W|weather|3|viento|wind
+W|imported|3|volumen|volume
+W|imported|3|escritor|writer
+W|imported|3|secretario|secretary
+W|imported|3|margen|edge
+W|imported|3|aquél|that one over there
+W|imported|3|os|you
+W|verb|3|atrever|to dare
+W|verb|3|basar|to base on
+W|verb|3|concentrar|to concentrate
+W|verb|3|conformar|to conform
+W|verb|3|confundir|to confuse
+W|verb|3|destinar|to assign
+W|verb|3|equivocar|to be wrong
+W|verb|3|facilitar|to facilitate
+W|verb|3|incorporar|to incorporate
+W|verb|3|integrar|to integrate
+W|verb|3|limitar|to limit
+W|verb|3|operar|to operate
+W|verb|3|oponer|to oppose
+W|verb|3|proceder|to proceed
+W|imported|3|acostumbrado|accustomed
+W|imported|3|alejado|remote
+W|imported|3|argentino|Argentine
+W|imported|3|armado|armed
+W|imported|3|campesino|rural
+W|adjective|3|científico|scientific
+W|imported|3|ciudadano|citizen
+W|imported|3|conforme|in agreement
+W|imported|3|continuo|continuous
+W|imported|3|cubierto|covered
+W|imported|3|decidido|determined
+W|imported|3|divino|divine
+W|imported|3|doméstico|domestic
+W|imported|3|entendido|understood
+W|imported|3|esencial|essential
+W|imported|3|espiritual|spiritual
+W|imported|3|establecido|established
+W|imported|3|indispensable|indispensable
+W|adjective|3|inicial|initial
+W|imported|3|interesado|interested
+W|imported|3|izquierdo|left
+W|imported|3|limitado|limited
+W|imported|3|mecánico|mechanical
+W|imported|3|mental|mental
+W|imported|3|no + obstante obstante|nevertheless
+W|imported|3|primario|primary
+W|adjective|3|relativo|relative
+W|imported|3|respectivo|respective
+W|imported|3|revolucionario|revolutionary
+W|imported|3|rodeado|surrounded
+W|imported|3|romano|Roman
+W|adjective|3|secreto|secret
+W|imported|3|severo|severe
+W|imported|3|sexual|sexual
+W|imported|3|significativo|significant
+W|imported|3|situado|situated
+W|imported|3|suave|soft
+W|imported|3|aparentemente|apparently
+W|imported|3|constantemente|constantly
+W|imported|3|efectivamente|in fact
+W|imported|3|evidentemente|evidently
+W|imported|3|exclusivamente|exclusively
+W|imported|3|posiblemente|possibly
+W|imported|3|agente|agent
+W|imported|3|cliente|client
+W|imported|3|especialista|specialist
+W|imported|3|guardia|guard
+W|imported|3|actuación|performance
+W|imported|3|alternativa|alternative
+W|imported|3|amiga|friend
+W|imported|3|angustia|anguish
+W|imported|3|aparición|appearance
+W|imported|3|apariencia|appearance
+W|nature|3|arena|sand
+W|town|3|biblioteca|library
+W|imported|3|bolsa|bag
+W|imported|3|bomba|bomb
+W|imported|3|búsqueda|search
+W|time|3|caída|fall
+W|imported|3|cárcel|jail
+W|imported|3|carretera|highway
+W|imported|3|chica|girl
+W|imported|3|cinta|tape
+W|imported|3|claridad|clearness
+W|home|3|cocina|kitchen
+W|imported|3|cola|line
+W|imported|3|colección|collection
+W|imported|3|comparación|comparison
+W|imported|3|competencia|competition
+W|imported|3|composición|composition
+W|imported|3|comprensión|understanding
+W|imported|3|concentración|concentration
+W|imported|3|confusión|confusion
+W|imported|3|continuación|continuation
+W|imported|3|cualidad|quality
+W|imported|3|curiosidad|curiosity
+W|imported|3|definición|definition
+W|imported|3|demanda|petition
+W|imported|3|dimensión|dimension
+W|imported|3|división|division
+W|imported|3|economía|economy
+W|imported|3|emoción|emotion
+W|imported|3|enseñanza|teaching
+W|imported|3|escala|scale
+W|imported|3|esencia|essence
+W|imported|3|espera|wait
+W|imported|3|esquina|corner
+W|imported|3|evolución|evolution
+W|imported|3|exigencia|requirement
+W|imported|3|exposición|exhibition
+W|imported|3|fama|reputation
+W|imported|3|felicidad|happiness
+W|imported|3|fila|line
+W|imported|3|filosofía|philosophy
+W|imported|3|firma|company
+W|imported|3|fórmula|formula
+W|food|3|fruta|fruit
+W|imported|3|habilidad|ability
+W|home|3|habitación|room
+W|imported|3|humanidad|humanity
+W|imported|3|identidad|identity
+W|imported|3|imaginación|imagination
+W|imported|3|independencia|independence
+W|imported|3|industria|industry
+W|imported|3|infancia|infancy
+W|imported|3|iniciativa|initiative
+W|imported|3|instrucción|instruction
+W|imported|3|intervención|intervention
+W|school|3|lección|lesson
+W|imported|3|llegada|arrival
+W|imported|3|manifestación|protest
+W|imported|3|medicina|medicine
+W|imported|3|mezcla|mixture
+W|imported|3|miseria|misery
+W|imported|3|muestra|proof
+W|imported|3|nación|nation
+W|imported|3|novedad|latest news
+W|nature|3|nube|cloud
+W|imported|3|observación|observation
+W|imported|3|oposición|opposition
+W|nature|3|playa|beach
+W|imported|3|pobreza|poverty
+W|imported|3|poesía|poetry
+W|imported|3|postura|posture
+W|imported|3|potencia|power
+W|imported|3|precisión|precision
+W|imported|3|presentación|presentation
+W|imported|3|protección|protection
+W|imported|3|provincia|province
+W|imported|3|rapidez|speed
+W|imported|3|raza|race
+W|imported|3|reflexión|reflection
+W|imported|3|reserva|reservation
+W|imported|3|sección|section
+W|imported|3|sensibilidad|sensitivity
+W|imported|3|sesión|session
+W|imported|3|tabla|chart
+W|imported|3|tela|cloth
+W|weather|3|temperatura|temperature
+W|imported|3|tensión|tension
+W|town|3|tienda|shop
+W|imported|3|tragedia|tragedy
+W|imported|3|tranquilidad|tranquility
+W|imported|3|vacaciones|vacation
+W|imported|3|versión|version
+W|imported|3|víctima|victim
+W|imported|3|victoria|victory
+W|imported|3|vocación|vocation
+W|imported|3|área|area
+W|family|3|abuelo|grandfather
+W|imported|3|actor|actor
+W|imported|3|ámbito|sphere
+W|imported|3|avance|advance
+W|home|3|baño|bathroom
+W|nature|3|bosque|forest
+W|imported|3|caballero|gentleman
+W|imported|3|cálculo|calculation
+W|imported|3|canal|channel
+W|imported|3|canto|singing
+W|travel|3|carro|car
+W|imported|3|castigo|punishment
+W|imported|3|cerebro|brain
+W|imported|3|clima|climate
+W|imported|3|comercio|commerce
+W|imported|3|continente|continent
+W|imported|3|contrato|contract
+W|imported|3|crecimiento|growth
+W|imported|3|crédito|credit
+W|imported|3|crimen|crime
+W|body|3|cuello|neck
+W|imported|3|descanso|rest
+W|imported|3|dibujo|drawing
+W|body|3|diente|tooth
+W|imported|3|disco|disc
+W|imported|3|dólar|dollar
+W|imported|3|dominio|power
+W|imported|3|ensayo|essay
+W|imported|3|entusiasmo|enthusiasm
+W|imported|3|escenario|stage
+W|home|3|espejo|mirror
+W|imported|3|factor|factor
+W|imported|3|funcionario|civil servant
+W|imported|3|género|sort
+W|imported|3|grito|cry
+W|imported|3|hábito|habit
+W|imported|3|hierro|iron
+W|body|3|hombro|shoulder
+W|town|3|hotel|hotel
+W|body|3|hueso|bone
+W|food|3|huevo|egg
+W|imported|3|humor|mood
+W|imported|3|impulso|impulse
+W|imported|3|índice|index
+W|imported|3|ingreso|entrance
+W|home|3|jardín|garden
+W|imported|3|lector|reader
+W|imported|3|llamado|call
+W|imported|3|lujo|luxury
+W|imported|3|mecanismo|mechanism
+W|imported|3|mérito|worth
+W|nature|3|monte|mountain
+W|imported|3|montón|lot of
+W|imported|3|motor|engine
+W|imported|3|mueble|piece of furniture
+W|job|3|oficio|job
+W|imported|3|oído|hearing
+W|imported|3|olor|smell
+W|imported|3|órgano|organ
+W|imported|3|pago|payment
+W|imported|3|paisaje|landscape
+W|imported|3|palacio|palace
+W|town|3|parque|park
+W|imported|3|patrón|employer
+W|imported|3|pecho|chest
+W|imported|3|permiso|permission
+W|imported|3|y pico:pico|and a bit:beak
+W|home|3|plato|plate
+W|imported|3|poema|poem
+W|imported|3|prestigio|prestige
+W|family|3|primo|cousin
+W|imported|3|privilegio|privilege
+W|imported|3|procedimiento|procedure
+W|imported|3|progreso|progress
+W|imported|3|reconocimiento|recognition
+W|imported|3|reloj|clock
+W|imported|3|revés: al revés:|backwards
+W|imported|3|sacerdote|priest
+W|imported|3|sacrificio|sacrifice
+W|imported|3|salón|hall
+W|imported|3|sexo|sex
+W|imported|3|significado|meaning
+W|imported|3|símbolo|symbol
+W|imported|3|testigo|witness
+W|family|3|tío|uncle
+W|imported|3|tiro|throw
+W|imported|3|traje|suit
+W|imported|3|transporte|transportation
+W|imported|3|triunfo|triumph
+W|nature|3|valle|valley
+W|imported|3|zapato|shoe
+W|job|3|abogado|lawyer
+W|job|3|ingeniero|engineer
+W|imported|3|ministro|government secretary
+W|job|3|soldado|soldier
+W|imported|3|with me|conmigo
+W|imported|3|ti|you
+W|verb|3|ajustar|to adjust
+W|verb|3|apartar|to move away
+W|verb|3|asociar|to associate with
+W|verb|3|aspirar|to aspire
+W|verb|3|atribuir|to attribute
+W|verb|3|captar|to capture
+W|verb|3|carecer|to lack
+W|verb|3|combatir|to fight against
+W|verb|3|complicar|to complicate
+W|verb|3|denominar|to call
+W|verb|3|desconocer|to not know
+W|verb|3|dictar|to dictate
+W|verb|3|forzar|to force
+W|verb|3|implicar|to implicate
+W|verb|3|modificar|to modify
+W|verb|3|penetrar|to penetrate
+W|verb|3|precisar|to do exactly
+W|verb|3|quejar|to complain
+W|verb|3|reaccionar|to react
+W|verb|3|reproducir|to reproduce
+W|verb|3|sobrevivir|to survive
+W|verb|3|sospechar|to suspect
+W|imported|3|abundante|abundant
+W|imported|3|apropiado|appropriate
+W|imported|3|árabe|Arab
+W|imported|3|caído|fallen
+W|imported|3|católico|Catholic
+W|imported|3|creciente|growing
+W|imported|3|cruel|cruel
+W|town|3|cuadrado|square
+W|imported|3|desesperado|desperate
+W|imported|3|dramático|dramatic
+W|imported|3|ejemplar|copy
+W|imported|3|específico|specific
+W|imported|3|excepcional|exceptional
+W|imported|3|exclusivo|exclusive
+W|imported|3|extenso|extensive
+W|adjective|3|infinito|infinite
+W|imported|3|judío|Jewish
+W|job|3|obrero|worker
+W|imported|3|occidental|western
+W|imported|3|oculto|hidden
+W|imported|3|ordinario|vulgar
+W|imported|3|pintado|painted
+W|imported|3|poquito|little bit
+W|imported|3|primitivo|primitive
+W|imported|3|repetido|repeated
+W|imported|3|ruso|Russian
+W|imported|3|secundario|secondary
+W|imported|3|sucesivo|successive
+W|imported|3|tonto|stupid
+W|imported|3|uniforme|uniform
+W|adjective|3|universitario|university
+W|imported|3|válido|valid
+W|imported|3|variado|varied
+W|imported|3|necesariamente|necessarily
+W|imported|3|repente: de + repente|suddenly
+W|imported|3|sencillamente|simply
+W|imported|3|¡oh no! oh my!|ay
+W|imported|3|etcétera|etcetera
+W|imported|3|colega|colleague
+W|imported|3|comerciante|merchant
+W|imported|3|guía|guide
+W|imported|3|líder|leader
+W|imported|3|pariente|relative
+W|family|3|abuela|grandmother
+W|imported|3|actualidad|present time
+W|imported|3|administración|administration
+W|imported|3|admiración|admiration
+W|imported|3|afirmación|confirming or declaring something is true
+W|imported|3|ambición|ambition
+W|imported|3|anécdota|anecdote
+W|imported|3|aplicación|application
+W|imported|3|asociación|association
+W|imported|3|atmósfera|atmosphere
+W|imported|3|banda|musical band
+W|imported|3|bandera|flag
+W|imported|3|botella|bottle
+W|imported|3|broma|joke
+W|imported|3|calma|calm
+W|clothes|3|camisa|shirt
+W|imported|3|casualidad|chance
+W|imported|3|caza|hunting
+W|imported|3|ceremonia|ceremony
+W|imported|3|cita|appointment
+W|imported|3|civilización|civilization
+W|imported|3|colaboración|collaboration
+W|imported|3|combinación|combination
+W|imported|3|comisión|commission
+W|imported|3|comodidad|comfort
+W|imported|3|compañera|female companion
+W|imported|3|concepción|conception
+W|imported|3|conferencia|conference
+W|imported|3|consulta|consultation
+W|imported|3|contradicción|contradiction
+W|imported|3|convicción|conviction
+W|home|3|copa|cup
+W|imported|3|copia|copy
+W|imported|3|creencia|belief
+W|imported|3|criatura|creature
+W|imported|3|cuerda|cord
+W|imported|3|dama|lady
+W|imported|3|danza|dance
+W|imported|3|debilidad|weakness
+W|imported|3|década|decade
+W|imported|3|desaparición|disappearance
+W|imported|3|destrucción|destruction
+W|imported|3|dignidad|dignity
+W|imported|3|distribución|distribution
+W|imported|3|doña|courtesy title
+W|imported|3|droga|drug
+W|imported|3|edición|edition
+W|imported|3|ejecución|performance
+W|imported|3|escritura|writing
+W|imported|3|evidencia|evidence
+W|imported|3|expectativa|expectation
+W|imported|3|explosión|explosion
+W|imported|3|extensión|extension
+W|imported|3|fantasía|fantasy
+W|imported|3|foto|photo
+W|imported|3|garantía|guarantee
+W|imported|3|gloria|glory
+W|imported|3|herencia|inheritance
+W|imported|3|herida|wound
+W|imported|3|herramienta|tool
+W|imported|3|hipótesis|hypothesis
+W|imported|3|huella|trace
+W|imported|3|inclinación|slope
+W|imported|3|instalación|installation
+W|imported|3|instancia|application
+W|imported|3|intensidad|intensity
+W|imported|3|inversión|investment
+W|imported|3|invitación|invitation
+W|imported|3|lágrima|tear
+W|imported|3|leyenda|legend
+W|imported|3|liberación|liberation
+W|imported|3|limpieza|cleanliness
+W|home|3|llave|key
+W|imported|3|locura|madness
+W|imported|3|lógica|logic
+W|nature|3|luna|moon
+W|imported|3|madrugada|dawn
+W|family|3|mamá|mom
+W|imported|3|mancha|stain
+W|imported|3|maravilla|wonder
+W|imported|3|media|average
+W|imported|3|meta|goal
+W|body|3|nariz|nose
+W|weather|3|nieve|snow
+W|imported|3|ocupación|occupation
+W|imported|3|oferta|offer
+W|nature|3|onda|wave
+W|imported|3|opción|option
+W|body|3|oreja|ear
+W|imported|3|oscuridad|darkness
+W|imported|3|pantalla|screen
+W|body|3|pata|leg
+W|imported|3|pelota|ball
+W|imported|3|pensión|pension
+W|imported|3|pista|clue
+W|school|3|pluma|pen
+W|imported|3|posesión|possession
+W|imported|3|preparación|preparation
+W|time|3|primavera|spring
+W|imported|3|promesa|promise
+W|imported|3|proporción|proportion
+W|imported|3|propuesta|proposal
+W|imported|3|protesta|objection
+W|imported|3|reina|queen
+W|imported|3|risa|laugh
+W|nature|3|roca|rock
+W|body|3|rodilla|knee
+W|imported|3|ruina|ruin
+W|imported|3|ruptura|break-up
+W|imported|3|ruta|route
+W|nature|3|selva|forest
+W|imported|3|separación|separation
+W|imported|3|simpatía|sympathy
+W|imported|3|soledad|loneliness
+W|imported|3|tarjeta|card
+W|imported|3|tesis|thesis
+W|family|3|tía|aunt
+W|imported|3|torre|tower
+W|imported|3|totalidad|whole
+W|imported|3|transformación|transformation
+W|imported|3|tristeza|sadness
+W|imported|3|tropa|troops
+W|imported|3|tumba|tomb
+W|imported|3|unión|union
+W|imported|3|urgencia|urgency
+W|animal|3|vaca|cow
+W|imported|3|variedad|variety
+W|imported|3|vela|candle
+W|imported|3|vergüenza|embarrassment
+W|imported|3|ala|wing
+W|food|3|aceite|oil
+W|imported|3|afecto|affection
+W|imported|3|alcohol|alcohol
+W|imported|3|almacén|warehouse
+W|imported|3|ángel|angel
+W|imported|3|ángulo|angle
+W|imported|3|apellido|last name
+W|imported|3|arco|arch
+W|imported|3|asiento|seat
+W|imported|3|auto|auto
+W|imported|3|azar|random
+W|food|3|azúcar|sugar
+W|imported|3|baile|dance
+W|imported|3|bar|snack bar
+W|imported|3|bienestar|wellbeing
+W|imported|3|bloque|block
+W|clothes|3|bolsillo|pocket
+W|imported|3|cadáver|corpse
+W|imported|3|candidato|candidate
+W|imported|3|caos|chaos
+W|imported|3|capitán|captain
+W|imported|3|centímetro|centimeter
+W|imported|3|ciclo|cycle
+W|imported|3|club|club
+W|imported|3|código|code
+W|imported|3|combate|combat
+W|imported|3|concierto|concert
+W|imported|3|consumo|consumption
+W|imported|3|contraste|contrast
+W|imported|3|creador|creator
+W|home|3|cristal|glass
+W|imported|3|cultivo|cultivation
+W|imported|3|debate|debate
+W|imported|3|delito|crime
+W|imported|3|deporte|sport
+W|imported|3|desorden|disorder
+W|town|3|despacho|office
+W|imported|3|diseño|design
+W|imported|3|drama|drama
+W|imported|3|eco|echo
+W|imported|3|episodio|episode
+W|imported|3|escándalo|scandal
+W|imported|3|esclavo|slave
+W|imported|3|esquema|outline
+W|imported|3|establecimiento|establishment
+W|imported|3|funcionamiento|functioning
+W|imported|3|ganado|livestock
+W|imported|3|gas|gas
+W|imported|3|giro|turn
+W|imported|3|héroe|hero
+W|imported|3|homenaje|homage
+W|imported|3|horizonte|horizon
+W|imported|3|horror|horror
+W|imported|3|impacto|impact
+W|imported|3|intercambio|exchange
+W|imported|3|laboratorio|laboratory
+W|imported|3|mando|command
+W|imported|3|manejo|handling
+W|travel|3|mapa|map
+W|imported|3|matiz|shade
+W|imported|3|metal|metal
+W|imported|3|milagro|miracle
+W|imported|3|misterio|mystery
+W|imported|3|mito|myth
+W|imported|3|núcleo|nucleus
+W|imported|3|odio|hatred
+W|imported|3|orgullo|pride
+W|imported|3|oriente|East
+W|clothes|3|pantalón|pants
+W|imported|3|paquete|package
+W|imported|3|partidario|supporter
+W|imported|3|pasaje|fare
+W|imported|3|perfil|profile
+W|food|3|pez|fish
+W|imported|3|planeta|planet
+W|imported|3|rayo|ray
+W|imported|3|regalo|gift
+W|imported|3|registro|register
+W|imported|3|reino|kingdom
+W|imported|3|relato|tale
+W|imported|3|retrato|portrait
+W|imported|3|rincón|corner
+W|imported|3|rumbo|direction
+W|imported|3|sabor|taste
+W|imported|3|síntoma|symptom
+W|imported|3|socio|member
+W|imported|3|talento|talent
+W|imported|3|taller|workshop
+W|imported|3|templo|temple
+W|imported|3|terror|terror
+W|imported|3|testimonio|testimony
+W|animal|3|toro|bull
+W|imported|3|tráfico|traffic
+W|imported|3|tratado|treaty
+W|imported|3|turno; en turno a|turn
+W|imported|3|universo|universe
+W|imported|3|vaso|drinking glass
+W|job|3|pintor|painter
+W|imported|3|vendedor|salesperson
+W|imported|3|cura|priest
+W|family|3|papá|dad
+W|food|3|té|tea
+W|verb|3|absorber|to absorb
+W|verb|3|adaptar|to adapt
+W|verb|3|anticipar|to anticipate
+W|verb|3|aproximar|to come near
+W|verb|3|asomar|to appear
+W|verb|3|caracterizar|to characterize
+W|verb|3|cesar|to cease
+W|verb|3|comportar|to behave
+W|verb|3|comprometer|to compromise
+W|verb|3|designar|to designate
+W|verb|3|equilibrar|to balance
+W|verb|3|especializar|to specialize
+W|verb|3|generar|to generate
+W|verb|3|inaugurar|to inaugurate
+W|verb|3|solucionar|to solve
+W|imported|4|administrativo|administrative
+W|imported|4|adolescente|adolescent
+W|imported|4|aéreo|aerial
+W|imported|4|aparente|apparent
+W|imported|4|autónomo|autonomous
+W|imported|4|comprometido|committed
+W|imported|4|consiguiente|resulting
+W|imported|4|convencional|conventional
+W|imported|4|decisivo|decisive
+W|imported|4|escondido|hidden
+W|imported|4|espléndido|splendid
+W|imported|4|estético|esthetic
+W|imported|4|existente|existing
+W|imported|4|filosófico|philosophical
+W|imported|4|ideológico|ideological
+W|imported|4|inclinado|inclined
+W|imported|4|juvenil|young
+W|imported|4|luminoso|bright
+W|imported|4|marino|marine
+W|imported|4|mediado|mid
+W|imported|4|metálico|metallic
+W|imported|4|mezclado|mixed
+W|imported|4|misterioso|mysterious
+W|imported|4|pensado|thought-out
+W|imported|4|plástico|plastic
+W|imported|4|prolongado|prolonged
+W|imported|4|singular|single
+W|imported|4|supremo|supreme
+W|imported|4|telefónico|telephone
+W|imported|4|teórico|theoretical
+W|imported|4|tierno|tender
+W|imported|4|vasto|vast
+W|imported|4|ciertamente|certainly
+W|imported|4|continuamente|continuously
+W|imported|4|francamente|frankly
+W|imported|4|libremente|freely
+W|imported|4|ligeramente|slightly
+W|imported|4|particularmente|particularly
+W|imported|4|puramente|purely
+W|imported|4|relativamente|relatively
+W|imported|4|seguida: en seguida|right away
+W|imported|4|protagonista|protagonist
+W|imported|4|visitante|visitor
+W|imported|4|agencia|agency
+W|imported|4|alimentación|feeding
+W|imported|4|armonía|harmony
+W|imported|4|arquitectura|architecture
+W|imported|4|asistencia|attendance or assistance
+W|imported|4|aspiración|ambition
+W|imported|4|atracción|attraction
+W|imported|4|avenida|avenue
+W|imported|4|barra|bar
+W|imported|4|barrera|barrier
+W|imported|4|bebida|drink
+W|imported|4|boda|marriage
+W|imported|4|bola|ball
+W|imported|4|bota|boot
+W|imported|4|campana|bell
+W|imported|4|cartera|wallet
+W|food|4|cena|dinner
+W|imported|4|cercanía|nearness
+W|imported|4|charla|talk
+W|imported|4|circulación|circulation
+W|imported|4|coincidencia|coincidence
+W|imported|4|conquista|conquest
+W|imported|4|convivencia|coexistence
+W|imported|4|corona|crown
+W|imported|4|correspondencia|correspondence
+W|imported|4|crónica|account
+W|imported|4|cruz|cross
+W|imported|4|cuota|quota
+W|imported|4|curva|curve
+W|imported|4|democracia|democracy
+W|imported|4|demostración|demonstration
+W|imported|4|denuncia|accusation
+W|imported|4|dependencia|dependence
+W|imported|4|descripción|description
+W|imported|4|desesperación|desperation
+W|imported|4|determinación|determination
+W|imported|4|dictadura|dictatorship
+W|imported|4|distinción|distinction
+W|imported|4|docena|dozen
+W|imported|4|doctrina|doctrine
+W|imported|4|dosis|dose
+W|imported|4|eficacia|efficiency
+W|imported|4|entidad|entity
+W|home|4|escalera|stairs
+W|imported|4|esfera|sphere
+W|imported|4|especialidad|specialty
+W|imported|4|estrategia|strategy
+W|imported|4|fiebre|fever
+W|imported|4|geografía|geography
+W|imported|4|gota|drop
+W|imported|4|gravedad|seriousness
+W|imported|4|guitarra|guitar
+W|imported|4|hierba|herb
+W|imported|4|humedad|humidity
+W|imported|4|identificación|identification
+W|imported|4|igualdad|equality
+W|imported|4|incertidumbre|uncertainty
+W|imported|4|injusticia|injustice
+W|imported|4|intimidad|private life
+W|imported|4|invasión|invasion
+W|imported|4|joya|jewel
+W|imported|4|laguna|lagoon
+W|imported|4|limitación|limitation
+W|imported|4|madurez|maturity
+W|imported|4|magnitud|magnitude
+W|food|4|manzana|apple
+W|imported|4|mercancía|goods
+W|food|4|miel|honey
+W|imported|4|misa|religious mass
+W|imported|4|muchacha|girl
+W|imported|4|nave|spacecraft
+W|imported|4|noción|notion
+W|imported|4|novia|girlfriend
+W|imported|4|oración|prayer
+W|imported|4|orientación|orientation
+W|imported|4|palma|palm tree
+W|imported|4|pausa|pause
+W|imported|4|perfección|perfection
+W|imported|4|preferencia|preference
+W|imported|4|prenda|piece of clothing
+W|imported|4|presa|dam
+W|imported|4|prisión|prison
+W|imported|4|promoción|promotion
+W|imported|4|propaganda|advertising
+W|imported|4|publicación|publication
+W|imported|4|publicidad|advertising
+W|imported|4|queja|complaint
+W|imported|4|realización|fulfillment
+W|imported|4|recomendación|recommendation
+W|imported|4|reforma|reform
+W|imported|4|residencia|residence
+W|imported|4|resolución|resolution
+W|imported|4|sabiduría|wisdom
+W|food|4|sal|salt
+W|imported|4|selección|selection
+W|imported|4|semilla|seed
+W|imported|4|señorita|young woman
+W|imported|4|sentencia|legal sentence
+W|imported|4|síntesis|synthesis
+W|imported|4|solidaridad|solidarity
+W|imported|4|sonrisa|smile
+W|imported|4|sospecha|suspicion
+W|imported|4|sucesión|succession
+W|imported|4|sustancia|substance
+W|imported|4|tecnología|technology
+W|weather|4|tormenta|storm
+W|imported|4|trampa; hacer trampa|trick
+W|imported|4|tribu|tribe
+W|imported|4|utilidad|usefulness
+W|imported|4|variación|variation
+W|imported|4|vigilancia|surveillance
+W|imported|4|habla|speech
+W|imported|4|abandono|abandonment
+W|imported|4|abrigo|overcoat
+W|imported|4|abuso|abuse
+W|imported|4|acento|accent
+W|travel|4|aeropuerto|airport
+W|imported|4|ahorro|saving
+W|imported|4|amo|master
+W|imported|4|antecedente|antecedent
+W|imported|4|aprendizaje|learning
+W|imported|4|arreglo|arrangement
+W|imported|4|aviso|warning
+W|imported|4|barro|clay
+W|imported|4|botón|button
+W|imported|4|cable|cable
+W|imported|4|cajón|drawer
+W|imported|4|cansancio|tiredness
+W|imported|4|cementerio|cemetery
+W|imported|4|chiste|joke
+W|imported|4|choque|crash
+W|imported|4|cigarrillo|cigarette
+W|imported|4|colaborador|collaborator
+W|imported|4|componente|component
+W|imported|4|concurso|competition
+W|imported|4|contexto|context
+W|imported|4|coro|choir
+W|imported|4|cruce|crossing
+W|imported|4|cuero|leather
+W|imported|4|cumplimiento|fulfillment
+W|imported|4|depósito|deposit
+W|imported|4|desafío|challenge
+W|imported|4|diablo|devil
+W|imported|4|empresario|manager
+W|imported|4|énfasis|emphasis
+W|imported|4|espectador|spectator
+W|family|4|esposo|husband
+W|imported|4|estímulo|stimulus
+W|body|4|estómago|stomach
+W|imported|4|experimento|experiment
+W|imported|4|ferrocarril|railway
+W|imported|4|filósofo|philosopher
+W|imported|4|foco|focus
+W|imported|4|fundamento|foundation
+W|imported|4|genio|genius
+W|imported|4|grano|grain
+W|imported|4|humo|smoke
+W|imported|4|impuesto|tax
+W|imported|4|incendio|fire
+W|imported|4|inicio|beginning
+W|imported|4|instinto|instinct
+W|imported|4|invitado|guest
+W|imported|4|juguete|toy
+W|body|4|labio|lip
+W|nature|4|lago|lake
+W|animal|4|león|lion
+W|imported|4|mediodía|noon
+W|imported|4|monumento|monument
+W|town|4|museo|museum
+W|imported|4|nervio|nerve
+W|imported|4|nieto|grandchild
+W|imported|4|novio|boyfriend
+W|imported|4|obstáculo|obstacle
+W|imported|4|olvido|forgetfulness
+W|imported|4|pacto|pact
+W|imported|4|papa|Pope
+W|imported|4|paraíso|paradise
+W|imported|4|pasillo|hall
+W|imported|4|pecado|sin
+W|imported|4|pedazo|piece
+W|food|4|pescado|fish
+W|imported|4|piano|piano
+W|imported|4|porvenir|future
+W|imported|4|pozo|well
+W|imported|4|prejuicio|prejudice
+W|imported|4|pretexto|pretext
+W|imported|4|príncipe|prince
+W|imported|4|propietario|owner
+W|imported|4|refugio|shelter
+W|imported|4|requisito|prerequisite
+W|imported|4|respaldo|support
+W|imported|4|robo|theft
+W|imported|4|rumor|rumor
+W|imported|4|saco|sack
+W|imported|4|saludo|greeting
+W|imported|4|sello|stamp
+W|clothes|4|sombrero|hat
+W|imported|4|suceso|event
+W|imported|4|sufrimiento|suffering
+W|imported|4|tabaco|tobacco
+W|imported|4|tesoro|treasure
+W|imported|4|tránsito|traffic
+W|imported|4|traslado|transfer
+W|imported|4|tribunal|court
+W|imported|4|tronco|trunk
+W|imported|4|túnel|tunnel
+W|imported|4|vapor|vapor
+W|imported|4|verso|verse
+W|imported|4|vicio|vice
+W|job|4|arquitecto|architect
+W|imported|4|investigador|researcher
+W|job|4|músico|musician
+W|food|4|postre; a la postre|dessert
+W|imported|4|tuyo|yours
+W|verb|4|abundar|to be plentiful
+W|verb|4|acentuar|to accent
+W|verb|4|alargar|to enlarge
+W|verb|4|asimilar|to assimilate
+W|verb|4|autorizar|to authorize
+W|verb|4|contraer|to contract
+W|verb|4|derrotar|to defeat
+W|verb|4|detectar|to detect
+W|verb|4|diferenciar|to differentiate
+W|verb|4|enriquecer|to enrich
+W|verb|4|esforzar|to make an effort
+W|verb|4|flotar|to float
+W|verb|4|generalizar|to generalize
+W|verb|4|iluminar|to illuminate
+W|verb|4|inducir|to lead to
+W|verb|4|lamentar|to regret
+W|verb|4|originar|to give rise to
+W|verb|4|presionar|to press
+W|verb|4|privar|to deprive of
+W|verb|4|proclamar|to proclaim
+W|verb|4|progresar|to progress
+W|verb|4|reiterar|to reiterate
+W|verb|4|relatar|to narrate
+W|verb|4|remontar|to go back to
+W|verb|4|residir|to reside
+W|verb|4|triunfar|to triumph
+W|imported|4|aceptable|acceptable
+W|imported|4|altísimo|very high
+W|imported|4|auxiliar|Assistant
+W|imported|4|británico|British
+W|imported|4|casero|homemade
+W|imported|4|célebre|famous
+W|imported|4|chileno|Chilean
+W|imported|4|colgado|hanging
+W|imported|4|contradictorio|contradictory
+W|imported|4|dicho|saying
+W|imported|4|discreto|discreet
+W|imported|4|distinguido|distinguished
+W|imported|4|dotado|endowed
+W|imported|4|ejecutivo|executive
+W|imported|4|electrónico|electronic
+W|imported|4|encendido|turned on
+W|imported|4|enérgico|energetic
+W|imported|4|estúpido|stupid
+W|imported|4|financiero|financial
+W|imported|4|formidable|formidable
+W|imported|4|geográfico|geographical
+W|imported|4|innecesario|unnecessary
+W|imported|4|innumerable|innumerable
+W|imported|4|intacto|intact
+W|imported|4|mudo|mute
+W|imported|4|nativo|native
+W|imported|4|notorio|notorious
+W|imported|4|pacífico|peaceful
+W|imported|4|pasajero|passenger
+W|imported|4|poético|poetic
+W|adjective|4|policial|police
+W|imported|4|preferible|preferable
+W|imported|4|preso|prisoner
+W|imported|4|psicológico|psychological
+W|adjective|4|ridículo|ridiculous
+W|imported|4|rotundo|categorical
+W|imported|4|simbólico|symbolic
+W|imported|4|solemne|solemn
+W|imported|4|teatral|theatrical
+W|adjective|4|vegetal|plant
+W|imported|4|vinculado|connected
+W|imported|4|automáticamente|automatically
+W|imported|4|concretamente|specifically
+W|imported|4|curiosamente|strangely
+W|imported|4|difícilmente|with difficulty
+W|imported|4|habitualmente|habitually
+W|imported|4|lógicamente|logically
+W|imported|4|permanentemente|permanently
+W|imported|4|propiamente|exactly
+W|imported|4|sucesivamente|successively
+W|imported|4|tranquilamente|calmly
+W|imported|4|ama|housekeeper
+W|imported|4|asistente|assistant
+W|imported|4|descendiente|descendant
+W|imported|4|dirigente|leader
+W|imported|4|turista|tourist
+W|imported|4|abundancia|abundance
+W|imported|4|adolescencia|adolescence
+W|imported|4|advertencia|warning
+W|imported|4|agresión|aggression
+W|imported|4|alarma|alarm
+W|imported|4|aldea|small village
+W|home|4|alfombra|rug
+W|imported|4|ansiedad|anxiety
+W|imported|4|apertura|opening
+W|imported|4|audiencia|audience
+W|imported|4|autonomía|autonomy
+W|imported|4|bala|bullet
+W|imported|4|barba|beard
+W|imported|4|carencia|lack
+W|imported|4|catástrofe|catastrophe
+W|imported|4|celebración|celebration
+W|imported|4|célula|cell
+W|food|4|cerveza|beer
+W|imported|4|cintura|waist
+W|imported|4|comedia|comedy
+W|imported|4|complicación|complication
+W|imported|4|concesión|awarding
+W|imported|4|conexión|connection
+W|imported|4|confesión|confession
+W|imported|4|constancia|perseverance
+W|imported|4|continuidad|continuity
+W|imported|4|conveniencia|convenience
+W|clothes|4|corbata|tie
+W|imported|4|corrupción|corruption
+W|imported|4|decadencia|decline
+W|imported|4|depresión|depression
+W|imported|4|desconfianza|distrust
+W|imported|4|diversión|fun
+W|imported|4|duración|duration
+W|imported|4|emergencia|emergency
+W|imported|4|escasez|scarcity
+W|imported|4|espada|sword
+W|imported|4|estabilidad|stability
+W|imported|4|estatua|statue
+W|imported|4|excelencia|excellence
+W|clothes|4|falda|skirt
+W|imported|4|feria|fair
+W|imported|4|fibra|fiber
+W|imported|4|ficción|fiction
+W|imported|4|finalidad|purpose
+W|imported|4|fortaleza|fortress
+W|imported|4|frustración|frustration
+W|imported|4|galería|gallery
+W|imported|4|garganta|throat
+W|imported|4|grandeza|greatness
+W|imported|4|grasa|grease
+W|imported|4|ideología|ideology
+W|imported|4|ignorancia|ignorance
+W|imported|4|indiferencia|indifference
+W|imported|4|inspiración|inspiration
+W|imported|4|introducción|introduction
+W|imported|4|jerarquía|hierarchy
+W|imported|4|junta|meeting
+W|imported|4|justificación|justification
+W|home|4|lámpara|lamp
+W|imported|4|lana|wool
+W|imported|4|lástima|shame
+W|imported|4|licencia|license
+W|imported|4|magia|magic
+W|imported|4|manga|sleeve
+W|imported|4|máscara|mask
+W|imported|4|matemática|mathematics
+W|imported|4|mejora|improvement
+W|imported|4|mención|mention
+W|imported|4|mentalidad|mindset
+W|imported|4|mina|mine
+W|imported|4|molestia|bother
+W|imported|4|motivación|motivation
+W|imported|4|negativa|negative
+W|imported|4|obsesión|mania
+W|imported|4|orquesta|orchestra
+W|imported|4|pauta|guideline
+W|imported|4|pelea|fight
+W|imported|4|permanencia|permanence
+W|imported|4|persecución|pursuit
+W|imported|4|pesadilla|nightmare
+W|imported|4|pesca|fishing
+W|imported|4|petición|request
+W|imported|4|placa|plaque
+W|imported|4|plenitud|fullness
+W|imported|4|porción|part
+W|imported|4|previsión|forecast
+W|imported|4|prima|female cousin
+W|imported|4|prisa|hurry
+W|imported|4|proximidad|proximity
+W|imported|4|proyección|projection
+W|imported|4|pureza|purity
+W|imported|4|rata|rat
+W|imported|4|raya|line
+W|imported|4|recepción|reception
+W|imported|4|receta|recipe
+W|imported|4|recuperación|recovery
+W|imported|4|renta|income
+W|imported|4|repetición|repetition
+W|imported|4|república|republic
+W|imported|4|respiración|respiration
+W|imported|4|rutina|routine
+W|imported|4|secuencia|sequence
+W|feeling|4|sed|thirst
+W|imported|4|seda|silk
+W|imported|4|seriedad|seriousness
+W|imported|4|sierra|mountain range
+W|imported|4|tapa|cover
+W|home|4|taza|cup
+W|imported|4|timidez|shyness
+W|imported|4|tinta|ink
+W|imported|4|tontería|stupidity
+W|imported|4|traducción|translation
+W|imported|4|traición|treason
+W|imported|4|transición|transition
+W|imported|4|trascendencia|transcendent nature
+W|imported|4|trayectoria|trajectory
+W|imported|4|uña|nail
+W|imported|4|utilización|use
+W|imported|4|venganza|revenge
+W|imported|4|de veras vera|really
+W|imported|4|acero|steel
+W|imported|4|adorno|decoration
+W|imported|4|aficionado|fan
+W|imported|4|agujero|hole
+W|imported|4|alcalde|mayor
+W|imported|4|aliento|breath
+W|food|4|almuerzo|lunch
+W|imported|4|anillo|ring
+W|imported|4|aplauso|applause
+W|imported|4|archivo|archive
+W|food|4|arroz|rice
+W|imported|4|ascenso|promotion
+W|imported|4|asesino|killer
+W|imported|4|auxilio|help
+W|imported|4|balance|outcome
+W|home|4|balcón|balcony
+W|imported|4|bando|faction
+W|family|4|bebé|baby
+W|imported|4|beso|kiss
+W|imported|4|bronce|bronze
+W|imported|4|cáncer|cancer
+W|imported|4|cañón|canyon
+W|imported|4|cartel|poster
+W|imported|4|casco|helmet
+W|town|4|castillo|castle
+W|imported|4|cauce|riverbed
+W|imported|4|cemento|cement
+W|number|4|centenar|hundred
+W|animal|4|cerdo|pig
+W|imported|4|cerro|hill
+W|imported|4|congreso|congress
+W|imported|4|coraje|courage
+W|imported|4|costado|side
+W|imported|4|costo|price
+W|school|4|cuaderno|notebook
+W|imported|4|defensor|defender
+W|imported|4|demonio|demon
+W|food|4|desayuno|breakfast
+W|imported|4|domicilio|residence
+W|home|4|dormitorio|bedroom
+W|imported|4|enfrentamiento|confrontation
+W|imported|4|engaño|deceit
+W|imported|4|entendimiento|understanding
+W|imported|4|escudo|shield
+W|imported|4|exilio|exile
+W|imported|4|filo|cutting edge Edge
+W|imported|4|fragmento|fragment
+W|imported|4|globo|balloon
+W|imported|4|guante|glove
+W|imported|4|hallazgo|finding
+W|home|4|horno|oven
+W|imported|4|imperio|empire
+W|imported|4|incidente|incident
+W|imported|4|indicio|indication
+W|imported|4|infierno|hell
+W|imported|4|ingenio|wit
+W|imported|4|invento|invention
+W|imported|4|jugador|player
+W|imported|4|ladrillo|brick
+W|imported|4|latín|Latin
+W|imported|4|logro|success
+W|food|4|maíz|corn
+W|imported|4|mandato|mandate
+W|imported|4|poner de manifiesto|to show
+W|imported|4|ministerio|ministry
+W|imported|4|monstruo|monster
+W|imported|4|músculo|muscle
+W|imported|4|nido|nest
+W|imported|4|nudo|knot
+W|imported|4|obispo|bishop
+W|imported|4|observador|observer
+W|time|4|otoño|autumn
+W|imported|4|pánico|panic
+W|imported|4|patrimonio|inheritance
+W|imported|4|plomo|lead
+W|food|4|pollo|chicken
+W|imported|4|porcentaje|percentage
+W|imported|4|portador|bearer
+W|imported|4|prisionero|prisoner
+W|imported|4|pulmón|lung
+W|food|4|queso|cheese
+W|imported|4|rango|rank
+W|imported|4|rastro|track
+W|imported|4|razonamiento|reasoning
+W|imported|4|recinto|enclosure
+W|imported|4|reparto|distribution
+W|town|4|restaurante|restaurant
+W|imported|4|reto|challenge
+W|imported|4|rito|rite
+W|imported|4|salario|salary
+W|imported|4|suicidio|suicide
+W|imported|4|taxi|taxi
+W|imported|4|televisor|television set
+W|imported|4|timbre|doorbell
+W|imported|4|toque|touch
+W|imported|4|trámite|procedure
+W|imported|4|transcurso|passing
+W|imported|4|viajero|traveler
+W|imported|4|vigor|force
+W|clothes|4|vínculo|tie
+W|imported|4|cazador|hunter
+W|job|4|enfermero|nurse
+W|imported|4|historiador|historian
+W|imported|4|pastor|shepherd
+W|verb|4|aislar|to isolate
+W|verb|4|alternar|to alternate
+W|verb|4|aludir|to allude to
+W|verb|4|apoderar|to take power
+W|verb|4|arder|to burn
+W|verb|4|asentar|to settle
+W|verb|4|beneficiar|to benefit
+W|verb|4|culminar|to culminate
+W|verb|4|descuidar|to neglect
+W|verb|4|despreciar|to despise
+W|verb|4|disolver|to dissolve
+W|verb|4|disputar|to dispute
+W|verb|4|fallecer|to pass away
+W|verb|4|finalizar|to end
+W|verb|4|insinuar|to insinuate
+W|verb|4|localizar|to locate
+W|verb|4|preceder|to precede
+W|verb|4|presumir|to boast
+W|verb|4|reforzar|to reinforce
+W|verb|4|remitir|to remit
+W|verb|4|reponer|to replace
+W|verb|4|rozar|to touch lightly
+W|verb|4|tornar|to transform
+W|imported|4|agrícola|agricultural
+W|imported|4|apto|appropriate
+W|imported|4|autorizado|authorized
+W|imported|4|civilizado|civilized
+W|imported|4|comparable|comparable
+W|imported|4|complementario|additional
+W|imported|4|consagrado|dedicated
+W|imported|4|cubano|Cuban
+W|imported|4|denso|heavy
+W|imported|4|desaparecido|missing
+W|imported|4|diplomático|diplomatic
+W|imported|4|disperso|spread out
+W|imported|4|dominante|dominant
+W|imported|4|educativo|educational
+W|imported|4|exótico|exotic
+W|imported|4|glorioso|glorious
+W|imported|4|impreso|printed
+W|imported|4|ingenuo|naive
+W|imported|4|insignificante|insignificant
+W|imported|4|integrante|integral
+W|imported|4|inverso|inverse
+W|imported|4|lingüístico|linguistic
+W|imported|4|matemático|mathematical
+W|imported|4|mexicano|Mexican
+W|imported|4|parcial|partial
+W|imported|4|penoso|painful
+W|imported|4|poblado|populated
+W|imported|4|privilegiado|privileged
+W|adjective|4|rebelde|rebel
+W|adjective|4|representativo|representative
+W|imported|4|respetuoso|respectful
+W|imported|4|sospechoso|suspicious
+W|imported|4|subterráneo|underground
+W|imported|4|tecnológico|technological
+W|imported|4|tendido|spread
+W|imported|4|virgen|virgin
+W|imported|4|antemano|beforehand
+W|imported|4|básicamente|basically
+W|imported|4|enormemente|enormously
+W|imported|4|excesivamente|excessively
+W|imported|4|extraordinariamente|extraordinarily
+W|imported|4|físicamente|physically
+W|imported|4|inclusive|including
+W|imported|4|inevitablemente|inevitably
+W|imported|4|intensamente|intensely
+W|imported|4|lamentablemente|regrettably
+W|imported|4|literalmente|literally
+W|imported|4|sinceramente|sincerely
+W|imported|4|compatriota|fellow countryman
+W|imported|4|acumulación|accumulation
+W|imported|4|acusación|accusation
+W|imported|4|adaptación|adaptation
+W|imported|4|adquisición|acquisition
+W|imported|4|agricultura|agriculture
+W|imported|4|aguja|needle
+W|imported|4|alianza|alliance
+W|imported|4|alteración|alteration
+W|imported|4|alusión|allusion
+W|imported|4|amplitud|breadth
+W|imported|4|antigüedad|antiquity
+W|imported|4|aprobación|approval
+W|imported|4|asamblea|assembly
+W|imported|4|bestia|beast
+W|travel|4|bicicleta|bicycle
+W|body|4|cabecera|head
+W|imported|4|caridad|charity
+W|imported|4|casita|cottage
+W|imported|4|ceniza|ash
+W|imported|4|censura|censorship
+W|imported|4|chispa|spark
+W|imported|4|clínica|clinic
+W|imported|4|comunión|communion
+W|imported|4|condena|sentence in prison
+W|imported|4|conservación|conservation
+W|imported|4|corrección|correction
+W|imported|4|cortina|curtain
+W|imported|4|crueldad|cruelty
+W|imported|4|cuadra|city block
+W|imported|4|cubierta|covering
+W|imported|4|cuna|cradle
+W|imported|4|cúpula|dome
+W|imported|4|dedicación|dedication
+W|imported|4|devoción|devotion
+W|imported|4|dieta|diet
+W|imported|4|difusión|spread
+W|imported|4|disputa|dispute
+W|imported|4|dueña|landlady
+W|imported|4|electricidad|electricity
+W|imported|4|especulación|speculation
+W|imported|4|espina|thorn
+W|imported|4|ética|ethics
+W|imported|4|exactitud|accuracy
+W|imported|4|excusa|excuse
+W|imported|4|expansión|expansion
+W|imported|4|expedición|expedition
+W|imported|4|explotación|exploitation
+W|imported|4|ficha|index card
+W|imported|4|fidelidad|faithfulness
+W|imported|4|franja|strip
+W|imported|4|generosidad|generosity
+W|imported|4|gira|tour
+W|imported|4|goma|rubber
+W|imported|4|hacienda|ranch
+W|food|4|harina|flour
+W|imported|4|iluminación|illumination
+W|imported|4|incapacidad|inability
+W|imported|4|inocencia|innocence
+W|imported|4|inscripción|inscription
+W|imported|4|inseguridad|insecurity
+W|imported|4|insistencia|insistence
+W|imported|4|interrupción|interruption
+W|imported|4|intuición|intuition
+W|imported|4|invención|invention
+W|imported|4|ironía|irony
+W|imported|4|lámina|sheet of metal
+W|imported|4|lealtad|loyalty
+W|imported|4|lentitud|slowness
+W|imported|4|llama|flame
+W|town|4|localidad|town
+W|school|4|maestra|teacher
+W|imported|4|maquinaria|machinery
+W|animal|4|mariposa|butterfly
+W|imported|4|mecánica|mechanics
+W|imported|4|medalla|medal
+W|imported|4|modificación|modification
+W|imported|4|monja|nun
+W|imported|4|muralla|city wall
+W|imported|4|naturalidad|ease
+W|imported|4|ópera|opera
+W|animal|4|oveja|sheep
+W|imported|4|paloma|dove
+W|imported|4|parada|transportation stop
+W|imported|4|pertenencia|membership
+W|imported|4|peseta|peseta
+W|imported|4|peste|plague
+W|imported|4|pila|battery
+W|imported|4|pistola|gun
+W|imported|4|plataforma|platform
+W|imported|4|polémica|polemics
+W|imported|4|proposición|proposition
+W|imported|4|prudencia|prudence
+W|imported|4|rebeldía|rebelliousness
+W|imported|4|reducción|reduction
+W|imported|4|renovación|renewal
+W|school|4|réplica|answer
+W|imported|4|represión|repression
+W|imported|4|reproducción|reproduction
+W|imported|4|retirada|retreat
+W|imported|4|revelación|revelation
+W|imported|4|revisión|checking revision
+W|imported|4|rienda|rein
+W|imported|4|ronda|round
+W|imported|4|sábana|bed sheet
+W|imported|4|salvación|salvation
+W|imported|4|semejanza|similarity
+W|imported|4|seña|sign
+W|imported|4|serenidad|serenity
+W|imported|4|solicitud|request
+W|food|4|sopa|soup
+W|imported|4|sugerencia|suggestion
+W|imported|4|supervivencia|survival
+W|imported|4|tolerancia|tolerance
+W|imported|4|tortura|torture
+W|imported|4|trama|plot
+W|imported|4|ubicación|position
+W|food|4|uva|grape
+W|imported|4|vanidad|vanity
+W|imported|4|variante|variant
+W|imported|4|vegetación|vegetation
+W|imported|4|vena|vein
+W|town|4|villa|village
+W|imported|4|vitalidad|vitality
+W|imported|4|aula|classroom
+W|imported|4|abrazo|hug
+W|imported|4|acorde|consistency
+W|imported|4|adversario|adversary
+W|imported|4|algodón|cotton
+W|imported|4|alquiler|rent
+W|imported|4|aniversario|anniversary
+W|imported|4|antepasado|ancestor
+W|imported|4|apunte|note
+W|imported|4|aroma|aroma
+W|imported|4|asalto|assault
+W|imported|4|ascensor|elevator
+W|imported|4|bote|small boat
+W|imported|4|bulto|bulk
+W|imported|4|buque|large ship
+W|imported|4|calendario|calendar
+W|imported|4|carbón|coal
+W|food|4|chocolate|chocolate
+W|clothes|4|cinturón|belt
+W|imported|4|circo|circus
+W|imported|4|cobre|copper
+W|imported|4|colmo|climax
+W|imported|4|comandante|commander
+W|imported|4|coronel|colonel
+W|imported|4|correo|mail
+W|imported|4|cumpleaños|birthday
+W|imported|4|decreto|decree
+W|imported|4|descenso|decline
+W|imported|4|desfile|parade
+W|imported|4|desplazamiento|removal
+W|imported|4|diagnóstico|diagnosis
+W|imported|4|diputado|deputy
+W|imported|4|discípulo|disciple
+W|imported|4|disgusto|disgust
+W|imported|4|disparo|shot
+W|imported|4|divorcio|divorce
+W|imported|4|duelo|grief
+W|imported|4|encargo|assignment
+W|imported|4|enfoque|focus
+W|imported|4|escritorio|desk
+W|imported|4|espectro|ghost
+W|imported|4|esplendor|splendor
+W|imported|4|estadio|stadium
+W|imported|4|evento|event
+W|imported|4|expediente|file
+W|imported|4|flujo|flow
+W|imported|4|freno|brake
+W|imported|4|fundador|founder
+W|imported|4|gallo|rooster
+W|imported|4|gobernador|governor
+W|imported|4|heredero|heir
+W|imported|4|himno|hymn
+W|imported|4|humano|human
+W|animal|4|insecto|insect
+W|imported|4|instituto|institute
+W|imported|4|insulto|insult
+W|imported|4|interlocutor|participant in a dialog
+W|food|4|jugo|juice
+W|home|4|lecho|bed
+W|imported|4|lema|motto
+W|animal|4|lobo|wolf
+W|imported|4|mantenimiento|maintenance
+W|imported|4|molde|mold
+W|imported|4|océano|ocean
+W|imported|4|oeste|West
+W|imported|4|optimismo|optimism
+W|imported|4|pañuelo|handkerchief
+W|imported|4|parentesco|kinship
+W|imported|4|parto|birth
+W|nature|4|pasto|grass
+W|imported|4|perfume|perfume
+W|imported|4|perjuicio|damage
+W|imported|4|planteamiento|proposal
+W|imported|4|polo|pole
+W|imported|4|préstamo|loan
+W|imported|4|pulso|pulse
+W|imported|4|puño|fist
+W|animal|4|ratón|mouse
+W|imported|4|realismo|realism
+W|imported|4|recorte|clipping
+W|imported|4|reglamento|regulations
+W|imported|4|relieve|relief
+W|imported|4|reposo|rest
+W|imported|4|residuo|residue
+W|imported|4|sillón|armchair
+W|imported|4|sindicato|trade union
+W|family|4|sobrino|nephew
+W|imported|4|temblor|tremor
+W|imported|4|teniente|lieutenant
+W|number|4|tercio|third
+W|imported|4|titular|headline
+W|food|4|tomate|tomato
+W|imported|4|trigo|wheat
+W|imported|4|umbral|threshold
+W|imported|4|administrador|administrator
+W|imported|4|embajador|ambassador
+W|job|4|pescador|fisherman
+W|imported|4|coma|comma
+W|verb|4|abusar|to abuse
+W|verb|4|acontecer|to happen
+W|verb|4|alumbrar|to light
+W|verb|4|complacer|to please
+W|verb|4|consumar|to complete
+W|verb|4|contrastar|to contrast
+W|verb|4|derrumbar|to knock down
+W|verb|4|desenvolver|to unwrap
+W|verb|4|disipar|to dispel
+W|verb|4|dotar|to endow
+W|verb|4|encarnar|to embody
+W|verb|4|estrechar|to tighten
+W|verb|4|honrar|to honor
+W|verb|4|ilustrar|to illustrate
+W|verb|4|incitar|to incite
+W|verb|4|movilizar|to mobilize
+W|verb|4|prescindir|to do without
+W|verb|4|ratificar|to ratify
+W|verb|4|recitar|to recite
+W|verb|4|recobrar|to recover
+W|verb|4|refugiar|to take shelter
+W|verb|4|reprimir|to repress
+W|verb|4|retornar|to return
+W|verb|4|revivir|to revive
+W|verb|4|simular|to pretend
+W|imported|4|sobrepasar|excel
+W|verb|4|subsistir|to subsist
+W|verb|4|tranquilizar|to calm down
+W|imported|4|acertado|correct
+W|imported|4|ágil|agile
+W|imported|4|agitado|agitated
+W|imported|4|agrario|agrarian
+W|imported|4|ambulante|traveling
+W|imported|4|amenazado|threatened
+W|imported|4|arbitrario|arbitrary
+W|imported|4|atrapado|trapped
+W|imported|4|brasileño|Brazilian
+W|imported|4|catalán|Catalan
+W|imported|4|coherente|coherent
+W|imported|4|comprensible|understandable
+W|imported|4|comunitario|of the community
+W|imported|4|condicionado|conditioned
+W|imported|4|constitucional|constitutional
+W|adjective|4|convincente|convincing
+W|imported|4|cuidadoso|careful
+W|imported|4|deseable|desirable
+W|imported|4|destruido|destroyed
+W|imported|4|detallado|detailed
+W|imported|4|disfrazado|disguised
+W|imported|4|enterrado|buried
+W|adjective|4|equivalente|equivalent
+W|imported|4|erótico|erotic
+W|imported|4|espacial|spatial
+W|imported|4|estratégico|strategic
+W|imported|4|ético|ethical
+W|imported|4|explícito|explicit
+W|imported|4|expreso|express
+W|adjective|4|fiscal|fiscal
+W|imported|4|gráfico|graphic
+W|imported|4|holandés|Dutch
+W|imported|4|incipiente|beginning
+W|imported|4|incomprensible|incomprehensible
+W|imported|4|indudable|unquestionable
+W|imported|4|inexplicable|unexplainable
+W|imported|4|infeliz|unhappy
+W|imported|4|inmerso|engrossed
+W|imported|4|inminente|imminent
+W|imported|4|inmóvil|immovable
+W|imported|4|inquietante|disquieting
+W|imported|4|invertido|reversed
+W|imported|4|irracional|irrational
+W|imported|4|justificado|justifiable
+W|imported|4|latente|latent
+W|imported|4|matrimonial|matrimonial
+W|imported|4|medieval|medieval
+W|imported|4|minucioso|meticulous
+W|imported|4|monótono|monotonous
+W|imported|4|necesitado|poor
+W|imported|4|opaco|dull
+W|imported|4|óptimo|optimum
+W|imported|4|orientado|positioned
+W|imported|4|pasivo|passive
+W|imported|4|penal|penal
+W|imported|4|perpetuo|continual
+W|imported|4|peruano|Peruvian
+W|imported|4|potencial|potential
+W|imported|4|precario|precarious
+W|imported|4|presidencial|presidential
+W|imported|4|publicitario|advertising
+W|imported|4|refinado|refined
+W|imported|4|reflejado|reflected
+W|imported|4|relevante|relevant
+W|imported|4|respetable|respectable
+W|imported|4|rústico|rustic
+W|imported|4|sanitario|health
+W|imported|4|sombrío|shady
+W|imported|4|soviético|Soviet
+W|imported|4|suizo|Swiss
+W|imported|4|susceptible|susceptible
+W|imported|4|transitorio|transitory
+W|imported|4|altamente|highly
+W|imported|4|bruscamente|quickly
+W|imported|4|decididamente|decidedly
+W|imported|4|íntimamente|intimately
+W|imported|4|mutuamente|mutually
+W|imported|4|radicalmente|radically
+W|imported|4|violentamente|violently
+W|imported|4|cómplice|accomplice
+W|imported|4|delincuente|delinquent
+W|school|4|gobernante|ruler
+W|imported|4|novelista|novelist
+W|imported|4|academia|academy
+W|imported|4|afueras|outskirts
+W|imported|4|agitación|agitation
+W|imported|4|alerta|alert
+W|imported|4|apreciación|appreciation
+W|imported|4|aproximación|approximation
+W|imported|4|apuesta|wager
+W|imported|4|autorización|authorization
+W|imported|4|bandeja|tray
+W|imported|4|barbaridad|atrocity
+W|imported|4|biografía|biography
+W|imported|4|bruja|witch
+W|imported|4|burla|mockery
+W|imported|4|cadera|hip
+W|imported|4|calificación|evaluation
+W|imported|4|camiseta|T-shirt
+W|imported|4|cancha|playing field
+W|imported|4|carcajada|hearty laughter
+W|imported|4|cátedra|academic chair
+W|town|4|catedral|cathedral
+W|body|4|ceja|eyebrow
+W|clothes|4|chaqueta|jacket
+W|imported|4|chimenea|chimney
+W|imported|4|cima|summit
+W|imported|4|clasificación|classification
+W|imported|4|colina|hill
+W|imported|4|compensación|compensation
+W|imported|4|computadora|computer
+W|imported|4|consigna|watchword
+W|imported|4|constitución|constitution
+W|imported|4|contienda|contest
+W|imported|4|contribución|contribution
+W|imported|4|cordillera|mountain range
+W|imported|4|cortesía|courtesy
+W|imported|4|corteza|bark
+W|imported|4|cría|breeding
+W|imported|4|densidad|density
+W|imported|4|dinámica|dynamics
+W|imported|4|elegancia|elegance
+W|imported|4|embajada|embassy
+W|imported|4|encuesta|poll
+W|imported|4|era|era
+W|imported|4|escultura|sculpture
+W|imported|4|estatura|stature
+W|imported|4|estupidez|stupidity
+W|imported|4|eternidad|eternity
+W|imported|4|exageración|exaggeration
+W|imported|4|exploración|exploration
+W|imported|4|exportación|export
+W|imported|4|faena|task
+W|imported|4|falla|flaw
+W|town|4|farmacia|pharmacy
+W|imported|4|fatiga|fatigue
+W|imported|4|firmeza|firmness
+W|imported|4|fracción|fraction
+W|imported|4|fundación|foundation
+W|imported|4|furia|fury
+W|imported|4|gala|gala
+W|imported|4|ganancia|gain
+W|imported|4|grabación|recording
+W|imported|4|humillación|humiliation
+W|imported|4|ida|departure
+W|imported|4|ilustración|illustration
+W|imported|4|imitación|imitation
+W|imported|4|imposibilidad|impossibility
+W|imported|4|imposición|imposition
+W|imported|4|imprenta|printing house
+W|imported|4|incorporación|inclusion
+W|imported|4|indicación|indication
+W|imported|4|indignación|indignation
+W|imported|4|infinidad|infinity
+W|imported|4|innovación|innovation
+W|imported|4|integración|integration
+W|imported|4|integridad|integrity
+W|imported|4|jaula|cage
+W|imported|4|leña|firewood
+W|imported|4|longitud|length
+W|travel|4|maleta|suitcase
+W|home|4|manta|blanket
+W|imported|4|melodía|melody
+W|imported|4|merced|favor
+W|imported|4|minoría|minority
+W|imported|4|nacionalidad|nationality
+W|imported|4|narración|narration
+W|weather|4|niebla|fog
+W|imported|4|niñez|childhood
+W|imported|4|normalidad|normality
+W|imported|4|parcela|piece of property
+W|imported|4|pastilla|pill
+W|imported|4|patada|kick
+W|imported|4|percepción|perception
+W|imported|4|perla|pearl
+W|imported|4|piedad|pity
+W|imported|4|presidencia|presidency
+W|imported|4|princesa|princess
+W|imported|4|probabilidad|probability
+W|imported|4|procesión|procession
+W|imported|4|prohibición|prohibition
+W|imported|4|psicología|psychology
+W|imported|4|rebelión|rebellion
+W|imported|4|reconstrucción|reconstruction
+W|imported|4|resonancia|resonance
+W|imported|4|sanción|sanction
+W|imported|4|sede|headquarters
+W|imported|4|sencillez|simplicity
+W|animal|4|serpiente|snake
+W|imported|4|siesta|siesta
+W|imported|4|sinceridad|sincerity
+W|imported|4|superioridad|superiority
+W|imported|4|talla|size
+W|imported|4|terraza|terrace
+W|imported|4|tira|strip
+W|imported|4|tonelada|ton
+W|imported|4|transmisión|broadcast
+W|imported|4|transparencia|transparency
+W|imported|4|validez|validity
+W|imported|4|vanguardia|vanguard
+W|imported|4|vejez|old age
+W|food|4|verdura|vegetables
+W|imported|4|abanico|range
+W|imported|4|acercamiento|approach
+W|imported|4|acierto|good aim
+W|imported|4|adelanto|advance
+W|imported|4|aislamiento|isolation
+W|imported|4|ajuste|adjustment
+W|imported|4|aliado|ally
+W|imported|4|altar|altar
+W|imported|4|amparo|protection
+W|imported|4|apetito|appetite
+W|imported|4|arroyo|brook
+W|time|4|atardecer|evening
+W|imported|4|atributo|attribute
+W|imported|4|bastón|walking cane
+W|imported|4|bigote|mustache
+W|imported|4|on board|a bordo
+W|imported|4|catálogo|catalog
+W|imported|4|caudal|flow rate or volume of water in a river
+W|imported|4|clavo|nail
+W|imported|4|collar|collar
+W|imported|4|comisario|commissioner
+W|imported|4|compás|rhythm
+W|imported|4|comprador|buyer
+W|imported|4|conocedor|expert
+W|imported|4|contorno|outline
+W|imported|4|convento|convent
+W|imported|4|corral|corral
+W|imported|4|cuerno|horn
+W|imported|4|desacuerdo|disagreement
+W|imported|4|deterioro|deterioration
+W|school|4|diccionario|dictionary
+W|imported|4|disparate|nonsense
+W|imported|4|egoísmo|selfishness
+W|imported|4|elogio|praise
+W|imported|4|embarazo|pregnancy
+W|imported|4|emisor|transmitter
+W|imported|4|enlace|link
+W|imported|4|entierro|burial
+W|imported|4|entrenamiento|training
+W|imported|4|esqueleto|skeleton
+W|imported|4|estallido|crash
+W|imported|4|frasco|bottle
+W|imported|4|hígado|liver
+W|imported|4|laberinto|maze
+W|imported|4|lapso|lapse
+W|imported|4|litro|liter
+W|imported|4|llanto|crying
+W|imported|4|mango|handle
+W|imported|4|mármol|marble
+W|imported|4|ocio|leisure time
+W|imported|4|pilar|pillar
+W|imported|4|pino|pine tree
+W|imported|4|pleito|litigation
+W|imported|4|productor|producer
+W|imported|4|protector|protector
+W|imported|4|ramo|bunch of flowers
+W|imported|4|reclamo|claim
+W|imported|4|rencor|grudge
+W|imported|4|repertorio|repertoire
+W|imported|4|reportaje|news report
+W|imported|4|resentimiento|resentment
+W|imported|4|riñón|kidney
+W|imported|4|rosario|rosary
+W|imported|4|seguidor|follower
+W|imported|4|seminario|seminar
+W|imported|4|sendero|foot path
+W|imported|4|sudor|sweat
+W|imported|4|tablero|board
+W|imported|4|tacto|sense of touch
+W|imported|4|talón|heel
+W|imported|4|tambor|drum
+W|imported|4|tinte|dye
+W|imported|4|traidor|traitor
+W|imported|4|trance|trance
+W|imported|4|trapo|rag
+W|imported|4|trastorno|confusion
+W|imported|4|triángulo|triangle
+W|imported|4|truco|trick
+W|imported|4|turismo|tourism
+W|imported|4|veneno|poison
+W|imported|4|verbo|verb
+W|imported|4|asesor|adviser
+W|job|4|cocinero|cook
+W|imported|4|consejero|advisor
+W|imported|4|fotógrafo|photographer
+W|imported|4|portero|porter
+W|imported|4|senador|senator
+W|imported|4|servidor|servant
+W|imported|4|lente|lens
+W|imported|4|vosotros|you
+W|verb|4|aferrar|to grasp
+W|verb|4|agrupar|to put in a group
+W|verb|4|argumentar|to argue
+W|verb|4|articular|to articulate
+W|verb|4|atener|to abide by
+W|verb|4|capturar|to capture
+W|verb|4|ceñir|to adhere to
+W|verb|4|chupar|to suck
+W|verb|4|configurar|to form
+W|verb|4|consolidar|to consolidate
+W|verb|4|contagiar|to infect
+W|verb|4|coronar|to crown
+W|verb|4|desfilar|to march
+W|verb|4|despojar|to deprive
+W|verb|4|disculpar|to excuse
+W|verb|4|encabezar|to head
+W|verb|4|engendrar|to engender
+W|verb|4|igualar|to equate
+W|verb|4|inquietar|to make uneasy
+W|verb|4|interponer|to interpose
+W|verb|4|intuir|to sense
+W|verb|4|invocar|to invoke
+W|verb|4|liquidar|to liquidate
+W|verb|4|obrar|to work
+W|verb|4|oscurecer|to get dark
+W|verb|4|ostentar|to flaunt
+W|verb|4|palpar|to feel
+W|verb|4|prosperar|to prosper
+W|verb|4|reaparecer|to reappear
+W|verb|4|rebajar|to lower
+W|verb|4|reinar|to reign
+W|verb|4|replicar|to reply
+W|verb|4|restaurar|to restore
+W|verb|4|sustentar|to maintain
+W|verb|4|topar|to run into
+W|verb|4|vibrar|to vibrate
+W|verb|4|vincular|to connect
+W|imported|1|aquel|that
+W|imported|1|en cuanto a cuanto|in terms of
+W|imported|1|cuyo|whose
+W|imported|2|diferente|different
+W|imported|1|ese, esa|that
+W|adjective|1|este, esta|this
+W|imported|2|al final final|finally
+W|imported|2|tu|your
+W|imported|2|a través|across
+W|imported|1|él|he
+W|imported|1|lo|the
+W|imported|1|un|a
+W|imported|2|acción|action
+W|imported|2|actividad|activity
+W|imported|2|atención|attention
+W|body|1|cabeza|head
+W|town|1|calle|street
+W|body|2|cara|face
+W|home|1|casa|house
+W|town|1|ciudad|city
+W|imported|1|clase|kind
+W|imported|2|condición|condition
+W|imported|1|cosa|thing
+W|imported|1|cuenta|bill
+W|school|2|cuestión|question
+W|imported|2|diferencia|difference
+W|imported|2|duda|doubt
+W|imported|2|edad|age
+W|time|2|época|time
+W|imported|2|especie|kind
+W|imported|2|experiencia|experience
+W|imported|2|falta|lack
+W|family|1|familia|family
+W|imported|2|figura|figure
+W|imported|1|forma|form
+W|imported|1|fuerza|strength
+W|imported|1|gente|people
+W|imported|1|gracia|thank you
+W|imported|2|guerra|war
+W|imported|1|historia|history
+W|time|1|hora|hour
+W|imported|1|idea|idea
+W|imported|2|imagen|image
+W|imported|2|importancia|importance
+W|imported|2|ley|law
+W|imported|2|libertad|freedom
+W|imported|2|línea|line
+W|imported|1|luz|light
+W|family|1|madre|mother
+W|imported|1|manera|way
+W|body|1|mano|hand
+W|imported|2|medida; a medida que|measure: to the extent
+W|home|2|mesa|table
+W|imported|2|muerte|death
+W|imported|1|mujer|woman
+W|imported|2|necesidad|necessity
+W|time|1|noche|night
+W|job|1|obra|work
+W|imported|2|ocasión|opportunity
+W|school|1|palabra|word
+W|imported|1|parte|part
+W|imported|1|persona|person
+W|imported|2|posibilidad|possibility
+W|school|2|pregunta|question
+W|imported|1|razón|reason
+W|imported|1|realidad|reality
+W|imported|1|relación|relationship
+W|school|2|respuesta|answer
+W|time|2|semana|week
+W|imported|1|situación|situation
+W|imported|2|sociedad|society
+W|imported|1|verdad|truth
+W|time|1|vez|time
+W|imported|2|vista|view
+W|imported|2|voz|voice
+W|imported|2|zona|area
+W|food|1|agua|water
+W|imported|2|acuerdo; de acuerdo|accord: in agreement
+W|imported|2|aire|air
+W|feeling|2|amor|love
+W|animal|2|animal|animal
+W|time|1|año|year
+W|imported|2|aspecto|aspect
+W|travel|2|camino|road
+W|imported|1|campo|field
+W|imported|1|caso|case
+W|imported|2|centro|center
+W|color|2|color|color
+W|imported|2|conocimiento|knowledge
+W|body|1|cuerpo|body
+W|time|1|día|day
+W|imported|1|dinero|money
+W|imported|1|dios|god
+W|imported|2|don|courtesy title
+W|imported|2|efecto|effect
+W|imported|1|ejemplo|example
+W|imported|1|sin embargo embargo|nevertheless
+W|imported|2|esfuerzo|effort
+W|imported|2|espacio|space
+W|imported|2|estado|state
+W|imported|2|favor|favor
+W|imported|1|fin|end
+W|imported|2|gobierno|government
+W|imported|1|grupo|group
+W|family|1|hijo|son
+W|imported|2|interés|interest
+W|imported|2|juego|game
+W|imported|1|lado|side
+W|school|1|libro|book
+W|imported|1|lugar|place
+W|time|1|mes|month
+W|time|2|minuto|minute
+W|imported|1|modo|way
+W|imported|1|momento|moment
+W|imported|2|movimiento|movement
+W|nature|1|mundo|world
+W|imported|1|niño|child
+W|imported|2|nivel|level
+W|imported|1|nombre|name
+W|imported|2|número|number
+W|imported|2|objeto|object
+W|family|1|padre|father
+W|imported|1|país|country
+W|imported|1|papel|paper
+W|imported|2|partido|party
+W|body|2|pie|foot
+W|imported|1|principio|beginning
+W|imported|1|problema|problem
+W|imported|2|proceso|process
+W|imported|1|pueblo|people
+W|imported|1|punto|point
+W|imported|2|respecto; con respecto a|respect: with regards to
+W|imported|2|resto|rest
+W|imported|2|resultado|result
+W|imported|1|santo|saint
+W|imported|1|sentido|sense
+W|imported|2|servicio|service
+W|imported|1|siglo|century
+W|imported|2|sistema|system
+W|imported|2|suelo|ground
+W|imported|1|te|you
+W|imported|1|tema|theme
+W|time|1|tiempo|time
+W|imported|1|tipo|type
+W|job|1|trabajo|work
+W|imported|2|valor|value
+W|travel|2|viaje|travel
+S|imported|1|al frente: frente a frente|facing; across from
+W|imported|2|orden|order
+W|imported|1|de de|of
+W|imported|1|cual|which
+W|imported|1|el, la|the
+W|imported|1|ella, ellas|she
+W|imported|2|ello|it
+W|imported|1|eso|that
+W|imported|1|éste, ésta|this one
+W|imported|1|esto|this
+W|imported|1|nos|us
+W|imported|1|nosotros|we
+W|imported|1|se|oneself
+W|imported|1|yo|I
+W|verb|2|acercar|to come near
+W|verb|2|referir|to refer to
+W|imported|2|siendo|being
+W|imported|4|accesible|accessible
+W|imported|4|acomodado|well-to-do
+W|imported|4|afín|akin to
+W|imported|4|alarmante|alarming
+W|imported|4|andaluz|Andalusian
+W|imported|4|angustiado|anguished
+W|imported|4|angustioso|distressing
+W|imported|4|aplastado|crushed
+W|imported|4|asombrado|amazed
+W|town|4|bancario|bank
+W|imported|4|bendito|blessed
+W|imported|4|callejero|of the street
+W|imported|4|clínico|clinical
+W|imported|4|colombiano|Colombian
+W|imported|4|combinado|combined
+W|imported|4|constructivo|constructive
+W|imported|4|crónico|chronic
+W|imported|4|desconcertado|disoriented
+W|imported|4|elocuente|eloquent
+W|imported|4|entusiasta|enthusiastic
+W|imported|4|esporádico|sporadic
+W|imported|4|estadístico|statistical
+W|imported|4|extra|extra
+W|imported|4|grotesco|grotesque
+W|imported|4|impecable|impeccable
+W|imported|4|importado|imported
+W|imported|4|inestable|unstable
+W|imported|4|inexistente|non-existent
+W|imported|4|ingenioso|ingenious
+W|imported|4|institucional|institutional
+W|imported|4|íntegro|whole
+W|imported|4|involuntario|involuntary
+W|imported|4|irónico|ironic
+W|imported|4|irreal|unreal
+W|imported|4|irreversible|irreversible
+W|imported|4|laborioso|laborious
+W|imported|4|larguísimo|very long
+W|imported|4|maligno|evil
+W|imported|4|melancólico|melancholy
+W|time|4|minúsculo|minute
+W|imported|4|mismísimo|very same
+W|imported|4|monstruoso|monstrous
+W|imported|4|monumental|monumental
+W|imported|4|nítido|clear
+W|imported|4|nulo|void
+W|imported|4|ocasional|occasional
+W|imported|4|parlamentario|parliamentary
+W|imported|4|paterno|paternal
+W|imported|4|patriótico|patriotic
+W|imported|4|pedagógico|pedagogical
+W|imported|4|pequeñito|very small
+W|imported|4|persistente|persistent
+W|imported|4|presunto|alleged
+W|imported|4|previsible|foreseeable
+W|imported|4|prodigioso|prodigious
+W|imported|4|productivo|productive
+W|imported|4|provincial|provincial
+W|imported|4|recíproco|reciprocal
+W|imported|4|rítmico|rhythmic
+W|imported|4|simultáneo|simultaneous
+W|imported|4|soberano|sovereign
+W|imported|4|sonriente|smiling
+W|imported|4|subjetivo|subjective
+W|imported|4|sumido|sunken
+W|imported|4|terrestre|earthly
+W|imported|4|trascendental|momentous
+W|imported|4|trascendente|transcendent
+W|imported|4|vertiginoso|dizzying
+W|imported|4|vigoroso|vigorous
+W|imported|4|abiertamente|openly
+W|imported|4|duramente|harshly
+W|imported|4|económicamente|economically
+W|imported|4|esencialmente|essentially
+W|imported|4|espontáneamente|spontaneously
+W|imported|4|firmemente|firmly
+W|imported|4|largamente|for a long time
+W|imported|4|mentalmente|mentally
+W|imported|4|oficialmente|officially
+W|imported|4|parcialmente|partially
+W|imported|4|públicamente|publicly
+W|imported|4|terriblemente|terribly
+W|imported|4|viceversa|vice versa
+W|imported|4|inmigrante|immigrant
+W|imported|4|intérprete|performer
+W|animal|4|abeja|bee
+W|imported|4|abstracción|abstraction
+W|imported|4|acera|sidewalk
+W|imported|4|actriz|actress
+W|imported|4|adhesión|adherence
+W|imported|4|agonía|agony
+W|imported|4|agresividad|aggressiveness
+W|home|4|almohada|pillow
+W|imported|4|ampliación|enlargement
+W|imported|4|antena|antenna
+W|animal|4|araña|spider
+W|imported|4|audacia|boldness
+W|imported|4|bahía|bay
+W|imported|4|balanza|balance
+W|imported|4|batería|battery
+W|imported|4|cabina|cabin
+W|animal|4|cabra|goat
+W|imported|4|cautela|caution
+W|imported|4|cera|wax
+W|imported|4|clientela|customers
+W|imported|4|complejidad|complexity
+W|imported|4|complicidad|involvement
+W|imported|4|concurrencia|coming together
+W|imported|4|consistencia|consistency
+W|imported|4|conspiración|conspiracy
+W|imported|4|convención|convention
+W|imported|4|cooperación|cooperation
+W|imported|4|crema|cream
+W|imported|4|cuenca|socket
+W|nature|5|cueva|cave
+W|number|4|decena|ten
+W|imported|4|decoración|decoration
+W|imported|4|delicadeza|gentleness
+W|imported|4|denominación|name
+W|imported|4|descarga|unloading
+W|imported|4|desilusión|disappointment
+W|imported|4|destreza|dexterity
+W|imported|4|detención|detention
+W|imported|4|diligencia|diligence
+W|imported|4|disculpa|apology
+W|imported|4|distracción|distraction
+W|imported|4|diversidad|diversity
+W|imported|4|documentación|documentation
+W|imported|4|edificación|construction
+W|imported|4|eficiencia|efficiency
+W|imported|4|elevación|rise
+W|imported|4|emisión|broadcast
+W|imported|4|entrañas|insides
+W|imported|4|envergadura|breadth
+W|imported|4|equivocación|mistake
+W|imported|4|espuma|foam
+W|imported|4|estampa|Image
+W|imported|4|euforia|euphoria
+W|imported|4|exhibición|exhibition
+W|imported|4|expulsión|expulsion
+W|imported|4|extinción|extinction
+W|imported|4|fabricación|manufacture
+W|imported|4|facción|face feature
+W|imported|4|flecha|arrow
+W|imported|4|frialdad|coldness
+W|imported|4|gama|range
+W|imported|4|garra|claw
+W|imported|4|gratitud|gratitude
+W|imported|4|grieta|crack
+W|imported|4|hectárea|hectare
+W|imported|4|higiene|hygiene
+W|imported|4|hostilidad|hostility
+W|imported|4|impotencia|impotence
+W|imported|4|incidencia|incidence
+W|imported|4|incursión|invasion
+W|imported|4|infección|infection
+W|imported|4|inspección|inspection
+W|imported|4|inundación|flood
+W|imported|4|inyección|shot
+W|imported|4|jugada|move
+W|imported|4|latitud|latitude
+W|imported|4|lesión|injury
+W|imported|4|librería|bookstore
+W|imported|4|maldad|evil
+W|imported|4|maldición|damnation
+W|imported|4|manía|obsession
+W|imported|4|mejilla|cheek
+W|imported|4|metáfora|metaphor
+W|imported|4|modalidad|mode
+W|imported|4|navaja|razor
+W|imported|4|navegación|navigation
+W|imported|4|negociación|negotiation
+W|imported|4|nobleza|nobility
+W|imported|4|obediencia|obedience
+W|imported|4|ocurrencia|idea
+W|imported|4|órbita|orbit
+W|imported|4|partícula|particle
+W|imported|4|penetración|penetration
+W|imported|4|pinta|pint
+W|imported|4|pirámide|pyramid
+W|imported|4|piscina|swimming pool
+W|imported|4|pólvora|gunpowder
+W|imported|4|prevención|prevention
+W|imported|4|prioridad|priority
+W|imported|4|procedencia|origin
+W|imported|4|prolongación|extension
+W|imported|4|prosa|prose
+W|imported|4|pugna|battle
+W|imported|4|reivindicación|claim
+W|imported|4|repercusión|repercussion
+W|imported|4|resignación|resignation
+W|imported|4|restricción|restriction
+W|imported|4|rigidez|rigidity
+W|imported|4|servidumbre|staff of servants
+W|imported|4|significación|meaning
+W|imported|4|sirena|siren
+W|imported|4|sobra|excess
+W|imported|4|táctica|tactics
+W|imported|4|toalla|towel
+W|food|4|torta|cake
+W|imported|4|vecindad|nearness
+W|imported|4|ventanilla|vehicle window
+W|imported|4|vereda|path
+W|imported|4|vibración|vibration
+W|imported|4|adjetivo|adjective
+W|imported|4|admirador|admirer
+W|imported|4|agradecimiento|gratitude
+W|imported|4|apuro|trouble
+W|imported|4|artefacto|artifact
+W|imported|4|asilo|asylum
+W|nature|4|astro|star
+W|travel|4|autobús|bus
+W|imported|4|banquete|banquet
+W|imported|4|caldo|broth
+W|imported|4|campeón|champion
+W|imported|4|caramelo|piece of candy
+W|imported|4|centavo|cent
+W|imported|4|chiquillo|kid
+W|imported|4|coco|coconut
+W|imported|4|comando|command
+W|imported|4|complemento|complement
+W|imported|4|comunismo|communism
+W|imported|4|convencimiento|convincing
+W|imported|4|cráneo|skull
+W|imported|4|delirio|delirium
+W|imported|4|desconcierto|disorder
+W|imported|4|descuido|neglect
+W|imported|4|desenlace|outcome
+W|imported|4|desequilibrio|imbalance
+W|imported|4|despliegue|deployment
+W|imported|4|dictador|dictator
+W|animal|4|elefante|elephant
+W|imported|4|emperador|emperor
+W|imported|4|encaje|lace
+W|imported|4|enigma|enigma
+W|imported|4|ente|entity
+W|imported|4|entretenimiento|entertainment
+W|imported|4|escaparate|showcase
+W|imported|4|fósforo|match
+W|imported|4|gabinete|cabinet
+W|imported|4|gusano|worm
+W|imported|4|incremento|increase
+W|imported|4|jinete|rider
+W|body|4|lomo|back
+W|imported|4|martillo|hammer
+W|imported|4|medicamento|medicine
+W|imported|4|micrófono|microphone
+W|imported|4|mosaico|mosaic
+W|imported|4|muelle|wharf
+W|imported|4|muslo|thigh
+W|animal|4|oso|bear
+W|imported|4|oxígeno|oxygen
+W|imported|4|pabellón|pavilion
+W|imported|4|padrino|godparent
+W|imported|4|paraje|place
+W|imported|4|paréntesis|parenthesis
+W|imported|4|participante|participant
+W|animal|4|pato|duck
+W|imported|4|peón|unskilled laborer
+W|imported|4|periodismo|journalism
+W|imported|4|pionero|pioneer
+W|imported|4|precedente|precedent
+W|imported|4|profeta|prophet
+W|imported|4|puñado|fistful
+W|imported|4|rancho|ranch
+W|imported|4|recelo|mistrust
+W|imported|4|recipiente|container
+W|imported|4|reproche|reproach
+W|imported|4|rescate|rescue
+W|imported|4|retroceso|movement backwards
+W|imported|4|roce|brush
+W|imported|4|rol|role
+W|imported|4|sargento|sergeant
+W|imported|4|soporte|support
+W|home|4|sótano|basement
+W|imported|4|tanque|tank
+W|home|4|tejado|roof
+W|imported|4|temperamento|temperament
+W|imported|4|tenis|tennis
+W|imported|4|tenor|meaning
+W|animal|4|tigre|tiger
+W|imported|4|tranvía|trolley
+W|imported|4|trazo|line
+W|imported|4|trono|throne
+W|imported|4|velo|veil
+W|imported|4|violín|violin
+W|nature|4|volcán|volcano
+W|imported|4|whisky|whisky
+W|job|4|agricultor|farmer
+W|imported|4|bailarín|dancer
+W|imported|4|cirujano|surgeon
+W|imported|4|economista|economist
+W|imported|4|editor|editor
+W|imported|4|inspector|inspector
+W|imported|4|psicólogo|psychologist
+W|imported|4|cólera|rage
+W|imported|4|cometa|comet
+W|verb|4|acatar|to comply with
+W|verb|4|adentrar|to penetrate
+W|verb|4|adherir|to adhere
+W|verb|4|aflojar|to loosen
+W|verb|4|alarmar|to alarm
+W|verb|4|alertar|to alert
+W|verb|4|asentir|to assent
+W|verb|4|aventurar|to venture
+W|verb|4|conferir|to confer
+W|verb|4|decaer|to decay
+W|verb|4|desesperar|to despair
+W|verb|4|desmentir|to contradict
+W|verb|4|deteriorar|to deteriorate
+W|imported|4|endurecer|harden
+W|verb|4|estropear|to ruin
+W|verb|4|exceder|to exceed
+W|verb|4|impartir|to impart
+W|verb|4|incidir|to influence
+W|verb|4|incurrir|to incur
+W|verb|4|insertar|to insert
+W|verb|4|instruir|to instruct
+W|verb|4|internar|to confine
+W|verb|4|irritar|to irritate
+W|verb|4|ligar|to tie
+W|verb|4|mediar|to mediate
+W|verb|4|percatar|to notice
+W|verb|4|perturbar|to perturb
+W|verb|4|predominar|to predominate
+W|verb|4|premiar|to award
+W|verb|4|presentir|to sense in advance
+W|verb|4|propagar|to propagate
+W|verb|4|recrear|to recreate
+W|verb|4|rectificar|to rectify
+W|verb|4|relajar|to relax
+W|verb|4|renacer|to be reborn
+W|verb|4|reposar|to rest
+W|verb|4|resignar|to resign
+W|verb|4|restablecer|to reestablish
+W|verb|4|resucitar|to resuscitate
+W|verb|4|sobrevenir|to happen unexpectedly
+W|verb|4|transitar|to roam
+W|imported|3|el|the
+W|imported|3|la|the
+W|imported|3|I, me|yo
+W|imported|3|una|a
+W|imported|3|soy|I am
+W|imported|3|come|eats
+W|imported|3|eres|you're
+W|imported|3|ella|she
+W|imported|3|es|is
+W|imported|3|bebe|he drinks
+W|imported|3|bebo|I drink
+W|imported|3|bebes|do you drink
+W|imported|3|buenos dias|good morning
+W|imported|3|hablas|do you speak
+W|imported|3|hablo|I talk
+W|imported|3|pasaporte|passport
+W|imported|3|aqui|here
+W|imported|3|está|it is
+W|travel|3|boleto|ticket
+W|imported|3|supermercado|supermarket
+W|imported|3|personas|people
+W|imported|3|hamburguesa|burger
+W|food|3|sándwich|sandwich
+W|imported|3|absent, without, with no|sin
+W|imported|3|quiero|I want
+W|food|3|ensalada|salad
+W|imported|3|intelligente|intelligent
+W|imported|3|tiene|He has
+W|imported|3|apartamento|apartment
+W|travel|3|bicicletta|bicycle
+W|imported|3|ese|that
+W|imported|3|cómoda|comfortable
+W|imported|3|favorita|favorite
+W|school|3|bolígrafo|pen
+W|imported|3|leo|I read
+W|imported|3|comprendo|I understand
+W|imported|3|escribo|I write
+W|imported|3|estudias|you study
+W|imported|3|escribes|you write
+W|imported|3|lees|you read
+W|imported|3|Portuguesa|Portuguese
+S|imported|3|¿De verdad?|really?
+W|imported|3|videojuego|videogame
+W|imported|3|dolor de cabeza|headache
+W|home|3|llaves|keys
+W|feeling|3|cansada|tired
+W|imported|3|quieres|you want
+W|imported|3|maneja|he drives
+S|imported|3|No sé|I don't know
+W|imported|3|estamos|we are
+W|imported|3|Tecnologia|Technology
+W|imported|3|Aburrida|Boring
+W|imported|3|hasta mañana|see you tomorrow
+W|imported|3|cómo está|how are you
+W|imported|3|se llama|her name is
+W|imported|3|te llama|your name is
+W|imported|3|ocupada|busy
+W|food|3|banana|banana
+W|imported|3|usa|she uses
+W|imported|3|usas|you use
+W|imported|3|béisbol|baseball
+W|imported|3|divertida|fun
+W|imported|3|disfruta|he enjoys
+W|imported|3|fin de semana|weekend
+W|imported|3|estudia|he studies
+W|imported|3|trabajas|you work
+W|imported|3|trabaja|he works
+W|imported|3|vives|you live
+W|imported|3|camarera|waitress
+W|job|3|camarero|waiter
+W|imported|3|celular|cell phone
+W|job|3|medica|doctor
+W|imported|3|aprende|he learns
+W|animal|3|pajaro|bird
+W|school|3|libros|books
+W|school|3|boligrafos|pens
+W|imported|3|computadoras|computers
+W|imported|3|bibliotecas|libraries
+W|imported|3|esta|this
+W|imported|3|apprendo|I learn
+W|imported|3|aprendes|you learn
+W|imported|3|clases|classes
+W|school|3|preguntas|questions
+W|school|3|estudiantes|students
+W|imported|3|bonita|pretty
+W|imported|3|pequeña|little
+W|imported|3|mascota|pet
+W|imported|3|baja|short
+W|imported|3|simpatico|nice
+W|imported|3|española|Spanish
+W|imported|3|inglesa|English
+W|imported|3|yo soy|I am
+W|imported|3|tu eres|you are
+W|imported|3|el es|he is
+W|imported|3|nosotros somos|we are
+W|imported|3|y'all are|vosotros sois
+W|imported|3|ellos son|they are
+W|imported|3|yo estoy|I am
+W|imported|3|tu estas|you are
+W|imported|3|ella / usted está|you
+W|imported|3|nosotros estamos|we are
+W|imported|3|ellos están|they are
+W|imported|3|tengo|I have
+W|imported|3|tienes|you have
+W|imported|3|tenéis|y'all have
+W|imported|3|tienen|they have
+W|imported|3|hago|I make
+W|imported|3|haces|you make
+W|imported|3|hace|he makes
+W|imported|3|hacéis|y'all make
+W|imported|3|hacen|they make
+W|imported|3|voy|I go
+W|imported|3|vas|you go
+W|imported|3|va|he goes
+W|imported|3|y'all go|vais
+W|imported|3|van|they go
+W|imported|3|puedo|I can
+W|imported|3|puedas|you can
+W|imported|3|puede|he can
+W|imported|3|podemos|we can
+W|imported|3|podéis|y'all can
+W|imported|3|pueden|they can
+W|imported|3|sabes|you know
+W|imported|3|sabe|he knows
+W|imported|3|sabemos|we know
+W|imported|3|sabéis|y'all know
+W|imported|3|saben|they know
+W|imported|3|pongo|I put
+W|imported|3|pones|you put
+W|imported|3|pone|he puts
+W|imported|3|ponemos|we put
+W|imported|3|ponéis|y'all put
+W|imported|3|ponen|they put
+W|imported|3|yo he|I have
+W|imported|3|tu has|you have
+W|imported|3|ella ha|she has
+W|imported|3|ellos han|they have
+W|imported|3|dices|you say
+W|imported|3|dice|he says
+W|imported|3|decimos|we say
+W|imported|3|decís|y'all say
+W|imported|3|dicen|they say
+W|imported|3|quiere|he wants
+W|imported|3|queremos|we want
+W|imported|3|queréis|y'all want
+W|imported|3|quieren|they want
+W|imported|3|hablamos|we speak
+W|imported|3|habláis|y'all speak
+W|imported|3|hablan|they speak
+W|imported|3|doy|I give
+W|imported|3|das|you give
+W|imported|3|da|he gives
+W|imported|3|damos|we give
+W|imported|3|y'all give|dais
+W|imported|3|dan|they give
+W|imported|3|veo|I see
+W|imported|3|ves|you see
+W|imported|3|vemos|we see
+W|imported|3|y'all see|veis
+W|imported|3|ven|they see
+W|imported|3|comes|you eat
+W|imported|3|comemos|we eat
+W|imported|3|coméis|y'all eat
+W|imported|3|comen|they eat
+W|imported|3|tomo|I take
+W|imported|3|tomas|you take
+W|imported|3|toma|he takes
+W|imported|3|tomamos|we take
+W|imported|3|tomáis|y'all take
+W|imported|3|toman|they take
+W|imported|3|vive|he lives
+W|imported|3|vivimos|we live
+W|imported|3|vivís|y'all live
+W|imported|3|viven|they live
+W|imported|3|necesito|I need
+W|imported|3|necesitas|you need
+W|imported|3|necesita|he needs
+W|imported|3|necesitamos|we need
+W|imported|3|necesitáis|y'all need
+W|imported|3|necesitan|they need
+W|imported|3|quedo|I stay
+W|imported|3|quedas|you stay
+W|imported|3|queda|he stays
+W|imported|3|quedamos|we stay
+W|imported|3|quedáis|y'all stay
+W|imported|3|quedan|they stay
+W|imported|3|vengo|I come
+W|imported|3|vienes|you come
+W|imported|3|viene|he comes
+W|imported|3|venimos|we come
+W|imported|3|venís|y'all come
+W|imported|3|vienen|they come
+W|imported|3|Malsano|Unhealthy
+W|imported|3|Sometimes|a veces
+W|imported|3|empecemos|let's get started
+W|imported|3|circulos|circles
+W|number|3|segunda|second
+W|nature|3|estrellas|stars
+W|imported|3|otra|other
+W|imported|3|aca|here
+W|imported|3|pienso|I think
+W|imported|3|falsa|false
+W|imported|3|extranjera|alien
+W|imported|3|pandemia|pandemic
+W|imported|3|vacuna|vaccine
+W|weather|3|fría|cold
+W|imported|3|nevando|snowing
+W|imported|3|mosquito|mosquito
+W|imported|3|centro comercial|shopping mall
+W|imported|3|marcas|brands
+W|imported|3|envio|shipment
+W|imported|3|pavo real|peacock
+W|imported|3|tindoo|Tinder
+W|imported|3|dije|I said
+W|imported|3|enganado|cheated
+W|body|3|orejo|ear
+W|imported|3|tatuajes|tattoos
+W|imported|3|lo tengo|I have it
+W|verb|3|eligir|to choose
+W|feeling|3|nerviosa|nervous
+W|imported|3|creo|I believe
+W|imported|3|debe tener|she must have
+W|imported|3|voy elegir|I will choose
+W|imported|3|joyas|jewelry
+W|imported|3|camello|camel
+W|imported|3|billetera|wallet
+W|food|3|nueces|nuts
+W|imported|3|pidió|he asked
+W|imported|3|perejil|parsley
+W|imported|3|busco|I look for
+W|imported|3|Tendría|Would have
+W|imported|3|repente|suddenly
+W|imported|3|pensando|thinking
+W|imported|3|bajando|going down
+W|imported|3|yo era|I was
+W|imported|3|tu eras|you were
+W|imported|3|ella era|She was
+W|imported|3|nosotros éramos|We were
+W|imported|3|ellos eran|they were
+W|imported|3|yo iba|I went
+W|imported|3|ella iba|She went
+W|imported|3|nosotros ibamos|we went
+W|imported|3|ellos iban|They went
+W|imported|3|tú veías|You saw
+W|imported|3|él/ella/usted veía|he saw
+W|imported|3|nosotros/as veíamos|we saw
+W|imported|3|ellos/as/ustedes veían|they saw
+W|imported|3|condicional|conditional
+W|imported|3|yo hablaría|I would speak
+W|imported|3|el hablaría|he would speak
+W|imported|3|nosotros hablaríamos|we would speak
+W|imported|3|vosotros hablaríais|yall would speak
+W|imported|3|ellos hablarían|they would speak
+W|imported|3|yo comería|I would eat
+W|imported|3|tu comerías|You would eat
+W|imported|3|comería|He would eat
+W|imported|3|nosotros comeríamos|We would eat
+W|imported|3|Vosotros comeríais|Yall would eat
+W|imported|3|ellos comerían|they would eat
+W|imported|3|yo viviría|I would live
+W|imported|3|tu vivirías|You would live
+W|imported|3|el viviría|He would live
+W|imported|3|nosotros viviríamos|We would live
+W|imported|3|vosotros viviríais|Yall would live
+W|imported|3|ellos vivirían|they would live
+W|imported|3|habría|I would have
+W|imported|3|querría|I would want
+W|imported|3|sabría|I would know
+W|imported|3|saldría|I would go out
+W|imported|3|valdría|I would be worth
+W|imported|3|haría|I would make
+W|imported|3|chocando|crashing
+W|imported|3|cordilleras|mountain ranges
+W|imported|3|inactivo|idle
+W|imported|3|mangas|sleeves
+W|imported|3|guardando|saving
+W|imported|3|diablita|Little devil
+W|imported|3|cargador|charger
+W|imported|3|maquillaje|makeup
+W|imported|3|repelente|insect repellent
+W|imported|3|bloqueador|sunscreen
+W|imported|3|cubrebocas|face mask
+W|imported|3|sombras|shades
+W|imported|3|endulzante|sweetener
+W|imported|3|audifonos|headphones
+W|imported|3|toallitas|wipes
+W|imported|3|billón|trillion
+W|imported|3|sarten|frying pan
+W|food|3|mantequilla|butter
+W|imported|3|salpica|splash
+W|imported|3|intenta cocinar|tries to cook
+W|imported|3|espatulae|spatula
+W|imported|3|gorila|gorilla
+W|food|3|cebolla|onion
+W|imported|3|arreglado|fixed
+W|imported|3|cochazo|high end car
+W|town|3|barrios|neighborhoods
+W|imported|3|lugares|places
+W|imported|3|distraido|distracted
+W|imported|3|odiamos|we hate
+W|imported|3|lo pienso|I think about it
+W|imported|3|extranjeros|foreigners
+W|imported|3|pantaloneta|shorts
+W|imported|3|chanclas|flip flops
+W|imported|3|desnudos|nude
+W|imported|3|tell me|cuentame
+W|imported|3|muralles|murals
+W|imported|3|monton|a lot
+W|imported|3|oculta|she hides
+W|imported|3|camarones|shrimp
+W|imported|3|preterite|past
+W|imported|3|el otro día|the other day
+W|imported|3|en aquel momento|at that moment
+W|imported|3|desde el primer momento|from the first moment
+W|imported|3|darse cuenta de|to realize
+W|imported|3|hablado|spoken
+W|imported|3|comido|eaten
+W|imported|3|vivido|lived
+W|imported|3|vuelto|returned
+W|imported|3|guardado|saved
+W|imported|3|aborto|abortion
+W|imported|3|empezo|started
+W|imported|3|loca|crazy
+W|imported|3|terminado|finished
+W|imported|3|robado|stolen
+W|imported|3|llegado|arrived
+W|imported|3|capitalista|capitalist
+W|imported|3|bandos|sides of a conflict
+W|imported|3|nucleares|nuclear
+W|imported|3|atacado|attacked
+W|imported|3|lanzó|launched
+W|feeling|3|enfanada|angry
+W|imported|3|letal|lethal
+W|verb|3|sonreir|to smile
+W|imported|3|cada finde|every weekend
+W|body|3|carita|face
+W|imported|3|Como molas|how cool are you
+W|imported|3|molas|cool
+W|imported|3|volando|flying
+W|imported|3|acercate|come closer
+W|imported|3|finde|weekend
+W|imported|3|viendo|watching
+W|imported|3|maldicion|curse
+W|imported|3|jugaría|I would play
+W|imported|3|muriendo|dying
+W|imported|3|que será|What will it be
+W|body|3|piernas|legs
+W|imported|3|peso muerto|deadlift
+W|imported|3|agacharse|squat
+W|imported|3|press da banca|bench press
+W|imported|3|bíceps|biceps
+W|imported|3|isquiotibiales|hamstrings
+W|imported|3|dominadas|pull ups
+W|imported|3|remando|paddling
+W|imported|3|press militar|military press
+W|imported|3|pantorrilla|calf
+W|imported|3|aquiles|achilles
+W|imported|3|cuádriceps|quads
+W|imported|3|glúteos|glutes
+W|imported|3|tríceps|triceps
+W|imported|3|pezón|nipple
+W|imported|3|guerra fría|cold war
+W|imported|3|golfo|gulf
+W|imported|3|vigilantes|watchmen
+W|imported|3|salvavidas|lifeguard
+W|imported|3|hecha|made
+W|imported|3|aterriza|it lands
+W|imported|3|aviones|airplanes
+W|imported|3|arreglando|fixing
+W|imported|3|pare|stop
+W|imported|3|arbolito|little tree
+W|imported|3|yendo|going
+S|imported|2|El perro corre en el parque|The dog runs in the park
+S|imported|2|El gato duerme en la silla|The cat sleeps on the chair
+S|imported|2|El caballo salta la valla|The horse jumps over the fence
+S|imported|2|La vaca come hierba en el campo|The cow eats grass in the field
+S|imported|2|El toro está en la plaza|The bull is in the arena
+S|imported|2|El cerdo juega en el barro|The pig plays in the mud
+S|imported|2|La oveja sigue al pastor|The sheep follows the shepherd
+S|imported|2|El conejo salta en el jardín|The rabbit jumps in the garden
+S|imported|2|La gallina pone un huevo|The hen lays an egg
+S|imported|2|El gallo canta al amanecer|The rooster crows at dawn
+S|imported|2|El burro lleva la carga|The donkey carries the load
+S|imported|2|El mulo ayuda en la granja|The mule helps on the farm
+S|imported|2|La cabra sube la montaña|The goat climbs the mountain
+S|imported|2|El pavo camina por el campo|The turkey walks through the field
+S|imported|2|El ganso nada en el lago|The goose swims in the lake
+S|imported|2|El canario canta en su jaula|The canary sings in its cage
+S|imported|2|El periquito vuela en la sala|The parakeet flies in the living room
+S|imported|2|El loro repite las palabras|The parrot repeats the words
+S|imported|2|El pez dorado nada en la pecera|The goldfish swims in the fishbowl
+S|imported|2|El león ruge en la selva|The lion roars in the jungle
+S|imported|2|El tigre corre en la jungla|The tiger runs in the jungle
+S|imported|2|El oso duerme en la cueva|The bear sleeps in the cave
+S|imported|2|El lobo aúlla a la luna|The wolf howls at the moon
+S|imported|2|El zorro corre por el bosque|The fox runs through the forest
+S|imported|2|El elefante bebe agua del río|The elephant drinks water from the river
+S|imported|2|El rinoceronte camina por la sabana|The rhinoceros walks through the savannah
+S|imported|2|El hipopótamo está en el agua del río|The hippopotamus is in the river water
+S|imported|2|El ciervo corre rápido por el bosque|The deer runs fast through the forest
+W|imported|2|el jabalí|the wild boar
+S|imported|2|El jabalí busca comida en el suelo|The wild boar searches for food on the ground
+S|imported|2|El mono salta de árbol en árbol|The monkey jumps from tree to tree
+S|imported|2|El gorila come hojas en la selva|The gorilla eats leaves in the jungle
+W|imported|2|el chimpancé|the chimpanzee
+S|imported|2|El chimpancé juega con sus amigos en el zoológico|The chimpanzee plays with its friends at the zoo
+W|imported|2|el orangután|the orangutan
+S|imported|2|El orangután se balancea en las ramas|The orangutan swings on the branches
+S|imported|2|El delfín salta sobre las olas del mar|The dolphin jumps over the sea waves
+S|imported|2|La ballena nada en el océano profundo|The whale swims in the deep ocean
+S|imported|2|El camello camina por el desierto|The camel walks through the desert
+S|imported|2|La jirafa come hojas de los árboles altos|The giraffe eats leaves from the tall trees
+S|imported|2|El canguro salta por el campo en Australia|The kangaroo hops across the field in Australia
+S|imported|2|El koala duerme en el árbol de eucalipto|The koala sleeps in the eucalyptus tree
+W|imported|2|el panda|the panda
+S|imported|2|El panda come bambú en el zoológico|The panda eats bamboo at the zoo
+W|imported|2|el búfalo|the buffalo
+S|imported|2|El búfalo corre por el campo|The buffalo runs through the field
+S|imported|2|El antílope salta sobre la roca|The antelope jumps over the rock
+S|imported|2|El puma descansa en la montaña|The puma rests on the mountain
+S|imported|2|El jaguar acecha en la selva|The jaguar stalks in the jungle
+W|imported|2|el chacal|the jackal
+S|imported|2|El chacal aúlla en la noche|The jackal howls at night
+W|imported|2|el armadillo|the armadillo
+S|imported|2|El armadillo se esconde bajo la tierra|The armadillo hides underground
+S|imported|2|El perezoso duerme en el árbol|The sloth sleeps in the tree
+W|imported|2|el lémur|the lemur
+S|imported|2|El lémur salta de rama en rama|The lemur jumps from branch to branch
+S|imported|2|El guepardo corre rápido en la sabana|The cheetah runs fast in the savannah
+S|imported|2|El murciélago vuela en la cueva|The bat flies in the cave
+S|imported|2|La hiena ríe en la noche|The hyena laughs in the night
+S|imported|2|El castor construye una presa en el río|The beaver builds a dam in the river
+S|imported|2|La ardilla come una nuez en el parque|The squirrel eats a nut in the park
+S|imported|2|La nutria nada en el río|The otter swims in the river
+W|imported|2|la mofeta|the skunk
+S|imported|2|La mofeta camina por el bosque|The skunk walks through the forest
+S|imported|2|El búho ulula en la noche|The owl hoots at night
+S|imported|2|El pingüino camina sobre el hielo|The penguin walks on the ice
+S|imported|2|El pavo real muestra sus plumas|The peacock shows its feathers
+S|imported|2|El colibrí bebe néctar de la flor|The hummingbird drinks nectar from the flower
+S|imported|2|La paloma vuela sobre la plaza|The dove flies over the square
+S|imported|2|El cuervo se posa en la rama|The crow perches on the branch
+S|imported|2|El cisne nada en el lago|The swan swims in the lake
+S|imported|2|La gaviota vuela sobre el mar|The seagull flies over the sea
+S|imported|2|El flamenco está de pie en el agua|The flamingo is standing in the water
+S|imported|2|El tucán está en el árbol|The toucan is in the tree
+S|imported|2|El pelícano vuela sobre el mar|The pelican flies over the sea
+S|imported|2|El buitre está en la roca|The vulture is on the rock
+S|imported|2|El halcón caza en el cielo|The falcon hunts in the sky
+S|imported|2|El avestruz corre en el desierto|The ostrich runs in the desert
+W|imported|2|el mirlo|the blackbird
+S|imported|2|El mirlo busca comida en el suelo|The blackbird searches for food on the ground
+S|imported|2|El pájaro carpintero hace agujeros en el árbol|The woodpecker makes holes in the tree
+S|imported|2|El cocodrilo nada en el río|The crocodile swims in the river
+S|imported|2|La serpiente se desliza por la arena|The snake slithers through the sand
+S|imported|2|El lagarto toma el sol en la roca|The lizard sunbathes on the rock
+S|imported|2|La iguana come hojas verdes|The iguana eats green leaves
+S|imported|2|La tortuga camina lentamente por el jardín|The turtle walks slowly through the garden
+S|imported|2|La rana salta en el estanque|The frog jumps in the pond
+S|imported|2|El sapo croa en la noche|The toad croaks at night
+S|imported|2|La cobra levanta su cabeza en el desierto|The cobra raises its head in the desert
+S|imported|2|La víbora se esconde entre las hojas|The viper hides among the leaves
+W|imported|2|el camaleón|the chameleon
+S|imported|2|El camaleón cambia de color en la rama|The chameleon changes color on the branch
+S|imported|2|La salamandra se mueve entre las piedras|The salamander moves among the stones
+S|imported|2|La anaconda se desliza por el agua tranquila|The anaconda slithers through the calm water
+W|imported|2|el dragón de Komodo|Komodo dragon
+S|imported|2|El dragón de Komodo camina lentamente por la isla|The Komodo dragon walks slowly across the island
+W|imported|2|la boa constrictora|boa constrictor
+S|imported|2|La boa constrictora se enrolla alrededor del árbol|The boa constrictor wraps around the tree
+W|imported|2|el gecko|gecko
+S|imported|2|El gecko trepa por la pared del jardín|The gecko climbs up the garden wall
+S|imported|2|El tiburón nada cerca de la costa|The shark swims near the shore
+S|imported|2|El atún nada rápido en el océano|The tuna swims fast in the ocean
+S|imported|2|El salmón salta en el río|The salmon jumps in the river
+S|imported|2|La sardina nada en el mar en grandes grupos|The sardine swims in the sea in large groups
+S|imported|2|El bacalao vive en aguas frías del océano|The cod lives in cold ocean waters
+S|imported|2|La trucha nada en el lago cristalino|The trout swims in the clear lake
+S|imported|2|El pez espada nada rápido en el océano|The swordfish swims fast in the ocean
+S|imported|2|La carpa salta en el estanque|The carp jumps in the pond
+S|imported|2|La anguila se desliza entre las rocas|The eel slithers between the rocks
+S|imported|2|La mosca se posa en la ventana|The fly lands on the window
+S|imported|2|La mariquita camina sobre la hoja|The ladybug walks on the leaf
+S|imported|2|La avispa construye su nido en el árbol|The wasp builds its nest in the tree
+S|imported|2|El mosquito vuela cerca del agua|The mosquito flies near the water
+S|imported|2|El grillo canta en la noche|The cricket sings at night
+S|imported|2|El escarabajo camina sobre la hoja verde|The beetle walks on the green leaf
+S|imported|2|El saltamontes salta en el campo|The grasshopper jumps in the field
+S|imported|2|El ciempiés se esconde bajo la piedra|The centipede hides under the stone
+W|imported|2|el milpiés|the millipede
+S|imported|2|El milpiés camina lentamente por el suelo|The millipede walks slowly on the ground
+S|imported|2|La araña teje su telaraña en la esquina|The spider weaves its web in the corner
+S|imported|2|La mantis religiosa se mueve lentamente entre las hojas|The praying mantis moves slowly among the leaves
+S|imported|2|La luciérnaga brilla en la noche|The firefly glows at night
+S|imported|2|La polilla vuela alrededor de la lámpara|The moth flies around the lamp
+S|imported|2|El mamífero cuida a sus crías con cariño|The mammal cares for its young with affection
+S|imported|2|El reptil toma el sol en la roca|The reptile sunbathes on the rock
+S|imported|2|El anfibio salta en el charco|The amphibian jumps in the puddle
+S|imported|2|El pez nada en el acuario|The fish swims in the aquarium
+S|imported|2|El insecto camina sobre la hoja|The insect walks on the leaf
+W|imported|2|el vertebrado|the vertebrate
+S|imported|2|El vertebrado tiene una columna vertebral|The vertebrate has a backbone
+W|imported|2|el carnívoro|the carnivore
+S|imported|2|El carnívoro caza en la selva|The carnivore hunts in the jungle
+S|imported|2|El herbívoro come hojas verdes|The herbivore eats green leaves
+S|imported|2|El omnívoro come frutas y carne|The omnivore eats fruits and meat
+W|imported|2|el primate|the primate
+S|imported|2|El primate juega en los árboles|The primate plays in the trees
+S|imported|2|El felino duerme en el árbol|The feline sleeps in the tree
+W|imported|2|el roedor|the rodent
+S|imported|2|El roedor come queso en la cocina|The rodent eats cheese in the kitchen
+S|imported|2|La pluma del pájaro es azul y suave|The bird’s feather is blue and soft
+S|imported|2|El águila agarra el pez con su garra|The eagle grabs the fish with its claw
+S|imported|2|El elefante tiene un colmillo largo|The elephant has a long tusk
+S|imported|2|El toro tiene un cuerno afilado|The bull has a sharp horn
+W|imported|2|la joroba|the hump
+S|imported|2|El camello tiene una joroba grande en la espalda|The camel has a large hump on its back
+S|imported|2|El caballo tiene una crin larga y brillante|The horse has a long and shiny mane
+S|imported|2|El perro olfatea con su hocico|The dog sniffs with its snout
+S|imported|2|La cola del gato es larga y peluda|The cat’s tail is long and furry
+S|imported|2|El pájaro extiende el ala para volar|The bird spreads its wing to fly
+S|imported|2|El pez mueve la aleta en el agua|The fish moves its fin in the water
+W|imported|2|el pelaje|the fur
+S|imported|2|El gato tiene el pelaje suave|The cat has soft fur
+S|imported|2|El perro tiene el pelo largo y rizado|The dog has long and curly hair
+S|imported|2|La tortuga se esconde en el caparazón|The turtle hides in its shell
+S|imported|2|El pez tiene escamas brillantes|The fish has shiny scales
+S|imported|2|El perro levanta la pata para saludar|The dog lifts its paw to greet
+S|imported|2|El elefante usa la trompa para beber agua|The elephant uses its trunk to drink water
+S|imported|2|El león tiene una melena grande y esponjosa|The lion has a big and fluffy mane
+W|imported|2|la branquia|the gill
+S|imported|2|El pez respira a través de las branquias|The fish breathes through its gills
+S|imported|2|El cocodrilo tiene una mandíbula fuerte|The crocodile has a strong jaw
+W|imported|2|el tentáculo|the tentacle
+S|imported|2|El pulpo mueve el tentáculo para atrapar comida|The octopus moves its tentacle to catch food
+W|imported|2|la cresta|the crest
+S|imported|2|El gallo tiene una cresta roja en la cabeza|The rooster has a red crest on its head
+S|imported|2|El niño se toca la barbilla mientras piensa|The boy touches his chin while thinking
+S|imported|2|Visitamos el zoológico para ver los leones|We visited the zoo to see the lions
+S|imported|2|El pájaro canta en la jaula|The bird sings in the cage
+S|imported|2|El pájaro construye un nido en el árbol|The bird builds a nest in the tree
+W|imported|2|la madriguera|burrow
+S|imported|2|El conejo se esconde en la madriguera|The rabbit hides in the burrow
+W|imported|2|la jauría|pack
+S|imported|2|La jauría de perros corre por el campo|The pack of dogs runs through the field
+S|imported|2|Una bandada de pájaros vuela en el cielo|A flock of birds flies in the sky
+S|imported|2|El pastor cuida el rebaño de ovejas|The shepherd takes care of the flock of sheep
+S|imported|2|La cría de oso juega con su madre|The bear cub plays with its mother
+S|imported|2|El cachorro juega con una pelota en el jardín|The puppy plays with a ball in the garden
+S|imported|2|El hábitat del oso polar es muy frío|The habitat of the polar bear is very cold
+W|imported|2|la guarida|the den
+S|imported|2|El zorro duerme en su guarida por la noche|The fox sleeps in its den at night
+S|imported|2|Los caballos están en el establo durante la noche|The horses are in the stable during the night
+S|imported|2|Las gallinas están en el corral por la mañana|The chickens are in the pen in the morning
+W|imported|2|la hibernación|hibernation
+S|imported|2|El oso entra en hibernación durante el invierno|The bear goes into hibernation during the winter
+S|imported|2|La migración de las aves ocurre en primavera|The migration of birds occurs in spring
+W|imported|2|el depredador|the predator
+S|imported|2|El león es un depredador en la sabana|The lion is a predator in the savannah
+W|imported|2|la presa|the prey
+S|imported|2|El conejo es una presa fácil para el zorro|The rabbit is an easy prey for the fox
+W|imported|2|el néctar|the nectar
+S|imported|2|La abeja recoge néctar de las flores|The bee collects nectar from the flowers
+S|imported|2|Las abejas construyen el panal en el árbol|The bees build the honeycomb in the tree
+S|imported|2|La muda del pájaro ocurre en primavera|The bird’s molt occurs in spring
+W|imported|2|la metamorfosis|the metamorphosis
+S|imported|2|La metamorfosis de la mariposa es fascinante|The butterfly’s metamorphosis is fascinating
+W|imported|2|el camuflaje|the camouflage
+S|imported|2|El camuflaje del camaleón lo hace invisible|The chameleon’s camouflage makes it invisible
+S|imported|2|El perro sigue el rastro del zorro|The dog follows the fox’s trail
+S|imported|2|El veneno de la serpiente es peligroso|The snake’s venom is dangerous
+S|imported|2|La raya se desliza sobre la arena del océano|The ray glides over the ocean sand
+W|imported|2|el marsupial|the marsupial
+S|imported|2|El marsupial lleva a su cría en la bolsa|The marsupial carries its young in the pouch
+S|imported|2|La hembra cuida a sus crías|The female takes care of her young
+W|verb|3|acuestar|To put to bed
+W|imported|3|increíbles|amazing
+W|imported|3|pavo|turkey
+W|imported|3|eran|they were
+W|imported|3|y'all were|erais
+W|imported|3|éramos|we were
+W|imported|3|eras|you were
+W|imported|3|estaba|I was
+W|imported|3|estabas|you were
+W|imported|3|estábamos|we were
+W|imported|3|vigilada|watched
+W|imported|3|vos|you
+S|imported|3|En esa época, a menudo,|at that time, often
+W|imported|3|desempleo|unemployment
+W|imported|3|emigración|emigration
+W|imported|3|infame|infamous
+W|imported|3|endeudamiento|indebtedness
+W|imported|3|inversiones|investments
+W|imported|3|los ingresos|the income
+W|imported|3|inmuebles|real estate
+W|imported|3|burbuja|bubble
+W|imported|3|desató|unleashed
+W|imported|3|déficit|deficit
+W|imported|3|austeridad|austerity
+W|imported|3|desplome|collapse
+W|imported|3|unión Europea|European Union
+W|imported|3|confinamiento|lockdown
+W|imported|3|bienes raíces|real estate
+W|imported|3|bolsa de valores|stock market
+W|imported|3|los conservadores|the conservatives
+W|imported|3|seguridad nacional|national security
+W|imported|3|la Casa Blanca|The White House
+W|imported|3|medios|media
+W|imported|3|los senadores|The Senators
+W|imported|3|pajita|drinking straw
+W|imported|3|en cualquier lugar|anywhere
+W|imported|3|genocidio|genocide
+W|imported|3|ocultado|hidden
+W|imported|3|transgénero|transgender
+W|imported|3|remontada política|political comeback
+W|imported|3|nominado|nominated
+W|imported|3|inmejorable|unbeatable
+W|imported|3|alineamiento|alignment
+W|imported|3|líderes|leaders
+W|imported|3|motosierra|chainsaw
+W|imported|3|queso crema|cream cheese
+W|imported|3|nena maldición|damn baby
+W|imported|3|nena|chick
+W|imported|3|aeronave|aircraft
+W|imported|3|azafato|steward
+W|imported|3|redes sociales|social networks
+W|imported|3|pentágono|pentagon
+W|imported|3|el saldo|A balance or remaining amount
+W|imported|3|departamento de bomberos|fire department
+W|imported|3|bajo coste|low cost
+W|imported|3|caliza|limestone
+W|imported|3|tocino|bacon
+W|imported|3|cachorro|puppy
+W|food|3|lechuga|lettuce
+W|imported|3|Pollo a la parrilla|grilled chicken
+W|imported|3|envoltura|wrap
+W|imported|3|espinaca|spinach
+W|food|3|frijol|bean
+W|food|3|aceituna|olive
+W|imported|3|cuerpos de seguridad|security forces
+W|imported|3|secuestro|kidnapping
+W|imported|3|opositor|opponent
+W|imported|3|blindada|shielded
+W|number|3|decenas|tens
+W|imported|3|las instalaciones|the facilities
+W|imported|3|finicios|Phoenicians
+W|imported|3|aprendiendo|learning
+W|imported|3|estambul|Istanbul
+W|imported|3|musulmanes|Muslims
+W|imported|3|cristianos|Christians
+W|imported|3|ajedrez|chess
+W|food|3|oliva|olive
+S|imported|3|¿Cuál es la diferencia entre|What is the difference between
+W|imported|3|anticipo|advance
+W|imported|3|jueces|judges
+W|imported|3|empresarios|businessmen
+W|imported|3|usuarios|users
+W|imported|3|estadounidenses|Americans
+W|imported|3|dotando|providing
+W|imported|3|algoritmo|algorithm
+W|imported|3|enmienda|amendment
+W|imported|3|medianoche|midnight
+W|imported|3|piba|girl
+W|imported|3|me flipa|I love it
+W|imported|3|cobarde|coward
+W|imported|3|dramaturgo|playwright
+W|imported|3|autostima|self esteem
+W|imported|3|enviado|sent
+W|verb|3|recaer|to relapse
+W|imported|3|he recaído|I relapsed
+W|imported|3|proteína|protein
+S|imported|3|Entrené para el Ironman durante seis meses|I trained for the Ironman for 6 months
+W|imported|3|que cualquier cosa|than anything
+W|imported|3|Que tal|How are you
+W|imported|3|Estoy entrenando|I am training
+W|verb|3|plegar|to fold
+W|verb|3|cajar|to box
+W|imported|3|ojalá que si|I hope so
+W|verb|3|embocar|to aim and get something into an opening
+W|imported|3|autodidacta|self taught
+W|imported|3|nadadora|swimmer
+W|imported|3|corredora|runner
+W|imported|3|ciclista|cyclist
+W|imported|3|velada|an evening event or gathering
+W|imported|3|mago|magician
+W|imported|3|Desearía poder|I wish I could
+W|imported|3|finanzas|finance
+W|imported|3|Consultor de gestión|management consultant
+W|verb|3|duplicar|to double
+W|imported|3|Todo ello|all of it
+W|imported|3|ya no|anymore
+W|imported|3|No puedo hacerlo|I can’t do it
+W|imported|3|mí mismo|myself
+W|imported|3|inventario|inventory
+W|imported|3|celosa|jealous
+W|imported|3|corto plazo|short term
+W|imported|3|hijueputa|son of a bitch
+W|imported|3|me sienta así|I feel like this
+W|imported|3|jodia|damn
+W|imported|3|me pides|you ask me
+W|imported|3|No me parece|It doesn’t seem to me
+W|imported|3|sacarte de mi mente|get you out of my mind
+W|imported|3|he sido|I have been
+W|imported|3|no molestar|do not disturb
+W|imported|3|quèdate|stay
+W|imported|3|bandolera|shoulder strap
+W|imported|3|odisea|Odyssey
+W|imported|3|loquito|a bit crazy
+W|imported|3|teclado|keyboard
+W|imported|3|presiento que|I have a feeling that
+W|imported|3|presentimiento|a feeling that something may happen in the future
+W|imported|3|obesidad|obesity
+W|imported|3|Londres|London
+W|imported|3|vacilón|Party
+W|imported|3|no frito|not fried
+W|imported|3|promedio|Mathematical average
+W|imported|3|hablante de ingles|English speaker
+W|family|3|padres|parents
+W|imported|3|En realidad no|actually no
+W|imported|3|de todos modos|anyways
+W|imported|3|etiquetas|tags
+W|imported|3|filtrado|filtered
+W|imported|3|mazo|deck
+W|imported|3|esnú|nude
+W|imported|3|cuidao|be careful
+W|imported|3|mahón|jeans
+W|imported|3|Yo escuché|I heard
+W|imported|3|sino también|but also
+W|imported|3|disponibilidad|availability
+W|imported|3|sanguijuela|leech
+W|imported|3|Vietnamita|Vietnamese
+W|imported|3|tailandés|Thai
+W|imported|3|flaca|skinny
+W|imported|3|ganadora|winner
+W|imported|3|panza|belly
+W|imported|3|escocia|Scotland
+W|imported|3|cordones|laces
+W|imported|3|empaquetador|packer
+W|imported|3|Así como|As well as
+W|imported|3|recopilatorio|compilation
+S|imported|3|entre la espada y la pared|between a rock and a hard place
+W|imported|3|encontrarte|find you
+W|imported|3|cabrona|bitch
+W|imported|3|al menos|at least
+W|imported|3|te juro|I swear to you
+W|imported|3|me diste|you gave me
+W|imported|3|autarquía|autarchy
+W|imported|3|configuración|settings
+W|imported|3|portavoz|spokesman
+W|imported|3|ha puntualizado|has pointed out
+W|imported|3|dardo|dart
+W|imported|3|largo plazo|long term
+W|imported|3|halcone|falcon
+W|imported|3|irlandesa|Irish
+W|imported|3|Musulmana|Muslim
+W|animal|3|águila|eagle
+W|imported|3|águila calva|bald eagle
+W|imported|3|te lo puedo decir|I can tell you
+W|imported|3|aleatoria|mathematical randomness
+W|imported|3|rascacielo|skyscraper
+W|imported|3|pronóstico|forecast
+W|imported|3|pronóstico del tiempo|weather forecast
+W|imported|3|natación|swimming
+W|imported|3|senderismo|hiking
+W|imported|3|cafeína|caffeine
+W|imported|3|Franja de Gaza|Gaza Strip
+W|imported|3|sí mismo|itself
+W|imported|3|istmo|isthmus
+W|imported|3|subtítulos|subtitles
+W|imported|3|asuntos internacionales|International affairs
+W|imported|3|Palabrotas|curse words
+W|imported|3|Estoy bromeando|I’m joking
+W|imported|3|together|juntos
+W|weather|3|un resfrío|a cold
+W|weather|3|neblina|fog
+W|imported|3|aranceles|tariffs
+W|imported|3|maldita|cursed
+W|imported|3|los recortes|the cuts
+W|imported|3|asiática|Asian
+W|imported|3|si yo fuera tú|if I were you
+W|imported|3|abusó sexual|sexual abuse
+W|imported|3|violación|sexual assault
+W|imported|3|Camboyano|Cambodian
+W|imported|3|valla|fence
+W|imported|3|traductor|translator
+W|verb|3|sincronizar|to sync
+W|imported|3|autoayuda|self help
+W|imported|3|rehene|hostage
+W|imported|3|jabón|soap
+W|imported|3|microondas|microwave
+W|imported|3|palillos|chop sticks
+W|imported|3|servilleta|napkin
+W|imported|3|chupito|shot glass
+W|imported|3|copa de vino|wine glass
+W|imported|3|tacones|heels
+W|imported|3|champú|shampoo
+W|imported|3|analgésico|pain killer
+W|school|3|borrador|eraser
+W|imported|3|colono|settler
+W|imported|3|at all costs|a toda costa
+W|imported|3|capacidad de atención|attention span
+W|imported|3|de otra manera|otherwise
+W|imported|3|jodidos|fucked
+W|imported|3|la elección|the choice
+W|imported|3|sí mismos|themselves
+W|imported|3|Incluso sin|even without
+W|imported|3|rueda de andar|treadmill
+W|imported|3|calcetín|sock
+W|imported|3|plato hondo|deep plate
+W|imported|3|jarra|jug
+W|imported|3|cucharilla|teaspoon
+W|imported|3|aduana|customs
+W|imported|3|prodencia|origin
+W|imported|3|ahogada|drowned
+W|imported|3|afluencia|influx
+W|imported|3|mercaderías|merchandise
+W|imported|3|abogó|he advocated
+W|imported|3|competidores foráneos|foreign competitors
+W|imported|3|ralentización|slowdown
+W|imported|3|advirtió|he warned
+W|imported|3|flete|freight
+W|imported|3|constatación|verification
+W|imported|3|crack bursátil|stock market crash
+W|imported|3|desplazó|he displaced
+W|imported|3|desembocó|he ended
+W|imported|3|zumbido|buzz
+W|imported|3|soja|soy
+W|imported|3|litio|lithium
+W|imported|3|tierras raras|rare earth
+W|imported|3|galio|gallium
+W|imported|3|no me importa|I don't care
+W|imported|3|lo que sea|whatever
+W|imported|3|bofetada|slap
+W|imported|3|sumando|adding
+W|nature|3|rocas|rocks
+W|imported|3|yacimiento|deposit
+W|verb|3|rezagarse|to lag
+W|imported|3|recursos|resources
+W|imported|3|estafa|scam
+W|imported|3|malversación|embezzlement
+W|imported|3|lo cierto|the truth
+W|imported|3|puñetazo|punch
+W|imported|3|misiva|missive
+W|imported|3|recluido|secluded
+W|imported|3|terrorista|terrorist
+W|imported|3|ilegalmente|illegally
+W|imported|3|bricolaje|DIY
+W|imported|3|zar|czar
+W|imported|3|textualmente|textually
+W|imported|3|asentamientos|settlements
+W|imported|3|baluarte|bulwark
+W|imported|3|página web|web page
+W|imported|3|reelegida|re-elected
+W|imported|3|licuadora|blender
+W|imported|3|contrajera|contracted
+W|imported|3|Así fue que|so it was that
+W|imported|3|ecuaciones|equations
+W|imported|3|subscriendose|subscribing
+W|imported|3|ortodoxia|orthodoxy
+W|imported|3|autobiografía|autobiography
+W|imported|3|energia oscura|dark energy
+W|imported|3|predijo|predicted
+W|imported|3|curvaría|would curve
+W|imported|3|actuando|acting
+W|imported|3|ni siqueira|not even
+W|imported|3|checo|Czech
+W|imported|3|cuántica|quantum
+W|imported|3|paradoja|paradox
+W|imported|3|dados|dice
+W|imported|3|así pues|so then
+W|imported|3|inquilinas|tenants
+W|imported|3|Dresde|Dresden
+W|imported|3|emboscada|ambush
+W|imported|3|en todos lados|everywhere
+W|imported|3|revés|setback
+W|imported|3|figura retórica|figure of speech
+W|imported|3|baloncesto|basketball
+W|imported|3|no te hagas|don’t pretend
+W|imported|3|congelación|frostbite
+W|imported|3|cepo cambiario|exchange rate
+W|imported|3|la caza deportiva|sport hunting
+W|imported|3|atravesada|crossed
+W|imported|3|abrigo de piel|fur coat
+W|imported|3|la confección|the making
+W|imported|3|rozaba|grazed
+W|imported|3|tauromaquia|bullfighting
+W|imported|3|empatía|empathy
+W|imported|3|seres vivos|living beings
+W|imported|3|asegura tener|claims to have
+W|imported|3|desempeñando|fulfilling
+W|imported|3|tasas de natalidad|birth rates
+W|imported|3|veterinaria|vet
+W|imported|3|cuidadores|caregivers
+W|imported|3|hice|I did
+W|imported|3|apuestas deportivas|sports gambling
+W|imported|3|juego de azar|game of chance
+W|imported|3|residuous|physical waste
+W|imported|3|despilfarro de dinero|waste of money
+W|imported|3|lotería|lottery
+W|imported|3|y si|what if
+W|imported|3|Qué pasaría si|what would happen if
+W|imported|3|índice de crecimiento|growth rate
+W|verb|3|envejecer|to age
+W|imported|3|ducha|shower
+W|imported|3|He estado interesada|I have been interested
+W|imported|3|les decimos|we tell them
+W|imported|3|circulo social|social circle
+W|imported|3|es de mucha ayuda|it is very helpful
+W|imported|3|Callaíta|shy girl
+W|imported|3|me estoy convirtiendo|I am becoming
+W|imported|3|fosa nasal|nostril
+W|imported|3|lóbulo de oreja|earlobe
+W|imported|3|dedo pulgar del pie|big toe
+W|imported|3|zapatillas|sneakers
+W|school|3|mochila|backpack
+W|imported|3|silla de ruedas|wheelchair
+W|imported|3|deshidratada|dehydrated
+W|nature|3|cascada|waterfall
+W|weather|3|trueno|thunder
+W|imported|3|borracha|drunk
+W|imported|3|guayabo|guava
+W|imported|3|lavabo|bathroom sink
+W|imported|3|fregadero|kitchen sink
+W|imported|3|papel higiénico|toilet paper
+W|imported|3|ropa interior|underwear
+W|imported|3|bragas|women’s underwear
+W|imported|3|tanga|thong
+W|imported|3|hilo dental|dental floss
+W|imported|3|sexo oral|blow job
+W|imported|3|vaquera|cowgirl
+W|imported|3|todas los días|every day
+W|imported|3|inodoro|toilet
+W|imported|3|el inodoro está tapado|the toilet is clogged
+W|imported|3|todo el día|all day
+W|imported|3|lavadero|laundry
+W|imported|3|lavadora|washing machine
+W|imported|3|el piso de arriba|upstairs
+W|imported|3|recibo|receipt
+S|imported|3|¿Cuál es el propósito de eso?|what is the purpose of that?
+W|imported|3|cajero|cashier
+W|imported|3|propina|tip - like at a restaurant
+W|imported|3|perreo|twerking
+W|imported|3|chaleco|vest
+W|imported|3|chaleco salvavidas|life jackets
+W|imported|3|los veo|I see them
+W|imported|3|lo veo|I see him
+W|imported|3|te marchas|you leave
+W|imported|3|balde|bucket
+W|imported|3|no hay manera|there’s no way
+S|imported|3|Para ser justos, sin embargo|to be fair though
+W|imported|3|en su propio país|in their own country
+W|imported|3|Desde mi perspectiva|From my perspective
+W|imported|3|producto interno bruto|GDP
+S|imported|3|¿puedo darte esto?|can I give you this
+W|imported|3|atún|tuna
+W|imported|3|amplio círculo social|wide social circle
+W|imported|3|papel importante|important role
+W|imported|3|Pero para mí|but for me
+W|imported|3|Maricón|fag
+W|imported|3|make me|hazme
+W|imported|3|apagón|blackout
+W|clothes|3|paraguas|umbrella
+W|imported|3|inversor|investor
+W|imported|3|conglomerado|conglomerate
+W|imported|3|capitalización bursátil|market capitalization
+S|imported|3|la cotización de la empresa|price of a company in the stock market
+W|imported|3|cotización|stock price
+W|imported|3|Dividendos|dividends
+W|imported|3|Índice bursátil|stock index
+W|imported|3|Volatilidad|Volatility
+W|imported|3|Oferta pública inicial|IPO
+W|imported|3|Balance general|Balance Sheet
+W|imported|3|Estado de resultados|Income Statement
+W|imported|3|Fusiones y adquisiciones|M&A
+W|imported|3|Emprendimiento|Entrepreneurship
+W|imported|3|Bonos|Bonds
+W|imported|3|Derivados|Derivatives
+W|imported|3|Punto de equilibrio|Break even point
+W|imported|3|Participación de mercado|Market Share
+W|imported|3|Economías de escala|Economies of Scale
+W|imported|3|beneficios|Profit
+W|imported|3|guerra comercial|trade war
+W|imported|3|deja fuera|Leave out
+W|imported|3|equidad|equity
+W|imported|3|jerga|jargon
+W|imported|3|estandar|standard
+W|imported|3|cobro de impuestos|tax collection
+W|imported|3|estatización|nationalization
+W|imported|3|lado opuesto|opposite side
+W|imported|3|valores tradicionales|traditional values
+W|imported|3|ambidiestros|ambidextrous
+W|imported|3|thaw / de-ice|deshielo
+W|imported|3|aunque ya|although already
+W|imported|3|lapices|penciles
+W|imported|3|menores|minors
+W|imported|3|presuntamente|allegedly
+W|imported|3|pero hay mas|but there is more
+W|imported|3|laboratorio de ideas|think tank
+W|imported|3|indocumentado|undocumented
+W|verb|3|impugnar|to challenge
+W|imported|3|Hacer hincapié|To place special emphasis or focus on something
+W|verb|3|tildar|to brand
+W|imported|3|emisiones|emissions
+W|imported|3|estamos emitiendo gases peligrosos|we are emitting dangerous gases
+W|verb|3|exhalar|to exhale
+W|imported|3|exhalando|exhaling
+W|imported|3|mormones|mormons
+W|imported|3|amish|amish
+W|imported|3|el pueblo amish|the amish people
+W|imported|3|una vida saludable|a healthy life
+W|imported|3|choque cultural|culture shock
+W|imported|3|sudeste asiatico|South East Asia
+W|imported|3|muy única|very unique
+W|imported|3|bono del tesoro|treasury bond
+W|imported|3|departamento de tesorería|treasury department
+W|imported|3|lejano oriente|far east
+W|imported|3|asia oriental|east asia
+W|imported|3|Occidente|The West
+W|imported|3|Oriente Medio|the Middle East
+W|imported|3|quiebra|bankruptcy
+W|imported|3|arruinada|bankrupt "I'm bankrupt
+W|imported|3|pañal|diaper
+W|imported|3|desde cuando|since when
+W|imported|3|mas de lo mismo|more of the same
+W|imported|3|la cúpula militar|the military leadership
+S|imported|3|La vida está llena de momentos estresantes|life is full of stressful moments
+S|imported|3|Hace dos años, terminé mi primer IRONMAN|Two years ago, I finished my first Ironman
+S|imported|3|El IRONMAN es un triatlón: nadar, andar en bicicleta y correr|Ironman is a triathlon - swimming, biking, and running
+W|imported|3|es solo el comienzo|it's only the beginning
+S|imported|3|Durante la carrera, quería renunciar, pero no fue una opción|during the race, i wanted to quit but it wasnt an option
+W|imported|3|aprendí|I learned
+S|imported|3|Aprendí mucho acerca de mi umbral del dolor|I learned a lot about my threshold for pain
+W|imported|3|Hoy en día|nowadays
+W|imported|3|trastornos mentales|mental disorders
+W|imported|3|compañías farmacéuticas|pharmaceutical companies
+W|imported|3|soy deportista|I am an athlete
+W|imported|3|ingeniero de redes|network engineer
+W|imported|3|Mis padres|my parents
+S|imported|3|La vida está llena de|Life is full of
+W|imported|3|es differente de|is different from
+S|imported|3|en cuanto a los ciudadanos|with respect to the citizens / as for the citizens
+W|imported|3|es un factor|is a factor
+W|imported|3|la mayor parte de|the majority of
+W|imported|3|un sistema legal justo|a fair legal system
+S|imported|3|La ciudad tiene el nivel más alto de|the city has the highest level of
+W|imported|3|como dije|like I said
+W|imported|3|un olímpico|an olympian
+S|imported|3|Despues de regresar a casa|After I return home
+W|imported|3|algunas restricciones|some restrictions
+W|imported|3|atleta de resistencia|endurance athlete
+S|imported|3|Si lo hiciera de nuevo|If I did it again
+W|imported|3|Yo lo superé|I overcame it
+W|imported|3|un componente mental|a mental component
+W|imported|3|No hay duda|there is no doubt
+W|imported|3|Trabajadores de cuello blanco|white collar workers
+S|imported|3|en cuanto al tipo de innovación|as to the type of inovation
+S|imported|3|me preocuparía por la velocidad del progreso|I would be worried about the speed of progress
+W|imported|3|a diferencia de|unlike
+W|imported|3|para ser honesto|to be honest
+W|imported|3|fue una experiencia interesante|It was an interesting experience
+S|imported|3|He estado fuera de los Estados Unidos|I have been outside of the US
+W|imported|3|fui a Italia|I went to Italy
+S|imported|3|han cambiado la forma en que vivimos|has changed the way we lived
+W|imported|3|una epidemia|an epidemic
+W|imported|3|entre los jóvenes|among young people
+W|imported|3|imagen corporal|body image
+S|imported|3|el hombre moderno de hoy en día|the modern man of today
+W|imported|3|Déjame hacerlo|let me do it
+W|imported|3|clientes|clients
+W|imported|3|dificultades|difficulties
+W|imported|3|habilidades|skills
+W|imported|3|habilidades blandas|soft skills
+W|imported|3|le dije|I told him
+W|imported|3|ultramar|oversees
+W|imported|3|guarnición|garrison
+W|imported|3|hasta entonces|until then
+W|imported|3|cabaret|strip club
+W|imported|3|sucedió|it happened
+W|imported|3|hubiera sucedido|it would have happened
+W|imported|3|hubiera sucedido antes|it would have happened earlier
+W|imported|3|estoy de acuerdo|I agree
+W|imported|3|hacer trampas|to cheat
+W|imported|3|el Alto Tribunal|The High Court
+W|imported|3|Tribunal Supremo|Supreme Court
+W|imported|3|la magistrada|the magistrate
+S|imported|3|El Departamento de Seguridad Nacional|Department of Homeland Security
+W|imported|3|etnia|ethnicity
+W|imported|3|lo que|which
+W|imported|3|Aprendí por mi cuenta|I taught myself
+W|imported|3|había una forma de|there was a form of
+W|imported|3|Si tuviera que preguntar|if i had to ask
+W|imported|3|cuenta de ahorros|savings account
+W|imported|3|Impuesto sobre la renta|income tax
+W|imported|3|pago de alquiler|rent payment
+W|imported|3|Quiero salir a correr|I want to go for a run
+S|imported|3|¿Puedo dejar mi bolso aquí?|Can I leave my bag here
+W|imported|3|Lista de embalaje|Packing list
+W|imported|3|isla larga|long island
+W|imported|3|armario|locker
+W|imported|3|pase de día|day pass
+W|imported|3|cepillo de dientes|toothbrush
+W|imported|3|pasta dentífrica|toothpaste
+W|imported|3|por ahí|over there
+W|verb|3|alistar|to enlist
+W|imported|3|los analfabetos|the illiterate
+W|imported|3|proeza|prowess
+W|verb|3|relucir|to shine
+W|imported|3|miliciano|militia man
+W|imported|3|la hoz|the sickle
+W|imported|3|gitano|gypsy
+W|imported|3|por encima de todo|above all
+S|imported|3|¿Qué pasó con?|what happened to
+W|imported|3|cepillo|brush
+W|imported|3|No he podido|I have not been able to...
+W|imported|3|la comarca|the region
+W|imported|3|expandiéndose|expanding
+W|imported|3|por sorpresa|by surprise
+W|imported|3|derrame cerebral|stroke
+W|imported|3|insuficiencia cardíaca|heart failure
+W|imported|3|Gracias por invitarme|thanks for having me
+W|imported|3|subyacente|underlying
+W|imported|3|la contrarreloj|time trial
+W|imported|3|peliaguda|hairy
+W|imported|3|Fondo Monetario Internacional|IMF
+W|imported|3|la soga al cuello|rope around the neck
+W|imported|3|la soga|the rope
+W|imported|3|cimbronazo|strong shake
+W|imported|3|cimbronazo político|political shock
+W|verb|3|desdibujarse|to blur
+W|imported|3|durmiendo|sleeping
+W|imported|3|indescifrable|indecipherable
+W|imported|3|patrulla|patrol
+W|imported|3|letrada|litterate
+W|imported|3|personas con discapacidad|people with disabilities
+W|imported|3|ráfaga|burst
+W|imported|3|De aquellos tiempos|from those times
+S|imported|3|Era distinta en aquellos tiempos|It was different back then
+W|imported|3|testaferro|figure head
+W|imported|3|el blanqueo de dinero|money laundering
+W|imported|3|hace tiempo|long ago
+W|imported|3|lavado de activos|money laundering
+W|imported|3|inversionista|investor
+W|imported|3|la pesquisa|the investigation
+W|imported|3|Según una de ellas|according to one of them
+W|imported|3|sellada|sealed
+W|imported|3|los gravámenes|general term for tariffs
+W|imported|3|Pekín|Beijing
+W|imported|3|foro|forum
+W|town|3|la urbe|city
+W|imported|3|Ataque cardíaco|heart attack
+W|verb|3|tirotear|to shoot at
+W|imported|3|náufrago|shipwreck survivor
+W|imported|3|socorro|rescue
+W|imported|3|tutela|protection
+W|imported|3|lustro|period of five years
+W|imported|3|narcolancha|drug boat
+W|imported|3|Jefe de personal|Chief of Staff
+W|imported|3|los intríngulis|the intricacies
+W|imported|3|cuello de botella|bottleneck
+W|imported|3|hegemonía|hegemony
+W|imported|3|indulto presidencial|presidential pardon
+W|imported|3|pero aún hay|but there is still
+W|imported|3|comillas|quotation marks
+W|imported|3|signo de interrogación|question mark
+W|imported|3|brecha|gap
+W|imported|3|respiro|respite
+W|imported|3|modera|moderate
+W|imported|3|una fuerte subida|a sharp rise
+W|imported|3|dos décimas|two tenths
+W|imported|3|gripe|flu
+W|imported|3|barril de petróleo|barrel of oil
+W|imported|3|Bruselas|Brussels
+W|imported|3|signo de admiración|exclamation mark
+W|imported|3|punto y coma|semicolon
+W|imported|3|lupa|magnifying glass
+W|imported|3|Navidad|Christmas
+W|verb|3|trastabillar|to stumble
+W|imported|3|litoral|Coastline
+W|imported|3|postes de luz|streetlights
+W|imported|3|incautación|Seizure
+W|imported|3|de eso|from there
+W|imported|3|escalafón|step
+W|imported|3|neurona|neuron
+W|imported|3|valor patrimonial|equity value
+W|imported|3|aliciente|incentive
+W|imported|3|pionera|pioneer
+W|imported|3|cofundador|co founder
+W|imported|3|postor|bidder
+W|imported|3|nunca hubo duda|there was never a doubt
+W|imported|3|mediocridad|mediocrity
+W|imported|3|competencia de trabajo|working proficiency
+W|imported|3|tarjetas didácticas|flash cards
+S|imported|3|tengo mucho de lo que estar orgulloso|I have a lot to be proud of
+W|verb|3|adecuar|to adapt
+W|verb|3|pudrir|to rot or decay
+W|imported|3|sepelio|funeral
+W|imported|3|pinchazo de burbuja|bubble burst
+W|imported|3|esto es bueno|this is good
+W|imported|3|Aquí mismo está bien|right here is good
+W|imported|3|algo más|anything else
+W|imported|3|soy un vendido|I’m a sellout
+W|imported|3|No puedo seguir así|I can't go on like this
+W|imported|3|habrá|there will be
+W|imported|3|está allí|it’s there
+W|verb|3|aunar|to join
+W|imported|3|por ahora|for now
+W|verb|3|actualizar|to upgrade
+W|imported|3|interfaz|interface
+W|imported|3|interfaz del sitio web|website interface
+S|imported|3|hace que el processo sea lento|it makes the process slow
+W|imported|3|pues eso si|Well that’s true
+W|imported|3|como te fue|how did it go
+W|imported|3|ayer la vi|I saw her yesterday
+W|imported|3|Vete a la verga|Go to hell
+W|imported|3|tienes razón|you’re right
+W|imported|3|me vale pito|I don’t give a damn
+W|imported|3|Ya se fue|He’s already gone
+W|imported|3|vete|go away
+W|imported|3|ya vas a ver|you’ll see
+W|verb|3|hincarse|To kneel
+S|imported|3|ya me tengo que meter|I have to go in now
+S|imported|3|no hay nada mas que hacer|There’s nothing else to do
+W|imported|3|se fue|she left
+W|imported|3|me vale|I don't care
+S|imported|3|¿Qué haces?|What are you doing?
+W|imported|3|Nos vemos|See you
+W|imported|3|Con permiso|Excuse me
+S|imported|3|¿En qué trabajas?|What’s your job?
+S|imported|3|¿Qué te gusta hacer?|What do you like to do?
+S|imported|3|¿Qué haces aquí?|What are you doing here?
+S|imported|3|¿Quieres tomar algo?|Do you want to have a drink?
+S|imported|3|Me voy a casa|I’m going home
+S|imported|3|¿Cómo llego a…?|How do I get to…?
+W|imported|3|galardón|award
+W|imported|3|llamada perdida|missed call
+W|imported|3|repasos|reviews
+W|imported|3|balazo|bullet wound
+W|imported|3|poner en evidencia|to highlight
+W|imported|3|destornillador|screwdriver
+W|imported|3|jamás me fui|I never left
+W|imported|3|poner de relieve|to spotlight or underline
+W|imported|3|no puedo más|I can’t take it anymore
+W|imported|3|te vi|I saw you
+W|imported|3|hace un año|a year ago
+W|imported|3|me convertí|I became
+W|imported|3|gestoría derecho|Law firm
+W|imported|3|se acabó|it’s over
+W|imported|3|canal de la mancha|English Channel
+W|imported|3|cuando todo falle|when all else fails
+W|imported|3|por eso me voy|that’s why I’m leaving
+W|imported|3|lo que harías|What would you do
+S|imported|3|¿Qué haría sin ti?|What would I do without you
+W|imported|3|no lo puedo aguantar|I can’t take it
+W|imported|3|Todo lo que quiero|All I want
+S|imported|3|Todo lo que puedo pedir|All I can ask for
+W|imported|3|que más da|What does it matter
+W|imported|3|no está mal|It’s not bad
+W|imported|3|give me peace|dame calma
+W|imported|3|hasta siempre|farewell forever
+W|imported|3|tanto tiempo ha pasado|So much time has passed
+W|imported|3|si la veo|If I see her
+W|imported|3|por eso vine|that’s why I came
+W|imported|3|pero ya no|but not anymore
+W|imported|3|te traje|I brought you
+W|imported|3|cien por cien|Definitely
+W|imported|3|eso no va|That won’t work
+W|home|3|nevera|Fridge
+W|imported|3|a dónde vamos|Where are we going
+W|imported|3|A dónde fuiste|Where did you go
+W|imported|3|tengo pareja|I have a partner
+W|imported|3|ordenador|Computer
+W|imported|3|desde siempre|Since forever
+W|imported|3|ahora ya no|not anymore
+W|imported|3|no te pongas chula|Don’t get cocky
+W|imported|3|me cuadra bastante|That makes sense to me
+W|imported|3|por dios|For gods sake
+W|imported|3|a tomar por culo|to hell with it
+W|imported|3|si lo veo|if i see him
+W|imported|3|te vieron|They saw you
+W|imported|3|libreto|script
+W|imported|3|te dije|I told you
+W|imported|3|que bueno|excellent
+W|imported|3|eso espero|I hope so
+W|imported|3|Espero que sí|I hope that
+W|imported|3|crucemos los dedos|fingers crossed
+W|imported|3|Me gustaría convertirme en|I'd like to become...
+W|imported|3|zona peatonal|pedestrian zone
+W|imported|3|cesto de basura|trash can
+W|imported|3|ensanche|expansion
+W|imported|3|voy a llevarte a|I’m going to take you to
+W|imported|3|hasta ese momento|until then
+W|imported|3|quizá por eso|maybe that's why
+W|imported|3|en este respecto|in this respect
+W|imported|3|con respecto a|with respect to
+W|imported|3|eólica marina|offshore wind power
+W|imported|3|día a día|Day by day
+W|imported|3|bienes transables|tradeable goods
+W|imported|3|que lo que|What’s up
+W|imported|3|no sea cabron|Don’t be a bastard
+W|imported|3|En trámite|pending
+W|imported|3|Que harías|What would you do
+W|imported|3|Chipre|Cyprus
+W|imported|3|Líbano|Lebanon
+W|imported|3|sigue extendiéndose|continues to spread
+S|imported|3|después de que este lunes|After this Monday
+W|imported|3|Por su parte|For its part
+W|imported|3|Arabia saudí|Saudi Arabia
+W|imported|3|la próxima vez|the next time
+W|imported|3|la ultima vez|the last time
+W|imported|3|después de que|after
+W|imported|3|vulneración|infringement
+W|imported|3|alto el fuego|cease fire
+W|imported|3|no logra|fails to do something
+W|imported|3|no logra repuntar|it fails to recover
+W|imported|3|Impositiva|tax offices
+W|imported|3|la presión impositiva|tax burden
+W|imported|3|Al ser consultado|when asked
+W|verb|3|achacar|to attribute
+W|imported|3|A modo de cierre|in summary
+W|imported|3|nos llevamos bien|We get along well
+W|imported|3|pero ya estoy boracha|But I'm already drunk
+W|imported|3|me di cuenta|I realized
+S|imported|3|No sabes de lo que hablas|you don't know what you're talking about
+S|imported|3|Me di cuenta de que estaba equivocado|I realized that I was wrong
+W|imported|3|Haz lo que quieras|Do what you want
+S|imported|3|¡haga lo que quiera!|I do what I want!
+W|imported|3|Golfo Pérsico|Pesian Gulf
+W|verb|3|argüir|to argue
+W|imported|3|superávit|surplus
+W|imported|3|híbrida|hybrid
+W|verb|3|corroer|to corode
+W|verb|3|prohijar|to adopt
+W|verb|3|raer|to scrape
+W|imported|3|estar en mora|to be in debt
+W|imported|3|Crédito bancario|bank loan
+W|imported|3|Sistema bancario|banking system
+W|imported|3|cuenta bancaria|bank account
+W|imported|3|contracada|flip side
+W|imported|3|ambigüedad estratégica|strategic ambiguity
+W|imported|3|todo lo que|everything that
+W|imported|3|te di|I gave you
+W|imported|3|no he aprendido nada|I haven’t learned anything
+W|imported|3|Si hubiera sabido|if I had known
+W|imported|3|Si me hubieras dicho|if you had told me
+W|imported|3|Si pudiera, lo haría|if I could
+S|imported|3|Si tuviera plata, me iría|if I had money, I'd leave
+S|imported|3|Yo que tú, no iría|If I were you, I would not leave
+S|imported|3|Si no fuera por ti|if it were not for you
+W|imported|3|Si hubiera llegado antes|if I had arrived earlier
+S|imported|3|Como si nada hubiera pasado|as if nothing happened
+W|imported|3|Aunque quisiera, no podría|even if I wanted to
+W|imported|3|Se me perdió|I lost it
+W|imported|3|Se le ocurrió|It occurred to him
+S|imported|3|Se me acabó la paciencia|I ran out of patience
+W|imported|3|Se te nota|You can tell
+W|imported|3|Se me hizo tarde|I ended up running late
+S|imported|3|Se me fue de las manos|It got out of my hands
+W|imported|3|No he podido dormir|I haven't been able to sleep
+S|imported|3|¿Ya has comido?|Have you eaten yet?
+W|imported|3|Nunca había visto eso|I've never seen that
+S|imported|3|No me habían dicho nada|they haven't told me anything
+W|imported|3|Debería haberlo hecho|I should have done it
+W|imported|3|Podría haber sido peor|It could have been worse
+S|imported|3|No tendría que haber venido|I should not have come
+S|imported|3|¿Habrá llegado ya?|Has he arrived yet?
+W|imported|3|Ojalá hubiera podido|I wish I had been able to
+W|imported|3|Dámelo|Give it to me
+W|imported|3|No me lo digas|Don't tell me that
+W|imported|3|te lo dije|I told you so
+S|imported|3|Se lo mandé or to be specific: Se lo mandé a él|I sent it to him / her
+W|imported|3|Me lo prometió|He promised me
+S|imported|3|No se lo cuentes a nadie|Don't tell anyone
+W|imported|3|Ya se lo expliqué|I already explained it to him
+S|imported|3|Me lo van a cobrar|they are going to charge me for it
+W|imported|3|Te lo juro|I swear to you
+W|imported|3|Se lo merecía|he deserved it
+S|imported|3|Espero que te vaya bien|I hope it goes well for you
+W|imported|3|Ojalá que llueva|I hope it rains
+S|imported|3|No creo que sea cierto|I don't think it's true
+S|imported|3|Antes de que se me olvide|Before I forget
+W|imported|3|Cuando pueda, te aviso|When I can
+W|imported|3|Necesito que me ayudes|I need you to help me
+S|imported|3|No es que no quiera|It's not that I don't want to
+W|imported|3|Dudo que venga|I doubt she
+W|imported|3|Queda por ver|it remains to be seen
+W|imported|3|Debí haberle dicho|I should have told him
+W|imported|3|Me dijo que viniera|he told me to come
+W|imported|3|Dice que no sabe|he says he doesnt know
+W|imported|3|Llevo dos horas esperando|I've been waiting for two hours
+W|imported|3|Sigo sin entender|I still don't understand
+W|imported|3|Acaba de llegar|he just arrived
+W|imported|3|Terminé pagando yo|I ended up paying
+W|imported|3|Andan diciendo que|they're going around saying that
+W|imported|3|Viene siendo lo mismo|It amounts to the same thing
+W|imported|3|Sigue sin aparecer|he still hasn't shown up
+S|imported|3|¡Qué hubiera dado por estar ahí!|What i would have given to be there
+S|imported|3|No me cabe en la cabeza|I can't wrap my head around it
+W|imported|3|Ya me tiene harto|I'm sick of it already
+S|imported|3|¡Ni que fuera millonario!|As if I were a millionaire
+S|imported|3|No me da la gana|I don't feel like it
+W|imported|3|Menos mal que viniste|Good thing you came
+W|imported|3|De malas|tough luck
+S|imported|3|¿Y eso qué tiene que ver?|and what does that have to do with it
+S|imported|3|¡Cómo así!|what do you mean! / how so!
+W|imported|3|No es para tanto|it's not that big a deal
+W|imported|3|Ahí vamos|hanging in there
+S|imported|3|¿En qué quedamos?|so what did we decide?
+S|imported|3|A mí me parece que|it seems to me that
+W|imported|3|Ya era hora|it was about time
+S|imported|3|Por más que intente, no puedo|no matter how much I try, I can't
+S|imported|3|Con tal de que me dejen en paz|as long as they leave me alone
+W|verb|3|titubear|to hesitate or waiver
+W|imported|3|brisa|breeze
+W|imported|3|farol|streetlamp
+W|imported|3|me preocupo|I worry
+W|imported|3|mi relación|my relationship
+W|imported|3|mi vínculo con ella|my bond with her
+W|imported|3|las parejas más fuertes|the strongest couples
+W|imported|3|puedo tomar medidas para|I can take steps to
+W|imported|3|no habría viajado|I would not have traveled
+W|imported|3|me siento frustrado|I feel frustrated
+W|imported|3|siendo honesto|to be honest
+W|imported|3|la verdad es que|the truth is
+W|imported|3|no pude|I couldn't
+W|imported|3|hace que sea lento|it makes it slow
+W|imported|3|hacer que|to make
+W|imported|3|Llegué tarde|I arrived late
+S|imported|3|la cola es muy larga|the line is very long
+W|imported|3|no me digas|you dont say
+W|imported|3|No me jodas|No fucking way
+W|verb|3|flipar|to freak out
+W|imported|3|Ahí está|Exactly
+W|imported|3|Allá tú|That's your problem
+W|imported|3|Por allá|Over there
+W|imported|3|Y así|And so on
+W|imported|3|Aquí entre nos|Just between us
+W|imported|3|De aquí en adelante|From now on
+W|imported|3|hasta ahí|up to there
+W|imported|3|Por ahí va|It's coming along
+W|imported|3|Tal cual|Just like that
+W|imported|3|Sobre la marcha|On the fly
+W|imported|3|Estar pelado|To be broke
+W|imported|3|De paso|While you're at it
+S|imported|3|Al fin y al cabo|At the end of the day
+W|imported|3|Por lo visto|Apparently
+W|imported|3|Ya veremos|We'll see
+W|imported|3|Ya quisiera yo|if only I could
+W|imported|3|ya ni me acuerdo|I don't even remember
+W|imported|3|Ya lo creo|Of course
+W|imported|3|Ya pues|Come on
+W|imported|3|Ni ya ni nunca|Not now and never
+W|imported|3|Así como así|Just like that
+W|imported|3|Así sea|So be it
+W|imported|3|Así de fácil|That easy
+W|imported|3|Así nada más|Just like that
+W|imported|3|Algo así|Something like that
+S|imported|3|Y así por el estilo|And so on / and the like
+W|imported|3|Así que así|Either way
+W|imported|3|Tal y así|Such and such
+W|imported|3|De tal manera que|In such a way that
+W|imported|3|Tal y como|Exactly as
+W|imported|3|No hay tal|That's not the case
+W|imported|3|Tal es así que|So much so that
+W|imported|3|Pues sí|Well yes
+W|imported|3|pues no|well no
+W|imported|3|Pues claro|Well of course
+W|imported|3|Pues vaya|Oh well
+W|imported|3|Pues anda|Well go on
+W|imported|3|Pues qué|So what
+W|imported|3|Pues a ver|Well let's see
+W|imported|3|con tal|as long as
+W|imported|3|Por más que|no matter how much
+S|imported|3|Por ahí va la cosa|that's roughly what it's about
+W|imported|3|sudadera|sweatshirt
+W|imported|3|Pantalón de vestir|dress pants
+W|imported|3|probador|fitting room
+W|imported|3|secadora|dryer
+W|imported|3|detergente|detergent
+W|imported|3|percha|hanger
+W|imported|3|despertador|alarm clock
+W|imported|3|toallero|towel rack
+W|imported|3|Aspiradora|vacuum
+W|imported|3|hipoteca|mortgage
+W|imported|3|taladro|drill
+W|imported|3|linterna|flashlight
+W|imported|3|ya que estamos|while we're at it
+W|imported|3|Lo de menos|that's the least of it
+W|imported|3|lo justo|just barely
+W|imported|3|brumosa|vague
+W|imported|3|precoz|precocious
+W|verb|3|empoderar|to empower
+W|imported|3|globalización|globalization
+W|imported|3|trasnacional|activities that operate across borders
+W|imported|3|competencia mercantil|business competition
+W|imported|3|materia impositiva|tax matters
+W|imported|3|tengo que ir|I have to go
+S|imported|3|tener + que + verb|if adding a verb infinitive after tener, it must follow what structure
+W|imported|3|tengo que llamarla|I have to call her
+W|imported|3|hay que tener paciencia|One must be patient
+W|imported|3|Habrá que esperar|we'll have to wait
+W|imported|3|tuve que mentir|I had to lie
+W|imported|3|da que pensar|it's thought provoking
+W|imported|3|Empezó a llover|it started raining
+W|imported|3|Comencé a estudiar|I began studying
+W|imported|3|Se puso a llorar|she started crying
+W|imported|3|echarse a|to break out into
+W|imported|3|romper a|to burst out
+W|imported|3|meterse a|to take up
+W|imported|3|empezar a|to begin to
+W|imported|3|haber que|one must
+W|imported|3|dar que|to give cause to
+W|imported|3|venir a|to come to
+W|imported|3|salir a|to go out to do something
+W|imported|3|volver a|to do again
+W|imported|3|aprender a|to learn to
+W|imported|3|Enseñar a|to teach to
+W|imported|3|ayudar a|to help to
+W|imported|3|Acostumbrarse a|to get used to
+W|imported|3|Atreverse a|to dare to
+W|imported|3|Animarse a|to be encouraged to
+W|imported|3|invitar a|to invite to
+W|imported|3|obligar a|to force to
+W|imported|3|llevar a|to lead to
+W|imported|3|forzar a|to force to
+W|imported|3|decidirse a|to decide to
+W|imported|3|tender a|to tend to
+W|imported|3|aspirar a|to aspire to
+W|imported|3|negarse a|to refuse to
+W|imported|3|terminar de|to finish
+W|imported|3|parar de|to stop
+W|imported|3|cesar de|to cease
+W|imported|3|pretender de|to try
+W|imported|3|arrepentirse de|to regret
+W|imported|3|Avergonzarse de|to be ashamed of
+W|imported|3|tardar en|to take time to
+W|imported|3|Soñar con|to dream of
+W|imported|3|amenazar con|to threaten to
+W|imported|3|empezar por|to begin by
+W|imported|3|acabar por|to end up
+W|imported|3|terminar por|to end up
+W|imported|3|luchar por|to fight to
+W|imported|3|preocuparse por|to worry about
+S|imported|3|Dejar de + infinitive versus Dejar + infinitive|to stop doing versus to let someone do
+W|imported|3|voy a comer|I'm going to eat
+W|imported|3|Vino a costar mil|It ended up costing a thousand
+W|imported|3|vuelve a leerlo|read it again
+W|imported|3|salimos a cenar|we went out to dinner
+W|imported|3|Volveré a intentarlo|I'll try it again
+W|imported|3|Aprendí a cocinar|I learned to cook
+W|imported|3|canasta|basket
+W|verb|3|embriagar|to make drunk
+W|imported|3|debido a esto|because of this
+W|imported|3|está relacionado con|it's related to...
+W|imported|3|nadando|swimming
+W|imported|3|Salí a correr|I went out to run
+S|imported|3|Vamos a salir a cenar|We're going out to eat
+W|imported|3|Viene a decir|it basically means
+W|imported|3|Se echó a reír|He burst out laughing
+W|imported|3|Rompió a llorar|He broke into tears
+W|imported|3|Enseña a leer|She teaches reading
+W|imported|3|Me ayudó a entender|He helped me understand
+W|imported|3|Se acostumbró a madrugar|He got used to waking up early
+S|imported|3|No me atrevo a preguntar|I don't dare to ask
+W|imported|3|Me animé a hablar|I worked up the courage to speak
+W|imported|3|Me invitaron a cenar|They invited me to dinner
+W|imported|3|Lo obligó a firmar|She forced him to sign
+W|imported|3|Llegué a conocerlo|I got to know him
+W|imported|3|Me decidí a hacerlo|I decided to do it
+W|imported|3|Se negó a venir|She refused to come
+W|imported|3|Dejé de fumar|I stopped smoking
+W|imported|3|Terminé de comer|I finished eating
+W|imported|3|No para de hablar|he doesn't stop talking
+W|imported|3|Dejaré de quejarme|I'll stop complaining
+W|imported|3|Había dejado de beber|He stopped drinking
+W|imported|3|similar a|similar to
+S|imported|3|Tengo más de cien dólares|I have more than $100
+S|imported|3|es tan alto como yo|He's as tall as me
+S|imported|3|corre tan rápido como ella|he runs as fast as her
+W|imported|3|tanto como|as much as
+S|imported|3|tengo tantos libros como tú|I have as many books as you
+S|imported|3|hay tanta gente como ayer|there's as much people as
+S|imported|3|bebe tanta agua como puede|she drinks as much water as she can
+W|imported|3|trabajo tanto como él|I work as much as him
+S|imported|3|come tanto como un adulto|he eats as much as an adult
+S|imported|3|no estudia tanto como debería|he doesn't study as much as he should
+W|imported|3|tal como|just as
+W|imported|3|yo me acuerdo|I remember
+S|imported|3|lo dejé tal como estaba|I left it just as it was
+S|imported|3|tal como prometí, aquí estoy|just as I promised here I am
+W|imported|3|tal como lo veo|the way i see it
+S|imported|3|tal como están las cosas|the way things are
+W|imported|3|tal como te dije|just as I told you
+W|imported|3|fibra óptica|fiber optics
+W|imported|3|trato de entender|I'm trying to understand
+W|imported|3|trataba de explicarlo|I was trying to explain it
+W|imported|3|Me olvidé de llamar|I forgot to call
+W|imported|3|Acuérdate de cerrar|Remember to close

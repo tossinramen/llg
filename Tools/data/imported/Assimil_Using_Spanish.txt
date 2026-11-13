@@ -1,0 +1,685 @@
+# converted from Assimil_Using_Spanish_Advanced_2015_-_Deck_1_Main.apkg, Assimil_Using_Spanish_Advanced_2015_-_Deck_2_Exercises.apkg
+S|imported|5|Así pues, ¿has decidido mejorar tu español? ¡Enhorabuena, has elegido bien!|So, you've decided to improve your Spanish? Congratulations, you've chosen well!
+S|imported|4|Pero, ¿para qué aprender español hoy en día?|But why learn Spanish today?
+S|imported|4|A ver, ¿quieren viajar al extranjero?|Let's see, do you want to travel abroad?
+S|imported|4|¿Tienen apartamentos para alquilar?|Do you have apartments to rent?
+S|imported|4|¡Que te crees tú eso, guapo! ¡Faltaría más!|What do you think of that, handsome! I'd be more than happy to!
+S|imported|5|Mira, ya te puedes quitar de la cabeza eso del apartamento,|Look, you can take your mind off the apartment, Look, you can get that apartment out of your head,
+S|imported|5|¡Vale, vale, no te pongas así, hecha una fiera…!|Okay, okay, don't be like that, you're a wildcat...!
+S|imported|5|Van al hotel, pues. Y, ¿qué prefieren, mar o montaña?|They go to the hotel, then. And what do you prefer, sea or mountain?
+S|imported|4|¡Bueno, bueno, tengamos la fiesta en paz!|Well, well, let's have the party in peace!
+S|imported|5|Si les gusta el buceo, tomar el sol, el ambiente estival y turístico,|If you like diving, sunbathing, the summer and tourist atmosphere,
+S|imported|5|que si quiero ir a la discoteca, que si quiero salir con los amigos|that if I want to go to the disco, that if I want to go out with friends
+S|imported|5|Si vamos a la sierra, podemos hacer senderismo, excursiones|If we go to the mountains, we can go hiking, excursions
+S|imported|5|Si lo que buscan son espacios naturales, tienen donde elegir|If you are looking for natural spaces, you have a choice
+S|imported|5|A la que puedo, me escapo al campo o a la montaña|Whenever I can, I run away to the country or the mountains
+S|imported|5|Cojo la mochila, la tienda, el saco de dormir, la cantimplora,|I take the backpack, the tent, the sleeping bag, the canteen,
+S|imported|5|y, ¡hale!, a patear el país, buscando nuevos paisajes, la sensación de libertad|and, hey, to kick the country, looking for new landscapes, the feeling of freedom
+S|imported|5|Bueno, en invierno voy siempre a esquiar a los Pirineos|Well, in winter I always go skiing in the Pyrenees
+S|imported|5|Playa o estaciones de esquí, tanto monta, monta tanto:|Beach or ski resorts, both ride, ride both:
+S|imported|5|Pero es que ¡el campo es tan aburrido! ¡No hay nada que hacer!|But the countryside is so boring! There's nothing to do!
+S|imported|5|Digamos que, si un día me decido, empezaría por algo más tranquilito, menos violento|Let's say that, if one day I decide, I would start with something quieter, less violent
+S|imported|5|Buscaría una casa rural con piscina, y daría paseos por los alrededores|I would look for a rural house with a swimming pool, and I would go for walks in the surroundings
+S|imported|5|No eres un chico muy aventurero que se diga|You're not a very adventurous guy who says
+S|imported|4|Espero llegar a viejo, eso es todo|I hope to grow old, that's all
+S|imported|5|Francamente, lo de andar solo en medio del bosque no me llama demasiado|Frankly, walking alone in the middle of the forest doesn't call me much
+S|imported|5|Recorren esta ruta miles de peregrinos provenientes de todo el mundo|Thousands of pilgrims from all over the world travel this route
+S|imported|5|Sí..., interesante, por qué no… ¿Y se puede hacer el camino en coche?|Yes... interesting, why not
+S|imported|4|Rosa, tienes mal aspecto, pareces cansada. ¿Estás enferma?|Rosa, you look bad, you look tired. Are you sick?
+S|imported|5|¡Escucha! ¿Qué están diciendo por megafonía? No se oye nada con todo este ruido|Listen! What are they saying over the loudspeaker? You can't hear anything with all this noise
+S|imported|5|No lo sé, lo único que veo es que nuestro vuelo lleva retraso|I don't know, all I see is that our flight is delayed
+S|imported|4|Mira el panel, ¡han cancelado todos los vuelos!|Look at the panel, they've cancelled all the flights!
+S|imported|4|Bueno, ¿y qué hacemos ahora?|Well, what do we do now?
+S|imported|4|¿Alguna novedad?|Any news?
+S|imported|5|Tranquilo, Manuel, no armes un escándalo como cada vez|Relax, Manuel, don't make a fuss like every time
+S|imported|5|El año que viene miraremos la procesión desde el balcón de mi casa|Next year we will watch the procession from the balcony of my house
+S|imported|4|Oye, tú que ves, ¿qué están haciendo?|Hey, you see, what are they doing?
+S|imported|5|Pues por el momento están parados. No sé qué esperarán… Ahora arrancan|For the time being they are standing still. I don't know what they'll expect... Now they start
+S|imported|5|Ah, sí, percibo a lo lejos unos estandartes que se acercan a nosotros|Ah, yes, I can see banners coming towards us from afar
+S|imported|5|¿Ves a Jacinto? Me dijo que estaría con su hermandad|Do you see Jacinto? He told me he would be with his brotherhood
+S|imported|5|¡Tienes cada cosa! ¿Cómo quieres que lo reconozca, si lleva un capirote?|You have everything! How do you want me to recognize it, if it has a hood?
+S|imported|5|Ah, ¿va vestido de nazareno? Perdona, pero no lo sabía|Ah, is he dressed as a Nazarene? Sorry, but I didn't know
+S|imported|5|¡Cómo se tambalea la estatua! No me extraña, ¡eso debe de pesar un montón!|How the statue wobbles! No wonder, that must weigh a lot!
+S|imported|5|¡Apártate, Manuel, que va a caerse, que se nos va a caer encima!|Get out of the way, Manuel, it's going to fall, it's going to fall on us!
+S|imported|5|¡Huy, por poco morimos aplastados! ¡Qué susto me he llevado!|Oops, we almost died in a crush! What a scare I got!
+S|imported|5|y se escapó un toro y estuvo a punto de pillarnos|and a bull escaped and almost caught us
+S|imported|4|y casi me transformo yo en una falla|and I almost became a failure
+S|imported|5|Oye, Manuel, ¿no serás tú un poco gafe por casualidad?|Hey, Manuel, you don't happen to be a bit of a jinx?
+S|imported|5|En esta época, los portugueses van a la India bordeando la costa africana|At this time, the Portuguese go to India along the African coast
+S|imported|5|Está convencido de encontrar una ruta más corta viajando por Occidente|He is convinced that he can find a shorter route by traveling in the West
+S|imported|5|pero muchos la identifican con la isla de San Salvador, en las Bahamas|but many identify it with the island of San Salvador in the Bahamas
+S|imported|5|Aquel día, sin saberlo, Colón descubre una nueva tierra: América|That day, without knowing it, Columbus discovers a new land: America
+S|imported|5|continente que llevará el nombre de otro, el de Américo Vespucio|continent that will be named after another one, Americo Vespucci
+S|imported|5|puesto que, al fin y al cabo, ¿quién descubrió a quién?|for, after all, who discovered who?
+S|imported|5|¿Qué tal, Pedro? Oye, ¿qué te parece Julián, el nuevo? Es simpático, ¿no crees?|What's up, Pedro? Hey, what do you think of Julian, the new guy? He's nice, don't you think?
+S|imported|5|No sé. El otro día le enseñé el funcionamiento del sistema informático. Aprende rápido|I don't know. The other day I showed him how the computer system works. Learn fast
+S|imported|5|Pero tengo la impresión de que le cuesta integrarse en el equipo|But I have the impression that he finds it difficult to integrate into the team
+S|imported|4|¡No te pongas así!|Don't be like that!
+S|imported|4|¡Creo que acabo de meter la pata!|I think I just screwed up!
+S|imported|5|¡Hola, Sara! Gracias por el cumplido. Por ti tampoco pasan los años|Hi, Sara! Thanks for the compliment. The years do not pass for you either
+S|imported|5|Calla, calla… Oye, ¿y cuándo habéis llegado al pueblo?|Shut up, shut up... Hey, and when did you get to town?
+S|imported|4|¿En serio? ¡Me dejas de piedra!|Really? I'm stunned!
+S|imported|5|y, suerte que se encasquilló, que si no, ¡tenemos un drama! Ahora quieren divorciarse|and, luckily, it got stuck, otherwise we have a drama! Now they want a divorce
+S|imported|4|¡Válgame Dios! ¡Menudo disgusto se habrán llevado!|My goodness, what a disgrace they must have taken! Oh my GOD!
+S|imported|5|Bueno, aparte todo esto, ¿cómo va todo?, ¿qué es de tu vida?|Well, apart from all this, how is it going, what is your life?
+S|imported|5|Nada, hija, ya sabes que aquí, en este pueblo, nunca pasa nada|Nothing, daughter, you know that here, in this town, nothing ever happens
+S|imported|5|y el Expresionismo y el Surrealismo quedan esbozados ya en sus “pinturas negras”|and Expressionism and Surrealism are already outlined in his "black paintings"
+S|imported|5|¡Pues claro, cariño! Del mismo modo que un día tú serás viejita como yo|Of course, honey! Just as one day you will be an old woman like me
+S|imported|5|La familia estaba muy unida y guardo muy gratos recuerdos de aquella época|The family was very close and I have fond memories of that time
+S|imported|5|Mamá me ha dicho que ella no tenía videojuegos cuando era niña. ¿Tú tampoco?|Mom told me she didn't have video games when she was a kid. You didn't either?
+S|imported|4|¿Y al abuelito cómo lo conociste? ¿Por internet?|How did you meet Grandpa? On the Internet?
+S|imported|5|¡Guau, en barco! Y ahora, abue, cuéntame: ¡¿cómo eran los dinosaurios?!|Wow, by boat! And now, Grandfather, tell me: what were the dinosaurs like?
+S|imported|5|Es preferible, pero ¡tú parecías tener tanta prisa por que nos viéramos!|It's preferable, but you seemed to be in such a hurry to meet!
+S|imported|5|Las relaciones virtuales me agobian. ¡No hay nada como el verse cara a cara!|Virtual relationships overwhelm me. There is nothing like seeing each other face to face!
+S|imported|5|¿Qué haces en tu tiempo libre? ¿Qué pasatiempos tienes? ¿Qué te apasiona? ¿Qué aborreces?|What do you do in your free time? What hobbies do you have? What are your passions? What do you hate?
+S|imported|5|Aquellas palabras provocaron una gran explosión de júbilo en todo el país|Those words caused a great explosion of joy throughout the country
+S|imported|5|prueba de ello es que incluso antes de la designación como ciudad olímpica|proof of this is that even before the designation as an Olympic city
+S|imported|5|como una urbe cosmopolita y de marcado carácter cultural|as a cosmopolitan city with a strong cultural character
+S|imported|5|y cosechó un buen puñado de medallas, 22 en total:|and harvested a good handful of medals, 22 in all: and garnered a good handful of medals, 22 in total:
+S|imported|4|¿Dónde aprendiste?|Where did you learn?
+S|imported|5|¿Y vosotros, Inés? ¿Antonio y tú también salisteis para disfrutar del sol?|And you, Agnes? did you and Antonio also go out to enjoy the sun?
+S|imported|5|A decir verdad nos quedamos en casa. Aprovechamos para hacer limpieza general:|To tell you the truth, we stayed home
+S|imported|4|Ah, porque ¿Antonio es un manitas?|Ah, because Antonio is a handyman?
+S|imported|5|Es menos difícil de lo que la gente cree|It's less difficult than people think
+S|imported|5|¿Qué tal la boda? ¡Me muero por conocer todos los detalles! ¡Cuenta ya!|How was the wedding? I'm dying to know all the details! Tell me now!
+S|imported|5|Pero, ¿por qué? No sabía que hubiera pasado nada particular… ¡Me tienes intrigadísima!|But why? I didn't know anything special had happened... I'm intrigued!
+S|imported|5|¿La ceremonia? No puedes imaginarte lo aburrida que fue. ¿La organización? Una chapuza|The ceremony? You can't imagine how boring it was. The organization? A botched job
+S|imported|5|Al menos en las bodas se suele comer bien|At least at weddings you usually eat well
+S|imported|5|¡A mí me chiflan el marisco, las ostras y esas cosas!|I'm crazy about seafood, oysters and stuff!
+S|imported|5|Sí, pero hacía un calor horrible y el aire acondicionado estaba estropeado,|Yes, but it was horribly hot and the air conditioning was broken,
+S|imported|5|Fui primera de mi promoción con matrícula de honor|I was first in my class with honors
+S|imported|5|En efecto, decidí alargar la baja por maternidad y pedí un permiso parental|In fact, I decided to extend my maternity leave and I asked for parental leave
+S|imported|5|fundé una empresa de servicios domésticos y asistencia domiciliaria|I founded a domestic service and home care company
+S|imported|5|Trabajé firme y duramente, pero a pesar de todo, la empresa quebró|I worked firmly and hard, but in spite of everything, the company went bankrupt
+S|imported|4|¿Y qué hizo entonces?|And what did he do then?
+S|imported|5|Me apunté en una ETT y durante una época estuve aceptando contrataciones cortas|I signed up for an ETT and for a while I was accepting short hires
+S|imported|5|Digamos que, como en el currículum todo el mundo miente,|Let's just say that, as in the curriculum, everyone lies, Let's say that, since everyone lies on the resume,
+S|imported|5|yo también me sentí un poco obligada a hacerlo|I felt a little obliged to do so too
+S|imported|5|Ya veo… ¿Por qué lo despidieron en su último trabajo?|I see... Why was he fired at his last job?
+S|imported|5|Cuénteme acerca del puesto de trabajo ideal para usted|Tell me about the ideal job for you
+S|imported|5|¿Cuál es su mayor fortaleza y cuáles sus debilidades?|What is your greatest strength and what are your weaknesses?
+S|imported|4|¿Por qué deberíamos contratarle?|Why should we hire you?
+S|imported|5|¿Perdón? ¿Cómo? ¿Cuál es el problema? ¿El salario? ¿Las condiciones laborales?|Excuse me? How? What is the problem? The salary? The working conditions?
+S|imported|4|Pero si yo solo|But if I just
+S|imported|5|Sí, sí, que la situación no puede continuar así|Yes, yes, the situation cannot continue like this
+S|imported|5|y de que lo único que importe sea ganar más y más dinero|and that the only thing that matters is to earn more and more money
+S|imported|5|Y, si las negociaciones no llegan a buen puerto, ¿qué pensáis hacer?|And if the negotiations do not succeed, what do you plan to do?
+S|imported|5|¡Es una idea estupenda! ¡Aceptamos con mucho gusto esta propuesta tan tentadora!|It's a great idea! We are happy to accept this tempting proposal!
+S|imported|4|Pues pasado mañana también estamos libres|Well, the day after tomorrow we are also free
+S|imported|4|¡Qué lástima!, tampoco es posible, ya hemos quedado|What a pity, it is not possible either, we have already arranged
+S|imported|5|Es que semana sí, semana no, vamos al chalé de la sierra|It's just that week in, week out, we go to the chalet in the mountains
+S|imported|4|¿Tuviste alguna sorpresa desagradable?|Did you have any unpleasant surprises?
+S|imported|5|Más tarde comprendí que solo había querido avisarme del peligro|Later I understood that he had only wanted to warn me of the danger
+S|imported|5|He tomado un bocata de tortilla, una cerveza y un carajillo|I had a tortilla sandwich, a beer and a carajillo
+S|imported|5|Deja, deja, Elena, no seas ridícula, que me toca invitar a mí|Leave, leave, Elena, don't be ridiculous, it's my turn to invite
+S|imported|5|Como yo he dicho siempre: “Las cuentas claras y el chocolate espeso”|As I have always said: "Clear beads and thick chocolate"
+S|imported|5|Pues yo con mis amigos dividimos la cuenta y pagamos a tanto por barba|Well, I and my friends split the bill and paid so much for the beard
+S|imported|5|El derrochador sale ganando y el ahorrador sale perdiendo|The spendthrift wins and the saver loses
+S|imported|5|Para evitar malos rollos, que cada uno pague lo suyo|In order to avoid a bad feeling, let everyone pay their own way
+S|imported|5|¡Vamos, vamos, amigos, y que no llegue la sangre al río! ¡Hala, un brindis!|Come on, come on, friends, and don't let the blood get to the river! Here, a toast!
+S|imported|4|¡Pa’rriba, pa’bajo, pa’l centro y pa’dentro!|Up, down, center and in!
+S|imported|5|Dígame lo que sepa del señor Fuentes. Cuénteme acerca de sus relaciones con él|Tell me what you know about Mr. Fuentes
+S|imported|5|¿Hay alguien que no quiera a su director? ¿Ha habido amenazas?|Is there anyone who doesn't want their director? Have there been any threats?
+S|imported|5|En este sector de actividad hay mucha competencia, mucho dinero en juego,|In this sector of activity there is a lot of competition, a lot of money at stake,
+S|imported|5|y es cierto que uno se hace enemigos como churros|And it is true that one makes enemies like churros
+S|imported|5|Corre el rumor de que su director tiene un rollo con la becaria|Rumor has it that her director is having an affair with the intern
+S|imported|5|¿Ha notado algo raro, algún comportamiento sospechoso o fuera de lo normal?|Have you noticed anything unusual, any suspicious or out of the ordinary behavior?
+S|imported|5|Sea como sea, usted es la última persona que lo ha visto con vida|Be that as it may, you are the last person to have seen him alive
+S|imported|4|Buenos días, ¿qué desea?|Good morning, what can I do for you?
+S|imported|4|Pero, oiga, ¿adónde va usted? ¡Sin avasallar!|But, hey, where are you going? No pushing around!
+S|imported|4|(Suena el móvil de la interiorista)|(The interior designer's cell phone rings)
+S|imported|5|Si todo ha salido como debería, ya tendrás el mueble montado|If everything has gone as it should, you will have the furniture assembled
+S|imported|5|y cuya puerta no es lo suficientemente grande. A veces pasa|and whose door is not big enough. Sometimes it happens
+S|imported|5|la especulación y la recalificación de suelos, así como el exceso de crédito|speculation and land reclamation, as well as excess credit
+S|imported|5|Por eso era conveniente comprar hoy, dado que mañana el precio sería mayor|That's why it was convenient to buy today, since tomorrow the price would be higher
+S|imported|5|Antes que nada quisiera agradecerle que nos haya concedido esta entrevista|First of all I would like to thank you for giving us this interview
+S|imported|5|Cada cosa en su momento. De salir elegido, construiría VPO;|Each thing in its own time
+S|imported|5|y ve sus pintorescas ventanas con celosías y llenas de tiestos de geranios|and sees its picturesque lattice windows filled with geranium pots
+S|imported|5|¡Sería un crimen que se perdiera algo tan típico de aquí!|It would be a crime to miss something so typical of here!
+S|imported|5|¡Si lo hubiera sabido, no les hubiera preguntado nada!|If I had known, I wouldn't have asked them anything!
+S|imported|5|Hasta ahora no me había tomado el tiempo de mirar como funcionaba esa aplicación,|Until now I had not taken the time to look at how that application worked,
+S|imported|5|pero creo que ha llegado el momento de estrenarla. Gracias por todo y ¡adiós!|but I think the time has come to release it. Thank you for everything and goodbye!
+S|imported|4|A la calle Covarrubias número ciento veinte|One hundred and twenty Covarrubias Street
+S|imported|5|Perdone mi curiosidad pero, ¿no es allí donde está…?|Pardon my curiosity, but isn't that where you are
+S|imported|5|¡Pues tómeselo con tranquilidad que hay para rato, porque es la hora punta!|Well, take it easy, because it's rush hour!
+S|imported|5|(El taxista toca el claxon repetidamente y saca la cabeza por la ventanilla.)|(The cab driver honks the horn repeatedly and sticks his head out the window)
+S|imported|5|¡Apartaos, domingueros! ¿Os dieron el carné de conducir en una tómbola o qué?|Get out of the way, you Sunday boys! Did you get your driver's license in a raffle or what?
+S|imported|4|Mejor para ustedes|Better for you
+S|imported|5|Es lo que piensa mucha gente que no conoce la profesión|This is what many people who do not know the profession think
+S|imported|4|También están las propinas|There are also tips
+S|imported|5|Tenga y quédese con la vuelta. Y deséeme suerte, porque la voy a necesitar|Here and keep the return. And wish me luck, because I'm going to need it
+S|imported|4|¿Estáis contentos en vuestro nuevo hogar?|Are you happy in your new home?
+S|imported|5|Hemos pintado todas las paredes con tonos cálidos para obtener un ambiente acogedor|We have painted all the walls with warm tones to obtain a cozy atmosphere
+S|imported|4|¡Cuando llegamos, había un papel pintado súper cutre!|When we arrived, there was a super crappy wallpaper!
+S|imported|4|¡Nos ha costado la friolera de dos millones!|It has cost us a whopping two million!
+S|imported|4|Con todo, nos hemos hipotecado durante 40 años|However, we have mortgaged ourselves for 40 years
+S|imported|5|Por cierto, ¿tienes algo previsto para el sábado que viene?|By the way, do you have anything planned for next Saturday?
+S|imported|5|¡Ay, acabo de acordarme de que tengo algo pendiente, algo muy importante|Oh, I just remembered that I have something pending, something very important
+S|imported|5|y que tenía planificado hacerlo precisamente este fin de semana…! ¡Lo siento!|and that I had planned to do it precisely this weekend... I'm sorry!
+S|imported|5|Pero, ¡qué blanca estás! ¿Este año no has tenido vacaciones o qué?|But, how white you are! This year you haven't had a vacation or what?
+S|imported|5|Este año la sequía era tan extrema que sufrimos incluso restricciones de agua|This year the drought was so extreme that we even suffered water restrictions
+S|imported|5|o a algún país de América Central, para que al menos tengamos buen tiempo|or to some country in Central America, so that at least we have good weather
+S|imported|5|Hoy día solo uno de cada cinco españoles vive en entornos no urbanos|Today only one in five Spaniards live in non-urban environments
+S|imported|5|Ellas pagan únicamente el transporte y ellos invitan caballerosamente a lo demás|They pay only for the transportation and they invite the rest of the guests
+S|imported|5|Y es que en el campo, muchas veces ¡el amor marcha sobre ruedas!|In the country, love often runs smoothly!
+S|imported|4|Es una pregunta muy complicada, personal y arriesgada|It is a very complicated, personal and risky question
+S|imported|4|Pues a decir verdad, no lo sé|Well, to tell you the truth, I don't know
+S|imported|4|¿Y eso?|How so?
+S|imported|5|Insisto en que no estoy convencido de que sea una buena idea|I insist that I am not convinced that this is a good idea
+S|imported|5|y que no es necesario que te suba el sueldo|and that you don't need a raise
+S|imported|4|No veía yo así las cosas|I didn't see things that way
+S|imported|5|¡Y tampoco voy a llegar con las manos vacías! Pues estoy como al principio|And I won't arrive empty-handed either! Well, I'm back to square one
+S|imported|5|Muchos aprovechan la festividad para engalanar a sus mascotas|Many take advantage of the holiday to decorate their pets
+S|imported|5|y no es extraño encontrarlos vestidos con algún detallito o completamente disfrazados|and it is not strange to find them dressed in some little detail or completely disguised
+S|imported|5|ya que, parece ser que el santo ayuda también a los humanos|since, it seems that the saint helps humans too
+S|imported|5|pero también tiene lugar en muchas otras ciudades españolas|but it also takes place in many other Spanish cities
+S|imported|5|Y usted, caballero, ¿qué lleva en la jaula? Porque parece vacía|And you, sir, what do you have in your cage? Because it seems empty
+S|imported|4|Pero… ¿qué animal es Gilda?|But... what animal is Gilda?
+S|imported|5|El liderazgo de los españoles en energías limpias, como la eólica, es indiscutible|The leadership of the Spanish in clean energies, such as wind power, is indisputable
+S|imported|4|Algunas fuentes renovables ya son económicamente rentables|Some renewable sources are already economically profitable
+S|imported|5|y la gran mayoría de ellas lo será en un futuro muy próximo|and the vast majority of them will be in the very near future
+S|imported|5|y generar aún mucho más a medio y largo plazo|and generate even more in the medium and long term
+S|imported|5|Cariño, ¿qué hace este papel de cocina usado en el cubo azul?|Honey, what's this used kitchen paper doing in the blue bucket?
+S|imported|5|¿Cuántas veces tendré que repetirte que no va ahí? ¡Ni que fuera tan difícil!|How many times will I have to tell you that it doesn't go there? Not that it's so difficult!
+S|imported|5|No siempre. Si los papeles están sucios o pringosos deben ir al marrón;|Not always
+S|imported|5|Mira, te pedí que leyeras con atención el folleto del ayuntamiento que te di|Look, I asked you to read carefully the city council brochure I gave you
+S|imported|5|amarillo para los envases ligeros de plástico y metal,|yellow for lightweight plastic and metal containers, yellow for lightweight plastic and metal packaging,
+S|imported|5|¡Hola, Jaime! Tienes un aspecto estupendo, te encuentro muy relajado|Hi, Jaime! You look great, I find you very relaxed
+S|imported|5|Normal, estoy recién llegado de unos días de vacaciones en las Islas Canarias|I've just come back from a few days' vacation in the Canary Islands
+S|imported|5|Y para proteger toda esta riqueza, han hecho la apuesta de un desarrollo sostenible|And to protect all this wealth, they have made a commitment to sustainable development
+S|imported|5|Por cierto, que realizamos la excursión de avistamiento de ballenas y delfines|By the way, we did the whale and dolphin watching excursion
+S|imported|5|y por lo tanto la llamaron Insula Canaria o sea, “isla de los perros”|and therefore they called it Insula Canaria or "island of the dogs"
+S|imported|5|¡Mira por dónde! ¡Nunca te acostarás sin saber una cosa más!|Look at that! You'll never go to bed without knowing one more thing!
+S|imported|5|Tranquilícese, señora, y cuénteme lo que le ha pasado|Calm down, ma'am, and tell me what happened to you
+S|imported|5|Vamos, descríbame por favor a sus agresores para que podamos hacer el retrato robot|Come on, please describe your attackers so that we can make the composite
+S|imported|5|Pues era una pareja de frikis, un hombre y una mujer|Well, it was a geek couple, a man and a woman
+S|imported|5|Él seguramente andará por los treinta, pero se le veía avejentado y demacrado|He's probably in his thirties, but he looked aged and emaciated
+S|imported|4|¿Y su cómplice? ¿Cómo era ella?|And his accomplice? What was she like?
+S|imported|5|Llevaba una minifalda demasiado corta y ajustada, y muy vulgar|She wore a miniskirt that was too short and too tight, and too vulgar
+S|imported|5|en vez de una prenda que te apriete la cintura haciéndole salir los michelines|instead of a garment that squeezes your waist by making your love handles pop out
+S|imported|5|La blusa se daba de patadas con la falda|The blouse clashed with the skirt
+S|imported|5|Bueno, bueno… Según un testigo presencial, el agresor le preguntó que si tenía dinero,|Well, well
+S|imported|5|Sí, muy bien pero… concéntrese, ¿qué le dijo exactamente? ¿La amenazó con hacerle algo?|Yes, very well but... concentrate, what exactly did he say to you? Did he threaten to do something to you?
+S|imported|5|Menos mal… ¿Y qué te ha dicho el médico?|Thank goodness... And what did the doctor say?
+S|imported|5|Me ha dado la baja. Me anunció que tengo escayola para dos semanas|He has discharged me. He announced that I have a cast for two weeks
+S|imported|5|No entiendo nada. Y entonces, ¿por qué vas hecho un cristo?|I don't understand anything. And then, why are you looking like a Christ?
+S|imported|5|y empezamos a hacer el parte lo más civilizadamente posible|and we started doing the part as civilly as possible
+S|imported|4|Nos encontramos toda la casa manga por hombro,|We found the whole house turned upside down, We meet the whole house sleeve by shoulder,
+S|imported|4|¡Qué paliza recogerlo luego todo!|What a drag (beating) to pick it all up later!
+S|imported|4|¡Ni que lo digas! ¿Y qué se llevaron?|You don't say! And what did they take?
+S|imported|4|Y ahora te toca reclamar al seguro, ¿no?|And now it's your turn to make an insurance claim, isn't it?
+S|imported|5|¿Qué os dijeron los “mossos d’esquadra” que vinieron a tomar las huellas y eso?|What did the "mossos d'esquadra" who came to take the prints and stuff tell you?
+S|imported|5|y… ¡nos echaron un rapapolvo de padre y muy señor mío!|and... we were given a father's scolding and my lord!
+S|imported|4|¿Por qué? Me tienes intrigada… ¡Vamos, desembucha!|Why? I'm intrigued... Come on, spill it!
+S|imported|4|Me da apuro decírtelo… ¡Bueno, qué importa!|It gives me embarrassment to tell you... Well, who cares!
+S|imported|5|para así evitar facilitar la tarea a los amigos de lo ajeno|in order to avoid making the task easier for friends of others
+S|imported|5|Pues sí, el vecino de arriba es doctor, y ayer fui a verlo|Well, yes, the upstairs neighbor is a doctor, and I went to see him yesterday
+S|imported|4|¿Es tu médico de cabecera?|Is he your family doctor?
+S|imported|5|Me examinó a continuación los pulmones, me preguntó que si fumaba,|He then examined my lungs, asked me if I smoked,
+S|imported|5|me mandó que inspirara, que espirara, que tosiera y que dijera treinta y tres|He told me to breathe in, to breathe out, to cough and to say thirty-three
+S|imported|5|y que me habían operado de las amígdalas porque de pequeño enfermaba mucho|and that I had had my tonsils operated on because I was very sick as a child
+S|imported|5|E imagino que tú cada vez más angustiado, ¿me equivoco?|And I imagine that you are more and more distressed, am I wrong?
+S|imported|5|¡Evidente! Le pregunté que si había hallado algo raro|Obvious! I asked him if he had found anything strange
+S|imported|5|y me imaginé que rellenaba un volante para que fuera al especialista|and I figured I'd fill out a flyer to go to the specialist
+S|imported|5|Al final el doctor me dijo que me tranquilizara, que no tenía nada|In the end the doctor told me to relax, that I had nothing
+S|imported|5|Sea como sea, hay que hacerlo regularmente para evitar malas sorpresas|In any case, it must be done regularly to avoid bad surprises
+S|imported|5|¡y mi vecino médico es el presidente de la comunidad de propietarios!|and my neighbor's doctor is the president of the homeowners' association!
+S|imported|4|aumenta mucho el peligro|The danger is greatly increased
+S|imported|5|el 95 % de los incendios están directa o indirectamente causados por el hombre|95% of fires are directly or indirectly caused by man
+S|imported|5|la quema de rastrojos por parte de agricultores sin el debido control|the burning of stubble by uncontrolled farmers
+S|imported|5|infinitas son las negligencias e imprudencias que originan estas catástrofes|The negligence and recklessness that cause these catastrophes are infinite
+S|imported|5|Pero la inmensa mayoría de los siniestros se deben a causas intencionales y criminales|But the vast majority of accidents are due to intentional and criminal causes
+S|imported|5|sin embargo en algunos casos se opta por introducir especies más productivas|However, in some cases it is decided to introduce more productive species
+S|imported|4|¡Más vale prevenir que apagar!|Better safe than sorry!
+S|imported|5|Política. El presidente declaró anoche que había aprendido de sus errores pasados|Policy
+S|imported|4|para potenciar los intercambios comerciales y culturales|to promote commercial and cultural exchanges
+S|imported|5|y que generaron una pérdida económica récord de casi quinientos mil millones de euros|and which generated a record economic loss of almost half a billion euros
+S|imported|5|¿De dónde vienes en este estado? Vas todo zarrapastroso y te veo incluso avejentado|Where do you come from in this state? You're all scruffy and I see you even older
+S|imported|5|¿Y eso? ¿Qué ocurre? ¿Estás en apuros? ¿Puedo hacer algo por ti?|What's up? Are you in trouble? Is there anything I can do for you? Cast?
+S|imported|5|Y si bien había algo raro en aquella historia, yo voy y la ayudo|And although there was something strange in that story, I go and help her
+S|imported|5|Todo eso me parece perfecto, pero yo sigo sin ver cuál es el problema|All that seems perfect to me, but I still don't see what the problem is
+S|imported|4|¡Dios mío! Ahora me hago cargo|My God! Now I take over
+S|imported|4|(En la pescadería)|(At the fishmonger's) (In the fish market)
+S|imported|5|Voy a hacer una mariscada. Somos cuatro. Así que, necesito gambas, cigalas, almejas|I'm going to make a seafood. There are four of us. So, I need prawns, crayfish, clams
+S|imported|5|¡Uy, no, que están carísimas! Quiero también dos rodajas de bonito|Oh, no, they are very expensive! I also want two slices of bonito
+S|imported|4|(En la carnicería y charcutería)|(At the butcher's and delicatessen) (In the butcher and delicatessen)
+S|imported|4|¿Quién tiene la vez? ¿Cariño, ya te atienden?|Who's got the time? Honey, are you being served yet?
+S|imported|4|¿Has visto qué salchichas? Están recién hechas|Have you seen the sausages? They are freshly made
+S|imported|4|¿Algo más?|Anything else?
+S|imported|4|No, gracias, eso es todo. ¿Cuánto te debo?|No, thanks, that's all. How much do I owe you?
+S|imported|4|(En la frutería y verdulería)|(In the fruit and vegetable shop) (In the greengrocers and greengrocers)
+S|imported|5|Tres kilos de patatas, un kilo de cebollas, otro de tomates y un pepino|Three kilos of potatoes, one kilo of onions, one kilo of tomatoes and one cucumber
+S|imported|5|¿Me las piensas cobrar a precio de fruta o a precio de carne?|Are you going to charge me at the price of fruit or at the price of meat?
+S|imported|5|¿Cómo definiría pues exactamente esta cocina hoy tan en boga?|So how exactly would you define this kitchen that is so in vogue today?
+S|imported|4|¿Estamos hablando de cocina o de química?|Are we talking about cooking or chemistry?
+S|imported|5|Al cortar por ejemplo una zanahoria, rompemos células que esparcen sus contenidos|When we cut for example a carrot, we break cells that spread their contents
+S|imported|4|¡Toda la comida es un artificio!|All food is an artifice!
+S|imported|5|Hoy ponemos un rostro a una de estas teleoperadoras, hablamos con Rosa|Today we put a face to one of these tele-operators, we talk to Rosa
+S|imported|4|¿Se resuelven de inmediato las reclamaciones?|Are complaints resolved immediately?
+S|imported|5|¿Sobre qué tipo de cuestiones versan las llamadas recibidas?|What kind of issues are the incoming calls about?
+S|imported|5|y en otras ocasiones se requieren varias gestiones, lo que puede demorar la resolución|and on other occasions several steps are required, which can delay resolution
+S|imported|4|¿Nos podrías detallar alguna anécdota graciosa?|Could you tell us a funny story?
+S|imported|5|me di cuenta de que todavía no era clienta y de que llamaba|I realized that I was not yet a client and that I was calling
+S|imported|5|¡solo para cerciorarse de que nuestro servicio posventa funcionaba correctamente!|just to make sure our after-sales service was working properly!
+S|imported|5|La pasión es el principal valor asociado a las marcas españolas en el extranjero|Passion is the main value associated with Spanish brands abroad
+S|imported|5|Cabe destacar también la confusión de los productos españoles con los italianos|It is also worth noting the confusion of Spanish products with Italian ones
+S|imported|5|Asimismo, mientras que ciertas marcas se identifican plenamente con España,|Also, while certain brands are fully identified with Spain,
+S|imported|5|Un hombre llega a un banco visiblemente alterado. Se dirige a un empleado|A man arrives at a bank, visibly upset. He addresses an employee
+S|imported|4|¡Por favor, necesito ayuda!|Please, I need help!
+S|imported|4|Es que en el banco de enfrente|It is that in the bank of opposite
+S|imported|5|Pero me extrañaría que en otro establecimiento le propusieran mejores condiciones|But I would be surprised if another establishment proposed better conditions
+S|imported|4|En el banco de aquí delante|On the bench here in front
+S|imported|5|sin perder ni un duro de la rentabilidad que haya acumulado hasta la fecha|without losing a penny of the profitability you have accumulated to date
+S|imported|5|Tampoco hay que pagar nada por la domiciliación de sus recibos|There is also no charge for the direct debiting of your bills
+S|imported|4|¡Tengo miedo! En el banco enfrente del suyo|I'm scared! On the bench in front of yours
+S|imported|5|Los valores en los que he invertido se han desplomado en pocos días|The values I have invested in have collapsed in a few days
+S|imported|5|estoy al corriente de las elecciones de todos los países del mundo|I am aware of the elections in every country in the world
+S|imported|5|Por más que estés informado, es imposible prever las evoluciones del mercado|No matter how well informed you are, it is impossible to predict market developments
+S|imported|5|Por favor, para el carro y háblame en cristiano|Please stop the car and speak to me in English
+S|imported|5|Todo lo que he ganado es gracias a Óscar|Everything I have won is thanks to Oscar
+S|imported|5|¿Óscar? ¿Qué es? ¿Quién es? ¿Un corredor de bolsa? ¿Un experto financiero?|Oscar? What is he? Who is he? A stockbroker? A financial expert?
+S|imported|5|¡Para nada! Óscar es el hámster de mi hija pequeña|Not at all! Oscar is my little daughter's hamster
+S|imported|5|¡Es pan comido! ¡Y la mayor parte de las veces acierta!|It's a piece of cake! And most of the time it's right!
+S|imported|5|Digamos que mi método es menos sofisticado y más aleatorio, pero muy eficaz|Let's say my method is less sophisticated and more random, but very effective
+S|imported|5|¿Qué piensas pues de la bolsa? Es ideal para el mercado|So what do you think about the stock? It is ideal for the market
+S|imported|5|¿Quieres mi opinión sobre la bolsa y el mercado? Así, de sopetón|Do you want my opinion about the stock and the market? So, out of the blue
+S|imported|5|¡Para el carro! ¡Me importa un pepino la puñetera bolsa!|Stop the car! I don't give a damn about the damn bag!
+S|imported|5|Eh… bien… ¡Sí! ¡Es mil veces más ecológica que las de plástico…!|Eh... well... Yes! It's a thousand times more ecological than plastic ones
+S|imported|5|donde una simple colilla puede convertirse en una pieza clave para resolver un crimen|where a simple cigarette butt can become a key piece to solve a crime
+S|imported|4|Tras unos minutos manipulando los reactivos químicos,|After a few minutes handling the chemical reagents,
+S|imported|5|el bastoncillo de algodón se tiñó de color verde: el test había dado positivo|the cotton swab was dyed green: the test was positive
+S|imported|5|y en la parte inferior se precipitaron los restos orgánicos solidificados|and in the lower part the solidified organic remains were precipitated
+S|imported|5|Los datos obtenidos se convirtieron en un código gracias a un programa informático|The data obtained was converted into a code thanks to a computer program
+S|imported|5|El perfil genético es una huella única: cada persona posee uno y es irrepetible|The genetic profile is a unique imprint: each person has one and it is unrepeatable
+S|imported|5|Pensó para sí que las posibilidades de encontrar una coincidencia eran ínfimas|He thought to himself that the chances of finding a match were slim
+S|imported|5|recordemos que muchos son los descubrimientos que debemos a científicos españoles|Let us remember that many are the discoveries we owe to Spanish scientists
+S|imported|5|un eminente bacteriólogo español nacido en la provincia de Tarragona|an eminent Spanish bacteriologist born in the province of Tarragona
+S|imported|5|por haber descubierto cómo funcionan y se conectan las neuronas en el cerebro|for having discovered how neurons in the brain work and are connected
+S|imported|5|esto es, un gen humano mutado y capaz de causar cáncer|that is, a mutated human gene capable of causing cancer
+S|imported|5|por hacer que el conocimiento avance un poco más en las más variadas disciplinas|for making knowledge advance a little more in the most varied disciplines
+S|imported|4|Por cierto, tú escribes, ¿verdad? Me suena algo|By the way, you write, don't you? Sounds like something
+S|imported|5|Confieso que siento debilidad por las novelas cortas y los cuentos,|I confess that I have a weakness for short novels and stories,
+S|imported|5|Con lo que me estás contando, casi me dan ganas de leerlo|With what you are telling me, I almost feel like reading it
+S|imported|5|Si quieres te lo presto. Pero ojo, que sepas que tendrá unas quinientas páginas|If you want I can lend it to you. But beware, you should know that it will be about five hundred pages long
+S|imported|5|¡Virgen santísima! ¡En mi vida me leeré yo tal tocho!|Blessed Virgin! In my life I will read myself such a bacon!
+S|imported|5|A menos que… ¿sabes por casualidad si han sacado la película?|Unless... do you happen to know if the film has been released?
+S|imported|5|¿Qué haces, Miguel? Llevas casi media hora plantado aquí|What are you doing, Miguel? You've been standing here for almost half an hour
+S|imported|4|¡que para eso están las inauguraciones!|that's what openings are for!
+S|imported|5|¿Te gusta entonces la exposición? Un poco demasiado conceptual a mi gusto|Do you like the exhibition? A little too conceptual for my taste
+S|imported|5|Mira esta escultura. El artista es bastante joven pero ha alcanzado la plena madurez|Look at this sculpture. The artist is quite young but has reached full maturity
+S|imported|4|¡Delante de ti tienes una obra maestra!|You have a masterpiece in front of you!
+S|imported|5|No sé qué decirte, el arte moderno es a menudo una tomadura de pelo|I don't know what to tell you, modern art is often a joke
+S|imported|4|Esto enriquece la obra pero también la problematiza|This enriches the work but also makes it more problematic
+S|imported|5|Ya no debemos hablar de belleza, sino de sentido|We should no longer talk about beauty, but about meaning
+S|imported|5|Fíjate en la pureza de la línea y el cromatismo desaforado|Notice the purity of the line and the unbridled chromaticism
+S|imported|4|¡Deja de balbucir frases incoherentes!|Stop babbling incoherent phrases!
+S|imported|5|¡Perdona, estoy tan emocionado! Me transmite una energía impresionante|Sorry, I'm so excited! It transmits an impressive energy to me
+S|imported|5|La verdad, no comparto tanto entusiasmo, tampoco es nada del otro jueves y además|The truth is, I don't share so much enthusiasm, it's nothing from the other Thursday either, and besides
+S|imported|5|¡Es como una patada en el estómago que te despierta de sopetón!|It's like a kick in the stomach that wakes you up out of the blue!
+S|imported|4|sale de los senderos trillados, rezuma modernidad|it leaves the beaten paths, it oozes modernity
+S|imported|5|pero ¡me temo que llevas diez minutos extasiándote delante de un vulgar extintor!|but I'm afraid you've been ecstatic for ten minutes in front of a vulgar fire extinguisher!
+S|imported|5|¡Qué virtuosismo! La guitarra toca las notas justas y necesarias en el momento exacto|What virtuosity!
+S|imported|5|¡Déjate de chorradas, papá! Además, no se puede comparar con la música en vivo|Cut the crap, Dad! Furthermore, it cannot be compared to live music
+S|imported|5|¡Mola ese ambientazo que reina en la sala de conciertos!|The atmosphere in the concert hall is cool!
+S|imported|4|pero solo es música de fácil consumo|but it's only music that is easy to consume
+S|imported|5|No tiene punto de comparación con la de los grandes compositores|It has no point of comparison with that of the great composers
+S|imported|5|Para disfrutar de la música culta, es preciso educar el oído, habituarlo|In order to enjoy cultured music, it is necessary to educate the ear, to habituate it
+S|imported|5|La zarzuela forma parte de nuestro acervo cultural, ¡es genuinamente español!|The zarzuela is part of our cultural heritage, it is genuinely Spanish!
+S|imported|5|De verdad, ¡yo no comprendo que puedas estar a favor de esa salvajada!|Really, I don't understand that you could be in favor of that savagery!
+S|imported|5|o cuanto menos que los seres humanos tenemos ciertas obligaciones para con ellos|or at least that we human beings have certain obligations to them
+S|imported|4|Esgrime un argumento más convincente|Make a more convincing argument
+S|imported|4|¡Por favor, un poco de dignidad!|Please, a little dignity!
+S|imported|5|¿Puede ser considerada menos envidiable la suerte de un buey criado para el matadero?|Can the fate of an ox raised for slaughter be considered less enviable?
+S|imported|5|¿por qué no aunáis esfuerzos para preservarlos creando refugios naturales en las dehesas?|Why don't you join forces to preserve them by creating natural refuges in the pastures?
+S|imported|5|Olvidas también que la tauromaquia ha inspirado a grandes artistas|You also forget that bullfighting has inspired great artists
+S|imported|4|¡Toma! ¡Los hay a quienes el asesinato también!|Here! There are those who murder too!
+S|imported|4|¡Y vuelta a empezar…!|And again...!
+S|imported|5|Cogió el caballete y se instaló en el sitio de siempre|He took the easel and settled in the usual place
+S|imported|4|La modelo adoptó mecánicamente la pose habitual|The model mechanically adopted the usual pose
+S|imported|5|La aristocrática dama llevaba mucho tiempo viniendo a la cita cotidiana con el pintor|The aristocratic lady had been coming to the daily appointment with the painter for a long time
+S|imported|5|Aquel cuadro debía ser una sorpresa para su esposo. Le había costado decidirse|That painting must have been a surprise for her husband. He had a hard time deciding
+S|imported|5|Mezcló los colores en la paleta para obtener los matices que deseaba|He mixed the colors in the palette to get the shades he wanted
+S|imported|5|El pintor se negaba a mostrarle el cuadro, daba un sinfín de pretextos|The painter refused to show him the painting, he gave endless excuses
+S|imported|4|Cuando esté terminado”, le repetía incansablemente|When it is finished," he repeated tirelessly
+S|imported|5|Llegó el gran día. El parecido del retrato era notable|The big day has arrived. The resemblance of the portrait was remarkable
+S|imported|5|Había conseguido plasmar la textura de la carne, insuflarle vida a la materia pictórica|He had managed to capture the texture of the flesh, to breathe life into the pictorial matter
+S|imported|4|El resultado sobrepasaba con mucho todas sus esperanzas|The result was far beyond their expectations
+S|imported|5|Al fondo, y en voz lo suficientemente alta para que lo escucharan alrededor,|In the background, and loud enough to be heard around,
+S|imported|5|Ambos se acaloraron y la discusión iba subiendo de tono|Both became heated and the discussion was getting more and more heated
+S|imported|5|Usted creció en un mundo diferente, primitivo. En la Prehistoria o casi|You grew up in a different, primitive world. In prehistoric times or almost
+S|imported|5|Desde entonces, ha habido logros que han cambiado la faz de la Tierra|Since then, there have been achievements that have changed the face of the Earth
+S|imported|4|Nuestras sondas espaciales han visitado Marte|Our space probes have visited Mars
+S|imported|5|Tenemos naves con energía nuclear y coches eléctricos y de hidrógeno|We have nuclear-powered ships and electric and hydrogen cars
+S|imported|5|Nuestros ordenadores procesan la información a la velocidad de la luz|Our computers process information at the speed of light
+S|imported|5|Podemos geolocalizar a alguien por satélite en cualquier lugar del mundo|We can geolocate someone by satellite anywhere in the world
+S|imported|5|Sabemos generar células madre que pueden regenerar y remplazar células dañadas|We know how to generate stem cells that can regenerate and replace damaged cells
+S|imported|4|Tras un breve silencio el señor mayor respondió:|After a brief silence, the older man responded: After a brief silence the older man replied:
+S|imported|4|¿Has terminado tu perorata? Tienes razón, hijo mío|Have you finished your speech? You are right, my son
+S|imported|5|Nosotros no teníamos esas cosas cuando éramos jóvenes… ¡así que las inventamos!|We didn't have those things when we were young... so we invented them!
+S|imported|5|Ahora, arrogante niñato, dime ¿qué estás haciendo tú para la próxima generación?|Now, you arrogant brat, tell me what are you doing for the next generation?
+S|imported|5|El aplauso de los pasajeros que habían presenciado la escena fue atronador|The applause of the passengers who had witnessed the scene was thunderous
+S|imported|4|¿Estás satisfecha con tu nuevo operador?|Are you satisfied with your new operator?
+S|imported|5|y cuenta con mensajería instantánea y ¡mil y una aplicaciones y funcionalidades más!|and has instant messaging and a thousand and one more applications and features!
+S|imported|5|Fíjate, ¡pantalla táctil! Y puedes hacer virguerías. Por ejemplo, hace de linterna|Check it out, touch screen! And you can do virguerias. For example, it makes a flashlight
+S|imported|5|Sí, claro, y de sacacorchos, y también baila claqué|Yes, of course, and corkscrew, and he also dances tap
+S|imported|4|¡No te cachondees!|Don't take the piss!
+S|imported|4|¿Ese botón para qué sirve?|What is that button for?
+S|imported|5|Ni idea, todavía no he tenido tiempo de leer las instrucciones|No idea, I haven't had time to read the instructions yet
+S|imported|5|Sí, ¿Javier? Soy mamá. Sí, he recibido tu mensaje pero no entiendo ni papa|Yes, Javier? I'm a mom. Yes, I received your message but I don't understand it
+S|imported|5|Que te tengo dicho que me escribas normal, ¿vale?|I told you to write to me normally, okay?
+S|imported|4|Luis, hijo, ¿me puedes echar una mano?|Luis, son, can you give me a hand?
+S|imported|5|Lo he reiniciado y, ahora, me pide una contraseña para iniciar la sesión|I have restarted it and now it asks me for a password to log in
+S|imported|5|¡Y yo no tengo la más remota idea de cuál es la dichosa contraseña!|And I have no idea what the hell the password is!
+S|imported|5|Déjame ver… Sí. Si aprieto esta tecla, debería volver a funcionar|Let me see... Yes. If I press this key, it should work again
+S|imported|5|Pues no, ahora ni el teclado ni el ratón responden|Well no, now neither the keyboard nor the mouse respond
+S|imported|5|Pero… ¿qué es ese pantallazo azul? Y aparece un mensaje de error|But... what is that blue screen? And an error message appears
+S|imported|5|No te pongas nerviosa. Pero si es un virus, ¡estamos apañados!|Don't be nervous. But if it's a virus, we're in trouble!
+S|imported|5|¿Has abierto algún archivo o alguna foto que te hayan mandado?|Have you opened any files or photos that have been sent to you?
+S|imported|5|¿Has instalado actualizaciones? ¿Has bajado algún programa raro de internet?|Have you installed updates? Have you downloaded any weird programs from the internet?
+S|imported|5|¡Bueno, bueno, tranqui! ¡Ah! Parece que funciona de nuevo|Well, well, quiet! Ah! It seems to be working again
+S|imported|4|El copiar y pegar no funciona|Copy and paste does not work
+S|imported|5|¡Ah, vale! Y tampoco veo dónde se ha metido el documento que he bajado|Ah, okay! And I can't see where the document I downloaded has gone either
+S|imported|5|A ver… Sí, las descargas van a esta carpeta|Let's see... Yes, the downloads go to this folder
+S|imported|4|Muchas gracias, Luis. ¿Ya has hecho los deberes?|Thank you very much, Luis. Have you done your homework yet?
+S|imported|5|Precisamente venía a pedirte si podías ayudarme a repasar las tablas de multiplicar|I was just coming to ask you if you could help me go over the multiplication tables
+S|imported|5|Estamos empezando a aprenderlas y me cuesta un poco entenderlas|We are starting to learn them and I find them a little difficult to understand
+S|imported|5|Mari, que me he enterado de que sales ahora con un chico|Mari, I've heard that you're dating a guy now
+S|imported|4|Está hecho todo un friki de la informática|He's a real computer geek
+S|imported|4|Todos los hombres son así|All men are like that
+S|imported|5|Pero tiene sobre todo una manía que me pone de los nervios|But it has above all a mania that gets on my nerves
+S|imported|5|Cuando vamos a un bar, un restaurante o al cine, me coge la mano|When we go to a bar, a restaurant or a movie, he holds my hand
+S|imported|4|¡Qué cariñoso!|How affectionate!
+S|imported|4|Mujer, cariñoso, cariñoso, tampoco|Woman, affectionate, affectionate, either
+S|imported|5|¡como si estuviera moviendo un ratón sobre un tapete!|as if you were moving a mouse on a mat!
+S|imported|4|Pero bueno... ¿Será posible?|But well... Is it possible?
+S|imported|5|¿Qué estás haciendo en el ordenador, Aurora? ¿No tienes deberes?|What are you doing on the computer, Aurora? Don't you have homework?
+S|imported|4|Estoy mirando una cosa en internet|I'm looking at something on the Internet
+S|imported|5|¡Cada dos por tres estás pegada a las redes sociales! ¡No es posible, Aurora!|You're glued to the social networks every time! It's not possible, Aurora!
+S|imported|5|¡Si perdieras menos tiempo en este tipo de sitios, sacarías mejores notas!|If you spent less time in this kind of place, you'd get better grades!
+S|imported|5|¡Mamá, este trimestre he aprobado todas las asignaturas, no me han suspendido ninguna|Mom, I passed all my subjects this term, I didn't fail any of them
+S|imported|4|¡Incluso me han puesto dos sobresalientes!|I even got two A's!
+S|imported|5|¡No te puedes pasar todo el santo día navegando por internet y chateando!|You can't spend your whole day surfing the internet and chatting!
+S|imported|4|Mamá, solo un momento. Estoy actualizando mi perfil|Mom, just a moment. I'm updating my profile
+S|imported|5|Pues los compañeros de la escuela y los de la clase de natación|For the schoolmates and the swimming class
+S|imported|4|¡Aurora! ¿Qué significa “Tiene una relación”?|Aurora! What does it mean "He's in a relationship"?
+S|imported|5|Pues sí… Salgo con un chico de mi clase|Well, yes... I go out with a boy from my class
+S|imported|5|Y, para más inri, ¡todo el mundo estaba al corriente menos yo!|And, to make matters worse, everyone was aware of it but me!
+S|imported|5|¡Mamá, tengo derecho a tener una vida privada como toda persona humana!|Mom, I have the right to have a private life like every human person!
+S|imported|5|Razón de más para poner su veracidad en tela de juicio|All the more reason to question its veracity
+S|imported|5|¡No los puedes meter a todos en el mismo saco!|You can't put them all in the same bag!
+S|imported|5|Internet es poco digno de confianza, cualquiera puede publicar cualquier cosa en él|The Internet is untrustworthy, anyone can publish anything on it
+S|imported|5|Hay que aprender a separar el grano de la paja|We must learn to separate the grain from the straw
+S|imported|4|¡Que te digo que vivimos engañados!|I'm telling you, we're living in a state of deception!
+S|imported|5|Mira, Roberto, nos manipulan. ¡Hay que permanecer constantemente alerta!|Look, Roberto, we are being manipulated. We must remain constantly alert!
+S|imported|5|¡Carlos, lo tuyo es de juzgado de guardia! ¡Desconfías hasta de tu propia sombra!|Carlos, you're in charge of the courthouse! You don't even trust your own shadow!
+S|imported|5|Pedro, me he enterado por Jaime de que fuiste víctima de un robo|Pedro, I heard from Jaime that you were a victim of a robbery
+S|imported|5|un modelo con pantalla táctil. ¡Estoy la mar de furioso!|a model with a touch screen. I'm so angry!
+S|imported|5|¡Qué fuerte! ¡Es el colmo de la mala suerte! ¿Cómo ocurrió? ¿Sabes quién fue?|How strong! This is the height of bad luck! How did it happen? Do you know who it was?
+S|imported|5|Ni la más remota idea. Un carterista, ¿quién iba a ser, si no?|Not the slightest idea. A pickpocket, who else would it be?
+S|imported|5|Además, tienes la manía de dejar el móvil asomando por el bolsillo|Besides, you have the habit of leaving your cell phone in your pocket
+S|imported|5|¡Estás brindando a los ladrones una ocasión en oro de que te roben!|You're giving thieves a golden opportunity to steal from you!
+S|imported|5|Eh, bien, bueno… tenía algunos mensajes de texto importantes,|Uh, okay, well
+S|imported|5|¡No te pongas así! ¡Tampoco no hay para tanto!|Don't be like that! It's not that bad either!
+S|imported|4|Ese es precisamente el problema|That is precisely the problem
+S|imported|4|¿Cómo? ¡Aquí hay gato encerrado! Explícate|What? There's something fishy going on here! Explain yourself
+S|imported|5|y han adoptado incluso el lenguaje, el estilo de vida y la cultura árabes|and have even adopted the Arabic language, lifestyle and culture
+S|imported|5|El trabajo se organizaba en equipo mediante una cadena de traducciones sucesivas|The work was organized as a team through a chain of successive translations
+S|imported|5|¡Me caigo de sueño! ¡Estoy agotado! ¿Te vienes a la cama, Diana?|I'm falling asleep! I'm exhausted! Are you coming to bed, Diana?
+S|imported|5|¿Por qué te pones tan agresivo? La monarquía es necesaria y presenta muchas ventajas|Why do you get so aggressive? The monarchy is necessary and has many advantages
+S|imported|5|En momentos en que la sociedad pueda estar dividida en posiciones ideológicas enfrentadas,|At times when society may be divided into opposing ideological positions,
+S|imported|5|Las monarquías actuales no acumulan suficientes méritos que justifiquen su necesidad|Today's monarchies do not accumulate enough merit to justify their need
+S|imported|5|Por ello, la elección es mil veces preferible a la herencia|Therefore, choice is a thousand times preferable to inheritance
+S|imported|5|Creo que no vamos a sacar nada en limpio, corazón|I don't think we're going to get anything out of it, sweetheart
+S|imported|4|¿Es tu amiga colombiana, verdad?|She's your Colombian friend, right?
+S|imported|5|Gracias a ella he conocido a varios sudamericanos. Encantadores, por cierto|Thanks to her I have met several South Americans. Lovely, by the way
+S|imported|5|Mírala, ahí llega. ¡Hola, Cristina! Mira, te presento a Eugenia, una muy buena amiga|Look at her, here she comes. Hi, Cristina! Look, this is Eugenia, a very good friend
+S|imported|5|Encantada. Es un placer. ¿Cómo les va? ¿Qué hubo? Estás muy churra, Julia|I'm pleased to meet you. It's a pleasure. How are you doing? What's up? You're very churra, Julia
+S|imported|5|¡Esto y los cerrajeros, cuando tienes una urgencia, te cuesta un dineral!|This and locksmiths, when you have an emergency, cost you a bundle!
+S|imported|5|Aunque no me gusta manejar, como llegaba tarde, decidí sacar el carro del parqueadero|Although I don't like to drive, since I was late, I decided to take the car out of the parking lot
+S|imported|4|¿Y cogiste un taxi?|And you took a cab?
+S|imported|5|Bueno, necesito tomar algo. Voy a pedirme un tinto… ¡Camarero, por favor!|Well, I need a drink. I'll have a red wine... Waiter, please!
+S|imported|5|¿Les provoca algo? Pero, ¿por qué me miran con esa cara tan rara?|Does it provoke them? But why are you looking at me with such a strange face?
+S|imported|5|¡No, boba! ¡Si lo que quiero es lo que ustedes llaman un café solo!|No, silly! What I want is what you call a black coffee!
+S|imported|4|Mujer sí, con mucho gusto, pero… ¿habrá intérpretes?|Woman yes, with pleasure, but... will there be interpreters?
+S|imported|4|¿Cuál es el origen de la palabra “tango”?|What is the origin of the word "tango"?
+S|imported|4|¿Cuándo y dónde surgió esta danza?|When and where did this dance arise?
+S|imported|4|¿Quiénes bailaban?|Who was dancing?
+S|imported|4|Primero era música y baile|First it was music and dance
+S|imported|5|No se puede hablar del tango sin evocar el lunfardo|One cannot speak of tango without evoking lunfardo
+S|imported|5|¿Cuáles son los grandes temas tratados por las letras de las canciones?|What are the big issues addressed by the lyrics?
+S|imported|4|Esta danza es indisociable de la sensualidad|This dance is inseparable from sensuality
+S|imported|4|¿Ha evolucionado mucho el tango? ¿Ha sabido modernizarse?|Has tango evolved a lot? Has it known how to modernize?
+S|imported|4|¡Acepto encantado!|I'm happy to accept!
+S|imported|5|Graciela, mi amor eterno, olvida por favor todo lo pasado. Éramos jóvenes y rebeldes|Graciela, my eternal love, please forget everything that happened. We were young and rebellious
+S|imported|5|Pero no me pidas lo imposible. No se puede vivir del aire|But don't ask me for the impossible. You can't live on air
+S|imported|4|¿Engañarte yo?|Me cheat you?
+S|imported|5|¡Sí, ingrato! ¡Amarte es echarles margaritas a los cerdos!|Yes, ungrateful! To love you is to throw daisies to the pigs!
+S|imported|5|¿Nunca te separarás de una vez por todas de esa zorra pintarrajeada?|Will you never separate yourself once and for all from that defaced bitch?
+S|imported|4|Durante noches enteras, mis lágrimas mojaron mi almohada|For entire nights, my tears wet my pillow
+S|imported|5|Pero ¿cómo poder olvidarte si cada vez que te olvido empiezo a recordarte?|But how can I forget you if every time I forget you I start to remember you?
+S|imported|4|¡Mi vida, dame una última oportunidad!|My life, give me one last chance!
+S|imported|5|¡Quédate pues con esa arpía estéril! A partir de ahora seremos dos extraños|So keep that sterile harpy! From now on we will be two strangers
+S|imported|5|¡Te juro ante la eternidad que la criatura nunca sabrá quién es su padre!|I swear to you before eternity that the creature will never know who his father is!
+S|imported|4|¿Y qué tal el salón?|And how about the salon?
+S|imported|5|Este año había más expositores que en las ediciones anteriores. La mayoría sudamericanos|This year there were more exhibitors than in previous editions. Mostly South Americans
+S|imported|4|¿Estableciste contactos profesionales interesantes?|Did you establish interesting professional contacts?
+S|imported|5|¿Y eso? ¡Qué notición! ¡Te lo tenías bien guardado!|What's that? What a notice! You had it well in hand!
+S|imported|5|Con los beneficios, me agenciaré un terrenito para construir un camping|With the benefits, I will get a small piece of land to build a campsite
+S|imported|5|¿No estarás tú vendiendo la piel del oso antes de haberlo cazado?|You're not selling the bear's fur before you've hunted it, are you?
+S|imported|5|Repasa el material estudiado en el curso y repítelo varias veces|Review the material studied in the course and repeat it several times
+S|imported|5|Practica regularmente. El cerebro es un músculo y, como todo músculo, debes ejercitarlo|Practice regularly. The brain is a muscle and, like all muscles, you must exercise it
+S|imported|5|Intenta leer el texto completo, para ver qué has entendido globalmente|Try to read the full text, to see what you have understood globally
+S|imported|5|Al final podrás buscar los términos desconocidos en el diccionario|At the end you can look up the unknown terms in the dictionary
+S|imported|5|Saca partido de cualquier ocasión para practicar el idioma y ganar así en fluidez|Take advantage of any occasion to practice the language and thus gain in fluency
+S|imported|5|Escucha con atención para familiarizarte con la prosodia del idioma|Listen carefully to familiarize yourself with the prosody of the language
+S|imported|5|Encuentra interlocutores cuya lengua materna sea el español para intercambiar con ellos|Find native speakers of Spanish to exchange with them
+S|imported|5|Aprende de los errores que cometes. No te avergüences si hablas aún con titubeos|Learn from the mistakes you make. Don't be embarrassed if you speak even hesitantly
+S|imported|4|Ser políglota solo puede considerarse algo positivo|Being a polyglot can only be considered a positive thing
+S|imported|5|¿Alguien te ha enseñado a hacer esto o bien lo has aprendido sola?|Has anyone taught you how to do this or have you learned it on your own?
+S|imported|5|Creo que el inglés no es tan complicado como el español|I believe that English is not as complicated as Spanish
+S|imported|4|No dejo de pensar en ti|I can't stop thinking about you
+S|imported|4|Me cuesta pronunciar ciertos sonidos españoles difíciles|I have a hard time pronouncing certain difficult Spanish sounds
+S|imported|4|No insistas, no tengo nada que decir|Don't insist, I have nothing to say
+S|imported|5|¡Qué chollo! ¡Es baratísimo y además tienes donde elegir!|What a bargain! It's very cheap and you have a choice!
+S|imported|5|Lo suyo son los museos y ha quedado encantada con El Prado|She has a passion for museums and has been enchanted by the Prado
+S|imported|4|Si un día me decido, haré puenting|If one day I decide, I will go bungee jumping
+S|imported|5|Una vecina mía ya me había dicho que los paisajes eran una pasada|A neighbor of mine had already told me that the landscapes were a blast
+S|imported|5|Me encanta mi ciudad y, a la que puedo patear sus calles, lo hago|I love my city, and I can kick its streets, I do
+S|imported|5|Pasar las vacaciones en una casa rural no me llama mucho|Spending the vacations in a rural house does not call me much
+S|imported|5|A causa de la nevada han cancelado todos los vuelos|All flights have been cancelled due to the snowfall
+S|imported|5|¡Aquí uno no puede estar tranquilo ni un momento!|Here one cannot be at ease even for a moment!
+S|imported|4|Estoy aburrido, pero no me quejo|I'm bored, but I'm not complaining
+S|imported|4|Más vale quedar directamente en el restaurante|It is better to meet directly at the restaurant
+S|imported|4|¿Me puedes vigilar las cosas un momento?|Can you keep an eye on things for me for a moment?
+S|imported|4|No la molestes, está durmiendo la siesta|Don't bother her, she's taking a nap
+S|imported|5|¿Quién será el hombre que está con Jorge? ¿De qué hablarán?|Who will be the man with Jorge? What will they talk about?
+S|imported|4|¡Qué tradición tan interesante! ¡Me gusta un montón!|What an interesting tradition! I like it a lot!
+S|imported|4|Por poco nos pilla un toro|We almost got caught by a bull
+S|imported|5|Cristóbal Colón muere convencido de haber llegado a Asia por Occidente|Christopher Columbus dies convinced that he arrived in Asia through the West
+S|imported|5|Es alguien muy juerguista cuya única ambición es divertirse|He's a very jovial person whose only ambition is to have fun
+S|imported|5|Estaremos en el bar en cuya terraza nos encontramos siempre|We will be in the bar on whose terrace we always meet
+S|imported|5|La nacionalidad del famoso navegante es objeto de controversia|The nationality of the famous navigator is a subject of controversy
+S|imported|4|Sigo pensando que te equivocas|I still think you're wrong
+S|imported|5|Guarda el dinero, soy yo quien invita, que si no me voy a enfadar|Keep the money, I'm the one who invites, otherwise I'm going to get angry
+S|imported|5|No niego que me gustan los cumplidos, pero desconfío de los aduladores|I don't deny that I like compliments, but I distrust flatterers
+S|imported|5|¡Menuda sorpresa cuando me crucé ayer en la calle con mi exnovio!|What a surprise when I ran into my ex-boyfriend on the street yesterday!
+S|imported|5|Se llevó un disgusto tremendo cuando descubrió aquel terrible secreto de familia|He was terribly upset when he discovered that terrible family secret
+S|imported|5|No soporto a la gente que se inmiscuye en la vida de los demás|I can't stand people who meddle in other people's lives
+S|imported|5|¿Has cumplido el encargo que te di? Es sumamente importante|Have you fulfilled the assignment I gave you? It is extremely important
+S|imported|5|¡Esperadme, yo también quiero salir en la foto! Es para tener un recuerdo|Wait for me, I want to be in the picture too! It is to have a memory
+S|imported|5|Guardo todos los chismes viejos e inservibles en el desván|I keep all the old and useless gossip in the attic
+S|imported|5|Con la perspectiva, me doy cuenta de que a menudo mis padres tenían razón|With perspective, I realize that often my parents were right
+S|imported|5|¡Menudo chasco me he llevado! Tenía una cita, pero me han dado plantón|What a disappointment I've had! I had an appointment, but I was stood up
+S|imported|5|Los habitantes de las grandes urbes baten récords de estrés|Big city dwellers are breaking stress records
+S|imported|5|Abre bien los oídos y oirás los pájaros cantar a lo lejos|Open your ears wide and you will hear the birds singing in the distance
+S|imported|4|Tras haber cosechado numerosas victorias, se jubiló|After having reaped numerous victories, he retired
+S|imported|5|Este niño es un manazas y estropea todos los juguetes|This child is a handful and spoils all the toys
+S|imported|5|No necesito la ayuda de nadie, me las arreglo perfectamente yo solo|I don't need anyone's help, I manage perfectly on my own
+S|imported|5|Tenía tanta hambre que se tragó el bocadillo en un santiamén|He was so hungry that he swallowed the sandwich in a flash
+S|imported|5|Encuentro al nuevo becario competente y formado, cuando menos en apariencia|I find the new scholarship holder competent and trained, at least in appearance
+S|imported|4|Este producto quita las manchas rápida y eficazmente|This product removes stains quickly and effectively
+S|imported|5|Los primeros pasos de los jóvenes en el mercado laboral no son siempre fáciles|Young people's first steps into the job market are not always easy
+S|imported|5|Han previsto despedir a la mitad de la plantilla para reducir costes|They have planned to lay off half of the staff to reduce costs
+S|imported|5|Quizás te parezca ingenuo, pero nunca había imaginado semejante cosa|It may seem naive to you, but I never imagined such a thing
+S|imported|5|Desgraciadamente ya hemos quedado para el viernes, pero el sábado no tenemos nada previsto|Unfortunately we have already arranged for Friday, but on Saturday we have nothing planned
+S|imported|5|Esta paella te ha quedado de rechupete, ¡tienes que darme sin falta la receta!|This paella is delicious, you must give me the recipe!
+S|imported|5|Soy enfermera y semana sí, semana no, trabajo en el turno de noche|I am a nurse and week in, week out, I work the night shift
+S|imported|5|Cuando hay que ayudar a realizar las tareas domésticas, ¡siempre se escaquea!|When it comes to helping out with the housework, he always runs away!
+S|imported|5|Es muy derrochador, me asombra la alegría con la que gasta el dinero|It is very wasteful, I am amazed at the joy with which he spends the money
+S|imported|5|Todos los vecinos del edificio tienden la ropa en la azotea|All the neighbors of the building hang their clothes on the roof
+S|imported|5|Muchos hogares están equipados con este cachivache tan hortera|Many homes are equipped with this tacky gadget
+S|imported|5|El precio de los alquileres en la capital es de juzgado de guardia|The price of the rentals in the capital is of court of guard
+S|imported|5|Los montañeros se salvaron de la muerte gracias a un vulgar encendedor|The mountaineers were saved from death by a common lighter
+S|imported|4|¿Crees que quedará mal si le escribo directamente?|Do you think it will look bad if I write to him directly?
+S|imported|5|Tenemos ahorrados más de quinientos euros para ir de vacaciones. - ¡Qué guay!|We have saved more than five hundred euros to go on vacation. - How cool!
+S|imported|5|La avalancha de veraneantes crea atascos en las carreteras que van a la costa|The avalanche of vacationers creates traffic jams on the roads that go to the coast
+S|imported|5|La empresa quebró dejando un reguero de deudas con los proveedores|The company went bankrupt leaving a trail of debt to suppliers
+S|imported|5|Por su trabajo de asesor ha cobrado la friolera de cien mil euros|For his work as a consultant he has been paid a whopping 100,000 euros
+S|imported|4|Los precios de la vivienda siguen al alza|Housing prices continue to rise
+S|imported|5|Las burbujas del champán hacen cosquillas en el paladar|Champagne bubbles tickle the palate
+S|imported|5|La promesa electoral de construir más VPO ha quedado en agua de borrajas|The electoral promise to build more VPOs has been left in tatters
+S|imported|5|No te dejes engañar por estos sinvergüenzas, que siempre andan metidos en chanchullos|Don't be fooled by these scoundrels, who are always getting into trouble
+S|imported|5|De seguir así las cosas, tendremos que encontrar una solución|If things continue like this, we will have to find a solution
+S|imported|5|La depresión es un mal que aqueja cada vez a más personas|Depression is an illness that afflicts more and more people
+S|imported|5|Pasó un coche por el charco y me salpicó de barro|A car passed by the puddle and splashed me with mud
+S|imported|5|No pude llamarte porque extravié el móvil en el que tenía tu número|I couldn't call you because I lost the cell phone that had your number on it
+S|imported|5|Mi hijo tiene un chisme de esos con auriculares para escuchar música|My son has one of those gadgets with headphones for listening to music
+S|imported|5|Está muy bien señalizado y, si sigues mis indicaciones, no tiene pérdida|It's very well signposted and, if you follow my directions, you can't miss it
+S|imported|5|Toma esta cafetera, todavía no la he estrenado, te la regalo|Take this coffeepot, I haven't opened it yet, I'll give it to you as a gift
+S|imported|5|Iba a ochenta por hora y todos los coches lo adelantaban|It was going at eighty per hour and all the cars were overtaking it
+S|imported|5|Pagó y dijo al camarero que podía quedarse con la vuelta|He paid and told the waiter he could keep the return
+S|imported|5|Los turistas llegan blancos y se achicharran al sol en la playa|Tourists arrive white and burn to death on the beach
+S|imported|5|¡Pues resulta que está casado y con cuatro hijos!|As it turns out, he is married with four children!
+S|imported|5|Tras un grave accidente que tuvo escarmentó y ahora conduce con más precaución|After a serious accident he had a heart attack and now drives more cautiously
+S|imported|5|Recorrió el mundo y renunció a todo en pos de una quimera|He traveled the world and gave up everything in pursuit of a chimera
+S|imported|5|Se comporta en todo momento como un auténtico caballero|He behaves at all times like a true gentleman
+S|imported|5|Cabe esperar una mejora de la situación en la próxima década|An improvement in the situation can be expected in the next decade
+S|imported|5|La candidata carece de los requisitos necesarios para desempeñar el puesto|The candidate does not have the necessary qualifications for the position
+S|imported|5|Si continúas siendo tan exigente, ¡te vas a quedar para vestir santos!|If you continue to be so demanding, you're going to stay to dress up as saints!
+S|imported|5|Este programa se dirige en particular a los que entienden algo de informática|This program is particularly aimed at those who understand something about computers
+S|imported|5|Cuando miro a mis hijos, me pregunto en qué hemos fallado|When I look at my children, I wonder where we have failed
+S|imported|5|Cuando salimos de juerga siempre es Carlos quien conduce ya que es abstemio|When we go out on a bender it is always Carlos who drives since he is a teetotaler
+S|imported|5|En los actos mundanos nunca faltan los vividores y los gorrones|In mundane events there is never a lack of freeloaders and scroungers
+S|imported|5|Si la empresa cierra y me despiden, despídete de las vacaciones este año|If the company closes and I get fired, say goodbye to the vacations this year
+S|imported|5|Ha envejecido mucho, pero se ve que de joven era muy apuesto|He has aged a lot, but you can see that when he was young he was very handsome
+S|imported|5|El Ayuntamiento engalana las calles para celebrar sus tradicionales fiestas|The Town Hall decorates the streets to celebrate its traditional festivities
+S|imported|5|Aunque las últimas noticias no sean muy alentadoras, ¡que no cunda el desánimo!|Although the latest news is not very encouraging, do not be discouraged!
+S|imported|5|Aun siendo un tema que preocupa a muchos, de eso sí que nadie habla|Even though it is a subject that concerns many, nobody talks about it
+S|imported|5|Intenta no agobiarte y no te lo tomes todo tan a pecho|Try not to get overwhelmed and don't take everything so personally
+S|imported|5|El relajamiento en la disciplina hace que no se respete la autoridad del maestro|Relaxation in discipline leads to disrespect for the teacher's authority
+S|imported|5|Se alquila piso amplio y luminoso, recién pintado y completamente amueblado|We are renting a wide and luminous apartment, recently painted and completely furnished
+S|imported|4|¿Casarme yo? ¡Ni que estuviera loca!|Marry me? You'd think I was crazy!
+S|imported|4|Se echó a temblar solo de pensarlo|He began to tremble just thinking about it
+S|imported|5|Tecleó un mensaje en la pantalla táctil con los dedos pringosos|You typed a message on the touch screen with your sticky fingers
+S|imported|5|Nuestro equipo se llevó un palo tremendo en el último partido|Our team took a tremendous stick in the last game
+S|imported|5|Encuentro ese tipo de humor demasiado chabacano y soez|I find that kind of humor too coarse and vulgar
+S|imported|4|Me aprietan los zapatos, ¡no estoy para paseos!|My shoes are tight, I'm not up for a walk!
+S|imported|4|Aquí mando yo y todo cristo me obedece|Here I command and all Christ obeys me
+S|imported|5|Ya sabes lo terco que es, ¡nunca quiere apearse del burro!|You know how stubborn he is, he never wants to get off the donkey!
+S|imported|5|Fernando está de baja porque tiene una muñeca a la virulé|Fernando is on leave because he has a twisted (sprained?) wrist
+S|imported|5|¿Dices que tienes fiebre y quieres ir a trabajar? ¡Ni hablar del peluquín!|You say you have a fever and want to go to work? Out of the question!
+S|imported|5|Yo prefiero ser siempre muy prudente y no inmiscuirme en las conversaciones ajenas|I prefer to be always very prudent and not to meddle in other people's conversations
+S|imported|5|¡No me eches un rapapolvo! ¡Hazte cargo de la situación en la que estoy!|Don't give me a hard time! Take charge of the situation I'm in!
+S|imported|5|En los días de calor, los vendedores de ventiladores y climatizadores hacen su agosto|On hot days, fan and air conditioning vendors make a killing
+S|imported|5|Estuvieron toda la cena dándonos la paliza con sus hijos y sus vacaciones|They spent the whole dinner beating us up with their kids and their vacation
+S|imported|5|Tras aquella tremenda crisis, el sistema financiero quedó manga por hombro|After that tremendous crisis, the financial system was left a mess
+S|imported|5|Le preguntaré a la portera si el piso de arriba está desocupado|I'll ask the concierge if the upstairs floor is vacant
+S|imported|5|Se durmió boca arriba y se puso a roncar|He fell asleep on his back and started snoring
+S|imported|5|Le pareció que la espera para ingresar en el quirófano duraba una eternidad|It seemed to him that the wait to enter the operating room took forever
+S|imported|5|La revisión anual es obligatoria y permite evitar ciertos riesgos|The annual review is mandatory and allows to avoid certain risks
+S|imported|5|El médico hizo hincapié en que debes evitar cualquier esfuerzo|The doctor emphasized that you should avoid any effort
+S|imported|5|Amén de su originalidad, el proyecto presenta un gran interés económico|In addition to its originality, the project is of great economic interest
+S|imported|5|Una plaga de langostas invadió buena parte del sur del país, arruinando numerosas cosechas|A plague of locusts invaded a good part of the south of the country, ruining numerous crops
+S|imported|5|Su único afán es salir por la televisión y ser famosa|Her only desire is to go on television and be famous
+S|imported|5|No quiso comentar su reciente ruptura con su compañero sentimental de muchos años|He did not want to comment on his recent breakup with his longtime partner
+S|imported|4|A granel resultan mucho más baratos|In bulk they are much cheaper
+S|imported|5|Todo el mundo pensaba que le había ocurrido algo y apareció vivita y coleando|Everyone thought something had happened to her and she showed up alive and well
+S|imported|4|Llevo media hora esperando, ¿alguien me puede atender?|I've been waiting for half an hour, can someone help me?
+S|imported|5|No comemos nada que no provenga de nuestro huerto|We do not eat anything that does not come from our garden
+S|imported|4|¿Qué prefieres? ¿Muslo o pechuga?|What do you prefer? Thigh or breast?
+S|imported|5|Al entrar en el cuarto de baño noté que olía a lejía|As I entered the bathroom I noticed that I smelled of bleach
+S|imported|5|La leyenda cuenta que aquel niño se crió entre lobos|Legend has it that this child was raised among wolves
+S|imported|5|La policía baraja varias hipótesis sobre el asesinato del famoso chef|The police are considering several hypotheses about the murder of the famous chef
+S|imported|5|El pinche engrasa el molde y esparce harina en él|He greases the mold and sprinkles flour on it
+S|imported|5|Se oyó un terrible estruendo y empezó a salir espuma del puchero|A terrible noise was heard and foam began to come out of the pot
+S|imported|5|No cejaremos en nuestro empeño de que se haga justicia|We will not relent in our efforts to see justice done
+S|imported|5|El director fue a cerciorarse de que las dependientas atendieran a los clientes|The director went to make sure that the sales clerks were taking care of the clients
+S|imported|5|Es una chica muy graciosa y que siempre anda de buen humor|She is a very funny girl and always in a good mood
+S|imported|4|Queda por descubrir el origen de este fenómeno|The origin of this phenomenon remains to be discovered
+S|imported|4|Para este tipo de puesto hay mucha competencia|There is a lot of competition for this type of position
+S|imported|5|Con esa mala actitud en clase, por más que estudie, no aprobará|With that bad attitude in class, no matter how hard you study, you won't pass
+S|imported|5|Se ve que se casó sin estar enamorada de él|You can see that she married without being in love with him
+S|imported|5|Cabe destacar la notoriedad de la que goza nuestra marca en el extranjero|It is worth noting the notoriety that our brand enjoys abroad
+S|imported|5|Para que me concedieran el crédito, tuve que declarar mis ingresos|In order to be granted the credit, I had to declare my income
+S|imported|4|¡Estoy harta de este puñetero país!|I'm sick of this fucking country!
+S|imported|5|En la nómina aparecen el sueldo bruto y las retenciones|Gross pay and deductions appear on the payroll
+S|imported|5|¿Así que me cobran también un recargo? ¡Esto es un atraco!|So you're charging me a surcharge too? This is a robbery!
+S|imported|5|Todavía anda traumatizado por el atraco del que fue víctima|He is still traumatized by the robbery he was victim of
+S|imported|5|Fui a ver a una clarividente y ¡acertó en todo lo que me predijo!|I went to see a clairvoyant and she did everything she predicted!
+S|imported|5|No puedes imaginarte el palo que me da sacar a pasear el perro|You can't imagine the stick I get to walk the dog
+S|imported|5|Estás atravesando una mala racha, pero la rueda sigue girando|You're going through a rough patch, but the wheel keeps turning
+S|imported|5|Ganar el partido fue pan comido para el equipo que jugaba en casa|Winning the game was a piece of cake for the home team
+S|imported|5|La noticia era completamente inverosímil y nos dejó a todos de piedra|The news was completely implausible and left us all in shock
+S|imported|4|Los invitados llegaron con sendos ramos de flores|The guests arrived with a bouquet of flowers
+S|imported|5|Pienso devolverte el dinero este mes o el que viene a lo sumo|I plan to pay you back this month or next month at the most
+S|imported|5|Hay que enviar una muestra al laboratorio para que certifiquen la calidad del producto|A sample must be sent to the laboratory to certify the quality of the product
+S|imported|5|El examen abarcará del tema 1 al 10, ambos inclusive, del libro de texto|The examination will cover topics 1 to 10, both inclusive, of the textbook
+S|imported|5|Fue galardonado por sus años de dedicación a la investigación|He was awarded for his years of dedication to research
+S|imported|4|Ante los insultos, hizo gala de sangre fría|In the face of the insults, he showed cold blood
+S|imported|5|Su último libro va a ver pronto la luz|His latest book will soon see the light of day
+S|imported|5|Hizo sus primeros pinitos como actor en una obra de aficionados|He took his first steps as an actor in an amateur play
+S|imported|5|¡Qué película tan chula! ¡No me extraña que sea tan taquillera!|What a cool movie! No wonder it's such a blockbuster!
+S|imported|4|¡Estás enganchado a los juegos de ordenador!|You're hooked on computer games!
+S|imported|5|Esta foto es una tomadura de pelo, ¡un vulgar montaje!|This photo is a joke, a vulgar montage!
+S|imported|5|El restaurante es carísimo, y la comida no es nada del otro jueves|The restaurant is very expensive, and the food is nothing from the other Thursday
+S|imported|5|En este tipo de eventos siempre hay algunos gorrones|In this type of event there are always some scroungers
+S|imported|5|El coche de delante de mí se detuvo de sopetón|The car in front of me stopped out of the blue
+S|imported|4|Se pelearon por una chorrada|They fought over some bullshit
+S|imported|5|Lo más destacable no es su técnica, sino que tiene duende|The most remarkable thing is not its technique, but that it has goblin
+S|imported|5|Digan lo que digan, es un coñazo tener padres famosos|Whatever they say, it's a pain in the ass to have famous parents
+S|imported|5|Te lo tengo que estar repitiendo todo, ¡parece mentira!|I must be repeating everything, it seems like a lie!
+S|imported|5|Entre tu automóvil y el mío, ¡no hay color!|Between your car and mine, there is no color!
+S|imported|5|Yo, en este tipo de conflictos, prefiero ver los toros desde la barrera|I, in this type of conflict, prefer to see the bulls from the barrier
+S|imported|4|Los juegos de azar son un negocio boyante|Gambling is a thriving business
+S|imported|4|Evita esta suerte de error a toda costa|Avoid this kind of error at all costs
+S|imported|5|Los hay que se saltan las normas de tráfico a la torera|There are those who skip the traffic rules to the bullfighter
+S|imported|4|Ceder a la tentación tiene mucho morbo|Yielding to temptation is very morbid
+S|imported|5|Esta mañana he discutido con una señora mayor en la cola de la panadería|This morning I had an argument with an old lady in line at the bakery
+S|imported|5|El 70% de los hogares lee un periódico matutino y el 30% uno vespertino|70% of households read a morning newspaper and 30% read an afternoon one
+S|imported|5|Cuando salieron a saludar, el público recibió a los actores con un aplauso atronador|When they came out to greet, the audience welcomed the actors with thunderous applause
+S|imported|5|Nos llevaron a una discoteca que estaba a tope y llena de pijos|We were taken to a discotheque that was full of hotties
+S|imported|5|En su toma de posesión el alcalde soltó una perorata que duró dos horas|At his inauguration, the mayor gave a speech that lasted two hours
+S|imported|5|Se me averió el coche y yo no sé ni papa de mecánica|My car broke down and I don't even know how to do mechanics
+S|imported|5|Si lo que acabas de contarme es cierto, ¡estamos apañados!|If what you just told me is true, we're in business!
+S|imported|5|El profe nos dijo que hoy repasaríamos el capítulo cuatro|The teacher told us that today we would review chapter four
+S|imported|5|Le tengo manía a la gente que habla en voz alta por el móvil|I have a thing for people who talk out loud on their cell phones
+S|imported|4|Para que te enteres, ¡no pienso ayudarte!|Just so you know, I'm not going to help you!
+S|imported|5|Suelo chatear con los amigos por los bares del barrio|I usually chat with friends in the neighborhood bars
+S|imported|5|Se cree imprescindible; en realidad es un cero a la izquierda|He thinks he's indispensable; he's really a zero on the left
+S|imported|5|¡Hay que ser la mar de mentecato para tragarse esa bola!|You have to be a sea of fools to swallow that ball!
+S|imported|4|Tu explicación dista de ser verosímil|Your explanation is far from plausible
+S|imported|5|En verano el pueblo recibe un aluvión de turistas|In summer the village receives a flood of tourists
+S|imported|5|La experiencia y los años le hacen a uno sabio|Experience and years make one wise
+S|imported|5|Como no había moros en la costa, los grafiteros pintaron un muro|As the coast was clear, the graffiti artists painted a wall
+S|imported|5|La abuela me ha dicho que no te has portado bien|Grandma told me that you have not been a good boy
+S|imported|5|El príncipe y las infantas asistieron a la ceremonia|The prince and the princesses attended the ceremony
+S|imported|4|¿Alguien sabe para qué sirve este chirimbolo?|Does anyone know what this chirimbolo is for?
+S|imported|5|La modelo hizo una pose de lo más ordinaria|The model did a very ordinary pose
+S|imported|5|Después de haber leído las críticas, me provoca ir a ver esta película|After reading the reviews, it provokes me to go and see this film
+S|imported|5|Manejar este carro es relativamente fácil, lo difícil es parquearlo|Driving this car is relatively easy, the hard part is parking it
+S|imported|5|Las perspectivas son muy halagüeñas para las empresas del sector|The prospects are very promising for companies in the sector
+S|imported|4|Los taxis porteños aumentarán sus tarifas|Buenos Aires cabs will increase their rates
+S|imported|5|Me sorprendió el lenguaje barriobajero con el que se expresó|I was surprised by the slum language he used to express himself
+S|imported|5|Como te atrevas a volver a hacerlo, ¡te mando al otro barrio!|How dare you do it again, I'm sending you to the other neighborhood!
+S|imported|5|Su comportamiento no es el de una persona cuerda. ¡Ha perdido el juicio!|His behavior is not that of a sane person. He has lost his mind!
+S|imported|5|Había dos coches de policía al lado de dos jóvenes esposados|There were two police cars next to two young men in handcuffs
+S|imported|4|No tengo ni zorra de cómo funciona esto|I don't have a clue how this works
+S|imported|5|¿Estás realmente dispuesto a trabajar por amor al arte?|Are you really willing to work for the love of art?
+S|imported|5|El sonido y las imágenes de la película estaban desfasados|The sound and images in the film were out of date
+S|imported|4|Las pasamos moradas para encontrar el recinto ferial|We passed them dwellings to find the fairground
+S|imported|5|El amor no detiene el deseo y, por ende, no garantiza la fidelidad|Love does not stop desire and therefore does not guarantee fidelity
+S|imported|5|Me acabo de comprar un señor abrigo para ir bien caliente este invierno|I just bought myself a nice coat to keep warm this winter
+S|imported|5|Se topó con su jefe justo al doblar la esquina|He ran into his boss just around the corner
+S|imported|5|Aurora es la única del grupo que siempre liga cuando salimos|Aurora is the only one in the group who always links up when we go out
+S|imported|4|Varios invitados se despidieron a la francesa|Several guests said goodbye to the French woman
+S|imported|5|Los niños salen al patio durante el recreo matinal|Children go out on the playground during morning recess

@@ -1,0 +1,701 @@
+# converted from Advanced_Spanish_Phrases_and_Vocabulary.apkg
+S|imported|4|Aun los atletas profesionales necesitan descansar de vez en cuando|Even professional athletes have to rest every once in a while
+S|imported|4|Nos conocemos desde toda la vida|We know each other from way back long
+S|imported|4|Perdoné ¿que ha dicho?|Sorry, what did you say?
+W|imported|4|Puede repetirlo|Can you repeat that
+S|imported|4|Su novio nuevo me cae mal pero no sé por qué|Her new boyfriend rubs me the wrong way but I don't know why
+W|imported|4|No dude en llamarme|Don't hesitate to call me
+W|imported|4|Te equivocas|You are wrong
+W|imported|4|Me he equivocado|I have made a mistake
+W|imported|4|Lo retiro|I take It back
+S|imported|4|¿Cómo me describiría a mi?|How would you describe me
+S|imported|4|Lo he dicho a Juan|I have said that to John
+S|imported|4|Lo he acabó de oír|I just heard it
+W|imported|4|Oi que eres español|I heard you are Spanish
+S|imported|4|resulta que a ella no le gusto yo|turns out that she doesn't like me
+S|imported|4|Visitamos a nuestra familia muy a menudo|We visit our family very often
+S|imported|4|¿Puedes bajar el volumen de la música?|Can you turn the music down?
+S|imported|4|Estoy el quinto en la lista de espera|I'm fifth on the waiting list
+S|imported|4|Sueño con convertirme en un gran escritor|I dream of becoming a great writer
+S|imported|4|No fui a la fiesta ni siquiera para ver a mi novia|I didn't go to the party, not even to see my girlfriend
+S|imported|4|Pasé la Navidad con mis padres y el Año Nuevo con mis suegros|I spent Christmas with my parents and New Year's Eve with my parents-in-law
+S|imported|4|Nosotros no damos con el hotel|We can't find the hotel
+S|imported|4|yo di con una idea|i came up with an idea
+S|imported|4|Echo de menos a mi país y a su gente|Echar de menos a algo: to miss someone or something
+S|imported|4|quedemos en vernos en su casa|We agreed to meet at her house. quedar en algo: to agree on something
+S|imported|4|He quedado con ella a veces|I have arranged to meet her many times
+S|imported|4|Tu puedes quedar con el dinero|You can keep the money
+S|imported|4|Yo siempre estoy por el cambio|to be in favor of
+S|imported|4|mi casa está por la montaña|to be near
+S|imported|4|Yo no estoy para tonterías|estar para: to feel like
+S|imported|4|ella se cree la gran cosa porque está en el película|creerse la gran cosa: think highly of oneself
+S|imported|4|Si usted quiere venir, hay que dar de alta|If you want to come, you have to sign up
+S|imported|4|Doctor, cuando me dara de alta|Doctor when will i be discharged
+S|imported|4|mis padres les dan de comer al pollos|dar de comer:to feed
+S|imported|4|mi computadora me da mucha lata|dar lata:to bother
+S|imported|4|me voy a deshacer del moto|deshacer de algo: to get rid of something
+W|imported|4|I have no fucking idea|Ni puta idea
+S|imported|4|No se me ocurre nada|I can't think of anything
+S|imported|4|¿puedo echar un vistazo?|can i take a look
+S|imported|4|Eso se me había pasado por alto|i didn't think of that Lit. It went over me
+S|imported|4|Yo no tengo nada que ver con eso|i have nothing to do with that
+S|imported|4|El chocolate es más rico que nada|Chocolate is the best thing in the world
+S|imported|4|Madrid es como ningún otro lugar en el mundo|There is no other place like Paris
+S|imported|4|me eché a aprender español|i started learning Spanish
+S|imported|4|Ellos se alistaron para ir|They are ready to go
+S|imported|4|mis padres alimentan a nuestros gallinas|my parents feed our chicken
+S|imported|4|no te inmiscuyas en mis asuntos|don't interfere in my affairs
+S|imported|4|de golpe el comenza a llorar|Suddenly he started crying
+S|imported|4|Ellos se quedaron callados en la clase|They kept quiet in the class
+S|imported|4|Ayer liberaron a la mujer que había sido secuestrada|The woman who had been kidnapped was freed yesterday
+S|imported|4|¡No discutas! Solo haz lo que te pido|Don't talk back! Just do what I tell you
+S|imported|4|Mejor callarnos y esperar que no se repita|We'd better keep quiet and hope it doesn't happen again
+S|imported|4|El ladrón me arrebató el dinero|The thief snatched my money
+S|imported|4|Se arrebató la carne. Qué lástima|The meat burned on the outside. What a shame
+W|imported|4|Besé en su mejillas|I kissed her on the cheek.
+S|imported|4|Fingío estar dormida, pero tenía los párpados entreabiertos|She pretended to be asleep, but her eyelids were half-open
+W|imported|4|mi papá está canoso|my father is gray haired
+S|imported|4|Mi padre siempre llevaba bigote|My father always had a mustache
+S|imported|4|El postre tiene un sabor exquisito|The dessert has an exquisite flavor
+S|imported|4|Si hablas tan deprisa, no puedo comprenderte|If you speak so fast, I can't understand you
+S|imported|4|Arranca la computadora y mete el disco|Boot up the computer and put the disk in
+S|imported|4|arrancó el coche y se fue corriendo|He started the car and sped off
+S|imported|4|Vivía en una casa a las orgillas del lago|He lived in a house by the lakeshore
+S|imported|4|Yo no lo hice a propósito|I didn't do it on purpose
+S|imported|4|La estrella se cubrió el rostro con una bufanda|The star covered her face with a scarf
+S|imported|4|encendí los faros del coche|I turned the cars headlights on
+S|imported|4|Al levantarse, se encontró con que se había quedado sin café|encontrare con: to find out
+S|imported|4|Encontrarse con amigos nunca es mala idea|Encontrarse con: to meet with
+S|imported|4|Hablar por el móvil cuando conducir provoca muchos accidentes|Taking to the phone while driving causes many accidents
+S|imported|4|Mi computadora hace ruidos raros|My computer is making strange sounds
+W|imported|4|se me olvidé decirtelo|I forgot to tell you that
+S|imported|4|¿Qué ocurre?|what happened?
+S|imported|4|Sus vestidos están manchados de sangre|his dress was stained with blood
+S|imported|4|Mi perro tiene la piel manchada pero no es un dálmata|My dog has spotted fur but he's not a dalmatian
+S|imported|4|nos amenazó con llamar a la policía|he threatened to call the police
+S|imported|4|Mi tío y sus amigos cazan ciervos en el bosque|My uncle and his friends hunt deer in the forest
+W|animal|4|las abejas|bees
+S|imported|4|Hay una mosca en la cocina. ¡Atrápala!|There's a fly in the kitchen. Get it!
+S|imported|4|Carecen de los medios necesarios para enviar a su hijo a la universidad|They lack the necessary means to send their son to college
+S|imported|4|La escalera tiene diez peldaños|The staircase/ladder has 10 steps
+S|imported|4|Los muebles en su casa son muy modernos|The furniture in their house is very modern
+S|imported|4|Hay muchos libros en la estantería|There are many books in the shelf
+S|imported|4|Los soldados se agacharon detrás de los arbustos|The soldiers crouched down behind the bushes
+S|imported|4|Me agaché para atar los cordones del zapato|I bent down to tie my shoelaces
+S|imported|4|Agacha la cabeza para no dar un golpe al entrar por esa puerta|Lower your head so you don't knock it when you go through that door
+S|imported|4|Por favor, aparte esa botella del borde de la mesa|Please, move that bottle away from the edge of the table
+S|imported|4|Estoy seguro de que mis clientes asentirán a nuestra oferta|I'm sure my clients will consent to our offer
+S|imported|4|Tu explicación no tiene ningún sentido|Your explanation doesn't make any sense
+S|imported|4|Yo me quebré el brazo pero mi esposa salió ilesa del accidente|I broke my arm, but my wife escaped the accident unharmed
+S|imported|4|Hay muchas hojas de té en el fondo de la taza|There are a lot of tea leaves at the bottom of the mug
+S|imported|4|Sobre la cama había un póster clavado a la pared|There was a poster nailed to the wall above the bed
+S|imported|4|Ayer clavé dos clavos en la pared|Yesterday I hammered two nails into the wall
+S|imported|4|El equipaje estaba atado encima del coche|The luggage was tied on top of the car
+S|imported|4|Te prestaré algunos de los libros de mi hermano|I will lend you some of my brother's books
+W|imported|4|Todo sigue yendo bien|Everything is going well
+S|imported|4|Mi padre es un jubilado trabajador de gobierno|My father is a retired government employee
+S|imported|4|Tenemos que actualizar la base de datos de nuestros clientes|We need to bring our customers' database up to date
+S|imported|4|¿Quién gestionó la compra de la casa?|Who negotiated the purchase of the house?
+S|imported|4|Mike se encargará de gestionar el departamento de finanzas|Mike will be in charge of managing the finance department
+S|imported|4|Me contrataron como camarero en un restaurante|I was taken on as a waiter in a restaurant
+S|imported|4|Vas a envejecer más rápido si vives estresado|You will grow old faster if you are always stressed
+S|imported|4|Mi abuela envejeció bien|My grandmother aged well
+S|imported|4|Necesitas una herramienta nueva para arreglar el estante|You need a new tool to fix the shelf
+S|imported|4|¿Quieres un trozo del pastel de chocolate?|Would you like a slice of the chocolate cake?
+S|imported|4|Voy a arreglar el hoyo con un trozo de madera|I am going to fix the hole with a piece of wood
+S|imported|4|Quedó quieto mientras le quitaron la araña del hombro|He kept still while they removed the spider from his shoulder
+S|imported|4|La casa está por allá detrás de la montaña|The house is over there, behind the hill
+S|imported|4|Por favor, venga por aquí|Please, come this way
+S|imported|4|Supongo que el examen no te será muy difícil con notas así|I suppose that the exam won't be very difficult for you with grades like that
+S|imported|4|¡Bien hecho!|Well done
+S|imported|4|No me gustó el principio del libro, pero se puso interesante hacia al final|I didn't like the start of the book but it got interesting towards the end
+S|imported|4|Hay que tener en cuenta que él no tiene experiencia en este campo|We have to keep in mind that he doesn't have experience in this field
+S|imported|4|Necesitamos personal adiestrado que pueda realizar estos tipos de trabajo difíciles|We need trained staff who can perform these kinds of difficult jobs
+S|imported|4|Su salud sigue empeorando y los médicos ya no saben qué hacer|Her health continues to deteriorate, and the doctors just don't know what to do
+W|imported|4|No dispares al mensajero|Don't shoot the messenger.
+S|imported|4|¿Ya te vas?|Are you going already?
+S|imported|4|Estoy ocupado ese día. O sea, no puedo venir a la fiesta|I'm busy that day. In other words, I can't come to the party
+S|imported|4|El parecido entre el original y la falsificación es sorprendente|The resemblance between the original and the counterfeit is uncanny
+S|imported|4|Mi coche es parecido a a este|My car is similar to this one
+S|imported|4|El carpintero regresó a su taller para completar el proyecto|The carpenter returned to his workshop to complete the project
+S|imported|4|La mayoría de mis recursos son de la red|Most of my resources are from the internet
+S|imported|4|Hay un valle fértil más allá de las montañas|There's a fertile valley beyond the mountains
+S|imported|4|La leyenda de Robin Hood es muy vieja|The legend of Robin Hood is very old
+S|imported|4|Te puedo hospedar en mi casa|I can accommodate you at my house
+S|imported|4|Ese cabrón mentiroso no va a salirse con la suya|That lying bastard won't get away with this
+S|imported|4|Le prometí que iría, pero ahora me arrepiento|I promised I'd go, but now I regret it
+S|imported|4|Fiate de mi, por favor|Please, have faith in me
+S|imported|4|A fin de cuentas, no hubo daño|In the end there was no damage
+S|imported|4|Lo hice a la carrera lit: i raced through it|I did it in a hurry
+S|imported|4|Quiero evitar un fracaso a toda costa|I want to avoid a failure at any cost
+S|imported|4|Me dijo que la fiesta empieza a las nueve— digo, a las diez|She told me the party starts at nine— I mean, at ten
+S|imported|4|pues ¿puedo tomar mas tiempo?|Well,can i take more time?
+W|imported|4|Vale vale|Okay okay
+S|imported|4|Conmigo no sucedió tal cosa|That has never happened to me before
+W|imported|4|Allí fue donde nací|That was where I was born
+S|imported|4|Su marido la dejó porque no podía soportar sus mentiras|Her husband left her because he couldn't stand her lies
+S|imported|4|Me salto los conjugaciones de vosotros, así que ahora tengo dificultades|I skipped the vosotros conjugations, and now i have difficulties now
+W|imported|4|el es muy manso|He is very meek
+S|imported|4|Ese león es muy manso|This lion is very tame
+S|imported|4|El que no coge los consejos, no llega a viejo|He who doesn't take advices, doesn't get to be old note: Careful with coger outside of Spain
+W|imported|4|Barriga llena, corazón contento|Filled stomach
+S|imported|4|¿Te corriste dentro?|Did you cum inside?
+S|imported|4|Ese comentario no me hizo ninguna gracia|I didn't find that comment at all funny
+W|imported|4|Te deseo surte|I wish you luck
+S|imported|4|Llevo demasiado tiempo disimulando que no pasa nada|I've been pretending nothing's wrong for too long
+W|imported|4|Es una jueza sabia|She is a wise judge.
+S|imported|4|Si me hicieras caso, sacarías mejor notas|If you had paid attention to what I say, you would have got better grades
+S|imported|4|Lo agarró de la mano|She grabbed him by the hand
+S|imported|4|¡No pises el suelo; que está recién fregado!|pisar: to step on
+S|imported|4|Pisé al gato sin querer|Pisar: to step on
+S|imported|4|Tomás llegó a casa cojeando|cojear: to limp
+S|imported|4|El traía seis oveja consigo|He brought 6 sheep with him
+S|imported|4|Quedamos en vernos al otro día|We agreed to meet the next day
+S|imported|4|¿Por qué no nos reunimos mañana a la misma hora?|Why don't we meet tomorrow at the same time?
+S|imported|4|Al rato, llegó el resto del grupo|The rest of the group arrived shortly after
+S|imported|4|Yo estoy trabajando; mientras tanto, tú estás haciendo nada|I am working. Meanwhile, you are doing nothing
+S|imported|4|Pasa el hilo a través del ojo de la aguja|Pass the thread through the eye of the needle
+S|imported|4|No podremos asistir, pero gracias por la invitación de todos modos|We won't be able to attend, but thank you anyway for the invitation
+S|imported|4|A mí me gustan las rosas, sobre todo las rojas|I like roses, especially red ones
+S|imported|4|Tienes un calcetín al revés|One of your socks is inside out
+S|imported|4|No tengo ninguna objeción. Al contrario, estoy de acuerdo contigo|I have no objection. On the contrary, I agree with you
+S|imported|4|Ese problema no es importante; no obstante, necesita mi atención|That problem is not important; however, it needs my attention
+S|imported|4|Con todo lo que he hecho por ti, ¿y me lo pagas así?|With everything I've done for you, and that's how you repay me?
+S|imported|4|¿Por qué no me ayudas en vez de quedarte ahí mirando?|Why don't you help me instead of sitting there watching?
+S|imported|4|Pienso invitar a mi familia así como a mis amigos|I plan to invite my family as well as my friends
+S|imported|4|Quiero hacerte unas preguntas con relación al accidente de ayer|I want to ask you a few questions with regard to yesterday’s accident
+S|imported|4|En cuanto al libro, aún no lo he leído|As for the book, I have not read it yet
+S|imported|4|Todo sucedió tal como lo habíamos planeado|Everything happened just as we had planned it
+S|imported|4|Me encantan las frutas tropicales, tales como el mango, la piña y la papaya|I love tropical fruits, such as mango, pineapple, and papaya
+S|imported|4|Por lo general, esta reunión se realiza a fin de mes|Usually, this meeting is held at the end of the month
+S|imported|4|Por lo visto, la compañía ha alcanzado sus metas|Apparently, the company has reached its goals
+S|imported|4|No tienes que venir, es decir, si no quieres|You don't have to come, that is, if you don't want to
+S|imported|4|Venga ya. Esto es una broma|Come on. It's a joke
+S|imported|4|¡Oye! ¿Qué haces?|Hey! What are you doing?
+S|imported|4|Mañana va a nevar. - Pues, a ver|It's going to snow tomorrow. - Well, let's see
+S|imported|4|Robert fingió la firma de su padre para cobrar un cheque|Robert faked his father's signature to cash a check
+S|imported|4|Soy muy malo para fingir voces|I'm bad at imitating voices
+S|imported|4|No despiertes al perro o te morderá|Don't wake the dog up or he will bite you
+S|imported|4|El hámster es muy bonito pero muerde|The hamster is very cute, but it bites
+W|imported|4|No tarde|don't be late
+S|imported|4|El agente persiguió al vehículo sospechoso por seis cuadras|The agent followed the suspicious vehicle for six blocks
+S|imported|4|Tienen que encontrarlo antes que sea demasiado tarde|You need to find him before it's too late
+S|imported|4|No me grites, que yo nunca te grito a ti|Don't shout at me. Like I never shout at you
+S|imported|4|Necesito ir a hacer una llamada. Ahora vuelvo|I need to go make a phone call. I'll be right back
+S|imported|4|¡Cuidado, no pises la caca de perro!|Be careful, don't step in the dog poo!
+S|imported|4|No encajan las historias de estos dos testigos|The stories of these two witnesses don't add up
+W|imported|4|Pueden irse ahora|You all can go now
+S|imported|4|El castillo tenía una atalaya para ver si se acercaban invasores|The castle had a watchtower to see if invaders were coming
+S|imported|4|¿Ya decidiste cuál será el diseño de la cubierta del libro?|Have you already decided on the design for the book cover?
+S|imported|4|Este papelero está lleno. ¿Me lo vaciarías?|This wastebasket is full. Would you empty it for me?
+S|imported|4|No pude quitar la mancha del mantel|I could not remove the stain from the tablecloth
+S|imported|4|Deseo dar de baja mi cuenta de su lista de correo|I wish to unsuscribe from your mailing list
+S|imported|4|¡No pongas ese plato en el microondas! Está hecho de metal|Don't put that plate in the microwave! It's made of metal
+S|imported|4|Este trabajo fue hecho por un artista desconocido|This work was done by an unknown artist
+S|imported|4|Ese suéter que llevas está hecho a mano, ¿verdad?|That sweater you're wearing is handmade, isn't it?
+S|imported|4|Me di cuenta enseguida de que todo era mentira|I realized right away it was all a lie
+S|imported|4|Tenemos que salir enseguida o perderemos el vuelo|We must leave at once or we'll miss the flight
+S|imported|4|Domina varios idiomas|He's fluent in several languages
+S|imported|4|A menos que salgamos ahora, llegaremos a la fiesta tarde|Unless we leave now, we'll be late to the party
+S|imported|4|¡No pongas los pies sobre la mesa!|Don't put your feet on the table!
+S|imported|4|Tus amigos son unos pajeros que se pasan el día pensando en sexo|Your friends are jerk-offs who spend the whole day thinking about sex
+S|imported|4|¡Qué cabrón! Uno de los clientes se fue sin pagar|What a bastard/a-hole! One of the customers dined and dashed
+S|imported|4|¿Cuál es la prisa?|What's the rush?
+S|imported|4|¿Eres sordo, o qué?|Are you deaf, or something?
+S|imported|4|Se prohíbe fumar en el restaurante|Smoking is prohibited in the restaurant
+S|imported|4|Invertí los colores del celular|I inverted the colors on my cellphone
+S|imported|4|Invertió mucho esfuerzo en este proyecto|She put a lot of effort into this project
+S|imported|4|No permitiré que se salga con la suya|I will not let you have your own way
+S|imported|4|Siempre que monto en autobús, echo la pota|Every time I get on a bus, I puke up
+S|imported|4|Arrepiéntanse y pidan perdón," aconsejó el sacerdote|Repent and ask for forgiveness," advised the priest
+S|imported|4|No comas demasiados dulces o te arrepentirás|Don't eat too many sweets or you will be sorry
+S|imported|4|La enfermera limpió la herida y aplicó una venda|The nurse cleaned the wound and applied a bandage
+S|imported|4|¡Sácate de aquí antes de que venga la policía!|Leave here before the police comes!
+S|imported|4|¿Por qué no te inscribes a un curso de español?|Why don't you sign up for a course in Spanish?
+S|imported|4|Mi hermano y su esposa discuten todo el tiempo|My brother and his wife argue all the time
+S|imported|4|Los anfitriones nos hicieron sentir como en casa|The hosts made us feel at home
+S|imported|4|No puede disponer de los fondos hasta que termine la investigación|She cannot make use of the funds until the investigation finishes
+S|imported|4|En retrospectiva, no tuve una infancia tan mala|Looking back, my childhood wasn't that bad
+S|imported|4|Tengo que ponerme al día con mis amigos|I have to catch up with my friends
+S|imported|4|Ciertas cosas es mejor callárselas|Certain things are better left unsaid
+S|imported|4|Derramó el jugo sobre la mesa|He spilled the juice on the table
+S|imported|4|Se derramó todo el café|All the coffee spilled
+S|imported|4|Estaba tan avergonzado que me puse colorado|I was so ashamed that I got red in the face
+S|imported|4|Ella confesó su amor por Rodrigo|She confessed her love for Rodrigo
+S|imported|4|A mi parecer, es un tema que no admite discusión|In my opinion, there can be no arguing around that point
+S|imported|4|Si no eres creyente, será que eres ateo. - No, soy agnóstico|If you're not a believer, then you're an atheist. - No, I'm an agnostic
+S|imported|4|Esa calle está por la estación, ¿no?|That street is near the station, isn't it?
+S|imported|4|estaba por ahí en el dormitorio. -|it was somewhere in the bedroom
+S|imported|4|Era un grupo de 50 personas o por ahí|It was a group of 50 people or so
+S|imported|4|La venta de la casa lo ha dejado con mucho dinero|The sale of the house has left him with much money
+S|imported|4|Esta medicina alivia el dolor de cabeza|This medicine relieves headaches
+S|imported|4|Desde mi modesto punto de vista, no debería haberse casado si no estaba segura|From my point of view, she shouldn't have married if she wasn't sure
+S|imported|4|Ponte las pilas antes de que te reemplace el jefe|Get your act together before the boss replaces you
+S|imported|4|¿Quieres que te eche una mano?|Do you want a hand?
+S|imported|4|¿No me van a dejar aquí plantado?|You're not ditching me here, are you?
+S|imported|4|Ella me dejó plantado por la tercera vez|She stood me up for the third time
+S|imported|4|Tienes que decir lo que la gente espera que tu digas|You have to say what the people expect you would say
+S|imported|4|No seas tan cortada y ve a saludarle|Don't be so shy. Go and say hello to him
+S|imported|4|Justo cuando llegábamos a la playa, se puso a llover|It started raining just as we were arriving at the beach
+S|imported|4|María tiene las orejas perforadas|Maria has pierced ears
+S|imported|4|Me asusté al oír el zumbido de las abejas acercándose|I got scared when I heard the buzz of bees getting close
+S|imported|4|El servicio fue tal y como lo esperaba de un hotel cinco estrellas|The service was just like I expected it to be from a five star hotel
+S|imported|4|Si este negocio sale bien, nos haremos millonarios|If this deal turns out well, we'll be millionaires
+W|imported|4|está a dos pasos|It just two steps away.
+S|imported|4|Ya que lo mencionas, debo revisar mi correo electrónico|Now that you mention it, I should check my email
+S|imported|4|El perro alejaba los pájaros|The dog kept the birds away
+S|imported|4|En caso de incendio, aléjate del área y cierra tantas puertas como puedas|In case of fire, move away form the area and close as many doors as you can
+S|imported|4|¿Cómo que no va a ir a la escuela?|What does he mean he won't go to school?
+S|imported|4|Parecería como que está decidido a dejar el trabajo|It looks as if he's determined to leave his job
+S|imported|4|Tenemos que enterar a las autoridades|We have to inform the authorities
+S|imported|4|El tigre es una fiera|Tiger is a wild animal
+S|imported|4|La casa se vino al suelo porque la habían construido en la arena|The house collapsed because it had been built on sand. lit: to go to floor/ to go down
+S|imported|4|Ella me miró, como si yo fuera un ser extraño|She looked at me as if i were a strange thing
+S|imported|4|No soporto a la gente que se tira un pedo en el ascensor|I can't stand people who fart in elevators
+S|imported|4|No tomes esa leche: huele mal|Don't drink that milk - it smells bad
+S|imported|4|Limpiar la casa es muy rollo|Cleaning the house is so boring
+S|imported|4|El camarero le dio una patada en el culo y lo echó del bar|The bartender gave him a kick in the ass and threw him out of the bar
+S|imported|4|Si no dejas de toser, tendrás que salir de la sala de clases|If you don't stop coughing, you will have to leave the classroom
+S|imported|4|Esa tos no suena bien; deberías ver a un médico|That cough does not sound good; you should see a doctor
+S|imported|4|Me tiré tres horas limpiando mi habitación|I spent three hours cleaning my room
+S|imported|4|Dicen que beber mucha agua es bueno para los riñones|It is said that drinking lots of water is good for your kidneys
+S|imported|4|¡Tate! Viene un coche|Watch out! There's a car coming
+S|imported|4|Quiero encontrar a mi media naranja|I need to find my soul mate
+S|imported|4|Para todo hay un remedio menos para la muerte|Everything except death has a solution
+W|imported|4|la lefa es pegajoso|Cum is sticky
+S|imported|4|Mascaba chicle y entonces; me lo tragué sin querer|I was chewing gum and then I swallowed it by accident
+W|imported|4|Ella tragó la lefa|She swallowed the cum
+S|imported|4|¡No seas gilipollas!|Don't be a wanker!
+S|imported|4|¿Vas a cagar? - No, solo voy a mear|Are you going to take a crap? - Nah, I'm just going to take a piss
+S|imported|4|¡Sal del baño ya mismo! ¡Me estoy cagando!|Get out of the bathroom now! I'm shitting myself
+S|imported|4|Alicia se mantiene al corriente de todas las innovaciones tecnológicas|Alicia is a computer specialist and she keeps up to date with all technological innovations
+S|imported|4|Estábamos dormidos cuando saltó la alarma|We were asleep when the alarm went off
+S|imported|4|Saltó el carro unos pocos minutos después del choque|The car blew up just a few minutes after the crash
+S|imported|4|Estoy harto de tus mentiras|I'm fed up with your lies
+S|imported|4|¡Este puto trabajo me tiene harto!|This goddamn job has me fed up!
+S|imported|4|Necesitas comprimir la imagen antes de subirla|You need to compress the image before uploading it
+S|imported|4|Mantenga oprimido el botón hasta que se encienda la luz verde|Keep the button pressed until the green light comes on
+S|imported|4|El parto de una idea como esta no es nada común. -|The birth of an idea like this one is no commonplace thing
+S|imported|4|El caballero fue ejecutado por traicionar al rey|The knight was executed for betraying the king
+S|imported|4|Primero oí la explosión y luego vi el fuego|First I heard the explosion and then I saw the fire
+S|imported|4|Aún no hemos recibido la comida|We haven't received the food yet
+S|imported|4|Manténgame al corriente sobre la salud de su papá|Keep me informed about your Dad’s health
+S|imported|4|En este hospital se alivió Jimena|Jimena gave birth in this hospital
+S|imported|4|Carlos le pegó un tiro al ladrón que había entrado a su casa|Carlos shoot the burglar that had broken into his house
+S|imported|4|Copia ese texto y pégalo en este documento|Copy that text and paste it into this document
+W|imported|4|Tres son un multitud|Three is a crowd.
+S|imported|4|Te ruego que me ayudes con este asunto|I beg you to help me with this issue
+S|imported|4|Nosotros colgamos la ropa a secar al sol en la azotea|We hung our clothes out to dry in the sun on the terrace roof
+S|imported|4|Después de diez años de no hablarse, los hermanos por fin se reconciliaron|After ten years of not talking to each other, the brothers finally made up
+S|imported|4|Cuéntales a ellos como conocimos tú y yo|Tell them how we know each other
+S|imported|4|Ese tipo intentó robarme el bolso el otro día|That guy tried to steal my purse the other day
+S|imported|4|Introduce la tarjeta en el cajero para sacar dinero|Insert the card into the ATM to withdraw money
+S|imported|4|Mi novio es mañoso y arreglará la cafetera|My boyfriend is skilful and will repair the coffee maker
+S|imported|4|Rafael llamó a la policía para registrar una denuncia contra sus vecinos escandalosos|Rafael called the police to make a complaint against his noisy neighbors
+S|imported|4|Mi hermano agarró la última galleta antes de que yo me pudiera comer alguna|My brother snatched the last cookie before I could even eat one
+S|imported|4|¡Póngase de rodillas!|Get on your knees!
+S|imported|4|Le suplicó al ladrón que no disparara|He begged the thief not to shoot
+S|imported|4|El general aceptó la rendición del ejército invasor|The general accepted the surrender of the invading army
+S|imported|4|Va a ser difícil, pero no me rindo|It's going to be difficult, but I'm not giving in
+S|imported|4|Nuestras tropas estaban rodeadas por las fuerzas enemigas y tuvieron que rendirse|Our troops were surrounded by enemy forces and had to surrender
+S|imported|4|Agarra tu cuerda de saltar|Take your jump rope
+S|imported|4|Mi hermano salta la cuerda media hora al día para perder peso|My brother jumps rope half an hour every day to lose weight
+S|imported|4|Al principio titubeé, pero finalmente terminé aceptando la oferta|I hesitated at first, but I finally ended up accepting the offer
+S|imported|4|Consiguió superar el tartamudeo con la ayuda de una fonoaudióloga|She was able to overcome her stutter with the help of a speech therapist
+S|imported|4|Todos derramaban lágrimas en el funeral|They were all shedding tears at the funeral
+S|imported|4|El perro se tumbó en el sofá y se quedó profundamente dormido|The dog lay down on the sofa, and fell fast asleep
+S|imported|4|Tengo dolor cabeza, así que me voy a tumbar por una hora|I have a headache, so I am going to lie down for an hour
+S|imported|4|No te tumbes en la hierba húmeda|Don't lie on the damp grass
+S|imported|4|El barco se hundió|The boat sank
+S|imported|4|No pude dormir anoche porque mi papá roncaba muy fuerte|I couldn't sleep last night because my dad was snoring so loudly
+S|imported|4|Diría que sí, si me dijeras la verdad|I would say yes if you were to tell me the truth
+W|imported|4|Ya está|That's it
+S|imported|4|No puedo contártelo, o te estropearía el argumento|I can’t tell you, it’d spoil the plot for you
+S|imported|4|¿Qué géneros de películas te gustan?|what movie genres do you like
+S|imported|4|Como dijo Julio César: " Vine, vi y vencí"|Like Julius Caesar said: "I came, I saw, and I conquered
+S|imported|4|Tienes que desarrollar tu juego de apertura para vecener a un maestro de ajedrez|You must develop your opening game to beat a chess master
+S|imported|4|El bebé ha estado inquieto y llorando mucho|The baby has been restless and crying a lot
+S|imported|4|El jefe advirtió al empleado que dejara de causar problemas|He warned the employee to stop causing problems
+S|imported|4|El veterinario sujetó al perro de manera que no pudiera moverse|The vet held the dog so it couldn't move
+S|imported|4|La universidad fue la peor época de mi vida|College was the worst period of my life
+S|imported|4|El siglo pasado fue una época de conflictos en Europa|Last century was an age of conflicts in Europe
+S|imported|4|Mi computadora falló, y tuve que rehacer toda mi tarea desde el principio|My computer crashed, and I had to redo all of my homework from the beginning
+S|imported|4|Posee una mente brillante, pero carece de autodisciplina|She has a brilliant mind but lacks self-discipline
+S|imported|4|El detective me hizo un sinfín de preguntas|The detective asked me an endless number of questions
+S|imported|4|El único superviviente del accidente de carro sufrió daños cerebrales|The only survivor of the car crash suffered brain damage
+S|imported|4|Un día escalaré el monte Everest|Some day I will climb Mount Everest
+S|imported|4|Cagaste mi cita con tus pendejadas|You fucked up my date with your stupid shit. Note: Cagaste literally means you pooped on
+S|imported|4|Se cagó por completo mi viaje cuando perdí mi pasaporte|My trip got totally fucked up when I lost my passport
+S|imported|4|Cagué mi proyecto final y reprobé el curso|I missed up my final project and failed the class
+S|imported|4|cada uno a lo suyo|Each one to his own
+S|imported|4|Anoche me desvelé porque hacía muchísimo calor|Last night I was unable to get to sleep because it was really hot
+S|imported|4|El ruido de la calle me desveló|The sound from the street kept me awake
+S|imported|4|La sopa de pollo está hirviendo|The chicken soup is boiling
+S|imported|4|Cuando hierva el agua, puedes echar las judías verdes|When the water boils, you can toss in the green beans
+S|imported|4|No tengas miedo|Don't be afraid
+S|imported|4|Se cayó de un puñetazo a la sien|He went down with one punch to the temple
+W|imported|4|Se lo puedo asegurar|I can assure you that.
+S|imported|4|En septiembre recomenzamos las clases|We begin school again in September
+S|imported|4|No puedo descifrar esta nota que escribió mi médico|I can't decipher this note my doctor wrote
+S|imported|4|Mis padres están disfrutando la vejez con sus nietos|My parents are enjoying their old age with their grandchildren
+S|imported|4|¿Cuál es tu equipo preferido? - ¡Los Knicks, hasta el final!|What's your favorite team? - The Knicks, all the way!
+S|imported|4|La impresora no me deja imprimir porque le falta tinta|The printer isn't letting me print because the ink has run out
+S|imported|4|Tenías razón. - Se los dije, pero qué sé yo. Soy solo un novato|You were right. - I told you so, but what do I know. I'm just a rookie
+S|imported|4|¿Y yo, qué mierda sé?|And how/what the fuck would I know?
+W|imported|4|Donde te has metido|Where have you hidden yourself
+W|imported|4|Tengo todo la culpa|It's all my fault
+S|imported|4|Lo siento. Se me fue la mano|I am sorry. I went too far
+S|imported|4|Me pase de la raya|I crossed the line
+W|imported|4|Fue sin querer|I didn't mean to
+S|imported|4|Tenemos que solucionar este problema|We have to solve this problem
+S|imported|4|Cuando la policía cacheó al sospechoso encontró que llevaba un arma|When the policewoman searched the suspect, she discovered that he was carrying a gun
+S|imported|4|Su padre no sabía que era maricón|His father didn't know that he was queer. Note: Could be extremely offensive
+S|imported|4|Ahora mismo, no puedo fiarme de ti|Right now, I cannot trust you
+S|imported|4|Stephanie se afeitó las axilas antes de tomar el sol en la playa|Stephanie shaved her armpits before sunbathing on the beach
+S|imported|4|Sigue las instrucciones, a no ser que tengas alguna objeción|Follow the instructions, unless you have any objection
+S|imported|4|Los albañiles están trabajando duro para terminar la casa|The builders are working hard to finish the house
+S|imported|4|Llamé al informático porque no se prendía la pantalla|I called the computer expert because the screen wouldn't turn on
+S|imported|4|Mi hermana es funcionaria por oposición|My sister became a civil servant after passing the official exam
+S|imported|4|Es el único que puede unir al pueblo|He's the only one who can unite the people
+S|imported|4|Me da igual si te quedas, Pedrito, pero por favor no hagas ruido|It doesn't matter to me if you stay, Pedrito, but please be quiet
+S|imported|4|¿Carne o pescado? - Me da igual|Meat or fish? - I don't mind either way
+S|imported|4|¿Es más rápido ir en carro o en tren? - Da igual|Is it faster by car or by train? - It makes no difference
+S|imported|4|Menos mal que ya casi están aquí las vacaciones|It's just as well the vacation is almost here
+S|imported|4|Tu champú de baja calidad me seca el cabello|Your low quality shampoo dries out my hair
+S|imported|4|Su avaricia la impulsó a cometer un fraude|Her greed drove her to commit fraud
+S|imported|4|Cegado por la avaricia, ganó mucho dinero pero perdió a todos sus amigos|Blinded by greed, he made a lot of money but lost all his friends
+S|imported|4|Los prisioneros subieron la pared y escaparon|The prisoners climbed the wall and escaped
+S|imported|4|Harry venció al señor Voldemort|Harry defeated Lord Voldemort
+S|imported|4|Mi pasaporte vence el año que viene|My passport expires next year
+S|imported|4|Es común que los futbolistas se lastimen el muslo|It's common for football players to have thigh injuries
+S|imported|4|Si pudiera viajar a cualquier parte del mundo, ¿a dónde iría?|If you could travel anywhere in the world, where would you go?
+S|imported|4|No debía haber tomado tantas cervezas anoche. ¡Esta resaca es horrible!|I should not have had so many beers last night. This hangover is awful!
+S|imported|4|Ya comparé, pero todavía me resultan iguales|I've made a comparison, but they still look the same to me
+S|imported|4|El accidente lo dejó cojo|The accident left him lame
+S|imported|4|Seguro que este policía embustero va a acabar mal|I bet that lying policeman will come to a bad end
+S|imported|4|Ese color no me gusta para nada|I don't like that color at all
+S|imported|4|María y yo hicimos un pacto prometiendo no volver a hablar del tema nunca|Maria and I made a pact not to mention the topic ever again
+S|imported|4|Leo libros de autoayuda|I readself-help books
+S|imported|4|Desde que tiene la depresión, solo lee libros de autoayuda|Since she's been depressed, she's only been reading self-help books
+S|imported|4|El gato estaba tumbado en el regazo de su dueño|The cat was lying on his owner's lap
+S|imported|4|La reunión proseguirá después del almuerzo|The meeting will proceed after lunch
+S|imported|4|Mateo experimentó una cirugía en la pierna|Mateo underwent leg surgery
+S|imported|4|Experimenté una sensación de mareo en la noria|I experienced a sensation of dizziness on the ferris wheel
+S|imported|4|me torcí el tobillo mientras jugaba al fútbol|I tripped and twisted my ankle while playing soccer
+S|imported|4|Marcos es muy creativo y un soñador|Marcos is very creative and a dreamer
+S|imported|4|Ella reza cada noche antes de acostarse|She prays every night before going to bed
+S|imported|4|Cuando estaba en décimo grado, me enamoré de Sandra|When I was in tenth grade, I fell in love with Sandra
+S|imported|4|Se dice que su salario anual es de seis cifras|They say that his annual salary is six figures
+S|imported|4|Juan mordió el bocadillo y lo dejó lleno de babas|Juan gave a bite to the sandwich and left it full of saliva
+S|imported|4|Todos los juguetes del bebe estaban llenos de baba|All the baby's toys were drenched with drool
+S|imported|4|El piloto tuvo que desviar el avión para evitar la tormenta|The pilot had to divert the plane to avoid the storm
+S|imported|4|¡El cine está ardiendo!|The theater is burning!
+S|imported|4|A mí me parece que el pastel se ha quemado|That looks to me like the pie is burned
+S|imported|4|Hizo una hoguera y quemó todas sus cartas|He made a fire and burned all her letters
+S|imported|4|Ardía de deseo por ella, pero no le hacía ningún caso|He burned with desire for her, but she ignored him
+S|imported|4|Mary avivó el fuego y preparó café|Mary stoked the fire and prepared some coffee
+S|imported|4|Los efectos especiales son lo mejor de la película|The special effects are the best thing about the movie
+S|imported|4|Ella se esfuerza en sonreír|She forced a smile
+S|imported|4|Mi jefa es una pesadilla|My boss is a nightmare
+S|imported|4|Juan se la estaba comiendo con los ojos|Juan was ogling her.lit: eat with eyes
+S|imported|4|La leche no me cae bien|I dont like milk or Milk doesn't go well for/ agree me
+S|imported|4|¿Te crees que me chupo el dedo?|Do you think I'm that naive?lit: You think I suck my fingers? (You think I am a kid?)
+S|imported|4|Lleva dinero por si acaso|Take money, just in case
+S|imported|4|Es tu turno; avanza tu pieza|It 's your turn; advance your piece
+S|imported|4|El habló en nombre de todos nosotros|He spoke on behalf of all of us
+S|imported|4|Cuando estás cerca, a mi me cuesta hasta respirar|When you are near, I can't even breathe
+S|imported|4|Ella se había estado preparando para esto|She had been preparing for this
+S|imported|4|¿Viste el titular sobre la avalancha?|Did you see the headline about the avalanche?
+S|imported|4|Ella nunca se daría cuenta de eso|She would never realise that
+S|imported|4|¿A qué hora llega tu jefe? - Este, no estoy segura|Este is a common conversational filler
+S|imported|4|Es que no me gustan las películas de terror|It’s just that I don’t really like horror movies
+S|imported|4|Las hormigas son criaturas sociales|Ants are social creatures
+S|imported|4|Él es alérgico a las abejas|He is allergic to bees
+S|imported|4|No podíamos encontrar el baño, así que hicimos pipí afuera|We couldn't find the bathroom so we peed outside
+S|imported|4|¿Dónde está el baño? Necesito hacer pipí|Where's the bathroom? I need to have a pee
+S|imported|4|Cuando era pequeño, mi hijo se hacía pipí en la cama|When he was little, my son used to wet the bed
+S|imported|4|El ladrón forzó la chapa y robó la televisión|The burglar forced the lock and stole the television
+S|imported|4|Diga lo que diga, no lo creeré|Whatever (s)he says, I won't believe it
+S|imported|4|Venga cuando venga, la estaré esperando|Whenever she comes, I will be waiting for her
+S|imported|4|Llueva o no, jugaremos|Whether it rains or not, we'll play
+S|imported|4|Vengan ellos o no vengan, haremos la fiesta|We're having the party whether they come or not
+S|imported|4|Llores cuanto llores, no te compraré el juguete|Cry all you want, I am not going to buy you the toy
+S|imported|4|Para abrir el archivo, haz clic en el icono|Click on the icon to open the file
+S|imported|4|Por favor, vea el archivo adjunto para obtener la información que necesita|Please, check the attached file to find the information you need
+S|imported|4|¿En cuál archivo se guardan las descargas?|Which folder do downloads get saved in?
+S|imported|4|¿Ya descargaste los archivos de audio que te mandé?|Have you downloaded the files I sent you?
+S|imported|4|Haz una copia de seguridad de tus archivos por si se cuelga la computadora|Make a backup of your files in case the computer crashes
+S|imported|4|Me compré un teclado para el ordenador|I bought a keyboard for my computer
+S|imported|4|Me pasé todo el día tecleando un reporte|I spent all day typing a report
+S|imported|4|De qué conoce a Juan|From how long do you know John
+S|imported|4|Tu sueles tomar el café|Do you usually drink coffee
+S|imported|4|Los cuernos de los toros son más gruesos que los de las vacas|The horns of bulls are thicker than those of cows
+S|imported|4|Cubrieron el pastel con una capa gruesa de glaseado|They covered the cake with a thick layer of frosting
+S|imported|4|La contaminación está dañando la capa de ozono de nuestro planeta|Pollution is damaging the ozone layer of our planet
+S|imported|4|La tarta tenía tres capas de chocolate de distinta clase|The cake had three layers of different kinds of chocolate
+S|imported|4|Fumar puede tener efectos muy negativos en los pulmones|Smoking can have very negative effects on your lungs
+S|imported|4|Mi abuelo tiene que tomar medicamento porque tiene problemas con el hígado|My grandfather has to take medication because he has problems with his liver
+S|imported|4|Es un corte de pelo sofisticado, pero fácil de mantener|It's a sophisticated haircut, but it's easy to look after
+S|imported|4|El corte que tenía en el dedo se le infectó|The cut on his finger became infected
+S|imported|4|No seas un cobarde! ¡Ve a hablar con ella!|Don't be such a coward! Go talk to her!
+S|imported|4|Las plantas se helaron en invierno|The plants froze in winter
+S|imported|4|Y ese fue mi día, en pocas palabras|And that was my day, in a nutshell
+S|imported|4|¿Si pudieras ser una persona famosa por un día, a quien elegirías?|If you could be a famous person for one day, who would you choose to be?
+S|imported|4|¿Si fueras presidente, que cambiarías?|If you were the president, what would you change?
+S|imported|4|¿Cuál es tu libro preferido?|What is your favorite book?
+S|imported|4|¿Preferirías ser Sherlock Holmes o Jason Bourne?|Would you rather be Sherlock Holmes or Jason Bourne
+S|imported|4|¿Me Puede deletrear su nombre, por favor?|Can you spell your name for me, please?
+S|imported|4|En el formulario no se pueden escribir minúsculas|You cannot write small letters in the form
+S|imported|4|Cuando escribes con mayúsculas parece que estás gritando|When you write in uppercase, it looks like you're shouting
+S|imported|4|Tendrás que agudizar el ingenio para resolver ese problema|You'll have to rack your brains to solve that problem
+S|imported|4|Este nudo está muy apretado. ¿Me puedes ayudar a deshacerlo?|This knot really tight. Can you help me undo it?
+S|imported|4|Mis pantalones están demasiado apretados después de secarse en la secadora|My pants are too tight after being dried in the dryer
+S|imported|4|La cera de la vela se fundió lentamente|The candle wax melted slowly
+S|imported|4|Señor Presidente, es un honor poder estrecharle la mano|Mr. President, it is an honor to shake hands with you
+S|imported|4|Escoge tres cartas del mazo al azar|Choose three cards from the deck at random
+S|imported|4|Se utiliza números aleatorios para esto|Random number are used for this
+S|imported|4|El gerente le llamó la atención a Juan por llegar tarde todos los días|The manager cautioned Juan for being late for work every day. lit: to call attention
+S|imported|4|Lisa es una adolescente tratando de llamar la atención|Lisa is an adolescent trying to call attention to herself
+S|imported|4|Mi esposa dio parte del accidente que ocurrió frente a nuestra casa|My wife reported the accident that happened in front of our house
+S|imported|4|Nada de chistes verdes aquí|No dirty jokes here
+S|imported|4|Tengo un mazo. Podemos jugar|I have a deck of cards. We can play
+S|imported|4|Deslice hacia arriba para desbloquear la pantalla|Slide up to unlock the screen
+S|imported|4|Me hace falta un buen par de botas para este clima|I need a good pair of boots for this weather
+S|imported|4|Espero que el corte no me deje una cicatriz|I hope this cut won't leave a scar
+S|imported|4|Yo no robé tu dinero. - ¡Pruébalo!|I didn't steal your money. - Prove it!
+S|imported|4|¿Por qué no te pruebas el vestido antes de comprarlo?|Why don't you try the dress on before buying it?
+S|imported|4|La "h" de "hablar" no suena|The "h" in "hablar" is not pronounced
+S|imported|4|Un helado de chocolate suena bien ahora mismo|Chocolate ice cream sounds good right now
+S|imported|4|¿Tienes un pañuelo? Tengo que sonarme la nariz|Do you have a tissue? I need to blow my nose
+S|imported|4|Sebastián repitió la frase tal cual la había dicho su padre, fuerte y claro|Sebastian repeated the sentence just as his father had said it, loudly and clearly
+S|imported|4|¿De qué raza es tu perro? - Es un pastor alemán|What breed is your dog? - He's a German Shepherd
+S|imported|4|La serpiente tentó a Eva y Eva tentó a Adán|The snake tempted Eve and Eve tempted Adam
+S|imported|4|Aún estoy tentado a hacerlo|Still I'm tempted to do that
+S|imported|4|La serpiente fue la que tentó a Eva|It's the serpent who tempted Eve
+S|imported|4|Hubo una manifestación para pedir el indulto de los periodistas arrestados|There was a demonstration seeking a pardon for the two journalists who had been arrested
+S|imported|4|No olvide consignar el código postal del destinatario en el paquete|Don't forget to write down the addressee's zip code on the package
+S|imported|4|Su mirada delataba su miedo|Her look gave away her fear
+S|imported|4|El ladrón arrestado delató a sus cómplices|The thief under arrest denounced his accomplices
+S|imported|4|Un buen jugador de póquer se da cuenta cuando alguien hace un farol|A good poker player can tell when someone's bluffing
+S|imported|4|Por favor procura que los niños no coman nada con azúcar antes de acostarse|Please make sure that the kids don't eat anything with sugar before going to bed
+S|imported|4|El monje ayunó y meditó por cinco días|The monk fasted and meditated for five days.Note: Ayunar x Desayunar
+S|imported|4|Mi tío es un asesor al embajador de Egipto|My uncle is an advisor to the ambassador of Egypt
+S|imported|4|Hay que destacar la importancia de asistir a clase para aprobar la materia|We've got to emphasize the importance of attending class to pass the subject
+S|imported|4|La basura se amontonó en las calles durante la huelga|The garbage piled up in the streets during the strike
+S|imported|4|Amontoné toda la ropa en la cama y empecé a planchar|I piled all the clothes up on the bed and started ironing
+S|imported|4|El aumento de sueldo de este año fue solamente dos por ciento|The wage increase this year was only two percent
+S|imported|4|Estoy satisfecho con mi sueldo|I'm satisfied with my salary
+S|imported|4|El bienestar de la nación es responsabilidad del gobierno|The well being of the nation is the government's responsibility
+S|imported|4|¿Crees que debo comprar un vestido de color claro?|Do you think I should buy a light colored dress?
+S|imported|4|Estoy de mal humor porque se me acabó el café|I'm in a bad mood because I ran out of coffee
+S|imported|4|Se dice que el actor preñó a seis mujeres en dos años|Rumor has it that the actor got six women pregnant in two years
+S|imported|4|Exploramos la selva mientras estábamos en Venezuela|We explored the jungle while we were in Venezuela
+S|imported|4|No he podido encontrar ningún dato fiable acerca del ataque|I haven't been able to find any trustworthy information about the attack
+S|imported|4|Lucas y fulan@ quisieron pelearse conmigo|Lucas and what's-his-name wanted to fight with me
+S|imported|4|Tú te pareces a fulanito|You look like so-and-so
+S|imported|4|Manténganme al tanto si hay alguna novedad|Keep me in the loop if there are any new developments
+S|imported|4|Hay dos vocales en la palabra "carol"|There are two vowels in the word "carol
+S|imported|4|No he pegado ojo en toda la noche|I didn't sleep a wink all night
+S|imported|4|La demora del vuelo se debe a la niebla|The flight's delay is due to the fog
+S|imported|4|Coloque el termómetro en el ano para medir la temperatura|Place the thermometer in the anus to take the temperature
+S|imported|4|El paciente alucinaba y decía cosas sin sentido|The patient was hallucinating and talking nonsense
+S|imported|4|No sé si tengo la voluntad para terminar este proyecto|I don't know if I have the willpower to finish this project
+S|imported|4|Desistí de hacer el ejercicio de matemáticas después de hacerlo mal tres veces|After getting the math exercise wrong three times, I gave up
+S|imported|4|Ya basta. Desistamos|Enough already. Let's quit
+S|imported|4|No deberías haber desistido tan rápido|You shouldn't have given up so quickly
+S|imported|4|No vas a desistir, ¿a que no?|You are not going to give up, are you?
+S|imported|4|Leí el libro entero|I read the entire book
+S|imported|4|¿Cuál es el entero más cerca de 1.51?|What is the integer closest to 1.51?
+S|imported|4|El florero llegó entero|The vase arrived intact
+S|imported|4|Deje el mensaje después del pitido|Leave your message after the beep
+S|imported|4|No malgastes tu dinero|Don't waste your money
+S|imported|4|Sudo mucho cuando hago ejercicio|I sweat a lot when I'm working out
+S|imported|4|Se limpió el sudor de la frente con el pañuelo|She wiped the sweat from her forehand with a handkerchief
+S|imported|4|Jesús convirtió el agua en vino|Jesus turned water into wine
+S|imported|4|Ella era el lenguaje a través del cual las cosas se comunicaban|She was the language through which all things communicated. (El Alquimista- Paulo Coelho)
+S|imported|4|El alumno necesita mejorar sus destrezas lingüísticas|The student needs to improve his linguistic skills
+S|imported|4|No podemos permitir que su muerte haya sido en vano|We must not allow his death to be in vano
+S|imported|4|La soledad puede enloquecer a cualquiera|Loneliness can drive anyone crazy
+S|imported|4|El prisionero enloqueció tras semanas de aislamiento|The prisoner went crazy after weeks in solitary confinement
+S|imported|4|Ese maldito perro no deja de ladrar|That darn dog won't stop barking
+S|imported|4|My perro suelta tres ladridos cuando ve que he llegado a casa|My dog lets out three barks when he sees I'm home
+S|imported|4|La h de "hora" es muda|The h in "hour" is silent
+S|imported|4|Él está estudiando para trabajar con alumnos mudos|He is training to work with speech-impaired students
+S|imported|4|La acusada intentó aclarar su motivación,|The defendant tried to clarify her motives
+S|imported|4|Mi hijo es muy caprichoso y cambia constantemente de gustos|My son is very capricious and changes his tastes all the time
+S|imported|4|Voy a permanecer aquí mientras vas de compras|I'm going to stay here while you go shopping
+S|imported|4|Por favor, permanezcan en silencio hasta que se acabe el discurso|Please, stay quiet until the speech is over
+S|imported|4|Atenderé tus gatos en tu ausencia|I will look after your cats while you're away
+S|imported|4|¿Usted trata con sus clientes personalmente?|Do you deal with your customers personally?
+S|imported|4|Era tan tímido que necesitaba beber para ligar|He was so shy that he needed to drink to make out. NB: Slang
+S|imported|4|Se sentó encima de la caja sin querer y la aplastó|He accidentally sat down on the box and squashed it
+S|imported|4|El profesor se brinda a ayudar a los alumnos después de clase|The teacher is offering to help students after class
+S|imported|4|Me gusta la comida ligeramente salada|I like my food slightly salty
+S|imported|4|La cumbre estaba cubierta de nieve|The summit was covered with snow
+S|imported|4|Estoy harto de la nieve, así que me voy a mudar al ecuador|I am sick of the snow, so I'm going to move to the equator. NB:Ecuador also a country
+S|imported|4|Ya no puedo aplazar más la cita con el doctor|I can't put off the doctor's appointment any longer
+S|imported|4|Yo tengo el presentimiento de que algo va a salir mal|I have a feeling that something will go wrong
+S|imported|4|Hay un camión trabando la entrada al túnel|There is a truck obstructing the entrance to the tunnel
+S|imported|4|Las nuevas regulaciones traban la mejora en los servicios de salud. -|The new regulations hinder the improvement of health services
+S|imported|4|El comité definió los planes y el administrador los llevó a cabo|The committee defined the plans and the administrator carried them out
+S|imported|4|El río desbordó e inundó varias casas cercanas|The river overflew and flooded several nearby houses
+S|imported|4|En el campamento siempre cantábamos alrededor de una hoguera|We always used to sing around a bonfire at camp
+S|imported|4|Parece que solo presta atención en la clase de matemáticas|It seems he only pays attention in math class. - NB: lit. to lend attention
+S|imported|4|Si te duele la garganta, debes tomar té con miel|If your throat hurts, you should drink tea with honey
+S|imported|4|El caballero bajó su espada|The knight put down his sword
+S|imported|4|El incendio empezó en el ala norte del edificio|The fire started in the north wing of the building
+S|imported|4|Intentó saltar pero tropezó con una piedra|She tried to jump but tripped on a rock
+S|imported|4|Recuerda que sólo puedes llevar dos armas a la vez|Remember that you can only carry two weapons at a time
+S|imported|4|El alcalde admitió haber aceptado sobornos de varias empresas|The major admitted to having taken bribes from several companies
+S|imported|4|La cantidad de lluvia caída este año fue más alta de lo normal|The amount of rainfall we had this year was higher than normal
+S|imported|4|Ahora tienes que restarle 10 a 20|Now you have to subtract 10 from 20
+S|imported|4|Como dice el refrán, la venganza es mejor cuando se sirve fría|As the proverb says, revenge is best served cold
+S|imported|4|Quería vengar el asesinato de su esposa|He wanted to revenge his wife's murder
+S|imported|4|Clara y Joe son sobrina y sobrino del Dr. Hamilton|Clara and Joe are the niece and nephew of Dr. Hamilton
+S|imported|4|La profesora fue a buscar el botiquín para curar la herida de un niño|The teacher went for the first-aid kit to heal the child's wound
+S|imported|4|Créase o no, el hombre sobrevivió en la selva comiendo insectos|Believe it or not, the man survived in the jungle eating bugs
+S|imported|4|Aunque parezca mentira, tengo novia|Believe it or not, I have a girlfriend
+S|imported|4|El detective examinó la escena del crimen minuciosamente en busca de huellas|The detective examined the crime scene meticulously, looking for fingerprints
+S|imported|4|Él siempre lleva puesto un traje para cualquier ocasión|He always wears a suit, whatever the occasion
+S|imported|4|¡Date vuelta!|Turn around
+S|imported|4|Prefiero el jarabe de fresa en mis panqueques|I prefer strawberry syrup on my pancakes
+S|imported|4|¿Cómo se puede tener la habitación tan sucia? ¡Qué asco!|How can anyone have such a filthy room? How disgusting!
+S|imported|4|Me gustan las camisetas con capucha|I like tshirts with hoods
+S|imported|4|Un cuarto de la clase es macho|A quarter of the class is male
+S|imported|4|La comida rápida es deliciosa, pero no es muy saludable|Fast food is delicious, but it's not very healthy
+S|imported|4|Pero solo soy un aficionado|But I am only an amateur
+S|imported|4|Para los aficionados, Suárez fue el mejor jugador del año|For fans, Suarez was the best player this year
+S|imported|4|En breve deberías recibir una respuesta de nuestro gerente|You should receive a response from our manager shortly
+S|imported|4|A ti te han timado; estos billetes son falsos|You've been conned. These notes are fake
+S|imported|4|She coqueteó conmigo|She flirted with my brother
+S|imported|4|Esa pareja lleva timándose toda la noche|That couple has been making eyes at each other the whole night
+S|imported|4|Para mí fue difícil aprender a conducir, pero para Charlie fue pan comido|Learning to drive was difficult for me, but for Charlie, it was a piece of cake
+S|imported|4|Ya no tardaremos mucho en llegar, a lo sumo media hora|It won't take us very long to get there now, half an hour at most
+S|imported|4|El pueblo se alzó en contra del dictador|The people revolted against the dictator
+S|imported|4|Alza la voz frente a la injusticia|Raise your voice aganist injustice
+S|imported|4|El puente se derrumbó mientras lo cruzaba un tren|The bridge collapsed while a train was crossing it
+S|imported|4|Unos chicos encapuchados se colaron en el museo de noche pero los arrestaron|A group of hooded boys sneaked into the museum at night but they were arrested
+S|imported|4|El rey cedió la corona por la mujer que amaba|The king gave up the crown for the woman he loved
+S|imported|4|Mark Phil, ¡para servirlo, señor!|Mark Phil, at your service, sir! NB:used in highly formal introductions
+S|imported|4|Pocas veces el dinero sirve para retrasar la muerte|Not many times can money delay your death
+S|imported|4|Es de esperar que encuentre trabajo pronto|Hopefully, she'll get a job soon
+S|imported|4|Las palabras - Descanse En Paz - estaban escritas en la lápida|The words - Rest In Peace - were written on the tombstone
+S|imported|4|El soldado le cercenó el brazo al enemigo con el machete|The soldier severed his enemy's arm with his machete
+S|imported|4|Tengo que recortar mi bigote una vez a la semana|I have to trim my mustache once a week
+S|imported|4|El término jaque mate proviene del persa y significa "el rey está controlado"|The term checkmate comes from Persian and means "the king is checked
+S|imported|4|Una manzana podrida puede pudrir todas las demás manzanas del barril|A rotten apple can rot all the rest of the apples in the barrel
+S|imported|4|Más vale ser cauteloso al hablar de temas tan delicados|It's best to be cautious when talking about such sensitive matters
+S|imported|4|Tuvieron que cerrar el bar por la petición de los vecinos|They had to close the bar at the request of the neighbors
+S|imported|4|Mi vida es un desmadre total desde que me quedé sin trabajo|My life has been complete chaos since I lost my job. Nb: slang
+S|imported|4|El cielo siempre se ve hermoso por aquí al anochecer|The sky always looks beautiful around here at dusk
+S|imported|4|Mi padrastro me desafió a un juego de ajedrez|My step-father challenged me to a game of chess
+S|imported|4|Te reto a que bebas un vasito de salsa picante|I dare you to drink a shot of hot sauce
+S|imported|4|Cindy tiene el cabello dorado|Cindy has golden hair
+S|imported|4|Los niños destruyeron el castillo de arena|The kids destroyed the sand castle
+S|imported|4|Mi abuela fue una persona de mucha sabiduría|My grandmother was a person of great wisdom
+S|imported|4|Primero, hay que derretir el chocolate en el microondas|First, you need to melt the chocolate in the microwave
+S|imported|4|El plumaje de la hembra es de un color marrón rojizo|The feathers of the female are a reddish brown
+S|imported|4|El gris de las paredes de mi cuarto tiene un tono azulado|The gray on my bedroom walls has a bluish shade to it
+S|imported|4|Compramos una pintura de color amarillo verdoso para las paredes de la cocina|We bought some greenish yellow paint for the kitchen walls
+S|imported|4|Necesitas preparar un plan de trabajo para el año venidero|You need to prepare a work plan for the coming year
+S|imported|4|Pensé que habías dicho que habías leído mis libros|I thought you said you’d read my books
+S|imported|4|Agarré la gripe y tuve que quedarme en cama el día entero|I caught the flu and had to stay in bed all day
+S|imported|4|¿Ya te han puesto la vacuna contra la gripe?|Have you gotten your flu vaccination yet?
+S|imported|4|Las sardinas tienen muchas espinas|Sardines have lots of bones
+S|imported|4|Estas medidas se deben aplicar en el ámbito comercial|These measures should be applied in the commercial field
+S|imported|4|Haz lo que te digan las tripas|Do what your guts tell you to do. NB: tripa could mean guts as in intestine as well as courage
+S|imported|4|Ya empezaron las rebajas de verano|The summer sales are on
+S|imported|4|Nos hicieron una rebaja del 25%|They gave us a 25% reduction. Synonym: el descuento
+S|imported|4|Los relojes caros están en la vitrina|The expensive watches are in the glass case
+S|imported|4|Los niños treparon a un árbol sin el permiso de sus padres|The children climbed a tree without their parents' permission. Synonym: subir
+S|imported|4|Hubo un terremoto en San Francisco|There was a quake in San Francisco
+S|imported|4|Es un milagro que se haya curado|It's a miracle that she is cured now
+S|imported|4|El juez impuso una multa al senador por perjurio|The judge imposed a fine on the senator for perjury
+S|imported|4|La búsqueda del Titanic duró 73 años|The search for the Titanic lasted 73 years
+S|imported|4|Todas las culturas tienen un mito de la creación|All cultures have a creation myth
+S|imported|4|¡Apártate de mi! No quiero verte nunca más|Get away from me! I don't want to see you again
+S|imported|4|¡Apártate del camino! Estoy apurada|Move out of the way! I'm in a hurry
+S|imported|4|Todos los aparatos están hechos de acero inoxidable|All of the appliances are made of stainless steel
+S|imported|4|¿Lo hiciste aposta o lo hiciste sin querer?|Did you do it deliberately or accidentally? Synonym: aposta - a proposito
+S|imported|4|Visitó la tumba de su abuelo|He visited his grandfather's grave
+S|imported|4|Me encantan las fresas con nata batida|I love strawberries with whipped cream
+S|imported|4|No seas mandón. Somos tus compañeros de trabajo, no tus esclavos|Don't be bossy. We are your coworkers, not your slaves
+S|imported|4|Nos vamos a juntar para planificar las vacaciones|We're going to get together to plan our holidays
+S|imported|4|Tranquila, tu mamá está por llegar|Don't worry, your mom will be here any second.,
+S|imported|4|¡Tranquilízate! Me estás poniendo nervioso|Calm down! You're making me nervous
+S|imported|4|Atentamente, Juan|Your faithfully, John
+S|imported|4|Me miró con asco cuando le dije que la había engañado|She looked at me with disgust when I told her that I had cheated on her
+S|imported|4|Durante la turbulencia, sentí una sensación agobiante de temor|I experienced an overwhelming sense of dread during the turbulence
+S|imported|4|Yo solo quiero lo que me pertenece|I only want what belongs to me
+S|imported|4|Le mandaron que no se moviera ni hiciera nada|He was ordered to stay still and do nothing
+S|imported|4|Los fanáticos insultaban al árbitro con groserías|The fans were insulting the referee and using swearwords
+S|imported|4|La verdad es que es calvo, pero lleva un peluquín|The truth is that he's bald, but wears a wig
+S|imported|4|Fuimos al bosque a recolectar setas|We went to the forest to pick mushrooms
+S|imported|4|Cuando conectas todos los puntos con rayas, aparece la imagen de un conejo|When you connect all of the dots with lines, an image of a rabbit appears
+S|imported|4|La raya la tengo al costado derecho|The part in my hair is on the right side
+S|imported|4|Trocé la carne con una cuchilla|I butchered the meat with a kitchen knife
+S|imported|4|Tuvimos un buen sobresalto con lo de su accidente|His accident gave us a big shock
+S|imported|4|De las 15 preguntas en la prueba, solo acerté cuatro|Of the 15 questions on the quiz, I only got four right
+S|imported|4|La lluvia empapó a los turistas en la playa|The rain soaked the tourists on the beach
+S|imported|4|Seguro que ansías compañía tras tanto tiempo soltero|Surely you must crave some company after being single for so long
+S|imported|4|Después de un día entero de caminata bajo la lluvia, ansiaba un baño caliente|After a whole day walking in the rain, I was longing for a hot bath
+S|imported|4|La práctica cotidiana del yoga puede disminuir el estrés|The daily practice of yoga can help reduce stress
+S|imported|4|Los niños de esta escuela siempre se portan bien|The children at this school always behave well
+S|imported|4|Prefiero dejar el perro suelto en el jardín para que se ejercite|I prefer to leave the dog loose in the garden so he can exercise
+S|imported|4|Vivimos una vida muy sana|We live a very healthy life. NB: also saludable
+S|imported|4|Una de las susodichas empresas cambió de dueño|One of the above-mentioned companies changed owners
+S|imported|4|No hay lealtad más pura que la de un perro hacia su amo|There is no purer loyalty than that of a dog to his master
+S|imported|4|Si no fuera por la medicina moderna, ya estaría muerto. info|If it wasn't for modern medicine, I'd be dead right now
+S|imported|4|He decidido pagar el coche nuevo a plazos|I have decided to pay the new car in installments
+S|imported|4|Es mejor comprar productos de calidad a largo plazo|It is better to buy high quality products in the long term
+S|imported|4|Todos los conferenciantes que van a hablar hoy son versados en historia medieval|All the lecturers who will be giving speeches today are authorities on medieval history
+S|imported|4|La natación es mi deporte favorito en las Olimpiadas|Swimming is my favorite sport at the Olympics
+S|imported|4|La mayoría de las plantas crecen mejor al aire libre|Most plants grow better outdoors
+S|imported|4|¿Cuál es tu fecha de nacimiento?|What's your date of birth?
+S|imported|4|¿Puedes hacerlo mañana por la mañana?|Can you do it tomorrow morning?
+S|imported|4|La estructura del edificio es estable y segura|The building structure is stable and secure
+S|imported|4|Tenemos que subrayar la primera frase de cada párrafo|We need to underline the first sentence in each paragraph
+S|imported|4|La juventud no es más que un estado de ánimo|Youth is but a state of mind
+S|imported|4|El funcionario me dio un formulario para rellenar|The clerk gave me a form to fill out
+S|imported|4|Se jactó de sus habilidades|He boasted about his skills. NB: jactarse to boast
+S|imported|4|¡Deja de alardear de tu fortuna frente a los pobres!|Stop bragging about your fortune in front of poor people!
+S|imported|4|Siempre se jacta de lo guapa que es su hija|She's always boasting about how beautiful her daughter is
+S|imported|4|Agita las ramas del manzano para que caiga fruta|Shake the branches of the apple tree so some fruit falls down
+S|imported|4|Si agitas el refresco antes de abrirlo, puede explotar|If you shake the soda before opening it, it can explode
+S|imported|4|Aún te amaré cuando seas mayor y tengas arrugas en la cara|I'll still love you when you're old and have wrinkles on your face
+S|imported|4|¡Hablas español muy bien! Suenas como un hablante nativo|You speak Spanish so well! You sound like a native speaker
+S|imported|4|El lobo soplaba con todas sus fuerzas, pero la casa ni se movía|The wolf blew with all his strength, but the house wouldn't move
+S|imported|4|Su madre lo regañó por no llevar calcetines|His mother scolded him for not wearing socks
+S|imported|4|Ahora tiene que mantener a dos familias|He has to support two families now
+S|imported|4|Pase lo que pase, siempre te apoyaré|Come what may, I will always support you
+S|imported|4|El perfil de la sombra parecía un monstruo gigante|The silhouette of the shadow looked like a giant monster
+S|imported|4|Dibujé un esbozo del paisaje a lápiz|I drew a sketch of the landscape with pencil
+S|imported|4|Necesito recostarme por unos minutos|I need to lie down for a couple of minutes
+S|imported|4|Mi novio se encaró con el hombre de la discoteca que me miraba|My boyfriend confronted the man who was looking at me in the club
+S|imported|4|El carro está en el segundo piso del estacionamiento del centro comercial|The car is on the second storey of the car park at the shopping centre
+S|imported|4|No pudo negar que fue él el que rompió la computadora|He couldn't deny the fact that it was he who had broken the computer
+S|imported|4|Ella negó haber cometido un crimen|She denied having committed a crime
+S|imported|4|Mark tiene un encanto innegable que a muchas mujeres les resulta atractivo|Mark has an undeniable charm that many women find attractive
+S|imported|4|¿Hay alguien que pueda ayudarme con esta pregunta? Gracias de antemano|Can somebody help me with this question? Thanks in advance
+S|imported|4|No hace falta ser muy listo para darse cuenta de que está mintiendo|You don't need to be very clever to realize that she's lying
+S|imported|4|Ana y Juan iban caminando de la mano|Ana and Juan were walking hand in hand
+S|imported|4|El gobierno debe priorizar las necesidades de la gente de bajos recursos|The government should give priority to the needs of the less fortunate
+S|imported|4|En la última década, la tasa de desempleo del país se ha duplicado|The country's unemployment rate has doubled in the past decade
+S|imported|4|El sketch se burla del gobierno corrupto de nuestro país|The skit mocks the corrupt government of our country
+S|imported|4|Son las siete menos cuarto|It's a quarter to seven
+S|imported|4|La receta dice que hay que cocinar la salsa a fuego lento|The recipe says you've got to cook the sauce on low heat
+S|imported|4|La ministra de Finanzas chilena se entrevistará esta semana con su homóloga venezolana|The Colombian Finance Minister will meet her Venezuelan counterpart this week
+S|imported|4|¿A quién le puedo dar las gracias por este regalo?|Who can I thank for this present?
+S|imported|4|Mi alergia al polvo me hace estornudar|My dust allergy makes me sneeze
+S|imported|4|Solo tres deportistas del país pueden clasificarse para esta prueba|Only three athletes in the country can qualify for this event
+S|imported|4|Siempre silbo mi canción favorita cuando me estoy duchando|I always whistle my favorite song when I'm in the shower
+S|imported|4|Intentábamos escuchar el anuncio por el altavoz|We listened for the announcement over the loudspeaker
+S|imported|4|Esta nota se refiere al autor del libro|This note refers to the book's author
+S|imported|4|Mi cintura mide ocho pulgadas menos que mis caderas|My waist measures eight inches less than my hips do
+S|imported|4|Hay un olor fétido en el aire que proviene de esa vieja casa|There is a foul smell in the air that's coming from that old house
+S|imported|4|Si no te comes los bananos pronto, se van a pudrir|If you don't eat the bananas soon, they are going to go bad
+S|imported|4|Siempre he tenido problemas con el subjuntivo|I've always had trouble with the subjunctive
+S|imported|4|Hacía tanto frío que me tuve que poner los guantes de lana|It was so cold I had to put on my woolen gloves
+S|imported|4|La carrera hacia la parada de autobús me dejó sin aliento|The run to the bus stop left me out of breath
+S|imported|4|Dios mío, ese tipo tiene muy mal aliento|Good Lord, that guy has really bad breath
+S|imported|4|Le dio un ataque de ansiedad y la llevaron al hospital|She had an anxiety attack and was taken to the hospital
